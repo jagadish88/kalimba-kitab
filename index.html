@@ -1,0 +1,1770 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kalimba Tab Trainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: one working column. Status strip, the mic view (the instrument's ears), then the tab sheet. */
+:root{
+  --bg:#eceff0; --surface:#f8f9f9; --ink:#1b2124; --muted:#5d686d; --line:#cfd6d9;
+  --brass:#9a6a14; --brass-soft:#f1e3c4; --bar:#a9b4b9; --spec:rgba(27,33,36,.28);
+  --ok:#2f7d4f; --ok-soft:#d9efe1; --bad:#b23a32; --bad-soft:#f6dcd9;
+  --f-display:"Young Serif",Georgia,serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#13171a; --surface:#1c2226; --ink:#e6eaec; --muted:#97a2a7; --line:#2f383d;
+  --brass:#e2ac45; --brass-soft:#3a2f18; --bar:#4c585e; --spec:rgba(230,234,236,.26);
+  --ok:#5fc48a; --ok-soft:#1c3527; --bad:#f07a70; --bad-soft:#3d2120; color-scheme:dark;
+}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body);padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px}
+h1{font-family:var(--f-display);font-weight:400;font-size:1.9rem;margin:0;letter-spacing:.01em}
+h1 span{color:var(--brass)}
+h2{font-family:var(--f-display);font-weight:400;font-size:1.2rem;margin:0}
+.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{border:0;background:none;color:var(--muted);font:600 .85rem var(--f-body);padding:6px 14px;border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.spacer{flex:1}
+button.btn{font:600 .9rem var(--f-body);border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:8px 14px;border-radius:8px;cursor:pointer}
+button.btn:hover:not(:disabled){border-color:var(--muted)}
+button.btn:disabled{opacity:.55;cursor:default}
+button.primary{background:var(--brass);border-color:var(--brass);color:#fff}
+@media (prefers-color-scheme:dark){button.primary{color:#1b1407}}
+button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+textarea{width:100%;min-height:70px;font-family:var(--f-mono);resize:vertical}
+label.check{display:flex;gap:6px;align-items:center;font-size:.9rem;color:var(--muted);cursor:pointer}
+.label{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+code{font-family:var(--f-mono);font-size:.9em}
+
+/* status strip */
+.status{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;align-items:center}
+@media (max-width:620px){.status{grid-template-columns:1fr}}
+.mic{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.meter{width:110px;height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--brass);transition:width .05s}
+.heard{display:flex;align-items:center;gap:12px;min-width:0;flex-wrap:wrap}
+.heard .big{font-size:1.9rem;min-width:2.2rem;text-align:center}
+.heard .big.ok{color:var(--ok)} .heard .big.bad{color:var(--bad)}
+.next{grid-column:1/-1;display:flex;align-items:center;gap:10px;border-top:1px dashed var(--line);padding-top:10px;font-size:.9rem;color:var(--muted)}
+.next .sym{font-size:1.3rem;color:var(--brass)}
+
+/* tab notation */
+.sym{display:inline-flex;flex-direction:column;align-items:center;line-height:1;font-family:var(--f-mono);font-weight:600}
+.sym .d{font-size:.6em;letter-spacing:-.05em;height:.75em;line-height:.75em}
+
+/* mic view */
+.mic-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+canvas#spec{display:block;width:100%;height:230px;border-radius:10px;background:var(--bg);border:1px solid var(--line)}
+@media (max-width:560px){canvas#spec{height:200px}}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.8rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px}
+.sw.bar{background:var(--bar)} .sw.hot{background:var(--brass)} .sw.tick{height:2px;width:12px;background:var(--ink)} .sw.noise{height:0;width:14px;border-top:2px dashed var(--muted)} .sw.spec{height:2px;width:14px;background:var(--spec)}
+.diag{font-size:.9rem;min-height:1.5em;color:var(--muted)}
+.diag.ok{color:var(--ok)} .diag.bad{color:var(--bad)}
+
+/* practice */
+.sheet{display:flex;flex-direction:column;gap:14px}
+.line{display:flex;flex-wrap:wrap;gap:10px 6px;padding-top:6px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.line:last-child{border-bottom:0;padding-bottom:0}
+.cell{position:relative;min-width:42px;height:56px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:8px;border-radius:8px;font-size:1.45rem;border:1.5px solid transparent;color:var(--ink);transition:background .15s,border-color .15s}
+.cell,.dash,.rest{flex-direction:column;align-items:center;justify-content:flex-end}
+.dash,.rest{display:flex;min-width:24px;height:56px;padding-bottom:8px;font-size:1.45rem;color:var(--muted)}
+.nw{display:inline-flex;align-items:flex-end;position:relative}
+.aug{font-size:.45em;line-height:1;margin:0 0 .45em 1px}
+.ul{display:none;flex-direction:column;gap:2px;width:60%;margin-top:2px}
+.ul i{display:block;height:2px;border-radius:1px;background:currentColor}
+.syl{display:none;font:500 .74rem/1.15 var(--f-body);color:var(--muted);white-space:nowrap;margin-top:3px;letter-spacing:0}
+.syl .ext{opacity:.7}
+
+.sheet.rich .ul{display:flex;min-height:2px}
+.sheet.rich .cell,.sheet.rich .dash,.sheet.rich .rest{height:62px}
+
+
+.sheet.rich .cell.h1{min-width:34px}
+.sheet.rich .cell.h2{min-width:28px}
+.wd{display:flex;flex-wrap:wrap;gap:10px 6px;min-width:0}
+.sheet.rich .line,.sheet.rich .wd{gap:10px 3px}
+.sheet.lyrics .line{column-gap:18px;row-gap:14px}
+.sheet.lyrics .cell,.sheet.lyrics .dash,.sheet.lyrics .rest{height:52px;padding-bottom:6px}
+.wg{display:flex;flex-direction:column;min-width:0}
+.wl{font:italic 400 .95rem/1.2 Georgia,'Times New Roman',serif;color:var(--muted);padding:0 2px 3px;border-bottom:1px solid var(--line);margin-bottom:2px;white-space:nowrap}
+.cell.done .syl{color:inherit}
+.beat-key{font-size:.8rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}
+.beat-key .k{display:inline-flex;align-items:flex-end;gap:2px;font:600 .95rem var(--f-mono);color:var(--ink)}
+.beat-key .k .u{display:inline-flex;flex-direction:column;align-items:center}
+.beat-key .k .u i{display:block;height:2px;width:.7em;background:currentColor;margin-top:2px}
+.cell.done{color:var(--ok);background:var(--ok-soft)}
+.cell.done.missed{color:var(--bad);background:var(--bad-soft)}
+.cell.missed{border-color:var(--bad)}
+/* the key actually played, on a red note */
+.cell .got{position:absolute;top:-8px;right:-8px;min-width:20px;padding:3px 5px 2px;border-radius:10px;background:var(--bad);color:var(--surface);
+  font-size:.66rem;line-height:1;display:flex;justify-content:center;box-shadow:0 0 0 2px var(--surface);pointer-events:auto}
+.cell .got .sym{font-size:1em}
+.wrong-note{display:flex;flex-direction:column;gap:4px;border:1px solid var(--bad);background:var(--bad-soft);border-radius:10px;padding:8px 12px;font-size:.95rem}
+.wrong-note .row1{display:flex;flex-wrap:wrap;align-items:flex-end;gap:2px 10px}
+.wrong-note .lbl{min-width:6.5em}
+.wrong-note .sym{font-size:1.3rem}
+.wrong-note .was .sym{color:var(--bad)} .wrong-note .want .sym{color:var(--brass)}
+.cell.cur{border-color:var(--brass);background:var(--brass-soft)}
+.cell.cur.missed{border-color:var(--bad)}
+.cell.done.unheard{color:var(--muted);background:none;border:1.5px dashed var(--line)}
+.cell{cursor:pointer}
+.cell.flag{outline:2px dashed var(--brass);outline-offset:3px}
+.fb{border-top:1px dashed var(--line);padding-top:12px}
+.fb p{margin:0;flex:1 1 260px}
+.cell.cur.shake{animation:shake .3s}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media (prefers-reduced-motion:reduce){.cell.cur.shake{animation:none}}
+.progress{height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--ok);transition:width .2s}
+.stats{display:flex;gap:22px;flex-wrap:wrap;font-variant-numeric:tabular-nums}
+.stats b{display:block;font:600 1.3rem var(--f-mono)}
+.done-msg{border:1px solid var(--ok);background:var(--ok-soft);border-radius:10px;padding:12px 14px}
+.notice{border-left:3px solid var(--brass);padding:4px 12px;font-size:.9rem;color:var(--muted)}
+.notice.warn{border-left-color:var(--bad);color:var(--ink)}
+
+/* calibration */
+.calib-big{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.calib-big .sym{font-size:3rem;color:var(--brass);min-width:2.5rem}
+.pips{display:flex;gap:6px}
+.pips i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.pips i.on{background:var(--ok)}
+.grid17{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:6px;font-variant-numeric:tabular-nums}
+.grid17 .t{border:1px solid var(--line);border-radius:8px;padding:6px 8px;font:inherit;font-size:.8rem;display:flex;justify-content:space-between;gap:6px;align-items:center;background:none;color:var(--ink);text-align:left}
+.grid17 .t.set{border-color:var(--ok)}
+.grid17 .t.cur{border-color:var(--brass);background:var(--brass-soft)}
+.grid17 .t.warn{border-color:var(--bad);background:var(--bad-soft)}
+.grid17 button.t{cursor:pointer}
+.grid17 button.t:hover{border-color:var(--brass)}
+.grid17 button.t:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--brass);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.one-hint{margin:0;font-size:.9rem}
+.grid17 .sym{font-size:1rem}
+.msg{min-height:1.5em;font-size:.92rem}
+.msg.bad{color:var(--bad)} .msg.ok{color:var(--ok)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Kalimba <span>Tab</span> Trainer</h1>
+    <div class="tabs" role="group" aria-label="Mode">
+      <button id="tabPractice" aria-pressed="true">Practice</button>
+      <button id="tabCalib" aria-pressed="false">Calibrate</button>
+    </div>
+  </header>
+
+  <section class="panel status" aria-live="polite">
+    <div class="mic">
+      <button class="btn primary" id="micBtn">Start listening</button>
+      <div class="meter" title="Input level"><i id="meterBar"></i></div>
+    </div>
+    <div class="heard">
+      <span class="label">Heard</span>
+      <span class="big" id="heardSym">–</span>
+      <span class="muted small" id="heardInfo">Press Start listening and allow the microphone.</span>
+    </div>
+    <div class="next" id="nextBox" hidden><span class="label">Next</span><span id="nextSym"></span><span id="nextInfo"></span></div>
+  </section>
+
+  <section class="panel" id="micPanel">
+    <div class="mic-head">
+      <h2>What the mic hears</h2>
+      <span class="spacer"></span>
+      <label class="small muted" for="sensSel">Sensitivity</label>
+      <select id="sensSel"><option value="0">Low (noisy room)</option><option value="1">Normal</option><option value="2">High (very soft playing)</option></select>
+    </div>
+    <canvas id="spec" aria-label="Live view: full sound spectrum, with one bar per tine showing how strongly it is ringing"></canvas>
+    <div class="legend">
+      <span><i class="sw bar"></i>Each tine’s ring</span>
+      <span><i class="sw hot"></i>Loud enough to count</span>
+      <span><i class="sw tick"></i>Level a strike must reach</span>
+      <span><i class="sw noise"></i>Room noise</span>
+      <span><i class="sw spec"></i>Full spectrum</span>
+    </div>
+    <div class="notice warn" id="clipWarn" hidden>Your kalimba is too loud for the microphone right now (it’s clipping). It still works, but move the phone or laptop a little further away for cleaner detection.</div>
+    <div class="diag" id="diag"></div>
+  </section>
+
+  <section id="practiceView" class="panel">
+    <div class="row">
+      <select id="songSel" aria-label="Choose a tab"></select>
+      <button class="btn" id="restartBtn">Restart</button>
+      <span class="spacer"></span>
+      <label class="check"><input type="checkbox" id="hintChk" checked> Show where the next note is</label>
+    </div>
+    <div id="uncalNotice" class="notice">Not calibrated yet: detection assumes a kalimba in standard C tuning. Calibrate once (about two minutes) so it learns how your own tines sound.</div>
+    <div class="progress"><i id="progBar"></i></div>
+    <div class="wrong-note" id="wrongNote" aria-live="polite" hidden></div>
+    <div class="beat-key" id="beatKey" hidden>
+      <span>Beats:</span>
+      <span><span class="k">3</span> 1 beat</span>
+      <span><span class="k"><span class="u">3<i></i></span></span> half a beat</span>
+      <span><span class="k"><span class="u">3<i></i><i></i></span></span> a quarter</span>
+      <span><span class="k">3<small>•</small></span> 1½ beats</span>
+      <span><span class="k">3 –</span> each dash holds it one more beat</span>
+    </div>
+    <div class="sheet" id="sheet"></div>
+    <div id="doneMsg" class="done-msg" hidden></div>
+    <div class="stats">
+      <div><span class="label">Note</span><b id="stPos">0/0</b></div>
+      <div><span class="label">First-try accuracy</span><b id="stAcc">–</b></div>
+      <div><span class="label">Streak</span><b id="stStreak">0</b></div>
+      <div><span class="label">Wrong notes</span><b id="stWrong">0</b></div>
+    </div>
+    <div class="row fb">
+      <button class="btn" id="fbSave">Save this run for feedback</button>
+      <p class="small muted">Did I miss a note, or call one wrong when it wasn’t? Tap those notes in the tab to flag them, then save. You get a sound file of the last 90 seconds with everything I heard, so the detection can be tuned to your kalimba.</p>
+    </div>
+    <div class="msg" id="fbMsg"></div>
+  </section>
+
+  <section id="customPanel" class="panel">
+    <h2>Practise your own tab</h2>
+    <p class="small muted" style="margin:0">Type numbers 1–7. Add <code>'</code> or <code>°</code> for each octave up (1' = high C, 1'' = top C). Use <code>|</code> or a new line to start a new line. For lyrics and beat lengths, use the .ktab style: <code>(Ja: 1/)(na: 2/) (he: 4--)</code>, where <code>/</code> halves a note, <code>.</code> adds half a beat and each <code>-</code> holds it one more beat. Tabs with beats in brackets, like <code>5(1) 3'(0.5) -(1) 0(0.5)</code>, work too.</p>
+    <textarea id="customTxt" aria-label="Custom tab">1 1 5 5 6 6 5 | 4 4 3 3 2 2 1</textarea>
+    <div class="row"><button class="btn" id="customBtn">Practise this tab</button><button class="btn" id="ktabBtn">Open a .ktab file</button><input type="file" id="ktabFile" accept=".ktab,.txt,text/plain" hidden><span class="msg" id="customMsg"></span></div>
+  </section>
+
+  <section id="calibView" class="panel" hidden>
+    <h2>Calibrate your kalimba</h2>
+    <p class="small muted" style="margin:0">The app first listens to your room for 2 seconds, then learns each tine’s sound: its exact pitch, its overtone, the click of your pluck and how it rings into its neighbours. Pluck each highlighted tine three times, about a second apart, the way you normally play. Keep the phone or laptop where it will be when you practise.</p>
+    <div class="calib-big">
+      <span class="sym" id="calSym">–</span>
+      <div>
+        <div><strong id="calTitle">Not calibrated yet</strong></div>
+        <div class="muted small" id="calSub"></div>
+        <div class="pips" id="pips" style="margin-top:6px"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <div class="msg" id="calMsg"></div>
+    <div class="row">
+      <button class="btn primary" id="calStart">Calibrate all 17 tines</button>
+      <button class="btn" id="calAgain" hidden>Redo this tine</button>
+      <button class="btn" id="calBack" hidden>Previous tine</button>
+      <button class="btn" id="calSkip" hidden>Skip this tine</button>
+      <button class="btn" id="calCancel" hidden>Stop</button>
+      <span class="spacer"></span>
+      <button class="btn" id="calForget" hidden>Forget calibration</button>
+    </div>
+    <p class="one-hint" id="oneHint"><strong>Just one or two tines being missed?</strong> <span class="muted">Tap a tine below to calibrate only that one: 2 seconds of quiet, then three plucks. It works with or without a full calibration, and is remembered.</span></p>
+    <div class="grid17" id="calGrid"></div>
+  </section>
+</div>
+<script>
+/* Kalimba strike detection engine (no DOM). Shared by the app and the offline tests. */
+const KDSP=(function(){
+"use strict";
+const db=p=>10*Math.log10(p>1e-30?p:1e-30);
+const pw=d=>Math.pow(10,d/10);
+const HOP=256, HL=512;
+let TOL_UNLEARNED=Math.pow(2,30/1200)-1,RISE_W=0,SETTLE=true,COMB_LO=0,RIVAL_RISE=true,WOBBLE=true,TOL_CAL=Math.pow(2,13/1200)-1,CAL_TRACK=true,REP_LOCK=0.17,OTHER_HOLD=true,LOCK_ALL=false,PEAK_CAP=false,LOCK_CLICK=true,STICKY=true,HARM=true;
+const STEPS=[0,2,4,5,7,9,11];
+function stdFreqs(){const a=[];for(let i=0;i<17;i++){const m=60+12*Math.floor(i/7)+STEPS[i%7];a.push(440*Math.pow(2,(m-69)/12))}return a}
+const cents=(a,b)=>1200*Math.log2(a/b);
+const median=a=>{if(!a.length)return NaN;const s=[...a].sort((x,y)=>x-y);return s[s.length>>1]};
+
+/* ---------- FFT helpers ---------- */
+const twC={};
+function fft(re,im){
+  const N=re.length;
+  for(let i=1,j=0;i<N;i++){let bit=N>>1;for(;j&bit;bit>>=1)j^=bit;j^=bit;if(i<j){let t=re[i];re[i]=re[j];re[j]=t;t=im[i];im[i]=im[j];im[j]=t}}
+  let tw=twC[N];
+  if(!tw){tw=twC[N]={c:new Float64Array(N>>1),s:new Float64Array(N>>1)};for(let k=0;k<N>>1;k++){tw.c[k]=Math.cos(2*Math.PI*k/N);tw.s[k]=-Math.sin(2*Math.PI*k/N)}}
+  for(let len=2;len<=N;len<<=1){
+    const half=len>>1,step=N/len;
+    for(let i=0;i<N;i+=len){
+      for(let j=0,t=0;j<half;j++,t+=step){
+        const c=tw.c[t],s=tw.s[t],a=i+j,b=a+half;
+        const tr=re[b]*c-im[b]*s,ti=re[b]*s+im[b]*c;
+        re[b]=re[a]-tr;im[b]=im[a]-ti;re[a]+=tr;im[a]+=ti;
+      }
+    }
+  }
+}
+const hanC={};
+function hann(N){return hanC[N]||(hanC[N]=Float64Array.from({length:N},(_,i)=>0.5-0.5*Math.cos(2*Math.PI*i/N)))}
+// amplitude spectrum in "sinusoid amplitude" units (a sine of amplitude A reads A at its bin)
+function ampSpec(x,start,N){
+  const w=hann(N),re=new Float64Array(N),im=new Float64Array(N);
+  for(let i=0;i<N;i++){const s=start+i;re[i]=(s>=0&&s<x.length?x[s]:0)*w[i]}
+  fft(re,im);
+  const o=new Float32Array(N>>1);for(let k=0;k<o.length;k++)o[k]=4*Math.sqrt(re[k]*re[k]+im[k]*im[k])/N;
+  return o;
+}
+function hpCoef(fs,f0,Q){const w=2*Math.PI*f0/fs,cs=Math.cos(w),al=Math.sin(w)/(2*Q),a0=1+al;return{b0:(1+cs)/2/a0,b1:-(1+cs)/a0,b2:(1+cs)/2/a0,a1:-2*cs/a0,a2:(1-al)/a0}}
+
+/* ---------- narrowband tracker bank: one complex demodulator per band ---------- */
+class Bank{
+  constructor(sr,bands){
+    const n=bands.length;this.n=n;
+    this.cr=new Float64Array(n);this.sn=new Float64Array(n);this.a=new Float64Array(n);
+    this.pc=new Float64Array(n).fill(1);this.ps=new Float64Array(n);
+    this.r1=new Float64Array(n);this.i1=new Float64Array(n);this.r2=new Float64Array(n);this.i2=new Float64Array(n);
+    bands.forEach((b,i)=>{const w=2*Math.PI*b.f/sr;this.cr[i]=Math.cos(w);this.sn[i]=Math.sin(w);this.a[i]=1-Math.exp(-2*Math.PI*b.fc/sr)});
+  }
+  setFreq(i,f,sr){const w=2*Math.PI*f/sr;this.cr[i]=Math.cos(w);this.sn[i]=Math.sin(w)}
+  run(x,off,len,out){ // out[i] = band amplitude in dB (20log10 A)
+    for(let i=0;i<this.n;i++){
+      let c=this.pc[i],s=this.ps[i],r1=this.r1[i],i1=this.i1[i],r2=this.r2[i],i2=this.i2[i];
+      const a=this.a[i],cr=this.cr[i],sn=this.sn[i];
+      for(let k=off,e=off+len;k<e;k++){
+        const v=x[k];
+        r1+=a*(v*c-r1);i1+=a*(-v*s-i1);
+        r2+=a*(r1-r2);i2+=a*(i1-i2);
+        const nc=c*cr-s*sn;s=c*sn+s*cr;c=nc;
+      }
+      const m=1/Math.sqrt(c*c+s*s);this.pc[i]=c*m;this.ps[i]=s*m;
+      this.r1[i]=r1;this.i1[i]=i1;this.r2[i]=r2;this.i2[i]=i2;
+      out[i]=20*Math.log10(2*Math.sqrt(r2*r2+i2*i2)+1e-9);
+    }
+  }
+}
+// bands: 17 fundamentals first (tine order), then each tine's second vibration mode when known.
+// Each band is as narrow as its nearest neighbour allows.
+function makeBands(funds,f2s,sr){
+  const b=funds.map((f,j)=>({f,tine:j,kind:0}));
+  (f2s||[]).forEach((f,j)=>{if(f&&f<sr*0.45)b.push({f,tine:j,kind:1})});
+  return setWidths(b);
+}
+function setWidths(b){b.forEach(x=>{let sp=1e9;b.forEach(o=>{if(o!==x)sp=Math.min(sp,Math.abs(o.f-x.f))});x.fc=Math.max(3.5,Math.min(14,0.2*sp))});return b}
+
+// A calibration made from very quiet plucks (low tines can reach a phone microphone only ~10 dB above the room) yields
+// nonsense fingerprints, e.g. "a D4 pluck raises A5 nearly as much as D4", which then hide real notes. A struck tine never
+// puts more than about a tenth of its energy into another tine's band; and tines don't fade slower than ~1/3 of usual.
+function sanitizeModel(m){
+  if(!m||m.isDefault||!m.tplV||m._sane)return m;
+  const sT=m.snrT||[],def=stdFreqs().map(f=>1.6*8.686/(1.6*Math.pow(261.6/f,0.7)));
+  for(let r=0;r<17;r++){
+    const weak=typeof sT[r]==='number'&&sT[r]<20;
+    for(let i=0;i<m.tplV[r].length;i++){if(i===r)continue;
+      if(weak&&m.tplV[r][i]>-25&&m.tplC[r][i]!==2)m.tplC[r][i]=2;   // measured from plucks barely above the room: unknown
+      if(m.tplV[r][i]>-10)m.tplV[r][i]=-10}
+    if(m.decay&&m.decay[r]!==undefined){const lo=def[r]/3,hi=def[r]*3;m.decay[r]=Math.max(lo,Math.min(hi,m.decay[r]))}
+  }
+  m._sane=1;return m;
+}
+/* ---------- live engine ---------- */
+const SENS=[
+  {snr:12,rise:6,fitFast:40,downMax:70,upMax:200,susFrac:0.85,dropTol:4},
+  {snr:9,rise:5,fitFast:60,downMax:100,upMax:300,susFrac:0.75,dropTol:5},
+  {snr:8,rise:4,fitFast:80,downMax:130,upMax:400,susFrac:0.7,dropTol:6},
+];
+class Engine{
+  constructor(sr){
+    this.sr=sr;this.hs=HOP/sr;
+    this.ringN=1<<17;this.ring=new Float32Array(this.ringN);this.total=0;
+    this.hb=new Float32Array(HOP);this.hbn=0;this.frame=0;
+    this.hc=hpCoef(sr,4000,0.707);this.hz1=0;this.hz2=0;this.hz3=0;this.hz4=0;
+    this.hfBase=null;this.hfRel=new Float32Array(HL);this.hfJump=new Float32Array(HL);this.hfP2=null;
+    this.bbNoise=null;this.bbSlow=null;this.lastBB=-1e9;
+    this.model=null;this.bank=null;this.evs=[];this.pend=[];
+    this.P=SENS[1];this.on={};this.expect=null;this.expectRepeat=null;this.expectRun=null;this.quietUntil=0;this.last=null;this.clicks=[];this.clickMed=null;this.snrs=[];this.snrMed=null;this.usedClicks=[];
+  }
+  setSens(s){this.P=SENS[Math.max(0,Math.min(2,s))]}
+  setModel(m,opt){
+    // swapping models on a running engine (after a calibration): keep the room noise it has learned, band by band.
+    // A tine may still be ringing from the last calibration pluck, so the noise must not be learned afresh now.
+    const prev=opt&&opt.keepNoise&&this.model&&this.Np&&this.frame-this.bankStart>Math.round(1.5/this.hs)?{bands:this.model.bands,Np:this.Np,Dv:this.Dv}:null;
+    this.model=m;const nb=m.bands.length;this.nb=nb;
+    this.bank=new Bank(this.sr,m.bands);
+    this.lv=new Float32Array(nb).fill(-200);this.lvS=new Float32Array(nb).fill(-200);this.hist=new Float32Array(nb*HL).fill(-200);
+    this.rawP=new Float64Array(nb*HL);this.W=Math.max(1,Math.round(0.06/this.hs));
+    this.zr=new Float64Array(17*HL);this.zi=new Float64Array(17*HL);
+    this.Np=new Float64Array(nb);this.Dv=new Float64Array(nb).fill(3);this.seeded=!!m.noise;
+    if(m.noise)m.noise.forEach((d,i)=>this.Np[i]=pw(d));
+    if(prev){
+      let all=true;
+      m.bands.forEach((b,i)=>{
+        const k=prev.bands.findIndex(o=>o.tine===b.tine&&o.kind===b.kind);
+        if(k>=0&&Math.abs(cents(b.f,prev.bands[k].f))<120){const live=prev.Np[k];this.Np[i]=m.noise?Math.min(pw(m.noise[i]),live):live;this.Dv[i]=prev.Dv[k]}
+        else if(!m.noise)all=false;
+      });
+      if(all)this.seeded=true;
+    }
+    this.bankStart=this.frame;this.lastWin=new Float64Array(17).fill(-1e9);this.recent=[];
+    this.modeIdx=new Array(17).fill(-1);m.bands.forEach((b,i)=>{if(b.kind===1)this.modeIdx[b.tine]=i});
+    this.evs=[];this.pend=[];this.lastTrig=new Float64Array(17).fill(-1e9);this.quietUntil=this.frame+Math.round(0.4/this.hs);
+    this.learned=Uint8Array.from(m.learned||new Array(17).fill(0));
+    if(typeof m.clickMed==='number'){this.clicks=[m.clickMed,m.clickMed,m.clickMed];this.clickMed=m.clickMed}
+    if(typeof m.snrMed==='number'){this.snrs=[m.snrMed,m.snrMed,m.snrMed];this.snrMed=m.snrMed}
+  }
+  push(x){
+    const R=this.ringN-1;
+    for(let k=0;k<x.length;k++){const v=x[k];this.ring[this.total&R]=v;this.total++;this.hb[this.hbn++]=v;if(this.hbn===HOP){this.hop(this.hb);this.hbn=0}}
+  }
+  clip(start,len){const o=new Float32Array(len),R=this.ringN-1;for(let i=0;i<len;i++){const s=start+i;o[i]=(s>=0&&s<this.total&&this.total-s<=this.ringN)?this.ring[s&R]:0}return o}
+  H(i,f){return this.hist[i*HL+(((f%HL)+HL)%HL)]}
+  R(i,f){return db(this.rawP[i*HL+(((f%HL)+HL)%HL)])} // unsmoothed band level
+  noiseDb(i){return db(this.Np[i])}
+  // level a strike must reach above the room noise: higher in bands where the noise wobbles a lot
+  thr(i){return Math.max(this.P.snr,2.5*this.Dv[i])}
+  // how far (Hz) a strike may sit from tine i's band centre and still count as that tine.
+  // Uncalibrated and not yet heard: up to ~30 cents (real tines are rarely tuned exactly); once its pitch is known, much less.
+  tol(i){const M=this.model,b=M.bands[i];return this.unc(i)?(this.learned[i]?3:Math.max(5,0.9*b.fc,TOL_UNLEARNED*b.f)):Math.max(2,Math.min(TOL_CAL*b.f,0.9*b.fc))}
+  // While practising, the app says which tine(s) the tab expects next. Those get the benefit of the doubt (judged against
+  // their own calibration plucks); any other tine must be an unmistakable pluck before it counts, because calling a stray
+  // sound a wrong note is far worse than missing a wrong note.
+  practising(){return this.expect!==null&&this.expect!==undefined}
+  expected(j){return this.practising()&&(Array.isArray(this.expect)?this.expect.includes(j):this.expect===j)}
+  lenient(j){return !this.practising()||this.expected(j)}
+  expectedNow(j){return this.practising()&&(Array.isArray(this.expect)?this.expect[0]===j:this.expect===j)} // the very next note
+  // an unexpected tine counts only as a clear pluck that keeps ringing steadily at its own pitch, with no voice-like overtones
+  sure(ev){
+    const P=this.P,cn=this.clickMed!==null?Math.max(10,this.clickMed-15):10;
+    return ev.settle===undefined&&ev.click>=cn&&ev.snr>=P.snr+10&&ev.margin>=6&&(ev.comb||0)===0&&(!ev.ringing||ev.rise>=8)&&
+      typeof ev.frac==='number'&&ev.frac>=0.9&&(ev.drift===undefined||ev.drift<=1.2);
+  }
+  // tines whose pitch hasn't been measured by a calibration: all of them without one, or ones skipped while calibrating
+  unc(i){const M=this.model;return !!(M.isDefault||(M.uncal&&M.uncal[i]))}
+  hop(x){
+    const f=this.frame,n=x.length,c=this.hc;
+    // high band (>4 kHz): mean energy for the baseline, loudest 1.3 ms slice for the pluck click
+    let e=0,eh=0,sub=0,subMax=0,z1=this.hz1,z2=this.hz2,z3=this.hz3,z4=this.hz4;
+    for(let k=0;k<n;k++){const v=x[k];e+=v*v;const y=c.b0*v+z1;z1=c.b1*v-c.a1*y+z2;z2=c.b2*v-c.a2*y;const u=c.b0*y+z3;z3=c.b1*y-c.a1*u+z4;z4=c.b2*y-c.a2*u;eh+=u*u;sub+=u*u;if((k&63)===63){if(sub>subMax)subMax=sub;sub=0}}
+    this.hz1=z1;this.hz2=z2;this.hz3=z3;this.hz4=z4;
+    const bb=db(e/n),hfMean=db(eh/n),hf=db(subMax/64);
+    if(this.hfBase===null){this.hfBase=hfMean;this.bbNoise=bb;this.bbSlow=bb;this.hfPrev=hf}
+    this.hfBase+=(hfMean<this.hfBase+6?0.03:0.003)*(hfMean-this.hfBase);
+    this.hfRel[f%HL]=hf-this.hfBase;
+    {const prevMin=Math.min(this.hfPrev,this.hfP2===null?this.hfPrev:this.hfP2);this.hfJump[f%HL]=Math.min(hf-this.hfBase,hf-prevMin)}
+    // strike onset (used while calibrating): the pluck click in the high band, or a broadband jump
+    const clickOn=hf-this.hfBase>=10&&hf-this.hfPrev>=6,bbOn=bb>this.bbSlow+8&&bb>this.bbNoise+12;
+    if((clickOn||bbOn)&&f-this.lastBB>0.15/this.hs){this.lastBB=f;if(this.on.onset)this.on.onset(this.total-n)}
+    // (a repeated note in the tab is usually plucked a little softer: listen for a fainter click then)
+    const rep=this.expectRepeat!==null&&this.expectRepeat!==undefined;
+    this.clickNow=(hf-this.hfBase>=7&&hf-this.hfPrev>=4)||(rep&&hf-this.hfBase>=5&&hf-this.hfPrev>=3);this.hfP2=this.hfPrev;this.hfPrev=hf;
+    this.bbSlow+=0.12*(bb-this.bbSlow);
+    this.bbNoise+=(bb<this.bbNoise+6?0.01:0.0005)*(bb-this.bbNoise);
+    if(this.bank)this.bankHop(x,f);
+    this.frame++;
+  }
+  bankHop(x,f){
+    const nb=this.nb,lv=this.lv,hs=this.hs,P=this.P;
+    this.bank.run(x,0,x.length,lv);
+    // smooth each band's power over ~60 ms so beating between neighbouring tines can't fake a strike
+    const idx=f%HL,W=this.W,lvS=this.lvS;
+    for(let i=0;i<nb;i++){
+      const o=i*HL;this.rawP[o+idx]=pw(lv[i]);
+      let s=0;for(let k=0;k<W;k++)s+=this.rawP[o+(((f-k)%HL)+HL)%HL];
+      lvS[i]=db(s/W);this.hist[o+idx]=lvS[i];
+    }
+    for(let i=0;i<17;i++){this.zr[i*HL+idx]=this.bank.r2[i];this.zi[i*HL+idx]=this.bank.i2[i]}
+    const age=f-this.bankStart;
+    // background level in every band (only learned while no strike is being judged)
+    for(let i=0;i<nb;i++){
+      const p=pw(lvS[i]);let N=this.Np[i];
+      if(!this.seeded&&age<Math.round(0.5/hs)){N=age<Math.round(0.15/hs)?p:N+0.08*(p-N)}
+      else{if(p<3.2*N){N+=(hs/1.5)*(p-N);this.Dv[i]+=(hs/3)*(Math.abs(lvS[i]-db(N))-this.Dv[i])}else N*=Math.pow(10,0.015*hs)}
+      this.Np[i]=N;
+    }
+    // several checks may run side by side, each anchored to its own onset
+    const near=Math.round(0.04/hs),open=t0=>{if(!this.evs.some(e=>Math.abs(e.f0-t0)<near))this.evs.push({f0:t0,decideAt:t0+Math.round(0.11/hs)})};
+    if(f>=this.quietUntil){
+      const back=Math.round(0.06/hs),ref=Math.round(0.15/hs),w0=Math.round(0.3/hs);
+      for(let i=0;i<17;i++){
+        const L=lvS[i];
+        if(f-this.lastTrig[i]>ref&&L-db(this.Np[i])>=this.thr(i)&&L-this.H(i,f-back)>=P.rise&&f-this.lastWin[i]>ref){
+          // must clearly top everything this band did in the last 0.3 s (slow beats swell and fade, strikes jump)
+          let mx=-1e9;for(let t=f-w0;t<=f-back;t++)mx=Math.max(mx,this.H(i,t));
+          if(L>=mx+3){this.lastTrig[i]=f;open(f)}
+        }
+        if(f-this.lastTrig[i]>ref&&L-db(this.Np[i])>=this.thr(i)&&f-this.lastWin[i]>ref){
+          let dip=1e9,before=-1e9;
+          for(let t=f-Math.round(0.1/hs);t<=f-Math.round(0.02/hs);t++)dip=Math.min(dip,this.H(i,t));
+          for(let t=f-Math.round(0.3/hs);t<=f-Math.round(0.1/hs);t++)before=Math.max(before,this.H(i,t));
+          if(before-dip>=4&&L-dip>=P.rise+1){this.lastTrig[i]=f;open(f)}
+        }
+      }
+      // a pluck click opens a check too, so a soft re-pluck of a ringing tine isn't missed
+      if(this.clickNow){const t0=f+Math.round(0.04/hs);if(!this.evs.some(e=>Math.abs(e.f0-t0)<near))this.evs.push({f0:t0,decideAt:f+Math.round(0.15/hs),byClick:true})}
+    }
+    if(this.evs.length){const due=this.evs.filter(e=>f>=e.decideAt);if(due.length){this.evs=this.evs.filter(e=>f<e.decideAt);due.forEach(e=>this.decide(e,f))}}
+    if(this.pend.length){const due=this.pend.filter(e=>f>=e.susEnd);if(due.length){this.pend=this.pend.filter(e=>f<e.susEnd);due.forEach(e=>this.confirm(e,f))}}
+  }
+  // how far the sound departs from tine j's learned fingerprint (17 fundamental bands + j's own overtone band).
+  // down = energy the fingerprint expects but which is missing; up = extra energy from other sounds.
+  fitErr(j,preM,preJ,peak){
+    const M=this.model,V=M.tplV[j],C=M.tplC[j];
+    const addJ=db(Math.max(pw(peak[j])-pw(preJ),pw(peak[j])*0.1));
+    let up=0,down=0;
+    const term=(i,tu,td)=>{
+      const pred=db(pw(preM[i])+pw(addJ+V[i]));
+      let d=peak[i]-pred;if(C[i]&&d<0)d=0;
+      // "missing" energy only counts where the expected leakage would stand out above what the band was already doing
+      if(d<0&&addJ+V[i]<preM[i])d=0;
+      if(d>0){const x=Math.min(20,Math.max(0,d-tu));up+=x*x}else{const x=Math.min(20,Math.max(0,-d-td));down+=x*x}
+    };
+    for(let i=0;i<17;i++)if(i!==j)term(i,5,6);
+    if(this.modeIdx[j]>=0)term(this.modeIdx[j],10,10);
+    return {e:up+down,up,down};
+  }
+  decide(ev,f){
+    const hs=this.hs,nb=this.nb,P=this.P,f0=ev.f0;
+    const pa=f0-Math.round(0.14/hs),pb=f0-Math.round(0.06/hs),ka=f0-Math.round(0.04/hs);
+    const pre=new Float64Array(nb),preM=new Float64Array(nb),peak=new Float64Array(nb),pkF=new Int32Array(nb),Nd=new Float64Array(nb);
+    // a check judged again later (waiting out a knock test) keeps comparing the tines as they stood when it was first
+    // judged: a note plucked meanwhile mustn't take this onset over
+    const fc=PEAK_CAP&&ev.capF!==undefined?Math.min(f,ev.capF):f;
+    for(let i=0;i<nb;i++){
+      Nd[i]=db(this.Np[i]);
+      let s=0,c=0;for(let t=pa;t<=pb;t++){s+=pw(this.H(i,t));c++}
+      // the thumb damps a ringing tine just before re-plucking it: measure the rise from that dip
+      let dip=1e9,dF=ka;for(let t=f0-Math.round(0.1/hs);t<=f0-Math.round(0.01/hs);t++){const v=this.H(i,t);if(v<dip){dip=v;dF=t}}
+      preM[i]=Math.max(db(s/c),Nd[i]);pre[i]=Math.max(Math.min(db(s/c),dip),Nd[i]);
+      let mx=-1e9,mf=ka;for(let t=Math.max(ka,dF);t<=fc;t++){const v=this.H(i,t);if(v>mx){mx=v;mf=t}}
+      peak[i]=mx;pkF[i]=mf;
+    }
+    // a narrow (slow) band may still be climbing: give it a moment so the comparison is fair
+    {let top=-1e9;for(let i=0;i<17;i++)top=Math.max(top,peak[i]);
+     if((ev.waits||0)<3)for(let i=0;i<17;i++){const L=this.H(i,f);if(L>=top-10&&L-this.H(i,f-3)>1){ev.waits=(ev.waits||0)+1;ev.decideAt=f+Math.round(0.03/hs);this.evs.push(ev);return}}}
+    // (one strike isn't judged twice; when the tab repeats a note, the next pluck of it may come much sooner)
+    // (expectRun: the tab plays this tine twice or more in a row from here, so its next pluck may come before the
+    // first one has been judged)
+    if(ev.capF===undefined)ev.capF=f;
+    // (counted from that strike's pluck click when it came after its onset: a thumb resting on the tine first starts it early)
+    const since=r=>f0-(LOCK_CLICK&&r.clickF!==undefined&&r.clickF>r.f0?r.clickF:r.f0);
+    const lock=Math.round(0.3/hs),lockR=Math.round(REP_LOCK/hs),lockFor=j=>j===this.expectRepeat||j===this.expectRun?lockR:lock,M=this.model;
+    this.recent=this.recent.filter(r=>f0-r.f0<Math.round(3/hs));
+    const dec=M.decay||[],cands=[];
+    for(let j=0;j<17;j++){
+      const tj=this.thr(j);
+      if(peak[j]-pre[j]<(ev.byClick?2.5:P.rise-1)||peak[j]-Nd[j]<(ev.byClick?tj-3:tj-1))continue;
+      // same strike seen again
+      if(this.recent.some(r=>r.j===j&&since(r)<(LOCK_ALL?lockFor(j):lock)))continue;
+      const addJ=db(Math.max(pw(peak[j])-pw(pre[j]),1e-30));
+      let onF=pkF[j];for(let t=pkF[j];t>=f0-Math.round(0.15/hs);t--){if(this.H(j,t)<=pre[j]+3)break;onF=t}
+      // this band only moved because of a recent strike: it started rising together with a louder strike,
+      // it is much weaker than one just before, or it is what that strike's fingerprint predicts
+      if(this.recent.some(r=>{
+        if(r.j===j)return false;const age=(f0-r.f0)*hs;
+        if(Math.abs(onF-r.onF)<=Math.round(0.07/hs)&&addJ<=r.add-3)return true;
+        // A sharp new jump well after another strike, on the tine the tab wants next, is that pluck, not the other
+        // strike's side effect, however much quieter it is (a weak tine) or whatever a calibration from very quiet
+        // low tines claims about leakage.
+        if(this.expectedNow(j)&&Math.abs(onF-r.onF)>Math.round(0.15/hs)&&peak[j]-pre[j]>=8)return false;
+        if(age<0.5&&addJ<=r.add-12)return true;
+        if(!M.tplC||M.tplC[r.j][j]===2)return false;
+        const rate=Math.min(dec[r.j]||15,dec[j]||15);
+        return peak[j]<=db(pw(Nd[j])+pw(r.add+M.tplV[r.j][j]-rate*age))+(M.tplC[r.j][j]?0:7)}))continue;
+      // an octave or a twelfth above a tine that is ringing far louder: that tine's own overtone, jolted by its re-pluck
+      // (a calibration's fingerprints already know this; without one, check it here). Not for the note the tab wants now.
+      if(HARM&&!this.expectedNow(j)){const fj=M.bands[j].f;let harm=false;
+        for(let i=0;i<17&&!harm;i++){if(i===j)continue;const r=fj/M.bands[i].f,h=Math.round(r);if(h>=2&&h<=3&&Math.abs(r-h)<0.015*h&&peak[i]-peak[j]>=20&&pre[i]-Nd[i]>=10)harm=true}
+        if(harm)continue}
+      const lim=this.tol(j);
+      const off=this.pitchLock(j,Math.min(pkF[j]-Math.round(0.01/hs),f-Math.round(0.03/hs)),f).off;
+      const F=M.isDefault?{e:0,up:0,down:0}:this.fitErr(j,preM,pre[j],peak);
+      // the struck tine gains by far the most new energy, at its own pitch; neighbours only carry off-pitch leakage
+      const score=addJ+RISE_W*Math.min(20,Math.max(0,peak[j]-pre[j]))-Math.min(30,3*Math.max(0,Math.abs(off)-lim))-Math.min(6,F.down/60);
+      cands.push({j,score,addJ,off,lim,F,onF,rise:peak[j]-pre[j],ringing:pre[j]-Nd[j]>=10});
+    }
+    // Practising, and the tab repeats the note just played: re-plucking a tine that is still ringing is hard to see, because
+    // a softer pluck is no louder than the ring it interrupts. A firm pluck click, with the thumb's damping dip and a recovery
+    // at that tine (or its overtone jumping back), while no other tine was struck, is that repeat.
+    const rj=this.expectRepeat!==null&&this.expectRepeat!==undefined?this.expectRepeat:this.expectRun!==null&&this.expectRun!==undefined&&this.recent.some(r=>r.j===this.expectRun)?this.expectRun:null;
+    if(rj!==null&&rj!==undefined&&this.expected(rj)&&!cands.some(c=>c.j===rj)&&pre[rj]-Nd[rj]>=10&&!this.recent.some(r=>r.j===rj&&since(r)<lockR)){
+      // (clicks right where another tine starts rising are that tine's pluck, not this repeat)
+      const own=Math.round(0.03/hs),tail=Math.round(0.15/hs),near=Math.round(0.05/hs);let ck=-99,ckF=f0;
+      // (only around this check's own onset: when the decision comes later, the next pluck's click mustn't take its place)
+      for(let t=f0-Math.round(0.12/hs);t<=Math.min(f,f0+Math.round(0.1/hs));t++){if(this.usedClicks.some(c=>t>=c-own&&t<=c+tail)||cands.some(c=>c.rise>=6&&Math.abs(c.onF-t)<=near))continue;const v=this.hfJump[((t%HL)+HL)%HL];if(v>ck){ck=v;ckF=t}}
+      if(ck>=5&&f-ckF>=Math.round(0.04/hs)){
+        let bs=0,bn=0;for(let t=ckF-Math.round(0.2/hs);t<=ckF-Math.round(0.08/hs);t++){bs+=pw(this.H(rj,t));bn++}const bef=db(bs/bn);
+        let dip=1e9,dF=ckF;for(let t=ckF-Math.round(0.06/hs);t<=Math.min(f,ckF+Math.round(0.05/hs));t++){const v=this.H(rj,t);if(v<dip){dip=v;dF=t}}
+        let aft=-1e9,aF=dF;for(let t=dF;t<=f;t++){const v=this.H(rj,t);if(v>aft){aft=v;aF=t}}
+        const mi=this.modeIdx[rj];let modeJump=0;
+        if(mi>=0){let m0=1e9;for(let t=ckF-Math.round(0.1/hs);t<=ckF;t++)m0=Math.min(m0,this.H(mi,t));modeJump=this.H(mi,Math.min(f,ckF+Math.round(0.03/hs)))-m0}
+        else modeJump=this.overtoneJump(rj,ckF);
+        // the click must not belong to another tine struck at the same moment (one that gained about as much as this
+        // re-pluck did; a tine merely ringing along in sympathy gains far less)
+        const addR=db(Math.max(pw(aft)-pw(dip),pw(aft)*0.1));
+        let other=cands.some(c=>c.rise>=6&&c.addJ>=addR-10&&Math.abs(c.onF-ckF)<=Math.round(0.07/hs));
+        for(let i=0;i<17&&!other;i++){if(i===rj)continue;let lo=1e9;for(let t=ckF-Math.round(0.05/hs);t<=ckF;t++)lo=Math.min(lo,this.H(i,t));
+          const hi=Math.min(this.H(i,Math.min(f,ckF+Math.round(0.07/hs))),this.H(i,Math.min(f,ckF+Math.round(0.12/hs)))+(OTHER_HOLD?0:99));if(hi-lo>=8&&hi>=aft-15)other=true}
+        // (a thumb stopping the tine before re-plucking it also clicks and jolts the overtone, but then the ring drops
+        // after that click; when the pluck itself is released, the dip comes before the click)
+        // (judged on the unsmoothed level: when a touch stops the tine, its ring is still falling well after the click)
+        let rMin=1e9,rF=ckF;for(let t=ckF-Math.round(0.06/hs);t<=Math.min(f,ckF+Math.round(0.14/hs));t++){const v=this.R(rj,t);if(v<rMin){rMin=v;rF=t}}
+        const touch=bef-dip>=3&&rF>ckF+Math.round(0.06/hs);
+        if(!other&&((bef-dip>=3&&aft-dip>=1.5&&!touch)||(modeJump>=8&&!touch))){
+          const addJ=db(Math.max(pw(aft)-pw(dip),pw(aft)*0.1));pre[rj]=dip;peak[rj]=aft;pkF[rj]=aF;
+          cands.push({j:rj,score:addJ,addJ,off:this.pitchLock(rj,Math.max(dF,f-Math.round(0.06/hs)),f).off,lim:this.tol(rj),F:{e:0,up:0,down:0},onF:ckF,rise:aft-dip,ringing:true,repeat:true});
+        }
+      }
+    }
+    if(this.on.debug)this.on.debug({f0,f,byClick:!!ev.byClick,cands:cands.slice(),pre:Array.from(pre.slice(0,17)),peak:Array.from(peak.slice(0,17)),Nd:Array.from(Nd.slice(0,17))});
+    if(!cands.length){this.reject({f0},'no clear tine');return}
+    cands.sort((a,b)=>b.score-a.score);
+    // a loudly ringing tine that only wobbled up a little gains some absolute energy from any nearby pluck. If another
+    // tine jumped far above its own level at the same moment with comparable energy, that one was plucked (it may just ring weakly).
+    if(WOBBLE&&cands[0].ringing&&cands[0].rise<P.rise-1){
+      const k=cands.findIndex(c=>!c.ringing&&c.rise>=10&&c.addJ>=cands[0].addJ-6);
+      if(k>0){const c=cands.splice(k,1)[0];cands.unshift(c)}
+    }
+    // judged again after waiting out a knock test: it stays the tine it was judged to be (a note plucked meanwhile
+    // has its own check and mustn't take this onset over)
+    if(STICKY&&ev.firstJ!==undefined){const k=cands.findIndex(c=>c.j===ev.firstJ);if(k>0)cands.unshift(cands.splice(k,1)[0])}
+    const C0=cands[0],j=C0.j,bF=C0.F,rivals=cands.slice(1).filter(c=>Math.abs(c.onF-C0.onF)>Math.round(0.07/hs)&&(!RIVAL_RISE||c.rise>=P.rise-1));
+    const margin=rivals.length?C0.score-rivals[0].score:99;
+    // the pluck click happens where this tine's rise starts
+    // the pluck click: around where this tine's rise starts (the thumb may press the tine ~0.1 s before releasing it).
+    // A click already claimed by another note doesn't count again.
+    let click=-99,clickF=C0.onF;const own=Math.round(0.03/hs);
+    this.usedClicks=this.usedClicks.filter(c=>f-c<Math.round(2/hs));
+    // (a clipped note keeps spraying high-frequency bursts for ~0.15 s after its pluck: those belong to it too)
+    const tail=Math.round(0.15/hs);
+    const scan=(a,b)=>{for(let t=a;t<=b;t++){if(this.usedClicks.some(c=>t>=c-own&&t<=c+tail))continue;const v=this.hfJump[((t%HL)+HL)%HL];if(v>click){click=v;clickF=t}}};
+    scan(C0.onF-Math.round(0.12/hs),Math.min(f,C0.onF+Math.round(0.15/hs)));scan(f0-Math.round(0.12/hs),Math.min(f,f0+1));
+    ev.clickF=clickF;
+    Object.assign(ev,{j,ringing:pre[j]-Nd[j]>=15,snr:peak[j]-Nd[j],rise:peak[j]-pre[j],fit:bF.e,margin,click,peak:peak[j],peakF:pkF[j],Nd:Nd[j],add:C0.addJ,onF:C0.onF});
+    // how strong a click this player's plucks make (calibration, or learned from clear notes)
+    const cT=this.lenient(j)&&M.clickT&&typeof M.clickT[j]==='number'?M.clickT[j]:null;
+    ev.clickNeed=this.clickMed===null?-99:Math.min(6,this.clickMed-12,cT!==null?cT-12:99);
+    // a tine that is already ringing loudly can only be struck again with a pluck click (otherwise it's beating)
+    const clearRepeat=this.expectRepeat===j&&peak[j]-pre[j]>=6&&click>=2;
+    if(pre[j]-Nd[j]>=15&&!clearRepeat&&click<Math.max(cT!==null&&cT<20?2:4,ev.clickNeed)){this.reject(ev,'no pluck click on a ringing tine');return}
+    // without a calibration, a tine has to be heard once as a clear, clicked pluck before softer sounds count as it
+    // (the note the tab expects next gets a lower bar: the player is almost certainly playing it)
+    if(this.unc(j)&&!this.learned[j]&&!(this.expected(j)?(click>=3&&ev.snr>=P.snr+3):((click>=8&&margin>=6&&ev.snr>=P.snr+6)||(click>=3&&margin>=10&&ev.snr>=P.snr+15)))){this.reject(ev,'not sure about this tine yet');return}
+    ev.down=bF.down;ev.up=bF.up;
+    ev.comb=this.combCount(j,f0,f);
+    if(ev.comb>=2){this.reject(ev,'sounded like a voice or another instrument');return}
+    this.recent.push(ev);
+    const M2=this.model;ev.clickMissing=false;
+    // without calibration the tine's exact pitch is only approximately known
+    ev.offLim=this.unc(j)?C0.lim:null;ev.calLim=this.unc(j)?null:C0.lim;
+    ev.plStart=Math.min(ev.peakF-Math.round(0.01/hs),f-Math.round(0.03/hs));
+    ev.off=this.pitchLock(j,ev.plStart,f).off;
+    const dropNow=ev.peak-this.H(j,f),allow=((M2.decay&&M2.decay[j])||15)*(f-ev.peakF)*hs+4;
+    // fast path only for a convincing pluck click (relative to this player's usual click)
+    const strongClick=click>=(this.clickMed!==null?Math.max(8,this.clickMed-25):8);ev.weakClick=!strongClick;
+    // a tine the tab doesn't expect gets the full listening time before it can count
+    const unexpected=this.practising()&&!this.expected(j);
+    if(!unexpected&&strongClick&&ev.snr>=P.snr+8&&margin>=6&&Math.abs(ev.off)<=(ev.offLim||Math.max(2.5,ev.calLim||0))&&dropNow<=allow){
+      // a tine keeps ringing; a knock only makes the narrow filter ring briefly. Judge on the raw level, 80 ms after its peak.
+      let rp=-1e9,rpF=C0.onF;for(let t=C0.onF;t<=f;t++){const v=this.R(j,t);if(v>rp){rp=v;rpF=t}}
+      const tB=rpF+Math.round(0.14/hs);
+      if(f<tB&&(ev.waits||0)<6){ev.waits=(ev.waits||0)+1;ev.decideAt=tB;ev.firstJ=j;this.recent.pop();this.evs.push(ev);return}
+      const avg=(a)=>db((pw(this.R(j,a))+pw(this.R(j,a-1))+pw(this.R(j,a-2)))/3);
+      const rA=avg(rpF+Math.round(0.07/hs)),rB=avg(tB),dec7=((M2.decay&&M2.decay[j])||15)*0.07;
+      // (notes still being judged are settled first, in the order they were plucked, so the tab sees them in order)
+      if(rA-rB<=dec7+5){const later=this.pend.filter(e=>e.onF>ev.onF);this.pend=this.pend.filter(e=>!later.includes(e));this.flush(f);this.accept(ev,f,'strong');later.forEach(e=>this.confirm(e,f));return}
+    }
+    // everything else must keep ringing at the tine's exact pitch for longer before it counts (voices drift or stop)
+    const wait=ev.weakClick||unexpected?0.3:ev.snr>=P.snr+8?0.12:ev.snr>=P.snr+4?0.2:0.3;
+    ev.susStart=pkF[j]+Math.round(0.04/hs);ev.susEnd=pkF[j]+Math.round(wait/hs);
+    this.pend.push(ev);
+  }
+  // average pitch offset from the band centre (Hz) and how steady the phase rotation is (1 = perfectly steady)
+  pitchLock(j,ta,tb){
+    let sr=0,si=0,sm=0;const o=j*HL;
+    for(let t=ta+1;t<=tb;t++){
+      const a=o+(((t%HL)+HL)%HL),b=o+((((t-1)%HL)+HL)%HL);
+      const xr=this.zr[a],xi=this.zi[a],yr=this.zr[b],yi=this.zi[b];
+      const pr=xr*yr+xi*yi,pi=xi*yr-xr*yi;sr+=pr;si+=pi;sm+=Math.sqrt(pr*pr+pi*pi);
+    }
+    return {off:Math.atan2(si,sr)/(2*Math.PI*this.hs),coh:sm?Math.sqrt(sr*sr+si*si)/sm:0};
+  }
+  // count strong new spectral peaks that the struck tine (and tines already ringing) can't explain.
+  // A tine adds one pitch plus its own overtone; a voice adds a comb of harmonics.
+  combCount(j,f0,f){
+    const N=4096,sr=this.sr,bw=sr/N,M=this.model,end=this.total;
+    const post=ampSpec(this.clip(end-N,N),0,N);
+    const preEnd=end-Math.round(((f-f0)*this.hs+0.08)*sr);
+    const pre=ampSpec(this.clip(preEnd-N,N),0,N);
+    const kj=Math.round(M.bands[j].f/bw),Aj=Math.max(post[kj-1],post[kj],post[kj+1]);
+    const ex=[],fj=M.bands[j].f;
+    for(let h=2;h<=6;h++)ex.push([h*fj*0.985-8,h*fj*1.015+8]); // harmonics of the struck tine (a clipped recording is full of them)
+    for(let i=0;i<17;i++){
+      const fi=M.bands[i].f;ex.push([fi-12,fi+12],[2*fi-8-0.02*fi,2*fi+8+0.02*fi]); // other tines ringing in sympathy
+      const mi=this.modeIdx[i];if(mi>=0&&(i===j||this.lvS[i]-db(this.Np[i])>=6)){const fm=M.bands[mi].f,w=this.expected(j)?0.05:0.03;ex.push([fm*(1-w),fm*(1+w)])}
+    }
+    // the tine the tab expects: its own second vibration mode (about 5-7.5x its pitch, sometimes split in two) is not a
+    // voice, even when calibration didn't find it
+    if(this.modeIdx[j]<0&&this.expected(j))ex.push([4.6*fj,7.6*fj]);
+    // (below ~240 Hz rooms are full of rumble and hum, and no tine rings there)
+    let count=0;const k0=Math.max(Math.ceil(150/bw)+8,Math.ceil(COMB_LO/bw)),k1=Math.floor(3000/bw);
+    for(let k=k0;k<=k1;k++){
+      const v=post[k],d=v-pre[k];
+      if(d<=0.35*Aj||v<post[k-1]||v<post[k+1]||v<post[k-2]||v<post[k+2])continue;
+      const hz=k*bw;if(ex.some(z=>hz>=z[0]&&hz<=z[1]))continue;
+      let nl=0;for(let q=k-8;q<=k+8;q++)nl+=pre[q];nl/=17;
+      if(v>=3*nl)count++;
+    }
+    return count;
+  }
+  // a fresh pluck re-excites the tine's second vibration mode (about 5-7.5x its pitch), which a ringing tine has long lost:
+  // how much stronger that region is just after a click than just before it (dB)
+  overtoneJump(j,ckF){
+    const sr=this.sr,N=2048,bw=sr/N,fj=this.model.bands[j].f,k0=Math.ceil(4.6*fj/bw),k1=Math.min(N/2-2,Math.floor(Math.min(7.6*fj,sr*0.45)/bw));
+    if(k1<=k0+2)return 0;
+    const back=this.frame-ckF,clickS=this.total-back*HOP;   // sample position of the click hop
+    const post=ampSpec(this.clip(clickS+Math.round(0.004*sr),N),0,N),pre=ampSpec(this.clip(clickS-N-Math.round(0.01*sr),N),0,N);
+    // a tine's mode is one clear peak; a thumb touching a ringing tine (a buzz) lifts the whole region instead
+    let a=0,ak=k0,b=0;const reg=[];for(let k=k0;k<=k1;k++){reg.push(post[k]);if(post[k]>a){a=post[k];ak=k}b=Math.max(b,pre[k])}
+    if(a<10*median(reg))return 0;
+    return 20*Math.log10((a+1e-12)/(Math.max(pre[ak-1],pre[ak],pre[ak+1])+1e-12));
+  }
+  flush(f){const p=this.pend;this.pend=[];p.forEach(e=>this.confirm(e,f))}
+  confirm(ev,f){
+    const j=ev.j,hs=this.hs,P=this.P,dec=(this.model.decay&&this.model.decay[j])||15;
+    const t1=Math.min(ev.susEnd,f);let good=0,tot=0;const defs=[];
+    // second look (see below): judged from where the ring had settled
+    const Ls=ev.settle!==undefined?ev.settle+2:1e9;
+    for(let t=ev.susStart;t<=t1;t++){const L=this.H(j,t),ex=Math.min(ev.peak-dec*(t-ev.peakF)*hs,Ls-dec*(t-ev.susStart)*hs);defs.push(ex-L);tot++;if(L-ev.Nd>=3)good++}
+    const off=this.pitchLock(j,ev.plStart,t1).off;ev.off=off;
+    {const mid=Math.round((ev.plStart+t1)/2);ev.drift=Math.abs(this.pitchLock(j,ev.plStart,mid).off-this.pitchLock(j,mid,t1).off)}
+    let ok;
+    if(tot<3)ok=ev.snr>=P.snr+3&&Math.abs(off)<=(ev.offLim||2);
+    else{
+      const md=median(defs),frac=good/tot;ev.frac=frac;ev.md=md;
+      const offLim=ev.offLim||(ev.snr>=P.snr+6?1:0.75)*Math.max(2,ev.calLim||2);
+      ok=frac>=P.susFrac&&md<=P.dropTol&&Math.abs(off)<=offLim;
+      if(ev.weakClick)ok=ok&&frac>=Math.max(P.susFrac,0.85)&&(ev.drift===undefined||ev.drift<=1.5);
+      // fell faster than a tine fades, yet still ringing well above the room at its own pitch: the pluck click may have
+      // inflated the first peak (a weak or partly damped tine). Look again over the next 0.22 s, from where it has settled.
+      // A knock has died into the room noise by now.
+      // Only for a firm pluck click, like your plucks make (voices and taps click far less).
+      const firm=this.lenient(j)&&ev.click>=(this.clickMed!==null?Math.max(15,this.clickMed-10):15);
+      if(!ok&&SETTLE&&firm&&ev.settle===undefined&&frac>=P.susFrac&&md>P.dropTol&&Math.abs(off)<=offLim&&this.H(j,t1)-ev.Nd>=6){
+        ev.settle=this.H(j,t1);ev.susStart=t1;ev.susEnd=t1+Math.round(0.22/hs);this.pend.push(ev);if(this.on.debug2)this.on.debug2(ev);return;
+      }
+    }
+    // a pluck click well after this tine's rise, just as another tine jumped sharply, was that other tine's pluck
+    if(ok&&ev.clickF!==undefined&&ev.onF!==undefined&&ev.clickF-ev.onF>Math.round(0.06/hs)){
+      const a=ev.clickF-2,b=Math.min(f,ev.clickF+12);
+      for(let i=0;i<17;i++)if(i!==j&&this.H(i,b)-this.H(i,a)>=15){ev.click=-99;break}
+    }
+    // a pluck should click like this player's plucks do, unless the ring is unmistakable (very clear, steady, at pitch)
+    if(ok&&ev.click<(ev.clickNeed||-99)&&!(ev.snr>=P.snr+15&&(ev.frac||0)>=0.9&&(ev.drift===undefined||ev.drift<=1))){this.reject(ev,'no pluck click');return}
+    // far quieter than this player's notes: background, not a pluck
+    const sT=this.lenient(j)&&this.model.snrT&&typeof this.model.snrT[j]==='number'?this.model.snrT[j]:null;
+    if(ok&&this.snrMed!==null&&ev.snr<Math.min(P.snr+6,(sT!==null?Math.min(this.snrMed,sT):this.snrMed)-18)){this.reject(ev,'much quieter than your playing');return}
+    // the thumb touching a tine just before plucking it can make another tine ring faintly: that belongs to the pluck
+    if(ok&&this.recent.some(r=>r!==ev&&r.j!==j&&r.onF>ev.onF-Math.round(0.05/hs)&&r.onF<ev.onF+Math.round(0.35/hs)&&r.add>=ev.add+15)){this.reject(ev,'part of another pluck');return}
+    if(ok)this.accept(ev,f,'soft');else this.reject(ev,Math.abs(off)>(ev.offLim||0.75*Math.max(2,ev.calLim||2))?'pitch wandered, not a tine':'didn’t keep ringing like a tine');
+  }
+  // without a calibration, follow each tine's real pitch: nudge its band halfway toward what was heard
+  retune(j,off,gain){
+    const M=this.model,b=M.bands[j],base=stdFreqs()[j],nf=b.f+gain*off;
+    if(Math.abs(cents(nf,base))>70)return;
+    b.f=nf;M.funds[j]=nf;this.bank.setFreq(j,nf,this.sr);
+  }
+  accept(ev,f,how){
+    if(!this.lenient(ev.j)&&!this.sure(ev)){this.reject(ev,'not sure enough to call it a wrong note');return}
+    this.lastWin[ev.j]=f;if(ev.click>=4&&ev.clickF!==undefined)this.usedClicks.push(ev.clickF);
+    // learn how this player plucks (click strength and loudness) from every accepted note
+    if(ev.click>-50){this.clicks.push(ev.click);if(this.clicks.length>25)this.clicks.shift();if(this.clicks.length>=3){this.clickMed=median(this.clicks);this.model.clickMed=this.clickMed}}
+    this.snrs.push(ev.snr);if(this.snrs.length>25)this.snrs.shift();if(this.snrs.length>=3){this.snrMed=median(this.snrs);this.model.snrMed=this.snrMed}
+    const trust=how==='strong'||this.lenient(ev.j);
+    if(trust&&this.unc(ev.j)&&ev.snr>=this.P.snr+6&&Math.abs(ev.off||0)<=(ev.offLim||5)){
+      const first=!this.learned[ev.j]&&((ev.snr>=this.P.snr+8&&ev.click>=8)||(ev.snr>=this.P.snr+15&&ev.click>=3));
+      if(Math.abs(ev.off||0)>0.3)this.retune(ev.j,ev.off,first?1:0.3);
+      if(first){this.learned[ev.j]=1;this.model.learned=Array.from(this.learned)}
+      if(this.on.tuned)this.on.tuned(this.model);
+    }
+    // calibrated tines drift a few cents (temperature, a knock): follow a clear note's pitch, a little at a time
+    else if(trust&&CAL_TRACK&&!this.unc(ev.j)&&ev.snr>=this.P.snr+8&&Math.abs(ev.off||0)>0.4&&Math.abs(ev.off)<=(ev.calLim||2)){this.retune(ev.j,ev.off,0.3);if(this.on.tuned)this.on.tuned(this.model)}
+    const pl=this.pitchLock(ev.j,ev.peakF,Math.min(f,ev.peakF+Math.round(0.1/this.hs)));
+    let drop=0;{const t2=Math.min(f,ev.peakF+Math.round(0.06/this.hs));drop=ev.peak-this.H(ev.j,t2)}
+    const r={ok:true,i:ev.j,snr:ev.snr,fit:ev.fit,click:ev.click,how,t:f*this.hs,on:(ev.clickF!==undefined&&ev.click>=4?Math.min(ev.onF,ev.clickF):ev.onF)*this.hs,off:pl.off,coh:pl.coh,drop60:drop,byClick:!!ev.byClick,frac:ev.frac,md:ev.md,drift:ev.drift,margin:ev.margin,add:ev.add,comb:ev.comb,settled:ev.settle!==undefined};
+    this.last=r;if(this.on.note)this.on.note(r);
+  }
+  reject(ev,why){
+    if(this.recent.length&&this.recent.includes(ev))this.recent=this.recent.filter(r=>r!==ev);const r={ok:false,i:ev.j,snr:ev.snr,why,t:this.frame*this.hs,on:ev.onF!==undefined?ev.onF*this.hs:undefined,down:ev.down,up:ev.up,off:ev.off,lim:ev.offLim||(ev.j!==undefined?this.tol(ev.j):undefined),frac:ev.frac,md:ev.md,comb:ev.comb,click:ev.click};this.last=r;if(this.on.reject)this.on.reject(r)}
+}
+
+/* ---------- calibration analysis ---------- */
+function noiseStats(q){
+  const N=8192,H=2048,half=N>>1,mean=new Float64Array(half),dev=new Float64Array(half),fr=[];
+  for(let s=0;s+N<=q.length;s+=H)fr.push(ampSpec(q,s,N));
+  if(!fr.length)return null;
+  fr.forEach(a=>{for(let k=0;k<half;k++)mean[k]+=a[k]/fr.length});
+  fr.forEach(a=>{for(let k=0;k<half;k++)dev[k]+=Math.abs(a[k]-mean[k])/fr.length});
+  return {mean,dev};
+}
+// One calibration pluck: clip starts `off` samples before the strike.
+// opt.lo/opt.hi: where this tine's pitch can be; opt.near: pitch of this tine's earlier plucks.
+function analyzeCalClip(clip,sr,ns,off,opt){
+  opt=opt||{};
+  const N=8192,bw=sr/N,half=N>>1,lo=opt.lo||200,hi=opt.hi||1700;
+  const pre=ampSpec(clip,off-N-Math.round(0.01*sr),N);
+  const posts=[0.04,0.09,0.14].map(d=>ampSpec(clip,off+Math.round(d*sr),N));
+  const D=new Float64Array(half),Pa=new Float64Array(half);
+  for(let k=0;k<half;k++){Pa[k]=(posts[0][k]+posts[1][k]+posts[2][k])/3;D[k]=Pa[k]-pre[k]}
+  const k0=Math.floor(180/bw),k1=Math.min(half-3,Math.ceil(5200/bw));
+  let mx=0;for(let k=k0;k<=k1;k++)if(D[k]>mx)mx=D[k];
+  const refine=(A,k)=>{const a0=Math.log(Math.max(A[k-1],1e-12)),a1=Math.log(Math.max(A[k],1e-12)),a2=Math.log(Math.max(A[k+1],1e-12)),den=a0-2*a1+a2;return(k+(den?Math.max(-0.5,Math.min(0.5,0.5*(a0-a2)/den)):0))*bw};
+  const peaks=[];
+  for(let k=k0+2;k<=k1-2;k++){
+    const v=D[k];
+    if(v<=0.04*mx)continue;
+    if(ns&&v<4.5*ns.dev[k]+1e-9)continue;
+    if(!(v>=D[k-1]&&v>=D[k+1]&&v>=D[k-2]&&v>=D[k+2]))continue;
+    if(v<2*(Math.max(0,D[k-2])+Math.max(0,D[k+2]))/2)continue;
+    peaks.push({hz:refine(D,k),a:v});
+  }
+  const inR=peaks.filter(p=>p.hz>=lo&&p.hz<=hi);
+  let dBest=inR.length?inR.reduce((b,p)=>p.a>b.a?p:b):null;
+  if(dBest){const sub=inR.find(p=>Math.abs(cents(p.hz*2,dBest.hz))<40&&p.a>=0.25*dBest.a);if(sub)dBest=sub}
+  // re-plucking a tine that is still ringing: its pitch is in both windows, so look at what is ringing near its earlier plucks
+  let nearPk=null;
+  if(opt.near){
+    const ka=Math.max(k0,Math.floor(opt.near*Math.pow(2,-40/1200)/bw)),kb=Math.min(k1,Math.ceil(opt.near*Math.pow(2,40/1200)/bw));
+    let bk=-1;for(let k=ka;k<=kb;k++)if(bk<0||Pa[k]>Pa[bk])bk=k;
+    if(bk>0&&Pa[bk]>=(ns?5*ns.mean[bk]:0)+1e-9)nearPk={hz:refine(Pa,bk),a:Pa[bk]};
+  }
+  let fund=null,viaNear=false;
+  if(dBest&&(!nearPk||dBest.a>=0.3*nearPk.a))fund=dBest;else if(nearPk){fund=nearPk;viaNear=true}
+  // the strongest new pitch nearby belongs to some other tine: the wrong tine was plucked
+  const wide=peaks.filter(p=>p.hz>=(opt.wideLo||lo)&&p.hz<=(opt.wideHi||hi)),dAll=wide.length?wide.reduce((b,p)=>p.a>b.a?p:b):null;
+  // strict (calibrating one tine on its own): the loudest new pitch anywhere on the kalimba has to be this tine,
+  // so plucking its octave neighbour (which makes this one ring faintly in sympathy) isn't taken for it
+  const kal=opt.strict?peaks.filter(p=>p.hz>=190&&p.hz<=1800):[];
+  if(!fund){if(opt.strict&&kal.length)return {conflict:kal.reduce((b,p)=>p.a>b.a?p:b).hz,peaks};return dAll?{conflict:dAll.hz,peaks}:null}
+  // how far a pitch jumped above its own level before the pluck: the plucked tine jumps a lot (even a weak one);
+  // a neighbour that was still ringing, or was brushed by the thumb, hardly does
+  const jump=hz=>{const k=Math.round(hz/bw);return 20*Math.log10(Math.max(Pa[k-1],Pa[k],Pa[k+1])/Math.max(pre[k-1],pre[k],pre[k+1],1e-12))};
+  const jf=jump(fund.hz),known=opt.known||[],isKnown=hz=>known.some(k=>k&&Math.abs(cents(hz,k))<40);
+  const brushed=p=>(jf>=20&&jump(p.hz)<8)||(jf>=12&&isKnown(p.hz)&&p.a<3*fund.a);
+  if(dAll&&Math.abs(cents(dAll.hz,fund.hz))>50&&dAll.a>=0.35*fund.a&&!brushed(dAll))return {conflict:dAll.hz,fund:fund.hz,peaks};
+  if(opt.strict){
+    for(const p of kal){
+      if(Math.abs(cents(p.hz,fund.hz))<=50||p.hz>4.4*fund.hz)continue; // itself, or its own overtone
+      const r=p.hz/fund.hz,harm=Math.abs(r-Math.round(r))<0.02*Math.round(r)&&Math.round(r)>=2;
+      if(p.a>=(harm?4:2.5)*fund.a&&!brushed(p))return {conflict:p.hz,fund:fund.hz,peaks};
+    }
+  }
+  // the tine's second vibration mode: strongest new peak 4.6–7.6× the fundamental, measured right after the strike
+  let f2=null;const N2=4096,bw2=sr/N2;
+  const e=ampSpec(clip,off+Math.round(0.004*sr),N2),ep=ampSpec(clip,off-N2-Math.round(0.01*sr),N2);
+  const m0=Math.ceil(4.6*fund.hz/bw2),m1=Math.min((N2>>1)-2,Math.floor(Math.min(7.6*fund.hz,sr*0.45)/bw2));
+  if(m1>m0+4){
+    const af=e[Math.round(fund.hz/bw2)],vals=[];for(let k=m0;k<=m1;k++)vals.push(ep[k]);
+    const med=median(vals)||1e-9;let bk=-1,bv=0;
+    for(let k=m0+1;k<m1;k++){const r=k*bw2/fund.hz;if(Math.abs(r-5)<0.08||Math.abs(r-7)<0.1)continue;const v=e[k]-ep[k];if(v>bv&&e[k]>=e[k-1]&&e[k]>=e[k+1]){bv=v;bk=k}}
+    if(bk>0&&bv>6*med&&bv>0.02*af){
+      const a0=Math.log(e[bk-1]+1e-12),a1=Math.log(e[bk]+1e-12),a2=Math.log(e[bk+1]+1e-12),den=a0-2*a1+a2;
+      f2=(bk+(den?Math.max(-0.5,Math.min(0.5,0.5*(a0-a2)/den)):0))*bw2;
+    }
+  }
+  // re-plucking a ringing tine counts only with proof of a new pluck: its overtone came back, or fresh energy at its pitch
+  if(viaNear&&!f2){const kf=Math.round(fund.hz/bw);if(Math.max(D[kf-1],D[kf],D[kf+1])<0.25*Pa[kf])return null}
+  return {fund:fund.hz,amp:fund.a,f2,peaks};
+}
+// run the band trackers over a recording
+function trace(sr,bands,x){
+  const bank=new Bank(sr,bands),nb=bands.length,F=Math.floor(x.length/HOP);
+  const lv=Array.from({length:nb},()=>new Float32Array(F)),out=new Float32Array(nb),hf=new Float32Array(F);
+  const c=hpCoef(sr,4000,0.707);let z1=0,z2=0,z3=0,z4=0,base=null,hp1=0,hp2=0;
+  for(let f=0;f<F;f++){
+    bank.run(x,f*HOP,HOP,out);for(let i=0;i<nb;i++)lv[i][f]=out[i];
+    let eh=0,sub=0,subMax=0;for(let k=f*HOP,q=0;k<(f+1)*HOP;k++,q++){const v=x[k];const y=c.b0*v+z1;z1=c.b1*v-c.a1*y+z2;z2=c.b2*v-c.a2*y;const u=c.b0*y+z3;z3=c.b1*y-c.a1*u+z4;z4=c.b2*y-c.a2*u;eh+=u*u;sub+=u*u;if((q&63)===63){if(sub>subMax)subMax=sub;sub=0}}
+    const hm=db(eh/HOP),h=db(subMax/64);if(base===null){base=hm;hp1=h;hp2=h}base+=(hm<base+6?0.03:0.003)*(hm-base);hf[f]=Math.min(h-base,h-Math.min(hp1,hp2));hp2=hp1;hp1=h;
+  }
+  const W=Math.max(1,Math.round(0.06*sr/HOP));
+  for(let i=0;i<nb;i++){const a=lv[i],p=Float64Array.from(a,pw);for(let f=0;f<F;f++){let s=0,c=0;for(let k=0;k<W&&f-k>=0;k++){s+=p[f-k];c++}a[f]=db(s/c)}}
+  return {lv,hf,F};
+}
+// Learn each tine's fingerprint as the band trackers see it: how much every band
+// (neighbours, octaves, overtone bands) moves when that tine is struck.
+// the room's level in every band, from a stretch of quiet
+function noiseFor(sr,bands,quiet){
+  if(!quiet||quiet.length<=sr*0.6)return null;
+  const hs=HOP/sr,qt=trace(sr,bands,quiet),a=Math.round(0.3/hs),out=[];
+  for(let i=0;i<bands.length;i++){let s=0,c=0;for(let f=a;f<qt.F;f++){s+=pw(qt.lv[i][f]);c++}out.push(db(s/Math.max(c,1)))}
+  return out;
+}
+// One tine's fingerprint (how every band moves when it is struck), its decay, and click/level figures, from its plucks
+function tineRow(sr,bands,j,clips,off,noise){
+  const hs=HOP/sr,nb=bands.length,rows=[],dec=[],clk=[],clickAbs=[],snrAbs=[];
+  for(const clip of (clips||[])){
+    const tr=trace(sr,bands,clip),oF=Math.round(off/HOP);
+    // same time span live detection looks at when it judges a strike
+    const pa=oF-Math.round(0.12/hs),pb=oF-Math.round(0.02/hs),ka=oF,kb=Math.min(tr.F-1,oF+Math.round(0.17/hs));
+    const add=new Float64Array(nb),sig=new Float64Array(nb),pk=new Float64Array(nb),busy=new Uint8Array(nb);let pkF=ka,preJ=0;
+    for(let i=0;i<nb;i++){
+      let s=0,c=0;for(let t=pa;t<=pb;t++){s+=pw(tr.lv[i][t]);c++}
+      let pre=db(s/c);if(noise)pre=Math.max(pre,noise[i]);
+      busy[i]=noise?(pre-noise[i]>10?1:0):0; // still ringing from an earlier pluck: can't bound its leakage here
+      let a0=ka;
+      if(i===j){ // measure the struck tine from the thumb's damping dip, like live detection
+        let dip=1e9;for(let t=oF-Math.round(0.08/hs);t<=oF+Math.round(0.04/hs);t++)if(tr.lv[i][t]<dip){dip=tr.lv[i][t];a0=t}
+        pre=Math.max(Math.min(pre,dip),noise?noise[i]:-1e9);
+      }
+      let mx=-1e9,mf=a0;for(let t=a0;t<=kb;t++){const v=tr.lv[i][t];if(v>mx){mx=v;mf=t}}
+      pk[i]=mx;sig[i]=mx-pre;add[i]=i===j?db(Math.max(pw(mx)-pw(pre),pw(mx)*0.1)):db(Math.max(pw(mx)-pw(pre),1e-30));
+      if(i===j){pkF=mf;preJ=pre}
+    }
+    if(sig[j]<3)continue; // this pluck didn't clearly rise above its own ring: not usable for the fingerprint
+    rows.push({add,sig,pk,busy});
+    const t3=Math.min(tr.F-1,pkF+Math.round(0.3/hs)),dt=(t3-pkF)*hs;
+    if(dt>0.1)dec.push(Math.max(2,Math.min(60,(pk[j]-tr.lv[j][t3])/dt)));
+    let ck=-99;for(let t=oF-3;t<=oF+3;t++)ck=Math.max(ck,tr.hf[t]);
+    clk.push(ck-(pk[j]-preJ));clickAbs.push(ck);if(noise)snrAbs.push(pk[j]-noise[j]);
+  }
+  const V=new Array(nb).fill(-60),C=new Array(nb).fill(1);V[j]=0;C[j]=0;
+  if(rows.length)for(let i=0;i<nb;i++){
+    if(i===j)continue;
+    const unc=rows.filter(r=>r.sig[i]>=3).map(r=>r.add[i]-r.add[j]);
+    const quiet=rows.filter(r=>r.sig[i]<3&&!r.busy[i]);
+    if(unc.length&&unc.length>=quiet.length){V[i]=median(unc);C[i]=0}
+    else if(quiet.length){V[i]=Math.max(...quiet.map(r=>r.pk[i]-r.add[j]));C[i]=1}
+    else{V[i]=-40;C[i]=2} // unknown: the band was busy in every pluck
+  }
+  return {V:V.map(v=>Math.round(v*10)/10),C,decay:dec.length?median(dec):null,clickRel:clk.length?median(clk):-10,clickAbs,snrAbs,used:rows.length};
+}
+function buildModel(sr,funds,f2s,clips,off,quiet){
+  const bands=makeBands(funds,f2s,sr),noise=noiseFor(sr,bands,quiet);
+  const tplV=[],tplC=[],decay=[],clickRel=[],clickAbs=[],snrAbs=[],snrT=[],clickT=[];
+  for(let j=0;j<17;j++){
+    const r=tineRow(sr,bands,j,clips[j],off,noise);
+    tplV.push(r.V);tplC.push(r.C);decay.push(r.decay===null?15:r.decay);clickRel.push(r.clickRel);
+    // how loud and how clicky this tine's own plucks are (low tines can be far quieter for a phone microphone)
+    snrT.push(r.snrAbs.length?Math.round(median(r.snrAbs)*10)/10:null);clickT.push(r.clickAbs.length?Math.round(median(r.clickAbs)*10)/10:null);
+    clickAbs.push(...r.clickAbs);snrAbs.push(...r.snrAbs);
+  }
+  return {v:4,sr,funds:funds.slice(),f2s:(f2s||[]).slice(),bands,tplV,tplC,decay,clickRel,noise,snrT,clickT,
+    clickMed:clickAbs.length>=3?median(clickAbs):undefined,snrMed:snrAbs.length>=3?median(snrAbs):undefined};
+}
+// Calibrate one tine inside an existing model: a full calibration, or the uncalibrated starting model.
+// Its band moves to the measured pitch (and overtone), and its fingerprint, decay and click are re-measured.
+function updateModelTine(sr,model,j,clips,off,quiet,fund,f2){
+  const m=JSON.parse(JSON.stringify(model)),old=m.bands[j].f;
+  m.funds[j]=fund;m.bands[j].f=fund;
+  const mi=m.bands.findIndex(b=>b.kind===1&&b.tine===j);
+  if(f2&&mi>=0){m.bands[mi].f=f2;if(m.f2s)m.f2s[j]=f2}
+  setWidths(m.bands);
+  // what the other tines leak into this band was measured at the old pitch: if it moved a lot, treat that as unknown
+  if(Math.abs(cents(fund,old))>25)for(let i=0;i<17;i++)if(i!==j)m.tplC[i][j]=2;
+  // room noise: the short quiet before this calibration may still hold some ringing (ringing only ever adds),
+  // so take the quieter of it and the full calibration's measurement; the stored room noise stays as it was
+  let nz=noiseFor(sr,m.bands,quiet);
+  if(m.noise)nz=nz?nz.map((v,i)=>Math.min(v,m.noise[i])):m.noise;
+  const r=tineRow(sr,m.bands,j,clips,off,nz);
+  if(r.used){m.tplV[j]=r.V;m.tplC[j]=r.C;m.clickRel[j]=r.clickRel;if(r.decay!==null)m.decay[j]=r.decay;
+    m.snrT=(m.snrT||new Array(17).fill(null)).slice();m.clickT=(m.clickT||new Array(17).fill(null)).slice();
+    if(r.snrAbs.length)m.snrT[j]=Math.round(median(r.snrAbs)*10)/10;if(r.clickAbs.length)m.clickT[j]=Math.round(median(r.clickAbs)*10)/10}
+  m.learned=(m.learned||new Array(17).fill(0)).slice();m.learned[j]=1;
+  m.calibrated=(m.calibrated||new Array(17).fill(0)).slice();m.calibrated[j]=1;
+  if(m.uncal){m.uncal=m.uncal.slice();m.uncal[j]=0}
+  return m;
+}
+// Replay the calibration plucks through a fresh engine: did each one come out as the right tine?
+function selfCheck(sr,model,clips,off){
+  return clips.map((cl,j)=>{
+    let ok=0;const got=[];
+    (cl||[]).forEach(clip=>{
+      const E=new Engine(sr);E.setModel(model);E.expect=j;E.quietUntil=Math.round((off/sr-0.12)/E.hs);
+      const notes=[];E.on.note=r=>notes.push(r);E.push(clip);
+      const hit=notes.filter(r=>r.t>=off/sr-0.01);
+      if(hit.some(r=>r.i===j))ok++;else got.push(hit.length?hit[0].i:-1);
+    });
+    return {j,ok,n:(cl||[]).length,got};
+  });
+}
+function synthPluck(sr,f,len,off,amp){
+  let seed=12345;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+  const x=new Float32Array(len),tau=1.6*Math.pow(261.6/f,0.7);
+  for(let n=0;n<len;n++){
+    x[n]=(rnd()-0.5)*2e-4;const t=(n-off)/sr;
+    if(t>=0)x[n]+=amp*Math.exp(-t/tau)*(1-Math.exp(-t/0.002))*Math.sin(2*Math.PI*f*t)+(t<0.012?amp*0.6*Math.exp(-t/0.0015)*(rnd()-0.5)*2:0);
+  }
+  return x;
+}
+// Used until the person calibrates: standard C tuning, fingerprints from an idealised tine.
+function defaultModel(sr){
+  const fs=stdFreqs(),off=Math.round(0.35*sr),len=Math.round(1.1*sr);
+  const m=buildModel(sr,fs,fs.map(()=>null),fs.map(f=>[synthPluck(sr,f,len,off,0.1)]),off,null);
+  m.isDefault=true;m.noise=null;delete m.clickMed;delete m.snrMed; // nothing known about this player yet
+  m.decay=m.decay.map(d=>d*1.6); // real tines (and their beating) fade faster than the idealised one
+  return m;
+}
+/* ---------- calibration session (no DOM): measure room, 3 plucks per tine, learn, self-check ---------- */
+const NAMES=['C','D','E','F','G','A','B'];
+const tineName=i=>NAMES[i%7]+(4+Math.floor(i/7));
+const tineSym=i=>(i%7+1)+(Math.floor(i/7)?' with '+Math.floor(i/7)+' dot'+(Math.floor(i/7)>1?'s':''):'');
+const tineWhere=i=>i===0?'the long centre tine':`${i%2?'left':'right'} of centre, ${Math.ceil(i/2)}${['','st','nd','rd'][Math.ceil(i/2)]||'th'} out`;
+class CalSession{
+  constructor(E){
+    this.E=E;this.sr=E.sr;this.off=Math.round(0.6*this.sr);this.len=Math.round(1.35*this.sr);
+    this.phase='idle';this.onMsg=()=>{};this.onChange=()=>{};this.onDone=()=>{};this.reset();
+  }
+  reset(){this.quietWaits=0;this.lastPluck=-1e12;this.fund=new Array(17).fill(null);this.f2=new Array(17).fill(null);this.clips=new Array(17).fill(null);this.plucks=[];this.pending=[];this.idx=0;this.single=false;this.one=false;this.base=null;this.known=null;this.skipped=new Array(17).fill(false);this.fails=0;this.check=null;this.model=null;this.needCompute=false}
+  msg(t,k){this.onMsg(t,k||'')}
+  start(){this.reset();this.phase='quiet';this.quietStart=this.E.total;this.msg('Measuring your room. Stay quiet for 2 seconds…');this.onChange()}
+  // Calibrate just tine j, inside the model in use now (a full calibration, or the uncalibrated start)
+  startOne(j,base){
+    this.reset();this.one=true;this.base=base;this.idx=j;
+    // pitches already measured (by a calibration, or learned from playing): they bound where this tine can be
+    const meas=i=>!base.isDefault||(base.learned&&base.learned[i])||(base.calibrated&&base.calibrated[i]);
+    this.known=base.funds.map((f,i)=>i!==j&&meas(i)?f:null);
+    this.phase='quiet';this.quietStart=this.E.total;
+    this.msg(`Calibrating ${tineSym(j)} (${tineName(j)}) on its own. First, stay quiet for 2 seconds…`);this.onChange();
+  }
+  cancel(){if(this.phase!=='quiet'&&this.phase!=='tines')return false;const one=this.one;this.reset();this.phase='idle';this.msg(one?'Stopped. That tine was left as it was.':'Calibration stopped. Nothing was changed.');this.onChange();return true}
+  // which tine a pitch belongs to (within 60 cents), using the pitches the app currently listens for
+  whichTine(hz){const F=this.base?this.base.funds:stdFreqs();let b=-1,bd=60;F.forEach((f,i)=>{const d=Math.abs(cents(hz,f));if(d<bd){bd=d;b=i}});return b}
+  onset(s){
+    if(this.phase==='tines')this.pending.push(s);
+    // a sound during the quiet measurement would spoil the room-noise picture: start it again
+    else if(this.phase==='quiet'){this.quietStart=this.E.total;this.msg('Heard a sound. Stay quiet for 2 seconds…','bad')}
+  }
+  tick(){
+    const E=this.E,sr=this.sr;
+    if(this.phase==='quiet'&&E.total-this.quietStart>=Math.round(2.05*sr)){
+      // a tine still ringing (say, the one you just tried) would be taken for room noise: wait for it, for a few seconds at most
+      const ring=this.ringing();
+      if(ring.length&&(this.quietWaits=(this.quietWaits||0)+1)<=4){
+        this.quietStart=E.total;const r=ring.slice(0,3).map(tineSym).join(', '),pl=ring.length>1;
+        this.msg(`Waiting for ${r} to stop ringing. Touch ${pl?'those tines':'that tine'} to quiet ${pl?'them':'it'}…`,'bad');this.onChange();return;
+      }
+      const n=Math.round(2*sr);this.quiet=E.clip(E.total-n,n);this.ns=noiseStats(this.quiet);
+      this.phase='tines';this.pending=[];this.msg(`Room measured. Pluck ${tineSym(this.idx)} (${tineName(this.idx)}) three times, letting it ring about a second each time.`,'ok');this.onChange();
+    }
+    while(this.pending.length&&this.pending[0]-this.off+this.len<=E.total){
+      const s=this.pending.shift();
+      if(this.phase!=='tines'||s-this.lastPluck<Math.round(0.45*sr))continue; // one pluck can set off several onsets
+      if(this.pluck(E.clip(s-this.off,this.len)))this.lastPluck=s;
+    }
+  }
+  // tines ringing clearly above the room right now (as the running engine sees it)
+  ringing(){
+    const E=this.E;if(!E.bank||!E.model||E.frame-E.bankStart<Math.round(1/E.hs))return [];
+    const out=[],w=Math.round(0.3/E.hs);
+    for(let i=0;i<17;i++){let s=0;for(let k=0;k<w;k++)s+=pw(E.H(i,E.frame-1-k));if(db(s/w)-E.noiseDb(i)>=10)out.push(i)}
+    return out;
+  }
+  shift(){const d=[];this.fund.forEach((f,i)=>{if(f)d.push(cents(f,stdFreqs()[i]))});return d.length?median(d):null}
+  // where tine j's pitch may be when calibrating it on its own: between its neighbours, staying 40 cents clear of a
+  // neighbour whose pitch is known, and at most halfway to one that isn't
+  oneRange(j){
+    const STD=stdFreqs(),kn=this.known;let lo=STD[j]*Math.pow(2,-5/12),hi=STD[j]*Math.pow(2,5/12);
+    const mLo=j>0?Math.sqrt(STD[j-1]*STD[j]):lo,mHi=j<16?Math.sqrt(STD[j+1]*STD[j]):hi;
+    if(j>0)lo=Math.max(lo,kn[j-1]?kn[j-1]*Math.pow(2,40/1200):mLo);
+    if(j<16)hi=Math.min(hi,kn[j+1]?kn[j+1]*Math.pow(2,-40/1200):mHi);
+    if(hi<=lo*1.01){lo=mLo;hi=mHi}
+    return {lo,hi};
+  }
+  pluck(clip){
+    const j=this.idx,STD=stdFreqs(),one=this.one;
+    const near=this.plucks.length?median(this.plucks.map(p=>p.f)):null;
+    let opt;
+    if(one){const R=this.oneRange(j);opt={lo:R.lo,hi:R.hi,wideLo:STD[j]*Math.pow(2,-5/12),wideHi:STD[j]*Math.pow(2,5/12),strict:true,near,known:this.known}}
+    else{
+      const prevF=this.fund.slice(0,j).reverse().find(Boolean);
+      opt={lo:Math.max(prevF?prevF*Math.pow(2,40/1200):0,STD[j]*Math.pow(2,-5/12)),hi:STD[j]*Math.pow(2,5/12),wideLo:STD[j]*Math.pow(2,-5/12),near,known:this.fund.map((f,i)=>i===j?null:f)};
+    }
+    const r=analyzeCalClip(clip,this.sr,this.ns,this.off,opt);
+    if(!r){
+      // a pluck (it set off the onset) but no ring at this tine's pitch: after the second time, say so plainly
+      this.fails++;
+      if(this.fails>=2)this.msg(`I hear your pluck, but ${tineSym(j)} (${tineName(j)}) is hardly ringing: its note stops almost at once. Check that nothing is touching it (a finger, the case, the tine beside it) and pluck near its tip${one?'.':', or skip it for now and calibrate it on its own later.'}`,'bad');
+      else this.msg('Heard something, but not a clear ringing note. Pluck firmly and let it ring.','bad');
+      this.onChange();return}
+    if(r.conflict){
+      if(one){const t=this.whichTine(r.conflict);
+        this.msg(t>=0&&t!==j?`That was ${tineSym(t)} (${tineName(t)}). Pluck ${tineSym(j)}: ${tineWhere(j)}.`:`That sounded like a different tine (${Math.round(r.conflict)} Hz). Pluck ${tineSym(j)} (${tineName(j)}): ${tineWhere(j)}.`,'bad');return}
+      const done=this.fund.findIndex((h,i)=>h&&i!==j&&Math.abs(cents(r.conflict,h))<50);
+      this.msg(done>=0?`That was ${tineSym(done)} (${tineName(done)}), which is already done. Pluck ${tineSym(j)}: ${tineWhere(j)}.`:`That sounded like a different tine (${Math.round(r.conflict)} Hz). Pluck ${tineSym(j)}: ${tineWhere(j)}.`,'bad');return}
+    const f=r.fund;
+    if(!one){
+      for(let i=0;i<17;i++)if(i!==j&&this.fund[i]&&Math.abs(cents(f,this.fund[i]))<35){this.msg(`That was ${tineSym(i)} (${tineName(i)}), which is already done. Pluck ${tineSym(j)}: ${tineWhere(j)}.`,'bad');return}
+      const sh=this.shift();
+      if(sh!==null&&Math.abs(cents(f,STD[j])-sh)>75){this.msg(`That sounded like a different tine (${Math.round(f)} Hz). Pluck ${tineSym(j)}: ${tineWhere(j)}.`,'bad');return}
+    }
+    this.plucks.push({f,f2:r.f2,clip});this.fails=0;
+    if(this.plucks.length<3){this.msg(`Got pluck ${this.plucks.length} (${Math.round(f)} Hz). ${3-this.plucks.length} more.`);this.onChange();return true}
+    const fm=median(this.plucks.map(p=>p.f)),bad=this.plucks.findIndex(p=>Math.abs(cents(p.f,fm))>30);
+    if(bad>=0){this.plucks.splice(bad,1);this.msg('One pluck didn’t match the others (maybe a buzz or a neighbouring tine). Pluck once more.','bad');this.onChange();return true}
+    this.fund[j]=fm;
+    const f2v=this.plucks.map(p=>p.f2).filter(Boolean);this.f2[j]=null;
+    if(f2v.length>=2){const m=median(f2v),ag=f2v.filter(v=>Math.abs(cents(v,m))<50);if(ag.length>=2)this.f2[j]=median(ag)}
+    this.clips[j]=this.plucks.map(p=>p.clip);this.plucks=[];
+    const next=this.nextTine();
+    if(one||this.single||next<0){this.single=false;this.phase='analysing';this.needCompute=true;this.msg(one?'Measuring that tine…':'Learning how your tines sound…');this.onChange();return true}
+    this.idx=next;this.msg(`Saved ${tineSym(j)} at ${Math.round(fm)} Hz. Next: ${tineSym(next)} (${tineName(next)}), ${tineWhere(next)}.`,'ok');this.onChange();return true;
+  }
+  compute(){
+    this.needCompute=false;
+    if(this.one){this.computeOne();return}
+    // skipped tines: the pitch the app already knew (learned or calibrated before), else standard pitch shifted like the rest
+    const STD=stdFreqs(),sh=this.shift()||0,b=this.E.model,sk=this.skipped,fund=this.fund.slice(),f2=this.f2.slice(),learned=new Array(17).fill(0);
+    sk.forEach((x,j)=>{if(!x)return;const known=b&&(!b.isDefault&&!(b.uncal&&b.uncal[j])||(b.learned&&b.learned[j])||(b.calibrated&&b.calibrated[j]));
+      fund[j]=known?b.funds[j]:STD[j]*Math.pow(2,sh/1200);learned[j]=known?1:0;f2[j]=null});
+    const m=buildModel(this.sr,fund,f2,this.clips.map(c=>c||[]),this.off,this.quiet);
+    if(sk.some(Boolean)){m.uncal=sk.map(x=>x?1:0);m.learned=learned}
+    this.check=selfCheck(this.sr,m,this.clips,this.off);this.model=m;this.phase='done';
+    const failed=this.check.filter(c=>c.ok*2<c.n),ns=sk.filter(Boolean).length;
+    const snrs=(m.snrT||[]).filter(v=>typeof v==='number'),mid=snrs.length?median(snrs):null;
+    const why=c=>{const got=c.got.filter(g=>g>=0);const q=mid!==null&&typeof m.snrT[c.j]==='number'&&m.snrT[c.j]<mid-15;
+      return (got.length?` (came out as ${tineSym(got[0])})`:'')+(q?`; it reaches your microphone ${Math.round(mid-m.snrT[c.j])} dB quieter than your other tines, so pluck it a little more firmly, or move the phone closer to the low tines`:'')};
+    const skipNote=ns?` Skipped: ${sk.map((x,j)=>x?tineSym(j):null).filter(Boolean).join(', ')} (I’ll keep learning ${ns>1?'those':'it'} as you play; tap ${ns>1?'one':'it'} below to calibrate it on its own).`:'';
+    if(!failed.length)this.msg(`${ns?17-ns+' tines':'All 17 tines'} learned, and every calibration pluck replays as the right tine.${skipNote}`,ns?'':'ok');
+    else this.msg(`Learned and saved. ${failed.length===1?'One tine':failed.length+' tines'} didn’t replay cleanly: ${failed.map(c=>tineSym(c.j)+why(c)).join(', ')}. Tap ${failed.length===1?'it':'one'} below to redo it, or just start playing.${skipNote}`,'bad');
+    this.onChange();this.onDone(m,this.check);
+  }
+  computeOne(){
+    const j=this.idx,b=this.base,fj=this.fund[j];
+    // how closely the app was listening for this tine before (to explain why it may have been missed)
+    const tolBefore=b.isDefault?((b.learned&&b.learned[j])||(b.calibrated&&b.calibrated[j])?3:Math.max(5,0.9*b.bands[j].fc,TOL_UNLEARNED*b.bands[j].f)):2;
+    const was=b.funds[j],m=updateModelTine(this.sr,b,j,this.clips[j],this.off,this.quiet,fj,this.f2[j]);
+    const cl=new Array(17).fill(null);cl[j]=this.clips[j];
+    // replay with the room noise known (uncalibrated models have none stored): the quieter of the measured quiet
+    // and what the running engine has learned, so the earlier plucks' ringing isn't mistaken for the room
+    let nz=noiseFor(this.sr,m.bands,this.quiet);
+    if(this.E.Np&&this.E.Np.length===m.bands.length){const live=Array.from(this.E.Np,v=>db(v));nz=nz?nz.map((v,i)=>Math.min(v,live[i])):live}
+    const c=selfCheck(this.sr,m.noise||!nz?m:Object.assign({},m,{noise:nz}),cl,this.off)[j];
+    this.model=m;this.check=[c];this.phase='done';
+    const vs=cents(fj,stdFreqs()[j]),d=cents(fj,was);
+    const tune=Math.abs(vs)<3?'right on standard pitch':`${Math.round(Math.abs(vs))} cents ${vs>0?'sharp':'flat'} of standard`;
+    const why=Math.abs(fj-was)>tolBefore?` I was listening for it ${Math.round(Math.abs(d))} cents too ${d>0?'low':'high'}, which is why it was being missed.`:'';
+    if(c.ok*2>=c.n)this.msg(`${tineSym(j)} (${tineName(j)}) calibrated at ${fj.toFixed(1)} Hz, ${tune}.${why} Pluck it to test it.`,'ok');
+    else this.msg(`${tineSym(j)} (${tineName(j)}) saved at ${fj.toFixed(1)} Hz, but its plucks didn’t replay cleanly${c.got.length&&c.got[0]>=0?` (one came out as ${tineSym(c.got[0])})`:''}. Tap it below to try again: pluck firmly and let it ring.`,'bad');
+    this.onChange();this.onDone(m,this.check,j);
+  }
+  nextTine(){return this.fund.findIndex((x,i)=>!x&&!this.skipped[i])}
+  // leave a tine out of the full calibration (it keeps the pitch the app already knows, and can be calibrated on its own later)
+  skip(){
+    if(this.phase!=='tines'||this.one||this.single)return false;
+    const j=this.idx;this.skipped[j]=true;this.plucks=[];this.pending=[];this.fails=0;
+    const next=this.nextTine();
+    if(next<0){this.phase='analysing';this.needCompute=true;this.msg('Learning how your tines sound…');this.onChange();return true}
+    this.idx=next;this.msg(`Skipped ${tineSym(j)}. Next: ${tineSym(next)} (${tineName(next)}), ${tineWhere(next)}.`,'ok');this.onChange();return true;
+  }
+  canRedo(j){return !this.one&&this.clips.every((c,i)=>i===j||c||this.skipped[i])}
+  redo(j){if(!this.canRedo(j))return false;this.skipped[j]=false;this.fails=0;this.idx=j;this.single=true;this.fund[j]=null;this.f2[j]=null;this.clips[j]=null;this.plucks=[];this.pending=[];this.phase='tines';this.msg(`Pluck ${tineSym(j)} (${tineName(j)}) three times: ${tineWhere(j)}.`);this.onChange();return true}
+  back(){if(this.phase!=='tines'||this.single||this.one)return;if(this.idx>0)this.idx--;this.skipped[this.idx]=false;this.fails=0;this.fund[this.idx]=null;this.f2[this.idx]=null;this.clips[this.idx]=null;this.plucks=[];this.pending=[];this.msg(`Pluck ${tineSym(this.idx)} (${tineName(this.idx)}) three times.`);this.onChange()}
+  again(){this.plucks=[];this.pending=[];this.fails=0;this.msg(`Pluck ${tineSym(this.idx)} three times.`);this.onChange()}
+}
+/* ---------- following the tab ---------- */
+// Lines up every note heard so far with the tab (an edit distance), so a missed note, a wrong note, an extra sound or a
+// replayed note never throws the position off for long, and an early call is revised when later notes explain it better.
+// A repeat of the note just played is easily missed (it's still ringing), so skipping one costs little; skipping any
+// other note costs a little less than a wrong note. An extra detection of the note just heard is an echo, not a mistake.
+// Hints are plucks the detector heard but wouldn't vouch for: they may fill a gap in the tab, but are never wrong notes.
+const FOL={skip:0.95,skipRep:0.35,sub:1,ins:1,insDup:0.45,hint:0.25,alt:0.5,order:false};
+class Follower{
+  constructor(tab){this.tab=tab.slice();this.heard=[];this.soft=[];this.times=[];this.latest=-1;this.solve()}
+  add(i,soft,t){
+    // (off: onset times of soft notes aren't reliable enough yet; notes are taken in the order they're recognised)
+    let k=this.heard.length;if(FOL.order&&typeof t==='number')while(k>0&&typeof this.times[k-1]==='number'&&this.times[k-1]>t)k--;
+    this.heard.splice(k,0,i);this.soft.splice(k,0,soft);this.times.splice(k,0,t);
+    if(!soft)this.latest=k;else if(this.latest>=k)this.latest++;
+    return this.solve();
+  }
+  hear(i,t){return this.add(i,false,t)}
+  hint(i,t){return this.add(i,true,t)}
+  skipCost(q){const t=this.tab;return q>0&&t[q]===t[q-1]?FOL.skipRep:FOL.skip}
+  solve(){
+    const t=this.tab,n=t.length,h=this.heard,sf=this.soft,m=h.length,W=n+1;
+    // D[k][q]: cheapest way for the first k notes heard to account for the first q notes of the tab
+    // B: 0 = heard note played as tab note q-1 (right or wrong), 1 = tab note q-1 not heard, 2 = extra sound (or an unused hint)
+    const D=new Float64Array((m+1)*W),B=new Uint8Array((m+1)*W);
+    for(let q=1;q<=n;q++){D[q]=D[q-1]+this.skipCost(q-1);B[q]=1}
+    // the previous real note heard before each one (for echoes)
+    const prevHard=new Array(m).fill(-1);{let last=-1;for(let k=0;k<m;k++){prevHard[k]=last;if(!sf[k])last=h[k]}}
+    for(let k=1;k<=m;k++){
+      const x=h[k-1],soft=sf[k-1],o=k*W,p=o-W,ins=soft?0:prevHard[k-1]===x?FOL.insDup:FOL.ins;
+      D[o]=D[p]+ins;B[o]=2;
+      for(let q=1;q<=n;q++){
+        let c=t[q-1]===x?D[p+q-1]+(soft?FOL.hint:0):soft?1e9:D[p+q-1]+FOL.sub,b=0;
+        // (on a tie, the skipped note is the later one: within a run of one note, the first ones heard are marked)
+        const sk=D[o+q-1]+this.skipCost(q-1);if(sk<=c+1e-9){c=sk;b=1}
+        const e=D[p+q]+ins;if(e<c-1e-9){c=e;b=2}
+        D[o+q]=c;B[o+q]=b;
+      }
+    }
+    // the player is where the best explanation of everything heard ends. On a tie, the one where the last real note
+    // heard was right (it is the note after one the detector missed), else the earliest. Other places almost as likely
+    // are kept too, so the detector listens for what comes next there as well.
+    const o=m*W;let best=1e9;for(let q=0;q<=n;q++)best=Math.min(best,D[o+q]);
+    const isRight=q=>m>0&&!sf[m-1]&&q>0&&B[o+q]===0&&t[q-1]===h[m-1];
+    let pos=-1;for(let q=0;q<=n;q++)if(D[o+q]<=best+1e-9&&(pos<0||(isRight(q)&&!isRight(pos))))pos=q;
+    const alts=[];for(let q=0;q<=n;q++)if(q!==pos&&D[o+q]<=best+FOL.alt)alts.push(q);
+    const status=new Array(n).fill(null),tried={};let wrong=0,streak=0,run=true,last=null,k=m,q=pos;
+    while(k>0||q>0){
+      const b=k===0?1:q===0?2:B[k*W+q];
+      if(b===1){status[q-1]='unheard';q--;continue}
+      const x=h[k-1],soft=sf[k-1];
+      if(b===0){const ok=t[q-1]===x;status[q-1]=ok?'right':'wrong';if(ok){if(run&&!soft)streak++}else{tried[q-1]=x;wrong++;run=false}
+        if(k-1===this.latest)last={kind:ok?'right':'wrong',pos:q-1,i:x};k--;q--;continue}
+      // an extra sound while the tab waited at note q: a wrong try at it, unless it only repeats the note before (or
+      // it is a hint nobody needed)
+      const dup=prevHard[k-1]===x;
+      if(!soft&&!dup){if(q<n&&tried[q]===undefined)tried[q]=x;wrong++;run=false}
+      if(k-1===this.latest)last={kind:dup?'echo':'extra',pos:Math.min(q,n-1),i:x};
+      k--;
+    }
+    Object.assign(this,{pos,alts,status,tried,wrong,streak,last,cost:D[o+pos]});
+    return this;
+  }
+}
+return {Follower,FOL,Engine,Bank,CalSession,updateModelTine,tineRow,noiseFor,setWidths,makeBands,ampSpec,noiseStats,analyzeCalClip,buildModel,selfCheck,defaultModel,stdFreqs,trace,db,pw,cents,median,HOP,SENS,tineName,tineSym,tineWhere,setTol:c=>{TOL_UNLEARNED=Math.pow(2,c/1200)-1},setOpt:o=>{if('rise' in o)RISE_W=o.rise;if('settle' in o)SETTLE=o.settle;if('combLo' in o)COMB_LO=o.combLo;if('rivalRise' in o)RIVAL_RISE=o.rivalRise;if('wobble' in o)WOBBLE=o.wobble;if('tolCal' in o)TOL_CAL=Math.pow(2,o.tolCal/1200)-1;if('calTrack' in o)CAL_TRACK=o.calTrack;if('repLock' in o)REP_LOCK=o.repLock;if('otherHold' in o)OTHER_HOLD=o.otherHold;if('lockAll' in o)LOCK_ALL=o.lockAll;if('peakCap' in o)PEAK_CAP=o.peakCap;if('lockClick' in o)LOCK_CLICK=o.lockClick;if('sticky' in o)STICKY=o.sticky;if('harm' in o)HARM=o.harm}};
+})();
+
+
+</script>
+<script>
+(() => {
+const K=KDSP,$=id=>document.getElementById(id);
+const STD=K.stdFreqs();
+const TINES=Array.from({length:17},(_,i)=>({i,num:i%7+1,oct:Math.floor(i/7),name:K.tineName(i)}));
+const where=i=>i===0?'centre tine':`${i%2?'left':'right'} side, ${Math.ceil(i/2)}${['','st','nd','rd'][Math.ceil(i/2)]||'th'} from centre`;
+const symHTML=i=>`<span class="sym"><span class="d">${'•'.repeat(TINES[i].oct)||'&nbsp;'}</span>${TINES[i].num}</span>`;
+const symText=K.tineSym;
+
+/* ---------- saved state ---------- */
+const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},del:k=>{try{localStorage.removeItem(k)}catch(e){}}};
+let model=null;
+try{const m=JSON.parse(store.get('kalimbaModel4')||'null');if(m&&m.v===4&&Array.isArray(m.bands)&&m.tplV&&m.funds&&m.funds.length===17)model=m}catch(e){}
+let sens=1;{const v=store.get('kalimbaSens');if(v==='0'||v==='1'||v==='2')sens=+v}
+$('sensSel').value=String(sens);
+const isCal=()=>!!(model&&!model.isDefault);
+// without a calibration the app learns each tine's real pitch and how you pluck; keep that between sessions
+function loadTuning(){try{const t=JSON.parse(store.get('kalimbaTuning')||'null');if(t&&Array.isArray(t.funds)&&t.funds.length===17)return t}catch(e){}return null}
+function startModel(sr){
+  if(model)return model;
+  const m=K.defaultModel(sr),t=loadTuning();
+  if(t){
+    const cal=Array.isArray(t.cal)?t.cal:[];
+    // a tine calibrated on its own keeps its measured pitch even when it's far from standard
+    t.funds.forEach((f,j)=>{if(f>0&&(cal[j]||Math.abs(K.cents(f,STD[j]))<=70)){m.funds[j]=f;m.bands[j].f=f}});
+    if(Array.isArray(t.learned))m.learned=t.learned.slice(0,17);if(typeof t.clickMed==='number')m.clickMed=t.clickMed;if(typeof t.snrMed==='number')m.snrMed=t.snrMed;
+    m.calibrated=new Array(17).fill(0);
+    cal.forEach((c,j)=>{if(c&&Array.isArray(c.V)&&c.V.length===m.bands.length&&Array.isArray(c.C)){m.tplV[j]=c.V;m.tplC[j]=c.C;if(c.decay>0)m.decay[j]=c.decay;if(typeof c.clickRel==='number')m.clickRel[j]=c.clickRel;m.calibrated[j]=1;(m.learned=m.learned||new Array(17).fill(0))[j]=1}});
+    K.setWidths(m.bands);
+  }
+  return m;
+}
+// uncalibrated: keep the learned pitches, how you pluck, and any tines you calibrated on their own
+function saveTuning(m){
+  const cal=(m.calibrated||[]).map((c,j)=>c?{V:m.tplV[j],C:m.tplC[j],decay:m.decay[j],clickRel:m.clickRel[j]}:null);
+  store.set('kalimbaTuning',JSON.stringify({funds:m.funds,learned:m.learned||[],clickMed:m.clickMed,snrMed:m.snrMed,cal}));
+}
+let saveTimer=null;
+function saveLearned(){
+  if(saveTimer)return;
+  saveTimer=setTimeout(()=>{saveTimer=null;if(!engine)return;const m=engine.model;
+    if(m.isDefault)saveTuning(m);
+    else if(m===model)store.set('kalimbaModel4',JSON.stringify(m));
+    renderCalib();},1500);
+}
+const learnedCount=()=>engine&&engine.model.isDefault?Array.from(engine.learned).filter(Boolean).length:(loadTuning()?(loadTuning().learned||[]).filter(Boolean).length:0);
+
+/* ---------- tabs ---------- */
+const SONGS=[
+ ['Warm-up: C scale up and down',"1 2 3 4 5 6 7 1' | 1' 7 6 5 4 3 2 1"],
+ ['Warm-up: broken chords',"1 3 5 3 | 4 6 1' 6 | 5 7 2' 7 | 1 3 5 1'"],
+ ['Warm-up: high octave',"1' 2' 3' 4' 5' 6' 7' 1'' | 2'' 3'' 2'' 1'' 7' 6' 5' 4' 3' 2' 1'"],
+ ['Mary Had a Little Lamb',"3 2 1 2 3 3 3 | 2 2 2 3 5 5 | 3 2 1 2 3 3 3 3 | 2 2 3 2 1"],
+ ['Twinkle Twinkle Little Star',"1 1 5 5 6 6 5 | 4 4 3 3 2 2 1 | 5 5 4 4 3 3 2 | 5 5 4 4 3 3 2 | 1 1 5 5 6 6 5 | 4 4 3 3 2 2 1"],
+ ['Ode to Joy',"3 3 4 5 5 4 3 2 | 1 1 2 3 3 2 2 | 3 3 4 5 5 4 3 2 | 1 1 2 3 2 1 1"],
+ ['Frère Jacques',"1' 2' 3' 1' 1' 2' 3' 1' | 3' 4' 5' 3' 4' 5' | 5' 6' 5' 4' 3' 1' | 5' 6' 5' 4' 3' 1' | 1' 5 1' 1' 5 1'"],
+ ['Happy Birthday',"5 5 6 5 1' 7 | 5 5 6 5 2' 1' | 5 5 5' 3' 1' 7 6 | 4' 4' 3' 1' 2' 1'"],
+ ['Jana Gana Mana (with lyrics and beats)',"@title: Jana Gana Mana\n\n(Ja: 1/)(na: 2/) (ga: 3/)(na: 3/) (ma: 3/)(na: 3/) (a: 3/)(dhi: 3/)(na: 3)(ya: 3/)(ka,: 3/) (ja: 2/)(ya: 3/) (he: 4)\n(Bha: 3)(ra: 3/)(ta: 3/) (bha: 2)(gya: 2/) (vi: 2/)(dha: 1/ 2/)(ta.: 1.)\n(Pan: 1)(ja: 5)(ba: 5/) (Sin: 5)(dhu: 5/) (Gu: 5/)(ja: 5/)(ra: 5)(ta: 5/) (Ma: 5/)(ra: 4/ 6/)(tha: 5)\n(Dra: 4)(vi: 4/)(da: 4/) (Ut: 4)(ka: 4/)(la: 3/) (Ban: 2/ 4/)(ga: 3.-)\n(Vin: 3)(dhya: 3/) (Hi: 3/)(ma: 3)(cha: 3/)(la: 2/) (Ya: 5/)(mu: 5/)(na: 5) (Gan: 4)(ga: 4)\n(Uch: 3)(cha: 3/)(la: 3/) (Ja: 2/)(la: 2/)(dhi: 2/) (ta: 2/)(ran: 1/ 2/)(ga.: 1.-)\n(Ta: 1/)(va: 2/) (shu: 3/)(bha: 3/) (na: 3)(me: 3) (ja: 2/ 3/)(ge,: 4--)\n(Ta: 3/)(va: 4/) (shu: 5/)(bha: 5/) (a: 5)(si: 4/)(sa: 4/ 3/) (ma: 2/ 4/)(ge,: 3-)\n(Ga: 3)(he: 3) (ta: 2/)(va: 2/) (ja: 2/)(ya: 2/ 1/) (ga: 2/)(tha,: 1--)\n(Ja: 5/)(na: 5/) (ga: 5/)(na: 5/) (man: 5)(ga: 5/)(la: 5/) (da: 5)(ya: 5/)(ka: 5/) (ja: 4/)(ya: 6/) (he: 5)\n(Bha: 4)(ra: 4/)(ta: 4/) (bha: 4)(gya: 4/) (vi: 3/)(dha: 2/ 4/)(ta.: 3--)\n(Ja: 1'/)(ya: 7/) (he,: 1'--) (ja: 7/)(ya: 6/) (he,: 7--) (ja: 5/)(ya: 5/) (he,: 6--)\n(Ja: 1/)(ya: 1/) (ja: 2/)(ya: 2/) (ja: 3/)(ya,: 3/) (ja: 2/)(ya: 3/) (he!: 4---)"],
+];
+// A note: 1-7, a ' (or °) per octave up. Beat length (numbered notation): plain = 1 beat, each "/" halves it,
+// a "." adds half again (dotted), each "-" holds it one more beat. 0 is a rest. (A "*" after the note is ignored.)
+function parseNote(tok){
+  const m=tok.match(/^([0-7])(['’°]*)\*?(\/*)(\.?)(-*)$/);if(!m)return null;
+  const num=+m[1],oct=m[2].length,halves=m[3].length,dot=!!m[4],dashes=m[5].length;
+  const beats=Math.pow(0.5,halves)*(dot?1.5:1)+dashes;
+  if(num===0)return {rest:true,beats,halves,dot,dashes};
+  const n=oct*7+num-1;if(n>16)return null;
+  return {n,beats,halves,dot,dashes};
+}
+// How a length in beats is written in numbered notation: underlines (halves), a dot, and a dash per extra beat
+function beatShape(b){
+  if(b>=1-1e-6){const w=Math.floor(b+1e-6);return {halves:0,dot:b-w>=0.25,dashes:w-1}}
+  for(const [h,d] of [[1,0],[1,1],[2,0],[2,1],[3,0]])if(Math.abs(Math.pow(0.5,h)*(d?1.5:1)-b)<1e-6)return {halves:h,dot:!!d,dashes:0};
+  return {halves:b<0.375?2:1,dot:false,dashes:0};
+}
+// .ktab: "@title: ..." lines, then one tab line per text line made of "(syllable: notes)" groups; a space between
+// groups starts a new word. Tabs with beats, as kalimba_tabs.py writes them: "5(1) 3'(0.5) -(1) 0(0.5) |" (note(beats),
+// "-" ties more beats on, 0 is a rest, "*" marks a changed note, "|" ends a bar). Plain tabs: numbers separated by
+// spaces, "|" or a new line starts a new line.
+function parseTab(txt){
+  const lines=[],bad=[],meta={};
+  if(/(^|\s)([0-7]['’°]*\*?|-)\(\s*\d+(\.\d+)?(\/\d+)?\s*\)/.test(txt)&&!/\([^()]*:[^()]*\)/.test(txt)){
+    let last=null;
+    txt.split(/\r?\n/).forEach(raw=>{
+      const l=raw.trim();if(!l||/^%/.test(l)||/^[A-Za-z]:/.test(l))return;
+      const mm=l.match(/^@(\w+)\s*:\s*(.*)$/);if(mm){meta[mm[1].toLowerCase()]=mm[2].trim();return}
+      const line=[];
+      l.split(/\s+/).forEach(tok=>{
+        if(!tok||/^\|+\]?$/.test(tok))return;
+        const m=tok.match(/^([0-7]['’°]*\*?|-)\(\s*(\d+(?:\.\d+)?)(?:\/(\d+))?\s*\)$/);
+        if(!m){bad.push(tok);return}
+        const b=m[3]?+m[2]/+m[3]:+m[2];
+        if(m[1]==='-'){if(last){last.beats+=b;Object.assign(last,beatShape(last.beats))}return}
+        const p=parseNote(m[1]);if(!p){bad.push(tok);return}
+        Object.assign(p,{beats:b},beatShape(b),{syl:'',word:line.length});line.push(p);last=p;
+      });
+      if(line.length)lines.push(line);
+    });
+    return {lines,bad,meta,rich:true};
+  }
+  if(/\([^()]*:[^()]*\)/.test(txt)){
+    txt.split(/\r?\n/).forEach(raw=>{
+      const l=raw.trim();if(!l)return;
+      const mm=l.match(/^@(\w+)\s*:\s*(.*)$/);if(mm){meta[mm[1].toLowerCase()]=mm[2].trim();return}
+      const line=[];let word=0,lastEnd=-1,g;const re=/\(([^:()]*):([^()]*)\)/g;
+      while((g=re.exec(l))){
+        if(lastEnd>=0&&/\s/.test(l.slice(lastEnd,g.index)))word++;
+        lastEnd=re.lastIndex;
+        const syl=g[1].trim();
+        g[2].trim().split(/\s+/).filter(Boolean).forEach((tk,q)=>{const p=parseNote(tk);if(!p){bad.push(tk);return}line.push(Object.assign(p,{syl:q===0?syl:'',cont:q>0,word}))});
+      }
+      if(line.length)lines.push(line);
+    });
+    // lyrics: a syllable that isn't the last of its word gets a hyphen
+    lines.forEach(line=>line.forEach((x,k)=>{if(x.syl){const nx=line.slice(k+1).find(y=>y.syl);x.hy=!!(nx&&nx.word===x.word)}}));
+    return {lines,bad,meta,rich:true};
+  }
+  let cur=[];
+  txt.replace(/\|/g,'\n').split('\n').forEach(l=>{
+    l.trim().split(/\s+/).filter(Boolean).forEach(tok=>{const p=parseNote(tok);if(!p){bad.push(tok);return}cur.push(Object.assign(p,{syl:'',word:cur.length}))});
+    if(cur.length){lines.push(cur);cur=[]}
+  });
+  return {lines,bad,meta,rich:lines.some(l=>l.some(x=>x.beats!==1||x.rest))};
+}
+const songSel=$('songSel');
+SONGS.forEach((s,i)=>{const o=document.createElement('option');o.value=i;o.textContent=s[0];songSel.appendChild(o)});
+{const o=document.createElement('option');o.value='custom';o.textContent='Your own tab';songSel.appendChild(o)}
+
+/* ---------- practice ---------- */
+let mode='practice',lines=[],flat=[],flatNotes=[],pos=0,missed=new Set(),unheard=new Set(),flagged=new Set(),wrong=0,streak=0,played={},fol=null,lastWant=null; // played: tab position -> wrong tine heard there; unheard: notes the player went past that I didn't hear
+// fol follows the player through the tab: it lines up every note heard with the tab, so a missed note, a wrong note or an
+// extra sound never leaves the position stuck, and an early call is corrected when the next notes explain it better
+const BEATS={0.25:'a quarter beat',0.5:'half a beat',0.75:'three quarters of a beat',1:'1 beat',1.5:'1½ beats'};
+const beatText=b=>BEATS[b]||((Number.isInteger(b)?b:b.toFixed(2).replace(/0+$/,'').replace(/\.$/,''))+' beats').replace('.5 beats','½ beats');
+function noteHTML(x){
+  const ul=x.halves?`<span class="ul">${'<i></i>'.repeat(Math.min(3,x.halves))}</span>`:'<span class="ul"></span>';
+  return `<span class="nw">${x.rest?'<span class="sym"><span class="d">&nbsp;</span>0</span>':symHTML(x.n)}${x.dot?'<span class="aug">•</span>':''}</span>${ul}<span class="syl">${x.syl?escapeHTML(x.syl)+(x.hy?'-':''):x.cont?'<span class="ext">‿</span>':'&nbsp;'}</span>`;
+}
+function escapeHTML(t){return t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c])}
+function loadSong(txt){
+  const p=parseTab(txt);lines=p.lines;flat=[];flatNotes=[];lines.forEach(l=>l.forEach(x=>{if(!x.rest){flat.push(x.n);flatNotes.push(x)}}));
+  pos=0;missed=new Set();unheard=new Set();flagged=new Set();wrong=0;streak=0;played={};lastWant=null;fol=new K.Follower(flat);$('doneMsg').hidden=true;$('wrongNote').hidden=true;
+  const sh=$('sheet');sh.innerHTML='';sh.classList.toggle('rich',!!p.rich);sh.classList.toggle('lyrics',lines.some(l=>l.some(x=>x.syl)));let k=0;
+  $('beatKey').hidden=!p.rich;
+  lines.forEach(l=>{const d=document.createElement('div');d.className='line';let wd=null;
+    l.forEach((x,q)=>{
+      // each word's notes sit in one group, so a narrow screen wraps between words, never inside one
+      if(!wd||x.word!==l[q-1].word){const g=document.createElement('div');g.className='wg';
+        // the word above its notes, syllables split by a mid dot
+        const w=l.filter(y=>y.word===x.word&&y.syl).map(y=>y.syl).join('·');
+        if(w){const lb=document.createElement('div');lb.className='wl';lb.textContent=w;g.appendChild(lb)}
+        wd=document.createElement('div');wd.className='wd';g.appendChild(wd);d.appendChild(g)}
+      const c=document.createElement('div');
+      if(x.rest){c.classList.add('rest');c.innerHTML=noteHTML(x);c.title='Rest: '+beatText(x.beats);wd.appendChild(c)}
+      else{
+        c.classList.add('cell',x.halves?'h'+Math.min(2,x.halves):'h0');const kk=k++;c.dataset.k=kk;c.innerHTML=noteHTML(x);
+        c.dataset.tip=`${TINES[x.n].name}${x.syl?' “'+x.syl+'”':''}: ${beatText(x.beats)}`;
+        // tap a note the app got wrong (missed it, or marked it wrong when it wasn't) to flag it in the feedback recording
+        c.onclick=()=>{if(flagged.has(kk))flagged.delete(kk);else flagged.add(kk);fbEvent({type:'flag',pos:kk,on:flagged.has(kk)});renderPractice()};
+        wd.appendChild(c);
+      }
+      // held beats: one dash per extra beat, as in numbered notation
+      for(let q2=0;q2<x.dashes;q2++){const dd=document.createElement('div');dd.className='dash';dd.innerHTML='<span class="nw"><span class="sym"><span class="d">&nbsp;</span>–</span></span><span class="ul"></span><span class="syl">&nbsp;</span>';dd.title='held one more beat';wd.appendChild(dd)}
+    });
+    sh.appendChild(d)});
+  fbEvent({type:'tab',title:p.meta.title||(songSel.value==='custom'?'custom':SONGS[songSel.value]&&SONGS[songSel.value][0]),notes:flat.slice()});
+  renderPractice();return p;
+}
+function target(){
+  if(mode==='practice')return $('hintChk').checked&&pos<flat.length?flat[pos]:null;
+  if(session&&session.phase==='tines')return session.idx;
+  return null;
+}
+// tell the detector which tine(s) the tab expects next: it gives those the benefit of the doubt, and only calls another
+// tine (a wrong note) when the pluck is unmistakable
+function setExpect(){
+  if(!engine)return;
+  if(mode!=='practice'||pos>=flat.length||(session&&(session.phase==='quiet'||session.phase==='tines'||session.phase==='analysing'))){engine.expect=null;engine.expectRepeat=null;engine.expectRun=null;return}
+  // the tab repeats the note just played: listen specially for a re-pluck of the still-ringing tine
+  engine.expectRepeat=pos>0&&flat[pos]===flat[pos-1]?flat[pos]:null;
+  // the tab plays this note twice or more in a row: its next pluck may come before the first one has been judged
+  engine.expectRun=pos+1<flat.length&&flat[pos+1]===flat[pos]?flat[pos]:null;
+  // the note after it too: if I miss a note, the player simply plays on (after a run of the same note, the note after the
+  // run), and the next note wherever else the player may be (when what I heard fits two places in the tab almost as well)
+  const e=[flat[pos]];if(pos+1<flat.length)e.push(flat[pos+1]);
+  const q=runEnd(pos);if(q<flat.length&&!e.includes(flat[q]))e.push(flat[q]);
+  if(fol)fol.alts.forEach(a=>{if(a<flat.length&&!e.includes(flat[a]))e.push(flat[a])});
+  engine.expect=e;
+}
+function renderPractice(){
+  setExpect();
+  const cells=$('sheet').querySelectorAll('.cell');
+  cells.forEach((c,k)=>{c.classList.toggle('done',k<pos);c.classList.toggle('missed',missed.has(k));c.classList.toggle('unheard',unheard.has(k));c.classList.toggle('cur',k===pos);
+    c.classList.toggle('flag',flagged.has(k));
+    c.title=(c.dataset.tip?c.dataset.tip+'. ':'')+(unheard.has(k)?'I didn’t hear this note (you played on, so it isn’t counted as wrong). ':'')+(flagged.has(k)?'Flagged for feedback (tap again to unflag).':'Tap to flag it if I got this note wrong.');
+    // a red note carries a badge with the key that was actually played there
+    let b=c.querySelector('.got');
+    if(played[k]!==undefined){if(!b){b=document.createElement('span');b.className='got';c.appendChild(b)}
+      b.innerHTML=symHTML(played[k]);b.title=`You played ${symText(played[k])} (${TINES[played[k]].name}) here`;b.setAttribute('aria-label',b.title)}
+    else if(b)b.remove()});
+  const cur=cells[pos];if(cur&&mode==='practice'){const r=cur.getBoundingClientRect();if(r.top<0||r.bottom>innerHeight)cur.scrollIntoView({block:'center',behavior:'smooth'})}
+  $('progBar').style.width=(flat.length?pos/flat.length*100:0)+'%';
+  $('stPos').textContent=`${Math.min(pos,flat.length)}/${flat.length}`;
+  {const heard=pos-[...unheard].filter(k=>k<pos).length;$('stAcc').textContent=heard>0?Math.round((heard-[...missed].filter(k=>k<pos&&!unheard.has(k)).length)/heard*100)+'%':'–'}
+  $('stStreak').textContent=streak;$('stWrong').textContent=wrong;
+  const n=mode==='practice'&&$('hintChk').checked&&pos<flat.length?flat[pos]:null;
+  $('nextBox').hidden=n===null;
+  if(n!==null){const x=flatNotes[pos]||{};$('nextSym').innerHTML=symHTML(n);$('nextInfo').textContent=`${TINES[n].name} · ${where(n)}${x.syl?' · “'+x.syl+'”':''}${$('sheet').classList.contains('rich')?' · '+beatText(x.beats):''}`}
+  if(!running)draw();
+}
+// first position after the run of identical notes that starts at p
+function runEnd(p){let q=p;while(q+1<flat.length&&flat[q+1]===flat[p])q++;return q+1}
+// A note was heard while practising: line it up with the tab. Returns true (right), false (wrong) or null (an echo of
+// the note just heard, or after the end).
+// everything shown comes from the follower's best explanation of all the notes heard so far
+function applyFollow(){
+  pos=fol.pos;missed=new Set();unheard=new Set();played={};
+  fol.status.forEach((st,q)=>{if(st==='wrong')missed.add(q);else if(st==='unheard')unheard.add(q)});
+  Object.keys(fol.tried).forEach(k=>{const q=+k;missed.add(q);unheard.delete(q);played[q]=fol.tried[k]});
+  wrong=fol.wrong;streak=fol.streak;
+}
+function practiceNote(i,on){
+  if(pos>=flat.length||!fol)return null;
+  fol.hear(i,on);const L=fol.last;applyFollow();lastWant=flat[L.pos];
+  const bad=L.kind==='wrong'||L.kind==='extra';
+  fbEvent({type:bad?'wrong':L.kind==='echo'?'echo':'right',pos:L.pos,i,want:flat[L.pos],now:pos});
+  if(bad){
+    // say exactly what was played and what the tab wants (and where that tine is)
+    const want=flat[L.pos],w=$('wrongNote');
+    w.innerHTML=`<div class="row1"><span class="lbl">You played</span><span class="was">${symHTML(i)}</span><b>${TINES[i].name}</b></div>`+
+      `<div class="row1"><span class="lbl">The tab says</span><span class="want">${symHTML(want)}</span><b>${TINES[want].name}</b><span class="muted">${where(want)}</span></div>`;
+    w.hidden=false;
+    const c=$('sheet').querySelector(`.cell[data-k="${L.pos}"]`);
+    if(c){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake')}
+  }
+  else if(L.kind==='right')$('wrongNote').hidden=true;
+  renderPractice();if(pos>=flat.length)finish();
+  return bad?false:L.kind==='echo'?null:true;
+}
+// A pluck the detector heard but wouldn't vouch for (it didn't ring cleanly, or it isn't the note the tab wants and
+// wasn't unmistakable): a hint for the follower. It can fill a gap (a note I'd otherwise call unheard) but never counts
+// as a wrong note.
+const HINT_WHY=new Set(['didn’t keep ringing like a tine','not sure enough to call it a wrong note','no pluck click on a ringing tine']);
+function practiceHint(r){
+  if(mode!=='practice'||!fol||pos>=flat.length||!engine)return;
+  if(session&&(session.phase==='quiet'||session.phase==='tines'||session.phase==='analysing'))return;
+  if(r.i===undefined||r.i===null||!HINT_WHY.has(r.why)||!(r.snr>=engine.P.snr+6))return;
+  const was=pos;fol.hint(r.i,r.on);applyFollow();
+  if(pos!==was)fbEvent({type:'hint',i:r.i,now:pos});
+  renderPractice();if(pos>=flat.length)finish();
+}
+function finish(){
+  const heard=flat.length-unheard.size,bad=[...missed].filter(k=>!unheard.has(k)).length,acc=heard?Math.round((heard-bad)/heard*100):0,d=$('doneMsg');d.hidden=false;
+  d.innerHTML=`<strong>Finished!</strong> ${acc}% of notes right on the first try, ${wrong} wrong note${wrong===1?'':'s'}${unheard.size?`, ${unheard.size} I didn’t hear (shown faded)`:''}. `+
+    (acc>=95?($('hintChk').checked?'Now try it with “Show where the next note is” turned off.':'That is real sight-reading. Pick a new tab next.'):'Play it again slowly; the red notes are the ones to watch (the small badge on each shows what you played instead).');
+}
+songSel.onchange=()=>{if(songSel.value==='custom')loadSong($('customTxt').value);else loadSong(SONGS[songSel.value][1])};
+$('restartBtn').onclick=()=>songSel.onchange();
+$('hintChk').onchange=renderPractice;
+$('customBtn').onclick=()=>{
+  const p=loadSong($('customTxt').value);songSel.value='custom';const m=$('customMsg');
+  if(!p.lines.length){m.className='msg bad';m.textContent='No notes found. Use numbers 1–7, or a .ktab tab with (syllable: notes).'}
+  else if(p.bad.length){m.className='msg bad';m.textContent='Skipped: '+p.bad.slice(0,6).join(' ')+' (not on a 17-key kalimba)'}
+  else{m.className='msg ok';m.textContent=`Loaded ${p.meta.title?'“'+p.meta.title+'”, ':''}${flat.length} notes${p.rich?', with beat lengths':''}${$('sheet').classList.contains('lyrics')?' and lyrics':''}.`}
+};
+$('ktabBtn').onclick=()=>$('ktabFile').click();
+$('ktabFile').onchange=()=>{const f=$('ktabFile').files[0];if(!f)return;const r=new FileReader();r.onload=()=>{$('customTxt').value=String(r.result);$('customBtn').click();$('ktabFile').value=''};r.readAsText(f)};
+
+/* ---------- mode ---------- */
+function setMode(m){
+  mode=m;
+  $('tabPractice').setAttribute('aria-pressed',m==='practice');$('tabCalib').setAttribute('aria-pressed',m==='calib');
+  $('practiceView').hidden=m!=='practice';$('customPanel').hidden=m!=='practice';$('calibView').hidden=m!=='calib';
+  renderPractice();renderCalib();setExpect();
+}
+$('tabPractice').onclick=()=>setMode('practice');
+$('tabCalib').onclick=()=>setMode('calib');
+
+/* ---------- heard + diagnostics ---------- */
+let flash=null;
+function showHeard(i,ok,extra){
+  const hs=$('heardSym');hs.innerHTML=symHTML(i);hs.className='big'+(ok===true?' ok':ok===false?' bad':'');
+  $('heardInfo').textContent=`${TINES[i].name} · ${where(i)}${extra?' · '+extra:''}`;
+}
+let diagHold=0;
+function setDiag(t,k){const d=$('diag');d.textContent=t;d.className='diag'+(k?' '+k:'')}
+const FRIENDLY={
+  'sound pattern didn’t match a tine':'it didn’t sound like a single tine',
+  'sounded like a voice or another instrument':'it sounded like a voice or another instrument',
+  'pitch wandered, not a tine':'its pitch wasn’t steady on that tine',
+  'didn’t keep ringing like a tine':'it didn’t ring on like a tine',
+  'no pluck click':'there was no pluck click',
+  'no pluck click on a ringing tine':'that tine was already ringing and there was no new pluck click',
+  'not sure about this tine yet':'I haven’t learned that tine yet. Pluck it once, firmly, so I can learn its exact pitch, or calibrate just that tine (Calibrate, then tap it)',
+  'much quieter than your playing':'it was much quieter than your notes, so I treated it as background'
+};
+function onNote(r){
+  fbEvent({type:'note',i:r.i,how:r.how,et:+r.t.toFixed(3),snr:+r.snr.toFixed(1),click:+r.click.toFixed(1),margin:+(r.margin||0).toFixed(1),frac:r.frac,md:r.md,drift:r.drift,comb:r.comb,settled:r.settled,mode,expect:engine&&engine.expect});
+  flash={i:r.i,ok:null,t:performance.now()};saveLearned();
+  const ph=session?session.phase:'idle',q=r.how==='strong'?'clear strike':'soft strike';
+  if(ph==='quiet'||ph==='tines'||ph==='analysing')return; // calibration plucks never count as practice notes
+  if(mode==='calib'){
+    showHeard(r.i,null,q);setDiag(`${TINES[r.i].name} recognised: ${Math.round(r.snr)} dB above room noise, ringing steadily at its own pitch.`,'ok');return;
+  }
+  const ok=practiceNote(r.i,r.on),expected=lastWant;flash.ok=ok;
+  showHeard(r.i,ok,ok===false?`expected ${symText(expected)} (${TINES[expected].name})`:q);
+  setDiag(`${TINES[r.i].name}: ${Math.round(r.snr)} dB above room noise, ringing steadily at its own pitch.`,ok===false?'bad':'ok');
+}
+function onReject(r){
+  if(r.i!==undefined&&r.i!==null)fbEvent({type:'reject',i:r.i,why:r.why,et:+r.t.toFixed(3),snr:r.snr===undefined?null:+r.snr.toFixed(1),click:r.click===undefined?null:+r.click.toFixed(1),off:r.off===undefined?null:+r.off.toFixed(2)});
+  practiceHint(r);
+  if(r.i===undefined||r.i===null||!(r.snr>=engine.P.snr+3)||!FRIENDLY[r.why])return;
+  if(session&&(session.phase==='quiet'||session.phase==='tines'||session.phase==='analysing'))return;
+  // a clear note that rang steadily but off the tine's pitch: most likely that tine is tuned differently from what I expect
+  if(r.why==='pitch wandered, not a tine'&&typeof r.off==='number'&&r.lim&&Math.abs(r.off)>r.lim&&r.snr>=engine.P.snr+6){
+    const f=engine.model.bands[r.i].f,c=Math.round(K.cents(f+r.off,f));
+    setDiag(`Heard a note ${Math.abs(c)} cents ${c>0?'above':'below'} where I expect ${TINES[r.i].name} (tab ${symText(r.i)}), so I didn’t count it. If you plucked ${symText(r.i)}, calibrate just that tine: Calibrate, then tap it.`,'');
+    diagHold=performance.now()+5000;return; // keep this hint up for a moment, over less useful notes
+  }
+  if(performance.now()<diagHold)return;
+  setDiag(`Ignored a sound near ${TINES[r.i].name} (tab ${symText(r.i)}): ${FRIENDLY[r.why]}.`,'');
+}
+
+/* ---------- feedback recording: the last 90 s of sound, plus what the app heard and decided ---------- */
+const FB={sec:90,buf:null,sr:0,w:0,total:0,log:[]};
+function fbInit(sr){FB.sr=sr;FB.buf=new Int16Array(Math.round(FB.sec*sr));FB.w=0;FB.total=0}
+function fbAudio(x){const b=FB.buf;if(!b)return;const n=b.length;let w=FB.w;for(let k=0;k<x.length;k++){let v=x[k];v=v>1?1:v<-1?-1:v;b[w]=v<0?v*32768:v*32767;if(++w===n)w=0}FB.w=w;FB.total+=x.length}
+function fbEvent(e){e.t=FB.sr?+(FB.total/FB.sr).toFixed(3):0;FB.log.push(e);if(FB.log.length>6000)FB.log.splice(0,2000)}
+function wavWithMeta(pcm,sr,json){
+  const meta=new TextEncoder().encode(json),pad=meta.length&1,size=44+pcm.length*2+8+meta.length+pad;
+  const buf=new ArrayBuffer(size),v=new DataView(buf);let o=0;const str=s=>{for(let i=0;i<s.length;i++)v.setUint8(o++,s.charCodeAt(i))};
+  str('RIFF');v.setUint32(o,size-8,true);o+=4;str('WAVE');
+  str('fmt ');v.setUint32(o,16,true);o+=4;v.setUint16(o,1,true);o+=2;v.setUint16(o,1,true);o+=2;v.setUint32(o,sr,true);o+=4;v.setUint32(o,sr*2,true);o+=4;v.setUint16(o,2,true);o+=2;v.setUint16(o,16,true);o+=2;
+  str('data');v.setUint32(o,pcm.length*2,true);o+=4;new Int16Array(buf,o,pcm.length).set(pcm);o+=pcm.length*2;
+  str('kfbk');v.setUint32(o,meta.length,true);o+=4;new Uint8Array(buf,o,meta.length).set(meta);
+  return new Blob([buf],{type:'audio/wav'});
+}
+function fbSave(){
+  const m=$('fbMsg');
+  if(!FB.buf||!FB.total){m.className='msg bad';m.textContent='Press Start listening and play the tab first.';return}
+  const n=Math.min(FB.total,FB.buf.length),L=FB.buf.length,pcm=new Int16Array(n),st=(FB.w-n+L)%L;
+  for(let k=0;k<n;k++)pcm[k]=FB.buf[(st+k)%L];
+  const t0=(FB.total-n)/FB.sr,d=new Date(),pad=x=>String(x).padStart(2,'0');
+  const meta={app:'kalimba-tab-trainer',v:1,sr:FB.sr,t0:+t0.toFixed(3),dur:+(n/FB.sr).toFixed(3),date:d.toISOString(),ua:navigator.userAgent,sens,
+    tab:{title:songSel.value==='custom'?'custom':SONGS[songSel.value]&&SONGS[songSel.value][0],notes:flat.slice(),pos,missed:[...missed],unheard:[...unheard],played,flagged:[...flagged]},
+    model:engine?engine.model:null,events:FB.log.filter(e=>e.t>=t0-1)};
+  const name=`kalimba-feedback-${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}.wav`;
+  const a=document.createElement('a');a.href=URL.createObjectURL(wavWithMeta(pcm,FB.sr,JSON.stringify(meta)));a.download=name;document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},4000);
+  m.className='msg ok';m.textContent=`Saved ${name} (${Math.round(n/FB.sr)} seconds${flagged.size?`, ${flagged.size} flagged note${flagged.size===1?'':'s'}`:''}). Send it with a line about what went wrong.`;
+}
+$('fbSave').onclick=fbSave;
+
+/* ---------- audio ---------- */
+let ctx=null,engine=null,running=false,session=null,computing=false,wake=null;
+async function startMic(){
+  if(running)return true;
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){$('heardInfo').textContent='This browser can’t use the microphone here. Open the file in Chrome, Edge or Firefox.';return false}
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false,channelCount:1}});
+    ctx=new (window.AudioContext||window.webkitAudioContext)();
+    if(ctx.state==='suspended')await ctx.resume();
+    const sr=ctx.sampleRate,src=ctx.createMediaStreamSource(stream);
+    const hp1=ctx.createBiquadFilter(),hp2=ctx.createBiquadFilter();
+    [hp1,hp2].forEach(h=>{h.type='highpass';h.frequency.value=150;h.Q.value=0.707});
+    src.connect(hp1);hp1.connect(hp2);
+    const sink=ctx.createGain();sink.gain.value=0;sink.connect(ctx.destination);
+    fbInit(sr);fbEvent({type:'start',sr,tab:flat.slice()});
+    engine=new K.Engine(sr);engine.setSens(sens);engine.setModel(startModel(sr));setTimeout(setExpect,0);
+    engine.on.note=onNote;engine.on.reject=onReject;engine.on.onset=s=>{if(session)session.onset(s)};engine.on.tuned=saveLearned;
+    session=new K.CalSession(engine);
+    session.onMsg=(t,k)=>{const m=$('calMsg');m.textContent=t;m.className='msg'+(k?' '+k:'')};
+    session.onChange=()=>{renderCalib();setExpect()};
+    session.onDone=(m,chk,one)=>{
+      if(one===undefined){m.date=new Date().toISOString();model=m;store.set('kalimbaModel4',JSON.stringify(m))}
+      else if(m.isDefault)saveTuning(m); // one tine calibrated, no full calibration: kept with the learned tuning
+      else{model=m;store.set('kalimbaModel4',JSON.stringify(m))}
+      engine.setModel(m,{keepNoise:true});renderCalib();renderPractice();
+    };
+    let ok=false;
+    if(ctx.audioWorklet&&window.AudioWorkletNode){
+      try{
+        const code="class T extends AudioWorkletProcessor{constructor(){super();this.b=new Float32Array(1024);this.n=0}process(i){const c=i[0]&&i[0][0];if(c){for(let k=0;k<c.length;k++){this.b[this.n++]=c[k];if(this.n===1024){this.port.postMessage(this.b,[this.b.buffer]);this.b=new Float32Array(1024);this.n=0}}}return true}}registerProcessor('kal-tap',T);";
+        // pages opened from a local file can't load worklets from blob: URLs in Chrome, but data: URLs work
+        try{await ctx.audioWorklet.addModule('data:application/javascript;charset=utf-8,'+encodeURIComponent(code))}
+        catch(e){await ctx.audioWorklet.addModule(URL.createObjectURL(new Blob([code],{type:'application/javascript'})))}
+        window.__kalTap='worklet';
+        const node=new AudioWorkletNode(ctx,'kal-tap',{numberOfInputs:1,numberOfOutputs:1,channelCount:1,channelCountMode:'explicit'});
+        node.port.onmessage=e=>onAudio(e.data);hp2.connect(node);node.connect(sink);ok=true;
+      }catch(e){}
+    }
+    if(!ok){const sp=ctx.createScriptProcessor(2048,1,1);sp.onaudioprocess=e=>onAudio(new Float32Array(e.inputBuffer.getChannelData(0)));hp2.connect(sp);sp.connect(sink);window.__kalTap=sp;window.__kalPath='script'}
+    running=true;$('micBtn').textContent='Listening';$('micBtn').disabled=true;
+    $('heardInfo').textContent=isCal()?'Pluck a tine.':'Pluck a tine. For best results, calibrate first.';
+    try{if(navigator.wakeLock)wake=await navigator.wakeLock.request('screen')}catch(e){}
+    requestAnimationFrame(draw);renderCalib();return true;
+  }catch(e){
+    $('heardInfo').textContent='Microphone blocked or unavailable. Allow microphone access for this page in your browser’s site settings, then reload.';
+    return false;
+  }
+}
+$('micBtn').onclick=startMic;
+document.addEventListener('visibilitychange',async()=>{if(document.visibilityState==='visible'&&running){try{if(ctx.state==='suspended')await ctx.resume();if(navigator.wakeLock)wake=await navigator.wakeLock.request('screen')}catch(e){}}});
+let meterLvl=0,clipTimes=[];
+function onAudio(x){
+  let s=0,clip=0;for(let k=0;k<x.length;k++){const v=x[k];s+=v*v;if(v>0.985||v<-0.985)clip++}
+  meterLvl=Math.max(Math.sqrt(s/x.length),meterLvl*0.85);
+  if(clip>=3){const now=performance.now();if(!clipTimes.length||now-clipTimes[clipTimes.length-1]>300)clipTimes.push(now);clipTimes=clipTimes.filter(t=>now-t<20000);$('clipWarn').hidden=clipTimes.length<3}
+  else if(clipTimes.length&&performance.now()-clipTimes[clipTimes.length-1]>20000){clipTimes=[];$('clipWarn').hidden=true}
+  fbAudio(x);engine.push(x);
+  if(session){session.tick();if(session.needCompute&&!computing){computing=true;setTimeout(()=>{session.compute();computing=false},60)}}
+}
+$('sensSel').onchange=()=>{sens=+$('sensSel').value;store.set('kalimbaSens',String(sens));if(engine)engine.setSens(sens);if(!running)draw()};
+
+/* ---------- calibration UI ---------- */
+// the pitch the app is listening for on each tine, if it has been measured (calibrated, or learned from your playing)
+function measuredHz(i){
+  const m=engine?engine.model:(isCal()?model:null);
+  if(m)return (!m.isDefault&&!(m.uncal&&m.uncal[i]))||(engine&&engine.learned&&engine.learned[i])||(m.learned&&m.learned[i])||(m.calibrated&&m.calibrated[i])?m.funds[i]:null;
+  const t=loadTuning();return t&&((t.learned&&t.learned[i])||(t.cal&&t.cal[i]))?t.funds[i]:null;
+}
+async function calibrateOne(i){
+  if(session&&(session.phase==='quiet'||session.phase==='tines'||session.phase==='analysing'))return;
+  // straight after a full calibration, redo the tine with all the other plucks still at hand
+  if(session&&session.phase==='done'&&session.canRedo(i)){session.redo(i);renderCalib();return}
+  if(!await startMic())return;
+  session.startOne(i,engine.model);renderCalib();
+}
+function renderCalib(){
+  const ph=session?session.phase:'idle',done=ph==='done',one=!!(session&&session.one);
+  const busy=ph==='quiet'||ph==='tines'||ph==='analysing';
+  let title,sub,sym='–';
+  if(ph==='quiet'){if(one)sym=symHTML(session.idx);title=one?`Calibrating ${symText(session.idx)} on its own`:'Listening to your room';sub=one?'First, stay quiet for 2 seconds.':'Stay quiet for 2 seconds.'}
+  else if(ph==='tines'){const j=session.idx;sym=symHTML(j);title=one?`Calibrating ${symText(j)} on its own`:session.single?`Redo: ${symText(j)}`:`Tine ${j+1} of 17`;sub=`${TINES[j].name} · ${where(j)} · pluck it three times`}
+  else if(ph==='analysing'){title=one?'Measuring that tine…':'Learning your tines…';sub='This takes a moment.'}
+  else if(done&&one){const j=session.idx,bad=session.check[0].ok*2<session.check[0].n;sym=symHTML(j);title=bad?`${symText(j)}: please try again`:`${symText(j)} calibrated`;sub=bad?'Tap it below to calibrate it again.':'Pluck it to test it, or tap another tine below.'}
+  else if(done){const f=session.check.filter(c=>c.ok*2<c.n);sym='✓';title=f.length?'Almost there':'All set';sub='Pluck any tine to test it, then switch to Practice.'}
+  else if(isCal()){sym='✓';title='Calibrated';sub=`Tuned to your kalimba${model.date?' on '+new Date(model.date).toLocaleDateString():''}. Pluck any tine to test it.`}
+  else{const n=learnedCount();title='Not calibrated yet';sub=n?`${n} of 17 tines learned from your playing so far. Calibrate them all (about two minutes), or tap a single tine below.`:'About two minutes: 2 seconds of quiet, then three plucks of each tine. Or tap a single tine below.'}
+  $('calSym').innerHTML=sym;$('calTitle').textContent=title;$('calSub').textContent=sub;
+  const n=ph==='tines'?session.plucks.length:0;[...$('pips').children].forEach((p,k)=>p.classList.toggle('on',k<n));$('pips').hidden=ph!=='tines';
+  $('calStart').textContent=busy&&!one?'Calibrating…':(isCal()||(done&&!one)?'Recalibrate all 17 tines':'Calibrate all 17 tines');$('calStart').disabled=busy;
+  $('calAgain').hidden=ph!=='tines';$('calBack').hidden=!(ph==='tines'&&!session.single&&!one&&session.idx>0);
+  $('calCancel').hidden=!(ph==='quiet'||ph==='tines');
+  $('calSkip').hidden=!(ph==='tines'&&!one&&!session.single);
+  const anyLearned=!isCal()&&[...Array(17).keys()].some(i=>measuredHz(i));
+  $('calForget').hidden=busy||!(isCal()||anyLearned);$('calForget').textContent=isCal()?'Forget calibration':'Forget learned tuning';
+  $('oneHint').hidden=busy;
+  const g=$('calGrid');g.innerHTML='';
+  const fail=new Set(done?session.check.filter(c=>c.ok*2<c.n).map(c=>c.j):[]);
+  const cur=engine?engine.model:(isCal()?model:null);
+  TINES.forEach((t,i)=>{
+    // during a full calibration show what it has measured so far; otherwise what the app is listening for now
+    const hz=busy&&!one?session.fund[i]:measuredHz(i),skipped=!!(session&&!one&&(busy||done)&&session.skipped&&session.skipped[i]);
+    const el=document.createElement(busy?'div':'button');el.className='t';
+    if(!busy){
+      el.type='button';el.onclick=()=>calibrateOne(i);
+      const how=cur&&!cur.isDefault?'calibrated':cur&&cur.calibrated&&cur.calibrated[i]?'calibrated on its own':'learned from your playing';
+      el.title=hz?`${TINES[i].name}: ${hz.toFixed(1)} Hz (${how}). Tap to calibrate this tine again.`:`${TINES[i].name}: not learned yet. Tap to calibrate just this tine.`;
+    }
+    if(busy&&session.idx===i&&ph!=='analysing')el.classList.add('cur');else if(fail.has(i)||skipped)el.classList.add('warn');else if(hz)el.classList.add('set');
+    if(skipped&&!busy)el.title=`${TINES[i].name}: skipped in the calibration. Tap to calibrate just this tine.`;
+    el.innerHTML=`${symHTML(i)}<span class="muted">${t.name}</span><span>${skipped?'skipped':hz?Math.round(hz)+' Hz':'–'}</span>`;
+    g.appendChild(el);
+  });
+  $('uncalNotice').hidden=isCal();
+  if(!isCal()){const n=learnedCount();$('uncalNotice').innerHTML=(n?`Not calibrated, so I’m learning your kalimba as you play: ${n} of 17 tines learned so far. `:`Not calibrated yet, so I’ll learn your kalimba as you play (each tine needs one clear, firm pluck first). `)+
+    `If a tine isn’t being picked up, <button type="button" class="linkbtn" id="goOne">calibrate just that tine</button> (about 10 seconds). Calibrating all 17 once (about two minutes) makes detection exact from the first note.`;
+    $('goOne').onclick=()=>{setMode('calib');$('calGrid').scrollIntoView({block:'center',behavior:'smooth'})}}
+  if(!running)draw();
+}
+$('calStart').onclick=async()=>{if(!await startMic())return;session.start();renderCalib()};
+$('calAgain').onclick=()=>{if(session)session.again()};
+$('calBack').onclick=()=>{if(session)session.back()};
+$('calCancel').onclick=()=>{if(session)session.cancel();renderCalib()};
+$('calSkip').onclick=()=>{if(session)session.skip();renderCalib()};
+$('calForget').onclick=()=>{
+  const wasCal=isCal();
+  store.del('kalimbaModel4');store.del('kalimbaTuning');model=null;
+  if(engine)engine.setModel(startModel(engine.sr));
+  if(session){session.reset();session.phase='idle'}
+  $('calMsg').textContent=(wasCal?'Calibration forgotten.':'Learned tuning forgotten.')+' Detection now assumes standard C tuning.';$('calMsg').className='msg';
+  renderCalib();renderPractice();
+};
+
+/* ---------- live view ---------- */
+const cv=$('spec'),g=cv.getContext('2d');let spec=null,frameN=0,floorDb=-100,col={};
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function readColors(){col={ink:css('--ink'),muted:css('--muted'),line:css('--line'),brass:css('--brass'),brassSoft:css('--brass-soft'),ok:css('--ok'),bad:css('--bad'),bar:css('--bar'),spec:css('--spec'),bg:css('--bg')}}
+readColors();try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{readColors();if(!running)draw()})}catch(e){}
+addEventListener('resize',()=>{if(!running)draw()});
+function draw(){
+  const W=cv.clientWidth,H=cv.clientHeight,dpr=window.devicePixelRatio||1;
+  if(W&&H){
+    if(cv.width!==Math.round(W*dpr)||cv.height!==Math.round(H*dpr)){cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr)}
+    g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,W,H);
+    const F=engine&&engine.model?engine.model.funds:(isCal()?model.funds:STD);
+    const fl=Math.min(...F)/1.12,fh=Math.max(...F)*1.1,padX=12,top=50,bot=H-10;
+    const X=f=>padX+Math.log(f/fl)/Math.log(fh/fl)*(W-2*padX);
+    const live=running&&engine&&engine.lvS;
+    if(live){let mn=0;for(let i=0;i<17;i++)mn=Math.min(mn,engine.noiseDb(i));floorDb+=0.05*((mn-12)-floorDb)}
+    const topDb=Math.max(-12,floorDb+75),Y=d=>bot-Math.max(0,Math.min(1,(d-floorDb)/(topDb-floorDb)))*(bot-top);
+    // full spectrum
+    if(live&&(frameN++&1)===0)spec=K.ampSpec(engine.clip(engine.total-8192,8192),0,8192);
+    if(live&&spec){
+      const bw=engine.sr/8192,k0=Math.max(1,Math.floor(fl/bw)),k1=Math.min(spec.length-1,Math.ceil(fh/bw));
+      g.beginPath();g.strokeStyle=col.spec;g.lineWidth=1;
+      for(let k=k0;k<=k1;k++){const x=X(k*bw),y=Y(20*Math.log10(spec[k]+1e-9));k===k0?g.moveTo(x,y):g.lineTo(x,y)}
+      g.stroke();
+    }
+    const xs=F.map(X),sorted=[...xs].sort((a,b)=>a-b);let gap=1e9;for(let k=1;k<sorted.length;k++)gap=Math.min(gap,sorted[k]-sorted[k-1]);
+    const bw=Math.max(3,Math.min(12,gap*0.55)),tgt=target(),now=performance.now(),fl8=flash&&now-flash.t<700?flash:null;
+    // target guide
+    if(tgt!==null){g.fillStyle=col.brassSoft;g.globalAlpha=live?1:0.6;g.fillRect(xs[tgt]-bw/2-4,top-6,bw+8,bot-top+6);g.globalAlpha=1}
+    // room noise
+    if(live){
+      g.setLineDash([4,4]);g.strokeStyle=col.muted;g.lineWidth=1.2;g.beginPath();
+      const ord=[...Array(17).keys()].sort((a,b)=>F[a]-F[b]);ord.forEach((i,k)=>{const y=Y(engine.noiseDb(i));k?g.lineTo(xs[i],y):g.moveTo(xs[i],y)});g.stroke();g.setLineDash([]);
+    }
+    for(let i=0;i<17;i++){
+      const x=xs[i];
+      if(live){
+        const L=engine.lvS[i],thr=engine.noiseDb(i)+engine.P.snr,yL=Y(L);
+        let c=L>=thr?col.brass:col.bar;if(fl8&&fl8.i===i)c=fl8.ok===false?col.bad:col.ok;
+        g.fillStyle=c;g.fillRect(x-bw/2,yL,bw,bot-yL);
+        g.fillStyle=col.ink;g.fillRect(x-bw/2-3,Y(thr)-1,bw+6,2);
+      }else{g.fillStyle=col.line;g.fillRect(x-bw/2,bot-3,bw,3)}
+      // tab label: number with octave dots, staggered in two rows so neighbours never overlap
+      const row=i%2,yd=row?28:10,yn=row?44:26;
+      let lc=col.muted;if(tgt===i)lc=col.brass;if(fl8&&fl8.i===i)lc=fl8.ok===false?col.bad:col.ok;
+      g.fillStyle=lc;g.textAlign='center';g.font='600 13px "IBM Plex Mono",ui-monospace,monospace';g.fillText(String(TINES[i].num),x,yn);
+      for(let d=0;d<TINES[i].oct;d++){g.beginPath();g.arc(x+(TINES[i].oct>1?(d-0.5)*5:0),yd+3,1.6,0,6.3);g.fill()}
+    }
+    if(!running){g.fillStyle=col.muted;g.font='14px "IBM Plex Sans",system-ui,sans-serif';g.textAlign='center';g.fillText('Press Start listening to see your tines ring',W/2,(top+bot)/2)}
+  }
+  $('meterBar').style.width=Math.min(100,meterLvl*500)+'%';
+  if(running)requestAnimationFrame(draw);
+}
+
+if(window.__KAL_TEST)window.__kal={get engine(){return engine},get session(){return session}};
+/* ---------- start ---------- */
+loadSong(SONGS[0][1]);
+setMode('practice');
+if(isCal())$('heardInfo').textContent='Press Start listening, then play.';
+})();
+
+</script>
+</body>
+</html>
