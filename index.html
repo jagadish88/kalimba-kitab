@@ -110,15 +110,27 @@ canvas#spec{display:block;width:100%;height:230px;border-radius:10px;background:
 .cell.done.missed{color:var(--bad);background:var(--bad-soft)}
 .cell.missed{border-color:var(--bad)}
 /* the key actually played, on a red note */
+.cell.timing{border-color:#d9a400;box-shadow:inset 0 0 0 2px #e8b800}
+.cell.timing::before{content:attr(data-tm);position:absolute;top:-9px;left:50%;transform:translateX(-50%);font:600 .6rem/1 var(--f-body);padding:2px 4px;border-radius:6px;background:#e8b800;color:#2a2200;white-space:nowrap}
+#heardSym.timing-off{color:#c99700}
 .cell .got{position:absolute;top:-8px;right:-8px;min-width:20px;padding:3px 5px 2px;border-radius:10px;background:var(--bad);color:var(--surface);
   font-size:.66rem;line-height:1;display:flex;justify-content:center;box-shadow:0 0 0 2px var(--surface);pointer-events:auto}
 .cell .got .sym{font-size:1em}
 .wrong-note{display:flex;flex-direction:column;gap:4px;border:1px solid var(--bad);background:var(--bad-soft);border-radius:10px;padding:8px 12px;font-size:.95rem}
+/* nothing above the tab changes height while you play, so the page doesn't jump */
+.wrong-note{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:20;width:min(460px,calc(100vw - 32px));box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.wrong-note[hidden]{display:none}
+#heardInfo,#nextInfo{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.heard,.next{min-width:0}
+.status .heard{display:grid;grid-template-columns:auto auto minmax(0,1fr);align-items:center;column-gap:10px}
+.heard .big{height:2.9rem;line-height:1;display:inline-flex;align-items:center;justify-content:center}
+#nextSym{display:inline-flex;align-items:center;height:2rem}
 .wrong-note .row1{display:flex;flex-wrap:wrap;align-items:flex-end;gap:2px 10px}
 .wrong-note .lbl{min-width:6.5em}
 .wrong-note .sym{font-size:1.3rem}
 .wrong-note .was .sym{color:var(--bad)} .wrong-note .want .sym{color:var(--brass)}
 .cell.cur{border-color:var(--brass);background:var(--brass-soft)}
+.cell.play{outline:2px solid var(--brass);outline-offset:2px}
 .cell.cur.missed{border-color:var(--bad)}
 .cell.done.unheard{color:var(--muted);background:none;border:1.5px dashed var(--line)}
 .cell{cursor:pointer}
@@ -181,31 +193,17 @@ canvas#spec{display:block;width:100%;height:230px;border-radius:10px;background:
     <div class="next" id="nextBox" hidden><span class="label">Next</span><span id="nextSym"></span><span id="nextInfo"></span></div>
   </section>
 
-  <section class="panel" id="micPanel">
-    <div class="mic-head">
-      <h2>What the mic hears</h2>
-      <span class="spacer"></span>
-      <label class="small muted" for="sensSel">Sensitivity</label>
-      <select id="sensSel"><option value="0">Low (noisy room)</option><option value="1">Normal</option><option value="2">High (very soft playing)</option></select>
-    </div>
-    <canvas id="spec" aria-label="Live view: full sound spectrum, with one bar per tine showing how strongly it is ringing"></canvas>
-    <div class="legend">
-      <span><i class="sw bar"></i>Each tine’s ring</span>
-      <span><i class="sw hot"></i>Loud enough to count</span>
-      <span><i class="sw tick"></i>Level a strike must reach</span>
-      <span><i class="sw noise"></i>Room noise</span>
-      <span><i class="sw spec"></i>Full spectrum</span>
-    </div>
-    <div class="notice warn" id="clipWarn" hidden>Your kalimba is too loud for the microphone right now (it’s clipping). It still works, but move the phone or laptop a little further away for cleaner detection.</div>
-    <div class="diag" id="diag"></div>
-  </section>
 
   <section id="practiceView" class="panel">
     <div class="row">
       <select id="songSel" aria-label="Choose a tab"></select>
-      <button class="btn" id="restartBtn">Restart</button>
+      <button class="btn" id="restartBtn">Restart</button><button class="btn" id="playBtn" aria-pressed="false" title="Play the tab (your own tines if calibrated, otherwise synthesised)">▶ Play</button><label class="small muted" style="display:inline-flex;align-items:center;gap:4px">Speed <input id="bpm" type="number" min="30" max="200" value="60" style="width:4.2em"> bpm</label>
       <span class="spacer"></span>
       <label class="check"><input type="checkbox" id="hintChk" checked> Show where the next note is</label>
+      <label class="check" title="Play in time at the Speed setting: the marker moves on by itself; a late note is missed"><input type="checkbox" id="timeChk"> Play in time</label>
+    </div>
+    <p class="small muted" style="margin:4px 0 0">Hands on the kalimba: pluck <b>3''</b> (top right tine) to start the song again, <b>2''</b> (top left) to replay the line.</p>
+    <div hidden>
     </div>
     <div id="uncalNotice" class="notice">Not calibrated yet: detection assumes a kalimba in standard C tuning. Calibrate once (about two minutes) so it learns how your own tines sound.</div>
     <div class="progress"><i id="progBar"></i></div>
@@ -225,6 +223,7 @@ canvas#spec{display:block;width:100%;height:230px;border-radius:10px;background:
       <div><span class="label">First-try accuracy</span><b id="stAcc">–</b></div>
       <div><span class="label">Streak</span><b id="stStreak">0</b></div>
       <div><span class="label">Wrong notes</span><b id="stWrong">0</b></div>
+      <div id="stTimeBox" hidden><span class="label">Off the beat</span><b id="stTime">0</b></div>
     </div>
     <div class="row fb">
       <button class="btn" id="fbSave">Save this run for feedback</button>
@@ -263,6 +262,25 @@ canvas#spec{display:block;width:100%;height:230px;border-radius:10px;background:
     </div>
     <p class="one-hint" id="oneHint"><strong>Just one or two tines being missed?</strong> <span class="muted">Tap a tine below to calibrate only that one: 2 seconds of quiet, then three plucks. It works with or without a full calibration, and is remembered.</span></p>
     <div class="grid17" id="calGrid"></div>
+  </section>
+
+  <section class="panel" id="micPanel">
+    <div class="mic-head">
+      <h2>What the mic hears</h2>
+      <span class="spacer"></span>
+      <label class="small muted" for="sensSel">Sensitivity</label>
+      <select id="sensSel"><option value="0">Low (noisy room)</option><option value="1">Normal</option><option value="2">High (very soft playing)</option></select>
+    </div>
+    <canvas id="spec" aria-label="Live view: full sound spectrum, with one bar per tine showing how strongly it is ringing"></canvas>
+    <div class="legend">
+      <span><i class="sw bar"></i>Each tine’s ring</span>
+      <span><i class="sw hot"></i>Loud enough to count</span>
+      <span><i class="sw tick"></i>Level a strike must reach</span>
+      <span><i class="sw noise"></i>Room noise</span>
+      <span><i class="sw spec"></i>Full spectrum</span>
+    </div>
+    <div class="notice warn" id="clipWarn" hidden>Your kalimba is too loud for the microphone right now (it’s clipping). It still works, but move the phone or laptop a little further away for cleaner detection.</div>
+    <div class="diag" id="diag"></div>
   </section>
 </div>
 <script>
@@ -1222,6 +1240,7 @@ return {Follower,FOL,Engine,Bank,CalSession,updateModelTine,tineRow,noiseFor,set
 <script>
 (() => {
 const K=KDSP,$=id=>document.getElementById(id);
+let playing=false,playQuietUntil=0; // the app playing the tab itself
 const STD=K.stdFreqs();
 const TINES=Array.from({length:17},(_,i)=>({i,num:i%7+1,oct:Math.floor(i/7),name:K.tineName(i)}));
 const where=i=>i===0?'centre tine':`${i%2?'left':'right'} side, ${Math.ceil(i/2)}${['','st','nd','rd'][Math.ceil(i/2)]||'th'} from centre`;
@@ -1348,7 +1367,7 @@ SONGS.forEach((s,i)=>{const o=document.createElement('option');o.value=i;o.textC
 {const o=document.createElement('option');o.value='custom';o.textContent='Your own tab';songSel.appendChild(o)}
 
 /* ---------- practice ---------- */
-let mode='practice',lines=[],flat=[],flatNotes=[],pos=0,missed=new Set(),unheard=new Set(),flagged=new Set(),wrong=0,streak=0,played={},fol=null,lastWant=null; // played: tab position -> wrong tine heard there; unheard: notes the player went past that I didn't hear
+let mode='practice',lines=[],flat=[],flatNotes=[],pos=0,missed=new Set(),unheard=new Set(),flagged=new Set(),wrong=0,streak=0,played={},fol=null,lastWant=null,folBase=0,frozen=null,lineStarts=[],gapBeats=[],onsetAt={},timing={},beatEst=[]; // played: tab position -> wrong tine heard there; unheard: notes the player went past that I didn't hear
 // fol follows the player through the tab: it lines up every note heard with the tab, so a missed note, a wrong note or an
 // extra sound never leaves the position stuck, and an early call is corrected when the next notes explain it better
 const BEATS={0.25:'a quarter beat',0.5:'half a beat',0.75:'three quarters of a beat',1:'1 beat',1.5:'1½ beats'};
@@ -1360,7 +1379,9 @@ function noteHTML(x){
 function escapeHTML(t){return t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c])}
 function loadSong(txt){
   const p=parseTab(txt);lines=p.lines;flat=[];flatNotes=[];lines.forEach(l=>l.forEach(x=>{if(!x.rest){flat.push(x.n);flatNotes.push(x)}}));
-  pos=0;missed=new Set();unheard=new Set();flagged=new Set();wrong=0;streak=0;played={};lastWant=null;fol=new K.Follower(flat);$('doneMsg').hidden=true;$('wrongNote').hidden=true;
+  pos=0;missed=new Set();unheard=new Set();flagged=new Set();wrong=0;streak=0;played={};lastWant=null;folBase=0;frozen=null;timed=null;hit=new Set();onsetAt={};timing={};beatEst=[];gridAt={};fol=new K.Follower(flat);lineStarts=[];{let k=0;lines.forEach(l=>{lineStarts.push(k);k+=l.filter(x=>!x.rest).length})}
+  gapBeats=[];lines.forEach(l=>l.forEach(x=>{if(x.rest){if(gapBeats.length)gapBeats[gapBeats.length-1]+=x.beats||1}else gapBeats.push(x.beats||1)}));
+  dueBeats=[];{let b=0;gapBeats.forEach(g=>{dueBeats.push(b);b+=g})}$('doneMsg').hidden=true;$('wrongNote').hidden=true;
   const sh=$('sheet');sh.innerHTML='';sh.classList.toggle('rich',!!p.rich);sh.classList.toggle('lyrics',lines.some(l=>l.some(x=>x.syl)));let k=0;
   $('beatKey').hidden=!p.rich;
   lines.forEach(l=>{const d=document.createElement('div');d.className='line';let wd=null;
@@ -1405,21 +1426,27 @@ function setExpect(){
   // run), and the next note wherever else the player may be (when what I heard fits two places in the tab almost as well)
   const e=[flat[pos]];if(pos+1<flat.length)e.push(flat[pos+1]);
   const q=runEnd(pos);if(q<flat.length&&!e.includes(flat[q]))e.push(flat[q]);
-  if(fol)fol.alts.forEach(a=>{if(a<flat.length&&!e.includes(flat[a]))e.push(flat[a])});
+  if(fol)fol.alts.map(a=>a+folBase).forEach(a=>{if(a<flat.length&&!e.includes(flat[a]))e.push(flat[a])});
   engine.expect=e;
 }
 function renderPractice(){
   setExpect();
   const cells=$('sheet').querySelectorAll('.cell');
-  cells.forEach((c,k)=>{c.classList.toggle('done',k<pos);c.classList.toggle('missed',missed.has(k));c.classList.toggle('unheard',unheard.has(k));c.classList.toggle('cur',k===pos);
+  const inTime=!!timed;
+  cells.forEach((c,k)=>{c.classList.toggle('done',k<pos||(inTime&&hit.has(k)));c.classList.toggle('missed',missed.has(k));c.classList.toggle('unheard',unheard.has(k));c.classList.toggle('cur',k===pos);
     c.classList.toggle('flag',flagged.has(k));
     c.title=(c.dataset.tip?c.dataset.tip+'. ':'')+(unheard.has(k)?'I didn’t hear this note (you played on, so it isn’t counted as wrong). ':'')+(flagged.has(k)?'Flagged for feedback (tap again to unflag).':'Tap to flag it if I got this note wrong.');
     // a red note carries a badge with the key that was actually played there
     let b=c.querySelector('.got');
     if(played[k]!==undefined){if(!b){b=document.createElement('span');b.className='got';c.appendChild(b)}
       b.innerHTML=symHTML(played[k]);b.title=`You played ${symText(played[k])} (${TINES[played[k]].name}) here`;b.setAttribute('aria-label',b.title)}
-    else if(b)b.remove()});
-  const cur=cells[pos];if(cur&&mode==='practice'){const r=cur.getBoundingClientRect();if(r.top<0||r.bottom>innerHeight)cur.scrollIntoView({block:'center',behavior:'smooth'})}
+    else if(b)b.remove();
+    // yellow: right note, wrong moment
+    const tm=timing[k]&&k<pos&&!missed.has(k)?timing[k]:null;c.classList.toggle('timing',!!tm);
+    if(tm){c.dataset.tm=tm.kind==='early'?'early':tm.kind==='miss'?'late':'late';c.title=`Right note, ${tm.text}. `+c.title}else delete c.dataset.tm;
+    });
+  {const tOn=$('timeChk').checked;$('stTimeBox').hidden=!tOn;if(tOn)$('stTime').textContent=Object.keys(timing).filter(q=>+q<pos&&!missed.has(+q)).length}
+  const cur=cells[pos];if(cur&&mode==='practice'&&!playing){const r=cur.getBoundingClientRect();if(r.top<0||r.bottom>innerHeight)cur.scrollIntoView({block:'center',behavior:'smooth'})}
   $('progBar').style.width=(flat.length?pos/flat.length*100:0)+'%';
   $('stPos').textContent=`${Math.min(pos,flat.length)}/${flat.length}`;
   {const heard=pos-[...unheard].filter(k=>k<pos).length;$('stAcc').textContent=heard>0?Math.round((heard-[...missed].filter(k=>k<pos&&!unheard.has(k)).length)/heard*100)+'%':'–'}
@@ -1435,15 +1462,36 @@ function runEnd(p){let q=p;while(q+1<flat.length&&flat[q+1]===flat[p])q++;return
 // the note just heard, or after the end).
 // everything shown comes from the follower's best explanation of all the notes heard so far
 function applyFollow(){
-  pos=fol.pos;missed=new Set();unheard=new Set();played={};
-  fol.status.forEach((st,q)=>{if(st==='wrong')missed.add(q);else if(st==='unheard')unheard.add(q)});
-  Object.keys(fol.tried).forEach(k=>{const q=+k;missed.add(q);unheard.delete(q);played[q]=fol.tried[k]});
-  wrong=fol.wrong;streak=fol.streak;
+  // (after a line restart, the follower only covers the tab from that line on; what came before stays as it was)
+  const b=folBase,F=frozen||{missed:[],unheard:[],played:{},wrong:0};
+  pos=b+fol.pos;missed=new Set(F.missed);unheard=new Set(F.unheard);played=Object.assign({},F.played);
+  fol.status.forEach((st,q)=>{if(st==='wrong')missed.add(b+q);else if(st==='unheard')unheard.add(b+q)});
+  Object.keys(fol.tried).forEach(k=>{const q=b+(+k);missed.add(q);unheard.delete(q);played[q]=fol.tried[k]});
+  wrong=F.wrong+fol.wrong;streak=fol.streak;
+}
+// The top tines are remote controls (unless the tab uses them): 3'' starts the song again, 2'' the current line.
+function restartLine(){
+  // the line holding the next note; right at the start of a line, the line just played
+  let li=0;lineStarts.forEach((s0,k)=>{if(s0<=pos)li=k});
+  if(li>0&&lineStarts[li]===pos)li--;
+  const b=lineStarts[li]||0;
+  frozen={missed:[...missed].filter(q=>q<b),unheard:[...unheard].filter(q=>q<b),played:Object.fromEntries(Object.entries(played).filter(([q])=>+q<b)),wrong:[...missed].filter(q=>q<b).length};
+  if(timed!==null||$('timeChk').checked){ // in time: wait for the line's first note to start the clock again
+    timed=null;hit=new Set([...hit].filter(q=>q<b));pos=b;missed=new Set(frozen.missed);unheard=new Set(frozen.unheard);played=Object.assign({},frozen.played);wrong=frozen.wrong;streak=0;
+    Object.keys(timing).forEach(q=>{if(+q>=b)delete timing[q]});
+    $('wrongNote').hidden=true;$('doneMsg').hidden=true;renderPractice();return}
+  folBase=b;fol=new K.Follower(flat.slice(b));applyFollow();
+  Object.keys(timing).forEach(q=>{if(+q>=b)delete timing[q]});Object.keys(onsetAt).forEach(q=>{if(+q>=b)delete onsetAt[q]});
+  $('wrongNote').hidden=true;$('doneMsg').hidden=true;fbEvent({type:'restartLine',from:b});renderPractice();
 }
 function practiceNote(i,on){
+  if(i===16&&!flat.includes(16)){fbEvent({type:'restart'});loadSong(songSel.value==='custom'?$('customTxt').value:SONGS[songSel.value][1]);lastWant=null;return null}
+  if(i===15&&!flat.includes(15)&&fol){restartLine();lastWant=null;return null}
   if(pos>=flat.length||!fol)return null;
-  fol.hear(i,on);const L=fol.last;applyFollow();lastWant=flat[L.pos];
+  if($('timeChk').checked)return timedNote(i,on);
+  fol.hear(i,on);const L0=fol.last,L=Object.assign({},L0,{pos:L0.pos+folBase});applyFollow();lastWant=flat[L.pos];
   const bad=L.kind==='wrong'||L.kind==='extra';
+  lastTiming=L.kind==='right'?checkTiming(L.pos,on):null;
   fbEvent({type:bad?'wrong':L.kind==='echo'?'echo':'right',pos:L.pos,i,want:flat[L.pos],now:pos});
   if(bad){
     // say exactly what was played and what the tab wants (and where that tine is)
@@ -1458,14 +1506,84 @@ function practiceNote(i,on){
   renderPractice();if(pos>=flat.length)finish();
   return bad?false:L.kind==='echo'?null:true;
 }
+// Timing (only with "Check the timing" on): the gap since the previous note, against the beats the tab gives it, at
+// the player's own tempo (worked out from their last few notes, so slowing down or speeding up overall is fine).
+// More than about a third off: a yellow mark. After a pause (more than 3x the gap) nothing is judged.
+let lastTiming=null,gridAt={},timed=null,dueBeats=[];
+function checkTiming(q,on){
+  if(typeof on!=='number')return null;
+  onsetAt[q]=on;delete timing[q];
+  if(!$('timeChk').checked||q<1||onsetAt[q-1]===undefined||missed.has(q-1))return null;
+  // (from where the previous note should have been, so one early note doesn't make the next look late)
+  const gb=gapBeats[q-1]||1,ref=gridAt[q-1]!==undefined?gridAt[q-1]:onsetAt[q-1],ioi=on-ref;gridAt[q]=on;if(ioi<=0.04)return null;
+  const per=ioi/gb; // seconds per beat this gap implies
+  let verdict=null;
+  if(beatEst.length>=3){
+    const sorted=beatEst.slice().sort((a,b)=>a-b),beat=sorted[sorted.length>>1],r=per/beat;
+    if(r>3)return null; // a pause, not a rhythm
+    if(r<0.65)verdict={kind:'early',text:`came early: hold ${symText(flat[q-1])} for ${beatText(gb)}`};
+    else if(r>1.5)verdict={kind:'late',text:`came late: ${symText(flat[q-1])} is ${beatText(gb)}`};
+  }
+  if(!verdict||beatEst.length<3){beatEst.push(per);if(beatEst.length>6)beatEst.shift()}
+  if(verdict){timing[q]=verdict;const sorted=beatEst.slice().sort((a,b)=>a-b);gridAt[q]=ref+gb*sorted[sorted.length>>1]}
+  return verdict;
+}
+/* ---------- playing in time ("Play in time") ----------
+   The tab runs on a clock at the Speed setting, started by the first note you strike. Each note owns its beat: the time
+   from its moment until the next note's. The marker sits on the note whose beat is running and moves on when it ends.
+   The right tine struck during its beat: green. Not struck during its beat (too early, too late or not at all): yellow,
+   and the tab moves on regardless. A wrong tine: red, with what you struck. */
+const engNow=()=>engine?engine.frame*engine.hs:0;
+const spb=()=>60/Math.max(30,Math.min(200,+$('bpm').value||60));
+const dueAt=q=>timed.t0+dueBeats[q]*spb();
+const endAt=q=>dueAt(q)+(gapBeats[q]||1)*spb();
+const SLACK=0.06; // a pluck's start is only known to within a few hundredths of a second
+let hit=new Set(); // notes struck during their beat
+function beatOf(t){for(let q=0;q<flat.length;q++)if(t<endAt(q)-SLACK)return q;return flat.length}
+function timedNote(i,on){
+  const t=typeof on==='number'?on:engNow();lastTiming=null;
+  if(!timed){
+    if(i!==flat[pos]){markWrong(i,pos);return false}
+    timed={t0:t-dueBeats[pos]*spb(),from:pos};hit.add(pos);delete timing[pos];streak++;
+    $('wrongNote').hidden=true;renderPractice();return true;
+  }
+  const q=Math.max(timed.from,beatOf(t));
+  if(q<flat.length&&i===flat[q]){
+    if(hit.has(q))return null; // the same note again (an echo)
+    hit.add(q);delete timing[q];missed.delete(q);delete played[q];streak++;$('wrongNote').hidden=true;renderPractice();return true;
+  }
+  // the right tine, but in a neighbouring note's beat: that note is off the beat
+  if(q+1<flat.length&&i===flat[q+1]&&!hit.has(q+1)){timing[q+1]=lastTiming={kind:'early',text:'early: wait for its beat'};streak=0;renderPractice();return true}
+  if(q-1>=timed.from&&i===flat[q-1]&&!hit.has(q-1)){timing[q-1]=lastTiming={kind:'late',text:'late: its beat had ended'};streak=0;renderPractice();return true}
+  if(q-1>=0&&i===flat[q-1]&&hit.has(q-1))return null; // still ringing from the last note
+  markWrong(i,Math.min(q,flat.length-1));return false;
+}
+function markWrong(i,q){
+  missed.add(q);played[q]=i;wrong++;streak=0;lastWant=flat[q];
+  const want=flat[q],w=$('wrongNote');
+  w.innerHTML=`<div class="row1"><span class="lbl">You played</span><span class="was">${symHTML(i)}</span><b>${TINES[i].name}</b></div>`+
+    `<div class="row1"><span class="lbl">The tab says</span><span class="want">${symHTML(want)}</span><b>${TINES[want].name}</b><span class="muted">${where(want)}</span></div>`;
+  w.hidden=false;renderPractice();
+}
+// the clock: the marker follows the beat; a note whose beat ended without it is yellow (cleared again if the detector,
+// which can take a moment, reports it as struck in time)
+setInterval(()=>{
+  if(!timed||mode!=='practice'||!$('timeChk').checked||!engine)return;
+  const now=engNow(),q=beatOf(now);if(q===pos)return;
+  for(let k=pos;k<q;k++)if(!hit.has(k)&&!missed.has(k)&&!timing[k])timing[k]={kind:'miss',text:'not struck during its beat'};
+  pos=q;renderPractice();if(pos>=flat.length){timed=null;finish()}
+},40);
 // A pluck the detector heard but wouldn't vouch for (it didn't ring cleanly, or it isn't the note the tab wants and
 // wasn't unmistakable): a hint for the follower. It can fill a gap (a note I'd otherwise call unheard) but never counts
 // as a wrong note.
 const HINT_WHY=new Set(['didn’t keep ringing like a tine','not sure enough to call it a wrong note','no pluck click on a ringing tine']);
 function practiceHint(r){
+  if(playing||performance.now()<playQuietUntil)return;
   if(mode!=='practice'||!fol||pos>=flat.length||!engine)return;
   if(session&&(session.phase==='quiet'||session.phase==='tines'||session.phase==='analysing'))return;
   if(r.i===undefined||r.i===null||!HINT_WHY.has(r.why)||!(r.snr>=engine.P.snr+6))return;
+  // playing in time: a pluck the detector was unsure of still counts (a wrong tine is shown as wrong)
+  if($('timeChk').checked){if(timed||r.i===flat[pos]){const ok=timedNote(r.i,r.on);if(ok===false)showHeard(r.i,false,`expected ${symText(lastWant)} (${TINES[lastWant].name})`)}return}
   const was=pos;fol.hint(r.i,r.on);applyFollow();
   if(pos!==was)fbEvent({type:'hint',i:r.i,now:pos});
   renderPractice();if(pos>=flat.length)finish();
@@ -1475,7 +1593,7 @@ function finish(){
   d.innerHTML=`<strong>Finished!</strong> ${acc}% of notes right on the first try, ${wrong} wrong note${wrong===1?'':'s'}${unheard.size?`, ${unheard.size} I didn’t hear (shown faded)`:''}. `+
     (acc>=95?($('hintChk').checked?'Now try it with “Show where the next note is” turned off.':'That is real sight-reading. Pick a new tab next.'):'Play it again slowly; the red notes are the ones to watch (the small badge on each shows what you played instead).');
 }
-songSel.onchange=()=>{if(songSel.value==='custom')loadSong($('customTxt').value);else loadSong(SONGS[songSel.value][1])};
+songSel.onchange=()=>{if(playing)stopPlay();if(songSel.value==='custom')loadSong($('customTxt').value);else loadSong(SONGS[songSel.value][1])};
 $('restartBtn').onclick=()=>songSel.onchange();
 $('hintChk').onchange=renderPractice;
 $('customBtn').onclick=()=>{
@@ -1516,6 +1634,7 @@ const FRIENDLY={
   'much quieter than your playing':'it was much quieter than your notes, so I treated it as background'
 };
 function onNote(r){
+  if(playing||performance.now()<playQuietUntil)return; // the app's own playback isn't a practice note
   fbEvent({type:'note',i:r.i,how:r.how,et:+r.t.toFixed(3),snr:+r.snr.toFixed(1),click:+r.click.toFixed(1),margin:+(r.margin||0).toFixed(1),frac:r.frac,md:r.md,drift:r.drift,comb:r.comb,settled:r.settled,mode,expect:engine&&engine.expect});
   flash={i:r.i,ok:null,t:performance.now()};saveLearned();
   const ph=session?session.phase:'idle',q=r.how==='strong'?'clear strike':'soft strike';
@@ -1524,7 +1643,9 @@ function onNote(r){
     showHeard(r.i,null,q);setDiag(`${TINES[r.i].name} recognised: ${Math.round(r.snr)} dB above room noise, ringing steadily at its own pitch.`,'ok');return;
   }
   const ok=practiceNote(r.i,r.on),expected=lastWant;flash.ok=ok;
-  showHeard(r.i,ok,ok===false?`expected ${symText(expected)} (${TINES[expected].name})`:q);
+  const cmd=(r.i===16||r.i===15)&&!flat.includes(r.i)?(r.i===16?'starting the song again':'back to the start of the line'):null;
+  showHeard(r.i,ok,cmd||(ok===false?`expected ${symText(expected)} (${TINES[expected].name})`:lastTiming?'right note, '+lastTiming.text:q));
+  if(ok&&lastTiming)$('heardSym').classList.add('timing-off');else $('heardSym').classList.remove('timing-off');
   setDiag(`${TINES[r.i].name}: ${Math.round(r.snr)} dB above room noise, ringing steadily at its own pitch.`,ok===false?'bad':'ok');
 }
 function onReject(r){
@@ -1593,6 +1714,7 @@ async function startMic(){
     session.onMsg=(t,k)=>{const m=$('calMsg');m.textContent=t;m.className='msg'+(k?' '+k:'')};
     session.onChange=()=>{renderCalib();setExpect()};
     session.onDone=(m,chk,one)=>{
+      saveSamples(session);
       if(one===undefined){m.date=new Date().toISOString();model=m;store.set('kalimbaModel4',JSON.stringify(m))}
       else if(m.isDefault)saveTuning(m); // one tine calibrated, no full calibration: kept with the learned tuning
       else{model=m;store.set('kalimbaModel4',JSON.stringify(m))}
@@ -1763,6 +1885,89 @@ if(window.__KAL_TEST)window.__kal={get engine(){return engine},get session(){ret
 loadSong(SONGS[0][1]);
 setMode('practice');
 if(isCal())$('heardInfo').textContent='Press Start listening, then play.';
+
+/* ---------- play the tab ---------- */
+// Calibrated tines play back your own kalimba: the clearest calibration pluck of each, cleaned up (cut at the pluck,
+// room noise filtered out, faded, and continued as a pure ring at the tine's measured pitch and decay). Other tines
+// are synthesised: the tine's pitch plus its higher vibration mode and a soft pluck click.
+const SAMPLE_KEY='kalimbaSamples';
+let playCtx=null,playNodes=[],playTimers=[],samples=null;
+function saveSamples(cs){
+  try{
+    const old=loadSamples()||{};const sr=cs.sr,a=Math.max(0,cs.off-Math.round(0.004*sr));
+    cs.clips.forEach((cl,j)=>{
+      if(!cl||!cl.length)return;
+      // the clearest of this tine's plucks
+      let best=null,bp=0;cl.forEach(c=>{let p=0;for(let k=cs.off;k<Math.min(c.length,cs.off+Math.round(0.05*sr));k++)p=Math.max(p,Math.abs(c[k]));if(p>bp){bp=p;best=c}});
+      if(!best||!bp)return;
+      const n=best.length-a,i16=new Int16Array(n);for(let k=0;k<n;k++)i16[k]=Math.round(Math.max(-1,Math.min(1,best[a+k]/bp*0.9))*32767);
+      let bin='';const u8=new Uint8Array(i16.buffer);for(let k=0;k<u8.length;k+=8192)bin+=String.fromCharCode.apply(null,u8.subarray(k,k+8192));
+      old[j]={sr,d:btoa(bin)};
+    });
+    store.set(SAMPLE_KEY,JSON.stringify(old));samples=null;
+  }catch(e){}
+}
+function loadSamples(){try{const t=store.get(SAMPLE_KEY);return t?JSON.parse(t):null}catch(e){return null}}
+function sampleBuffer(ac,j){
+  samples=samples||loadSamples()||{};const sm=samples[j];if(!sm)return null;
+  if(sm.buf&&sm.ac===ac)return sm.buf;
+  try{const bin=atob(sm.d),u8=new Uint8Array(bin.length);for(let k=0;k<bin.length;k++)u8[k]=bin.charCodeAt(k);
+    const i16=new Int16Array(u8.buffer),b=ac.createBuffer(1,i16.length,sm.sr),ch=b.getChannelData(0);
+    for(let k=0;k<i16.length;k++)ch[k]=i16[k]/32767;
+    const fl=Math.round(0.15*sm.sr);for(let k=0;k<fl;k++)ch[ch.length-1-k]*=k/fl; // fade the end into the ring below
+    sm.buf=b;sm.ac=ac;return b}catch(e){return null}
+}
+function tineFreq(j){const m=engine?engine.model:model;return m&&m.funds&&m.funds[j]>0?m.funds[j]:STD[j]}
+function tineDecay(j){const m=engine?engine.model:model;return m&&m.decay&&m.decay[j]>0?m.decay[j]:3+j*0.7} // dB per second
+function playTine(ac,out,j,t,dur){
+  const f=tineFreq(j),tau=8.686/tineDecay(j),end=t+Math.min(dur+0.6,4);
+  const g=ac.createGain();g.gain.setValueAtTime(1,t);g.gain.setValueAtTime(1,t+dur);g.gain.exponentialRampToValueAtTime(0.001,t+dur+0.12);g.connect(out);
+  playNodes.push(g);
+  const buf=sampleBuffer(ac,j);
+  const ring=(t0,amp)=>{const o=ac.createOscillator(),e=ac.createGain();o.frequency.value=f;e.gain.setValueAtTime(0.0001,t0);e.gain.exponentialRampToValueAtTime(amp,t0+0.004);e.gain.exponentialRampToValueAtTime(Math.max(0.0001,amp*Math.exp(-(end-t0)/tau)),end);o.connect(e);e.connect(g);o.start(t0);o.stop(end)};
+  if(buf){
+    const src=ac.createBufferSource();src.buffer=buf;
+    // clean up: no rumble below the tine, no hiss far above its overtones
+    const hp=ac.createBiquadFilter();hp.type='highpass';hp.frequency.value=f*0.7;const lp=ac.createBiquadFilter();lp.type='lowpass';lp.frequency.value=Math.min(16000,f*9);
+    const v=ac.createGain();v.gain.value=0.35;src.connect(hp);hp.connect(lp);lp.connect(v);v.connect(g);src.start(t);
+    const L=buf.duration;if(dur+0.6>L-0.15){const t0=t+L-0.15,amp=0.35*0.9*0.5*Math.exp(-(L-0.15)/tau);if(t0<end)ring(t0,Math.max(0.0005,amp))}
+  }else{
+    ring(t,0.3);
+    // the higher vibration mode (about 5.9x), short; and a soft pluck click
+    const o2=ac.createOscillator(),e2=ac.createGain();o2.frequency.value=Math.min(f*5.9,18000);e2.gain.setValueAtTime(0.06,t);e2.gain.exponentialRampToValueAtTime(0.0001,t+0.25);o2.connect(e2);e2.connect(g);o2.start(t);o2.stop(t+0.3);
+    const nb=ac.createBuffer(1,Math.round(ac.sampleRate*0.01),ac.sampleRate),d=nb.getChannelData(0);for(let k=0;k<d.length;k++)d[k]=(Math.random()*2-1)*Math.exp(-k/(ac.sampleRate*0.0015));
+    const ns=ac.createBufferSource(),ng=ac.createGain();ns.buffer=nb;ng.gain.value=0.08;ns.connect(ng);ng.connect(g);ns.start(t);
+  }
+}
+function stopPlay(){
+  playTimers.forEach(clearTimeout);playTimers=[];playNodes.forEach(n=>{try{n.gain.cancelScheduledValues(0);n.gain.value=0;n.disconnect()}catch(e){}});playNodes=[];
+  if(playing){playing=false;playQuietUntil=performance.now()+700}
+  document.querySelectorAll('#sheet .cell.play').forEach(c=>c.classList.remove('play'));
+  $('playBtn').textContent='▶ Play';$('playBtn').setAttribute('aria-pressed','false');
+}
+function playTab(){
+  if(playing){stopPlay();return}
+  if(!flatNotes.length)return;
+  playCtx=playCtx||new (window.AudioContext||window.webkitAudioContext)();const ac=playCtx;if(ac.state==='suspended')ac.resume();
+  const bpm=Math.max(30,Math.min(200,+$('bpm').value||80)),beat=60/bpm;
+  const out=ac.createGain();out.gain.value=0.8;out.connect(ac.destination);playNodes.push(out);
+  // the tab in order, rests included: from the next note to play (or the start, when the song is done)
+  const all=[];lines.forEach(l=>l.forEach(x=>all.push(x)));
+  let k=0,start=pos<flat.length?pos:0,startIdx=0;all.forEach((x,q)=>{if(!x.rest){if(k===start)startIdx=q;k++}});
+  playing=true;$('playBtn').textContent='■ Stop';$('playBtn').setAttribute('aria-pressed','true');
+  let t=ac.currentTime+0.15,cellK=start;const t00=t;
+  for(let q=startIdx;q<all.length;q++){const x=all[q],dur=(x.beats||1)*beat;
+    if(!x.rest){const kk=cellK++;playTine(ac,out,x.n,t,dur);
+      const ms=(t-t00)*1000+150;playTimers.push(setTimeout(()=>{document.querySelectorAll('#sheet .cell.play').forEach(c=>c.classList.remove('play'));const c=$('sheet').querySelector(`.cell[data-k="${kk}"]`);if(c){c.classList.add('play');const ln=c.closest('.line'),r=(ln||c).getBoundingClientRect();if(r.top<0||r.bottom>innerHeight-80)scrollTo({top:scrollY+r.top-innerHeight*0.25,behavior:'smooth'})}},ms))}
+    t+=dur}
+  playTimers.push(setTimeout(stopPlay,(t-t00)*1000+900));
+}
+$('playBtn').onclick=playTab;
+try{$('timeChk').checked=store.get('kalimbaTiming')==='1'}catch(e){}
+$('timeChk').onchange=()=>{try{store.set('kalimbaTiming',$('timeChk').checked?'1':'0')}catch(e){}songSel.onchange()};
+$('bpm').onchange=()=>{if($('timeChk').checked&&timed)songSel.onchange()};
+
+window.saveSamples=saveSamples;
 })();
 
 </script>
