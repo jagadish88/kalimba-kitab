@@ -1695,13 +1695,20 @@ $('fbSave').onclick=fbSave;
 
 /* ---------- audio ---------- */
 let ctx=null,engine=null,running=false,session=null,computing=false,wake=null;
+let audioIn=0,micLabel='';
 async function startMic(){
   if(running)return true;
   if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){$('heardInfo').textContent='This browser can’t use the microphone here. Open the file in Chrome, Edge or Firefox.';return false}
+  // the audio context is made right away, while the tap that started it still counts (Safari and some phone browsers
+  // otherwise keep it silenced)
+  try{ctx=new (window.AudioContext||window.webkitAudioContext)();ctx.resume().catch(()=>{})}catch(e){}
   try{
     const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false,channelCount:1}});
-    ctx=new (window.AudioContext||window.webkitAudioContext)();
-    if(ctx.state==='suspended')await ctx.resume();
+    if(!ctx)ctx=new (window.AudioContext||window.webkitAudioContext)();
+    if(ctx.state!=='running'){try{await ctx.resume()}catch(e){}}
+    // still silenced: the next tap anywhere wakes it
+    const wakeCtx=()=>{if(ctx&&ctx.state!=='running')ctx.resume().catch(()=>{})};['pointerdown','keydown','touchend'].forEach(ev=>document.addEventListener(ev,wakeCtx,{passive:true}));
+    const trk=stream.getAudioTracks()[0];micLabel=trk&&trk.label||'';
     const sr=ctx.sampleRate,src=ctx.createMediaStreamSource(stream);
     const hp1=ctx.createBiquadFilter(),hp2=ctx.createBiquadFilter();
     [hp1,hp2].forEach(h=>{h.type='highpass';h.frequency.value=150;h.Q.value=0.707});
@@ -1729,13 +1736,20 @@ async function startMic(){
         catch(e){await ctx.audioWorklet.addModule(URL.createObjectURL(new Blob([code],{type:'application/javascript'})))}
         window.__kalTap='worklet';
         const node=new AudioWorkletNode(ctx,'kal-tap',{numberOfInputs:1,numberOfOutputs:1,channelCount:1,channelCountMode:'explicit'});
-        node.port.onmessage=e=>onAudio(e.data);hp2.connect(node);node.connect(sink);ok=true;
+        node.port.onmessage=e=>{if(window.__kalPath!=='script')onAudio(e.data)};hp2.connect(node);node.connect(sink);ok=true;
       }catch(e){}
     }
     if(!ok){const sp=ctx.createScriptProcessor(2048,1,1);sp.onaudioprocess=e=>onAudio(new Float32Array(e.inputBuffer.getChannelData(0)));hp2.connect(sp);sp.connect(sink);window.__kalTap=sp;window.__kalPath='script'}
     running=true;$('micBtn').textContent='Listening';$('micBtn').disabled=true;
     $('heardInfo').textContent=isCal()?'Pluck a tine.':'Pluck a tine. For best results, calibrate first.';
     try{if(navigator.wakeLock)wake=await navigator.wakeLock.request('screen')}catch(e){}
+    // no sound arriving after a moment: say why, and try the older audio path
+    audioIn=0;setTimeout(()=>{
+      if(audioIn>0)return;
+      if(ctx.state!=='running'){$('heardInfo').textContent='Tap anywhere on the page to switch the microphone on.';return}
+      if(window.__kalTap==='worklet'){const sp=ctx.createScriptProcessor(2048,1,1);sp.onaudioprocess=e=>onAudio(new Float32Array(e.inputBuffer.getChannelData(0)));hp2.connect(sp);sp.connect(sink);window.__kalPath='script'}
+      setTimeout(()=>{if(audioIn===0)$('heardInfo').textContent=`No sound is reaching the app${micLabel?' from “'+micLabel+'”':''}. Check that the right microphone is chosen and not muted, then reload.`},1500);
+    },2000);
     requestAnimationFrame(draw);renderCalib();return true;
   }catch(e){
     $('heardInfo').textContent='Microphone blocked or unavailable. Allow microphone access for this page in your browser’s site settings, then reload.';
@@ -1746,6 +1760,7 @@ $('micBtn').onclick=startMic;
 document.addEventListener('visibilitychange',async()=>{if(document.visibilityState==='visible'&&running){try{if(ctx.state==='suspended')await ctx.resume();if(navigator.wakeLock)wake=await navigator.wakeLock.request('screen')}catch(e){}}});
 let meterLvl=0,clipTimes=[];
 function onAudio(x){
+  if(!audioIn){for(let k=0;k<x.length;k+=16)if(x[k]!==0){audioIn=1;break}}
   let s=0,clip=0;for(let k=0;k<x.length;k++){const v=x[k];s+=v*v;if(v>0.985||v<-0.985)clip++}
   meterLvl=Math.max(Math.sqrt(s/x.length),meterLvl*0.85);
   if(clip>=3){const now=performance.now();if(!clipTimes.length||now-clipTimes[clipTimes.length-1]>300)clipTimes.push(now);clipTimes=clipTimes.filter(t=>now-t<20000);$('clipWarn').hidden=clipTimes.length<3}
