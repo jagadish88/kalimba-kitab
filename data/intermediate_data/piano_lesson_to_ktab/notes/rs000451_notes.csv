@@ -1,0 +1,145 @@
+stanza_no,line_no,syllable,note,time_slow_s,time_normal_speed_s,length_eighths,certain,why_uncertain,length_from
+1,1,Bo,C5,38.68,80.10,2,yes,,audio
+1,1,ro,D5,39.55,80.48,2,yes,,audio
+1,1,a,E5,40.35,80.85,4,yes,,audio
+1,1,sha,E5,41.33,81.64,4,yes,,audio
+1,1,ko,E5,42.36,82.42,2,yes,,audio
+1,1,(ko),F5,43.24,82.82,1,yes,,audio
+1,1,(ko),E5,43.97,82.99,1,yes,,audio
+1,1,re,D5,44.93,83.20,2,yes,,audio
+1,1,(re),E5,45.72,83.57,2,yes,,audio
+1,1,e,G5,46.94,83.95,2,yes,,audio
+1,1,she,F5,47.84,84.35,2,yes,,audio
+1,1,chi,E5,48.80,84.72,2,yes,,audio
+1,1,go,D5,49.51,85.11,2,yes,,audio
+1,2,ka,C5,50.57,85.49,2,yes,,audio
+1,2,che,C5,51.26,85.88,2,yes,,audio
+1,2,de,D5,52.32,86.26,2,yes,,audio
+1,2,(de),E5,53.36,86.64,1,yes,,audio
+1,2,ke,D5,54.02,86.84,1,yes,,audio
+1,2,lawo,C5,54.63,87.03,8,yes,,audio
+1,3,Phi,C5,56.01,88.49,2,yes,,audio
+1,3,ra,A4,56.69,88.85,2,yes,,audio
+1,3,(ra),C5,57.58,89.23,2,yes,,audio
+1,3,yo,D5,58.32,89.59,2,yes,,audio
+1,3,na,G5,59.26,89.96,6,yes,,audio
+1,3,ja,F5,60.35,91.08,2,yes,,audio
+1,3,no,E5,61.18,91.45,2,yes,,audio
+1,3,ni,D5,61.85,91.83,2,yes,,audio
+1,4,Bo,C5,62.87,92.21,2,yes,,audio
+1,4,ro,D5,63.58,92.58,2,yes,,audio
+1,4,a,E5,64.57,92.96,4,yes,,audio
+1,4,sha,E5,65.46,93.73,4,yes,,audio
+1,4,ko,E5,66.44,94.47,2,yes,,audio
+1,4,(ko),F5,67.24,94.83,1,yes,,audio
+1,4,(ko),E5,67.83,95.00,1,yes,,audio
+1,4,re,D5,68.89,95.20,2,yes,,audio
+1,4,(re),E5,69.57,95.55,2,yes,,audio
+1,4,e,G5,70.66,95.92,2,yes,,audio
+1,4,she,F5,71.42,96.29,2,yes,,audio
+1,4,chi,E5,72.20,96.65,2,yes,,audio
+1,4,go,D5,72.86,97.04,2,yes,,audio
+1,5,ka,C5,73.96,97.38,2,yes,,audio
+1,5,che,C5,74.60,97.77,2,yes,,audio
+1,5,de,D5,75.48,98.15,2,yes,,audio
+1,5,(de),E5,76.49,98.51,1,yes,,audio
+1,5,ke,D5,77.35,98.71,1,yes,,audio
+1,5,lawo,C5,78.07,98.89,8,yes,,audio
+2,1,Di,G5,168.12,190.10,4,yes,,audio
+2,1,no,A5,169.09,190.84,2,yes,,audio
+2,1,hi,B5,169.68,191.19,2,yes,,audio
+2,1,ne,C6,170.24,191.54,6,yes,,audio
+2,1,(ne),B5,171.56,192.58,1,yes,,audio
+2,1,(ne),A5,172.15,192.78,1,yes,,audio
+2,1,Ke,G5,173.30,192.97,2,yes,,audio
+2,1,ho,A5,173.99,193.33,2,yes,,audio
+2,1,chaa,G5,174.97,193.67,2,yes,,audio
+2,1,he,F5,175.61,194.06,2,yes,,audio
+2,1,na,E5,176.23,194.43,8,yes,,audio
+2,2,Tu,D5,177.80,195.86,4,yes,,audio
+2,2,mi,E5,178.72,196.59,2,yes,,audio
+2,2,taa,C5,179.47,196.94,2,yes,,audio
+2,2,re,D5,180.03,197.28,8,yes,,audio
+2,2,ra,C5,181.37,198.77,2,yes,,audio
+2,2,khi,B4,182.09,199.13,2,yes,,audio
+2,2,(khi),G4,183.00,199.48,2,yes,,audio
+2,2,be,A4,183.59,199.83,2,yes,,audio
+2,2,jaa,C5,184.53,200.19,4,yes,,audio
+2,2,ni,D5,185.54,200.94,2,yes,,audio
+2,2,(ni),E5,186.41,201.28,1,yes,,audio
+2,2,(ni),D5,187.14,201.46,1,yes,,audio
+2,2,go,C5,187.95,201.65,8,yes,,audio
+3,1,Ar,C5,268.01,304.31,4,yes,,audio
+3,1,a,E5,269.05,305.03,2,yes,,audio
+3,1,mi,D5,269.81,305.42,2,yes,,audio
+3,1,je,E5,270.51,305.79,9,no,length: gap of 8.67 eighths rounded to 9,audio
+3,1,ki,G5,272.09,307.39,2,yes,,audio
+3,1,chu,F5,272.86,307.77,2,yes,,audio
+3,1,cha,E5,273.64,308.13,2,yes,,audio
+3,1,hi,D5,274.39,308.50,2,yes,,audio
+3,1,ne,A5,275.18,308.87,8,yes,,audio
+3,2,Cha,C5,276.72,310.36,2,yes,,audio
+3,2,ran,B4,277.55,310.72,2,yes,,audio
+3,2,(ran),A4,278.30,311.08,2,yes,,audio
+3,2,ta,B4,279.02,311.45,2,yes,,audio
+3,2,le,D5,279.79,311.81,8,yes,,audio
+3,2,bo,C5,281.29,313.33,2,yes,,audio
+3,2,se,B4,282.04,313.69,2,yes,,audio
+3,2,tha,A4,282.78,314.06,2,yes,,audio
+3,2,ki,B4,283.50,314.42,2,yes,,audio
+3,2,bo,G4,284.32,314.78,9,yes,,audio
+3,3,Ar,C5,286.20,316.46,4,yes,,audio
+3,3,a,E5,287.20,317.21,2,yes,,audio
+3,3,mi,D5,287.88,317.58,2,yes,,audio
+3,3,je,E5,288.49,317.94,9,yes,,audio
+3,3,ki,G5,290.03,319.58,2,yes,,audio
+3,3,chu,F5,290.76,319.96,2,yes,,audio
+3,3,cha,E5,291.53,320.33,2,yes,,audio
+3,3,hi,D5,292.24,320.69,2,yes,,audio
+3,3,ne,A5,293.08,321.05,8,no,length: gap of 8.48 eighths rounded to 8,audio
+3,4,Ja,B5,294.62,322.62,2,yes,,audio
+3,4,no,A5,295.34,323.02,2,yes,,audio
+3,4,ni,G5,296.07,323.38,2,yes,,audio
+3,4,bo,A5,296.80,323.72,2,yes,,audio
+3,4,le,D6,297.52,324.11,8,yes,,audio
+3,4,su,C6,299.09,325.64,2,yes,,audio
+3,4,dhu,B5,299.88,326.03,2,yes,,audio
+3,4,da,A5,300.65,326.42,2,yes,,audio
+3,4,ki,B5,301.39,326.78,2,yes,,audio
+3,4,bo,G5,302.17,327.15,6,no,"length: last note of the stanza, not measured",audio
+4,1,Tumi,A5,399.00,416.88,9,yes,,audio
+4,1,na,D3,399.82,418.65,6,yes,,audio
+4,1,rakhile,C6,400.60,419.81,4,yes,,audio
+4,1,gri,C6,401.74,420.54,5,yes,,audio
+4,1,(gri),C6,402.63,421.46,14,yes,,audio
+4,1,ho,C6,403.36,424.19,12,no,length: gap of 12.38 eighths rounded to 12,audio
+4,1,ar,A5,404.56,426.60,10,yes,,audio
+4,1,Paaibo,D3,405.23,428.61,2,yes,,audio
+4,1,kotha,C4,406.08,429.02,2,no,"length: last note of the stanza, not measured",audio
+5,1,Oi,C3,495.16,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,1,je,C3,496.60,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,1,he,A2,497.95,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,1,ri,E5,499.32,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,Ta,G5,501.10,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,mo,D5,,523.94,1,no,slow: not heard; octave guessed; normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,so,E3,501.81,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,gha,F3,502.62,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,(gha),A2,503.32,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,no,C5,504.21,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,gho,D5,505.03,523.94,1,no,slow: sounded more like B; normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,ra,A4,505.70,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,ga,A4,507.05,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,ho,C4,507.84,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,(ho),D2,508.65,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,no,E5,509.45,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,ra,F5,510.09,523.94,1,no,"slow: no clear attack, found by its pitch rising; normal speed: not heard; length: gap of 0.00 eighths rounded to 1",audio
+5,2,jo,A2,510.31,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,2,ni,F3,511.05,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,3,Oi,C5,514.31,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,3,je,A2,514.38,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,3,chert,A2,515.66,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,3,(chert),A2,516.99,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,4,Ta,C5,519.84,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,4,mosoghanoghora,A4,520.51,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,4,ga,A4,521.27,523.94,1,no,normal speed: not heard; length: gap of 0.00 eighths rounded to 1,audio
+5,4,hono,A4,523.01,523.94,6,no,"normal speed: sounded more like B; length: last note of the stanza, not measured",audio

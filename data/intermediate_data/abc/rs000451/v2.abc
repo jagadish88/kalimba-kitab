@@ -1,0 +1,46 @@
+X:1
+T:Baro Asha Kore
+C:notes from the screen; octave and lengths from the audio of the normal-speed playing
+N:? after a syllable = that note is less certain (see the notes CSV for why)
+M:4/4
+L:1/8
+Q:1/4=159
+%%MIDI program 0
+K:C
+P:Stanza 1
+c2 d2 | e4 e4 | e2 f e d2 e2 | g2 f2 e2 d2 |
+w: Bo-ro a-sha ko-__re _ e-she-chi go
+c2 c2 d2 e d | c8 |
+w: ka-che de-_ke lawo
+c2 A2 c2 d2 | g6 f2 | e2 d2
+w: Phi-ra-_yo na ja-no-ni
+c2 d2 | e4 e4 | e2 f e d2 e2 | g2 f2 e2 d2 |
+w: Bo-ro a-sha ko-__re _ e-she-chi go
+c2 c2 d2 e d | c8 |
+w: ka-che de-_ke lawo
+P:Stanza 2
+g4 a2 b2 | c'6 b a | g2 a2 g2 f2 | e8 |
+w: Di-no hi-ne _ _ Ke-ho chaa-he na
+d4 e2 c2 | d8 | c2 B2 G2 A2 | c4 d2 e d | c8 | z6 z
+w: Tu-mi taa-re ra-khi-_be jaa-ni _ _ go
+P:Stanza 3
+c- | c3 e2 d2 e- | e8 | g2 f2 e2 d2 | a8 |
+w: Ar _ a-mi je? _ ki-chu cha-hi ne
+c2 B2 A2 B2 | d8 | c2 B2 A2 B2 | G8- | G
+w: Cha-ran _ ta-le bo-se tha-ki-bo _
+c4 e2 d- | d e6- e- | e2 g2 f2 e2 | d2 a6- | a2
+w: Ar a-mi _ je _ _ ki-chu cha-hi ne? _
+b2 a2 g2 | a2 d'6- | d'2 c'2 b2 a2 | b2 g6 |
+w: Ja-no-ni bo-le _ su-dhu da-ki-bo?
+P:Stanza 4
+a8- | a D,6 c'- | c'3 c'4- c' | c'8- | c'6 c'2- | c'8- | c'2 a6- | a4 D,2 C2 |
+w: Tumi _ na rakhile _ gri-___ho? _ _ ar _ Paaibo kotha?
+P:Stanza 5
+C, C, A,, e
+w: Oi? je? he?-ri?
+g d E, F, | A,, c d A A C D,, e | f A,, F,
+w: Ta?-mo?-so?-gha?-?-no?-gho?-ra? ga?-ho?-?-no? ra?-jo?-ni?
+c A,, A,, A,,
+w: Oi?-je? chert? ?
+c | A A A6 |]
+w: Ta?-mosoghanoghora? ga?-hono?

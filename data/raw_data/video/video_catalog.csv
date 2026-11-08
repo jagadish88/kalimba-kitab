@@ -6,7 +6,7 @@ rs000002,src001508,,vocal_melody
 rs000002,src001509,,vocal_melody
 rs000002,src001510,,vocal_melody
 rs000011,src000365,,piano_roll
-rs000011,src000388,,piano_staff
+rs000011,src000388,data/raw_data/video/rs000011_src000388.mp4,piano_staff
 rs000011,src001511,,vocal_melody
 rs000011,src001512,,vocal_melody
 rs000011,src001513,,vocal_melody
@@ -177,7 +177,7 @@ rs000242,src001605,,vocal_melody
 rs000242,src001606,,vocal_melody
 rs000242,src001607,,vocal_melody
 rs000262,src000281,,piano_roll
-rs000262,src000306,,piano_staff
+rs000262,src000306,data/raw_data/video/rs000262_src000306.mp4,piano_staff
 rs000262,src001608,,vocal_melody
 rs000262,src001609,,vocal_melody
 rs000262,src001610,,vocal_melody
@@ -248,9 +248,9 @@ rs000448,src000371,,piano_staff
 rs000448,src001650,,vocal_melody
 rs000448,src001651,,vocal_melody
 rs000448,src001652,,vocal_melody
-rs000451,src000171,,piano_lesson
+rs000451,src000171,data/raw_data/video/rs000451_src000171.mp4,piano_lesson
 rs000451,src000410,,piano_roll
-rs000451,src000437,,piano_staff
+rs000451,src000437,data/raw_data/video/rs000451_src000437.mp4,piano_staff
 rs000451,src000456,,kalimba
 rs000451,src000457,,kalimba
 rs000451,src000458,,kalimba
@@ -444,7 +444,7 @@ rs000918,src001772,,vocal_melody
 rs000918,src001773,,vocal_melody
 rs000918,src001774,,vocal_melody
 rs000920,src000362,,piano_roll
-rs000920,src000418,,piano_staff
+rs000920,src000418,data/raw_data/video/rs000920_src000418.mp4,piano_staff
 rs000920,src000467,,kalimba
 rs000920,src001775,,vocal_melody
 rs000920,src001776,,vocal_melody
@@ -536,8 +536,8 @@ rs001175,src001825,,vocal_melody
 rs001185,src001826,,vocal_melody
 rs001185,src001827,,vocal_melody
 rs001185,src001828,,vocal_melody
-rs001194,src000169,,piano_lesson
-rs001194,src000200,,piano_staff
+rs001194,src000169,data/raw_data/video/rs001194_src000169.mp4,piano_lesson
+rs001194,src000200,data/raw_data/video/rs001194_src000200.mp4,piano_staff
 rs001194,src000407,,piano_roll
 rs001194,src000442,,piano_staff
 rs001194,src000470,,kalimba
