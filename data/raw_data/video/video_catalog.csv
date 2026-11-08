@@ -404,7 +404,7 @@ rs000842,src000286,,piano_roll
 rs000842,src000299,,piano_staff
 rs000842,src001747,,vocal_melody
 rs000842,src001748,,vocal_melody
-rs000864,src000397,,piano_roll
+rs000864,src000397,data/raw_data/video/rs000864_src000397.mp4,piano_roll
 rs000864,src000420,,piano_staff
 rs000864,src000465,,kalimba
 rs000864,src000466,,kalimba
