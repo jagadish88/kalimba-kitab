@@ -1,0 +1,490 @@
+% jianpu.sty -- numbered-notation (Jianpu / kalimba) tabs with lyrics
+%
+% Syntax inside \begin{jianpu} ... \end{jianpu}:
+%   (lyric: notes)   one syllable and the notes sung on it
+%   notes            space-separated; each note is a digit 0-7
+%                      5'   high octave (dot above)   5''  two octaves up
+%                      5,   low octave  (dot below)   5,,  two octaves down
+%                      5.   dotted note (augmentation dot)
+%                      5-   hold one more beat ("4--" = 3 beats)
+%                      5/ 5// 5///   eighth / sixteenth / 32nd (1-3 underlines);
+%                                    marks combine: 7''//.
+%                      -    on its own: a held beat in the middle of a group
+%   (lik: 5 6)       2-3 notes in a group share one beat -> single underline
+%   (x: 5 6 5 3)     4+ notes share one beat              -> double underline
+%   (ma: 5)(lik: 5 6)   groups written with NO space between them form one
+%                       word: kept on one line, syllables joined by a
+%                       centred dot (ma·lik), tied by a hairline under the lyric
+%   |                optional bar line (beginners can leave these out)
+%   ... :|           at the end of a line: play the line twice (repeat barline)
+%   ... :||          at the end of a stanza's last line: play the stanza twice
+%                    (heavier repeat barline); restyle with \jprepeatline /
+%                    \jprepeatstanza or \jprepeatsign{dot}{thin}{thick}{gap}
+%   each input line is one phrase / printed line (long lines wrap)
+%
+% Header:  \jpheader{Title}[subtitle]
+% Tuning:  \setlength{\jpbeat}{2.3em}    width of one beat
+%          \jpcolors: redefine jpink / jplyric / jpaccent with \definecolor
+%          \renewcommand\jpnotefont{...}  \renewcommand\jplyricfont{...}
+%          \setlength{\jplinegap}{1.5em}  space between lines
+%          \jpcentred      (default: lines start at the left margin)
+%          \jpendbarfalse  (no end barline after the last line)
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{jianpu}[2026/10/12 Jianpu tabs with lyrics]
+\RequirePackage{xcolor}
+\RequirePackage{microtype}
+
+% ---- palette ----
+\definecolor{jpink}{HTML}{232323}     % notes
+\definecolor{jplyric}{HTML}{5E534B}   % lyrics (warm grey)
+\definecolor{jpaccent}{HTML}{8C2F39}  % title, word lines (wine)
+\colorlet{jprule}{jpaccent!45}
+\colorlet{jpfaint}{jplyric!55}
+
+% ---- fonts (standard PostScript fonts that ship with every TeX) ----
+\newlength\jpbeat        \setlength\jpbeat{2.3em}
+\newlength\jpminnote     \setlength\jpminnote{1.25em}
+\newcommand\jpnotefont{\fontfamily{phv}\fontseries{b}\selectfont\Large}
+\newcommand\jplyricfont{\fontfamily{ppl}\itshape\selectfont\normalsize}
+\newcommand\jptitlefont{\fontfamily{ppl}\itshape\selectfont\fontsize{30}{36}\selectfont}
+\newcommand\jpsubtitlefont{\fontfamily{ppl}\scshape\selectfont\small}
+\newcommand\jpdot{\hbox{$\scriptscriptstyle\bullet$}}
+% duration (augmentation) dot: small, sitting at the baseline
+\newcommand\jpdurdot{\lower .12em\hbox{\scalebox{.7}{$\scriptscriptstyle\bullet$}}}
+\newlength\jpnoteheight  \setlength\jpnoteheight{1.6em}  % room for digit + octave dots
+\newlength\jplinegap     \setlength\jplinegap{1.5em}     % space between printed lines
+\newlength\jpstanzagap   \setlength\jpstanzagap{1.2em}   % extra space for a blank input line
+\newlength\jplyricgap    \setlength\jplyricgap{.55em}    % lyric -> notes (hairline sits here)
+
+% ---- header ----
+\NewDocumentCommand\jpheader{m o}{%
+  \par\begingroup\centering
+  {\color{jpaccent}\jptitlefont #1\par}%
+  \vspace{.7em}%
+  {\color{jprule}\rule[.32em]{5em}{.4pt}\hspace{.6em}%
+   \raisebox{.2em}{\rotatebox{45}{\rule{.32em}{.32em}}}%
+   \hspace{.6em}\rule[.32em]{5em}{.4pt}\par}%
+  \IfValueT{#2}{\vspace{.45em}{\color{jplyric}\jpsubtitlefont
+    \textls[160]{\MakeLowercase{#2}}\par}}%
+  \endgroup\vspace{2.4em}}
+\RequirePackage{graphicx}
+
+% ---- word grouping ----
+% space between words (no line: words are tied by a hairline instead)
+\newcommand\jpwordsep{\unskip\hskip .9em plus .5em\relax}
+\newlength\jpwordinset   \setlength\jpwordinset{.3em}
+\newif\ifjpcentred \jpcentredfalse
+\newcommand\jpleftaligned{\jpcentredfalse}
+\newcommand\jpcentred{\jpcentredtrue}
+\newif\ifjpendbar \jpendbartrue          % end barline after the tab's last line
+\ExplSyntaxOn
+\dim_new:N \l__jp_w_dim
+\dim_new:N \l__jp_cell_dim
+\int_new:N \l__jp_n_int
+\int_new:N \l__jp_ul_int
+\int_new:N \l__jp_dash_int
+\int_new:N \l__jp_i_int
+\seq_new:N \l__jp_tok_seq
+\seq_new:N \l__jp_m_seq
+\seq_new:N \l__jp_notes_seq
+\seq_new:N \l__jp_lines_seq
+\tl_new:N \l__jp_line_tl
+\box_new:N \l__jp_ly_box
+\box_new:N \l__jp_grp_box
+\box_new:N \l__jp_dig_box
+\box_new:N \l__jp_word_box
+\bool_new:N \l__jp_hyph_bool
+\bool_new:N \l__jp_first_bool
+\seq_new:N \l__jp_words_seq
+\seq_new:N \l__jp_syls_seq
+\int_new:N \l__jp_nsyl_int
+
+% ---------- drawing ----------
+% stack of #1 dots (centred)
+\cs_new_protected:Npn \__jp_dots:n #1
+  {
+    \vbox:n
+      {
+        \offinterlineskip
+        \prg_replicate:nn { \int_eval:n {#1} } { \hbox_to_wd:nn { 1em } { \hss \jpdot \hss } \kern .06em }
+      }
+  }
+% one column: #1 glyph, #2 octave (+up/-down), #3 dotted?, #4 width,
+% #5 underline levels, #6 / #7 levels of the previous / next column
+% (so beams join up with neighbours that share them)
+% Baseline = the note's baseline; a strut keeps room for octave dots above.
+\cs_new_protected:Npn \__jp_column:nnnnnnn #1#2#3#4#5#6#7
+  {
+    \color{jpink}
+    \vbox_top:n
+      {
+        \offinterlineskip
+        \hbox_to_wd:nn {#4}
+          {
+            \vrule height \jpnoteheight depth .2em width 0pt
+            \hss
+            \hbox_set:Nn \l__jp_dig_box { \jpnotefont #1 }
+            \vbox:n
+              {
+                \offinterlineskip
+                \int_compare:nNnT {#2} > 0
+                  {
+                    \hbox_to_wd:nn { \box_wd:N \l__jp_dig_box } { \hss \__jp_dots:n {#2} \hss }
+                    \kern .1em
+                  }
+                \box_use:N \l__jp_dig_box
+              }
+            \bool_if:nT {#3} { \kern .1em \jpdurdot \kern -.18em }
+            \hss
+          }
+        \int_compare:nNnT {#5} > 0 { \kern .06em }
+        \int_step_inline:nn {#5}
+          {
+            \kern .1em
+            \hbox_to_wd:nn {#4}
+              {
+                \int_compare:nNnT {#6} < {##1} { \kern .2em }
+                \leaders \hrule height .055em \hfil
+                \int_compare:nNnT {#7} < {##1} { \kern .2em }
+              }
+            \kern .07em
+          }
+        \int_compare:nNnT {#2} < 0
+          {
+            \kern .1em
+            \hbox_to_wd:nn {#4} { \hss \__jp_dots:n { \int_abs:n {#2} } \hss }
+          }
+      }
+  }
+\cs_new:Npn \__jp_dashglyph:
+  { \textcolor{jpink!75}{\vrule width .5em height .40em depth -.33em} }
+% a cell: the notes of one syllable (its lyric is gathered for the word)
+\tl_new:N \g__jp_word_tl
+\cs_new_protected:Npn \__jp_cell:nn #1#2   % #1 width, #2 lyric
+  {
+    \tl_if_blank:nF {#2}
+      {
+        \tl_if_empty:NF \g__jp_word_tl
+          { \tl_gput_right:Nn \g__jp_word_tl { \textcolor{jpfaint}{$\cdot$} } }
+        \tl_gput_right:Nn \g__jp_word_tl {#2}
+      }
+    \hbox_to_wd:nn {#1} { \hss \box_use:N \l__jp_grp_box \hss }
+  }
+\cs_new_protected:Npn \__jp_dash:
+  {
+    \unskip \nobreak
+    \hbox_set:Nn \l__jp_grp_box
+      {
+        \__jp_column:nnnnnnn
+          { \__jp_dashglyph: } {0} { \c_false_bool }
+          { \jpbeat } {0} {0} {0}
+      }
+    \__jp_cell:nn { \jpbeat } { }
+  }
+\cs_new_protected:Npn \jp_bar:
+  {
+    \unskip
+    \hskip .5em plus .3em
+    \vbox_top:n { \hbox:n { \textcolor{jpink!80}{\vrule height 1.1em depth .6em width .04em} } }
+    \hskip .5em plus .3em
+  }
+
+% ---------- one syllable ----------
+% token grammar:  digit  octave-marks  [ / ... ] [ . ]  dashes
+%   5   5'  5,,  5//  5'//.  4--   and a lone "-" for a held beat
+\seq_new:N \l__jp_items_seq      % items: {kind}{glyph}{oct}{dot}{slashes}
+\seq_new:N \l__jp_lvl_seq
+\bool_new:N \l__jp_explicit_bool
+\cs_new_protected:Npn \__jp_count:nn #1#2   % count chars #1 in tl #2
+  {
+    \tl_set:Ne \l_tmpa_tl {#2}
+    \regex_replace_all:nnN { [^#1] } { } \l_tmpa_tl
+    \tl_count:N \l_tmpa_tl
+  }
+\cs_new_protected:Npn \jp_syl:nn #1#2
+  {
+    \unskip
+    \seq_set_split:Nnn \l__jp_tok_seq { ~ } {#2}
+    \seq_remove_all:Nn \l__jp_tok_seq { }
+    \seq_clear:N \l__jp_items_seq
+    \seq_map_inline:Nn \l__jp_tok_seq
+      {
+        \regex_extract_once:nnNTF
+          { \A ([0-9]?) ([\',]*) ([/\.]*) (\-*) \Z } {##1} \l__jp_m_seq
+          {
+            \tl_if_blank:eF { \seq_item:Nn \l__jp_m_seq {2} }
+              {
+                \int_compare:nNnT { \seq_item:Nn \l__jp_m_seq {2} } > 7
+                  { \msg_warning:nnn { jianpu } { not-jianpu } {##1} }
+                \tl_set:Ne \l_tmpb_tl { \seq_item:Nn \l__jp_m_seq {3} }
+                \tl_set:Ne \l_tmpa_tl { \seq_item:Nn \l__jp_m_seq {4} }
+                \int_set:Nn \l__jp_i_int { 0 }
+                \tl_map_inline:Nn \l_tmpb_tl
+                  { \str_if_eq:nnTF {####1} {'} { \int_incr:N \l__jp_i_int } { \int_decr:N \l__jp_i_int } }
+                \int_set:Nn \l__jp_ul_int { 0 }
+                \bool_set_false:N \l_tmpa_bool
+                \tl_map_inline:Nn \l_tmpa_tl
+                  { \str_if_eq:nnTF {####1} {/} { \int_incr:N \l__jp_ul_int } { \bool_set_true:N \l_tmpa_bool } }
+                \seq_put_right:Ne \l__jp_items_seq
+                  {
+                    {n} { \seq_item:Nn \l__jp_m_seq {2} }
+                    { \int_use:N \l__jp_i_int }
+                    { \bool_if:NTF \l_tmpa_bool { \c_true_bool } { \c_false_bool } }
+                    { \int_use:N \l__jp_ul_int }
+                  }
+              }
+            \tl_set:Ne \l_tmpa_tl { \seq_item:Nn \l__jp_m_seq {5} }
+            \prg_replicate:nn { \tl_count:N \l_tmpa_tl }
+              { \seq_put_right:Nn \l__jp_items_seq { {d}{}{0}{\c_false_bool}{0} } }
+          }
+          { \msg_warning:nnn { jianpu } { bad-note } {##1} }
+      }
+    % held beats after the last note are drawn outside the lyric cell
+    \int_zero:N \l__jp_dash_int
+    \bool_set_true:N \l_tmpb_bool
+    \bool_while_do:nn
+      { \l_tmpb_bool && ! \seq_if_empty_p:N \l__jp_items_seq }
+      {
+        \seq_get_right:NN \l__jp_items_seq \l_tmpa_tl
+        \str_if_eq:eeTF { \tl_item:Nn \l_tmpa_tl {1} } { d }
+          { \seq_pop_right:NN \l__jp_items_seq \l_tmpa_tl \int_incr:N \l__jp_dash_int }
+          { \bool_set_false:N \l_tmpb_bool }
+      }
+    % underline levels: explicit slashes win; otherwise share the beat
+    \int_zero:N \l__jp_n_int
+    \bool_set_false:N \l__jp_explicit_bool
+    \seq_map_inline:Nn \l__jp_items_seq { \__jp_scan:nnnnn ##1 }
+    \int_set:Nn \l__jp_ul_int
+      { \int_compare:nNnTF \l__jp_n_int > 3 {2}
+          { \int_compare:nNnTF \l__jp_n_int > 1 {1} {0} } }
+    \seq_clear:N \l__jp_lvl_seq
+    \seq_map_inline:Nn \l__jp_items_seq
+      { \seq_put_right:Ne \l__jp_lvl_seq { \__jp_level:nnnnn ##1 } }
+    \int_compare:nNnT \l__jp_n_int > 0
+      {
+        \hbox_set:Nn \l__jp_grp_box
+          {
+            \int_step_inline:nn { \seq_count:N \l__jp_items_seq }
+              {
+                \exp_last_unbraced:Ne \__jp_item:nnnnnnnn
+                  { \seq_item:Nn \l__jp_items_seq {##1} }
+                  { \seq_item:Nn \l__jp_lvl_seq {##1} }
+                  { \int_compare:nNnTF {##1} = 1 {0} { \seq_item:Nn \l__jp_lvl_seq { ##1 - 1 } } }
+                  { \int_compare:nNnTF {##1} = { \seq_count:N \l__jp_items_seq } {0}
+                      { \seq_item:Nn \l__jp_lvl_seq { ##1 + 1 } } }
+              }
+          }
+        \hbox_set:Nn \l__jp_ly_box { \jplyricfont #1 }
+        \dim_set:Nn \l__jp_cell_dim
+          { \dim_max:nn { \jpbeat } { \box_wd:N \l__jp_grp_box + .3em } }
+        \hskip 0pt
+        \__jp_cell:nn { \l__jp_cell_dim } {#1}
+      }
+    \bool_set_false:N \l__jp_hyph_bool
+    \prg_replicate:nn { \l__jp_dash_int } { \__jp_dash: }
+  }
+\cs_new_protected:Npn \__jp_scan:nnnnn #1#2#3#4#5
+  {
+    \str_if_eq:nnT {#1} {n}
+      {
+        \int_incr:N \l__jp_n_int
+        \int_compare:nNnT {#5} > 0 { \bool_set_true:N \l__jp_explicit_bool }
+      }
+  }
+\cs_new:Npn \__jp_level:nnnnn #1#2#3#4#5
+  {
+    \str_if_eq:nnTF {#1} {d} {0}
+      { \bool_if:NTF \l__jp_explicit_bool {#5} { \int_use:N \l__jp_ul_int } }
+  }
+% #1-#5 item, #6 its level, #7 previous level, #8 next level
+\cs_new_protected:Npn \__jp_item:nnnnnnnn #1#2#3#4#5#6#7#8
+  {
+    \str_if_eq:nnTF {#1} {d}
+      { \__jp_column:nnnnnnn { \__jp_dashglyph: } {0} { \c_false_bool } { \jpbeat } {0} {0} {0} }
+      {
+        \dim_set:Nn \l__jp_w_dim
+          { \dim_max:nn { \jpbeat / \fp_eval:n { 2^(#6) } } { \jpminnote } }
+        \bool_if:nT {#4} { \dim_set:Nn \l__jp_w_dim { \dim_max:nn { 1.5 \l__jp_w_dim } { \l__jp_w_dim + .45em } } }
+        \__jp_column:nnnnnnn {#2} {#3} {#4} { \l__jp_w_dim } {#6} {#7} {#8}
+      }
+  }
+% ---------- one word (unbreakable, separated from its neighbours) ----------
+\cs_new_protected:Npn \__jp_word:n #1
+  {
+    \tl_if_eq:nnTF {#1} { | }
+      { \jp_bar: \bool_set_true:N \l__jp_first_bool }
+      {
+        \bool_if:NF \l__jp_first_bool { \jpwordsep }
+        \bool_set_false:N \l__jp_first_bool
+        \regex_extract_all:nnN
+          { \( \s* ([^:]*?) \s* : \s* ([^\)]*?) \s* \) } {#1} \l__jp_syls_seq
+        \int_set:Nn \l__jp_nsyl_int { \seq_count:N \l__jp_syls_seq / 3 }
+        \tl_gclear:N \g__jp_word_tl
+        \hbox_set:Nn \l__jp_word_box
+          {
+            \int_step_inline:nn { \l__jp_nsyl_int }
+              {
+                \exp_args:Nee \jp_syl:nn
+                  { \seq_item:Nn \l__jp_syls_seq { 3 * ##1 - 1 } }
+                  { \seq_item:Nn \l__jp_syls_seq { 3 * ##1 } }
+              }
+          }
+        \hbox_set:Nn \l__jp_ly_box
+          { \textcolor{jplyric}{ \jplyricfont \g__jp_word_tl } }
+        \dim_set:Nn \l__jp_cell_dim
+          {
+            \dim_max:nn { \box_wd:N \l__jp_word_box }
+              { \box_wd:N \l__jp_ly_box + 2\jpwordinset }
+          }
+        \vbox:n
+          {
+            \offinterlineskip
+            \hbox_to_wd:nn { \l__jp_cell_dim }
+              {
+                \kern \jpwordinset
+                \vrule height .8em depth .3em width 0pt
+                \box_use_drop:N \l__jp_ly_box \hss
+              }
+            \kern \jplyricgap
+            \hbox_to_wd:nn { \l__jp_cell_dim }
+              {
+                \box_use_drop:N \l__jp_word_box \hss
+                \hbox_overlap_left:n
+                  {
+                    \raise \dim_eval:n { \jpnoteheight + .45\jplyricgap }
+                    \hbox_to_wd:nn { \l__jp_cell_dim }
+                      {
+                        \kern \jpwordinset
+                        \color{jprule} \leaders \hrule height .45pt \hfil
+                        \kern \jpwordinset
+                      }
+                  }
+              }
+          }
+      }
+  }
+\msg_new:nnn { jianpu } { bad-note } { Can't~read~note~'#1'~--~skipped. }
+\msg_new:nnn { jianpu } { not-jianpu } { '#1'~is~not~a~jianpu~note~(only~0-7);~printed~as~written. }
+
+% ---------- room above the notes: enough for the most octave dots on the line ----------
+\seq_new:N \l__jp_ups_seq
+\int_new:N \l__jp_maxup_int
+\cs_new_protected:Npn \__jp_set_height:N #1
+  {
+    \int_zero:N \l__jp_maxup_int
+    \regex_extract_all:nVN { \'+ } #1 \l__jp_ups_seq
+    \seq_map_inline:Nn \l__jp_ups_seq
+      { \int_set:Nn \l__jp_maxup_int { \int_max:nn { \l__jp_maxup_int } { \tl_count:n {##1} } } }
+    \hbox_set:Nn \l_tmpa_box { \jpnotefont 0 }
+    \hbox_set:Nn \l_tmpb_box { \jpdot }
+    \dim_set:Nn \jpnoteheight
+      {
+        \box_ht:N \l_tmpa_box + .18em
+        + \l__jp_maxup_int \dimexpr \box_ht:N \l_tmpb_box + \box_dp:N \l_tmpb_box + .06em \relax
+        + \int_compare:nNnTF \l__jp_maxup_int > 0 { .1em } { 0pt }
+      }
+  }
+
+% ---------- repeat signs at the end of a line ----------
+%   ... :|    play the line twice     -> end-repeat barline   :|
+%   ... :||   play the stanza twice   -> the same sign, heavier
+% \jprepeatsign{dot size}{thin bar}{thick bar}{gap}; sizes in em of the text font
+\tl_new:N \l__jp_rep_tl
+\box_new:N \l__jp_digit_box
+\dim_new:N \l__jp_rh_dim
+\dim_new:N \l__jp_rd_dim
+% the bars are exactly as tall as the digits and sit on their baseline;
+% the thick bar matches the digits' stems, so the sign blends into the tab
+\NewDocumentCommand \jprepeatsign { m m m m }
+  {
+    \hbox_set:Nn \l__jp_digit_box { \jpnotefont 7 }
+    \dim_set:Nn \l__jp_rh_dim { \box_ht:N \l__jp_digit_box }        % digit height
+    \hbox_set:Nn \l_tmpa_box { \scalebox{#1}{$\bullet$} }
+    \hbox:n
+      {
+        \color{jpink}
+        \hbox_overlap_right:n
+          { \raise \dim_eval:n { .68\l__jp_rh_dim - \box_ht:N \l_tmpa_box / 2 } \box_use:N \l_tmpa_box }
+        \raise \dim_eval:n { .32\l__jp_rh_dim - \box_ht:N \l_tmpa_box / 2 } \box_use:N \l_tmpa_box
+        \kern #4
+        \vrule height \l__jp_rh_dim depth 0pt width #2
+        \kern #4
+        \vrule height \l__jp_rh_dim depth 0pt width #3
+      }
+  }
+% {dot size}{thin bar}{thick bar}{gap}: the line sign, and a slightly heavier stanza sign
+\newcommand\jprepeatline   { \jprepeatsign{.42}{.055em}{.19em}{.12em} }
+\newcommand\jprepeatstanza { \jprepeatsign{.50}{.095em}{.27em}{.13em} }
+% end of the piece: thin + thick barline, no dots, digit height
+\NewDocumentCommand \jpbarline { m m m }
+  {
+    \hbox_set:Nn \l__jp_digit_box { \jpnotefont 7 }
+    \hbox:n
+      {
+        \color{jpink}
+        \vrule height \box_ht:N \l__jp_digit_box depth 0pt width #1
+        \kern #3
+        \vrule height \box_ht:N \l__jp_digit_box depth 0pt width #2
+      }
+  }
+\newcommand\jpendsign { \jpbarline{.055em}{.19em}{.12em} }
+\int_new:N \l__jp_lastline_int
+\cs_new_protected:Npn \__jp_repeat:n #1
+  {
+    \nobreak \hskip .45em \nobreak
+    \tl_if_eq:nnTF {#1} { || } { \jprepeatstanza } { \jprepeatline }
+  }
+\cs_generate_variant:Nn \__jp_repeat:n { V }
+
+% ---------- environment: one input line = one printed line ----------
+\tl_const:Ne \c__jp_nl_tl { \char_generate:nn {13} {12} }
+\NewDocumentEnvironment { jianpu } { }
+  { \par \char_set_catcode_other:N \^^M \__jp_grab:w }
+  { \par }
+\cs_new_protected:Npn \__jp_grab:w #1 \end { \__jp_process:n {#1} \end }
+\cs_new_protected:Npn \__jp_process:n #1
+  {
+    \seq_set_split:NVn \l__jp_lines_seq \c__jp_nl_tl {#1}
+    \group_begin:
+    \setlength \parindent { 0pt }
+    \setlength \baselineskip { 0pt }
+    \setlength \lineskiplimit { 0pt }
+    \setlength \lineskip { \jplinegap }
+    \setlength \parskip { 0pt }
+    \ifjpcentred \centering \else \raggedright \fi
+    \int_zero:N \l__jp_lastline_int                     % last line that has music
+    \seq_map_indexed_inline:Nn \l__jp_lines_seq
+      { \tl_if_blank:nF {##2} { \int_set:Nn \l__jp_lastline_int {##1} } }
+    \seq_map_indexed_inline:Nn \l__jp_lines_seq
+      {
+        \tl_set:Nn \l__jp_line_tl {##2}
+        % a repeat sign at the end of the line:  :|  or  :||
+        \tl_clear:N \l__jp_rep_tl
+        \regex_extract_once:nVNT { : (\|\|?) \s* \Z } \l__jp_line_tl \l_tmpa_seq
+          {
+            \tl_set:Ne \l__jp_rep_tl { \seq_item:Nn \l_tmpa_seq { 2 } }
+            \regex_replace_once:nnN { : \|\|? \s* \Z } { } \l__jp_line_tl
+          }
+        \__jp_set_height:N \l__jp_line_tl
+        % a "word" = syllable groups written with no space between them
+        \regex_extract_all:nVN { \| | (?: \( [^\)]* \) )+ } \l__jp_line_tl \l__jp_words_seq
+        \seq_if_empty:NTF \l__jp_words_seq
+          { \tl_if_blank:VT \l__jp_line_tl { \par \vspace { \jpstanzagap } } }
+          {
+            \leavevmode
+            \bool_set_true:N \l__jp_first_bool
+            \seq_map_function:NN \l__jp_words_seq \__jp_word:n
+            \tl_if_empty:NTF \l__jp_rep_tl
+              {
+                \bool_lazy_and:nnT { \int_compare_p:nNn {##1} = \l__jp_lastline_int }
+                                   { \legacy_if_p:n { jpendbar } }
+                  { \nobreak \hskip .45em \nobreak \jpendsign }
+              }
+              { \__jp_repeat:V \l__jp_rep_tl }
+            \par
+          }
+      }
+    \group_end:
+  }
+\ExplSyntaxOff
+\endinput

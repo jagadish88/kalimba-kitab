@@ -1,0 +1,66 @@
+X:1
+T:Tumi Robe Nirobe
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs002164.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs002164.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs002164.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
+N:Syllables placed on the notes as in the swaralipi (Sa = C).
+N:The last three bars (marked *) are the arrangement's ending; they are not in the swaralipi.
+N:Line 4: the lyrics file has "nishithisini-samo"; written as nishithini-samo, as in line 8.
+M:3/4
+L:1/8
+Q:1/4=120
+K:C
+P:Sthayi
+% line 1: Tumi rabe nirabe
+z2 E2 E2 | D E E3 F | D/ E/ D E D E2 | E F5- |
+w: Tu-mi | ra-_-be-_ | ni-_-_-_-_-ra-|be-_-|
+% hridoye mamo, Tumi
+F4 F E | E G2 ^F G ^F | G B A/ B/ A G ^F | G A F G E F | E2 E G F/ G/ F |
+w: _ hri-_-|do-_-_-_-_-|ye-_-_-_-_ ma-_-|mo-_-_-_-_-_ | _ Tu-_-mi-_-_|
+% rabe nirabe
+D E E3 F | D/ E/ D E D E2 | E F5- | F6 |
+w: ra-_-be-_ | ni-_-_-_-_-ra-|be-_-|_ |
+% line 2, Tumi
+F2 E2 D2 | C2 B,2 A,2 | G,2 C2 C2 | C4 C2 | C B,2 D D2 | D C2 E E2 | E6- | E2 E G F2 |
+w: Ni-bi-ro | ni-bhri-to | pur-_-ni-|ma-ni-|shi-_-_-thi-|ni-_-_-sa-|mo-|_ Tu-_-mi |
+% rabe nirabe
+D E E3 F | D/ E/ D E D E2 | E F5 |
+w: ra-_-be-_ | ni-_-_-_-_-ra-|be-_|
+P:Antara
+% line 3
+z2 G2 G2 | G ^F A2 G2 | G/ B/ A B2 B2 | c6- | c2 c2 c B | c2 e2 e2 | e2 g2 f e | d e5- |
+w: Ma-mo | ji-_-ba-no | jou-_-_-_-ba-|no-|_ ma-mo-_ | a-khi-lo | bhu-_-ba-_-|no-_-|
+% line 4, Tumi
+e d c2 c2 | B2 B2 B A | G ^F G2 G2 | G c4 A | B4 A G | G ^F2 A G2 | F E2 G F2 | E6- | E2 E G F2 |
+w: _-_ Tu-mi | bho-ri-be-_ | gou-_-_-ra-|be-_-_ | _ ni-_-|shi-_-_-thi-|ni-_-_-sa-|mo-|_ Tu-_-mi |
+% rabe nirabe
+D E E3 F | D/ E/ D E D E2 | E F5- | F6 |
+w: ra-_-be-_ | ni-_-_-_-_-ra-|be-_-|_ |
+P:Sanchari
+% line 5
+G2 G2 G2 | G4 G ^F | G/ A/ G5- | G2 F2 F2 | E2 E2 E F | E D3 E F | D E5- |
+w: Jaa-gi-be | E-kaa-_-|ki-_-_-|_ ta-bo | ka-ru-no-_ | aan-_-_-_-|khi-_-|
+% line 6
+E2 E2 E2 | E3 F D2 | D2 D3 F | E4 ^F G | ^F2 G3 ^F | G2 G ^F G ^F | G/ B/ A3 G ^F | G/ A/ G5- |
+w: _ Ta-bo | an-_-cha-|lo-chhaa-_-|ya-_-_ | mo-re-_ | ro-hi-_-be-_ | dhaa-_-_-_-_-|ki-_-_-|
+P:Abhog
+% line 7, sung twice
+G2 G2 G2 | G ^F A2 G2 | B A B2 B2 | c/ d/ c5- | c2 c2 c B | c2 e2 e2 | e f e/ f/ g f e | d e3 d B- |
+w: _ Ma-mo | du-_-kho-_-|be-_-_-do-|no-_-_ | _ ma-mo-_ | sa-pha-lo | swa-_-_-_-_-pa-_-|no-_-_-_-|
+B/ d/ c c2 c2 | B A B2 G2 | B A B2 B2 | c/ d/ c5- | c2 c2 c B | c2 e2 e2 | e f e/ f/ g f e | d e3 d B- |
+w: _-_-_ Ma-mo | du-_-kho-_-|be-_-_-do-|no-_-_ | _ ma-mo-_ | sa-pha-lo | swa-_-_-_-_-pa-_-|no-_-_-_-|
+% line 8, Tumi
+B/ d/ c c2 c2 | B2 B2 B A | G ^F2 G G2 | G c4 A | B4 G2 | G ^F2 A G2 | F E2 G F2 | E6- | E2 E G F2 |
+w: _-_-_ Tu-mi | bho-ri-be-_ | sou-_-_-ra-|bhe-_-_ | _ ni-|shi-_-_-thi-|ni-_-_-sa-|mo-|_ Tu-_-mi |
+% line 1 to the end: rabe nirabe hridoye mamo, Tumi rabe nirabe
+D E E3 F | D/ E/ D E D E2 | E F5- |
+w: ra-_-be-_ | ni-_-_-_-_-ra-|be-_-|
+F4 F E | E G2 ^F G ^F | G B A/ B/ A G ^F | G A F G E F | E2 E G F/ G/ F |
+w: _ hri-_-|do-_-_-_-_-|ye-_-_-_-_ ma-_-|mo-_-_-_-_-_ | _ Tu-_-mi-_-_|
+D E E3 F | D/ E/ D E D E2 | E F5- | F6 |
+w: ra-_-be-_ | ni-_-_-_-_-ra-|be-_-|_ |
+% arrangement's ending (instrumental)
+D E E3 F | D/ E/ D E D E2 | E F5 |]
+w: * * * * | * * * * * * | * * |

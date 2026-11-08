@@ -1,0 +1,17 @@
+# Legacy folders (their essentials were copied into data/, scripts/ and src/)
+/songs/
+/video/
+
+# Third-party files: listed in sources/sources.csv, re-downloaded with scripts/fetch_sources.py
+data/raw_data/midi/*.mid
+data/raw_data/swaralipi/
+data/raw_data/text/lyrics/
+
+# Downloaded videos (listed in data/raw_data/video/video_catalog.csv)
+data/raw_data/video/*.mp4
+
+# Python and LaTeX leftovers
+__pycache__/
+*.egg-info/
+*.aux
+*.log

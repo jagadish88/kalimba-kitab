@@ -1,0 +1,36 @@
+X:1
+T:O Je Mane Na Mana
+C:notes from the screen; octave and lengths from the audio of the normal-speed playing
+N:? after a syllable = that note is less certain (see the notes CSV for why)
+M:4/4
+L:1/8
+Q:1/4=134
+%%MIDI program 0
+K:G
+P:Stanza 1
+G2 A2 A2 B2- | B c c e d2 c2 | B6- B
+w: O Je Man-ne _ _ Na _ _ Maa-na? _
+G- | G A2 A2 B3 | c c e d2 c2 B- | B3
+w: OQ _ Je Man-ne _ Na _ _ Maa-na _
+B2 d2 ^c- | ^c d2 c2 d3- | d ^c e d4
+w: Aan-khi phi-_ra-yi-le _ bo-_le
+G- | G4 A4 | B2 B c d2 c2 | B8 |
+w: Na _ Na? _ Na _ _ _ ?
+P:Stanza 2
+B2 g2 g2 g2 | f2 f2 f2 f2- | f2 e2 g4 |
+w: Ja-to bo-li naai _ raa-__ti _
+g2 f2 e3 e | e f e2 d2 ^c2 | d2 c B4- B |
+w: Mo-li-no ho-__ye-che baa-__ti _
+B2 d2 ^c2 d2 | ^c2 d4 c e | d4
+w: Mu-kho-paa-ne che-ye bo?-?-le?
+G4- | G2 A4 B2 | B c d2 c2 B2 |
+w: Na? _ Na _ Na _ _ _ ?
+P:Stanza 3
+B2 B2 B2 c2 | d2 e4 e2 | e2 d2 g4 |
+w: Bi-dhu-ro bi-ka-lo ho-_ye _
+f2 e2 d2 ^c2 | d2 c B
+w: khya-pa pa-bo-_ne? ?
+B4 | d2 ^c2 d2 c2 | d4 d e d e- | e d c4
+w: Phaa-gu?-no ko-ri-chhe ha-____ha _
+d2 | d2 d2 c2 B2 |]
+w: Phu-le-ro bo-ne?

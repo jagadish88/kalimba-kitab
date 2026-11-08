@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ktab"
+version = "0.5.0"
+description = "Kalimba tab parser: (syllable: notes) tabs -> song model, timing, checks"
+requires-python = ">=3.9"
+dependencies = ["antlr4-python3-runtime==4.13.2"]
+
+[project.optional-dependencies]
+video = ["numpy", "pillow"]
+
+[project.scripts]
+ktab = "ktab.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["ktab", "ktab._gen"]
+
+[tool.setuptools.package-data]
+ktab = ["grammar/*.g4", "latex/*.sty", "README.md"]
+"ktab._gen" = ["*.interp", "*.tokens"]

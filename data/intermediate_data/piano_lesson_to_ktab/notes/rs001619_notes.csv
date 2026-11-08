@@ -1,0 +1,111 @@
+stanza_no,line_no,syllable,note,time_slow_s,time_normal_speed_s,length_eighths,certain,why_uncertain,length_from
+1,1,O,G4,34.75,67.69,2,yes,,audio
+1,1,Je,A4,35.51,68.19,2,yes,,audio
+1,1,Man,A4,36.41,68.66,2,yes,,audio
+1,1,ne,B4,37.03,69.13,3,yes,,audio
+1,1,(ne),C5,37.95,69.84,1,yes,,audio
+1,1,Na,C5,39.03,70.07,1,yes,,audio
+1,1,(Na),E5,39.73,70.29,1,yes,,audio
+1,1,(Na),D5,40.53,70.53,2,yes,,audio
+1,1,Maa,C5,41.53,71.00,2,yes,,audio
+1,1,na,B4,42.36,71.45,7,no,length: gap of 7.44 eighths rounded to 7,audio
+1,2,OQ,G4,44.09,73.18,2,yes,,audio
+1,2,Je,A4,44.79,73.66,2,yes,,audio
+1,2,Man,A4,45.73,74.14,2,yes,,audio
+1,2,ne,B4,46.37,74.59,3,yes,,audio
+1,2,(ne),C5,47.26,75.28,1,yes,,audio
+1,2,Na,C5,48.26,75.51,1,yes,,audio
+1,2,(Na),E5,48.84,75.75,1,yes,,audio
+1,2,(Na),D5,49.69,75.97,2,yes,,audio
+1,2,Maa,C5,50.71,76.43,2,yes,,audio
+1,2,na,B4,51.44,76.88,4,yes,,audio
+1,3,Aan,B4,52.68,77.84,2,yes,,audio
+1,3,khi,D5,53.34,78.27,2,yes,,audio
+1,3,phi,C#5,54.22,78.71,2,yes,,audio
+1,3,ra,D5,54.80,79.17,2,yes,,audio
+1,3,yi,C#5,55.68,79.61,2,yes,,audio
+1,3,le,D5,56.23,80.04,4,yes,,audio
+1,3,bo,C#5,57.23,80.94,1,yes,,audio
+1,3,(bo),E5,58.03,81.17,1,yes,,audio
+1,3,le,D5,58.56,81.40,4,yes,,audio
+1,4,Na,G4,59.81,82.31,5,yes,,audio
+1,4,Na,A4,61.03,83.50,4,no,length: gap of 3.64 eighths rounded to 4,audio
+1,4,(Na),B4,61.94,84.35,2,yes,,audio
+1,4,Na,B4,62.90,84.78,1,yes,,audio
+1,4,(Na),C5,63.38,85.01,1,yes,,audio
+1,4,(Na),D5,64.16,85.23,2,yes,,audio
+1,4,(Na),C5,64.97,85.66,2,yes,,audio
+1,4,(Na),B4,65.76,86.10,8,no,"length: last note of the stanza, not measured",audio
+2,1,Ja,B4,161.48,196.78,2,yes,,audio
+2,1,to,G5,162.33,197.26,2,yes,,audio
+2,1,bo,G5,163.17,197.71,2,yes,,audio
+2,1,li,G5,163.78,198.17,2,yes,,audio
+2,1,naai,F#5,164.74,198.61,2,yes,,audio
+2,1,(naai),F#5,165.62,199.08,2,yes,,audio
+2,1,raa,F#5,166.48,199.53,2,yes,,audio
+2,1,(raa),F#5,167.15,200.00,4,yes,,audio
+2,1,ti,E5,168.11,200.86,2,yes,,audio
+2,1,(ti),G5,168.98,201.33,4,yes,,audio
+2,2,Mo,G5,170.37,202.23,2,yes,,audio
+2,2,li,F#5,171.14,202.69,2,yes,,audio
+2,2,no,E5,171.78,203.12,3,yes,,audio
+2,2,ho,E5,172.90,203.79,1,yes,,audio
+2,2,(ho),E5,173.81,204.01,1,yes,,audio
+2,2,(ho),F#5,174.46,204.21,1,yes,,audio
+2,2,ye,E5,175.08,204.43,2,yes,,audio
+2,2,che,D5,175.99,204.88,2,yes,,audio
+2,2,baa,C#5,176.97,205.31,2,yes,,audio
+2,2,(baa),D5,177.89,205.78,2,yes,,audio
+2,2,(baa),C5,178.72,206.24,1,yes,,audio
+2,2,ti,B4,179.29,206.46,5,yes,,audio
+2,3,Mu,B4,180.75,207.53,2,yes,,audio
+2,3,kho,D5,181.40,208.00,2,yes,,audio
+2,3,paa,C#5,182.26,208.45,2,yes,,audio
+2,3,ne,D5,182.87,208.90,2,yes,,audio
+2,3,che,C#5,183.83,209.35,2,yes,,audio
+2,3,ye,D5,184.41,209.78,4,yes,,audio
+2,3,bo,C#5,185.54,210.69,1,no,length: gap of 1.35 eighths rounded to 1,audio
+2,3,(bo),E5,186.39,210.99,1,no,"normal speed: no clear attack, found by its pitch rising; length: gap of 0.52 eighths rounded to 1",audio
+2,3,le,D5,187.24,211.11,4,no,length: gap of 4.35 eighths rounded to 4,audio
+2,4,Na,G4,188.43,212.08,6,no,length: gap of 5.64 eighths rounded to 6,audio
+2,4,Na,A4,189.69,213.35,4,yes,,audio
+2,4,(Na),B4,190.70,214.24,2,yes,,audio
+2,4,Na,B4,191.64,214.69,1,yes,,audio
+2,4,(Na),C5,192.27,214.93,1,yes,,audio
+2,4,(Na),D5,193.08,215.15,2,yes,,audio
+2,4,(Na),C5,193.98,215.58,2,yes,,audio
+2,4,(Na),B4,194.80,216.05,2,no,"length: last note of the stanza, not measured",audio
+3,1,Bi,B4,295.24,323.70,2,yes,,audio
+3,1,dhu,B4,295.98,324.17,2,yes,,audio
+3,1,ro,B4,296.86,324.64,2,yes,,audio
+3,1,bi,C5,297.45,325.08,2,yes,,audio
+3,1,ka,D5,298.35,325.54,2,yes,,audio
+3,1,lo,E5,298.97,325.95,4,yes,,audio
+3,1,ho,E5,300.04,326.82,2,yes,,audio
+3,1,(ho),E5,300.69,327.27,2,yes,,audio
+3,1,ye,D5,301.38,327.69,2,yes,,audio
+3,1,(ye),G5,302.43,328.16,4,yes,,audio
+3,2,khya,F#5,303.57,329.04,2,yes,,audio
+3,2,pa,E5,304.30,329.47,2,yes,,audio
+3,2,pa,D5,305.21,329.89,2,yes,,audio
+3,2,bo,C#5,305.97,330.31,2,yes,,audio
+3,2,(bo),D5,306.98,330.76,2,yes,,audio
+3,2,ne,C5,307.82,331.19,1,no,length: gap of 0.30 eighths rounded to 1,audio
+3,2,(ne),B4,308.40,331.25,1,no,normal speed: not heard; length: gap of 0.68 eighths rounded to 1,audio
+3,3,Phaa,B4,309.70,331.40,4,yes,,audio
+3,3,gu,D5,310.36,332.28,2,no,length: gap of 1.70 eighths rounded to 2,audio
+3,3,no,C#5,311.30,332.64,2,yes,,audio
+3,3,ko,D5,311.87,333.02,2,yes,,audio
+3,3,ri,C#5,312.71,333.45,2,yes,,audio
+3,3,chhe,D5,313.31,333.84,4,yes,,audio
+3,3,ha,D5,314.38,334.70,1,yes,,audio
+3,3,(ha),E5,314.89,334.89,1,yes,,audio
+3,3,(ha),D5,315.82,335.10,1,yes,,audio
+3,3,(ha),E5,316.27,335.30,2,yes,,audio
+3,3,ha,D5,317.24,335.69,1,yes,,audio
+3,3,(ha),C5,317.84,335.89,4,yes,,audio
+3,4,Phu,D5,318.97,336.69,2,yes,,audio
+3,4,le,D5,319.62,337.12,2,yes,,audio
+3,4,ro,D5,320.41,337.55,2,yes,,audio
+3,4,bo,C5,321.14,337.95,2,yes,,audio
+3,4,ne,B4,321.85,338.35,2,no,"length: last note of the stanza, not measured",audio
