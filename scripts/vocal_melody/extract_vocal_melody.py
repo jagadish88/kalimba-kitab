@@ -14,7 +14,8 @@ and prints the singer's Sa, found from the pitch histogram (or given with --sa a
 
 How it works
   1. Demucs (htdemucs) splits the mix into vocals / drums / bass / other; only vocals are kept.
-  2. CREPE (torchcrepe, 'full' model) gives f0 and periodicity every 10 ms. Frames with
+  2. CREPE (torchcrepe, 'full' model) gives f0 and periodicity every 10 ms, run only where the
+     separated voice has energy (silence and instrumental breaks are skipped). Frames with
      periodicity below --min-periodicity or very quiet are treated as unvoiced.
   3. Sa: with --scale (the song's notes, e.g. from scale_catalog.csv), the pitch class whose
      degrees best cover the sung frames; without it, a guess from the histogram that can be a
@@ -70,16 +71,42 @@ def separate_vocals(path):
     return librosa.resample(v, orig_sr=model.samplerate, target_sr=16000), 16000
 
 
+def voice_regions(rms, hop, pad=0.15, bridge=0.4):
+    """(start, end) frame ranges where the separated voice has energy: CREPE only needs to run there."""
+    on = rms > max(np.percentile(rms, 30) * 0.5, rms.max() * 0.01)
+    p, b = int(pad / hop), int(bridge / hop)
+    idx = np.flatnonzero(on)
+    if not len(idx):
+        return []
+    regions, s, e = [], idx[0], idx[0]
+    for i in idx[1:]:
+        if i - e > b:
+            regions.append((max(0, s - p), min(len(rms), e + p + 1))); s = i
+        e = i
+    regions.append((max(0, s - p), min(len(rms), e + p + 1)))
+    return regions
+
+
 def track_pitch(v, sr, hop=0.01):
+    """CREPE 'full' on the voiced regions only (silence and instrumental breaks are skipped)."""
     import torchcrepe
-    audio = torch.tensor(v, dtype=torch.float32)[None]
-    f0, per = torchcrepe.predict(audio, sr, hop_length=int(sr * hop), fmin=65, fmax=1000, model='full',
-                                 batch_size=512, device='cpu', return_periodicity=True)
-    per = torchcrepe.filter.median(per, 3)
-    f0 = torchcrepe.filter.mean(f0, 3)
-    rms = librosa.feature.rms(y=v, frame_length=int(sr * 0.04), hop_length=int(sr * hop))[0]
-    n = min(f0.shape[1], len(rms))
-    return f0[0, :n].numpy(), per[0, :n].numpy(), rms[:n]
+    h = int(sr * hop)
+    rms = librosa.feature.rms(y=v, frame_length=int(sr * 0.04), hop_length=h)[0]
+    n = len(rms)
+    f0 = np.zeros(n, dtype=np.float32); per = np.zeros(n, dtype=np.float32)
+    regions = voice_regions(rms, hop)
+    done = sum(e - s for s, e in regions)
+    print(f'CREPE on {done / n:.0%} of the recording ({len(regions)} voiced regions)', file=sys.stderr)
+    for s, e in regions:
+        seg = torch.tensor(v[s * h:e * h], dtype=torch.float32)[None]
+        if seg.shape[1] < 1024:
+            continue
+        fs, ps = torchcrepe.predict(seg, sr, hop_length=h, fmin=65, fmax=1000, model='full',
+                                    batch_size=512, device='cpu', return_periodicity=True)
+        ps = torchcrepe.filter.median(ps, 3); fs = torchcrepe.filter.mean(fs, 3)
+        k = min(fs.shape[1], e - s)
+        f0[s:s + k] = fs[0, :k].numpy(); per[s:s + k] = ps[0, :k].numpy()
+    return f0, per, rms
 
 
 def find_sa(midi, weight):
