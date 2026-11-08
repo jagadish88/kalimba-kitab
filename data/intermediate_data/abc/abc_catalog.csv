@@ -1,0 +1,8 @@
+song_id,version,path,pipeline,source_ids,made_from,date,note
+rs000101,v1,data/intermediate_data/abc/rs000101/v1.abc,piano_lesson_to_ktab,src000174,,2026-11-08,
+rs000206,v1,data/intermediate_data/abc/rs000206/v1.abc,piano_lesson_to_ktab,src000167,../sudensha/amaro_porano_jaha_chay.abc,2026-11-07,draft of data/dataset/ktab/amaro_porano_jaha_chay.ktab
+rs001141,v1,data/intermediate_data/abc/rs001141/v1.abc,piano_lesson_to_ktab,src000163,../sudensha/ekla_chalo_re.abc,2026-11-07,draft of data/dataset/ktab/ekla_cholo_re.ktab; transposed from E to G major
+rs001619,v1,data/intermediate_data/abc/rs001619/v1.abc,piano_lesson_to_ktab,src000168,,2026-11-08,
+rs001714,v1,data/intermediate_data/abc/rs001714/v1.abc,kalimba_cover_to_abc,,songs/phule_phule_dhole_dhole_kalimba.mp3 (legacy folder),2026-10-30,notes heard in a kalimba cover recording; which catalogued cover it was is not recorded
+rs002164,v1,data/intermediate_data/abc/rs002164/v1.abc,piano_lesson_to_ktab,src000166,../sudensha/tumi_robe_nirobe.abc,2026-11-07,draft of data/dataset/ktab/tumi_robe_nirobe.ktab
+rs002164,v2,data/intermediate_data/abc/rs002164/v2.abc,midi_to_ktab,src000161;src001048;src001042,,2026-11-08,notes from the MIDI violin track; lyrics placed by the swaralipi

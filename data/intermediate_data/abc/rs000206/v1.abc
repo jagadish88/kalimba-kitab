@@ -1,0 +1,51 @@
+X:1
+T:Amaro Porano Jaha Chay
+C:notes from the screen; octave and lengths from the audio of the normal-speed playing
+N:? after a syllable = that note is less certain (see the notes CSV for why)
+M:4/4
+L:1/8
+Q:1/4=136
+%%MIDI program 0
+K:Bm
+P:Stanza 1
+E2 F2 E2 D2 | C2 B,2 C2 B, ^A, | B,8- | B,2
+w: A-ma-ro po-ra-no? ja?-ha _ chay? _
+B,2 B, F E F- | F8 |
+w: Tu-mi _ taai ? _
+F ^G F G E2 F2 | ^G F E F D4 | C B, C
+w: Tu-__mi taai _ _ _ _ _ go _ _ ?
+E2 F2 E- | E D2 C2 B,2 C- | C B, ^A, B,4- B, |
+w: A?-ma-ro _ po-ra-no ja-_ha _ chay? _
+P:Stanza 2
+E2 F2 F2 F2 | F4 ^G2 F2 | E4 F4- | F3
+w: To-ma chha-ra aar e ja-go-te _
+E2 F2 E- | E F B ^A B4- | B2
+w: Mor _ ke-_ho _ naai _ _
+A ^G F G E2 | F2 ^G F E F D2- | D2 C B, C4 |
+w: ki-chu _ _ naai _ _ _ _ _ go _ _ _ ?
+P:Stanza 3
+F2 F2 E2 F2 | F2 ^A2 A4 | ^G2 ^A2 B4 | c B ^A2 B4 |
+w: Tu-mi shu-kho jo-_di naa-hi paao? _ _ _ _
+B2 B2 ^A2 B2 | c2 c2 c2 d2 | c2 B2 ^A2 B2 | A4 ^G2 A2- | A4- A
+w: Jaao _ shu-khe-ro san-_dha-ne _ jaao _ _ _ ? _ _
+P:Stanza 4
+F2 F- | F E2 F2 F2 F- | F4 F2 ^G2 |
+w: Aa-mi _ to-ma-re pe-_ye-chi
+E2 F2 F2 ^A2 | ^A2 A B B4 |
+w: hri-_da-yo-_maa-_jhe
+^A B A c B2 =A2 | ^G B A2
+w: Aar _ _ _ _ ki-_chu _
+^G2 F2 | E2 F2 ^G F E F | D4 C B, C2- | C4
+w: naa-hi chaai _ _ _ _ _ go? _ _ ? _
+P:Stanza 5
+B,2 B,2 | ^G2 G2 G2 G2 | ^G2 A2 G2 F2 |
+w: Aa-mi to-ma-ro bi-_ra-he _
+E2 F2 F2 F2 | F4 F4 |
+w: ro-hi-bo bi-_lin?
+E2 F2 ^G2 G2 | ^G2 A2 G2 F2 | E2 F2 E4 | D8 |
+w: To-ma-te ko-_ri-bo _ baas _ _ ?
+P:Stanza 6
+D3 E E2 E2 | C4 B,4 | C3 B, B,2 C2 | ^A,4 B,4 |
+w: Dir-gho _ di-ba-so dir-gho _ ra-ja-ni
+C3 E E2 E2 | F4 ^G2 F E | F8 |]
+w: Dir-gho _ ba-ra-so _ _ maas?

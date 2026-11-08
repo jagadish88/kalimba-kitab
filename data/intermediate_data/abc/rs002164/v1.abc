@@ -1,0 +1,39 @@
+X:1
+T:Tumi Robe Nirobe
+C:notes from the screen; octave and lengths from the audio of the normal-speed playing
+N:? after a syllable = that note is less certain (see the notes CSV for why)
+M:4/4
+L:1/8
+Q:1/4=109
+%%MIDI program 0
+K:C
+P:Stanza 1
+G F F E E2 E2 | F2 E D E D E2 | F6- F
+w: Tu-mi _ _ ro-be _ ni-ro-be _ _ ? _
+E- | E E2 G ^F G F G | B A2 G ^F G A =F | G E F E2
+w: hri-_doy _ _ _ _ _ _ _ ma-mo _ _ _ _ _ _ _
+G F F | E E2 E2 F2 E | D E D E2 F3- | F4 z4 |
+w: Tu-mi _ _ ro-be _ ni-ro-be _ _ _ _
+P:Stanza 2
+F2 E2 D2 C2 | B,2 A,2
+w: Ni-bhi-ro nibh-ri-to
+G,3 C | C2 C4 C2 | C B, C D D2 D C | D E E2 E3
+w: pur-ni-ma-ni-shi-thi-ni _ _ _ _ _ _ _ sa-mo?
+P:Stanza 3
+G- | G G2 ^F2 A2 A | G G B A2 B2 c- | c6
+w: Ma-_mo ji-ba-no _ jou-ba-no _ ? _
+c2 | B2 c2 e2 e2 | e f g2 f2 e2- | e2 d2 c2
+w: Ma-mo a-khi-lo bhu-ba-no _ _ _ _ _
+c2 | c2 B2 B2 B A | G ^F G F G2 c2- | c2 B A B4 |
+w: Tu-mi bho-ri-be _ gou-ra-be _ _ ? _ _ _ ?
+G2 G ^F G A G2 | F E F G F2 E2- | E6
+w: Ni-shi-thi-ni _ _ _ _ _ _ sa-mo? _
+P:Stanza 4
+G2 | G2 G2 G4 | ^F2 G6 |
+w: Jaa-gi-be e-kaa-ki?
+F2 F,2 E2 E2 | E2 D4 E F | E6- E
+w: ta-bo ka-ru-no aa-khi _ ? _
+E- | E E2 E2 F2 E- | E D2 D2 E F E- | E3 G2 ^F2 G- | G3
+w: Ta-_bo an-chalch-ha-_ya _ _ _ _ _ _ mo-re _
+G ^F G F G | ^F G B A2 G F G |]
+w: ro-hi-be _ _ _ dhaa-ki _ _ _ ?

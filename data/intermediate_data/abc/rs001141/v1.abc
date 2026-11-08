@@ -1,0 +1,48 @@
+X:1
+T:Ekla Cholo Re
+C:notes from the screen; octave and lengths from the audio of the normal-speed playing
+N:transposed from E major to G major
+N:? after a syllable = that note is less certain (see the notes CSV for why)
+M:4/4
+L:1/8
+Q:1/4=116
+%%MIDI program 0
+K:G
+P:Stanza 1
+F F F2 G2 G A | A2 d3 c3 | B3
+w: Jo-di tor daak shu-ne keu na a-she
+A G2 A2 | B B A2 G3 z | z2
+w: to-be ek-la cho-lo re
+P:Stanza 2
+c c c2 d d | d2 c2 d =f e2 |
+w: To-be ek-la cho-lo ek-la cho-lo
+d2 c B A G A2 | B B A2 G A c
+w: ek-la cho-lo _ ek-la cho-lo re _ _
+c | d2 c2 d d d2 | c2 d =f e2
+w: To-be ek-la cho-lo ek-la cho-lo
+d2 | c B A G A2 B B | A2 G3 z
+w: ek-la cho-lo _ ek-la cho-lo re
+P:Stanza 3
+c c | c2 d d =f e d2- | d2
+w: Jo-di keu ko-tha na _ koye _
+G G A c2 d | e =f e g f e d2 |
+w: O re O _ re _ _ O _ o-bha-ga
+c2 d d =f e d2- | d2
+w: keu ko-tha na _ koye _
+d e =f g2 g | g a =f g f e d2 |
+w: jo-di so-bai tha-ke _ mukh _ fi-raa-ye
+c d2 d =f e d2- | d2
+w: so-bai ko-re _ bhoye _
+G G A c2 d | e =f e g f e d2 |
+w: jo-di so-bai tha-ke _ mukh _ fi-raa-ye
+c d2 d =f e d2- | d2 z4 z
+w: so-bai ko-re _ bhoye _
+P:Stanza 4
+c | c d d =f e f3- | =f e d2 c2 d f |
+w: To-be po-ran _ khu-le _ O tui mukh phu-te
+e2 d c2 B A G | A2 B B A2 G2- | G
+w: tor mo-ner ko-tha _ ek-la bo-lo re _
+c c2 c2 d =f |
+w: O tui mukh phu-te
+e2 d c2 B A G | A2 B B A2 G2- | G |]
+w: tor mo-ner ko-tha _ ek-la bo-lo re _

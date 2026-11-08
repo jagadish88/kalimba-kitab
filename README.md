@@ -104,7 +104,11 @@ Use the same paper for both so the cut is seamless. Fonts are TeX Gyre, in
 | `scripts/kalimba_cover_to_abc/notes_from_audio.py` | kalimba recording | ABC, notes CSV, spectrogram, replay WAV |
 
 Drafts go to `data/intermediate_data/<pipeline>/`; a corrected tab goes to
-`data/dataset/ktab/`.
+`data/dataset/ktab/`. ABC and ktab drafts are kept by song:
+`data/intermediate_data/abc/<song_id>/v1.abc`, `v2.abc`, ... and
+`data/intermediate_data/ktab/<song_id>/v1.ktab`, ... Different sources may disagree, so
+every version is kept, and `abc_catalog.csv` / `ktab_catalog.csv` record where each came
+from (`song_id, version, path, pipeline, source_ids, made_from, date, note`).
 
 ## Practice
 
