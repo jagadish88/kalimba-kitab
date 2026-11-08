@@ -1,0 +1,57 @@
+X:1
+T:Gramchhara Oi Ranga Matir Path
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000920.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000920.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000920.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
+N:Syllables placed on the notes as in the swaralipi (Sa = C); one swaralipi matra = one quarter note.
+N:The refrain "Aamar mon bhulay re" and "mori haay haay re" are sung as in the swaralipi;
+N:the lyrics file leaves them out.
+M:4/4
+L:1/8
+Q:1/4=200
+K:C
+P:Sthayi
+A,3 C3 C2 | C4 C3 D | E3 G G3 A | G4 F2 G F | E8- | E8 |
+w: Graam-_-chhaa-|raa oi _ | raa-_-nga-_ | maa-tir-_-_ | path | _ |
+E7 F | G6 A G | F6 G F | E4 C2 D2 | E6 F2 | E4 D2 E D | C8- | C8 |
+w: Aa-_-|mar-_-_-|_-_-_-|_-_-_ | mon _ | bhu-lay-_-_ | re | _ |
+A,3 C3 C2 | C4 C3 D | E3 G G3 A | G4 F2 G F | E8- | E8 |
+w: Graam-_-chhaa-|raa oi _ | raa-_-nga-_ | maa-tir-_-_ | path | _ |
+E7 F | G6 A G | F6 G F | E4 C2 D2 | E6 F2 | E4 D2 E D | C8- | C4 G2 A2 |
+w: Aa-_-|mar-_-_-|_-_-_-|_-_-_ | mon _ | bhu-lay-_-_ | re | _ O-re |
+G3 A2 c c2 | d4 c4 | c6 B2 | A3 G2 A2 B | A3 G5- | G8 |
+w: kaar-_-_ paa-|ne mon | haat baa-|ri-_-_-_-|ye-_-|_ |
+A2 A2 A3 c | A4 G3 A | F3 G3 F2 | E4 C3 D |
+w: Lu-ti-ye-_ | jaay dhu-_-|lay-_ re | Aa-mar-_ |
+E6 F2 | E4 D2 E D | C8- | C8 |
+w: mon _ | bhu-lay-_-_ | re | _ |
+A,3 C3 C2 | C4 C3 D | E3 G G3 A | G4 F2 G F | E8- | E8 |
+w: Graam-_-chhaa-|raa oi _ | raa-_-nga-_ | maa-tir-_-_ | path | _ |
+E7 F | G6 A G | F6 G F | E4 C2 D2 | E6 F2 | E4 D2 E D | C8- | C8 |
+w: Aa-_-|mar-_-_-|_-_-_-|_-_-_ | mon _ | bhu-lay-_-_ | re | _ |
+P:Antara
+A,3 C C4 | C4 C3 D | E3 G G4 | G3 A G2 A G | F4 F E G F | E8 |
+w: O-_ je | aa-may-_ | gho-_-rer | baa-_-hir-_-_ | ko-_-_-_-_-|re |
+E4 E3 F | G4 G3 A | F4 F3 G | F6 G F | E8- | E4 C2 D2 |
+w: Paa-ye-_ | paa-ye-_ | paa-ye-_ | dho-_-_-|re | _ mo-ri |
+E7 F | E5 D2 E | D C7- | C4 G2 A2 |
+w: haay _ | haay _ _ | re _ | _ O je |
+A3 c c4 | c3 d c4 | c4 B4 | A3 G2 A2 B | G8- | G8 |
+w: ke-_-re | aa-_-may | ni-ye | jaay _ _ _ | re | _ |
+A6 c2 | A4 G3 A | F G5 F2 | E4 C3 D | E6 F2 | E4 D2 E D | C8- | C4 G4 |
+w: Jaay re | kon chu-_-|lay-_ re | Aa-mar-_ | mon _ | bhu-lay-_-_ | re | _ O |
+G6 E2 | G4 G3 A | A3 c3 d2 | d3 c2 d2 e | e c7- | c8 |
+w: kon bnaa-|ke ki _ | dhon _ de-|kha-_-_-_-|be-_ | _ |
+c3 d3 d2 | d4 c d2 e | d3 c3 B2 | A3 G2 A2 B | A G7- | G8 |
+w: Kon-_-kha-|ne ki _ _ | daay _ tthe-|ka-_-_-_-|be-_ | _ |
+G4 A3 c | c4 c4 | c7 B | B3 A G A2 B | A G7- | G8 |
+w: Ko-thay-_ | gi-ye | shesh _ | me-_-le-_-_ | je _ | _ |
+A4 A3 c | A4 G3 A | F3 G3 F2 | E4 C3 D | E6 F2 | E4 D2 E D | C8- | C8 |
+w: Bhe-bei-_ | na ku-_-|lay-_ re | Aa-mar-_ | mon _ | bhu-lay-_-_ | re | _ |
+P:Sthayi
+A,3 C3 C2 | C4 C3 D | E3 G G3 A | G4 F2 G F | E8- | E8 |
+w: Graam-_-chhaa-|raa oi _ | raa-_-nga-_ | maa-tir-_-_ | path | _ |
+E7 F | G6 A G | F6 G F | E4 C2 D2 | E6 F2 | E4 D2 E D | C8- | C8 |]
+w: Aa-_-|mar-_-_-|_-_-_-|_-_-_ | mon _ | bhu-lay-_-_ | re | _ |

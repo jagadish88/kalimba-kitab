@@ -1,0 +1,59 @@
+X:1
+T:Ami Kan Pete Roi
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000262.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000262.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000262.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
+N:Syllables placed on the notes as in the swaralipi (Sa = C); one swaralipi half-bar (3 matras) = one 3/4 bar.
+N:Words follow the sung forms in the swaralipi (hri-doy-ga-hon, go-pon-baa-sir).
+N:When "kaan pete roi" returns after each section, the MIDI leaves out "Aami".
+M:3/4
+L:1/8
+Q:1/4=150
+K:C
+P:Sthayi
+z2 C2 C2 | C3 D C/ D/ E | E2 E D2 E | E D2 C3- | C2 C2 C2 | C D2 E2 G | G2 G3 A | G A2 B3- | B A2 G3 |
+w: Aa-mi | kaan-_-_-_-_ | pe-te-_-_ | roi-_-_ | _ Aa-mi | kaan-_-_-_ | pe-te-_ | roi-_-_ | _-_-_ |
+G5 B | B A A3 B | B G G3 B | B A A3 B | G B B4 | B A G4 | G A A G3 | F2 E3 D |
+w: O _ | aa-_-maar-_ | aa-_-pon-_ | hri-_-doy-_-|ga-_-hon | dwaa-_-re | baa-_-re-_ | baa-re-_ |
+C3 D C/ D/ E | E2 E D2 E | E D2 C3- | C2 G4 |
+w: kaan-_-_-_-_ | pe-te-_-_ | roi-_-_ | _ Kon |
+G2 A3 c | c2 c4 | B c2 d d c | c B A3 B | B A G4 | G2 G3 A | A F G4 | A2 B3 G | G A A G3 | G F E3 D |
+w: go-pon-_-|baa-sir | kaan-_-_-na-_-|haa-_-sir-_ | go-_-pon | ko-tha-_ | shu-_-ni-|baa-re-_ | baa-_-re-_ | baa-_-re-_ |
+C3 D C/ D/ E | E2 E D2 E | E D2 C3- | C6 |
+w: kaan-_-_-_-_ | pe-te-_-_ | roi-_-_ | _ |
+P:Antara
+c2 c3 e | e d d2 e d | d c3 d2 | d c c2 d c | c B B3 c | c B A3 B | G4 A2 | A2 B4- | B6- | B3 c2 B | A G5- | G6 |
+w: Bhro-mor-_ | se-_-tha-_-_ | hoy _ bi-|baa-_-gi-_-_ | ni-_-bhri-_-|to-_ nil-_ | pod-do | laa-gi | _ | _-_-_ | re-_ | _ |
+c2 c3 e | e d d2 e d | d c3 d2 | d c c2 d c | c B B3 c | c B A3 B | G4 A2 | A2 B4- | B6- | B3 c2 B | A G5- | G2 G4 |
+w: Bhro-mor-_ | se-_-tha-_-_ | hoy _ bi-|baa-_-gi-_-_ | ni-_-bhri-_-|to-_ nil-_ | pod-do | laa-gi | _ | _-_-_ | re-_ | _ Kon |
+G2 A4 | A c c B c B | B A2 B G2 | G A A G3 | G3 A A G | F2 E3 D | D C3 E2 | E D E4 | C2 C3 D | D2 E3 D |
+w: raa-ter | paa-_-khi-_-_-_ | gaay-_-_ e-|kaa-_-ki-_ | son-_-gi-_-|bi-hin-_ | on-_-dho-|kaa-_-re | baa-re-_ | baa-re-_ |
+C3 D C/ D/ E | E2 E D2 E | E D2 C3- | C6 |
+w: kaan-_-_-_-_ | pe-te-_-_ | roi-_-_ | _ |
+P:Sanchari
+C5 A, | A, C4 D | E6- | E5 F | F D4 E | D E3 E D | C4 G2 | G2 G3 A | A c c4 | c B A2 B A- | A G3 G2 | G2 G3 A |
+w: Ke-_ | se-_-_ | mor | _-_ | kei-_-_ | baa-_ jaa-_-|ne ki-|chhu taar-_ | de-_-khi | aa-_-bhaa-_-_ | _-_ Ki-|chhu paai-_ |
+G2 G A2 B | B A G4- | G4 C2 | C2 C3 D | E2 D E2 F | E2 D C3 |
+w: o-nu-_-_-|maa-_-ne | _ ki-|chhu taar-_ | bu-jhi-_-_ | naa baa-_ |
+C5 A, | A, C4 D | E6- | E5 F | F D4 E | D E3 E D | C4 G2 | G2 G3 A | A c c4 | c B A2 B A- | A G3 G2 | G2 G3 A |
+w: Ke-_ | se-_-_ | mor | _-_ | kei-_-_ | baa-_ jaa-_-|ne ki-|chhu taar-_ | de-_-khi | aa-_-bhaa-_-_ | _-_ Ki-|chhu paai-_ |
+G2 G A2 B | B A G4- | G4 C2 | C2 C3 D | E2 D E2 F | E2 D C3 |
+w: o-nu-_-_-|maa-_-ne | _ ki-|chhu taar-_ | bu-jhi-_-_ | naa baa-_ |
+P:Abhog
+c2 c3 e | e d d3 e | e c3 d2 | d c c2 d c | c B B3 c | c B A3 B | B G3 A2 | A2 B4- | B6- | B3 c2 B | A G5- |
+w: Maa-jhe-_ | maa-_-jhe-_ | taar _ baa-|ro-_-ta-_-_ | aa-_-maar-_ | bhaa-_-shaay-_ | paay _ ki | ko-tha | _ | _-_-_ | re-_ |
+G2 G2 G2 | G2 G3 A | A c c B3 | B A G4 | G A A G3 | G A A G3 | F2 E3 D | C2 C2 E2 | E D E4 | C2 C3 D | D2 E3 D |
+w: _ O se | aa-maay-_ | jaa-_-ni-_ | paa-_-thaay | baa-_-ni-_ | gaa-_-ner-_ | taa-ne-_ | lu-ki-ye | taa-_-re | baa-re-_ | baa-re-_ |
+P:Sthayi
+C3 D C/ D/ E | E2 E D2 E | E D2 C3- | C2 C2 C2 | C D2 E2 G | G2 G3 A | G A2 B3- | B A2 G3 |
+w: kaan-_-_-_-_ | pe-te-_-_ | roi-_-_ | _ Aa-mi | kaan-_-_-_ | pe-te-_ | roi-_-_ | _-_-_ |
+G5 B | B A A3 B | B G G3 B | B A A3 B | G B B4 | B A G4 | G A A G3 | F2 E3 D |
+w: O _ | aa-_-maar-_ | aa-_-pon-_ | hri-_-doy-_-|ga-_-hon | dwaa-_-re | baa-_-re-_ | baa-re-_ |
+C3 D C/ D/ E | E2 E D2 E | E D2 C3- | C2 G4 |
+w: kaan-_-_-_-_ | pe-te-_-_ | roi-_-_ | _ Kon |
+G2 A3 c | c2 c4 | B c2 d d c | c B A3 B | B A G4 | G2 G3 A | A F G4 | A2 B2 A G | G A A G3 | G F E3 D |
+w: go-pon-_-|baa-sir | kaan-_-_-na-_-|haa-_-sir-_ | go-_-pon | ko-tha-_ | shu-_-ni-|baa-re-_-_ | baa-_-re-_ | baa-_-re-_ |
+C3 D C/ D/ E | E2 E D2 E | E D2 C3- | C6 |]
+w: kaan-_-_-_-_ | pe-te-_-_ | roi-_-_ | _ |

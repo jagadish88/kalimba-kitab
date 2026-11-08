@@ -2,3 +2,8 @@ song_id,version,path,pipeline,source_ids,made_from,date,note
 rs000101,v1,data/intermediate_data/ktab/rs000101/v1.ktab,piano_lesson_to_ktab,src000174,data/intermediate_data/abc/rs000101/v1.abc,2026-11-08,"abc_to_ktab.py output, with lyrics"
 rs001619,v1,data/intermediate_data/ktab/rs001619/v1.ktab,piano_lesson_to_ktab,src000168,data/intermediate_data/abc/rs001619/v1.abc,2026-11-08,"abc_to_ktab.py output, with lyrics"
 rs002164,v1,data/intermediate_data/ktab/rs002164/v1.ktab,midi_to_ktab,src000161,data/raw_data/midi/rs002164.mid,2026-11-08,"midi_to_ktab.py output; notes only, no lyrics; F# written as 4"
+rs000011,v1,data/intermediate_data/ktab/rs000011/v1.ktab,midi_to_ktab,src000005;src001055;src000654,data/intermediate_data/abc/rs000011/v1.abc,2026-11-08,"abc_to_ktab.py output, with lyrics; preview v1.pdf"
+rs000262,v1,data/intermediate_data/ktab/rs000262/v1.ktab,midi_to_ktab,src000025;src001111;src000710,data/intermediate_data/abc/rs000262/v1.abc,2026-11-08,"abc_to_ktab.py output, with lyrics; preview v1.pdf"
+rs000451,v1,data/intermediate_data/ktab/rs000451/v1.ktab,midi_to_ktab,src000039;src001147;src000742,data/intermediate_data/abc/rs000451/v1.abc,2026-11-08,"abc_to_ktab.py output, with lyrics; preview v1.pdf"
+rs000920,v1,data/intermediate_data/ktab/rs000920/v1.ktab,midi_to_ktab,src000074;src001237;src000828,data/intermediate_data/abc/rs000920/v1.abc,2026-11-08,"abc_to_ktab.py output, with lyrics; preview v1.pdf"
+rs001194,v1,data/intermediate_data/ktab/rs001194/v1.ktab,midi_to_ktab,src000091;src001283;src000870,data/intermediate_data/abc/rs001194/v1.abc,2026-11-08,abc_to_ktab.py --transpose 12 (keeps C major); the 7 komal Ni notes (A#5) are played as B5; preview v1.pdf

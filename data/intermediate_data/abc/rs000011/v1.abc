@@ -1,0 +1,72 @@
+X:1
+T:Adhek Ghume Nayan Chume
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000011.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000011.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000011.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
+N:Syllables placed on the notes as in the swaralipi (Sa = C); one swaralipi half-bar (3 matras) = one 3/4 bar.
+N:Where the swaralipi gives a final consonant its own matra (pa-the-r, be-nu-r, me-ghe-r),
+N:the consonant is joined to its syllable (pa-ther, be-nur, me-gher) and held.
+M:3/4
+L:1/8
+Q:1/4=200
+K:C
+P:Sthayi
+B2 c2 e2 | d2 c4 | B2 c2 d2 | c2 B4 | A2 B2 B2 | B2 B4 | A3 G3- | G F5 |
+w: Aa-dhe-ko | ghu-me | na-yo-no | chu-me | swa-po-no | di-ye | jaay _ | _ _ |
+F4 F2 | F G E4 | F2 A2 A2 | B2 c4 | B2 c2 e2 | d2 c4 | B3 c2 A- | A B2 c2 B |
+w: Shraan-to | bhaa-_-le | ju-thi-ro | maa-le | pa-ro-se | mri-du | baay-_-_ | _-_-_-_ |
+P:Antara
+B c A2 A2 | B2 c4 | B2 A2 A2 | B2 c4 | B2 A2 A2 | A2 A2 G/ A/ B | B2 B4- | B6 |
+w: Bo-_-ne-ro | chhaa-ya | mo-ne-ro | saa-thi | baa-so-na | naa-hi-_-_-_ | ki-chhu | _ |
+c2 e2 e2 | f2 g3 f | e2 f2 e2 | d2 c4 | B2 c2 e2 | d2 c2 d c | B2 c4- | c6 |
+w: Pa-ther-_ | dhaa-re-_ | aa-so-no | paa-ti | na chaa-hi | phi-re-_-_ | pi-chhu | _ |
+B c A2 A2 | B2 c4 | B2 A2 A2 | B2 c4 | B2 A2 A2 | A2 A2 G/ A/ B | B2 B4- | B6 |
+w: Bo-_-ne-ro | chhaa-ya | mo-ne-ro | saa-thi | baa-so-na | naa-hi-_-_-_ | ki-chhu | _ |
+c2 e2 e2 | f2 g3 f | e2 f2 e2 | d2 c4 | B2 c2 e2 | d2 c2 d c | B2 c4- | c6 |
+w: Pa-ther-_ | dhaa-re-_ | aa-so-no | paa-ti | na chaa-hi | phi-re-_-_ | pi-chhu | _ |
+B2 c2 e2 | d2 c4 | B2 c4 | B2 B3 A | A2 B2 B2 | B2 B3 A | A3 G3- | G F5 |
+w: Be-nur-_ | paa-ta | mi-shaay | gaa-tha-_ | ni-ra-bo | bhaa-bo-_-|naay _ | _ _ |
+F4 F2 | F G E4 | F2 A2 A2 | B2 c4 | B2 c2 e2 | d2 c4 | B3 c2 A- | A B2 c2 B |
+w: Shraan-to | bhaa-_-le | ju-thi-ro | maa-le | pa-ro-se | mri-du | baay-_-_ | _-_-_-_ |
+P:Sthayi
+B2 c2 e2 | d2 c4 | B2 c2 d2 | c2 B4 | A2 B2 B2 | B2 B4 | A3 G3- | G F5 |
+w: Aa-dhe-ko | ghu-me | na-yo-no | chu-me | swa-po-no | di-ye | jaay _ | _ _ |
+F4 F2 | F G E4 | F2 A2 A2 | B2 c4 | B2 c2 e2 | d2 c4 | B3 c2 A- | A B2 c2 B |
+w: Shraan-to | bhaa-_-le | ju-thi-ro | maa-le | pa-ro-se | mri-du | baay-_-_ | _-_-_-_ |
+B2 c2 e2 | d2 c4 |
+w: Aa-dhe-ko | ghu-me |
+P:Sanchari
+C F F2 F2 | F2 F4 | F2 F2 F2 | F2 F4 | C F F2 F2 | F2 F2 E G | G2 F4- | F6 |
+w: Me-_-gher-_ | khe-la | ga-go-no-|ta-te | a-_-la-so | li-pi-_-_-|li-kha | _ |
+F2 F2 F2 | F G2 E3 | F2 A2 A2 | B2 c4 | B2 B2 A2 | A2 A2 G/ A/ B | B2 B4- | B A5 |
+w: Su-du-ro | kon-_-_ | sma-ro-no-|pa-te | jaa-gi-lo | mo-ri-_-_-_-|chi-ka | _ _ |
+G2 G2 F2 | F2 F2 E G | G2 F4- | F6 |
+w: jaa-gi-lo | mo-ri-_-_-|chi-ka | _ |
+C F F2 F2 | F2 F4 | F2 F2 F2 | F2 F4 | C F F2 F2 | F2 F2 E G | G2 F4- | F6 |
+w: Me-_-gher-_ | khe-la | ga-go-no-|ta-te | a-_-la-so | li-pi-_-_-|li-kha | _ |
+F2 F2 F2 | F G2 E3 | F2 A2 A2 | B2 c4 | B2 B2 A2 | A2 A2 G/ A/ B | B2 B4- | B A5 |
+w: Su-du-ro | kon-_-_ | sma-ro-no-|pa-te | jaa-gi-lo | mo-ri-_-_-_-|chi-ka | _ _ |
+G2 G2 F2 | F2 F2 E G | G2 F4- | F6 |
+w: jaa-gi-lo | mo-ri-_-_-|chi-ka | _ |
+P:Abhog
+A4 A2 | B2 c4 | B4 A2 | B2 c4 | B2 B3 A | A2 A2 G/ A/ B | B2 B4- | B6 |
+w: Choi-tro-|di-ne | tap-to | be-la | tri-no-_ | aan-chol-_-_-_ | pe-te | _ |
+c3 e e2 | f2 g3 f | e3 f e2 | d2 c4 | B2 c3 e | d2 c2 d c | B2 c4- | c6 |
+w: Shun-_-yo-|ta-le-_ | gan-_-dho-|bhe-la | bhaa-saay-_ | baa-ta-_-_-|se-te | _ |
+A4 A2 | B2 c4 | B4 A2 | B2 c4 | B2 B3 A | A2 A2 G/ A/ B | B2 B4- | B6 |
+w: Choi-tro-|di-ne | tap-to | be-la | tri-no-_ | aan-chol-_-_-_ | pe-te | _ |
+c3 e e2 | f2 g3 f | e3 f e2 | d2 c4 | B2 c3 e | d2 c2 d c | B2 c4- | c6 |
+w: Shun-_-yo-|ta-le-_ | gan-_-dho-|bhe-la | bhaa-saay-_ | baa-ta-_-_-|se-te | _ |
+B2 c2 e2 | d2 c4 | B2 c2 d2 | c2 B4 | A2 A B B2 | B2 B3 A | A3 G3- | G F5 |
+w: Ka-po-to | daa-ke | mo-dhu-ko-|shaa-khe | bi-jo-_-no | be-do-_-|naay _ | _ _ |
+F4 F2 | F G E4 | F2 A2 A2 | B2 c4 | B2 c2 e2 | d2 c2 d c | B3 c2 A- | A B2 c2 B |
+w: Shraan-to | bhaa-_-le | ju-thi-ro | maa-le | pa-ro-se | mri-du-_-_ | baay-_-_ | _-_-_-_ |
+P:Sthayi
+B2 c2 e2 | d2 c4 | B2 c2 d2 | c2 B4 | A2 B2 B2 | B2 B4 | A3 G3- | G F5 |
+w: Aa-dhe-ko | ghu-me | na-yo-no | chu-me | swa-po-no | di-ye | jaay _ | _ _ |
+F4 F2 | F G E4 | F2 A2 A2 | B2 c4 | B2 c2 e2 | d2 c4 | B3 c2 A- | A B2 c2 B |
+w: Shraan-to | bhaa-_-le | ju-thi-ro | maa-le | pa-ro-se | mri-du | baay-_-_ | _-_-_-_ |
+B2 c2 e2 | d2 c4 |]
+w: Aa-dhe-ko | ghu-me |

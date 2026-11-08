@@ -29,6 +29,8 @@ Every file in `raw_data` is listed in `source_provenance.csv`, and every source 
 `sources/sources.csv`, so each fact can be traced back to where it came from.
 
 - **text/catalog.csv**: `song_id, title`.
+- **dataset/dataset_catalog.csv**: the finished songs, `song_id, title, ktab, pdf, video`.
+  A song is finished when its tab is in `dataset/ktab/`; add a row here when you add one.
 - **video/video_catalog.csv**: `song_id, source_id, local_path, type`. The type is one of
   `piano_lesson` (hands on a keyboard, chords + melody), `piano_roll` (falling notes),
   `piano_staff` (scrolling sheet music), `kalimba` (kalimba covers) or `vocal_melody`

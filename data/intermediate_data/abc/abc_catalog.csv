@@ -6,3 +6,8 @@ rs001619,v1,data/intermediate_data/abc/rs001619/v1.abc,piano_lesson_to_ktab,src0
 rs001714,v1,data/intermediate_data/abc/rs001714/v1.abc,kalimba_cover_to_abc,,songs/phule_phule_dhole_dhole_kalimba.mp3 (legacy folder),2026-10-30,notes heard in a kalimba cover recording; which catalogued cover it was is not recorded
 rs002164,v1,data/intermediate_data/abc/rs002164/v1.abc,piano_lesson_to_ktab,src000166,../sudensha/tumi_robe_nirobe.abc,2026-11-07,draft of data/dataset/ktab/tumi_robe_nirobe.ktab
 rs002164,v2,data/intermediate_data/abc/rs002164/v2.abc,midi_to_ktab,src000161;src001048;src001042,,2026-11-08,notes from the MIDI violin track; lyrics placed by the swaralipi
+rs000011,v1,data/intermediate_data/abc/rs000011/v1.abc,midi_to_ktab,src000005;src001055;src000654,,2026-11-08,notes from the MIDI violin track; lyrics placed by the swaralipi
+rs000262,v1,data/intermediate_data/abc/rs000262/v1.abc,midi_to_ktab,src000025;src001111;src000710,,2026-11-08,notes from the MIDI violin track; lyrics placed by the swaralipi
+rs000451,v1,data/intermediate_data/abc/rs000451/v1.abc,midi_to_ktab,src000039;src001147;src000742,,2026-11-08,notes from the MIDI violin track; lyrics placed by the swaralipi
+rs000920,v1,data/intermediate_data/abc/rs000920/v1.abc,midi_to_ktab,src000074;src001237;src000828,,2026-11-08,"notes from the MIDI violin track; lyrics placed by the swaralipi; refrain ""Aamar mon bhulay re"" and ""mori haay haay re"" sung as in the swaralipi"
+rs001194,v1,data/intermediate_data/abc/rs001194/v1.abc,midi_to_ktab,src000091;src001283;src000870,,2026-11-08,notes from the MIDI violin track; lyrics placed by the swaralipi; abhog uses komal Ni (B flat)
