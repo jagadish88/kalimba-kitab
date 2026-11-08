@@ -1,0 +1,60 @@
+X:1
+T:Eso Eso He Boishakh
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000864.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000864.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000864.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
+N:Syllables placed on the notes as in the swaralipi (Sa = C); 4 swaralipi matras = one 4/4 bar.
+N:Tivra Ma (F#) only. "daao" and "jaa(o)" sit on one held note each, as in the swaralipi.
+M:4/4
+L:1/8
+Q:1/4=200
+K:C
+P:Sthayi
+z4 C2 D2 | D C2 c c3 B | A G3 E2 D2 | E3 D C4- | C8 |
+w: E-so | he-_-_ boi-_-|shaakh-_ e-so | e-_-so | _ |
+E3 G G2 G2 | G4 G2 G2 | G3 ^F A4- | A4 A4 | G A2 B B2 B2 | B4 B4 | B3 A c4- | c8 |
+w: Taa-_-po-so-|nish-shaa-so-|baa-_-ye | _ mu-|mur-_-_-shu-re | daao u-|raa-_-ye | _ |
+E3 G G2 G2 | G4 G2 G2 | G3 ^F A4- | A4 A4 | G A2 B B2 B2 | B4 B4 | B3 A c4- | c8 |
+w: Taa-_-po-so-|nish-shaa-so-|baa-_-ye | _ mu-|mur-_-_-shu-re | daao u-|raa-_-ye | _ |
+c3 e e2 e2 | e d3 c3 B | A B3 B A3 | G8 |
+w: Bot-_-so-rer | aa-_-bor-_-|jo-_-na-_ | _ |
+G3 B B2 B2 | A4 G4 | E4 E2 D2 | E3 D C4- |
+w: dur-_ ho-ye | jaak jaak | jaak e-so | e-_-so |
+C4 C2 D2 | D C2 c c3 B | A G3 E2 D2 | E3 D C4- | C8 |
+w: _ E-so | he-_-_ boi-_-|shaakh-_ e-so | e-_-so | _ |
+P:Antara
+G4 E2 E2 | G2 G2 A3 G | G c7- | c4 c4 |
+w: Jaak pu-ra-|ton-_ smri-_-|ti-_ | _ jaak |
+c2 e2 e4 | e d3 d3 B | c8- | c4 c4 |
+w: bhu-le jaa-|wa-_ gee-_-|ti | _ jaak |
+c3 e e4 | e d3 c4 | c B c2 d2 c2 | B4 A4 |
+w: Osh-_-ru-|baash-_-po | su-_-du-re mi-|laak jaak |
+G4 E2 D2 | E3 D C4- | C4 C2 D2 | D C2 c c3 B | A G3 E2 D2 | E3 D C4- | C8 |
+w: jaak e-so | e-_-so | _ E-so | he-_-_ boi-_-|shaakh-_ e-so | e-_-so | _ |
+P:Sanchari
+C2 D2 E4 | E3 D G4 | E2 E2 E D3 | E3 D C4 |
+w: Mu-chhe jaak | glaa-_-ni | ghu-che jaak-_ | jo-_-ra |
+C3 G G4 | G3 ^F G4 | G ^F G2 A4 | A G2 ^F E4 |
+w: Og-_-ni-|snaa-_-ne | shu-_-chi hok | dho-_-_-ra |
+C2 D2 E4 | E3 D G4 | E2 E2 E D3 | E3 D C4 |
+w: Mu-chhe jaak | glaa-_-ni | ghu-che jaak-_ | jo-_-ra |
+C3 G G4 | G3 ^F G4 | G ^F G2 A4 | A G2 ^F E4 |
+w: Og-_-ni-|snaa-_-ne | shu-_-chi hok | dho-_-_-ra |
+P:Abhog
+G2 G2 E2 E2 | G3 ^F A2 A G | G c7- | c8 |
+w: Ro-se-ro aa-|be-_-sho-raa-_-|shi-_ | _ |
+c3 e e2 e2 | e d3 d4 | d B2 d d c3- | c4 c2 B2 |
+w: shush-_-ko ko-|ri-_ daao | aa-_-_-si-_ | _ aa-no |
+B A2 c B4- | B4 B2 A2 | A G2 B A4- | A8 |
+w: aa-_-_-no | _ aa-no | to-_-_-bo | _ |
+A G A2 B2 A2 | G3 c c2 c2 | c B2 d c4- | c4 c2 B2 |
+w: pro-_-lo-ye-ro | shaankh-_ aa-no | aa-_-_-no | _ aa-no |
+B A2 c B4- | B8 |
+w: to-_-_-bo | _ |
+A2 B2 c2 c B | A G7 | e4 e4 | e4 e2 d2 | d4 c4 | c B2 d c4 | B4 A4 | G4 E2 D2 | E3 D C4- |
+w: pro-lo-ye-ro-_ | shaankh-_ | Maa-yaar | kuj-jho-ti-|jaal jaak | du-_-_-re | jaak jaak | jaak e-so | e-_-so |
+P:Sthayi
+C4 C2 D2 | D C2 c c3 B | A G3 E2 D2 | E3 D C4- | C8 |]
+w: _ E-so | he-_-_ boi-_-|shaakh-_ e-so | e-_-so | _ |

@@ -1,0 +1,60 @@
+X:1
+T:Sankocher Bihwalata
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001848.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs001848.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs001848.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
+N:Written at the MIDI's pitch: Sa = G# (Ni = G, tivra Ma = D). One swaralipi half-bar (3 matras) = one 3/4 bar.
+N:The "aa ... haa" vocalise after each section is in the swaralipi, not in the lyrics file.
+N:Words follow the swaralipi where it differs from the lyrics file (bi-hwa-la-ta, Ni-je-re).
+M:3/4
+L:1/8
+Q:1/4=200
+K:C
+P:Sthayi
+^G4 ^G2 | G4 G2 | F4 F2 | F ^D ^D4 |
+w: Sang-ko-|cher-_ | bi-hwa-|la-_-ta |
+^G,2 ^A,2 C2 | C4 ^A,2 | ^G,6- | ^G,6 |
+w: ni-je-re | o-po-|maan | _ |
+^G, C3 C2 | C4 C2 | C4 C2 | ^A,4 ^G,2 |
+w: Sang-_-ko-|ter-_ | kol-po-|na-te |
+^G,2 ^A,2 C2 | C4 ^A,2 | ^D6 | ^D6 | ^G,3 ^A,2 C- | C D2 ^D2 F | F ^D5- | ^D6 |
+w: ho-yo na | mri-yo-|maan | aa-|_-_-_-|_-_-_-_-|haa-_ | _ |
+P:Antara
+^D ^G3 ^G2 | ^G3 =G ^A2 | ^G6- | ^G6 |
+w: Muk-_-to | ko-_-ro | bhoy | _ |
+^G2 c2 c2 | ^A4 ^A2 | ^G4 ^G2 | G4 F2 |
+w: aa-po-na-|maa-jhe | shok-ti | dho-ro |
+F2 G2 ^G2 | G4 F2 | ^D6 | ^D6 | ^G,3 ^A,2 C- | C D2 ^D2 F | F ^D5- | ^D6 |
+w: ni-je-re | ko-ro | joy | aa-|_-_-_-|_-_-_-_-|haa-_ | _ |
+P:Sanchari
+^D4 C2 | ^D4 F2 | ^D4 C2 | ^D4 F2 |
+w: Dur-bo-|le-re | rok-kha | ko-ro |
+^D F3 F2 | ^D3 =D ^D2 | ^D2 F4- | F6 |
+w: dur-_-jo-|ne-_-re | haa-no | _ |
+^D2 G2 G2 | F G3 G2 | F G3 F2 | F3 ^D ^D2 |
+w: Ni-je-re | deen-_-_ | nih-_-sa-|haay-_-_ |
+^D2 G2 G2 | F G G2 G2 | F2 ^D4- | ^D6 |
+w: je-no ka-|bhu-_-_ na | jaa-no | _ |
+^D ^G3 ^G2 | ^G3 =G ^A2 | ^G6- | ^G6 |
+w: Muk-_-to | ko-_-ro | bhoy | _ |
+^G2 c2 c2 | ^A4 ^A2 | ^G2 ^G2 ^G2 | G4 G ^G |
+w: ni-jer-_ | po-re | ko-ri-te | bhor-_-_ |
+F2 ^G2 =G2 | F G4 F | ^D6 | ^D6 | ^G,3 ^A,2 C- | C D2 ^D2 F | F ^D5- | ^D6 |
+w: na re-kho | song-_-_-|shoy | aa-|_-_-_-|_-_-_-_-|haa-_ | _ |
+P:Abhog
+^D4 C2 | ^D3 =D F2 | ^D4 C2 | ^D3 =D F2 |
+w: Dhor-mo | ja-_-be | shong-kho-|ra-_-be |
+^D2 ^D2 C2 | ^D5 =D | F6- | F6 |
+w: ko-ri-be | aa-_-|hwaan | _ |
+^D2 F2 G2 | G4 G2 | F G3 G2 | G F3 ^D2 |
+w: Nee-ro-bo | ho-ye | nom-_-ro | ho-_-ye |
+^D3 G G F | F3 G F2 | ^D6- | ^D6 |
+w: pon _ ko-_-|ri-_-yo | praan | _ |
+^D ^G3 ^G2 | ^G3 =G ^A2 | ^G6- | ^G6 |
+w: Muk-_-to | ko-_-ro | bhoy | _ |
+^G2 c2 c2 | ^A4 ^A2 | ^G2 ^G2 ^G2 | F G3 G2 |
+w: du-ru-ho | kaa-je | ni-je-ri | di-_-yo |
+F2 ^G2 =G2 | F G3 F2 | ^D6 | ^D6 | ^G,3 ^A,2 C- | C D2 ^D2 F | F ^D5- | ^D6 |]
+w: ko-thi-no | po-_-ri-|choy | aa-|_-_-_-|_-_-_-_-|haa-_ | _ |

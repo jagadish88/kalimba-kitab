@@ -80,12 +80,17 @@ ev = []; prev = 0
 for a, b, p in notes:
     if a > prev: ev.append((prev, a, None))
     ev.append((a, b, p)); prev = b
-bars = {}
+bars = {}; acc = {}   # acc[(bar, letter+octave)] = accidental in force (ABC accidentals last to the bar line)
+def spell(k, p):
+    s = nm(p); a = '^' if s.startswith('^') else ''; base = s.lstrip('^')
+    if a: acc[(k, base)] = '^'; return s
+    if acc.get((k, base)) == '^': acc[(k, base)] = '='; return '=' + base
+    return s
 for a, b, p in ev:
     t = a
     while t < b:
         k = t // bar; e = min(b, (k + 1) * bar)
-        tok = ("z" if p is None else nm(p)) + ln(e - t)
+        tok = ("z" if p is None else spell(k, p)) + ln(e - t)
         if p is not None and e < b: tok += "-"
         bars.setdefault(k, []).append(tok); t = e
 print(f"# track {i} ({tr[i][0]}), {num}/{den}, {len(notes)} notes, {max(bars)+1} bars", file=sys.stderr)

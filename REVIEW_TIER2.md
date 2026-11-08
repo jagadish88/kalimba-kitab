@@ -1,40 +1,56 @@
-# Tier 2 review: run of 2026-11-08 (blocked, no drafts made)
+# Tier 2 review
 
-**Status: not done.** None of the 5 Tier 2 songs (rs000864, rs001848, rs002064, rs000636,
-rs000616) was transcribed. No `v1.abc`, `.ktab` or PDF files were written, and no catalog rows
-were added. `data/dataset/` and `main` were not touched.
+The cloud run on 2026-11-08 could not download the sources: the cloud environment blocks
+`www.geetabitan.com`. The 5 songs were then transcribed locally on the same day, using the same
+method as Tier 1. Everything below is draft work for review; nothing is in `data/dataset/` yet.
 
-## Why
-Step 2 of TASK_TIER2.md (`scripts/fetch_sources.py` on the 25 source rows) failed for **all
-25 files**: the MIDI (5), swaralipi PDF/GIF (10), lyrics .txt (5) and Bengali lyric PNG (5).
-Every one of them is hosted on `www.geetabitan.com`, and this cloud session's egress proxy
-refuses that host:
+## Results
 
-    <urlopen error Tunnel connection failed: 403 Forbidden>
-    proxy status: connect_rejected, "gateway answered 403 to CONNECT (policy denial ...)",
-    host www.geetabitan.com:443
+| Song | ID | Bars | Melody notes | Form (as in the swaralipi and the MIDI) | ktab | Preview |
+|---|---|---|---|---|---|---|
+| Eso Eso He Boishakh | rs000864 | 101 | 295 | sthayi (2nd line repeated), antara, sanchari x2, abhog, sthayi | +5, no retune, 0 substituted | 2 pages |
+| Sankocher Biwhalata | rs001848 | 100 | 210 | sthayi, antara, sanchari, abhog, each closing on "aa...haa" | +9, no retune, 0 substituted | 2 pages |
+| Tomar Holo Shuru Amar | rs002064 | 88 | 170 | sthayi; first two lines return after antara, sanchari, abhog | +5, no retune, 0 substituted | 2 pages |
+| Dariye Achho Tumi Amar | rs000636 | 118 | 437 | sthayi, antara (lines 1-2 x2), sanchari, abhog x2, sthayi | +5, no retune, 2 substituted | 3 pages |
+| Chokher Aloy Dekhechhilem | rs000616 | 136 | 380 | sthayi, antara x2, sanchari x2, abhog x2, sthayi | +5, no retune, 2 substituted | 3 pages |
 
-That is a network-policy denial for this environment, not a temporary error, so I did not keep
-retrying it or look for a way around it. The method needs the exact MIDI bars
-(`midi_bars.py`) and the swaralipi for every bar, so with neither file available I could not
-write drafts that pass `check_abc.py`. I chose not to make up melodies or lyric placement
-from memory.
+Files: `data/intermediate_data/abc/<id>/v1.abc`, `data/intermediate_data/ktab/<id>/v1.ktab`
+and `v1.pdf`, with rows in `abc_catalog.csv` and `ktab_catalog.csv`.
 
-## What did work
-- `pip install -e . mido`: OK.
-- `abcmidi` installed after an `apt-get update`.
-- `ffmpeg` is present. TeX Live install was started; it does not matter for this run.
+Checks passed for every song: the notes match the MIDI bar for bar; one lyric token per note in
+every bar; `abc2midi` reports no errors; `ktab check` passes with 0 warnings; each line reads
+back as the right words.
 
-## Not attempted
-- Per-song form, bars, notes, checks, transposition/retune choices: no input files.
-- rs001848 YouTube cross-check: optional, and only useful against a draft, so skipped.
-- scale_catalog.csv `read` rows: not checked (no swaralipi).
+## Key and retune
+`abc_to_ktab.py` placed Sa on the F tine, so tivra Ma falls on the B tine and no tine needs
+retuning. In kalimba numbers these tabs read in "F" (Sa = 4). The alternative, Sa on C with the
+F tines retuned to F# as for Ekla Cholo Re, has the same substitutions:
+`abc_to_ktab.py ... --transpose 0` (or `12`).
 
-## To unblock
-Pick one:
-1. Allow `www.geetabitan.com` in this cloud environment's network policy
-   (https://code.claude.com/docs/en/claude-code-on-the-web), then run the routine again; or
-2. Run the task locally, where `fetch_sources.py` can reach geetabitan.com; or
-3. Put the 25 files somewhere this environment can reach, for example a private repo or
-   release that the session can read. They are git-ignored here for copyright reasons, so
-   do not commit them to this public repo.
+## Corrections found on the way
+- **Dariye Achho is not a single-accidental song.** Its sanchari ("Be-do-na-te") has komal Re
+  (C#) in the upper octave, in both the swaralipi and the MIDI; scale_catalog.csv is fixed. The
+  2 komal Re notes are played as the natural neighbour in the ktab.
+- **An ABC accidental bug, now fixed.** In ABC a sharp lasts to the end of the bar, so a natural
+  after it needs `=`. The bar-dump script did not write it. Katobaro (rs001194 v1) had 3 bars
+  where the abhog's A naturals read as A#; they are fixed and its ktab and PDF rebuilt (6 komal
+  Ni notes, not 7). The fixed script is in TASK_TIER2.md.
+- **The same bug is in the piano-lesson pipeline output** (`piano_notes_from_audio.py`): the
+  drafts rs000206 v1, rs001619 v1 and rs002164 v1 have naturals after sharps without `=`. They
+  were left unchanged.
+
+## Where to look first
+- **Sankocher:** written at the MIDI's real pitch (Sa = G#). The "aa...haa" vocalise after each
+  section comes from the swaralipi; the lyrics file does not have it.
+- **Eso Eso:** "daao" and "jaa(o)" each sit on one held note, where the swaralipi gives the
+  vowel its own matra. "puraton" is sung "to-n" over two notes.
+- **Chokher Aloy:** the G# in "jho-re" (bars 69 and 85) is the arranger's passing note, not in
+  the swaralipi.
+- **Tomar Holo Shuru:** the swaralipi gives the final "r" of "tomar"/"aamar" its own matra; it is
+  held on the syllable.
+
+## Not done
+- **No cross-check against a second source.** None of these songs has a piano lesson. The Arup
+  Paul "Arrangement" video for Sankocher (lyrics above the staff) was not downloaded in this
+  run.
+- **Not checked by ear** against the catalogued vocal renditions.

@@ -1,0 +1,78 @@
+X:1
+T:Dariye Achho Tumi Amar
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000636.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000636.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000636.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
+N:Syllables placed on the notes as in the swaralipi (Sa = C); 4 swaralipi matras = one 4/4 bar.
+N:Tivra Ma (F#) throughout; the sanchari ("Bedonate") also has komal Re (C#) in the upper octave.
+M:4/4
+L:1/8
+Q:1/4=120
+K:C
+P:Sthayi
+G2 c2 c3 B | A G2 ^F A G3 | ^F3 G E4 | E ^F3 ^F4 |
+w: Dnaa-ri-ye-_ | aa-_-_-chho-_ | tu-_-mi | aa-_-mar |
+E D3 E ^F G A | A3 ^F ^F/ G/ ^F E ^F | G8- | G4 G2 G2 |
+w: gaa-_-ner-_-_-_ | o _ paa-_-_-_-_-|re | _ aa-mar |
+G3 B3 B2 | A B2 c A B2 A | G ^F2 G A4- | A4 G ^F G2 |
+w: sur-_-gu-|li-_-_ paay-_-_ | cho-_-_-ron-|_ aa-_-mi |
+A B c d3 d2 | c B2 d c3 B | B A2 B2 A3 | A c3 G ^F3 |
+w: paai-_-_-_-ne | to-_-_-ma-_-|re-_-_-_-|_-_-_-_ |
+G2 c2 c3 B | A G2 ^F A G3 | ^F3 G E4 | E ^F3 ^F4 |
+w: Dnaa-ri-ye-_ | aa-_-_-chho-_ | tu-_-mi | aa-_-mar |
+E D3 E ^F G A | A3 ^F ^F/ G/ ^F E ^F | G8- | G8 |
+w: gaa-_-ner-_-_-_ | o _ paa-_-_-_-_-|re | _ |
+P:Antara
+G4 G3 c | c4 c4 | c4 c3 B | d c3 c4 |
+w: Baa-tas-_ | bo-he | mo-ri-_ | mo-_-ri |
+c3 B2 d d2 | c d3 c4 | c B3 A4 | A B2 G G4 |
+w: Aar-_-_ bne-|dhe-_ re-|kho-_ na | to-_-_-ri |
+G4 G3 c | c4 c4 | c4 c3 B | d c3 c4 |
+w: Baa-tas-_ | bo-he | mo-ri-_ | mo-_-ri |
+c3 B2 d d2 | c d3 c4 | c B3 A4 | A B2 G G4 |
+w: Aar-_-_ bne-|dhe-_ re-|kho-_ na | to-_-_-ri |
+G ^F3 E3 ^F | E D2 G G4 | G3 e3 e2 | d4 c4 |
+w: E-_-so-_ | e-_-_-so | paar-_ ho-|ye mor |
+c B2 d c3 B | B A2 c B4 | G ^F2 A2 G3- | G c4 G ^F2 |
+w: hri-_-_-doy-_ | maa-_-_-jha-|re-_-_-_-|_-_-_-_ |
+G2 c2 c3 B | A G2 ^F A G3 | ^F3 G E4 | E ^F3 ^F4 |
+w: Dnaa-ri-ye-_ | aa-_-_-chho-_ | tu-_-mi | aa-_-mar |
+E D3 E ^F G A | A3 ^F ^F/ G/ ^F E ^F | G8 |
+w: gaa-_-ner-_-_-_ | o _ paa-_-_-_-_-|re |
+P:Sanchari
+G3 c c4 | c3 B B4 | E D3 E ^F G A | A7/2 ^F/ A G3 |
+w: To-_-mar | saa-_-the | gaa-_-ner-_-_-_ | khe-_-la-_ |
+G4 G3 B | B4 B A B c | A B7- | B8 |
+w: du-rer-_ | khe-la-_-_-_ | je-_ | _ |
+B3 d d3 ^c | d3 ^c e d3 | d c3 B c2 d | c B3 B4 |
+w: Be-_-do-_-|na-_-te-_ | bnaa-_-shi-_-_ | baa-_-jaay |
+E D3 E ^F G A | A3 ^F ^F/ G/ ^F E ^F | G8- | G8 |
+w: so-_-kol-_-_-_ | be-_-la-_-_-_-_ | je | _ |
+P:Abhog
+G4 G3 c | c4 c4 | c4 c3 B | d c B c c4 |
+w: Ko-be-_ | ni-ye | aa-mar-_ | bnaa-_-_-_-shi |
+c4 c B2 d | d3 c c4 | A B5 A2 | A B2 G G4 |
+w: baa-ja-_-_-|be-_ go | aap-_-ni | aa-_-_-si |
+G4 G3 c | c4 c4 | c4 c3 B | d c B c c4 |
+w: Ko-be-_ | ni-ye | aa-mar-_ | bnaa-_-_-_-shi |
+c4 c B2 d | d3 c c4 | A B5 A2 | A B2 G G4 |
+w: baa-ja-_-_-|be-_ go | aap-_-ni | aa-_-_-si |
+G ^F3 E3 ^F | E D2 G G4 | G e3 e3 d | d3 c c4 |
+w: Aa-_-non-_-|do-_-_-moy | ni-_-rob-_ | raa-_-ter |
+c B2 d c3 B | B A2 c B3 ^F | ^F3 A2 G3- | G c4 G ^F2 |
+w: ni-_-_-bir-_ | aan-_-_-dha-_-|re-_-_ | _-_-_-_ |
+P:Sthayi
+G2 c2 c3 B | A G2 ^F A G3 | ^F3 G E4 | E ^F3 ^F4 |
+w: Dnaa-ri-ye-_ | aa-_-_-chho-_ | tu-_-mi | aa-_-mar |
+E D3 E ^F G A | A3 ^F ^F/ G/ ^F E ^F | G8- | G4 G2 G2 |
+w: gaa-_-ner-_-_-_ | o _ paa-_-_-_-_-|re | _ aa-mar |
+G3 B3 B2 | A B2 c A B2 A | G ^F2 G A4- | A4 G ^F G2 |
+w: sur-_-gu-|li-_-_ paay-_-_ | cho-_-_-ron-|_ aa-_-mi |
+A B c d3 d2 | c B2 d c3 B | B A2 B2 A3 | A c3 G ^F3 |
+w: paai-_-_-_-ne | to-_-_-ma-_-|re-_-_-_-|_-_-_-_ |
+G2 c2 c3 B | A G2 ^F A G3 | ^F3 G E4 | E ^F3 ^F4 |
+w: Dnaa-ri-ye-_ | aa-_-_-chho-_ | tu-_-mi | aa-_-mar |
+E D3 E ^F G A | A3 ^F ^F/ G/ ^F E ^F | G8 |]
+w: gaa-_-ner-_-_-_ | o _ paa-_-_-_-_-|re |

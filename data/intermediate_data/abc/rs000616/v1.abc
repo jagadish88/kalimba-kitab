@@ -1,0 +1,86 @@
+X:1
+T:Chokher Aloy Dekhechhilem
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000616.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000616.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000616.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
+N:Syllables placed on the notes as in the swaralipi (Sa = C); one swaralipi half-bar (3 matras) = one 3/4 bar.
+N:Tivra Ma (F#) only; the G# in "jho-re" is a passing note of the arrangement.
+M:3/4
+L:1/8
+Q:1/4=120
+K:C
+P:Sthayi
+C2 D2 C G | ^F2 E4 | E D E D G D | E2 D4 |
+w: Cho-kher-_-_ | aa-loy | de-_-khe-_-_-_-|chhi-lem |
+B,2 D4 | C2 D E E D | E6- | E6 |
+w: cho-kher | baa-_-_-hi-_-|re | _ |
+E3 G G2 | G ^F G4 | G3 ^F G2- | G2 G2 G2 |
+w: On-_-to-|re-_ aaj | dekh-_-bo | _ jo-khon |
+G2 A4 | G2 A B B A | B5 A- | A G5 |
+w: aa-lok | naa-_-_-hi-_ | re-_ | _-_ |
+C2 D2 C G | ^F2 E4 | E D E D G D | E2 D4 |
+w: Cho-kher-_-_ | aa-loy | de-_-khe-_-_-_-|chhi-lem |
+B,2 D4 | C2 D E E D | E6- | E6 |
+w: cho-kher | baa-_-_-hi-_-|re | _ |
+P:Antara
+G2 G3 E | G ^F A4 | G2 A c c2 | c B d c3 |
+w: Dho-raay-_ | jo-_-khon | daa-o-_ na | dho-_-ra-_ |
+G2 G3 E | G ^F A4 | A c c3 B | B d c4 |
+w: hri-doy-_ | to-_-khon | to-_-maay-_ | bho-_-ra |
+G2 G3 E | G ^F A4 | G2 A c c2 | c B d c3 |
+w: Dho-raay-_ | jo-_-khon | daa-o-_ na | dho-_-ra-_ |
+G2 G3 E | G ^F A4 | A c c3 B | B d c4 |
+w: hri-doy-_ | to-_-khon | to-_-maay-_ | bho-_-ra |
+c e d4 | B d c4 | B2 A2 B c | B2 A G3 |
+w: E-_-khon | to-_-mar | aa-pon-_-_ | aa-loy-_ |
+G ^F G ^F2 B | A4 G2 | E5 D- | D C5 |
+w: to-_-maay-_-_ | chaa-hi | re-_ | _-_ |
+C2 D2 C G | ^F2 E4 | E D E D G D | E2 D4 |
+w: Cho-kher-_-_ | aa-loy | de-_-khe-_-_-_-|chhi-lem |
+B,2 D4 | C2 D E E D | E6- | E6 |
+w: cho-kher | baa-_-_-hi-_-|re | _ |
+P:Sanchari
+C2 C B,2 D | D2 D4 | D2 C2 D E | E2 E4 |
+w: To-maay-_-_ | ni-ye | khe-le-_-_-|chhi-lem |
+E2 E3 D | D3 B, D2 | C6- | C6 |
+w: khe-lar-_ | gho-_-re-|te | _ |
+c e e3 d | d c c4 | B d c4 | B2 A G3 |
+w: Khe-_-lar-_ | pu-_-tul | bhe-_-nge | ge-chhe-_ |
+B2 B3 A | A5/2 ^G/ ^F A2 | G6- | G6 |
+w: pro-loy-_ | jho-_-_-re-|te | _ |
+C2 C B,2 D | D2 D4 | D2 C2 D E | E2 E4 |
+w: To-maay-_-_ | ni-ye | khe-le-_-_-|chhi-lem |
+E2 E3 D | D3 B, D2 | C6- | C6 |
+w: khe-lar-_ | gho-_-re-|te | _ |
+c e e3 d | d c c4 | B d c4 | B2 A G3 |
+w: Khe-_-lar-_ | pu-_-tul | bhe-_-nge | ge-chhe-_ |
+B2 B3 A | A5/2 ^G/ ^F A2 | G6- | G6 |
+w: pro-loy-_ | jho-_-_-re-|te | _ |
+P:Abhog
+G4 E2 | G ^F A3 G | c2 c3 B | B d c4 |
+w: Thaak to-|be-_ sei-_ | ke-bol-_ | khe-_-la |
+c3 e d2 | B d c4 | B2 A2 B c | B2 A G3 |
+w: hok-_ na | e-_-khon | praa-ner-_-_ | me-la-_ |
+G4 E2 | G ^F A3 G | c2 c3 B | B d c4 |
+w: Thaak to-|be-_ sei-_ | ke-bol-_ | khe-_-la |
+c3 e d2 | B d c4 | B2 A2 B c | B2 A G3 |
+w: hok-_ na | e-_-khon | praa-ner-_-_ | me-la-_ |
+c2 c4 | B2 A3 G | G2 ^F A G2- | G ^F E2 ^F2 |
+w: Taa-rer | bee-na-_ | bhaang-_-_-lo-|_-_ hri-doy-|
+G2 G2 ^F B | A4 G2 | E5 D- | D C5 |
+w: bee-naay-_-_ | gaa-hi | re-_ | _-_ |
+P:Sthayi
+C2 D2 C G | ^F2 E4 | E D E D G D | E2 D4 |
+w: Cho-kher-_-_ | aa-loy | de-_-khe-_-_-_-|chhi-lem |
+B,2 D4 | C2 D E E D | E6- | E6 |
+w: cho-kher | baa-_-_-hi-_-|re | _ |
+E3 G G2 | G ^F G4 | G3 ^F G2- | G2 G2 G2 |
+w: On-_-to-|re-_ aaj | dekh-_-bo | _ jo-khon |
+G2 A4 | G2 A B B A | B5 A- | A G5 |
+w: aa-lok | naa-_-_-hi-_ | re-_ | _-_ |
+C2 D2 C G | ^F2 E4 | E D E D G D | E2 D4 |
+w: Cho-kher-_-_ | aa-loy | de-_-khe-_-_-_-|chhi-lem |
+B,2 D4 | C2 D E E D | E6- | E6 |]
+w: cho-kher | baa-_-_-hi-_-|re | _ |
