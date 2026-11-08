@@ -408,7 +408,7 @@ rs000864,src000397,,piano_roll
 rs000864,src000420,,piano_staff
 rs000864,src000465,,kalimba
 rs000864,src000466,,kalimba
-rs000864,src001749,,vocal_melody
+rs000864,src001749,data/raw_data/audio/rs000864_src001749.m4a,vocal_melody
 rs000864,src001750,,vocal_melody
 rs000864,src001751,,vocal_melody
 rs000869,src000300,,piano_roll
