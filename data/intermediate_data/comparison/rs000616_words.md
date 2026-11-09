@@ -4,7 +4,7 @@
 |  | aa-loy | M G | M G = |
 |  | de-khe-chhi-lem | G R G R P R G R | G R G R P R G R = |
 |  | cho-kher | N, R | N, R = |
-|  | baa-hi-re | S R G G R G | S R G R G |
+|  | baa-hi-re | S R G G R G | S R G G R G = |
 |  | On-to-re | G P P P M | G P P P M = |
 |  | aaj | P | P = |
 |  | dekh-bo | P M P | P M D P |
@@ -16,7 +16,7 @@
 |  | aa-loy | M G | M G = |
 |  | de-khe-chhi-lem | G R G R P R G R | G R G R P R G R = |
 |  | cho-kher | N, R | N, R = |
-|  | baa-hi-re | S R G G R G | S R G R G |
+|  | baa-hi-re | S R G G R G | S R G G R G P' G' S' D' m' R' G' P' N' S'' P P G P M D P D S' S' S' N R' S' P P G |
 | Antara | Dho-raay | P P G | P P G = |
 |  | jo-khon | P M D | P M D = |
 |  | daa-o | P D S' | P D S' = |
@@ -53,7 +53,7 @@
 |  | khe-lar | G G R | G G R = |
 |  | gho-re-te | R N, R S | R N, R S = |
 |  | Khe-lar | S' G' G' R' | S' G' G' R' = |
-|  | pu-tul | R' S' S' | R' S' |
+|  | pu-tul | R' S' S' | R' S' S' = |
 |  | bhe-nge | N R' S' | N R' S' = |
 |  | ge-chhe | N D P | N D P = |
 |  | pro-loy | N N D | N N D = |
@@ -68,10 +68,10 @@
 |  | bhe-nge | N R' S' | N R' S' = |
 |  | ge-chhe | N D P | N D P = |
 |  | pro-loy | N N D | N N D = |
-|  | jho-re-te | D d M D P | D M D D P P G P M D P |
-| Abhog | Thaak | P | · |
-|  | to-be | G P M | · |
-|  | sei | D P | D |
+|  | jho-re-te | D d M D P | D M D D P |
+| Abhog | Thaak | P | P = |
+|  | to-be | G P M | G P M = |
+|  | sei | D P | D P = |
 |  | ke-bol | S' S' N | S' S' N = |
 |  | khe-la | N R' S' | N R' R' S' |
 |  | hok | S' G' | S' G' = |
@@ -100,16 +100,16 @@
 |  | aa-loy | M G | M G = |
 |  | de-khe-chhi-lem | G R G R P R G R | G R G R P R G R = |
 |  | cho-kher | N, R | N, R = |
-|  | baa-hi-re | S R G G R G | S R G R G |
-|  | On-to-re | G P P P M | · |
-|  | aaj | P | · |
-|  | dekh-bo | P M P | · |
-|  | jo-khon | P P | · |
-|  | aa-lok | P D | · |
-|  | naa-hi | P D N N D | · |
-|  | re | N D P | · |
-|  | Cho-kher | S R S P | · |
-|  | aa-loy | M G | · |
-|  | de-khe-chhi-lem | G R G R P R G R | · |
-|  | cho-kher | N, R | · |
-|  | baa-hi-re | S R G G R G | · |
+|  | baa-hi-re | S R G G R G | S R G G R G = |
+|  | On-to-re | G P P P M | G P P P M = |
+|  | aaj | P | P = |
+|  | dekh-bo | P M P | P M D P |
+|  | jo-khon | P P | P P = |
+|  | aa-lok | P D | P D D |
+|  | naa-hi | P D N N D | P D N N D = |
+|  | re | N D P | N D P = |
+|  | Cho-kher | S R S P | S R S P = |
+|  | aa-loy | M G | M G = |
+|  | de-khe-chhi-lem | G R G R P R G R | G R G R P R G R = |
+|  | cho-kher | N, R | N, R = |
+|  | baa-hi-re | S R G G R G | S R G G R G P' G' S' D' m' R' G' P' N' S'' P P G P M D P D S' S' S' N R' S' P P G |

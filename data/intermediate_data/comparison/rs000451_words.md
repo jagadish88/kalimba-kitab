@@ -2,7 +2,7 @@
 |---|---|---|---|
 | Sthayi | Bo-ro | S R | S R = |
 |  | aa-sha | G G | G G = |
-|  | ko-re | G m G R G | G m G R G = |
+|  | ko-re | G m G R G | G m G R G G |
 |  | e-se-chhi | P m G | P m G = |
 |  | go | R G | R G = |
 |  | kaa-chhe | S S | S S = |
@@ -13,20 +13,20 @@
 |  | ja-no-ni | m G R G | m G R G = |
 |  | Bo-ro | S R | S R = |
 |  | aa-sha | G G | G G = |
-|  | ko-re | G m G R G | G m G R G = |
-|  | e-se-chhi | P m G | P m G = |
+|  | ko-re | G m G R G | G m G R G G |
+|  | e-se-chhi | P m G | P m G R G |
 |  | go | R G | R G = |
-|  | kaa-chhe | S S | S |
-|  | de-ke | R G R | R G R = |
+|  | kaa-chhe | S S | S P D N S' N D P D P m G m G R G S |
+|  | de-ke | R G R | R S N, P, D, D, S G R |
 |  | lawo | S | S = |
 | Antara | Di-no-hi-ne | P D N S' N D | P D N S' N D = |
 |  | ke-ho | P D | P D = |
 |  | chaa-he | P m | P m = |
 |  | na | G m G | G m G = |
 |  | tu-mi | R G | R G = |
-|  | taa-re | S R | S |
-|  | raa-khi-be | S N, P, D, | S N, P, D, = |
-|  | jaa-ni | S R | S G g S P D N S' N D P D P m G m G R |
+|  | taa-re | S R | S G R |
+|  | raa-khi-be | S N, P, D, | S N, P, D, D, |
+|  | jaa-ni | S R | S G R |
 |  | go | S | S = |
 |  | Aar | S | S = |
 |  | aa-mi-je | G R G | G R G G |
@@ -36,7 +36,7 @@
 |  | bo-se | S N, | S N, = |
 |  | thaa-ki-bo | D, N, P, | D, N, D, P, |
 |  | Aar | S | S = |
-|  | aa-mi-je | G R G | G R G = |
+|  | aa-mi-je | G R G | G R G G |
 |  | ki-chhu | P m | P m = |
 |  | cha-hi-ne | G R D | G R R D D |
 |  | ja-no-ni | N D P | N D P = |
@@ -47,7 +47,7 @@
 |  | na | S' | S' = |
 |  | raa-khi-le | P P P | P P P = |
 |  | gri-ho | D N | D N = |
-|  | aar | P | · |
+|  | aar | P | P = |
 |  | paa-i-bo | m G R | m G R R |
 |  | ko-tha | R D | R D = |
 |  | kne-de | P m | P m = |
@@ -55,15 +55,15 @@
 |  | ko-tha | S N, D, | S N, D, = |
 |  | be-ra-bo | N, R G R S | N, S R G R S |
 |  | Oi-je | P, S | P, S = |
-|  | he-ri | R G | R G = |
+|  | he-ri | R G | R G G |
 |  | ta-mo-so-gha-no-gho-ra | P m G R S N, D, | P m G R S N, D, D, |
 |  | ga-ho-no | D P m | D P m = |
 |  | ra-jo-ni | G R G S | G R G S = |
 |  | Bo-ro | S R | S R = |
 | Sthayi | aa-sha | G G | G G = |
-|  | ko-re | G m G R G | G m G R G = |
+|  | ko-re | G m G R G | G m G R G G |
 |  | e-se-chhi | P m G | P m G = |
 |  | go | R G | R G = |
-|  | kaa-chhe | S S | S |
+|  | kaa-chhe | S S | S S = |
 |  | de-ke | R G R | R G R = |
 |  | lawo | S | S = |

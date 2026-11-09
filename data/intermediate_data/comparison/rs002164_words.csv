@@ -12,10 +12,10 @@ Sthayi,ni-bhri-to,"S N, D,","S N, D,"
 Sthayi,pur-ni-ma-ni-shi-thi-ni-sa-mo,"P, S S S S S N, R R R S G G G","P, S S S S S N, S R R R S R G G G"
 Sthayi,Tu-mi,G P m,G P m
 Sthayi,ra-be,R G G m,R G G G m
-Sthayi,ni-ra-be,R G R G R G G m,R G R G R G G m
+Sthayi,ni-ra-be,R G R G R G G m,"R G G m G P G P S' N P m R G R P m G S N, P, S N, R S G m"
 Antara,Ma-mo,P P,P P
 Antara,ji-ba-no,P M D P,P M D P
-Antara,jou-ba-no,P N D N N S',P N D N N S'
+Antara,jou-ba-no,P N D N N S',P N D N N S' r' S'
 Antara,ma-mo,S' S' N,S' S' N
 Antara,a-khi-lo,S' G' G',S' G' G'
 Antara,bhu-ba-no,G' P' m' G' R' G' R',G' m' P' m' G' R' G' M' G' G' R'
@@ -25,7 +25,7 @@ Antara,gou-ra-be,P M P P P S' D N,P M P P P S' r' S' N D N r' N
 Antara,ni-shi-thi-ni-sa-mo,D P P M D P m G P m G,D P P M P D P m G m P m G
 Antara,Tu-mi,G P m,G P m
 Antara,ra-be,R G G m,R G G G m
-Antara,ni-ra-be,R G R G R G G m,R G R G R G G m
+Antara,ni-ra-be,R G R G R G G m,R G R G R G G m m
 Sanchari,Jaa-gi-be,P P P,P P P
 Sanchari,E-kaa-ki,P P M P D P,P P M P D P d P
 Sanchari,ta-bo,m m,m m
@@ -57,4 +57,4 @@ Abhog,hri-do-ye,m G G P M P M P N D N D,m G G P P M P M P N D N D
 Abhog,ma-mo,P M P D m P G m G,P M P D m P G m R G
 Abhog,Tu-mi,G P m P m,G P m P m
 Abhog,ra-be,R G G m,R G G G m
-Abhog,ni-ra-be,R G R G R G G m R G G m R G R G R G G m,"R G R G R G G m m G R S N, D, P, S S S S S N, S R R R S R G G G G P m R G G G m R G R G R G G m"
+Abhog,ni-ra-be,R G R G R G G m R G G m R G R G R G G m,"R G R G G m m G R S N, D, P, S S S S S N, S R R R S R G G G G P m R G G G m R G R G R G G m"

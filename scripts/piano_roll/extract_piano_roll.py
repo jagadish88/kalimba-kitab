@@ -113,7 +113,7 @@ def keyboard_in(g):
 
 def find_layout(path):
     """(key x centres {midi: x}, white-key width, keyboard top y) from frames showing the keyboard"""
-    blacks, top = max((keyboard_in(one_frame(path, t).mean(2)) for t in (2.0, 10.0, 20.0, 30.0, 45.0, 60.0)),
+    blacks, top = max((keyboard_in(one_frame(path, t).mean(2)) for t in (1.0, 3.0, 5.0, 7.0, 10.0, 20.0, 30.0, 45.0, 60.0)),   # early frames: no key lit yet
                       key=lambda r: len(r[0]))
     if len(blacks) < 10:
         raise SystemExit('no keyboard found')
@@ -164,9 +164,10 @@ def melody_mask(rgb):
     return (hue >= 175) & (hue <= 245) & (sat > 0.45) & (mx > 90)
 
 
-def bar_centres(mask, bridge=10):
+def bar_centres(mask, bridge=10, min_width=7):
     """x centre of the horizontal bar run through each pixel (inf off bars). Gaps up to `bridge` px
-    inside a row are closed first, so a letter label printed on a bar doesn't split it."""
+    inside a row are closed first, so a letter label printed on a bar doesn't split it; runs narrower
+    than `min_width` (the thin strip some videos draw between two bars on one key) are ignored."""
     h, w = mask.shape
     c = np.concatenate([np.zeros((h, 1), int), np.cumsum(mask, 1)], 1)
     xs = np.arange(w)
@@ -177,7 +178,7 @@ def bar_centres(mask, bridge=10):
     start = np.maximum.accumulate(start, 1)
     end = np.where(m & ~np.pad(m, ((0, 0), (0, 1)))[:, 1:], xs, w)
     end = np.minimum.accumulate(end[:, ::-1], 1)[:, ::-1]
-    return np.where(m, (start + end) / 2, np.inf)
+    return np.where(m & (end - start + 1 >= min_width), (start + end) / 2, np.inf)
 
 
 def bars_mask(rgb):
@@ -234,7 +235,7 @@ def main():
     # pixels between two frames; tracking (not a fixed window) never misses it.
     prev = {m: [] for m in xs}                                      # bottom edges (y) in the last frame
     for n, fr in frames(a.video, FALL_TOP, FALL_BOTTOM):
-        cen = bar_centres(melody_mask(fr))
+        cen = bar_centres(melody_mask(fr), min_width=max(4, int(ww / 3)))
         for m, x in xs.items():
             col = np.abs(cen[:, x] - x) < hw                        # a bar centred on this key (not a wide neighbour)
             edges = list(np.flatnonzero(col[:-1] & ~col[1:]))       # bar above, background below

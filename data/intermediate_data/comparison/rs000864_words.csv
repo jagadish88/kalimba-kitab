@@ -4,8 +4,8 @@ Sthayi,he,R S S',R S S',R S,R S,R S
 Sthayi,boi-shaakh,S' N D P,S' N D P,S' N D P,S' N D P,S' N D P
 Sthayi,e-so,G R,G R,G R,R,G R
 Sthayi,e-so,G R S,G R S,"G R R S N, S N, S","G R g S N, r S","G R G S N, S"
-Sthayi,Taa-po-so-nish-shaa-so-baa-ye,G P P P P P P P M D,G P P P P P P P M D,G P P P M P P M P M D,G P P P P M D,G P M P M P P M D
-Sthayi,mu-mur-shu-re,D P D N N N,D D P D N N N,D d D N N N,D D N,D P N N N
+Sthayi,Taa-po-so-nish-shaa-so-baa-ye,G P P P P P P P M D,G P P P P P P P M D D,G P P P M P P M P M D,G P P P P M D,G P M P M P P M D
+Sthayi,mu-mur-shu-re,D P D N N N,D P D N N N,D d D N N N,D D N,D P N N N
 Sthayi,daao,N,N,N,N,N
 Sthayi,u-raa-ye,N N D S',N N D S',N S' N S' S',N N D S',N S'
 Sthayi,Taa-po-so-nish-shaa-so-baa-ye,G P P P P P P P M D,G P P P P P P P M D D,G P P M P M M P M P M D P P D,G P P M P P P P P M P M P D,G P P M P P P M P M D
@@ -20,12 +20,12 @@ Sthayi,jaak,D,D,D,D,D
 Sthayi,jaak,P,P,P,P,P
 Sthayi,jaak,G,G,·,G,G
 Sthayi,e-so,G R,G R,G R,G R,G R
-Sthayi,e-so,G R S,G R S,G R,G R S,G g R S
-Sthayi,E-so,S R,S R,·,S,S
-Sthayi,he,R S S',R S S',R S,R S,R S
+Sthayi,e-so,G R S,G R S S,G R,G R S,G g R S
+Sthayi,E-so,S R,S S' S' N D P G R,·,S,S
+Sthayi,he,R S S',R S S R G m P G G P P D P P S' S' S' G' G' G' R' R' N S' S' S' G' G' G' R' S' S' N S',R S,R S,R S
 Sthayi,boi-shaakh,S' N D P,S' N D P,S' N D P,S' N D P,S' N D
 Sthayi,e-so,G R,G R,G R,R,G R
-Sthayi,e-so,G R S,G R S,"G R N, N, R S r N S'",G R S,"G R S N, S"
+Sthayi,e-so,G R S,G R S S R R S,"G R N, N, R S r N S'",G R S,"G R S N, S"
 Antara,Jaak,P,P,P,P,·
 Antara,pu-ra-ton,G G P P,G G P P,G P,G g P M D P,G G M g P D P
 Antara,smri-ti,D P P S',D P P S',D P P N S' S',D N S' N S' N S',D n S'
@@ -45,7 +45,7 @@ Antara,E-so,S R,S R,S,S R,S
 Antara,he,R S S',R S S',R S,S,R S r S'
 Antara,boi-shaakh,S' N D P,S' N D P,S' N D P,S' N D P,S' N P
 Antara,e-so,G R,G R,G R,R,R
-Antara,e-so,G R S,G R S,"G R S N, S",G R S,G
+Antara,e-so,G R S,G R S S,"G R S N, S",G R S,G
 Sanchari,Mu-chhe,S R,S R,"S N, R","S N, R",S r R
 Sanchari,jaak,G,G,G,G,G
 Sanchari,glaa-ni,G R P,G R P,G R g R,G R P,G g R
@@ -66,8 +66,8 @@ Sanchari,Og-ni-snaa-ne,S P P P M P,S P P P M P,P P M P,P M P M M,P P M
 Sanchari,shu-chi,P M P,P M P,P M P,P P,P M P
 Sanchari,hok,D,D,·,D,D
 Sanchari,dho-ra,D P M G,D P M G,P,D d P M G,D G P M M G
-Abhog,Ro-se-ro,P P G,P P G,P,G,P
-Abhog,aa-be-sho-raa-shi,G P M D D P P S',G P M D D P S',G P M D P P d N S' S' S',P M D P D N S' S' N S',G P M P D P D n S' S'
+Abhog,Ro-se-ro,P P G,P M G S R G G R P G G G,P,G,P
+Abhog,aa-be-sho-raa-shi,G P M D D P P S',G R S S P P P M P P M P D D P M G P P G G P M D D P S',G P M D P P d N S' S' S',P M D P D N S' S' N S',G P M P D P D n S' S'
 Abhog,shush-ko,S' G' G',S' G' G',S',S',S'
 Abhog,ko-ri,G' G' R',G' G' R',G' R',G' R',G'
 Abhog,daao,R',R',·,R',·
@@ -92,9 +92,9 @@ Abhog,jaak,N,N,N,D,N
 Abhog,jaak,D,D,D,P,D
 Abhog,jaak,P,P,P,D,P
 Abhog,e-so,G R,G R,R,R G',R
-Abhog,e-so,G R S,G R S,G R S,R' S R S S',G R S
+Abhog,e-so,G R S,G R S S,G R S,R' S R S S',G R S
 Sthayi,E-so,S S R,S S R,S R,R,S
 Sthayi,he,R S S',R S S',R S,S S',R S
 Sthayi,boi-shaakh,S' N D P,S' N D P,S' N P,N D P D,S' N D P
 Sthayi,e-so,G R,G R,G R,R G',R
-Sthayi,e-so,G R S,G R S,G R S S,R' S R S S',G R S
+Sthayi,e-so,G R S,G R S S,G R S S,R' S R S S',G R S

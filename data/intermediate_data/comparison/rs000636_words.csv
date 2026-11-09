@@ -51,7 +51,7 @@ Antara,tu-mi,M P G,M P G
 Antara,aa-mar,G M M,G M M
 Antara,gaa-ner,G R G M P D,G R G M P D
 Antara,o,D M,D M
-Antara,paa-re,M P M G M P,M P M G M P
+Antara,paa-re,M P M G M P,M P M G M P P
 Sanchari,To-mar,P S' S',P S' S'
 Sanchari,saa-the,S' N N,S' N N
 Sanchari,gaa-ner,G R G M P D,G R G M P D
@@ -69,10 +69,10 @@ Abhog,Ko-be,P P S',P P S'
 Abhog,ni-ye,S' S',S' S'
 Abhog,aa-mar,S' S' N,S' S' N
 Abhog,bnaa-shi,R' S' N S' S',R' S' N S' S'
-Abhog,baa-ja-be,S' S' N R' R' S',S' N R' R' S'
+Abhog,baa-ja-be,S' S' N R' R' S',S' S' N R' R' S'
 Abhog,go,S',S'
 Abhog,aap-ni,D N D,D N D
-Abhog,aa-si,D N P P,D N D P
+Abhog,aa-si,D N P P,D N D P P
 Abhog,Ko-be,P P S',P P S'
 Abhog,ni-ye,S' S',S' S'
 Abhog,aa-mar,S' S' N,S' S' N
@@ -80,8 +80,8 @@ Abhog,bnaa-shi,R' S' N S' S',R' S' N S' S'
 Abhog,baa-ja-be,S' S' N R' R' S',S' S' N R' R' S'
 Abhog,go,S',S'
 Abhog,aap-ni,D N D,D N D
-Abhog,aa-si,D N P P,D N D P
-Abhog,Aa-non-do-moy,P M G M G R P P,P M G M G R G P
+Abhog,aa-si,D N P P,D N D P P
+Abhog,Aa-non-do-moy,P M G M G R P P,P M G M G R G P P
 Abhog,ni-rob,P G' G' R',P G' G' R'
 Abhog,raa-ter,R' S' S',R' S' S'
 Abhog,ni-bir,S' N R' S' N,S' N R' S' N
@@ -91,7 +91,7 @@ Sthayi,aa-chho,D P M D P,D P M D P
 Sthayi,tu-mi,M P G,M P G
 Sthayi,aa-mar,G M M,G M M
 Sthayi,gaa-ner,G R G M P D,G R G M P D
-Sthayi,o,D M,M
+Sthayi,o,D M,D M
 Sthayi,paa-re,M P M G M P,M P M G M P
 Sthayi,aa-mar,P P,P P
 Sthayi,sur-gu-li,P N N D N S',P N D D N S'

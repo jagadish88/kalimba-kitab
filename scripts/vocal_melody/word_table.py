@@ -12,8 +12,8 @@ and writes data/intermediate_data/comparison/<id>_words.md and .csv: one row per
 its notes in sargam, and for every other source the notes it plays or sings over that word.
 
 Correspondence
-  * piano roll: quick re-strikes (< 0.1 s on the key just played) left out; per stanza (P: section),
-    the stretch of the roll after the previous stanza with the most notes in common, matched note for
+  * piano roll: per stanza (P: section), the stretch of the roll with the most notes in common
+    (searched over the whole roll, as arrangements reorder and repeat sections), matched note for
     note (pitch with octave); Sa = the transposition sharing most notes with the whole draft.
   * renditions: stanzas found in order by align_with_draft.py, then the LCS of scale degrees.
 A source's column shows its notes from the first to the last note matched in that word;
@@ -130,24 +130,22 @@ def main():
         # the roll's Sa: the transposition under which it shares the most notes with the draft
         # (a scale fit alone can't tell e.g. C with tivra Ma from G major)
         whole = [n['rel'] for notes in stz for n in notes]
-        base = max(range(int(min(midis)) - 12, int(max(midis)) + 1),
-                   key=lambda b: sum(x.size for x in difflib.SequenceMatcher(
-                       None, whole, [m - b for m in midis], autojunk=False).get_matching_blocks()))
+        base = max(range(int(min(midis)) - 12, int(max(midis)) + 1),      # exact LCS (difflib can pick wrong)
+                   key=lambda b: len(lcs_map(whole, [m - b for m in midis])))
         P = [m - base for m in midis]
-        # per stanza: the stretch of the roll (after the previous stanza) sharing the most notes,
+        # per stanza: the stretch of the roll sharing the most notes,
         # then the LCS inside it (exact pitch)
         maps, pos = [], 0
         for notes in stz:
             d = [n['rel'] for n in notes]
             span = int(len(d) * 1.5) + 8
             best = None
-            for j in range(pos, max(pos + 1, len(P) - len(d) // 2)):
-                m = sum(x.size for x in difflib.SequenceMatcher(None, d, P[j:j + span], autojunk=False).get_matching_blocks())
+            for j in range(0, max(1, len(P) - len(d) // 2), 2):       # anywhere: arrangements reorder and repeat
+                m = len(lcs_map(d, P[j:j + span]))
                 if best is None or m > best[0]:
                     best = (m, j)
             j = best[1]
-            sm = difflib.SequenceMatcher(None, d, P[j:j + span], autojunk=False)
-            mp = {x.a + k: j + x.b + k for x in sm.get_matching_blocks() for k in range(x.size)}
+            mp = {i: j + q for i, q in lcs_map(d, P[j:j + span]).items()}   # exact LCS, not difflib's greedy blocks
             maps.append(mp)
             if mp:
                 pos = max(mp.values()) + 1

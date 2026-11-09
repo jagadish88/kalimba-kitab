@@ -13,10 +13,10 @@
 |  | pur-ni-ma-ni-shi-thi-ni-sa-mo | P, S S S S S N, R R R S G G G | P, S S S S S N, S R R R S R G G G |
 |  | Tu-mi | G P m | G P m = |
 |  | ra-be | R G G m | R G G G m |
-|  | ni-ra-be | R G R G R G G m | R G R G R G G m = |
+|  | ni-ra-be | R G R G R G G m | R G G m G P G P S' N P m R G R P m G S N, P, S N, R S G m |
 | Antara | Ma-mo | P P | P P = |
 |  | ji-ba-no | P M D P | P M D P = |
-|  | jou-ba-no | P N D N N S' | P N D N N S' = |
+|  | jou-ba-no | P N D N N S' | P N D N N S' r' S' |
 |  | ma-mo | S' S' N | S' S' N = |
 |  | a-khi-lo | S' G' G' | S' G' G' = |
 |  | bhu-ba-no | G' P' m' G' R' G' R' | G' m' P' m' G' R' G' M' G' G' R' |
@@ -26,7 +26,7 @@
 |  | ni-shi-thi-ni-sa-mo | D P P M D P m G P m G | D P P M P D P m G m P m G |
 |  | Tu-mi | G P m | G P m = |
 |  | ra-be | R G G m | R G G G m |
-|  | ni-ra-be | R G R G R G G m | R G R G R G G m = |
+|  | ni-ra-be | R G R G R G G m | R G R G R G G m m |
 | Sanchari | Jaa-gi-be | P P P | P P P = |
 |  | E-kaa-ki | P P M P D P | P P M P D P d P |
 |  | ta-bo | m m | m m = |
@@ -58,4 +58,4 @@
 |  | ma-mo | P M P D m P G m G | P M P D m P G m R G |
 |  | Tu-mi | G P m P m | G P m P m = |
 |  | ra-be | R G G m | R G G G m |
-|  | ni-ra-be | R G R G R G G m R G G m R G R G R G G m | R G R G R G G m m G R S N, D, P, S S S S S N, S R R R S R G G G G P m R G G G m R G R G R G G m |
+|  | ni-ra-be | R G R G R G G m R G G m R G R G R G G m | R G R G G m m G R S N, D, P, S S S S S N, S R R R S R G G G G P m R G G G m R G R G R G G m |

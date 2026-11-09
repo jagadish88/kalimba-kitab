@@ -52,7 +52,7 @@
 |  | aa-mar | G M M | G M M = |
 |  | gaa-ner | G R G M P D | G R G M P D = |
 |  | o | D M | D M = |
-|  | paa-re | M P M G M P | M P M G M P = |
+|  | paa-re | M P M G M P | M P M G M P P |
 | Sanchari | To-mar | P S' S' | P S' S' = |
 |  | saa-the | S' N N | S' N N = |
 |  | gaa-ner | G R G M P D | G R G M P D = |
@@ -70,10 +70,10 @@
 |  | ni-ye | S' S' | S' S' = |
 |  | aa-mar | S' S' N | S' S' N = |
 |  | bnaa-shi | R' S' N S' S' | R' S' N S' S' = |
-|  | baa-ja-be | S' S' N R' R' S' | S' N R' R' S' |
+|  | baa-ja-be | S' S' N R' R' S' | S' S' N R' R' S' = |
 |  | go | S' | S' = |
 |  | aap-ni | D N D | D N D = |
-|  | aa-si | D N P P | D N D P |
+|  | aa-si | D N P P | D N D P P |
 |  | Ko-be | P P S' | P P S' = |
 |  | ni-ye | S' S' | S' S' = |
 |  | aa-mar | S' S' N | S' S' N = |
@@ -81,8 +81,8 @@
 |  | baa-ja-be | S' S' N R' R' S' | S' S' N R' R' S' = |
 |  | go | S' | S' = |
 |  | aap-ni | D N D | D N D = |
-|  | aa-si | D N P P | D N D P |
-|  | Aa-non-do-moy | P M G M G R P P | P M G M G R G P |
+|  | aa-si | D N P P | D N D P P |
+|  | Aa-non-do-moy | P M G M G R P P | P M G M G R G P P |
 |  | ni-rob | P G' G' R' | P G' G' R' = |
 |  | raa-ter | R' S' S' | R' S' S' = |
 |  | ni-bir | S' N R' S' N | S' N R' S' N = |
@@ -92,7 +92,7 @@
 |  | tu-mi | M P G | M P G = |
 |  | aa-mar | G M M | G M M = |
 |  | gaa-ner | G R G M P D | G R G M P D = |
-|  | o | D M | M |
+|  | o | D M | D M = |
 |  | paa-re | M P M G M P | M P M G M P = |
 |  | aa-mar | P P | P P = |
 |  | sur-gu-li | P N N D N S' | P N D D N S' |

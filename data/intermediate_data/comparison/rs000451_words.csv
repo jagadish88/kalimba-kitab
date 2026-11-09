@@ -1,7 +1,7 @@
 stanza,word,draft,"Piano roll, Arup Paul (src000410)"
 Sthayi,Bo-ro,S R,S R
 Sthayi,aa-sha,G G,G G
-Sthayi,ko-re,G m G R G,G m G R G
+Sthayi,ko-re,G m G R G,G m G R G G
 Sthayi,e-se-chhi,P m G,P m G
 Sthayi,go,R G,R G
 Sthayi,kaa-chhe,S S,S S
@@ -12,20 +12,20 @@ Sthayi,na,P D P,P D P
 Sthayi,ja-no-ni,m G R G,m G R G
 Sthayi,Bo-ro,S R,S R
 Sthayi,aa-sha,G G,G G
-Sthayi,ko-re,G m G R G,G m G R G
-Sthayi,e-se-chhi,P m G,P m G
+Sthayi,ko-re,G m G R G,G m G R G G
+Sthayi,e-se-chhi,P m G,P m G R G
 Sthayi,go,R G,R G
-Sthayi,kaa-chhe,S S,S
-Sthayi,de-ke,R G R,R G R
+Sthayi,kaa-chhe,S S,S P D N S' N D P D P m G m G R G S
+Sthayi,de-ke,R G R,"R S N, P, D, D, S G R"
 Sthayi,lawo,S,S
 Antara,Di-no-hi-ne,P D N S' N D,P D N S' N D
 Antara,ke-ho,P D,P D
 Antara,chaa-he,P m,P m
 Antara,na,G m G,G m G
 Antara,tu-mi,R G,R G
-Antara,taa-re,S R,S
-Antara,raa-khi-be,"S N, P, D,","S N, P, D,"
-Antara,jaa-ni,S R,S G g S P D N S' N D P D P m G m G R
+Antara,taa-re,S R,S G R
+Antara,raa-khi-be,"S N, P, D,","S N, P, D, D,"
+Antara,jaa-ni,S R,S G R
 Antara,go,S,S
 Antara,Aar,S,S
 Antara,aa-mi-je,G R G,G R G G
@@ -35,7 +35,7 @@ Antara,cha-ro-no-ta-le,"S N, D, N, R","S N, D, N, N, R"
 Antara,bo-se,"S N,","S N,"
 Antara,thaa-ki-bo,"D, N, P,","D, N, D, P,"
 Antara,Aar,S,S
-Antara,aa-mi-je,G R G,G R G
+Antara,aa-mi-je,G R G,G R G G
 Antara,ki-chhu,P m,P m
 Antara,cha-hi-ne,G R D,G R R D D
 Antara,ja-no-ni,N D P,N D P
@@ -46,7 +46,7 @@ Antara,Tu-mi,D N,D N
 Antara,na,S',S'
 Antara,raa-khi-le,P P P,P P P
 Antara,gri-ho,D N,D N
-Antara,aar,P,·
+Antara,aar,P,P
 Antara,paa-i-bo,m G R,m G R R
 Antara,ko-tha,R D,R D
 Antara,kne-de,P m,P m
@@ -54,15 +54,15 @@ Antara,kne-de,G R,G R
 Antara,ko-tha,"S N, D,","S N, D,"
 Antara,be-ra-bo,"N, R G R S","N, S R G R S"
 Antara,Oi-je,"P, S","P, S"
-Antara,he-ri,R G,R G
+Antara,he-ri,R G,R G G
 Antara,ta-mo-so-gha-no-gho-ra,"P m G R S N, D,","P m G R S N, D, D,"
 Antara,ga-ho-no,D P m,D P m
 Antara,ra-jo-ni,G R G S,G R G S
 Antara,Bo-ro,S R,S R
 Sthayi,aa-sha,G G,G G
-Sthayi,ko-re,G m G R G,G m G R G
+Sthayi,ko-re,G m G R G,G m G R G G
 Sthayi,e-se-chhi,P m G,P m G
 Sthayi,go,R G,R G
-Sthayi,kaa-chhe,S S,S
+Sthayi,kaa-chhe,S S,S S
 Sthayi,de-ke,R G R,R G R
 Sthayi,lawo,S,S

@@ -3,7 +3,7 @@ Sthayi,Cho-kher,S R S P,S R S P
 Sthayi,aa-loy,M G,M G
 Sthayi,de-khe-chhi-lem,G R G R P R G R,G R G R P R G R
 Sthayi,cho-kher,"N, R","N, R"
-Sthayi,baa-hi-re,S R G G R G,S R G R G
+Sthayi,baa-hi-re,S R G G R G,S R G G R G
 Sthayi,On-to-re,G P P P M,G P P P M
 Sthayi,aaj,P,P
 Sthayi,dekh-bo,P M P,P M D P
@@ -15,7 +15,7 @@ Sthayi,Cho-kher,S R S P,S R S P
 Sthayi,aa-loy,M G,M G
 Sthayi,de-khe-chhi-lem,G R G R P R G R,G R G R P R G R
 Sthayi,cho-kher,"N, R","N, R"
-Sthayi,baa-hi-re,S R G G R G,S R G R G
+Sthayi,baa-hi-re,S R G G R G,S R G G R G P' G' S' D' m' R' G' P' N' S'' P P G P M D P D S' S' S' N R' S' P P G
 Antara,Dho-raay,P P G,P P G
 Antara,jo-khon,P M D,P M D
 Antara,daa-o,P D S',P D S'
@@ -52,7 +52,7 @@ Sanchari,khe-le-chhi-lem,R S R G G G,R S R G G G
 Sanchari,khe-lar,G G R,G G R
 Sanchari,gho-re-te,"R N, R S","R N, R S"
 Sanchari,Khe-lar,S' G' G' R',S' G' G' R'
-Sanchari,pu-tul,R' S' S',R' S'
+Sanchari,pu-tul,R' S' S',R' S' S'
 Sanchari,bhe-nge,N R' S',N R' S'
 Sanchari,ge-chhe,N D P,N D P
 Sanchari,pro-loy,N N D,N N D
@@ -67,10 +67,10 @@ Sanchari,pu-tul,R' S' S',R' S' S'
 Sanchari,bhe-nge,N R' S',N R' S'
 Sanchari,ge-chhe,N D P,N D P
 Sanchari,pro-loy,N N D,N N D
-Sanchari,jho-re-te,D d M D P,D M D D P P G P M D P
-Abhog,Thaak,P,·
-Abhog,to-be,G P M,·
-Abhog,sei,D P,D
+Sanchari,jho-re-te,D d M D P,D M D D P
+Abhog,Thaak,P,P
+Abhog,to-be,G P M,G P M
+Abhog,sei,D P,D P
 Abhog,ke-bol,S' S' N,S' S' N
 Abhog,khe-la,N R' S',N R' R' S'
 Abhog,hok,S' G',S' G'
@@ -99,16 +99,16 @@ Sthayi,Cho-kher,S R S P,S R S P
 Sthayi,aa-loy,M G,M G
 Sthayi,de-khe-chhi-lem,G R G R P R G R,G R G R P R G R
 Sthayi,cho-kher,"N, R","N, R"
-Sthayi,baa-hi-re,S R G G R G,S R G R G
-Sthayi,On-to-re,G P P P M,·
-Sthayi,aaj,P,·
-Sthayi,dekh-bo,P M P,·
-Sthayi,jo-khon,P P,·
-Sthayi,aa-lok,P D,·
-Sthayi,naa-hi,P D N N D,·
-Sthayi,re,N D P,·
-Sthayi,Cho-kher,S R S P,·
-Sthayi,aa-loy,M G,·
-Sthayi,de-khe-chhi-lem,G R G R P R G R,·
-Sthayi,cho-kher,"N, R",·
-Sthayi,baa-hi-re,S R G G R G,·
+Sthayi,baa-hi-re,S R G G R G,S R G G R G
+Sthayi,On-to-re,G P P P M,G P P P M
+Sthayi,aaj,P,P
+Sthayi,dekh-bo,P M P,P M D P
+Sthayi,jo-khon,P P,P P
+Sthayi,aa-lok,P D,P D D
+Sthayi,naa-hi,P D N N D,P D N N D
+Sthayi,re,N D P,N D P
+Sthayi,Cho-kher,S R S P,S R S P
+Sthayi,aa-loy,M G,M G
+Sthayi,de-khe-chhi-lem,G R G R P R G R,G R G R P R G R
+Sthayi,cho-kher,"N, R","N, R"
+Sthayi,baa-hi-re,S R G G R G,S R G G R G P' G' S' D' m' R' G' P' N' S'' P P G P M D P D S' S' S' N R' S' P P G
