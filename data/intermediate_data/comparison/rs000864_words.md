@@ -68,7 +68,7 @@
 |  | hok | D | D = | · | D | D |
 |  | dho-ra | D P M G | D P M G = | P | D d P M G | D G P M M G |
 | Abhog | Ro-se-ro | P P G | P P G = | P | G | P |
-|  | aa-be-sho-raa-shi | G P M D D P P S' | G P M D D P P S' = | G P M D P P d N S' S' S' | P M D P D N S' S' N S' | G P M P D P D n S' S' |
+|  | aa-be-sho-raa-shi | G P M D D P P S' | G P M D D P S' | G P M D P P d N S' S' S' | P M D P D N S' S' N S' | G P M P D P D n S' S' |
 |  | shush-ko | S' G' G' | S' G' G' = | S' | S' | S' |
 |  | ko-ri | G' G' R' | G' G' R' = | G' R' | G' R' | G' |
 |  | daao | R' | R' = | · | R' | · |

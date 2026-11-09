@@ -5,15 +5,16 @@
     python scripts/vocal_melody/word_table.py rs000864 --abc data/intermediate_data/abc/rs000864/v1.abc
 
 Reads
-  * the draft: data/intermediate_data/abc/<id>/v1.abc (Sa = C4)
+  * the draft: data/intermediate_data/abc/<id>/v1.abc (Sa from its "Sa = X" note, else C4)
   * piano rolls: data/intermediate_data/piano_roll/<id>/*_notes.csv (extract_piano_roll.py)
   * renditions: data/intermediate_data/vocal_melody/<id>/*_notes.csv (extract_vocal_melody.py)
 and writes data/intermediate_data/comparison/<id>_words.md and .csv: one row per word of the draft,
 its notes in sargam, and for every other source the notes it plays or sings over that word.
 
 Correspondence
-  * piano roll: per stanza (P: section), the stretch of the roll with the most notes in common with
-    the draft, matched note for note (pitch with octave); Sa = the transposition sharing most notes.
+  * piano roll: quick re-strikes (< 0.1 s on the key just played) left out; per stanza (P: section),
+    the stretch of the roll after the previous stanza with the most notes in common, matched note for
+    note (pitch with octave); Sa = the transposition sharing most notes with the whole draft.
   * renditions: stanzas found in order by align_with_draft.py, then the LCS of scale degrees.
 A source's column shows its notes from the first to the last note matched in that word;
 "=" marks a piano-roll word identical to the draft, "·" a word nothing could be matched to.
@@ -44,6 +45,15 @@ def draft_stanzas(abc):
     txt = open(abc).read()
     names = [l[2:].strip() for l in txt.splitlines() if l.startswith('P:')]
     _, st = parse_abc(txt)
+    # Sa as the draft states it in an N: line ("Sa = G#"); C (midi 60) when not stated
+    import re
+    m = re.search(r'^N:.*?Sa = ([A-G])([#b]?)', txt, re.M)
+    sa = 60
+    if m:
+        pc = 'C D EF G A B'.index(m.group(1)) + {'#': 1, 'b': -1, '': 0}[m.group(2)]
+        mids = sorted(e['midi'] for s_ in st for ln in s_ for e in ln if e['kind'] == 'note')
+        med = mids[len(mids) // 2]
+        sa = med - (med - pc) % 12                                  # the Sa just below the melody's middle
     out = []
     for s in st:
         notes, word = [], -1
@@ -55,9 +65,9 @@ def draft_stanzas(abc):
                 if t and t[0] not in ('_', '*'):
                     if t[1] or word < 0:
                         word += 1
-                    notes.append(dict(rel=e['midi'] - 60, word=word, syl=t[0]))
+                    notes.append(dict(rel=e['midi'] - sa, word=word, syl=t[0]))
                 else:
-                    notes.append(dict(rel=e['midi'] - 60, word=max(word, 0), syl=''))
+                    notes.append(dict(rel=e['midi'] - sa, word=max(word, 0), syl=''))
         out.append(notes)
     return names, out
 
@@ -101,6 +111,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('song')
     ap.add_argument('--abc')
+    ap.add_argument('--restrike', type=float, default=0,
+                    help='leave out piano-roll notes shorter than this (s) on the key just played; 0 keeps all')
     a = ap.parse_args()
     song = a.song
     abc = a.abc or f'data/intermediate_data/abc/{song}/v1.abc'
@@ -111,6 +123,9 @@ def main():
 
     for pr in sorted(glob.glob(f'data/intermediate_data/piano_roll/{song}/*_notes.csv')):
         rows = list(csv.DictReader(open(pr)))
+        # drop quick re-strikes (< 0.1 s, same key as the note before): the arranger's ornament
+        rows = [r for k, r in enumerate(rows)
+                if not (k and float(r['duration']) < a.restrike and r['midi'] == rows[k - 1]['midi'])]
         midis = [int(r['midi']) for r in rows]
         # the roll's Sa: the transposition under which it shares the most notes with the draft
         # (a scale fit alone can't tell e.g. C with tivra Ma from G major)
@@ -119,19 +134,20 @@ def main():
                    key=lambda b: sum(x.size for x in difflib.SequenceMatcher(
                        None, whole, [m - b for m in midis], autojunk=False).get_matching_blocks()))
         P = [m - base for m in midis]
+        # per stanza: the stretch of the roll (after the previous stanza) sharing the most notes,
+        # then the LCS inside it (exact pitch)
         maps, pos = [], 0
         for notes in stz:
             d = [n['rel'] for n in notes]
+            span = int(len(d) * 1.5) + 8
             best = None
             for j in range(pos, max(pos + 1, len(P) - len(d) // 2)):
-                w = P[j:j + int(len(d) * 1.3) + 5]
-                for shift in (0, 12, -12):                                 # the roll may sit an octave off
-                    sm = difflib.SequenceMatcher(None, [x + shift for x in d], w, autojunk=False)
-                    m = sum(b.size for b in sm.get_matching_blocks())
-                    if best is None or m > best[0]:
-                        best = (m, j, sm)
-            m, j, sm = best
-            mp = {b.a + k: j + b.b + k for b in sm.get_matching_blocks() for k in range(b.size)}
+                m = sum(x.size for x in difflib.SequenceMatcher(None, d, P[j:j + span], autojunk=False).get_matching_blocks())
+                if best is None or m > best[0]:
+                    best = (m, j)
+            j = best[1]
+            sm = difflib.SequenceMatcher(None, d, P[j:j + span], autojunk=False)
+            mp = {x.a + k: j + x.b + k for x in sm.get_matching_blocks() for k in range(x.size)}
             maps.append(mp)
             if mp:
                 pos = max(mp.values()) + 1

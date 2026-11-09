@@ -130,23 +130,24 @@ def find_layout(path):
     trip = [gr[0] for gr in groups if len(gr) == 3]
     octave = np.median(np.diff(pairs)) if len(pairs) > 1 else np.median(np.diff(trip))
     ww = octave / 7
-    # least-squares C# reference: every black key = c0 + ww * (offset + 7 * octave number)
+    # every black key sits on a white-key boundary: x = c0 + ww * u, u in white-key widths from C#4.
+    # Label each black key, fit c0 and ww by least squares, then place the white keys on that grid.
     c_sharp = min(pairs, key=lambda x: abs(x - W / 2))              # taken as C#4 (midi 61)
-    resid = []
+    us, labels = [], []
     for x in blacks:
         u = (x - c_sharp) / ww
-        o, r = divmod(u, 7)
-        pc = min(BLACK_OFF, key=lambda q: abs(BLACK_OFF[q] - r))
-        resid.append(x - ww * (BLACK_OFF[pc] + 7 * o))
-    c0 = float(np.median(resid))
-    centers = {}
+        pc, o = min(((q, round((u - BLACK_OFF[q]) / 7)) for q in BLACK_OFF),   # nearest black-key slot
+                    key=lambda t: abs(u - BLACK_OFF[t[0]] - 7 * t[1]))
+        us.append(BLACK_OFF[pc] + 7 * o)
+        labels.append(60 + pc + 12 * o)
+    ww, c0 = np.polyfit(us, blacks, 1)
+    centers = dict(zip(labels, blacks))                            # black keys: where they are measured
     for m in range(21, 109):
         pc = m % 12
         if pc in BLACK_OFF:
-            x = c0 + ww * (BLACK_OFF[pc] + 7 * ((m - pc - 60) // 12))
-        else:
-            wi = [0, 2, 4, 5, 7, 9, 11].index(pc)                    # white index from C
-            x = c0 - 0.305 * ww + ww * (wi + 7 * ((m - pc - 60) // 12))
+            continue
+        wi = [0, 2, 4, 5, 7, 9, 11].index(pc)                        # white index from C
+        x = c0 + ww * (wi - 0.5 + 7 * ((m - pc - 60) // 12))        # C's centre is half a key left of C#
         if blacks[0] - ww <= x <= blacks[-1] + ww:
             centers[m] = x
     return centers, ww, top
@@ -161,6 +162,22 @@ def melody_mask(rgb):
     d = np.maximum(mx - mn, 1)
     hue = np.where(mx == b, 240 + 60 * (r - g) / d, np.where(mx == g, 120 + 60 * (b - r) / d, (60 * (g - b) / d) % 360))
     return (hue >= 175) & (hue <= 245) & (sat > 0.45) & (mx > 90)
+
+
+def bar_centres(mask, bridge=10):
+    """x centre of the horizontal bar run through each pixel (inf off bars). Gaps up to `bridge` px
+    inside a row are closed first, so a letter label printed on a bar doesn't split it."""
+    h, w = mask.shape
+    c = np.concatenate([np.zeros((h, 1), int), np.cumsum(mask, 1)], 1)
+    xs = np.arange(w)
+    left = c[:, xs + 1] - c[:, np.maximum(xs - bridge, 0)] > 0               # bar within bridge px to the left
+    right = c[:, np.minimum(xs + bridge + 1, w)] - c[:, xs] > 0             # ... and to the right
+    m = mask | (left & right)
+    start = np.where(m & ~np.pad(m, ((0, 0), (1, 0)))[:, :-1], xs, 0)
+    start = np.maximum.accumulate(start, 1)
+    end = np.where(m & ~np.pad(m, ((0, 0), (0, 1)))[:, 1:], xs, w)
+    end = np.minimum.accumulate(end[:, ::-1], 1)[:, ::-1]
+    return np.where(m, (start + end) / 2, np.inf)
 
 
 def bars_mask(rgb):
@@ -204,7 +221,7 @@ def main():
                                '-of', 'csv=p=0', a.video], capture_output=True, text=True).stdout.strip())
     global FALL_BOTTOM
     centers, ww, kb_top = find_layout(a.video)
-    FALL_BOTTOM = kb_top - 25
+    FALL_BOTTOM = (kb_top - 25) // 2 * 2                          # even: ffmpeg crops to even heights
     hw = max(2, int(ww * 0.3))                                     # half-width of the column read per key
     speed = fall_speed(a.video)                                        # px per frame
     y_scan = int(FALL_TOP + a.scan * (FALL_BOTTOM - FALL_TOP))
@@ -217,9 +234,9 @@ def main():
     # pixels between two frames; tracking (not a fixed window) never misses it.
     prev = {m: [] for m in xs}                                      # bottom edges (y) in the last frame
     for n, fr in frames(a.video, FALL_TOP, FALL_BOTTOM):
-        mask = melody_mask(fr)
+        cen = bar_centres(melody_mask(fr))
         for m, x in xs.items():
-            col = mask[:, max(0, x - hw):x + hw + 1].mean(1) > 0.3   # letter labels on a bar don't break it
+            col = np.abs(cen[:, x] - x) < hw                        # a bar centred on this key (not a wide neighbour)
             edges = list(np.flatnonzero(col[:-1] & ~col[1:]))       # bar above, background below
             for e in edges:
                 if e < y_scan:
