@@ -20,3 +20,7 @@ __pycache__/
 data/raw_data/audio/*
 !data/raw_data/audio/.gitkeep
 data/intermediate_data/vocal_melody/**/*_vocals.wav
+
+# Rendered draft videos and their intro slides (re-made with scripts/ktab_to_video/)
+data/intermediate_data/**/*.mp4
+data/intermediate_data/**/*_slide.png

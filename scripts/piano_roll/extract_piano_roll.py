@@ -6,12 +6,15 @@
 Writes <out-dir>/<name>_notes.csv (default data/intermediate_data/piano_roll/<song_id>/):
 one row per melody note: onset (s, when its bar reaches the keyboard), duration (s), midi, key name.
 
-How it reads the video (1280x720 layout of these tutorials; change the constants if needed)
-  * Keyboard: a full 88-key piano across the width (A0..C8, 52 white keys); the black keys are
-    found as dark runs on a keyboard row, so every key has an x position.
+How it reads the video
+  * Keyboard: found automatically. The row with the most black keys (dark runs) is the keyboard;
+    black keys come in groups of 2 (C# D#) and 3 (F# G# A#), which fixes the octave pattern and
+    the white-key width; every key gets an x position. The C# nearest the middle of the screen
+    is taken as C#4 (true for a full 88-key keyboard; for a cropped one the octave may be off,
+    which only shifts every note by 12). The falling area ends just above the keyboard.
   * Bars fall towards the keyboard at a constant speed, measured from the video.
-  * The melody (right hand) is drawn in cyan/blue, the accompaniment in green: only bars whose
-    hue is 175-225 degrees are read, so chords and arpeggios of the left hand are ignored.
+  * The melody (right hand) is drawn in cyan/blue, the accompaniment in green or orange: only bars
+    whose hue is 175-245 degrees are read, so chords and arpeggios of the left hand are ignored.
   * A note is counted when the BOTTOM EDGE of its bar crosses a scan line at --scan (fraction
     of the falling area, default 0.6). Two notes on the same key are two bars with a gap, so
     each has its own bottom edge and is never merged into one long note. Edges are tracked from
@@ -27,8 +30,8 @@ import subprocess
 import numpy as np
 
 W, H = 1280, 720
-FALL_TOP, FALL_BOTTOM = 0, 490          # falling area
-KEY_ROW = 545                           # a row through the black keys
+FALL_TOP = 0
+FALL_BOTTOM = 490                       # set by find_layout()
 NAMES = 'C C# D D# E F F# G G# A A# B'.split()
 
 
@@ -54,27 +57,99 @@ def one_frame(path, t, y0=0, y1=H):
     return np.frombuffer(raw, np.uint8).reshape(y1 - y0, W, 3).astype(int)
 
 
-def key_centers(path):
-    """x centre of every key, midi 21..108"""
-    row = one_frame(path, 2.0, KEY_ROW, KEY_ROW + 2)[0].mean(1)
-    dark = row < 100
-    blacks, x = [], 0
-    while x < W:
+def dark_runs(row, lo=8, hi=24):
+    """centres of dark runs lo..hi px wide (black keys) in a grey row"""
+    dark, runs, x = row < 100, [], 0
+    while x < len(row):
         if dark[x]:
             s = x
-            while x < W and dark[x]:
+            while x < len(row) and dark[x]:
                 x += 1
-            blacks.append((s + x - 1) / 2)
+            if lo <= x - s <= hi:
+                runs.append((s + x - 1) / 2)
         else:
             x += 1
-    ww = W / 52
-    whites = [m for m in range(21, 109) if NAMES[m % 12].find('#') < 0]
-    centers = {m: (i + 0.5) * ww for i, m in enumerate(whites)}
-    black_midis = [m for m in range(21, 109) if '#' in NAMES[m % 12]]
-    if len(blacks) != len(black_midis):
-        raise SystemExit(f'found {len(blacks)} black keys, expected 36: check KEY_ROW')
-    centers.update(dict(zip(black_midis, blacks)))
-    return centers
+    return runs
+
+
+BLACK_OFF = {1: 0.0, 3: 1.02, 6: 3.0, 8: 4.02, 10: 5.0}    # black keys, in white-key widths from C#
+
+
+def keyboard_in(g):
+    """(black-key x centres, top y of the keys) in a grey frame, or ([], 0) when there's no keyboard"""
+    counts = [len(dark_runs(g[y])) for y in range(H // 2, H)]
+    n = max(counts)
+    if n < 10:
+        return [], 0
+    # the black-key band: the longest run of rows with nearly as many dark runs; read its middle
+    bands, y = [], 0
+    while y < len(counts):
+        if counts[y] >= 0.8 * n:
+            s0 = y
+            while y < len(counts) and counts[y] >= 0.8 * n:
+                y += 1
+            bands.append((s0, y))
+        else:
+            y += 1
+    b0, b1 = max(bands, key=lambda b: b[1] - b[0])
+    if b1 - b0 < 25:                                                # text on a title card, not keys
+        return [], 0
+    runs = dark_runs(g[H // 2 + (b0 + b1) // 2])
+    # keep the longest chain of evenly spaced runs (drops dark runs in overlays, e.g. a photo)
+    sp = np.diff(runs)
+    med = np.median(sp)
+    chains, cur = [], [runs[0]]
+    for x, d in zip(runs[1:], sp):
+        if 0.6 * med <= d <= 2.2 * med:
+            cur.append(x)
+        else:
+            chains.append(cur); cur = [x]
+    chains.append(cur)
+    top = (b0 + b1) // 2                                            # keys' top: climb while most keys still show
+    while top > 0 and counts[top - 1] >= 0.5 * n:
+        top -= 1
+    return max(chains, key=len), H // 2 + top
+
+
+def find_layout(path):
+    """(key x centres {midi: x}, white-key width, keyboard top y) from frames showing the keyboard"""
+    blacks, top = max((keyboard_in(one_frame(path, t).mean(2)) for t in (2.0, 10.0, 20.0, 30.0, 45.0, 60.0)),
+                      key=lambda r: len(r[0]))
+    if len(blacks) < 10:
+        raise SystemExit('no keyboard found')
+    # groups: gaps inside a group are ~1.15 white keys, between groups ~1.75
+    sp = np.diff(blacks)
+    thr = (sp.min() + sp.max()) / 2
+    groups, cur = [], [blacks[0]]
+    for x, d in zip(blacks[1:], sp):
+        if d > thr:
+            groups.append(cur); cur = []
+        cur.append(x)
+    groups.append(cur)
+    pairs = [gr[0] for gr in groups if len(gr) == 2]
+    trip = [gr[0] for gr in groups if len(gr) == 3]
+    octave = np.median(np.diff(pairs)) if len(pairs) > 1 else np.median(np.diff(trip))
+    ww = octave / 7
+    # least-squares C# reference: every black key = c0 + ww * (offset + 7 * octave number)
+    c_sharp = min(pairs, key=lambda x: abs(x - W / 2))              # taken as C#4 (midi 61)
+    resid = []
+    for x in blacks:
+        u = (x - c_sharp) / ww
+        o, r = divmod(u, 7)
+        pc = min(BLACK_OFF, key=lambda q: abs(BLACK_OFF[q] - r))
+        resid.append(x - ww * (BLACK_OFF[pc] + 7 * o))
+    c0 = float(np.median(resid))
+    centers = {}
+    for m in range(21, 109):
+        pc = m % 12
+        if pc in BLACK_OFF:
+            x = c0 + ww * (BLACK_OFF[pc] + 7 * ((m - pc - 60) // 12))
+        else:
+            wi = [0, 2, 4, 5, 7, 9, 11].index(pc)                    # white index from C
+            x = c0 - 0.305 * ww + ww * (wi + 7 * ((m - pc - 60) // 12))
+        if blacks[0] - ww <= x <= blacks[-1] + ww:
+            centers[m] = x
+    return centers, ww, top
 
 
 def melody_mask(rgb):
@@ -85,16 +160,34 @@ def melody_mask(rgb):
     hue = np.zeros_like(mx, dtype=float)
     d = np.maximum(mx - mn, 1)
     hue = np.where(mx == b, 240 + 60 * (r - g) / d, np.where(mx == g, 120 + 60 * (b - r) / d, (60 * (g - b) / d) % 360))
-    return (hue >= 175) & (hue <= 225) & (sat > 0.45) & (mx > 90)
+    return (hue >= 175) & (hue <= 245) & (sat > 0.45) & (mx > 90)
 
 
-def fall_speed(path, t=30.0, gap=15):
+def bars_mask(rgb):
+    """True on any falling bar: saturated and bright"""
+    r, g, b = (rgb[..., i].astype(int) for i in range(3))
+    mx, mn = np.maximum(np.maximum(r, g), b), np.minimum(np.minimum(r, g), b)
+    return ((mx - mn) / np.maximum(mx, 1) > 0.45) & (mx > 90)
+
+
+def fall_speed(path, gap=15):
+    """px per frame: median of the shift between frames `gap` apart at several moments (pauses give 0)"""
+    v = [fall_shift(path, t, gap) for t in (20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0)]
+    v = [x for x in v if x > 1]
+    return float(np.median(v))
+
+
+def fall_shift(path, t, gap):
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-ss', str(t), '-i', path, '-vf',
                           f"select='eq(n\\,0)+eq(n\\,{gap})',crop={W}:{FALL_BOTTOM - 20}:0:20", '-vsync', '0',
                           '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True).stdout
     h = FALL_BOTTOM - 20
-    a, b = [np.frombuffer(raw[i * W * h * 3:(i + 1) * W * h * 3], np.uint8).reshape(h, W, 3).mean(2) for i in (0, 1)]
-    s = min(range(1, 400), key=lambda k: np.abs(a[:h - k] - b[k:]).mean())
+    # compare only bar pixels (melody or green accompaniment), so static overlays don't pull the shift to 0
+    a, b = [bars_mask(np.frombuffer(raw[i * W * h * 3:(i + 1) * W * h * 3], np.uint8).reshape(h, W, 3)).astype(float)
+            for i in (0, 1)]
+    if a.sum() < 500:
+        return 0
+    s = max(range(1, 400), key=lambda k: (a[:h - k] * b[k:]).sum())
     return s / gap
 
 
@@ -109,22 +202,24 @@ def main():
     os.makedirs(out, exist_ok=True)
     fps = eval(subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v', '-show_entries', 'stream=r_frame_rate',
                                '-of', 'csv=p=0', a.video], capture_output=True, text=True).stdout.strip())
-    centers = key_centers(a.video)
+    global FALL_BOTTOM
+    centers, ww, kb_top = find_layout(a.video)
+    FALL_BOTTOM = kb_top - 25
+    hw = max(2, int(ww * 0.3))                                     # half-width of the column read per key
     speed = fall_speed(a.video)                                        # px per frame
     y_scan = int(FALL_TOP + a.scan * (FALL_BOTTOM - FALL_TOP))
     lead = (FALL_BOTTOM - y_scan) / speed / fps                         # seconds from scan line to keyboard
     xs = {m: int(round(c)) for m, c in centers.items()}
-    print(f'{len(centers)} keys, bars fall {speed:.2f} px/frame, scan line y={y_scan}')
+    print(f'{len(centers)} keys ({NAMES[min(centers) % 12]}{min(centers) // 12 - 1}-{NAMES[max(centers) % 12]}{max(centers) // 12 - 1}), keyboard top y={kb_top}, bars fall {speed:.2f} px/frame, scan line y={y_scan}')
     notes, last = [], {}
     # Track every bar's bottom edge from frame to frame, per key, and count a note when its edge
     # passes the scan line. Some frames are duplicates, so an edge can jump well over `speed`
     # pixels between two frames; tracking (not a fixed window) never misses it.
     prev = {m: [] for m in xs}                                      # bottom edges (y) in the last frame
-    span = (FALL_BOTTOM - FALL_TOP)
     for n, fr in frames(a.video, FALL_TOP, FALL_BOTTOM):
         mask = melody_mask(fr)
         for m, x in xs.items():
-            col = mask[:, max(0, x - 2):x + 3].mean(1) > 0.6
+            col = mask[:, max(0, x - hw):x + hw + 1].mean(1) > 0.3   # letter labels on a bar don't break it
             edges = list(np.flatnonzero(col[:-1] & ~col[1:]))       # bar above, background below
             for e in edges:
                 if e < y_scan:
