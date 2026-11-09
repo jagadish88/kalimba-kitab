@@ -24,3 +24,8 @@ data/intermediate_data/vocal_melody/**/*_vocals.wav
 # Rendered draft videos and their intro slides (re-made with scripts/ktab_to_video/)
 data/intermediate_data/**/*.mp4
 data/intermediate_data/**/*_slide.png
+
+
+# SNLTR's notation tables as saved from their site (not for re-hosting); our transcription
+# of them is data/intermediate_data/swaralipi/ (scripts/swaralipi_player/notation.py)
+data/raw_data/swaralipi_text/
