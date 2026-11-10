@@ -1,0 +1,110 @@
+X:1
+T:Jaagorane Jaay Bibhabori
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001028.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs001028.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs001028.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks). Sa = C; komal Ni (A#) and Ni (B) both occur, one tivra Ma (F#) in the sanchari.
+N:Form played by the MIDI: sthayi (its first line again); antara returning to the first line; sanchari twice; abhog returning to the first line; the rest of the sthayi and its first line to end.
+N:The swaralipi sings "nilo hori ke, nilo hori" where the lyrics file has "nilo hori"; the swaralipi is followed.
+N:v2: the same notes, lyrics and bars as v1.abc with note values halved (L:1/16, M:2/4, Q:1/4=75 is the speed of v1 at 150); one swaralipi matra = one eighth note here.
+M:2/4
+L:1/16
+Q:1/4=75
+K:C
+P:Sthayi
+D C3 E2 F2 | G4 B2 A B |
+w: Jaa-_-go-ro-|ne jaay _ _ |
+B c B d d c B2 | A G7 |
+w: bi-_-_-_-bhaa-_-bo-|ri _ |
+G c3 c ^A =A2 | c ^A2 =A G4 |
+w: Aan-_-khi _ ho-|te _ _ ghum |
+G3 A ^A2 ^A =A | G4 G4 |
+w: ni-_-lo ho-_-|ri ke |
+G3 A ^A2 ^A =A | G8 |
+w: ni-_-lo ho-_-|ri |
+C4 E2 E2 | F8 |
+w: mo-ri mo-|ri |
+D C3 E2 F2 | G4 B2 A B |
+w: Jaa-_-go-ro-|ne jaay _ _ |
+B c B d d c B2 | A G7 |
+w: bi-_-_-_-bhaa-_-bo-|ri _ |
+P:Antara
+A G3 B2 B2 | B4 B2 B2 |
+w: Jaa-_-ro laa-|gi phi-ri |
+A B3 c2 d2 | d c7 |
+w: e-_-kaa e-|kaa _ |
+G3 c c2 c2 | c4 c d d c |
+w: aan-_-khi pi-|paa-si-_-to _ |
+c B2 A G2 A2 | B8 |
+w: naa-_-_-hi de-|khaa |
+B c3 ^A2 ^A =A | c ^A3 =A2 G2 |
+w: Taa-_-ri bnaa-_-|shi _ o-go |
+G3 A ^A2 ^A =A | G8 |
+w: taa-_-ri bnaa-_-|shi |
+G3 c c ^A =A2 | c ^A3 =A2 G2 |
+w: taa-_-ri _ bnaa-|shi _ baa-je |
+C4 E2 E2 | F8 |
+w: hi-ya bho-|ri |
+F E2 F G2 G2 | G c4 ^A2 =A |
+w: mo-_-_-ri mo-|ri _ _ _ |
+D C3 E2 F2 | G4 B2 A B |
+w: Jaa-_-go-ro-|ne jaay _ _ |
+B c B d d c B2 | A G7 |
+w: bi-_-_-_-bhaa-_-bo-|ri _ |
+P:Sanchari
+C4 B,2 B,2 | C4 E2 E2 |
+w: Baa-nee naa-|hi to-bu |
+E D3 E2 F2 | F E7 |
+w: kaa-_-ne kaa-|ne _ |
+E3 G G2 G ^F | ^F G7 |
+w: ki _ je shu-_-|ni _ |
+G3 B B2 A2 | A G3 F2 E2 |
+w: ki _ je shu-|ni _ taa-haa |
+E D3 E2 F2 | E8 |
+w: ke-_-baa jaa-|ne |
+P:Sanchari again
+C4 B,2 B,2 | C4 E2 E2 |
+w: Baa-nee naa-|hi to-bu |
+E D3 E2 F2 | F E7 |
+w: kaa-_-ne kaa-|ne _ |
+E3 G G2 G ^F | ^F G7 |
+w: ki _ je shu-_-|ni _ |
+G3 B B2 A2 | A G3 F2 E2 |
+w: ki _ je shu-|ni _ taa-haa |
+E D3 E2 F2 | E8 |
+w: ke-_-baa jaa-|ne |
+P:Abhog
+A G4 B B2 | B4 B2 B c |
+w: Ei _ _ hi-|ya-bha-ra _ |
+A B2 c d2 c B | c8 |
+w: be-_-_-do-naa-_-|te |
+G3 c c2 c2 | c4 c d c2 |
+w: Baa-_-ri chho-|lo-chhaa-_-lo |
+c B2 A G2 A2 | B8 |
+w: aan-_-_-khi-paa-|te |
+B c3 c ^A =A2 | ^A4 =A2 G2 |
+w: Chhaa-_-ya _ do-|le taa-ri |
+G3 A ^A2 ^A =A | G8 |
+w: chhaa-_-ya do-_-|le |
+G3 c c ^A =A2 | c ^A3 =A2 G2 | C4 E2 E2 | F8 |
+w: chhaa-_-ya _ do-|le _ di-baa-|ni-shi dho-|ri |
+F E2 F G2 G2 | G c4 ^A2 =A |
+w: mo-_-_-ri mo-|ri _ _ _ |
+D C3 E2 F2 | G4 B2 A B |
+w: Jaa-_-go-ro-|ne jaay _ _ |
+B c B d d c B2 | A G7 |
+w: bi-_-_-_-bhaa-_-bo-|ri _ |
+P:Sthayi to end
+G c3 c ^A =A2 | c ^A2 =A G4 |
+w: Aan-_-khi _ ho-|te _ _ ghum |
+G3 A ^A2 ^A =A | G4 G4 |
+w: ni-_-lo ho-_-|ri ke |
+G3 A ^A2 ^A =A | G8 |
+w: ni-_-lo ho-_-|ri |
+C4 E2 E2 | F8 |
+w: mo-ri mo-|ri |
+D C3 E2 F2 | G4 B2 A B |
+w: Jaa-_-go-ro-|ne jaay _ _ |
+B c B d d c B2 | A G7 |]
+w: bi-_-_-_-bhaa-_-bo-|ri _ |

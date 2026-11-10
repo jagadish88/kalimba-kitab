@@ -1,0 +1,107 @@
+X:1
+T:Sokhi Bhabona Kahare Bole
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001964.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs001964.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs001964.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks). Sa = C; komal Ni (A#) and Ni (B), Ma shuddha (F) with one tivra Ma (F#, bar 12).
+N:Form played by the MIDI: sthayi; then five parts (Aamar chokhe to, Taara keboli, Phul se haasite, Aamar maton, Protidin), each with its first two lines twice; the first two lines of the sthayi to end.
+N:Where a swaralipi cell holds only a word's last consonant (tom-ra, cho-kher, bi-shad, din) that note is a hold. "aamari" has two notes in the MIDI and is written aa-mari.
+N:v2: the same notes, lyrics and bars as v1.abc with note values halved (L:1/16, M:3/8, Q:1/4=60 is the speed of v1 at 120); one swaralipi matra = one eighth note here.
+M:3/8
+L:1/16
+Q:1/4=60
+K:C
+P:Sthayi
+z2 E2 F2 | G2 G2 c2 | c2 c2 B2 | A2 G4- | G2 G2 G A |
+w: So-khi | bhaa-bo-naa | kaa-haa-re | bo-le | _ So-khi _ |
+F2 G2 A2 | G2 F2 G2 | F2 E4- | E6 |
+w: jaa-to-naa | kaa-haa-re | bo-le | _ |
+C2 C2 C2 | C2 B,2 C2 | D2 E2 F2 | G2 ^F2 G2 |
+w: Tom-_-ra | je bo-lo | di-ba-so | ra-ja-nee |
+A2 A2 ^A2 | A2 G2 A G | F2 G4- | G2 G2 A G |
+w: bhaa-lo-baa-|sa bhaa-lo-_-|baa-sa | _ So-khi _ |
+F2 A2 G2 | F2 E2 D2 | G6- | G2 C2 C2 |
+w: bhaa-lo-baa-|sa kaa-re | koy | _ Se ki |
+C2 D2 E2 | D2 C2 B,2 | C6- | C2 G,2 G,2 |
+w: ke-bo-li | ja-to-naa-|moy | _ Se ki |
+G,2 C2 C2 | C2 B,2 C2 | D2 E4 | F2 G4 |
+w: ke-bo-li | cho-kher _ | jol _ | se ki |
+A2 A2 ^A2 | A2 G2 A G | F2 G2 F2 | E4 F E |
+w: ke-bo-li | du-kher _ _ | shwaas _ _ | _ _ _ |
+D2 G2 F2 | G2 G2 G2 | A2 G2 F2 | E2 E2 E D |
+w: Lo-ke ta-|be ka-re | ki su-khe-|ri ta-re _ |
+C2 D2 E2 | D2 C2 B,2 | C6- | C6 |
+w: e-mon _ | du-kher _ | aash | _ |
+P:Antara
+G2 G4 | B2 B2 B2 | c2 c2 c2 | c2 c4 |
+w: Aa-mar | cho-khe to | sa-ko-li | sho-bhan |
+c2 c2 c2 | d2 c4 | B2 B2 B A | G2 B4 |
+w: Sa-ko-li | na-been | sa-ko-li _ | bi-mal |
+G2 G4 | B2 B2 B2 | c2 c2 c2 | c2 c4 |
+w: Aa-mar | cho-khe to | sa-ko-li | sho-bhan |
+c2 c2 c2 | d2 c4 | B2 B2 B A | G2 B4 |
+w: Sa-ko-li | na-been | sa-ko-li _ | bi-mal |
+c2 c4 | c2 c4 | G2 G4 | G2 G2 A2 |
+w: Su-neel | aa-kash | shyaa-mol | kaa-nan _ |
+^A2 c2 c2 | ^A2 ^A2 ^A =A | G2 A2 G2 | F2 E4 |
+w: Bi-shad _ | jo-chho-na _ | ku-sum _ | ka-mol |
+E2 E2 F2 | G2 F4 | E2 E4 | D2 C2 C2 |
+w: sa-ko-li | aa-mari | mo-to | _ Taa-ra |
+P:Sanchari
+C2 G2 G2 | G2 G4 | G2 G2 G2 | G4 A2 |
+w: ke-bo-li | haa-se | ke-bo-li | gaay _ |
+^A2 c2 c2 | ^A2 ^A2 =A2 | G2 G A G2 | F2 E4 |
+w: Haa-si-ya | khe-li-ya | mo-ri-_-te | chaay _ |
+C2 G2 G2 | G2 G4 | G2 G2 G2 | G4 A2 |
+w: ke-bo-li | haa-se | ke-bo-li | gaay _ |
+^A2 c2 c2 | ^A2 ^A2 =A2 | G2 G A G2 | F2 E4 |
+w: Haa-si-ya | khe-li-ya | mo-ri-_-te | chaay _ |
+E2 E2 E2 | E2 E4 | E2 E2 F2 | G2 F4 |
+w: Na jaa-ne | be-dan | na jaa-ne | ro-dan |
+E2 E2 F2 | G2 F4 | E2 E2 E2 | D2 C4 |
+w: na jaa-ne | saa-dher | jaa-to-na | ja-to |
+P:Abhog
+G4 G2 | B2 B2 B2 | c2 c2 c2 | c B c4 |
+w: Phul se | haa-si-te | haa-si-te | jha-_-re |
+c2 c2 c2 | d2 c2 c2 | B2 B2 B G | B6 |
+w: jo-chho-na | haa-si-ya | mi-laa-ye _ | jaay |
+G4 G2 | B2 B2 B2 | c2 c2 c2 | c B c4 |
+w: Phul se | haa-si-te | haa-si-te | jha-_-re |
+c2 c2 c2 | d2 c2 c2 | B2 B2 B G | B6 |
+w: jo-chho-na | haa-si-ya | mi-laa-ye _ | jaay |
+c2 c2 A2 | ^A2 ^A2 =A2 | G2 G4 | G2 G2 A2 |
+w: Haa-si-te | haa-si-te | aa-lok | saa-go-re |
+^A2 c2 c2 | ^A2 ^A2 ^A =A | G2 G A G2 | F2 E4 |
+w: aa-kaa-sher | _ taa-ra _ | te-ya-_-ge | kay _ |
+P:Fifth part
+C2 C2 G2 | G2 G4 | G2 G2 G2 | G2 G2 A2 |
+w: Aa-mar _ | mo-ton | su-khee ke | aa-chhe _ |
+^A2 c2 c2 | ^A2 ^A2 =A2 | G2 G/ A/ G F G | F2 E4 |
+w: Aay _ So-|khee aay _ | aa-mar _ _ _ _ | kaa-chhe |
+C2 C2 G2 | G2 G4 | G2 G2 G2 | G2 G2 A2 |
+w: Aa-mar _ | mo-ton | su-khee ke | aa-chhe _ |
+^A2 c2 c2 | ^A2 ^A2 =A2 | G2 G/ A/ G F G | F2 E4 |
+w: Aay _ So-|khee aay _ | aa-mar _ _ _ _ | kaa-chhe |
+E2 E2 E2 | E2 E2 F2 | G2 F2 G F | E6 |
+w: Su-khee hri-|do-yer _ | su-kher _ _ | gaan |
+E2 E2 F2 | G2 F4 | E2 E2 E D | C6 |
+w: Shu-ni-ya | to-der | ju-raa-be _ | praan |
+P:Last part
+G2 G2 G2 | B2 B2 B2 | c2 c2 c2 | c B c4 |
+w: Pro-ti-din | _ jo-di | knaa-di-bi | ke-_-bol |
+c4 B c | d2 c4 | B2 B2 B A | G2 B4 |
+w: ek-din _ | _ noy | haa-si-bi _ | to-ra |
+G2 G2 G2 | B2 B2 B2 | c2 c2 c2 | c B c4 |
+w: Pro-ti-din | _ jo-di | knaa-di-bi | ke-_-bol |
+c4 B c | d2 c4 | B2 B2 B A | G2 B4 |
+w: ek-din _ | _ noy | haa-si-bi _ | to-ra |
+c4 c2- | c2 c4 | G2 G2 G2 | G2 G2 G A |
+w: Ek-din | _ noy | bi-shad _ | bhu-li-ya _ |
+^A2 c2 c2 | ^A2 ^A2 ^A =A | G2 G A G2 | F2 E2 F2 |
+w: sa-ko-le | mi-li-ya _ | gaa-hi-_-bo | mo-ra _ |
+P:Sthayi returns
+G2 G2 c2 | c2 c2 B2 | A2 G4- | G2 G2 G A |
+w: Bhaa-bo-naa | kaa-haa-re | bo-le | _ So-khi _ |
+F2 G2 A2 | G2 F2 G2 | F2 E4- | E6 |]
+w: jaa-to-naa | kaa-haa-re | bo-le | _ |

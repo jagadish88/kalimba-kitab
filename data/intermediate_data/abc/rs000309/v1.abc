@@ -1,0 +1,100 @@
+X:1
+T:Aamra Sobai Raaja
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000309.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000309.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000309.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks). Sa = C; the sanchari has tivra Ma (F#), the rest is in C major.
+N:Form played by the MIDI: sthayi; antara (its first line twice) and the refrain "Noile moder ... Aamra sabai raaja"; sthayi again; sanchari and refrain; abhog (its first line twice) and refrain; sthayi to end.
+N:The swaralipi's half-bar "-1 -1 -1" before the antara and before the sanchari (a held note in place of the return "Aamra") is not played by the MIDI; it goes straight on.
+N:Syllables placed on the notes as in the swaralipi; one swaralipi matra = one quarter note, one half-bar of 3 matras = one 3/4 bar.
+M:3/4
+L:1/8
+Q:1/4=250
+K:C
+P:Sthayi
+C4 C2 | c2 c4 | B2 B4 | A2 A4 | G2 G4 |
+w: Aam-ra | sa-bai | raa-ja | aa-ma-|der ei |
+A2 A4 | G2 E4 | G6- | G6 |
+w: raa-jar | raa-jot-|te | _ |
+A4 A2 | G2 G4 | E2 E4 | D2 C3 D |
+w: Noi-le | mo-der | raa-jar | sa-ne _ |
+E4 F2 | E2 D4 | C6 |
+w: mil-bo | ki swat-|te |
+C4 D2 | E2 E4 | D2 C4- | C6 |
+w: Aam-ra | sa-bai | raa-ja | _ |
+P:Antara
+G4 G2 | G4 E2 | G2 G3 A | A c c4 |
+w: Aam-ra | ja khu-|shi taai _ | ko-_-ri |
+c2 c4 | c3 e e2 | d2 d4 | c2 c4 |
+w: to-bu | taar _ khu-|shi-tei | cho-ri |
+G4 G2 | G4 E2 | G2 G3 A | A c c4 |
+w: Aam-ra | ja khu-|shi taai _ | ko-_-ri |
+c2 c4 | c3 e e2 | d2 d4 | c2 c4 |
+w: to-bu | taar _ khu-|shi-tei | cho-ri |
+c4 c2 | c e3 e2 | d2 d4 |
+w: Aam-ra | noi _ bnaa-|dha noi |
+c2 c4 | B2 B4 | A2 A4 | G2 E4 | G6- | G6 |
+w: daa-ser | raa-jar | traa-ser | daa-sot-|te | _ |
+A4 A2 | G2 G4 | E2 E4 | D2 C3 D |
+w: Noi-le | mo-der | raa-jar | sa-ne _ |
+E4 F2 | E2 D4 | C6 |
+w: mil-bo | ki swat-|te |
+C4 D2 | E2 E4 | D2 C4- | C6 |
+w: Aam-ra | sa-bai | raa-ja | _ |
+P:Sthayi again
+C4 C2 | c2 c4 | B2 B4 | A2 A4 | G2 G4 |
+w: Aam-ra | sa-bai | raa-ja | aa-ma-|der ei |
+A2 A4 | G2 E4 | G6- | G6 |
+w: raa-jar | raa-jot-|te | _ |
+A4 A2 | G2 G4 | E2 E4 | D2 C3 D |
+w: Noi-le | mo-der | raa-jar | sa-ne _ |
+E4 F2 | E2 D4 | C6 |
+w: mil-bo | ki swat-|te |
+C4 D2 | E2 E4 | D2 C4- | C6 |
+w: Aam-ra | sa-bai | raa-ja | _ |
+P:Sanchari
+C2 C4 | C2 C3 A, | C2 C3 D | D3 E3 |
+w: Raa-ja | sa-ba-_-|re den _ | maan _ |
+E2 E3 D | E4 A2 | G2 ^F4 | E6 |
+w: se maan _ | aap-ni | phi-re | paan |
+E2 E4 | E G G4 | ^F2 G4 | ^F2 G4 | ^F2 G4 |
+w: Mo-der | khaa-_-to | ko-re | raa-khe | ni keu |
+B2 B4 | A2 G3 ^F | E6- | E6 |
+w: ko-no | a-sot-_-|ye | _ |
+A4 A2 | G2 G4 | E2 E4 | D2 C3 D |
+w: Noi-le | mo-der | raa-jar | sa-ne _ |
+E4 F2 | E2 D4 | C6 |
+w: mil-bo | ki swat-|te |
+C4 D2 | E2 E4 | D2 C4- | C6 |
+w: Aam-ra | sa-bai | raa-ja | _ |
+P:Abhog
+G4 G2 | G4 E2 | G2 G3 A | A c c4 |
+w: Aam-ra | chol-bo | aa-pon _ | ma-_-te |
+c2 c4 | e4 e2 | d2 d4 | c2 c4 |
+w: she-she | mil-bo | tnaa-ri | pa-the |
+G4 G2 | G4 E2 | G2 G3 A | A c c4 |
+w: Aam-ra | chol-bo | aa-pon _ | ma-_-te |
+c2 c4 | e4 e2 | d2 d4 | c2 c4 |
+w: she-she | mil-bo | tnaa-ri | pa-the |
+c2 c4 | e4 e2 | d2 d4 |
+w: Mo-ra | mor-bo | na keu |
+c2 c4 | B2 B4 | A2 A4 | G2 E4 | G6- | G6 |
+w: bi-pha-|la-ter | bi-sham | a-bor-|te | _ |
+A4 A2 | G2 G4 | E2 E4 | D2 C3 D |
+w: Noi-le | mo-der | raa-jar | sa-ne _ |
+E4 F2 | E2 D4 | C6 |
+w: mil-bo | ki swat-|te |
+C4 D2 | E2 E4 | D2 C4- | C6 |
+w: Aam-ra | sa-bai | raa-ja | _ |
+P:Sthayi to end
+C4 C2 | c2 c4 | B2 B4 | A2 A4 | G2 G4 |
+w: Aam-ra | sa-bai | raa-ja | aa-ma-|der ei |
+A2 A4 | G2 E4 | G6- | G6 |
+w: raa-jar | raa-jot-|te | _ |
+A4 A2 | G2 G4 | E2 E4 | D2 C3 D |
+w: Noi-le | mo-der | raa-jar | sa-ne _ |
+E4 F2 | E2 D4 | C6 |
+w: mil-bo | ki swat-|te |
+C4 D2 | E2 E4 | D2 C4- | C6 |]
+w: Aam-ra | sa-bai | raa-ja | _ |

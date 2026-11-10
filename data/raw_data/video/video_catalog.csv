@@ -926,7 +926,7 @@ rs002097,src000292,,piano_staff
 rs002097,src002084,,vocal_melody
 rs002097,src002085,,vocal_melody
 rs002097,src002086,,vocal_melody
-rs002122,src000179,,piano_roll
+rs002122,src000179,data/raw_data/video/rs002122_src000179.mp4,piano_roll
 rs002122,src000189,,piano_staff
 rs002122,src002087,,vocal_melody
 rs002122,src002088,,vocal_melody

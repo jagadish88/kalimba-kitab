@@ -1,0 +1,84 @@
+X:1
+T:Mayabano Biharini Horini
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001363.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs001363.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs001363.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks). Sa = C; Ma is mostly tivra (F#), shuddha Ma (F) in "horini" and the refrain.
+N:Form played by the MIDI: sthayi; antara (its first two lines twice) and the refrain "Maayabono biharini"; sanchari (its first line twice); abhog (its first two lines twice) and the refrain.
+N:Long compound words of the lyrics file are split into words for the tab (Maa-ya-bo-no bi-ha-ri-ni, Ga-ho-no swa-po-no san-cha-ri-ni). "Parosho kori or" follows the swaralipi: pa-ro-sho ko-ri-bo or.
+N:Syllables placed on the notes as in the swaralipi; one swaralipi matra = one quarter note, one half-bar of 4 matras = one 4/4 bar.
+M:4/4
+L:1/8
+Q:1/4=150
+K:C
+P:Sthayi
+C2 D2 E2 E G | G2 G2 G2 ^F2 | E F F2 E4 |
+w: Maa-ya-bo-no _ | bi-ha-ri-ni | ho-_-ri-ni |
+E2 ^F2 G2 G2 | ^F2 ^F2 E3 D | E2 D2 C4 |
+w: Ga-ho-no swa-|po-no san-_-|cha-ri-ni |
+B2 B2 B2 B A | A2 A2 G2 G2 |
+w: Ke-no taa-re _ | dho-ri-baa-re |
+^F2 E2 G4 | ^F2 E2 G4 |
+w: ko-ri pon | A-ka-ron |
+C2 D2 E2 E G | G2 G ^F2 E =F2 | E8- | E8 |
+w: Maa-ya-bo-no _ | bi-ha-_-_-ri-|ni | _ |
+P:Antara
+G3 E G4 | G2 A2 G2 A2 |
+w: Thaak _ thaak | ni-jo mo-ne |
+A3 c c3 B | d c7 |
+w: du-_-re-_-|te _ |
+c2 d2 e2 e2 | d2 d2 c2 B2 |
+w: Aa-mi shu-dhu | bnaa-sho-rir _ |
+A3 B c2 B2 | A G3 ^F3 E |
+w: su-_-re-_-|te _ _ _ |
+G3 E G4 | G2 A2 G2 A2 |
+w: Thaak _ thaak | ni-jo mo-ne |
+A3 c c3 B | d c7 |
+w: du-_-re-_-|te _ |
+c2 d2 e2 e2 | d2 d2 c2 B2 |
+w: Aa-mi shu-dhu | bnaa-sho-rir _ |
+A3 B c2 B2 | A G3 ^F3 E |
+w: su-_-re-_-|te _ _ _ |
+G2 G B B2 B2 | A2 A2 G4 |
+w: Pa-ro-_-sho ko-|ri-bo or |
+^F2 ^F E G4 | ^F2 ^F E G4 |
+w: praa-no-_-mon | A-ka-_-ron |
+C2 D2 E2 E G | G2 G ^F2 E =F2 | E8- | E8 |
+w: Maa-ya-bo-no _ | bi-ha-_-_-ri-|ni | _ |
+P:Sanchari
+E2 E D C2 D2 | E2 E D C2 D2 | E2 D2 C4 |
+w: Cha-ma-_-ki-be | phaa-gu-_-ne-ro | pa-bo-ne |
+E2 E G G2 G2 | G2 G2 ^F2 E2 | C2 D2 E3 A |
+w: Po-shi-_-be aa-|ka-sho-baa-ni | shro-bo-ne _ |
+A2 G2 ^F2 E2 | E2 E D C2 D2 | E2 D2 C4 |
+w: cha-ma-ki-be | phaa-gu-_-ne-ro | pa-bo-ne |
+E2 E G G2 G2 | G2 G2 ^F2 E2 | C2 D2 E4 |
+w: po-shi-_-be aa-|ka-sho-baa-ni | shro-bo-ne |
+C E3 E2 E2 | E2 E2 D2 C2 |
+w: Chit-_-to aa-|ku-lo ho-be |
+C2 C A, C4 | C2 C A, C4 |
+w: a-nu-_-khon | A-ka-_-ron |
+P:Abhog
+G3 E G2 G2 | G2 A2 G2 A2 |
+w: Dur _ ho-te | aa-mi taa-re |
+A3 c c3 B | d c7 |
+w: saa-_-dhi-_-|bo _ |
+c2 d2 d e e2 | d2 d2 c2 B2 |
+w: Go-po-ne-_ bi-|ra-ho-do-re |
+A3 B c2 B2 | G5 ^F2 E |
+w: bnaa-_-dhi-_-|bo _ _ |
+G3 E G2 G2 | G2 A2 G2 A2 |
+w: Dur _ ho-te | aa-mi taa-re |
+A3 c c3 B | d c7 |
+w: saa-_-dhi-_-|bo _ |
+c2 d2 d e e2 | d2 d2 c2 B2 |
+w: Go-po-ne-_ bi-|ra-ho-do-re |
+A3 B c2 B2 | G5 ^F2 E |
+w: bnaa-_-dhi-_-|bo _ _ |
+G2 B2 B2 B2 | A2 A2 G4 |
+w: Bnaa-dho-no-bi-|hin-_ sei |
+^F2 E2 G4 | ^F2 E2 G4 |
+w: je bnaa-dhon | A-ka-ron |
+C2 D2 E2 E G | G2 G ^F2 E =F2 | E8- | E8 |]
+w: Maa-ya-bo-no _ | bi-ha-_-_-ri-|ni | _ |

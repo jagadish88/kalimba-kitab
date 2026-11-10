@@ -1,0 +1,102 @@
+X:1
+T:Bhenge Mor Gharer Chaabi
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000493.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000493.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000493.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks). Sa = C; C major apart from one passing G# (bars 30 and 156).
+N:Form played by the MIDI: sthayi (first line twice, O bondhu aamar, first line); antara, sanchari and abhog, each returning to the first line; the sthayi again to end.
+N:v2: the same notes, lyrics and bars as v1.abc with note values halved (L:1/16, M:3/8, Q:1/4=100 is the speed of v1 at 200); one swaralipi matra = one eighth note here.
+M:3/8
+L:1/16
+Q:1/4=100
+K:C
+P:Sthayi
+z4 G2 | G2 G4 | F2 F3 A | G2 G3 A |
+w: Bhe-|nge mor | gha-rer _ | chaa-bi _ |
+F2 G4 | F2 E3 F | E3 D E2 | F2 G4- |
+w: ni-ye | jaa-bi _ | ke _ aa-|maa-re |
+G4 G2 | G2 G4 | F2 F3 A | G2 G3 A |
+w: _ Bhe-|nge mor | gha-rer _ | chaa-bi _ |
+F2 G4 | F2 E3 F | E3 D E2 | F2 G4- |
+w: ni-ye | jaa-bi _ | ke _ aa-|maa-re |
+G6 | B6 | G5 A | B2 A3 B | G4 G2 |
+w: _ | O | bon-_-|dhu aa-_-|mar Na |
+G2 G3 A | c2 c4 | c2 c4 |
+w: pe-ye _ | to-mar | dhe-kha |
+G c c4 | c d c3 d | c4 c2 | B2 A3 B |
+w: e-_-kaa | e-_-kaa-_ | din je | aa-mar _ |
+G2 G3 A | A2 B2 c B | A5/2 ^G/ B A2 | G2 G4 |
+w: kaa-te _ | naa re _ _ | _ _ Bhe-_-|nge mor |
+F2 F3 A | G2 G3 A | F2 G4 |
+w: gha-rer _ | chaa-bi _ | ni-ye |
+F2 E3 F | E3 D E2 | F2 G4 |
+w: jaa-bi _ | ke _ aa-|maa-re |
+P:Antara
+z4 C2 | C D F4 | F3 G G2 | G2 G4- |
+w: Bu-|jhi _ go | raat _ po-|haa-lo |
+G4 G2 | A2 c4 | B2 c3 B | B2 B3 A- |
+w: _ Bu-|jhi oi | ro-bir _ | aa-lo _ |
+A G3 G2 | A2 A3 B | G2 G3 B | A2 G3 F |
+w: _ _ Aa-|bhaa-se _ | de-kha _ | di-lo _ |
+E2 E3 F | F2 G4- | G4 G2 | A2 A3 c |
+w: ga-gon _ | paa-re | _ Sa-|mu-khe _ |
+c2 B d c2 | c2 c4 | G c c4 | d2 c2 d c |
+w: oi _ _ he-|ri path | to-_-mar | ki rath _ _ |
+B3 c c2 | B2 A3 B | G4 A2 | A2 B2 c B |
+w: pou-_-chho-|be na _ | mor du-|waa-re _ _ |
+A3 B A2 | G2 G4 | F2 F3 A | G2 G3 A |
+w: _ _ Bhe-|nge mor | gha-rer _ | chaa-bi _ |
+F2 G4 | F2 E3 F | E3 D E2 | F2 G4- |
+w: ni-ye | jaa-bi _ | ke _ aa-|maa-re |
+P:Sanchari
+G4 C2 | D F F4 | F2 G4 | G2 G4- |
+w: _ Aa-|kaa-_-sher | ja-to | taa-ra |
+G4 G2 | A2 c2 d c | B2 B3 c | B2 B3 A- |
+w: _ Chhe-|ye roy _ _ | ni-mesh _ | haa-raa _ |
+A G3 G2 | A2 A3 B | G4 G B | A2 G3 F |
+w: _ _ Bo-|se roy _ | raat pro-_-|bhaa-ter _ |
+E2 E3 F | F2 G4- | G4 G2 | c2 c4 |
+w: po-ther _ | dhaa-re | _ To-|maa-ri |
+G c c4 | c2 c4 | G c c4 | c d c2 d c |
+w: de-_-khaa | pe-le | sa-_-kal | phe-_-le _ _ |
+B4 c2 | B2 A3 B | G2 G3 A | A2 B2 c B |
+w: dub-be | aa-lok _ | paa-raa _ | baa-re _ _ |
+A3 B A2 | G2 G4 | F2 F3 A | G2 G3 A |
+w: _ _ Bhe-|nge mor | gha-rer _ | chaa-bi _ |
+F2 G4 | F2 E3 F | E3 D E2 | F2 G4- |
+w: ni-ye | jaa-bi _ | ke _ aa-|maa-re |
+P:Abhog
+G4 C2 | D F F4 | F2 G4 | G2 G4- |
+w: _ Pro-|bhaa-_-ter | po-thik | sa-be |
+G4 G2 | A2 A c3 | B2 c3 B | B2 A B A2- |
+w: _ E-|lo ki _ | ka-lo-_-|ro-be _ _ |
+A G3 G2 | A2 A3 B | G4 B2 | A2 G3 F |
+w: _ _ Ge-|lo ki _ | gaan ge-|ye oi _ |
+E2 E3 F | F2 G4- | G4 G2 | A c c4 |
+w: saa-re _ | saa-re | _ Bu-|jhi _ ba |
+G c3 c2 | c2 c4 | G c3 c2 | c d c2 d c |
+w: phul _ phu-|te-chhe | sur _ u-|tthe-_-chhe _ _ |
+B2 B3 c | B2 A3 B | G2 G3 A | A2 B2 c B |
+w: o-run _ | bee-naar _ | taa-re _ | taa-re _ _ |
+A3 B A2 | G2 G4 | F2 F3 A | G2 G3 A |
+w: _ _ Bhe-|nge mor | gha-rer _ | chaa-bi _ |
+F2 G4 | F2 E3 F | E3 D E2 | F2 G4- |
+w: ni-ye | jaa-bi _ | ke _ aa-|maa-re |
+P:Sthayi again
+G4 G2 | G2 G4 | F2 F3 A | G2 G3 A |
+w: _ Bhe-|nge mor | gha-rer _ | chaa-bi _ |
+F2 G4 | F2 E3 F | E3 D E2 | F2 G4- |
+w: ni-ye | jaa-bi _ | ke _ aa-|maa-re |
+G6 | B6 | G5 A | B2 A3 B | G4 G2 |
+w: _ | O | bon-_-|dhu aa-_-|mar Na |
+G2 G3 A | c2 c4 | c2 c4 |
+w: pe-ye _ | to-mar | dhe-kha |
+G c c4 | c d c3 d | c4 c2 | B2 A3 B |
+w: e-_-kaa | e-_-kaa-_ | din je | aa-mar _ |
+G2 G3 A | A2 B2 c B | A5/2 ^G/ B A2 | G2 G4 |
+w: kaa-te _ | naa re _ _ | _ _ Bhe-_-|nge mor |
+F2 F3 A | G2 G3 A | F2 G4 |
+w: gha-rer _ | chaa-bi _ | ni-ye |
+F2 E3 F | E3 D E2 | F2 G4- | G6 |]
+w: jaa-bi _ | ke _ aa-|maa-re | _ |

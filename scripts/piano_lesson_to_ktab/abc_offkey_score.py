@@ -35,11 +35,19 @@ def ly_pitch(m):
     return LY_NAMES[m % 12] + ("'" * (octave - 3) if octave >= 3 else "," * (3 - octave))
 
 
+def ly_durs(eighths, where):
+    """LilyPond durations that add up to `eighths` (longest first; more than one = tied notes)."""
+    left, out = Fraction(eighths), []
+    for v in sorted(LY_DUR, reverse=True):
+        while left >= v:
+            out.append(LY_DUR[v]); left -= v
+    if left:
+        sys.exit(f"{where}: a note {eighths} eighths long can't be written in LilyPond durations")
+    return out
+
+
 def ly_dur(eighths, where):
-    d = LY_DUR.get(Fraction(eighths))
-    if d is None:
-        sys.exit(f"{where}: a note {eighths} eighths long has no single LilyPond duration")
-    return d
+    return "~ ".join(ly_durs(eighths, where))
 
 
 def ly_text(s):
@@ -116,32 +124,39 @@ def main():
         first_part = False
         _, events, toks = it
         toks = list(toks or [])
-        n_notes = 0
+        n_notes, parts = 0, []                            # LilyPond notes per ABC note
         for ev in events:
             if ev[0] == "bar":
                 music.append('\\bar "|."' if ev[1] else "|")
             elif ev[0] == "rest":
-                music.append("r" + ly_dur(ev[1], "rest"))
+                music.append(" ".join("r" + d for d in ly_durs(ev[1], "rest")))
             else:
                 _, midi, eighths, tie = ev
-                note = ly_pitch(midi) + ly_dur(eighths, A.name(midi)) + ("~" if tie else "")
+                durs = ly_durs(eighths, A.name(midi))
+                p = ly_pitch(midi)
+                note = p + durs[0]
                 played = play_as.get(midi + stanza_shift[si])
                 if played is not None:
                     n_off += 1
-                    note = (f"\\tweak color #red {note}"
+                    note = (f"\\override NoteHead.color = #red {note}"
                             f'^\\markup \\with-color #red \\small {ly_text(A.tine(played))}')
+                note += "".join(f"~ {p}{d}" for d in durs[1:]) + ("~" if tie else "")
+                if played is not None:
+                    note += " \\revert NoteHead.color"
                 music.append(note)
+                parts.append(len(durs))
                 n_notes += 1
         music.append("\\break")
         # one lyric syllable per note (tied-on notes included, as in the ABC)
         toks = (toks + [("*",)] * n_notes)[:n_notes]
-        for t in toks:
+        for t, k in zip(toks, parts):
             if t[0] in ("_", "*"):
                 lyrics.append("_")
             else:
                 if not t[1] and lyrics and lyrics[-1] != "_":
                     lyrics.append("--")
                 lyrics.append(ly_text(t[0]))
+            lyrics += ["_"] * (k - 1)                     # a note split into tied notes: one syllable
 
     shifts = sorted(set(stanza_shift))
     subs = ", ".join(f"{A.name(m)} on tine {A.tine(q)} ({A.name(q)})" for m, q in play_as.items())

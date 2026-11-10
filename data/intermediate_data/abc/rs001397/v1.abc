@@ -1,0 +1,109 @@
+X:1
+T:Megher Kole Rod Hesechhe
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001397.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs001397.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs001397.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks). Sa = C, C major; the MIDI's A# (bars 56 82 98 128) is a passing note where the swaralipi has a held Pa/Dha melisma.
+N:Form played by the MIDI: sthayi, then its first line (Megher kole ... Aaha haha haa) again; antara (its first two lines twice); sthayi first line; sanchari twice; abhog (its first two lines twice); sthayi; its first line to end.
+N:Where the MIDI's rhythm inside a matra differs from the swaralipi (e.g. bar 2 G A2 B B2, bars 41 49 113 121 d2 c d2 e) the MIDI is followed; syllables are placed where the swaralipi starts them. "chuti" in the lyrics file is written chhu-ti both times, as the swaralipi has it.
+N:Syllables placed on the notes as in the swaralipi; one swaralipi matra = one quarter note, one half-bar of 3 matras = one 3/4 bar.
+M:3/4
+L:1/8
+Q:1/4=200
+K:C
+P:Sthayi
+C2 C3 D | E2 G3 A | G A2 B B2 | A2 G4 |
+w: Me-gher _ | ko-le _ | rod _ _ he-|se-chhe |
+E2 D4 | E2 E3 F | E2 D2 E D- | D C5 |
+w: baa-dol | ge-chhe _ | tu-ti _ _ | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |
+w: Aa-ha | ha-ha | haa | _ |
+G4 A2 | c2 c4 | d2 c4 | B2 A3 B |
+w: Aaj aa-|ma-der | chhu-ti | o bhaai _ |
+G4 A2 | G2 G3 E | G2 G3 A- | A B5 |
+w: aaj aa-|ma-der _ | chhu-ti _ | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |
+w: Aa-ha | ha-ha | haa | _ |
+P:Sthayi, first line again
+C2 C3 D | E2 G3 A | G A2 B B2 | A2 G4 |
+w: Me-gher _ | ko-le _ | rod _ _ he-|se-chhe |
+E2 D4 | E2 E3 F | E2 D2 E D- | D C5 |
+w: baa-dol | ge-chhe _ | tu-ti _ _ | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |
+w: Aa-ha | ha-ha | haa | _ |
+P:Antara
+G4 E2 | G2 G3 A | c2 c4 | c2 c4 |
+w: Ki ko-|ri aaj _ | bhe-be | na paai |
+c4 d2 | d2 c d2 e | d4 c2 | B2 A G3 |
+w: path haa-|ri-ye _ _ | kon bo-|ne jaai _ |
+G4 E2 | G2 G3 A | c2 c4 | c2 c4 |
+w: Ki ko-|ri aaj _ | bhe-be | na paai |
+c4 d2 | d2 c d2 e | d4 c2 | B2 A G3 |
+w: path haa-|ri-ye _ _ | kon bo-|ne jaai _ |
+G4 A2 | d2 c4 | B2 B2 c B | A2 G4 |
+w: Kon maat-|the je | chhu-te _ _ | be-rai |
+A2 A3 ^A | A2 G4 | E2 E4- | E5 D |
+w: sa-kol _ | chhe-le | ju-ti | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |
+w: Aa-ha | ha-ha | haa | _ |
+P:Sthayi, first line
+C2 C3 D | E2 G3 A | G A2 B B2 | A2 G4 |
+w: Me-gher _ | ko-le _ | rod _ _ he-|se-chhe |
+E2 D4 | E2 E3 F | E2 D2 E D- | D C5 |
+w: baa-dol | ge-chhe _ | tu-ti _ _ | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |
+w: Aa-ha | ha-ha | haa | _ |
+P:Sanchari
+G, C C4 | C2 C3 D | E4 E2 | E2 E4 |
+w: Ke-_-ya | paa-tar _ | nou-ka | go-re |
+E2 E2 D2 | E2 E3 A | A2 A2 ^A =A | G6 |
+w: saa-ji-ye | de-bo _ | phu-le _ _ | _ |
+E4 D2 | E2 E3 F | E2 E2 E2 | D2 C4 |
+w: Taal-di-|ghi-te _ | bhaa-si-ye | de-bo |
+C4 A,2 | C2 C D2 E | E2 D2 E D- | D C5 |
+w: chol-be | du-le _ _ | du-le _ _ | _ _ |
+P:Sanchari again
+G, C C4 | C2 C3 D | E4 E2 | E2 E4 |
+w: Ke-_-ya | paa-tar _ | nou-ka | go-re |
+E2 E2 D2 | E2 E3 A | A2 A2 ^A =A | G6 |
+w: saa-ji-ye | de-bo _ | phu-le _ _ | _ |
+E4 D2 | E2 E3 F | E2 E2 E2 | D2 C4 |
+w: Taal-di-|ghi-te _ | bhaa-si-ye | de-bo |
+C4 A,2 | C2 C D2 E | E2 D2 E D- | D C5 |
+w: chol-be | du-le _ _ | du-le _ _ | _ _ |
+P:Abhog
+G2 G3 E | G2 G3 A | A3 c c2 | c2 c4 |
+w: Raa-khal _ | chhe-ler _ | san-_-ge | dhe-nu |
+c2 c3 d | d2 c d2 e | d2 c2 c2 | B2 A G3 |
+w: cha-ra-_-|bo aaj _ _ | baa-ji-ye | be-nu _ |
+G2 G3 E | G2 G3 A | A3 c c2 | c2 c4 |
+w: Raa-khal _ | chhe-ler _ | san-_-ge | dhe-nu |
+c2 c3 d | d2 c d2 e | d2 c2 c2 | B2 A G3 |
+w: cha-ra-_-|bo aaj _ _ | baa-ji-ye | be-nu _ |
+G4 A2 | d2 c4 | B2 B2 c B | A2 G4 |
+w: Maakh-bo | gaa-ye | phu-ler _ _ | re-nu |
+A2 A3 ^A | A2 G4 | E2 E4- | E5 D |
+w: chnaa-par _ | bo-ne | lu-ti | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |
+w: Aa-ha | ha-ha | haa | _ |
+P:Sthayi
+C2 C3 D | E2 G3 A | G A2 B B2 | A2 G4 |
+w: Me-gher _ | ko-le _ | rod _ _ he-|se-chhe |
+E2 D4 | E2 E3 F | E2 D2 E D- | D C5 |
+w: baa-dol | ge-chhe _ | tu-ti _ _ | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |
+w: Aa-ha | ha-ha | haa | _ |
+G4 A2 | c2 c4 | d2 c4 | B2 A3 B |
+w: Aaj aa-|ma-der | chhu-ti | o bhaai _ |
+G4 A2 | G2 G3 E | G2 G3 A- | A B5 |
+w: aaj aa-|ma-der _ | chhu-ti _ | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |
+w: Aa-ha | ha-ha | haa | _ |
+P:Sthayi, first line to end
+C2 C3 D | E2 G3 A | G A2 B B2 | A2 G4 |
+w: Me-gher _ | ko-le _ | rod _ _ he-|se-chhe |
+E2 D4 | E2 E3 F | E2 D2 E D- | D C5 |
+w: baa-dol | ge-chhe _ | tu-ti _ _ | _ _ |
+C4 D2 | E4 D2 | C6- | C6 |]
+w: Aa-ha | ha-ha | haa | _ |

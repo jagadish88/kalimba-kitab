@@ -1,0 +1,94 @@
+X:1
+T:Aalo Aamar Aalo Ogo
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000111.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000111.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000111.pdf (Geetabitan swaralipi)
+N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks). Sa = C; Ma is shuddha (F) except two notes of F# in the sanchari as the MIDI plays them.
+N:Form played by the MIDI: sthayi twice; antara; sthayi; sanchari twice (the swaralipi's { } repeat); abhog; sthayi to end.
+N:Where the MIDI's notes differ slightly from the swaralipi (bar 125, "nijhar": G2 G F2 G for pa pama -pa) the MIDI is followed; syllables are placed where the swaralipi starts them.
+N:Syllables placed on the notes as in the swaralipi; one swaralipi matra = one quarter note, one half-bar of 3 matras = one 3/4 bar.
+M:3/4
+L:1/8
+Q:1/4=200
+K:C
+P:Sthayi
+C2 C4 | C B, C4 | D2 D4 | C2 D4 |
+w: Aa-lo | aa-_-mar | aa-lo | o-go |
+E2 E4 | F2 G4 | A2 B4- | B6 |
+w: aa-lo | bhu-ban | bha-ra | _ |
+A2 B4 | c2 B4 | A2 G2 A G | F2 E3 F |
+w: Aa-lo | na-yon | dho-wa _ _ | aa-mar _ |
+E2 D4 | E2 E3 G | F2 E4- | E6 |
+w: aa-lo | hri-doy _ | ha-ra | _ |
+P:Sthayi again
+C2 C4 | C B, C4 | D2 D4 | C2 D4 |
+w: Aa-lo | aa-_-mar | aa-lo | o-go |
+E2 E4 | F2 G4 | A2 B4- | B6 |
+w: aa-lo | bhu-ban | bha-ra | _ |
+A2 B4 | c2 B4 | A2 G2 A G | F2 E3 F |
+w: Aa-lo | na-yon | dho-wa _ _ | aa-mar _ |
+E2 D4 | E2 E3 G | F2 E4- | E6 |
+w: aa-lo | hri-doy _ | ha-ra | _ |
+P:Antara
+G2 G4 | A2 A4 | B2 B4 | B2 B4 |
+w: Naa-che | aa-lo | naa-che | o bhaai |
+G2 G4 | A2 B4 | B2 c4- | c6 |
+w: aa-mar | praa-ner | kaa-chhe | _ |
+e2 e4 | e2 e4 | f2 e4 | d2 d4 |
+w: Baa-je | aa-lo | baa-je | o bhaai |
+c2 B4 | G2 A4 | d2 c4- | c6 |
+w: hri-doy-|bee-nar | maa-jhe | _ |
+e2 e4 | d2 d4 | c2 c4 | B2 B4 |
+w: Jaa-ge | aa-kash | cho-te | baa-tas |
+A2 A4 | G2 G4 | F2 E4- | E6 |
+w: haa-se | sa-kol | dha-ra | _ |
+P:Sthayi returns
+C2 C4 | C B, C4 | D2 D4 | C2 D4 |
+w: Aa-lo | aa-_-mar | aa-lo | o-go |
+E2 E4 | F2 G4 | A2 B4- | B6 |
+w: aa-lo | bhu-ban | bha-ra | _ |
+A2 B4 | c2 B4 | A2 G2 A G | F2 E3 F |
+w: Aa-lo | na-yon | dho-wa _ _ | aa-mar _ |
+E2 D4 | E2 E3 G | F2 E4- | E6 |
+w: aa-lo | hri-doy _ | ha-ra | _ |
+P:Sanchari
+G2 G4 | ^F2 G3 ^F | G3 B B2 | A2 A4 |
+w: Aa-lor | sro-te _ | paal _ tu-|le-chhe |
+G2 F4 | E2 D2 E F | F2 E4- | E6 |
+w: haa-jar | pro-ja-_-_-|po-ti | _ |
+C E E4 | E2 E3 D | D3 G G2 | F2 F4 |
+w: Aa-_-lor | dheu-ye _ | uth-_-lo | me-te |
+E4 E2 | D2 D3 F | F2 E4- | E6 |
+w: mol-li-|ka maa-_-|lo-ti | _ |
+P:Sanchari again
+G2 G4 | ^F2 G3 ^F | G3 B B2 | A2 A4 |
+w: Aa-lor | sro-te _ | paal _ tu-|le-chhe |
+G2 F4 | E2 D2 E F | F2 E4- | E6 |
+w: haa-jar | pro-ja-_-_-|po-ti | _ |
+C E E4 | E2 E3 D | D3 G G2 | F2 F4 |
+w: Aa-_-lor | dheu-ye _ | uth-_-lo | me-te |
+E4 E2 | D2 D3 F | F2 E4- | E6 |
+w: mol-li-|ka maa-_-|lo-ti | _ |
+P:Abhog
+G2 G4 | A2 A4 | B2 B4 | B2 B3 G |
+w: Me-ghe | me-ghe | so-na | o bhaai _ |
+G4 G2 | A2 B4 | B2 c4- | c6 |
+w: jaay na | maa-nik | go-na | _ |
+c e e4 | e2 e4 | f2 e4 | d2 d4 |
+w: Paa-_-tay | paa-tay | haa-si | o bhaai |
+c2 B4 | G2 A4 | A d c4- | c6 |
+w: pu-lok | raa-shi | raa-_-shi | _ |
+c e e4 | d2 d4 | c4 c2 | B2 B4 |
+w: Su-_-ro-|no-dir | kul du-|be-chhe |
+A2 A4 | G2 G F2 G | F2 E4- | E6 |
+w: su-dha | ni-jhar _ _ | jha-ra | _ |
+P:Sthayi to end
+C2 C4 | C B, C4 | D2 D4 | C2 D4 |
+w: Aa-lo | aa-_-mar | aa-lo | o-go |
+E2 E4 | F2 G4 | A2 B4- | B6 |
+w: aa-lo | bhu-ban | bha-ra | _ |
+A2 B4 | c2 B4 | A2 G2 A G | F2 E3 F |
+w: Aa-lo | na-yon | dho-wa _ _ | aa-mar _ |
+E2 D4 | E2 E3 G | F2 E4- | E6 |]
+w: aa-lo | hri-doy _ | ha-ra | _ |
