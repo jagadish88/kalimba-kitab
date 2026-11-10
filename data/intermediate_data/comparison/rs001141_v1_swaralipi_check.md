@@ -8,6 +8,7 @@
 | same pitch | 157 | 31% of the swaralipi, 98% of the draft (with graces) |
 | other pitch | 2 | |
 | in the swaralipi only | 347 | |
+| syllables, line by line (each draft line where it fits on the page) | 140 / 153 agree | 91.5% |
 | in the draft only | 1 | |
 | same place in the matra (matched notes) | 97 / 157 | 62% |
 | same time to the next matched note | 25 / 156 | 16% |
@@ -379,3 +380,19 @@
 | R | লো | — |  |  |
 | G |  | — |  |  |
 | R |  | — |  |  |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| to be ek la cho lo re | বে লা রে | 7 | cho / (no syllable), lo / (no syllable) |
+| To be ek la cho lo ek la cho lo | বে লা লো লা লো | 8 | lo / (no syllable) |
+| ek la cho lo ek la cho lo re | লা লো লা রে | 11 | (no syllable) / লো, cho / (no syllable), lo / (no syllable) |
+| To be ek la cho lo ek la cho lo | দু য়া দে রে বে জ্রা | 9 | be / (no syllable) |
+| Jo di keu ko tha na koye | দি কে থা | 8 | na / (no syllable) |
+| keu ko tha na koye | কে থা | 6 | na / (no syllable) |
+| jo di so bai tha ke mukh fi raa ye | দি বা থা কে মু ফি রা য়ে | 10 | jo / (no syllable), (no syllable) / মু |
+| so bai ko re bhoye | কে থা | 6 | re / (no syllable) |
+| so bai ko re bhoye | কে থা | 6 | re / (no syllable) |

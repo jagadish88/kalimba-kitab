@@ -8,6 +8,7 @@
 | same pitch | 337 | 100% of the swaralipi, 72% of the draft (with graces) |
 | other pitch | 1 | |
 | in the swaralipi only | 0 | |
+| syllables, line by line (each draft line where it fits on the page) | 421 / 432 agree | 97.5% |
 | in the draft only | 128 | |
 | same place in the matra (matched notes) | 294 / 337 | 87% |
 | same time to the next matched note | 207 / 336 | 62% |
@@ -154,3 +155,21 @@
 | — |  | G' | ko | Sthayi |
 | — |  | R' | ghu | Sthayi |
 | — |  | S' | me | Sthayi |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| Shraan to bhaa le ju thi ro maa le pa ro se mri du baay | শ্রা ভা লে যূ থী মা লে শে মৃ দু বা | 20 | Shraan / (no syllable) |
+| Bo ne ro chhaa ya mo ne ro saa thi baa so na naa hi ki chhu | নে ছা য়া নে সা থি বা না না হি কি ছু | 20 | Bo / (no syllable) |
+| Bo ne ro chhaa ya mo ne ro saa thi baa so na naa hi ki chhu | নে ছা য়া নে সা থি বা না না হি কি ছু | 20 | Bo / (no syllable) |
+| Shraan to bhaa le ju thi ro maa le pa ro se mri du baay | শ্রা ভা লে যূ থী মা লে শে মৃ দু বা | 20 | Shraan / (no syllable) |
+| Shraan to bhaa le ju thi ro maa le pa ro se mri du baay | শ্রা ভা লে যূ থী মা লে শে মৃ দু বা | 20 | Shraan / (no syllable) |
+| Me gher khe la ga go no ta te a la so li pi li kha | মে ঘে খে লা টে লি পি খা সু দূ কো স্ম | 15 | go / (no syllable) |
+| Me gher khe la ga go no ta te a la so li pi li kha | মে ঘে খে লা টে লি পি খা সু দূ কো স্ম | 15 | go / (no syllable) |
+| Choi tro di ne tap to be la tri no aan chol pe te | নে ছা য়া নে সা থি বা না না হি কি ছু | 17 | (no syllable) / না |
+| Choi tro di ne tap to be la tri no aan chol pe te | নে ছা য়া নে সা থি বা না না হি কি ছু | 17 | (no syllable) / না |
+| Shraan to bhaa le ju thi ro maa le pa ro se mri du baay | শ্রা ভা লে যূ থী মা লে শে মৃ দু বা | 21 | Shraan / (no syllable) |
+| Shraan to bhaa le ju thi ro maa le pa ro se mri du baay | শ্রা ভা লে যূ থী মা লে শে মৃ দু বা | 20 | Shraan / (no syllable) |

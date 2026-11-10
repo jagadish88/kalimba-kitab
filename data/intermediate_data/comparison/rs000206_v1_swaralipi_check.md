@@ -8,6 +8,7 @@
 | same pitch | 165 | 56% of the swaralipi, 97% of the draft (with graces) |
 | other pitch | 4 | |
 | in the swaralipi only | 127 | |
+| syllables, line by line (each draft line where it fits on the page) | 137 / 166 agree | 82.5% |
 | in the draft only | 2 | |
 | same place in the matra (matched notes) | 129 / 165 | 78% |
 | same time to the next matched note | 90 / 164 | 55% |
@@ -180,3 +181,24 @@
 | R |  | — |  |  |
 | S |  | — |  |  |
 | R |  | — |  |  |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| A ma ro po ra no? ja? ha chay? | মা রা যা হা চা | 9 | ja? / (no syllable) |
+| Tu mi taai go ? | তু মি তা | 14 | (no syllable) / মি, mi / (no syllable), go / (no syllable), ? / (no syllable) |
+| A? ma ro po ra no ja ha chay? | মা রা যা হা চা | 9 | ja / (no syllable) |
+| To ma chha ra aar e ja go te | তু মি যা হা চা তা | 9 | ja / (no syllable) |
+| Mor ke ho naai | মো কে না | 6 | (no syllable) / না |
+| ki chu naai go ? | কি ছু না | 14 | chu / (no syllable), (no syllable) / ছু, go / (no syllable), ? / (no syllable) |
+| Tu mi shu kho jo di naa hi paao? | তু মি সু দি না হি পা | 13 | (no syllable) / দি, naa / (no syllable) |
+| Jaao shu khe ro san dha ne jaao ? | যা সু খে সন্ ধা নে যা | 13 | dha / (no syllable) |
+| hri da yo maa jhe | তা যে পা | 7 | yo / (no syllable) |
+| Aar ki chu | ছু | 9 | ki / (no syllable), (no syllable) / ছু, chu / (no syllable) |
+| naa hi chaai go? ? | না হি চা | 12 | go? / (no syllable), ? / (no syllable) |
+| Aa mi to ma ro bi ra he | মি তো মা বি হে | 8 | ra / (no syllable), he / (no syllable), (no syllable) / হে |
+| To ma te ko ri bo baas ? | তো মা তে রি বা | 11 | ri / (no syllable), bo / (no syllable), ? / (no syllable) |
+| Dir gho di ba so dir gho ra ja ni | দী নী | 9 | gho / (no syllable), ra / (no syllable) |

@@ -8,6 +8,7 @@
 | same pitch | 125 | 23% of the swaralipi, 87% of the draft (with graces) |
 | other pitch | 18 | |
 | in the swaralipi only | 410 | |
+| syllables, line by line (each draft line where it fits on the page) | 106 / 116 agree | 91.4% |
 | in the draft only | 0 | |
 | same place in the matra (matched notes) | 104 / 125 | 83% |
 | same time to the next matched note | 63 / 124 | 51% |
@@ -451,3 +452,15 @@
 | G |  | — |  |  |
 | S | নী | — |  |  |
 | R | ড়ো" | — |  |  |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| ka che de ke lawo | কা ছে ডে কে | 6 | (no syllable) / কে, ke / (no syllable) |
+| Phi ra yo na ja no ni | ফি রা য়ো না নী | 8 | (no syllable) / য়ো, yo / (no syllable) |
+| ka che de ke lawo | কা ছে ডে কে | 6 | (no syllable) / কে, ke / (no syllable) |
+| Tu mi taa re ra khi be jaa ni go | তু মি তা রে রা খি বে জা নি মি | 12 | khi / (no syllable), (no syllable) / খি, (no syllable) / মি |
+| Ta? mo? so? gha? ? no? gho? ra? ga? ho? ? no? ra? jo? ni? | ড়ো শা | 4 | ra? / (no syllable) |

@@ -8,6 +8,7 @@
 | same pitch | 231 | 88% of the swaralipi, 87% of the draft (with graces) |
 | other pitch | 10 | |
 | in the swaralipi only | 22 | |
+| syllables, line by line (each draft line where it fits on the page) | 239 / 247 agree | 96.8% |
 | in the draft only | 29 | |
 | same place in the matra (matched notes) | 169 / 231 | 73% |
 | same time to the next matched note | 101 / 230 | 44% |
@@ -81,3 +82,17 @@
 | N | ড়া | G | e | Sthayi |
 | D |  | R |  | Sthayi |
 | S' | য়ে | S | so | Sthayi |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| Taa po so nish shaa so baa ye mu mur shu re daao u raa ye | নি শা বা য়ে মু মু ষু রে দা ড়া য়ে | 16 | nish / (no syllable) |
+| Taa po so nish shaa so baa ye mu mur shu re daao u raa ye | নি শা বা য়ে মু মু ষু রে দা ড়া য়ে | 16 | nish / (no syllable) |
+| shush ko ko ri daao aa si aa no | শু রি দা সি নো | 9 | (no syllable) / সি, aa / (no syllable) |
+| aa no aa no to bo | নো নো নো | 8 | aa / নো |
+| pro lo ye ro shaankh aa no aa no aa no | য়ে শাঁ নো নো | 13 | aa / (no syllable) |
+| to bo | নো নো | 4 | to / নো |
+| E so he boi shaakh e so e so | সো হে শা সো সো | 12 | (no syllable) / হে |

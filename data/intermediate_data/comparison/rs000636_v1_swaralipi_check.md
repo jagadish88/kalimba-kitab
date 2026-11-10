@@ -8,6 +8,7 @@
 | same pitch | 222 | 97% of the swaralipi, 62% of the draft (with graces) |
 | other pitch | 3 | |
 | in the swaralipi only | 5 | |
+| syllables, line by line (each draft line where it fits on the page) | 348 / 362 agree | 96.1% |
 | in the draft only | 163 | |
 | same place in the matra (matched notes) | 125 / 222 | 56% |
 | same time to the next matched note | 81 / 221 | 37% |
@@ -194,3 +195,20 @@
 | — |  | M |  | Sthayi |
 | — |  | G |  | Sthayi |
 | — |  | P | re | Sthayi |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| gaa ner o paa re | বে লা যে | 12 | (no syllable) / লা |
+| E so e so paar ho ye mor | রী সো সো পা য়ে মো | 11 | E / রী |
+| hri doy maa jha re | মো হৃ মা ঝা রে | 13 | hri / মো |
+| gaa ner o paa re | বে লা যে | 12 | (no syllable) / লা |
+| Aa non do moy ni rob raa ter | সি নী রা তে | 11 | Aa / সি, moy / (no syllable) |
+| ni bir aan dha re | তে নি বি আঁ ধা রে | 14 | ni / তে |
+| gaa ner o paa re aa mar | বে লা যে বে | 13 | (no syllable) / লা |
+| sur gu li paay cho ron aa | সু লি পা মি | 12 | (no syllable) / পা, mi / মি |
+| paai ne to ma re mi | পা নে তো মা রে | 14 | (no syllable) / তো, (no syllable) / রে, mi / (no syllable) |
+| gaa ner o paa re | বে লা যে | 12 | (no syllable) / লা |

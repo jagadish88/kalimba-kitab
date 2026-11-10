@@ -8,6 +8,7 @@
 | same pitch | 134 | 46% of the swaralipi, 91% of the draft (with graces) |
 | other pitch | 5 | |
 | in the swaralipi only | 151 | |
+| syllables, line by line (each draft line where it fits on the page) | 102 / 137 agree | 74.5% |
 | in the draft only | 8 | |
 | same place in the matra (matched notes) | 86 / 134 | 64% |
 | same time to the next matched note | 73 / 133 | 55% |
@@ -217,3 +218,22 @@
 | R |  | — |  |  |
 | G | র | — |  |  |
 | m | বে | — |  |  |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| Tu mi ro be ni ro be ? | মি বে নী বে | 10 | (no syllable) / মি, ro / (no syllable), be / (no syllable) |
+| hri doy ma mo | য়ে | 16 | hri / (no syllable), (no syllable) / য়ে, mo / (no syllable) |
+| Tu mi ro be ni ro be | মি বে নী বে | 10 | (no syllable) / মি, ro / (no syllable), be / (no syllable), (no syllable) / বে |
+| pur ni ma ni shi thi ni sa mo? | পূ ণি মা নি শী | 12 | ni / (no syllable) |
+| Ma mo ji ba no jou ba no ? | জী যৌ | 9 | ji / (no syllable), no / (no syllable) |
+| Ma mo a khi lo bhu ba no | স্ব | 12 | Ma / (no syllable), mo / (no syllable), bhu / (no syllable), ba / (no syllable), no / (no syllable) |
+| Tu mi bho ri be gou ra be ? ? | তু মি রি বে গৌ বে | 13 | ra / (no syllable), be / (no syllable), ? / (no syllable) |
+| Ni shi thi ni sa mo? | নি শী থি নী | 12 | thi / (no syllable), ni / (no syllable), (no syllable) / থি, (no syllable) / নী |
+| Jaa gi be e kaa ki? | জা গি বে কা কী | 6 | kaa / (no syllable) |
+| ta bo ka ru no aa khi ? | রু আঁ খি | 7 | khi / (no syllable) |
+| Ta bo an chalch ha ya mo re | মি বে নী হৃ | 12 | chalch / (no syllable), ya / (no syllable), (no syllable) / হৃ, mo / (no syllable), re / (no syllable) |
+| ro hi be dhaa ki ? | রে হি বে ঢা কি | 12 | hi / (no syllable), (no syllable) / বে, ki / (no syllable) |

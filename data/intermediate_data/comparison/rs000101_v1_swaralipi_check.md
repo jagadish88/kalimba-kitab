@@ -8,6 +8,7 @@
 | same pitch | 214 | 87% of the swaralipi, 83% of the draft (with graces) |
 | other pitch | 6 | |
 | in the swaralipi only | 27 | |
+| syllables, line by line (each draft line where it fits on the page) | 182 / 241 agree | 75.5% |
 | in the draft only | 38 | |
 | same place in the matra (matched notes) | 111 / 214 | 52% |
 | same time to the next matched note | 42 / 213 | 20% |
@@ -144,3 +145,33 @@
 | — |  | P | kash | Stanza 6 |
 | — |  | S | bha | Stanza 6 |
 | — |  | S | ra? | Stanza 6 |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| A kash bha ra sur ya ta? ? ra? | কা রা সূ তা | 7 | ? / (no syllable), ra? / (no syllable) |
+| Bis wa bha ra pran? ? | হা রি মা খা নে | 7 | pran? / (no syllable) |
+| Ta ha ri maajh kha ne a mi pey chi | হা রি মা খা নে মি য়ে ছি | 13 | kha / (no syllable), ne / (no syllable) |
+| A mi pey chi mor sthan | মি য়ে ছি মো স্থা | 7 | mi / (no syllable) |
+| Bish ma ye tai jaa ? ? ge | বি স্ম তা জা গে | 11 | tai / (no syllable), ? / (no syllable), ? / (no syllable) |
+| Jaa ge a mar gaan a kash bha ra? | জা গে কা যে লো | 9 | gaan / (no syllable), (no syllable) / যে, kash / (no syllable) |
+| A sim? kaa ler je hil lo le? | মা সী কা যে হি লো লে | 9 | le? / (no syllable) |
+| jo war bhaa tay bhu ban do? ? ? le? ? ? ? | জো য়া ভাঁ ভু দো লে | 15 | tay / (no syllable), ? / (no syllable), ? / (no syllable), le? / (no syllable), ? / (no syllable), ? / (no syllable) |
+| Naa ri te mor rak to dhaa? ray | না ড়ী তে মো ধা রা | 10 | ray / (no syllable) |
+| Bish ma ye tai jaa ? ? ge | বি স্ম তা জা গে | 11 | tai / (no syllable), ? / (no syllable), ? / (no syllable) |
+| Jaa ge a mar gaan a kash bha ra? | জা গে কা যে লো | 9 | gaan / (no syllable), (no syllable) / যে, kash / (no syllable) |
+| Ghaa? se ghaa se pa phe le chhi | হা রি মা খা নে | 8 | Ghaa? / (no syllable), phe / (no syllable), le / (no syllable) |
+| Bo ner pa the je te | নে থে তে | 7 | Bo / (no syllable), the / (no syllable), je / (no syllable) |
+| Phu ler gan dhe cha mok le ge? | ফু লে লে গে | 10 | mok / (no syllable) |
+| Ut the che mon ? ? me? te? | ঠে ছে মে তে | 9 | the / (no syllable), ? / (no syllable) |
+| Chhoriye aa chhe aa non? de ri ? ? daan | হা রি মা খা নে মি ছি | 10 | ri / (no syllable), ? / (no syllable), ? / (no syllable) |
+| Bish ma ye taai jaa ? ? ge | বি স্ম য়ে তা জা | 11 | ? / (no syllable), ? / (no syllable), ge / (no syllable) |
+| Jaa ge? ? a? mar gaan | পে য়ে ছি মো স্থা | 9 | ? / (no syllable), a? / (no syllable), gaan / (no syllable), (no syllable) / মো, (no syllable) / স্থা |
+| Dha rar bu ke praan dhe le chhi? | ছি রা বু প্রা ঢে লে ছি | 13 | ke / (no syllable), (no syllable) / লে, le / (no syllable), (no syllable) / ছি, chhi? / (no syllable) |
+| Jaa nar maa jhe a ja na? re | না ড়ী তে মো ধা রা | 10 | re / (no syllable) |
+| Ko re chhi san dhan | লে গে ছে তা | 7 | dhan / (no syllable) |
+| Bish ma ye tai jaa ? ? ge | বি স্ম তা জা গে | 11 | tai / (no syllable), ? / (no syllable), ? / (no syllable) |
+| Jaa ge a mar gaan a kash bha ra? | জা গে কা যে লো | 9 | gaan / (no syllable), (no syllable) / যে, kash / (no syllable) |

@@ -8,6 +8,7 @@
 | same pitch | 307 | 100% of the swaralipi, 71% of the draft (with graces) |
 | other pitch | 0 | |
 | in the swaralipi only | 1 | |
+| syllables, line by line (each draft line where it fits on the page) | 401 / 420 agree | 95.5% |
 | in the draft only | 147 | |
 | same place in the matra (matched notes) | 193 / 307 | 63% |
 | same time to the next matched note | 134 / 306 | 44% |
@@ -172,3 +173,18 @@
 | — |  | G |  | Sthayi |
 | R (syllable differs) |  | R | roi | Sthayi |
 | — |  | S |  | Sthayi |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| O aa maar aa pon hri doy ga hon dwaa re baa re baa re | মা ‎হৃ দ্বা রে বা রে বা রে | 19 | O / (no syllable) |
+| kaan pe te roi | কা পে তে | 10 | (no syllable) / তে |
+| kaan pe te roi | কা পে তে | 10 | (no syllable) / তে |
+| O se aa maay jaa ni paa thaay baa ni gaa ner taa ne lu ki ye taa re baa re baa re | সে মা জা নি পা ঠা বা ণী গা নে তা নে লু কি য়ে তা রে বা রে বা রে | 29 | se / (no syllable), (no syllable) / পা, (no syllable) / ণী, (no syllable) / নে, (no syllable) / তা |
+| kaan pe te roi Aa mi kaan pe te roi | কা পে তে মি কা পে তে | 23 | (no syllable) / তে |
+| O aa maar aa pon hri doy ga hon dwaa re baa re baa re | মা ‎হৃ দ্বা রে বা রে বা রে | 19 | O / (no syllable), (no syllable) / দ্বা, (no syllable) / রে |
+| go pon baa sir kaan na haa sir go pon ko tha shu ni baa re baa re baa re | গো বা সী কা না হা সি গো থা শু নি বা রে বা রে বা রে | 28 | (no syllable) / না, (no syllable) / হা, (no syllable) / গো, (no syllable) / শু, (no syllable) / রে, (no syllable) / বা |
+| kaan pe te roi | কা পে তে | 10 | (no syllable) / তে |

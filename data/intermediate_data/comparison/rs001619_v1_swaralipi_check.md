@@ -8,6 +8,7 @@
 | same pitch | 103 | 37% of the swaralipi, 98% of the draft (with graces) |
 | other pitch | 2 | |
 | in the swaralipi only | 175 | |
+| syllables, line by line (each draft line where it fits on the page) | 78 / 99 agree | 78.8% |
 | in the draft only | 0 | |
 | same place in the matra (matched notes) | 71 / 103 | 69% |
 | same time to the next matched note | 43 / 102 | 42% |
@@ -222,3 +223,21 @@
 | m | হা | — |  |  |
 | m | হা | — |  |  |
 | S |  | — |  |  |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| O Je Man ne Na Maa na? | যে মা নে না মা না | 9 | (no syllable) / না |
+| OQ Je Man ne Na Maa na | যে মা নে না মা না | 9 | (no syllable) / না |
+| Aan khi phi ra yi le bo le | আঁ খি ফি রা লে লে | 9 | (no syllable) / লে, le / (no syllable) |
+| Na Na? Na ? | না না | 8 | Na? / (no syllable), ? / (no syllable) |
+| Ja to bo li naai raa ti | রা তি | 6 | ti / (no syllable) |
+| Mo li no ho ye che baa ti | লি য়ে বা তি | 11 | Mo / (no syllable), ye / (no syllable), baa / (no syllable), (no syllable) / তি, ti / (no syllable) |
+| Mu kho paa ne che ye bo? ? le? | আঁ খি ফি রা লে লে | 9 | le? / (no syllable) |
+| Na? Na Na ? | না না | 8 | Na / (no syllable), ? / (no syllable) |
+| Bi dhu ro bi ka lo ho ye | বি ধু বি য়ে | 8 | ye / (no syllable) |
+| khya pa pa bo ne? ? | খে পা নে | 7 | (no syllable) / নে, ne? / (no syllable), ? / (no syllable) |
+| Phaa gu? no ko ri chhe ha ha | ফা গু রি ছে হা ফু | 10 | (no syllable) / হা, (no syllable) / ফু |

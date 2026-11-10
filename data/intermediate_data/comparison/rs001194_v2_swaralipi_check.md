@@ -8,6 +8,7 @@
 | same pitch | 91 | 36% of the swaralipi, 63% of the draft (with graces) |
 | other pitch | 49 | |
 | in the swaralipi only | 110 | |
+| syllables, line by line (each draft line where it fits on the page) | 86 / 98 agree | 87.8% |
 | in the draft only | 4 | |
 | same place in the matra (matched notes) | 47 / 91 | 52% |
 | same time to the next matched note | 5 / 90 | 6% |
@@ -198,3 +199,18 @@
 | S | লো | G | bhaa? | Stanza 7 |
 | R (syllable differs) |  | R | ? | Stanza 7 |
 | S (syllable differs) |  | S | lo | Stanza 7 |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| To ma ro cha ro ne di bo | তো মা ণে দি | 9 | cha / (no syllable), ro / (no syllable) |
+| ko? hi bo pro ka ? ? shi? | প্র কা শি | 7 | bo / (no syllable), ? / (no syllable), ? / (no syllable) |
+| Go pa ne to ma re sa kha | গো নে তো মা রে খা | 10 | Go / (no syllable) |
+| ka to bhaa lo ba si? | না ভু লি য়া | 8 | to / (no syllable) |
+| Tu mi swa ra ge ro de ? bo? ta ? ? |  | 1 | Tu / (no syllable) |
+| Ke ? mo? ne to ? ma? re ? ? ka ? bo? | শু ধা | 3 | (no syllable) / ধা |
+| Ke mo ne pro ka si ka bo | কে নে প্র শি | 8 | si / (no syllable) |
+| ka to bhaa? ? lo ba si? | কে নে তো মা | 6 | ? / (no syllable), ba / (no syllable) |

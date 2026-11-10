@@ -8,6 +8,7 @@
 | same pitch | 231 | 99% of the swaralipi, 76% of the draft (with graces) |
 | other pitch | 2 | |
 | in the swaralipi only | 0 | |
+| syllables, line by line (each draft line where it fits on the page) | 293 / 297 agree | 98.7% |
 | in the draft only | 72 | |
 | same place in the matra (matched notes) | 171 / 231 | 74% |
 | same time to the next matched note | 128 / 230 | 56% |
@@ -93,3 +94,12 @@
 | — |  | m |  | Sthayi |
 | — |  | G |  | Sthayi |
 | — |  | S |  | Sthayi |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| Bhe bei na ku lay re Aa mar mon bhu lay re | টি য়ে যা ধু লা রে মা ভু লা রে | 19 | (no syllable) / রে, re / (no syllable) |
+| Aa mar mon bhu lay re | মা ভু লা রে | 18 | re / (no syllable), (no syllable) / রে |

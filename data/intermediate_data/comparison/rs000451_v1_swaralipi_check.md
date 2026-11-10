@@ -8,6 +8,7 @@
 | same pitch | 178 | 32% of the swaralipi, 100% of the draft (with graces) |
 | other pitch | 0 | |
 | in the swaralipi only | 375 | |
+| syllables, line by line (each draft line where it fits on the page) | 174 / 174 agree | 100.0% |
 | in the draft only | 0 | |
 | same place in the matra (matched notes) | 170 / 178 | 96% |
 | same time to the next matched note | 126 / 177 | 71% |
@@ -395,3 +396,10 @@
 | m | ন | — |  |  |
 | G |  | — |  |  |
 | R | ড়ো" | — |  |  |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|

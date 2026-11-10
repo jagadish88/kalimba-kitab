@@ -8,6 +8,7 @@
 | same pitch | 249 | 100% of the swaralipi, 66% of the draft (with graces) |
 | other pitch | 0 | |
 | in the swaralipi only | 0 | |
+| syllables, line by line (each draft line where it fits on the page) | 358 / 368 agree | 97.3% |
 | in the draft only | 131 | |
 | same place in the matra (matched notes) | 224 / 249 | 90% |
 | same time to the next matched note | 174 / 248 | 70% |
@@ -150,3 +151,16 @@
 | — |  | G | hi | Sthayi |
 | — |  | R |  | Sthayi |
 | — |  | G | re | Sthayi |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| Dho raay jo khon daa o na dho ra | রা দা না রা | 13 | Dho / (no syllable) |
+| hri doy to khon to maay bho ra | রা না রা | 12 | hri / (no syllable), (no syllable) / রা, ra / (no syllable) |
+| Dho raay jo khon daa o na dho ra | রা দা না রা | 13 | Dho / (no syllable) |
+| hri doy to khon to maay bho ra | রা না রা | 12 | hri / (no syllable), (no syllable) / রা, ra / (no syllable) |
+| pro loy jho re te | ভে গে ছে ড়ে তে | 7 | (no syllable) / ছে |
+| pro loy jho re te | ভে গে ছে ড়ে তে | 7 | (no syllable) / ছে |

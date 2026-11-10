@@ -616,7 +616,7 @@ rs001376,src000364,,piano_staff
 rs001376,src001875,,vocal_melody
 rs001376,src001876,,vocal_melody
 rs001376,src001877,,vocal_melody
-rs001381,src000317,,piano_roll
+rs001381,src000317,data/raw_data/video/rs001381_src000317.mp4,piano_roll
 rs001381,src000332,,piano_staff
 rs001381,src001878,,vocal_melody
 rs001381,src001879,,vocal_melody

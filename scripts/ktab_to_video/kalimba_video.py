@@ -229,6 +229,7 @@ raw_wav = os.path.join(tmpdir, "raw.wav")
 with wave.open(raw_wav, "wb") as w:
     w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
     w.writeframes((stereo * 32767).astype(np.int16).tobytes())
+del stereo, spec, chans, audio, fade            # free audio buffers before rendering video
 
 # gentle compression + two-pass loudness normalisation to the upload standard
 COMP = "acompressor=threshold=-24dB:ratio=3:attack=5:release=250:makeup=2"
@@ -250,6 +251,13 @@ NUM_INK = (34, 34, 36)
 LYR_INK = (92, 84, 80)      # warm grey lyrics
 LYR_ACT = (20, 18, 18)      # bold word being played
 RULE = (190, 186, 184)
+UP_INK = (0, 0, 0)          # a tine tuned up: a shade darker than the other numbers
+DOWN_INK = (96, 92, 90)     # a tine tuned down: a shade lighter
+
+def tine_ink(n, S):
+    """colour of note n's number: darker if its tine is tuned up, lighter if down."""
+    shift = RETUNE_TINE.get((n.degree, n.octave), RETUNE.get(n.degree, 0))
+    return UP_INK if shift > 0 else DOWN_INK if shift < 0 else NUM_INK
 
 def make_paper():
     src = Image.open(args.paper).convert("RGB")
@@ -380,15 +388,16 @@ def render(S, page_idx, active_word, rep_line=None, rep_stanza=None):
                            fill=NUM_INK, width=max(2, int(S*0.04)))
                     continue
                 n, si, ni = p
-                d.text((X, y_num + num_h), str(n.degree), font=F["num"], fill=NUM_INK, anchor="ls")
+                ink = tine_ink(n, S)
+                d.text((X, y_num + num_h), str(n.degree), font=F["num"], fill=ink, anchor="ls")
                 for k in range(-n.octave):                    # one dot per octave below, under the underlines
                     r, cx = S * 0.045, X + digit_w/2
                     syl_ul = max(m.slashes for m in wdl["wd"].syllables[si].notes)
                     cy = y_ul + syl_ul * ul_step + (0.10 + 0.13*k)*S
-                    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=NUM_INK)
+                    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=ink)
                 for k in range(n.octave):                     # one dot per octave above
                     r, cx, cy = S * 0.045, X + digit_w/2, y_num - (0.15 + 0.13*k)*S
-                    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=NUM_INK)
+                    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=ink)
                 if n.dotted:                                  # dotted note
                     r, dx = S * 0.045, X + digit_w + 0.10*S        # small dot, same size as the octave dots
                     d.ellipse([dx - r, y_num + num_h - 2*r, dx + r, y_num + num_h], fill=NUM_INK)
@@ -461,18 +470,26 @@ def state(now):
     return (w.line, w.word, w.line if w.line_pass == 2 else None,
             w.stanza if w.stanza_pass == 2 else None)
 
-cache = {}
+# Frames are needed in time order, so keep only a few recent ones (each is a full-size
+# image; caching all of them used gigabytes of RAM on long songs).
+from collections import OrderedDict
+CACHE_MAX = 6
+cache = OrderedDict()
 def frame(pi, st):
     key = (pi, st)
-    if key not in cache:
-        pg = pages[pi]
-        local = (st[0] - pg[0], st[1]) if st and st[0] in pg else None
-        cache[key] = render(S, pg, local, *(st[2:] if st else (None, None)))
+    if key in cache:
+        cache.move_to_end(key)
+        return cache[key]
+    pg = pages[pi]
+    local = (st[0] - pg[0], st[1]) if st and st[0] in pg else None
+    cache[key] = render(S, pg, local, *(st[2:] if st else (None, None)))
+    while len(cache) > CACHE_MAX:
+        cache.popitem(last=False)
     return cache[key]
 
 ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                        "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", wav_path,
-                       "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-tune", "stillimage",
+                       "-c:v", "libx264", "-threads", "2", "-preset", "slow", "-crf", "18", "-tune", "stillimage",
                        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "256k", "-shortest", args.out],
                       stdin=subprocess.PIPE)
 for fi in range(int(TOTAL * FPS)):

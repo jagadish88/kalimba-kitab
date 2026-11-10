@@ -8,6 +8,7 @@
 | same pitch | 113 | 97% of the swaralipi, 68% of the draft (with graces) |
 | other pitch | 2 | |
 | in the swaralipi only | 1 | |
+| syllables, line by line (each draft line where it fits on the page) | 157 / 159 agree | 98.7% |
 | in the draft only | 53 | |
 | same place in the matra (matched notes) | 112 / 113 | 99% |
 | same time to the next matched note | 100 / 112 | 89% |
@@ -76,3 +77,12 @@
 | — |  | G | saa | Sthayi |
 | — |  | R |  | Sthayi |
 | — |  | S | ra | Sthayi |
+
+## Line by line
+
+Each draft line is compared with the passage of the swaralipi it fits best, wherever it is written (returns and repeats included). Lines with a syllable that starts on a different note:
+
+| draft line | swaralipi words there | notes compared | syllables differing |
+|---|---|---|---|
+| aa mar ta re taa ra | মা রে তা রা | 7 | taa / (no syllable) |
+| To maar mo ne bhoy | তো মা ডা ঙা | 7 | ne / (no syllable) |

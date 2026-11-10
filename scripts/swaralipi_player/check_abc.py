@@ -33,10 +33,22 @@ import word_table as WT  # noqa: E402
 from abc_to_ktab import parse_abc  # noqa: E402
 
 
-def swaralipi_notes(song):
-    """[(rel, start matra, length, syllable start?, lyric, line, grace?)]"""
+def swaralipi_notes(song, page_order=False):
+    """[(rel, start matra, length, syllable start?, lyric, line, grace?)], in singing order, or with
+    page_order every cell once as printed (for the line-by-line check)"""
     doc, lines = TP.load(f'data/intermediate_data/swaralipi/{song}.json')
-    order = TP.singing_order(lines)
+    if page_order:
+        order = []
+        for li, (sw, ly) in enumerate(lines):
+            for ci, c in enumerate(sw):
+                if not c or c in TP.BARS:
+                    continue
+                try:
+                    TP.parse_cell(c); order.append((li, ci))
+                except ValueError:
+                    pass
+    else:
+        order = TP.singing_order(lines)
     out, t = [], 0.0
     for li, ci in order:
         sw, ly = lines[li]
@@ -70,15 +82,16 @@ def draft_notes(abc):
     sa = 60 + ('C D EF G A B'.index(m.group(1)) + {'#': 1, 'b': -1, '': 0}[m.group(2)] if m else 0)
     names, stz = WT.draft_stanzas(abc)
     _, st = parse_abc(txt)
-    out, b = [], 0.0
+    out, b, line_no = [], 0.0, 0
     for s, sn, name in zip(st, stz, names):
         k = 0
         for ln in s:
             for e in ln:
                 n = e['eighths'] / 2
                 if e['kind'] == 'note':
-                    out.append([e['midi'] - sa, b, n, bool(sn[k]['syl']), sn[k]['syl'], name]); k += 1
+                    out.append([e['midi'] - sa, b, n, bool(sn[k]['syl']), sn[k]['syl'], name, line_no]); k += 1
                 b += n
+            line_no += 1
     return out
 
 
@@ -123,6 +136,49 @@ def align(A, B, grace, sa=None, sb=None):
         else:
             path.append((None, j - 1)); j -= 1
     return path[::-1]
+
+
+def local_align(A, B, grace, sa, sb):
+    """best local alignment (Smith-Waterman) of the draft line B inside the swaralipi A; scores as in
+    align(). Returns the matched pairs [(i, j)]."""
+    n, m = len(A), len(B)
+    def sc(i, j):
+        if A[i] == B[j]:
+            if grace[i]: return 1
+            return 2 + (0.5 if sa[i] is None or bool(sa[i]) == bool(sb[j]) else 0)
+        return -3 if grace[i] else -1
+    H = np.zeros((n + 1, m + 1)); T = np.zeros((n + 1, m + 1), int)
+    for i in range(1, n + 1):
+        gi = 0 if grace[i - 1] else -1
+        for j in range(1, m + 1):
+            opts = (0, H[i - 1, j - 1] + sc(i - 1, j - 1), H[i - 1, j] + gi, H[i, j - 1] - 1)
+            k = int(np.argmax(opts)); H[i, j] = opts[k]; T[i, j] = k
+    i, j = np.unravel_index(int(np.argmax(H)), H.shape)
+    pairs = []
+    while i and j and T[i, j]:
+        if T[i, j] == 1:
+            pairs.append((i - 1, j - 1)); i -= 1; j -= 1
+        elif T[i, j] == 2:
+            i -= 1
+        else:
+            j -= 1
+    return pairs[::-1]
+
+
+def line_by_line(song, D):
+    """each draft line against the place on the page where it fits best: [(line text, pairs, disagreements)]"""
+    P = merge_repeats(swaralipi_notes(song, page_order=True), grace_col=6)
+    A, grace, sa = [x[0] for x in P], [x[6] for x in P], [x[3] for x in P]
+    out = []
+    for ln in sorted({x[6] for x in D}):
+        L = [x for x in D if x[6] == ln]
+        pairs = [(i, j) for i, j in local_align(A, [x[0] for x in L], grace, sa, [x[3] for x in L])
+                 if not grace[i] and A[i] == L[j][0]]
+        bad = [(i, j) for i, j in pairs if sa[i] is not None and bool(sa[i]) != bool(L[j][3])]
+        words = ' '.join(x[4] for x in L if x[3])
+        sw = ' '.join(P[i][4] for i, _ in pairs if P[i][3])
+        out.append((words, sw, len(pairs), bad, L, P))
+    return out
 
 
 def main():
@@ -198,6 +254,16 @@ def main():
         if i is not None and j is not None and S[i][0] == D[j][0]:
             kind = ' (syllable differs)'
         lines.append(f'| {sv}{kind} | {lyr} | {dv} | {ds} | {sec} |')
+    lbl = line_by_line(a.song, D)
+    n_pairs = sum(r[2] for r in lbl); n_bad = sum(len(r[3]) for r in lbl)
+    lines[10:10] = [f'| syllables, line by line (each draft line where it fits on the page) | {n_pairs - n_bad} / {n_pairs} agree | {(n_pairs - n_bad) / max(1, n_pairs):.1%} |']
+    lines += ['', '## Line by line', '',
+              'Each draft line is compared with the passage of the swaralipi it fits best, wherever it is '
+              'written (returns and repeats included). Lines with a syllable that starts on a different note:', '',
+              '| draft line | swaralipi words there | notes compared | syllables differing |', '|---|---|---|---|']
+    for words, sw, npair, bad, L, P in lbl:
+        if bad:
+            lines.append(f'| {words} | {sw} | {npair} | ' + ', '.join(f"{L[j][4] or '(no syllable)'} / {P[i][4] or '(no syllable)'}" for i, j in bad) + ' |')
     out = f'data/intermediate_data/comparison/{a.song}_{os.path.basename(abc)[:-4]}_swaralipi_check.md'
     open(out, 'w').write('\n'.join(lines) + '\n')
     print('\n'.join(lines[:16]))
