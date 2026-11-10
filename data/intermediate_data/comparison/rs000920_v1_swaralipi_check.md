@@ -1,35 +1,35 @@
 # rs000920: ABC draft against the swaralipi text, note by note
 
 - draft: `data/intermediate_data/abc/rs000920/v1.abc` (transposed +0 semitones to match); swaralipi: `data/intermediate_data/swaralipi/rs000920.json`
-- swaralipi notes in singing order: 240 main + 14 grace; draft notes: 306 (1 of them play a swaralipi grace note as a full note)
+- swaralipi notes in singing order: 233 main + 14 grace; draft notes: 306 (1 of them play a swaralipi grace note as a full note)
 
 | | count | share |
 |---|---|---|
-| same pitch | 238 | 99% of the swaralipi, 78% of the draft (with graces) |
+| same pitch | 231 | 99% of the swaralipi, 76% of the draft (with graces) |
 | other pitch | 2 | |
 | in the swaralipi only | 0 | |
-| in the draft only | 65 | |
-| same place in the matra (matched notes) | 177 / 238 | 74% |
-| same time to the next matched note | 137 / 237 | 58% |
-| syllable starts on both | 124 | |
-| syllable in the swaralipi only | 14 | |
-| syllable in the draft only | 5 | |
+| in the draft only | 72 | |
+| same place in the matra (matched notes) | 171 / 231 | 74% |
+| same time to the next matched note | 127 / 230 | 55% |
+| syllable starts on both | 125 | |
+| syllable in the swaralipi only | 2 | |
+| syllable in the draft only | 3 | |
 
 ## Differences in order
 
 | swaralipi | lyric | draft | draft syllable | section |
 |---|---|---|---|---|
-| m (syllable differs) | ন | m |  | Sthayi |
-| m (syllable differs) | ন | m |  | Sthayi |
-| m (syllable differs) | ন | m |  | Sthayi |
+| — |  | S | chhaa | Sthayi |
+| — |  | G | path | Sthayi |
+| — |  | S | chhaa | Sthayi |
+| — |  | G | path | Sthayi |
 | R (syllable differs) | রে | R |  | Sthayi |
 | S (syllable differs) |  | S | re | Sthayi |
-| — |  | P |  | Sthayi |
+| — |  | S | chhaa | Sthayi |
 | — |  | P | nga | Sthayi |
 | — |  | D |  | Sthayi |
-| P (syllable differs) |  | P | maa | Sthayi |
 | — |  | m | tir | Sthayi |
-| P (syllable differs) | রে | P |  | Sthayi |
+| — |  | P |  | Sthayi |
 | — |  | m |  | Sthayi |
 | — |  | G | path | Sthayi |
 | — |  | G | Aa | Sthayi |
@@ -57,26 +57,13 @@
 | — |  | G | gho | Antara |
 | — |  | P |  | Antara |
 | — |  | P | rer | Antara |
-| P (syllable differs) |  | P | hir | Antara |
-| — |  | D |  | Antara |
-| m (syllable differs) | ন | m |  | Antara |
+| — |  | P | baa | Antara |
+| — |  | S' | re | Antara |
 | R (syllable differs) | রে  | R |  | Antara |
 | S (syllable differs) |  | S | re | Antara |
+| — |  | D | dhon | Antara |
 | R' | বে | G' | be | Antara |
 | S | য়ে | S' | ye | Antara |
-| — |  | D | na | Antara |
-| — |  | P | ku | Antara |
-| — |  | D |  | Antara |
-| — |  | m | lay | Antara |
-| — |  | P |  | Antara |
-| — |  | m | re | Antara |
-| — |  | G | Aa | Antara |
-| — |  | S | mar | Antara |
-| — |  | R |  | Antara |
-| — |  | G | mon | Antara |
-| — |  | m |  | Antara |
-| — |  | G | bhu | Antara |
-| — |  | R | lay | Antara |
 | — |  | G |  | Antara |
 | — |  | R |  | Antara |
 | — |  | S | re | Antara |
@@ -89,7 +76,7 @@
 | — |  | G | raa | Sthayi |
 | — |  | P |  | Sthayi |
 | — |  | P | nga | Sthayi |
-| D (syllable differs) | না | D |  | Sthayi |
+| — |  | D |  | Sthayi |
 | — |  | P | maa | Sthayi |
 | — |  | m | tir | Sthayi |
 | — |  | P |  | Sthayi |
@@ -97,11 +84,17 @@
 | — |  | G | path | Sthayi |
 | — |  | G | Aa | Sthayi |
 | — |  | m |  | Sthayi |
+| — |  | P | mar | Sthayi |
+| — |  | D |  | Sthayi |
 | — |  | P |  | Sthayi |
-| m (syllable differs) | লা | m |  | Sthayi |
-| m (syllable differs) | রে | m |  | Sthayi |
-| G (syllable differs) | আ | G |  | Sthayi |
-| S (syllable differs) | মা | S |  | Sthayi |
-| m (syllable differs) | ন | m |  | Sthayi |
-| R (syllable differs) | রে | R |  | Sthayi |
+| — |  | m |  | Sthayi |
+| — |  | P |  | Sthayi |
+| — |  | m |  | Sthayi |
+| — |  | G |  | Sthayi |
+| — |  | S |  | Sthayi |
+| — |  | R |  | Sthayi |
+| — |  | G | mon | Sthayi |
+| — |  | m |  | Sthayi |
+| — |  | G |  | Sthayi |
+| — |  | R |  | Sthayi |
 | S (syllable differs) |  | S | re | Sthayi |

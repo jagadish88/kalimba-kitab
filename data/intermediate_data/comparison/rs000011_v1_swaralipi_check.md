@@ -1,28 +1,36 @@
 # rs000011: ABC draft against the swaralipi text, note by note
 
 - draft: `data/intermediate_data/abc/rs000011/v1.abc` (transposed +0 semitones to match); swaralipi: `data/intermediate_data/swaralipi/rs000011.json`
-- swaralipi notes in singing order: 384 main + 7 grace; draft notes: 468 (2 of them play a swaralipi grace note as a full note)
+- swaralipi notes in singing order: 338 main + 7 grace; draft notes: 468 (2 of them play a swaralipi grace note as a full note)
 
 | | count | share |
 |---|---|---|
-| same pitch | 379 | 99% of the swaralipi, 81% of the draft (with graces) |
+| same pitch | 337 | 100% of the swaralipi, 72% of the draft (with graces) |
 | other pitch | 1 | |
-| in the swaralipi only | 4 | |
-| in the draft only | 86 | |
-| same place in the matra (matched notes) | 331 / 379 | 87% |
-| same time to the next matched note | 291 / 378 | 77% |
-| syllable starts on both | 291 | |
-| syllable in the swaralipi only | 3 | |
-| syllable in the draft only | 7 | |
+| in the swaralipi only | 0 | |
+| in the draft only | 128 | |
+| same place in the matra (matched notes) | 294 / 337 | 87% |
+| same time to the next matched note | 207 / 336 | 62% |
+| syllable starts on both | 251 | |
+| syllable in the swaralipi only | 0 | |
+| syllable in the draft only | 6 | |
 
 ## Differences in order
 
 | swaralipi | lyric | draft | draft syllable | section |
 |---|---|---|---|---|
+| — |  | N | po | Sthayi |
+| — |  | m | Shraan | Sthayi |
+| — |  | D | thi | Sthayi |
 | D | য়্ | N |  | Sthayi |
-| G' | থে | — |  |  |
-| G' | থে | — |  |  |
-| G' (syllable differs) | র | G' |  | Antara |
+| — |  | D | ne | Antara |
+| — |  | D | ne | Antara |
+| — |  | D | ne | Antara |
+| — |  | D | ne | Antara |
+| — |  | N | ra | Antara |
+| — |  | N | bo | Antara |
+| — |  | m | Shraan | Antara |
+| — |  | D | thi | Antara |
 | — |  | S' | du | Antara |
 | — |  | N | baay | Antara |
 | — |  | S' |  | Antara |
@@ -69,19 +77,45 @@
 | — |  | G' | ko | Sthayi |
 | — |  | R' | ghu | Sthayi |
 | — |  | S' | me | Sthayi |
-| m |  | — |  |  |
-| m (syllable differs) | ঘে | m |  | Sanchari |
-| m |  | — |  |  |
-| m (syllable differs) | ঘে | m |  | Sanchari |
+| — |  | m | gher | Sanchari |
+| — |  | m | khe | Sanchari |
+| — |  | m | la | Sanchari |
+| — |  | m | ga | Sanchari |
+| — |  | m | la | Sanchari |
+| — |  | m | so | Sanchari |
+| — |  | m | kha | Sanchari |
+| — |  | D | ro | Sanchari |
+| — |  | D | lo | Sanchari |
+| — |  | m | lo | Sanchari |
+| — |  | m | gher | Sanchari |
+| — |  | m | khe | Sanchari |
+| — |  | m | la | Sanchari |
+| — |  | m | ga | Sanchari |
+| — |  | m | la | Sanchari |
+| — |  | m | so | Sanchari |
+| — |  | m | kha | Sanchari |
+| — |  | D | ro | Sanchari |
+| — |  | D | lo | Sanchari |
+| — |  | m | lo | Sanchari |
+| — |  | N | tri | Abhog |
+| — |  | D | aan | Abhog |
+| — |  | G' |  | Abhog |
+| — |  | N | tri | Abhog |
+| — |  | D | aan | Abhog |
+| — |  | G' |  | Abhog |
+| — |  | D | bi | Abhog |
+| — |  | N | no | Abhog |
+| — |  | N | be | Abhog |
+| — |  | m | Shraan | Abhog |
+| — |  | D | thi | Abhog |
 | — |  | S' |  | Abhog |
 | — |  | N | baay | Abhog |
 | — |  | S' |  | Abhog |
 | — |  | D |  | Abhog |
 | — |  | N |  | Abhog |
-| — |  | S' |  | Abhog |
 | — |  | N |  | Abhog |
 | — |  | N | Aa | Sthayi |
-| S' (syllable differs) |  | S' | dhe | Sthayi |
+| — |  | S' | dhe | Sthayi |
 | — |  | G' | ko | Sthayi |
 | — |  | R' | ghu | Sthayi |
 | — |  | S' | yo | Sthayi |

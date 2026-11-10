@@ -7,7 +7,9 @@ Both sides become note sequences in singing order: pitch (semitones from Sa, wit
 (in matras; one matra = one quarter note in the ABC), and whether a syllable starts on the note.
 The swaralipi comes from data/intermediate_data/swaralipi/<song>.json (our transcription) via text_player.py. Its grace
 notes are optional: the MIDI often plays a grace as a full note, often carrying the syllable, which
-then counts for the swaralipi's next main note. The ABC's Sa is read from its "Sa = X" note.
+then counts for the swaralipi's next main note. Syllables come from the lyric row (also on "-" cells);
+a lone vowel (ও-ই), a bare final consonant (মো-র) or a "৹ও" tail may be joined to the syllable before
+or not: either way agrees. The ABC's Sa is read from its "Sa = X" note.
 A note that repeats the pitch before it without a new syllable is merged into it on both sides
 (one source re-strikes, the other holds). The two are aligned (Needleman-Wunsch: match +2, other pitch -1, a note only one side has -1; grace notes
 match +1 and may be left out freely),
@@ -45,7 +47,16 @@ def swaralipi_notes(song):
             t += 1; continue
         share = 1 / len(p['notes'])
         for k, (semi, octv, graces) in enumerate(p['notes']):
-            syl = k == 0 and not p['cont'] and bool(lyr) and not lyr.startswith('৹')
+            # the lyric row decides: a syllable starts where its cell has one (even on a "-" cell);
+            # "৹ও"-like cells (a vowel sung on, continuing the syllable) may be written either way
+            lt = lyr.replace('\u200d', '').replace('\u200c', '').replace('\u200e', '').strip().strip('"')
+            syl = k == 0 and bool(lt) and not lt.startswith('৹')
+            if k == 0 and lt.startswith('৹') and lt.strip('৹'):
+                syl = None                       # optional: either way agrees
+            core = lt.strip('৹')
+            if syl and (re.fullmatch(r'[\u0985-\u0994]', core) or                  # a lone vowel: ও-ই, পা-ই
+                        re.fullmatch(r'[\u0995-\u09b9\u09dc-\u09df\u09ce]\u09cd?', core)):  # a bare consonant: মো-র
+                syl = None                       # the drafts join these to the syllable before
             for gs, go in graces:                # a grace note: may or may not be in the draft
                 out.append([gs + 12 * go, t + k * share, 0.0, False, '', li, True])
             out.append([semi + 12 * octv, t + k * share, share, syl, lyr.replace('৹', '') if k == 0 else '', li, False])
@@ -85,12 +96,16 @@ def merge_repeats(X, grace_col=None):
     return out
 
 
-def align(A, B, grace):
+def align(A, B, grace, sa=None, sb=None):
     """global alignment of pitch sequences A (swaralipi, grace[i] marks its grace notes) and B;
-    [(i or None, j or None)]"""
+    [(i or None, j or None)]. With syllable flags sa / sb, a pair that also agrees on whether a
+    syllable starts scores a little more: among repeated pitches the syllables pick the pairing."""
     n, m = len(A), len(B)
     def sc(i, j):
-        if A[i] == B[j]: return 1 if grace[i] else 2
+        if A[i] == B[j]:
+            if grace[i]: return 1
+            bonus = 0.5 if sa is not None and (sa[i] is None or bool(sa[i]) == bool(sb[j])) else 0
+            return 2 + bonus
         return -3 if grace[i] else -1
     gapA = lambda i: 0 if grace[i] else -1                   # leaving out a swaralipi note
     S = np.zeros((n + 1, m + 1))
@@ -127,7 +142,7 @@ def main():
     shift = max(range(-24, 25), key=score)
     for x in D:
         x[0] += shift
-    path = align([x[0] for x in S], [x[0] for x in D], [x[6] for x in S])
+    path = align([x[0] for x in S], [x[0] for x in D], [x[6] for x in S], [x[3] for x in S], [x[3] for x in D])
     G = {i for i, x in enumerate(S) if x[6]}
     # a syllable the draft puts on a grace note belongs to the swaralipi's next main note
     for k, (i, j) in enumerate(path):
@@ -146,6 +161,8 @@ def main():
     in_matra = sum(1 for i, j in pairs if abs((S[i][1] % 1) - (D[j][1] % 1)) < 1e-6)
     gaps = [(S[i2][1] - S[i1][1]) - (D[j2][1] - D[j1][1]) for (i1, j1), (i2, j2) in zip(pairs, pairs[1:])]
     same_gap = sum(1 for g in gaps if abs(g) < 1e-6)
+    for i, j in pairs:
+        if S[i][3] is None: S[i][3] = D[j][3]
     syl_both = sum(1 for i, j in pairs if S[i][3] and D[j][3])
     syl_s = sum(1 for i, j in pairs if S[i][3] and not D[j][3])
     syl_d = sum(1 for i, j in pairs if D[j][3] and not S[i][3])

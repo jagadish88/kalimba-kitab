@@ -1,31 +1,32 @@
 # rs000636: ABC draft against the swaralipi text, note by note
 
 - draft: `data/intermediate_data/abc/rs000636/v1.abc` (transposed +0 semitones to match); swaralipi: `data/intermediate_data/swaralipi/rs000636.json`
-- swaralipi notes in singing order: 246 main + 48 grace; draft notes: 435 (47 of them play a swaralipi grace note as a full note)
+- swaralipi notes in singing order: 230 main + 48 grace; draft notes: 435 (47 of them play a swaralipi grace note as a full note)
 
 | | count | share |
 |---|---|---|
-| same pitch | 238 | 97% of the swaralipi, 66% of the draft (with graces) |
-| other pitch | 1 | |
-| in the swaralipi only | 7 | |
-| in the draft only | 149 | |
-| same place in the matra (matched notes) | 140 / 238 | 59% |
-| same time to the next matched note | 100 / 237 | 42% |
-| syllable starts on both | 142 | |
-| syllable in the swaralipi only | 2 | |
-| syllable in the draft only | 3 | |
+| same pitch | 222 | 97% of the swaralipi, 62% of the draft (with graces) |
+| other pitch | 3 | |
+| in the swaralipi only | 5 | |
+| in the draft only | 163 | |
+| same place in the matra (matched notes) | 125 / 222 | 56% |
+| same time to the next matched note | 81 / 221 | 37% |
+| syllable starts on both | 130 | |
+| syllable in the swaralipi only | 0 | |
+| syllable in the draft only | 4 | |
 
 ## Differences in order
 
 | swaralipi | lyric | draft | draft syllable | section |
 |---|---|---|---|---|
+| — |  | D | o | Sthayi |
+| — |  | P | re | Sthayi |
 | D | গু | N | gu | Sthayi |
-| — |  | S' |  | Sthayi |
 | — |  | P |  | Sthayi |
 | — |  | M |  | Sthayi |
 | — |  | P | Dnaa | Sthayi |
 | — |  | S' | ri | Sthayi |
-| S' (syllable differs) |  | S' | ye | Sthayi |
+| — |  | S' | ye | Sthayi |
 | — |  | N |  | Sthayi |
 | — |  | D | aa | Sthayi |
 | — |  | P |  | Sthayi |
@@ -50,9 +51,16 @@
 | — |  | M |  | Sthayi |
 | — |  | G |  | Sthayi |
 | — |  | P | re | Sthayi |
+| — |  | S' |  | Antara |
+| — |  | S' | bo | Antara |
+| — |  | S' |  | Antara |
 | D |  | — |  |  |
+| — |  | S' |  | Antara |
+| — |  | S' | bo | Antara |
+| — |  | S' |  | Antara |
 | D |  | — |  |  |
 | G |  | — |  |  |
+| — |  | G' | ho | Antara |
 | — |  | P |  | Antara |
 | — |  | S' |  | Antara |
 | — |  | M |  | Antara |
@@ -83,15 +91,16 @@
 | — |  | G |  | Antara |
 | — |  | P | re | Antara |
 | P |  | — |  |  |
+| — |  | R' | do | Sanchari |
+| — |  | P | je | Sanchari |
+| — |  | S' | ni | Abhog |
+| D |  | P |  | Abhog |
+| P (syllable differs) |  | P | si | Abhog |
+| — |  | S' | ni | Abhog |
 | D |  | — |  |  |
-| D |  | — |  |  |
-| G |  | — |  |  |
-| — |  | S' | bir | Abhog |
-| — |  | N |  | Abhog |
-| — |  | N | aan | Abhog |
-| — |  | D |  | Abhog |
-| — |  | S' |  | Abhog |
-| — |  | N | dha | Abhog |
+| G |  | P |  | Abhog |
+| P (syllable differs) |  | P | moy | Abhog |
+| — |  | G' |  | Abhog |
 | — |  | M |  | Abhog |
 | — |  | M | re | Abhog |
 | — |  | D |  | Abhog |
@@ -101,6 +110,7 @@
 | — |  | M |  | Abhog |
 | — |  | P | Dnaa | Sthayi |
 | — |  | S' | ri | Sthayi |
+| — |  | S' | ye | Sthayi |
 | — |  | N |  | Sthayi |
 | — |  | D | aa | Sthayi |
 | — |  | P |  | Sthayi |
@@ -120,8 +130,6 @@
 | — |  | P |  | Sthayi |
 | — |  | D |  | Sthayi |
 | — |  | D | o | Sthayi |
-| — |  | M |  | Sthayi |
-| — |  | M | paa | Sthayi |
 | — |  | P |  | Sthayi |
 | — |  | M |  | Sthayi |
 | — |  | G |  | Sthayi |
@@ -131,15 +139,17 @@
 | — |  | P | mar | Sthayi |
 | — |  | P | sur | Sthayi |
 | — |  | N |  | Sthayi |
+| — |  | N | gu | Sthayi |
+| — |  | D | li | Sthayi |
+| — |  | N |  | Sthayi |
+| — |  | S' |  | Sthayi |
 | — |  | D | paay | Sthayi |
-| N (syllable differs) | ধা | N |  | Sthayi |
-| — |  | D |  | Sthayi |
+| — |  | N |  | Sthayi |
 | — |  | P | cho | Sthayi |
-| — |  | P |  | Sthayi |
+| — |  | M |  | Sthayi |
 | — |  | D | ron | Sthayi |
 | — |  | P | aa | Sthayi |
-| M (syllable differs) | রে | M |  | Sthayi |
-| — |  | P | mi | Sthayi |
+| — |  | M |  | Sthayi |
 | — |  | D | paai | Sthayi |
 | — |  | N |  | Sthayi |
 | — |  | S' |  | Sthayi |
@@ -153,10 +163,13 @@
 | — |  | N | re | Sthayi |
 | — |  | D |  | Sthayi |
 | — |  | N |  | Sthayi |
-| — |  | S' |  | Sthayi |
+| — |  | D |  | Sthayi |
+| S' (syllable differs) |  | S' | mi | Sthayi |
+| — |  | P |  | Sthayi |
 | — |  | M |  | Sthayi |
+| — |  | P | Dnaa | Sthayi |
 | — |  | S' | ri | Sthayi |
-| S' (syllable differs) |  | S' | ye | Sthayi |
+| — |  | S' | ye | Sthayi |
 | — |  | N |  | Sthayi |
 | — |  | D | aa | Sthayi |
 | — |  | P |  | Sthayi |

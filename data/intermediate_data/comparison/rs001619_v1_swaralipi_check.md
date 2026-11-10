@@ -1,19 +1,19 @@
 # rs001619: ABC draft against the swaralipi text, note by note
 
 - draft: `data/intermediate_data/abc/rs001619/v1.abc` (transposed -11 semitones to match); swaralipi: `data/intermediate_data/swaralipi/rs001619.json`
-- swaralipi notes in singing order: 301 main + 26 grace; draft notes: 106 (1 of them play a swaralipi grace note as a full note)
+- swaralipi notes in singing order: 280 main + 26 grace; draft notes: 106 (1 of them play a swaralipi grace note as a full note)
 
 | | count | share |
 |---|---|---|
-| same pitch | 104 | 35% of the swaralipi, 99% of the draft (with graces) |
-| other pitch | 1 | |
-| in the swaralipi only | 196 | |
+| same pitch | 103 | 37% of the swaralipi, 98% of the draft (with graces) |
+| other pitch | 2 | |
+| in the swaralipi only | 175 | |
 | in the draft only | 0 | |
-| same place in the matra (matched notes) | 71 / 104 | 68% |
-| same time to the next matched note | 47 / 103 | 46% |
-| syllable starts on both | 60 | |
-| syllable in the swaralipi only | 9 | |
-| syllable in the draft only | 19 | |
+| same place in the matra (matched notes) | 71 / 103 | 69% |
+| same time to the next matched note | 43 / 102 | 42% |
+| syllable starts on both | 58 | |
+| syllable in the swaralipi only | 6 | |
+| syllable in the draft only | 20 | |
 
 ## Differences in order
 
@@ -39,12 +39,10 @@
 | r |  | — |  |  |
 | r (syllable differs) |  | r | Maa | Stanza 1 |
 | S (syllable differs) |  | S | na? | Stanza 1 |
-| S | বি | — |  |  |
-| S | ধু | n, | Man | Stanza 1 |
+| S | বি | n, | Man | Stanza 1 |
 | r | বি | — |  |  |
 | g | ক | — |  |  |
 | m | ল | — |  |  |
-| m | হ | — |  |  |
 | m | য়ে | — |  |  |
 | g |  | — |  |  |
 | d |  | — |  |  |
@@ -67,9 +65,7 @@
 | g | লে | — |  |  |
 | g | র | — |  |  |
 | S | নে | — |  |  |
-| S | য | — |  |  |
 | d | ত | — |  |  |
-| d | ব | — |  |  |
 | P | লি | — |  |  |
 | P | না | — |  |  |
 | P | রা | — |  |  |
@@ -78,15 +74,12 @@
 | d |  | — |  |  |
 | P | ম | — |  |  |
 | m | লি | — |  |  |
-| m | ন | — |  |  |
-| m | হ | — |  |  |
 | m | য়ে | — |  |  |
 | P |  | — |  |  |
 | P | ছে | — |  |  |
-| g |  | — |  |  |
 | g | বা | — |  |  |
 | R |  | — |  |  |
-| g (syllable differs) | তি | g |  | Stanza 1 |
+| g | তি | — |  |  |
 | r (syllable differs) |  | r | Maa | Stanza 1 |
 | S (syllable differs) |  | S | na | Stanza 1 |
 | m (syllable differs) | লে | m |  | Stanza 1 |
@@ -96,11 +89,9 @@
 | S |  | — |  |  |
 | d, | "ও | — |  |  |
 | n, | যে" | — |  |  |
-| S | বি | — |  |  |
 | r | বি | — |  |  |
 | g | ক | — |  |  |
 | m | ল | — |  |  |
-| m | হ | — |  |  |
 | m | য়ে | — |  |  |
 | g |  | — |  |  |
 | d (syllable differs) |  | d | to | Stanza 2 |
@@ -127,11 +118,9 @@
 | S | নে | — |  |  |
 | S | বি | — |  |  |
 | S | ধু | — |  |  |
-| S | র | — |  |  |
 | r | বি | — |  |  |
 | g | ক | — |  |  |
 | m | ল | — |  |  |
-| m | হ | — |  |  |
 | m | য়ে | — |  |  |
 | g |  | — |  |  |
 | d (syllable differs) |  | d | bo | Stanza 2 |
@@ -158,11 +147,9 @@
 | S | নে | — |  |  |
 | S | বি | — |  |  |
 | S | ধু | — |  |  |
-| S | র | — |  |  |
 | r | বি | — |  |  |
 | g | ক | — |  |  |
 | m | ল | — |  |  |
-| m | হ | — |  |  |
 | m | য়ে | — |  |  |
 | g |  | — |  |  |
 | d (syllable differs) |  | d | li | Stanza 2 |
@@ -185,21 +172,16 @@
 | g | র | — |  |  |
 | r | ব | — |  |  |
 | S | নে | — |  |  |
-| S | আ | — |  |  |
-| d | মি | — |  |  |
-| d | য | — |  |  |
-| d (syllable differs) | ত | d |  | Stanza 2 |
+| d (syllable differs) | মি | d |  | Stanza 2 |
 | P | ব | — |  |  |
 | P | লি | — |  |  |
-| P | ত | — |  |  |
 | P | বে | — |  |  |
 | m |  | — |  |  |
 | d (syllable differs) |  | d | Mo | Stanza 2 |
 | m | বা | — |  |  |
-| P |  | — |  |  |
-| P (syllable differs) | তে | P |  | Stanza 2 |
+| P | তে | — |  |  |
 | m (syllable differs) |  | m | ye | Stanza 2 |
-| g |  | — |  |  |
+| g (syllable differs) |  | g | che | Stanza 2 |
 | R (syllable differs) |  | R | baa | Stanza 2 |
 | g (syllable differs) | বে | g |  | Stanza 2 |
 | S (syllable differs) |  | S | ti | Stanza 2 |
@@ -208,8 +190,7 @@
 | n, (syllable differs) |  | n, | Na | Stanza 2 |
 | S (syllable differs) |  | S | ? | Stanza 2 |
 | d, | "ও | — |  |  |
-| N, | যে" | — |  |  |
-| m | ল | — |  |  |
+| N, | যে" | S | Bi | Stanza 3 |
 | g (syllable differs) |  | g | ye | Stanza 3 |
 | g (syllable differs) | নে | g |  | Stanza 3 |
 | r (syllable differs) |  | r | ne? | Stanza 3 |
@@ -224,11 +205,8 @@
 | S | নে | — |  |  |
 | S | বি | — |  |  |
 | S | ধু | — |  |  |
-| S | র | — |  |  |
 | r | বি | — |  |  |
-| m | ল | — |  |  |
-| m | হ | — |  |  |
-| m (syllable differs) | য়ে | m |  | Stanza 3 |
+| m | য়ে | — |  |  |
 | d |  | — |  |  |
 | P | খে | — |  |  |
 | m (syllable differs) | পা | m |  | Stanza 3 |
