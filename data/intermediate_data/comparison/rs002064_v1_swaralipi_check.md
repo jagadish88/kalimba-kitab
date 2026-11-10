@@ -1,19 +1,19 @@
 # rs002064: ABC draft against the swaralipi text, note by note
 
 - draft: `data/intermediate_data/abc/rs002064/v1.abc` (transposed +0 semitones to match); swaralipi: `data/intermediate_data/swaralipi/rs002064.json`
-- swaralipi notes in singing order: 113 main + 25 grace; draft notes: 170 (2 of them play a swaralipi grace note as a full note)
+- swaralipi notes in singing order: 123 main + 25 grace; draft notes: 170 (1 of them play a swaralipi grace note as a full note)
 
 | | count | share |
 |---|---|---|
-| same pitch | 110 | 97% of the swaralipi, 66% of the draft (with graces) |
+| same pitch | 120 | 98% of the swaralipi, 71% of the draft (with graces) |
 | other pitch | 2 | |
 | in the swaralipi only | 1 | |
-| in the draft only | 56 | |
-| same place in the matra (matched notes) | 109 / 110 | 99% |
-| same time to the next matched note | 90 / 109 | 83% |
-| syllable starts on both | 64 | |
-| syllable in the swaralipi only | 2 | |
-| syllable in the draft only | 18 | |
+| in the draft only | 47 | |
+| same place in the matra (matched notes) | 119 / 120 | 99% |
+| same time to the next matched note | 109 / 119 | 92% |
+| syllable starts on both | 86 | |
+| syllable in the swaralipi only | 3 | |
+| syllable in the draft only | 2 | |
 
 ## Differences in order
 
@@ -21,13 +21,6 @@
 |---|---|---|---|---|
 | P | আ | P, | aa | Sthayi |
 | D |  | D, |  | Sthayi |
-| G (syllable differs) |  | G | To | Sthayi |
-| G (syllable differs) |  | G | maay | Sthayi |
-| — |  | P |  | Sthayi |
-| — |  | P | aa | Sthayi |
-| — |  | P | maay | Sthayi |
-| P (syllable differs) |  | P | mi | Sthayi |
-| D (syllable differs) |  | D | le | Sthayi |
 | — |  | S | To | Sthayi |
 | — |  | G |  | Sthayi |
 | — |  | G | mar | Sthayi |
@@ -63,25 +56,8 @@
 | — |  | G | saa | Antara |
 | R (syllable differs) | রা | R |  | Antara |
 | — |  | S | ra | Antara |
-| G (syllable differs) |  | G | To | Sanchari |
-| G (syllable differs) |  | G | mar | Sanchari |
-| — |  | P |  | Sanchari |
-| — |  | P | aa | Sanchari |
-| — |  | P | chhe | Sanchari |
-| P (syllable differs) |  | P | daa | Sanchari |
-| P (syllable differs) |  | P | nga | Sanchari |
 | D | আ | — |  |  |
-| G (syllable differs) |  | G | To | Abhog |
-| G (syllable differs) |  | G | maar | Abhog |
-| — |  | P |  | Abhog |
-| P (syllable differs) |  | P | mo | Abhog |
-| M (syllable differs) |  | M | ne | Abhog |
-| — |  | P | bhoy | Abhog |
-| P (syllable differs) |  | P | aa | Abhog |
-| D (syllable differs) |  | D | bhoy | Abhog |
-| P (syllable differs) |  | P | haa | Abhog |
-| — |  | S' |  | Abhog |
-| S' (syllable differs) |  | S' | ra | Abhog |
+| P (syllable differs) | য় | P |  | Abhog |
 | — |  | S | To | Sthayi |
 | — |  | G |  | Sthayi |
 | — |  | G | mar | Sthayi |

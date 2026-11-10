@@ -1,38 +1,24 @@
 # rs000262: ABC draft against the swaralipi text, note by note
 
 - draft: `data/intermediate_data/abc/rs000262/v1.abc` (transposed +0 semitones to match); swaralipi: `data/intermediate_data/swaralipi/rs000262.json`
-- swaralipi notes in singing order: 313 main + 58 grace; draft notes: 506 (52 of them play a swaralipi grace note as a full note)
+- swaralipi notes in singing order: 320 main + 58 grace; draft notes: 506 (52 of them play a swaralipi grace note as a full note)
 
 | | count | share |
 |---|---|---|
-| same pitch | 312 | 100% of the swaralipi, 72% of the draft (with graces) |
+| same pitch | 319 | 100% of the swaralipi, 73% of the draft (with graces) |
 | other pitch | 0 | |
 | in the swaralipi only | 1 | |
-| in the draft only | 142 | |
-| same place in the matra (matched notes) | 196 / 312 | 63% |
-| same time to the next matched note | 144 / 311 | 46% |
-| syllable starts on both | 183 | |
+| in the draft only | 135 | |
+| same place in the matra (matched notes) | 197 / 319 | 62% |
+| same time to the next matched note | 153 / 318 | 48% |
+| syllable starts on both | 194 | |
 | syllable in the swaralipi only | 9 | |
-| syllable in the draft only | 10 | |
+| syllable in the draft only | 3 | |
 
 ## Differences in order
 
 | swaralipi | lyric | draft | draft syllable | section |
 |---|---|---|---|---|
-| — |  | S |  | Sthayi |
-| S (syllable differs) |  | S | Aa | Sthayi |
-| — |  | P |  | Sthayi |
-| — |  | P | pe | Sthayi |
-| P (syllable differs) |  | P | te | Sthayi |
-| P (syllable differs) |  | P | roi | Sthayi |
-| — |  | P |  | Sthayi |
-| P (syllable differs) |  | P | O | Sthayi |
-| — |  | D |  | Sthayi |
-| D (syllable differs) |  | D | maar | Sthayi |
-| — |  | P |  | Sthayi |
-| P (syllable differs) |  | P | pon | Sthayi |
-| — |  | D |  | Sthayi |
-| D (syllable differs) |  | D | doy | Sthayi |
 | D |  | — |  |  |
 | — |  | G | re | Sthayi |
 | — |  | R |  | Sthayi |

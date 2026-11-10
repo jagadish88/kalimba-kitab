@@ -141,8 +141,14 @@ def load(path):
             continue                             # a lyric row, or an alternative ([..])
         if all(c in ('', '|') or c in BARS for c in r):
             continue                             # only marks
-        nxt = rows[k + 1] if k + 1 < len(rows) else []
-        lines.append((r, nxt if nxt and not is_swara_row(nxt) else []))
+        # the lyric row: the next row that is not a swara row, skipping rows of marks only
+        # (<w> <x>: the ends of a slur under a melisma)
+        lyr, j = [], k + 1
+        while j < len(rows) and is_swara_row(rows[j]) and all(c in ('', '|') or c in BARS for c in rows[j]):
+            j += 1
+        if j < len(rows) and not is_swara_row(rows[j]):
+            lyr = rows[j]
+        lines.append((r, lyr))
     return doc, lines
 
 

@@ -1,19 +1,19 @@
 # rs001619: ABC draft against the swaralipi text, note by note
 
 - draft: `data/intermediate_data/abc/rs001619/v1.abc` (transposed -11 semitones to match); swaralipi: `data/intermediate_data/swaralipi/rs001619.json`
-- swaralipi notes in singing order: 295 main + 26 grace; draft notes: 106 (1 of them play a swaralipi grace note as a full note)
+- swaralipi notes in singing order: 301 main + 26 grace; draft notes: 106 (1 of them play a swaralipi grace note as a full note)
 
 | | count | share |
 |---|---|---|
 | same pitch | 104 | 35% of the swaralipi, 99% of the draft (with graces) |
 | other pitch | 1 | |
-| in the swaralipi only | 190 | |
+| in the swaralipi only | 196 | |
 | in the draft only | 0 | |
 | same place in the matra (matched notes) | 71 / 104 | 68% |
-| same time to the next matched note | 45 / 103 | 44% |
-| syllable starts on both | 52 | |
+| same time to the next matched note | 47 / 103 | 46% |
+| syllable starts on both | 60 | |
 | syllable in the swaralipi only | 9 | |
-| syllable in the draft only | 27 | |
+| syllable in the draft only | 19 | |
 
 ## Differences in order
 
@@ -58,14 +58,14 @@
 | g | গু | — |  |  |
 | R | ন | — |  |  |
 | g | ক | — |  |  |
-| R |  | — |  |  |
-| g |  | — |  |  |
-| m |  | — |  |  |
-| m |  | — |  |  |
+| R | রি | — |  |  |
+| g | ছে | — |  |  |
+| m | হা | — |  |  |
+| m | হা | — |  |  |
 | S |  | — |  |  |
-| g |  | — |  |  |
-| g |  | — |  |  |
-| r (syllable differs) |  | r | Na | Stanza 1 |
+| g | ফু | — |  |  |
+| g | লে | — |  |  |
+| g | র | — |  |  |
 | S | নে | — |  |  |
 | S | য | — |  |  |
 | d | ত | — |  |  |
@@ -115,14 +115,15 @@
 | g | গু | — |  |  |
 | R | ন | — |  |  |
 | g | ক | — |  |  |
-| R |  | — |  |  |
-| g |  | — |  |  |
-| m |  | — |  |  |
-| m |  | — |  |  |
+| R | রি | — |  |  |
+| g | ছে | — |  |  |
+| m | হা | — |  |  |
+| m | হা | — |  |  |
 | S |  | — |  |  |
-| g |  | — |  |  |
-| g |  | — |  |  |
-| r |  | — |  |  |
+| g | ফু | — |  |  |
+| g | লে | — |  |  |
+| g | র | — |  |  |
+| r | ব | — |  |  |
 | S | নে | — |  |  |
 | S | বি | — |  |  |
 | S | ধু | — |  |  |
@@ -145,14 +146,15 @@
 | g | গু | — |  |  |
 | R | ন | — |  |  |
 | g | ক | — |  |  |
-| R |  | — |  |  |
-| g |  | — |  |  |
-| m |  | — |  |  |
-| m |  | — |  |  |
+| R | রি | — |  |  |
+| g | ছে | — |  |  |
+| m | হা | — |  |  |
+| m | হা | — |  |  |
 | S |  | — |  |  |
-| g |  | — |  |  |
-| g |  | — |  |  |
-| r |  | — |  |  |
+| g | ফু | — |  |  |
+| g | লে | — |  |  |
+| g | র | — |  |  |
+| r | ব | — |  |  |
 | S | নে | — |  |  |
 | S | বি | — |  |  |
 | S | ধু | — |  |  |
@@ -174,14 +176,14 @@
 | g | গু | — |  |  |
 | R | ন | — |  |  |
 | g | ক | — |  |  |
-| R |  | — |  |  |
-| g |  | — |  |  |
-| m |  | — |  |  |
-| m (syllable differs) |  | m | ti | Stanza 2 |
+| R | রি | — |  |  |
+| g | ছে | — |  |  |
+| m | হা | — |  |  |
 | S |  | — |  |  |
-| g |  | — |  |  |
-| g |  | — |  |  |
-| r |  | — |  |  |
+| g | ফু | — |  |  |
+| g | লে | — |  |  |
+| g | র | — |  |  |
+| r | ব | — |  |  |
 | S | নে | — |  |  |
 | S | আ | — |  |  |
 | d | মি | — |  |  |
@@ -212,14 +214,13 @@
 | g (syllable differs) | নে | g |  | Stanza 3 |
 | r (syllable differs) |  | r | ne? | Stanza 3 |
 | S (syllable differs) |  | S | ? | Stanza 3 |
-| R (syllable differs) |  | R | ri | Stanza 3 |
-| g |  | — |  |  |
-| m |  | — |  |  |
-| m |  | — |  |  |
+| g | ছে | — |  |  |
+| m | হা | — |  |  |
+| m | হা | — |  |  |
 | S |  | — |  |  |
-| g |  | — |  |  |
-| g (syllable differs) |  | g | chhe | Stanza 3 |
-| r |  | — |  |  |
+| g | ফু | — |  |  |
+| g | লে | — |  |  |
+| r | ব | — |  |  |
 | S | নে | — |  |  |
 | S | বি | — |  |  |
 | S | ধু | — |  |  |
@@ -238,11 +239,8 @@
 | g | গু | — |  |  |
 | R | ন | — |  |  |
 | g | ক | — |  |  |
-| R |  | — |  |  |
-| g (syllable differs) |  | g | Phu | Stanza 3 |
-| m |  | — |  |  |
-| m |  | — |  |  |
+| R | রি | — |  |  |
+| g | ছে | — |  |  |
+| m | হা | — |  |  |
+| m | হা | — |  |  |
 | S |  | — |  |  |
-| g (syllable differs) |  | g | le | Stanza 3 |
-| g (syllable differs) |  | g | ro | Stanza 3 |
-| r (syllable differs) |  | r | bo | Stanza 3 |
