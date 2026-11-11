@@ -26,7 +26,7 @@ fi
 python3 scripts/ktab_to_video/fold_repeats.py $W/$S.ktab $D/v1.ktab "${HDR[@]}" > /dev/null
 ktab check $D/v1.ktab | tail -1
 SUBS=$(grep "no free tine" $W/$S.conv.txt | sed -E 's/: no free tine to retune, played as /->/; s/ \(tine.*//' | paste -sd' ')
-SRC=$(grep -E "^data/raw_data/(midi/$S.mid|text/lyrics/$S.txt)," data/raw_data/source_provenance.csv | cut -d, -f2 | paste -sd';')
+SRC=$(grep -E "^data/raw_data/(midi/$S.mid|text/lyrics/$S.txt)," data/raw_data/source_provenance.csv | cut -d, -f2 | tr -d '\r' | paste -sd';')
 TEMPO=$(grep -m1 "^Q:" $A/v2.abc | cut -d= -f2)
 echo "$S,v1,$A/v1.abc,midi_to_ktab,$SRC;snltr,,$(date +%F),\"notes from the MIDI melody track (check against the MIDI bars: 0 errors); syllables from the SNLTR swaralipi aligned by midi_swara_abc.py; Latin from Geetabitan\"" >> data/intermediate_data/abc/abc_catalog.csv
 echo "$S,v2,$A/v2.abc,midi_to_ktab,$SRC;snltr,$A/v1.abc,$(date +%F),\"v1 with note values halved\"" >> data/intermediate_data/abc/abc_catalog.csv

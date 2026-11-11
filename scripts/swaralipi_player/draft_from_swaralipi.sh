@@ -18,7 +18,7 @@ python3 scripts/ktab_to_video/fold_repeats.py $W/$S.ktab $D/v1.ktab "${HDR[@]}" 
 ktab check $D/v1.ktab | tail -1
 OFF=$(grep -c "no free tine" $W/$S.conv.txt || true)
 SUBS=$(grep "no free tine" $W/$S.conv.txt | sed -E 's/: no free tine to retune, played as /->/; s/ \(tine.*//' | paste -sd' ')
-SRC=$(grep -E ",data/raw_data/text/lyrics/$S.txt" data/raw_data/source_provenance.csv | cut -d, -f2 | head -1)
+SRC=$(grep -E ",data/raw_data/text/lyrics/$S.txt" data/raw_data/source_provenance.csv | cut -d, -f2 | tr -d '\r' | head -1)
 echo "$S,v1,$A/v1.abc,swaralipi_to_ktab,snltr;$SRC,,$(date +%F),\"from the SNLTR swaralipi text by swara_abc.py (one matra = one eighth, main tune only, grace notes left out); Latin lyrics aligned from Geetabitan\"" >> data/intermediate_data/abc/abc_catalog.csv
 echo "$S,v1,$D/v1.ktab,swaralipi_to_ktab,snltr;$SRC,$A/v1.abc,$(date +%F),\"abc_to_ktab.py --transpose $T${R:+, retune $R}; played a semitone off: ${SUBS:-none}; repeats folded; meant for $BPM bpm; no PDF or video yet\"" >> data/intermediate_data/ktab/ktab_catalog.csv
 echo "KEY $T retune ${R:-none} off: ${SUBS:-none}"
