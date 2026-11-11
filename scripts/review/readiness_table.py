@@ -49,6 +49,12 @@ def key_tonic(abc):
             {'Db': 1, 'D#': 3, 'Gb': 6, 'G#': 8, 'A#': 10, 'Cb': 11, 'E#': 5, 'B#': 0, 'Fb': 4}.get(m.group(1), 0))
 
 
+def fmt_flags(f):
+    if not f:
+        return '--'
+    return f"{f['strong']}/{f['weak'] + f['octave']}"
+
+
 def key(s):
     return re.sub(r'[^a-z]', '', s.lower())
 
@@ -65,6 +71,11 @@ def main():
     titles = {r[0]: r[1] for r in csv.reader(open('data/raw_data/text/catalog.csv', encoding='utf-8')) if r}
     midi = {r[0] for r in csv.reader(open('data/raw_data/midi/midi_catalog.csv', encoding='utf-8')) if len(r) > 2 and r[2].endswith('.mid')}
     roll = {r['song']: int(r['draft_pct']) for r in csv.DictReader(open('data/intermediate_data/comparison/roll_vs_abc.csv'))}
+    flags = {}
+    sc = 'data/intermediate_data/comparison/source_check.csv'
+    if os.path.exists(sc):
+        for f in csv.DictReader(open(sc, encoding='utf-8')):
+            flags.setdefault(f['song'], {'strong': 0, 'weak': 0, 'octave': 0})[f['kind']] += 1
     out = []
     for s in sorted(set(last) | set(done)):
         r = last.get(s)
@@ -122,7 +133,8 @@ def main():
                 bp = 100 * info['bad'] / max(1, info['n'])
                 nr = len(info['ret'])
                 rl = info['roll']
-                if bp <= 2 and nr <= 1 and rl is not None and rl >= 94:
+                fl = flags.get(s, {})
+                if bp <= 2 and nr <= 1 and rl is not None and rl >= 94 and not fl.get('strong'):
                     info['tier'] = 'A'
                 elif bp <= 5 and nr <= 2 and (rl is None or rl >= 87):
                     info['tier'] = 'B'
@@ -140,7 +152,7 @@ def main():
         bad = '--' if x['bad'] is None else f"{x['bad']} ({100 * x['bad'] / max(1, x['n']):.1f}\\%)"
         lines.append(f"\\rowcolor{{{color[x['tier']]}}} {i} & {tex(x['title'])} & {x['s']} & {x['midi']} & {x['sw']} & "
                      f"{'--' if x['roll'] is None else str(x['roll']) + chr(92) + '%'} & {tex(x['scale']) or '--'} & "
-                     f"{', '.join(x['ret']) or 'none'} & {bad} & {'--' if x['lyr'] is None else str(x['lyr']) + chr(92) + '%'} & {x['tier']}\\\\")
+                     f"{', '.join(x['ret']) or 'none'} & {bad} & {'--' if x['lyr'] is None else str(x['lyr']) + chr(92) + '%'} & {fmt_flags(flags.get(x['s']))} & {x['tier']}\\\\")
     doc = r"""\documentclass[9pt]{article}
 \usepackage[a4paper,landscape,margin=0.9cm]{geometry}
 \usepackage{longtable,booktabs,xcolor,colortbl}
@@ -149,15 +161,16 @@ def main():
 \begin{document}
 \begin{center}{\Large\bfseries Kalimba tab drafts: readiness for the main dataset}\\[3pt]
 {\small %d songs: done %d, A %d, B %d, C %d. Sorted by tier, then by roll match $-$ 3$\times$off-note \%% $-$ 4$\times$retuned tines (+5 for MIDI notes).}\end{center}
-\noindent{\small\textbf{Tier A}: off notes $\le$2\%%, at most 1 retuned tine, roll match $\ge$94\%%.
+\noindent{\small\textbf{Tier A}: off notes $\le$2\%%, at most 1 retuned tine, roll match $\ge$94\%%, no strong source flag.
 \textbf{B}: off notes $\le$5\%%, $\le$2 retunes, roll match $\ge$87\%% or no roll. \textbf{C}: the rest. \textbf{done}: in data/dataset/.
 \textbf{Roll}: share of the draft's notes Arup Paul's piano roll plays in order. \textbf{Off notes}: notes with no tine after the retuning, played a semitone off.
-\textbf{Scale}: the note Sa is on (the kalimba is in C). \textbf{Lyrics}: share of the tab's words that are words of the Geetabitan lyrics.}
+\textbf{Scale}: the note Sa is on (the kalimba is in C). \textbf{Lyrics}: share of the tab's words that are words of the Geetabitan lyrics.
+\textbf{Flags}: places where independent sources disagree with the tab (source\_check.csv): strong (two sources agree on another note) / weak (one source, a run of notes). Tier A needs no strong flag.}
 \vspace{4pt}
 \footnotesize\setlength{\tabcolsep}{4pt}
-\begin{longtable}{r l l c l r l l r r c}
+\begin{longtable}{r l l c l r l l r r r c}
 \toprule
-\# & Song & id & MIDI & Swaralipi & Roll & Scale & Tines retuned & Off notes & Lyrics & Tier\\
+\# & Song & id & MIDI & Swaralipi & Roll & Scale & Tines retuned & Off notes & Lyrics & Flags & Tier\\
 \midrule\endhead
 """ % (len(out), cnt['done'], cnt['A'], cnt['B'], cnt['C']) + '\n'.join(lines) + '\n\\bottomrule\\end{longtable}\\end{document}\n'
     wd = '/tmp/kk_work/rtable'
