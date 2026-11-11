@@ -1,0 +1,50 @@
+X:1
+T:Tomar Khola Haowa
+C:Rabindranath Tagore
+S:notes: KumarjitDey's MuseScore arrangement (https://musescore.com/user/43447736/scores/23686963), read off the screen bar by bar; melody = top note of the right hand
+S:lyrics: as printed in that score (capitals moved to the starts of phrases)
+N:Chords in the right hand reduced to their top note; a grace note left out (bar 46).
+N:Read by eye, not checked against a MIDI.
+N:v2: v1 with note values halved (L:1/16, M:2/4, Q:1/4=60 is the speed of v1 at 120).
+M:2/4
+L:1/16
+Q:1/4=60
+K:A
+z4 e2 d c | B2 B e e d d/ e/ d/ c/ | c8 | A c c d d e e f |
+w: To mar _ | kho la _ ha _ _ o _ _ | wa | Lagiye _ _ _ _ paa _ _ |
+e3 f e/ f/ e d c | B2 B e e d d/ e/ d/ c/ | c6 a a | a3 c' b2 c'/ b/ a |
+w: le O _ to mar _ _ | kho la _ ha _ _ o _ _ | wa _ _ | Tuk ro ko _ re _ |
+a2 a2 a2 b/ a/ g | g3 b a2 b/ a/ g | f g e2 e2 f/ e/ d |
+w: aa chi aa _ mi _ | Dub te ra _ ji _ | aa chi _ aa _ mi _ |
+d3 f e2 f/ e/ d | d e c2 c2 d c | B2 B e e d d/ e/ d/ c/ |
+w: Dub te ra _ ji _ | aa chi _ to mar _ | kho la _ ha _ _ o _ _ |
+c8 | A2 A c c2 c d | e2 e2 e f e2 | d2 d f e2 f/ e/ d |
+w: wai | Shokal _ _ amar _ _ | gelo _ michhe _ _ | Bikel _ je _ jaye _ _ |
+d2 e2 f e d2 | e d c2 c d/ c/ B c | A2 A c c2 c d | e2 e2 e2 f/ e/ d |
+w: tari _ _ pee chhe | go _ _ _ _ _ _ _ | Shokal _ _ amar _ _ | gelo _ michhe _ _ _ |
+d2 d f e2 f/ e/ d | d2 e2 f e d2 | e d c2 g2 g2 | e6 a2 |
+w: Bikel _ je _ jaye _ _ | tari _ _ peeche _ | go _ _ Re kho | na aa |
+f4 g2 g2 | e6 a2 | e8 | g2 g b g a a2 |
+w: Aar ben dho | na aa | aar | Kul ler _ ka _ chha |
+a2 a2 a2 b/ a/ g | g3 b a2 b/ a/ g | f g e2 e2 f/ e/ d |
+w: Ka chhi aa _ mi _ | dub te ra _ ji _ | Aa chi _ aa _ mi _ |
+d3 f e2 f/ e/ d | d e c2 c2 d c | B2 B e e d d/ e/ d/ c/ | c8 |
+w: dub te ra _ ji _ | Aa chi _ to mar _ | kho la _ ha _ _ o _ _ | wai |
+A c c d d e e f | e3 f e/ f/ e d c | B2 B e e d d/ e/ d/ c/ |
+w: Lagiye _ _ _ _ paa _ _ | le O _ to mar _ _ | kho la _ ha _ _ o _ _ |
+c8 | A2 A c c2 c d | d2 e2 f e d2 | c2 c2 c d d2 |
+w: wai | Ma jhir _ la gi _ | a chi ja _ gi | Sho kol ra _ tri |
+d e e6 | e/ f5/ f f2 g/ f/ e | e/ f/ g g2 f/ g/ f e2 |
+w: be _ la | Dheo _ gulo _ je _ _ | amay _ _ _ niye _ _ _ |
+e/ f/ g g2 f/ g/ f e d | e d c6 | a3 c' b2 c'/ b/ a |
+w: Kore _ _ _ kebol _ _ _ _ | khela _ _ | Jhor ke a mi _ _ |
+a3 a a2 b/ a/ g | g3 b a2 b/ a/ g | f g e2 f2 g2 | f3 a a2 a2 |
+w: kor bo mi _ te _ | Dor bo na _ tar _ | bhruktite _ _ _ _ | Dao che re dao |
+a3 b a2 b/ a/ g | g2- g b a2 b/ a/ g | g a a2 a2 g/ a/ g |
+w: o go a mi _ _ | Too _ fan phe le _ _ | baanchi _ _ ami _ _ _ |
+g3 b a2 b/ a/ g | f g e2 e2 f/ e/ d | d3 f e2 f/ e/ d |
+w: Dub te ra _ ji _ | aa chi _ aa _ mi _ | Dub te ra _ ji _ |
+d e c2 c2 d c | B2 B e e d d/ e/ d/ c/ | c8 | A c c d d e e f |
+w: aa chi _ to mar _ | Kho la _ ha _ _ o _ _ | wai | Lagiye _ _ _ _ paa _ _ |
+e3 f e/ f/ e d c | B2 B e e d d/ e/ d/ c/ | c4 B4 | A8 |]
+w: le O _ to mar _ _ | Kho la _ ha _ _ o _ _ | wai _ | _ |
