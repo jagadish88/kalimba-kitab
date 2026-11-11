@@ -112,14 +112,12 @@ def check(s, kpath, abc_path, T):
     return agree, len(compared), Counter(x for x in compared if x != 'ok'), flags
 
 
-def main():
+def results(songs=None):
+    """-> ({song: dict(agree %, paired, missing, extra, different, pipeline)}, flags); drafts with an SNLTR swaralipi"""
     os.chdir(ROOT)
-    rows = list(csv.reader(open('data/intermediate_data/ktab/ktab_catalog.csv', encoding='utf-8')))
-    rows_by_path = {r[2]: r for r in rows[1:] if r and len(r) > 7}
-    last = {r[0]: r for r in rows[1:] if r and r[0].startswith('rs')}
-    ds = {r[0] for r in csv.reader(open('data/dataset/dataset_catalog.csv', encoding='utf-8')) if r}
-    songs = sys.argv[1:] or sorted(s for s in last if s not in ds and os.path.exists(f'data/intermediate_data/swaralipi/{s}.json'))
-    allflags, res = [], []
+    last, rows_by_path, all_songs = RC.drafts()
+    songs = songs or [s for s in all_songs if os.path.exists(f'data/intermediate_data/swaralipi/{s}.json')]
+    per, allflags = {}, []
     for s in songs:
         r = last[s]
         src = RC.source_of(s, rows_by_path, r)
@@ -128,22 +126,33 @@ def main():
         try:
             agree, n, c, flags = check(s, r[2], *src)
         except Exception as e:
-            print(f'{s}: ERROR {type(e).__name__}: {str(e)[:120]}'); continue
-        res.append((agree, s, r[3], n, c, len(flags)))
+            per[s] = dict(error=f'{type(e).__name__}: {str(e)[:120]}'); continue
+        per[s] = dict(agree=round(100 * agree), paired=n, missing=c['missing'], extra=c['extra'],
+                      different=c['different'], pipeline=r[3], flagged=len(flags))
         allflags += flags
-    res.sort()
-    for agree, s, pipe, n, c, nf in res:
-        print(f"{s}: {100 * agree:.0f}% of {n} paired notes agree ({pipe}); missing {c['missing']}, extra {c['extra']}, "
-              f"different {c['different']}; {nf} flagged (in runs)")
+    return per, allflags
+
+
+def main():
+    per, allflags = results(sys.argv[1:] or None)
+    for s, d in sorted(per.items(), key=lambda x: x[1].get('agree', -1)):
+        if 'error' in d:
+            print(f"{s}: ERROR {d['error']}"); continue
+        print(f"{s}: {d['agree']}% of {d['paired']} paired notes agree ({d['pipeline']}); missing {d['missing']}, "
+              f"extra {d['extra']}, different {d['different']}; {d['flagged']} flagged (in runs)")
     out = 'data/intermediate_data/comparison/syllable_check.csv'
     with open(out, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=['song', 'kind', 'tab', 'tab_syllable', 'swaralipi_syllable', 'context', 'ktab'])
         w.writeheader(); w.writerows(allflags)
+    with open('data/intermediate_data/comparison/syllable_agreement.csv', 'w', newline='') as f:
+        csv.writer(f).writerows([['song', 'syllable_agreement_pct']] +
+                                sorted((s, d['agree']) for s, d in per.items() if 'agree' in d))
     by = {}
-    for agree, s, pipe, *_ in res:
-        by.setdefault(pipe, []).append(agree)
-    print('\n' + '; '.join(f'{p}: {len(v)} drafts, mean {100 * sum(v) / len(v):.0f}%' for p, v in by.items()))
-    print(f'{len(res)} drafts, {len(allflags)} flagged spots -> {out}')
+    for d in per.values():
+        if 'agree' in d:
+            by.setdefault(d['pipeline'], []).append(d['agree'])
+    print('\n' + '; '.join(f'{p}: {len(v)} drafts, mean {sum(v) / len(v):.0f}%' for p, v in by.items()))
+    print(f'{len(per)} drafts, {len(allflags)} flagged spots -> {out}')
 
 
 if __name__ == '__main__':

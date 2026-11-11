@@ -1,0 +1,18 @@
+#!/bin/bash
+# git pre-commit hook: run the draft checks when a commit touches drafts or scripts.
+# Install (once):  ln -s ../../scripts/review/pre-commit .git/hooks/pre-commit
+# Skip once:       git commit --no-verify
+# Accept intended changes first:  python scripts/review/check_all.py --update-baseline
+if ! git diff --cached --name-only | grep -qE '^(data/intermediate_data/(abc|ktab|swaralipi)/|data/dataset/|scripts/|src/ktab/)'; then
+    exit 0
+fi
+cd "$(git rev-parse --show-toplevel)" || exit 1
+[ -f ~/activate ] && source ~/activate
+echo "pre-commit: checking the drafts against the baseline (about 20 s)..."
+python3 scripts/review/check_all.py 2>/dev/null
+status=$?
+if [ $status -ne 0 ]; then
+    echo "pre-commit: commit stopped. Fix the regressions, or accept intended changes with"
+    echo "  python scripts/review/check_all.py --update-baseline   (and add the baseline file to the commit)"
+fi
+exit $status

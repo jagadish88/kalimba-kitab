@@ -21,6 +21,7 @@ import csv
 import os
 import re
 import sys
+from collections import Counter
 from fractions import Fraction as Fr
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -177,39 +178,49 @@ def check(s, kpath, abc_path, T):
     return errs, warns
 
 
-def main():
-    os.chdir(ROOT)
+def drafts():
+    """-> (latest catalog row per song, rows by ktab path, songs not in data/dataset/)"""
     rows = list(csv.reader(open('data/intermediate_data/ktab/ktab_catalog.csv', encoding='utf-8')))
     rows_by_path = {r[2]: r for r in rows[1:] if r and len(r) > 7}
     last = {r[0]: r for r in rows[1:] if r and r[0].startswith('rs')}
     ds = {r[0] for r in csv.reader(open('data/dataset/dataset_catalog.csv', encoding='utf-8')) if r}
-    songs = sys.argv[1:] or sorted(s for s in last if s not in ds)
-    n_ok = n_err = n_warn = n_skip = 0
-    for s in songs:
+    return last, rows_by_path, sorted(s for s in last if s not in ds)
+
+
+def results(songs=None):
+    """-> {song: (status, detail)}; status: exact, lengths, error, known, skip"""
+    os.chdir(ROOT)
+    last, rows_by_path, all_songs = drafts()
+    out = {}
+    for s in songs or all_songs:
         r = last[s]
         src = source_of(s, rows_by_path, r)
         if not src or not os.path.exists(src[0]):
-            print(f'{s}: SKIP (no ABC with a --transpose in the catalog chain)')
-            n_skip += 1
-            continue
+            out[s] = ('skip', 'no ABC with a --transpose in the catalog chain'); continue
         try:
             errs, warns = check(s, r[2], *src)
         except Exception as e:                    # a tab that does not parse is an error too
             errs, warns = [f'{type(e).__name__}: {str(e)[:150]}'], []
         if errs and s in KNOWN:
-            n_skip += 1
-            print(f'{s}: KNOWN ({KNOWN[s]})')
+            out[s] = ('known', KNOWN[s])
         elif errs:
-            n_err += 1
-            print(f'{s}: ERROR {r[2]} <- {src[0]} ' + ' | '.join(errs + warns))
+            out[s] = ('error', f'{r[2]} <- {src[0]} ' + ' | '.join(errs + warns))
         elif warns:
-            n_warn += 1
-            print(f'{s}: lengths {r[2]} <- {src[0]} ' + ' | '.join(warns))
+            out[s] = ('lengths', f'{r[2]} <- {src[0]} ' + ' | '.join(warns))
         else:
-            n_ok += 1
-            print(f'{s}: OK')
-    print(f'\n{len(songs)} drafts: {n_ok} exact, {n_warn} with note-length differences only, {n_err} with errors, {n_skip} skipped or known')
-    sys.exit(1 if n_err else 0)
+            out[s] = ('exact', '')
+    return out
+
+
+def main():
+    res = results(sys.argv[1:] or None)
+    for s, (st, d) in res.items():
+        print(f'{s}: ' + {'exact': 'OK', 'lengths': 'lengths', 'error': 'ERROR', 'known': 'KNOWN', 'skip': 'SKIP'}[st]
+              + (f' {d}' if d else ''))
+    c = Counter(st for st, _ in res.values())
+    print(f"\n{len(res)} drafts: {c['exact']} exact, {c['lengths']} with note-length differences only, "
+          f"{c['error']} with errors, {c['skip'] + c['known']} skipped or known")
+    sys.exit(1 if c['error'] else 0)
 
 
 if __name__ == '__main__':

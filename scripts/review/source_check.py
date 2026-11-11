@@ -173,38 +173,43 @@ def check(s, kpath, abc_path, T, pipeline):
     return flags, used, len(dr)
 
 
-def main():
+def results(songs=None):
+    """-> ({song: dict(notes, sources, strong, weak, octave)}, flags)"""
     os.chdir(ROOT)
-    rows = list(csv.reader(open('data/intermediate_data/ktab/ktab_catalog.csv', encoding='utf-8')))
-    rows_by_path = {r[2]: r for r in rows[1:] if r and len(r) > 7}
-    last = {r[0]: r for r in rows[1:] if r and r[0].startswith('rs')}
-    ds = {r[0] for r in csv.reader(open('data/dataset/dataset_catalog.csv', encoding='utf-8')) if r}
-    songs = sys.argv[1:] or sorted(s for s in last if s not in ds)
-    allflags, summary = [], []
-    for s in songs:
+    last, rows_by_path, all_songs = RC.drafts()
+    per, allflags = {}, []
+    for s in songs or all_songs:
         r = last[s]
         src = RC.source_of(s, rows_by_path, r)
         if not src:
-            print(f'{s}: no ABC source'); continue
+            continue
         pipeline = r[3] if r[3] in ('midi_to_ktab', 'swaralipi_to_ktab') else \
             (rows_by_path.get(r[5], r)[3] if r[5].endswith('.ktab') else r[3])
         try:
             flags, used, n = check(s, r[2], *src, pipeline)
         except Exception as e:
-            print(f'{s}: ERROR {type(e).__name__}: {str(e)[:120]}'); continue
+            per[s] = dict(error=f'{type(e).__name__}: {str(e)[:120]}'); continue
         c = Counter(f['kind'] for f in flags)
-        summary.append((s, n, used, c))
+        per[s] = dict(notes=n, sources=used, strong=c['strong'], weak=c['weak'], octave=c['octave'],
+                      strong_lines=sorted({f['tab'].split(':')[0] for f in flags if f['kind'] == 'strong'}, key=int))
         allflags += flags
-        lines = sorted({f['tab'].split(':')[0] for f in flags if f['kind'] == 'strong'}, key=int)
-        print(f"{s}: {n} notes; sources: {', '.join(used) or 'none'}; strong {c['strong']}, weak {c['weak']}, octave {c['octave']}"
-              + (f"; strong at tab lines {', '.join(lines[:8])}" if lines else ''))
+    return per, allflags
+
+
+def main():
+    per, allflags = results(sys.argv[1:] or None)
+    for s, d in per.items():
+        if 'error' in d:
+            print(f"{s}: ERROR {d['error']}"); continue
+        print(f"{s}: {d['notes']} notes; sources: {', '.join(d['sources']) or 'none'}; strong {d['strong']}, "
+              f"weak {d['weak']}, octave {d['octave']}" + (f"; strong at tab lines {', '.join(d['strong_lines'][:8])}" if d['strong_lines'] else ''))
     out = 'data/intermediate_data/comparison/source_check.csv'
     with open(out, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=['song', 'kind', 'tab', 'note', 'sources', 'context', 'ktab'])
         w.writeheader(); w.writerows(allflags)
     tot = Counter(f['kind'] for f in allflags)
-    nos = sum(1 for x in summary if not [u for u in x[2] if 'ignored' not in u])
-    print(f"\n{len(summary)} drafts checked ({nos} with no usable independent source): "
+    nos = sum(1 for d in per.values() if 'error' not in d and not [u for u in d['sources'] if 'ignored' not in u])
+    print(f"\n{len(per)} drafts checked ({nos} with no usable independent source): "
           f"strong {tot['strong']}, weak {tot['weak']}, octave {tot['octave']} -> {out}")
 
 

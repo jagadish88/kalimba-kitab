@@ -71,17 +71,8 @@ def main():
     titles = {r[0]: r[1] for r in csv.reader(open('data/raw_data/text/catalog.csv', encoding='utf-8')) if r}
     midi = {r[0] for r in csv.reader(open('data/raw_data/midi/midi_catalog.csv', encoding='utf-8')) if len(r) > 2 and r[2].endswith('.mid')}
     roll = {r['song']: int(r['draft_pct']) for r in csv.DictReader(open('data/intermediate_data/comparison/roll_vs_abc.csv'))}
-    sylag = {}
-    for l in open('/tmp/kk_work/syl.txt', encoding='utf-8') if os.path.exists('/tmp/kk_work/syl.txt') else []:
-        m = re.match(r'(rs\d+): (\d+)% of', l)
-        if m:
-            sylag[m.group(1)] = int(m.group(2))
     sa = 'data/intermediate_data/comparison/syllable_agreement.csv'
-    if sylag:
-        with open(sa, 'w', newline='') as f:
-            csv.writer(f).writerows([['song', 'syllable_agreement_pct']] + sorted(sylag.items()))
-    elif os.path.exists(sa):
-        sylag = {r['song']: int(r['syllable_agreement_pct']) for r in csv.DictReader(open(sa))}
+    sylag = {r['song']: int(r['syllable_agreement_pct']) for r in csv.DictReader(open(sa))} if os.path.exists(sa) else {}
     flags = {}
     sc = 'data/intermediate_data/comparison/source_check.csv'
     if os.path.exists(sc):

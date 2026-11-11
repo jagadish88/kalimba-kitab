@@ -1,0 +1,1832 @@
+{
+ "dataset:rs000206": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs000242": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs000262": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs000362": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs000864": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs001071": {
+  "lint": {
+   "mid_capitals": 9,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs001141": {
+  "lint": {
+   "mid_capitals": 3,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs001714": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs001776": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "dataset:rs002164": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
+ "rs000011": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 93,
+  "weak": 10
+ },
+ "rs000016": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 93,
+  "weak": 10
+ },
+ "rs000017": {
+  "lint": {
+   "mid_capitals": 4,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 56,
+  "weak": 4
+ },
+ "rs000037": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 88,
+  "weak": 10
+ },
+ "rs000039": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000045": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 91,
+  "weak": 0
+ },
+ "rs000077": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000083": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 98,
+  "weak": 0
+ },
+ "rs000086": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 96,
+  "weak": 2
+ },
+ "rs000101": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 2,
+  "roundtrip": "exact",
+  "strong": 1,
+  "syllables": 66,
+  "weak": 2
+ },
+ "rs000111": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 0
+ },
+ "rs000115": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 92,
+  "weak": 2
+ },
+ "rs000130": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000133": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 95,
+  "weak": 9
+ },
+ "rs000141": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 2
+ },
+ "rs000146": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 13
+ },
+ "rs000151": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs000161": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000163": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs000186": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000197": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 92,
+  "weak": 0
+ },
+ "rs000211": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs000215": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 95,
+  "weak": 2
+ },
+ "rs000219": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 98,
+  "weak": 0
+ },
+ "rs000223": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 0
+ },
+ "rs000277": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 2,
+  "syllables": 97,
+  "weak": 12
+ },
+ "rs000292": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 97,
+  "weak": 0
+ },
+ "rs000293": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 2
+ },
+ "rs000306": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 84,
+  "weak": 7
+ },
+ "rs000309": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 0
+ },
+ "rs000400": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000451": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000464": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 90,
+  "weak": 0
+ },
+ "rs000472": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 85,
+  "weak": 0
+ },
+ "rs000476": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 92,
+  "weak": 0
+ },
+ "rs000493": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 0
+ },
+ "rs000515": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 4
+ },
+ "rs000561": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 84,
+  "weak": 0
+ },
+ "rs000588": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 90,
+  "weak": 0
+ },
+ "rs000613": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 88,
+  "weak": 0
+ },
+ "rs000616": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 91,
+  "weak": 0
+ },
+ "rs000636": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 70,
+  "weak": 0
+ },
+ "rs000684": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs000686": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 98,
+  "weak": 0
+ },
+ "rs000730": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000772": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 89,
+  "weak": 0
+ },
+ "rs000810": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 88,
+  "weak": 0
+ },
+ "rs000823": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000825": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 93,
+  "weak": 0
+ },
+ "rs000833": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs000842": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000869": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs000899": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 98,
+  "weak": 0
+ },
+ "rs000907": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000920": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 88,
+  "weak": 2
+ },
+ "rs000948": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 0
+ },
+ "rs000975": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs000980": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 4,
+  "syllables": 89,
+  "weak": 4
+ },
+ "rs000984": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs001028": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 0
+ },
+ "rs001068": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 86,
+  "weak": 11
+ },
+ "rs001083": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs001094": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 1,
+  "syllables": 95,
+  "weak": 0
+ },
+ "rs001103": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs001194": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 86,
+  "weak": 7
+ },
+ "rs001247": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 6,
+  "syllables": 86,
+  "weak": 0
+ },
+ "rs001248": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 25
+ },
+ "rs001277": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs001283": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 94,
+  "weak": 0
+ },
+ "rs001313": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 1,
+  "syllables": 69,
+  "weak": 0
+ },
+ "rs001352": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 55,
+  "syllables": 58,
+  "weak": 60
+ },
+ "rs001363": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 0
+ },
+ "rs001367": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 92,
+  "weak": 10
+ },
+ "rs001376": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs001381": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "known",
+  "strong": 0,
+  "weak": 2
+ },
+ "rs001397": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 7
+ },
+ "rs001409": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs001411": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs001417": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 77,
+  "weak": 0
+ },
+ "rs001425": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 90,
+  "weak": 0
+ },
+ "rs001426": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 93,
+  "weak": 4
+ },
+ "rs001444": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs001475": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs001505": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 78,
+  "weak": 0
+ },
+ "rs001516": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 98,
+  "weak": 0
+ },
+ "rs001537": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 2,
+  "syllables": 98,
+  "weak": 0
+ },
+ "rs001570": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs001619": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "known",
+  "strong": 0,
+  "syllables": 56,
+  "weak": 0
+ },
+ "rs001620": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 95,
+  "weak": 0
+ },
+ "rs001653": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 98,
+  "weak": 0
+ },
+ "rs001657": {
+  "lint": {
+   "mid_capitals": 5,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 64,
+  "weak": 10
+ },
+ "rs001674": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs001687": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 96,
+  "weak": 0
+ },
+ "rs001702": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs001703": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 94,
+  "weak": 0
+ },
+ "rs001730": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 98,
+  "weak": 2
+ },
+ "rs001735": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs001739": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 90,
+  "weak": 0
+ },
+ "rs001740": {
+  "lint": {
+   "mid_capitals": 3,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 70,
+  "weak": 0
+ },
+ "rs001795": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs001808": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 94,
+  "weak": 0
+ },
+ "rs001822": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 92,
+  "weak": 0
+ },
+ "rs001827": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 98,
+  "weak": 0
+ },
+ "rs001848": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 81,
+  "weak": 0
+ },
+ "rs001862": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 97,
+  "weak": 0
+ },
+ "rs001865": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 100,
+  "weak": 0
+ },
+ "rs001895": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs001964": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "weak": 0
+ },
+ "rs002048": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 0
+ },
+ "rs002064": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 93,
+  "weak": 0
+ },
+ "rs002077": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 90,
+  "weak": 0
+ },
+ "rs002097": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 15
+ },
+ "rs002122": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 99,
+  "weak": 18
+ },
+ "rs002151": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 95,
+  "weak": 0
+ },
+ "rs002159": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 94,
+  "weak": 0
+ },
+ "rs002165": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  },
+  "octave": 0,
+  "roundtrip": "exact",
+  "strong": 0,
+  "syllables": 96,
+  "weak": 0
+ }
+}
