@@ -400,7 +400,7 @@ rs000833,src001743,,vocal_melody
 rs000837,src001744,,vocal_melody
 rs000837,src001745,,vocal_melody
 rs000837,src001746,,vocal_melody
-rs000842,src000286,,piano_roll
+rs000842,src000286,data/raw_data/video/rs000842_src000286.mp4,piano_roll
 rs000842,src000299,,piano_staff
 rs000842,src001747,,vocal_melody
 rs000842,src001748,,vocal_melody
