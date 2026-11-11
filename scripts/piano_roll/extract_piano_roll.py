@@ -122,9 +122,16 @@ def find_layout(path):
                       key=lambda r: len(r[0]))
     if len(blacks) < 10:
         raise SystemExit('no keyboard found')
-    # groups: gaps inside a group are ~1.15 white keys, between groups ~1.75
+    # groups: gaps inside a group are ~1.15 white keys, between groups ~1.75. A dark run at either end
+    # that is much further away (the edge of an overlay, e.g. a webcam picture) is not a key.
+    blacks = list(blacks)
+    big = np.percentile(np.diff(blacks), 80)
+    while len(blacks) > 10 and blacks[-1] - blacks[-2] > 1.25 * big:
+        blacks.pop()
+    while len(blacks) > 10 and blacks[1] - blacks[0] > 1.25 * big:
+        blacks.pop(0)
     sp = np.diff(blacks)
-    thr = (sp.min() + sp.max()) / 2
+    thr = (np.percentile(sp, 10) + np.percentile(sp, 90)) / 2       # robust to a stray gap
     groups, cur = [], [blacks[0]]
     for x, d in zip(blacks[1:], sp):
         if d > thr:
