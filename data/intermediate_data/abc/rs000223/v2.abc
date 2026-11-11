@@ -1,0 +1,208 @@
+X:1
+T:Aamar Sonaar Baangla
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000223.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000223.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000223.pdf (Geetabitan swaralipi; SNLTR has no swaralipi for this song)
+N:Notes quantized to 16ths (scripts/midi_to_ktab.py read_tracks). Sa = C; komal Ni (A#) and Ni (B) both occur.
+N:Form played by the MIDI: sthayi (Aamar sonaar baangla twice, Chirodin); five verses on the tune of O maa phaagune, each followed by the return to sonaar baangla, with the interludes Ki shobha, Tomar ei khelaghare, Dhenu-chora and O maa tor charonete between them; the sthayi's first line to end.
+N:Syllables placed by hand from the Geetabitan swaralipi PDF; where the MIDI has a bar the swaralipi lacks (bar 320) it holds.
+N:v2: the same notes, lyrics and bars as v1.abc with note values halved (L:1/16, M:3/8, Q:1/4=100 is the speed of v1 at 180); one swaralipi matra = one eighth note here.
+M:3/8
+L:1/16
+Q:1/4=90
+K:C
+P:Sthayi
+z2 F2 F2 |
+w: Aa-mar |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+C2 F2 F2 |
+w: _ aa-mar |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+C6- | C4 C2 | C2 C4 | D F F4 |
+w: _ | _ Chi-|ro-din | to-_-mar |
+G2 G4- | G4 C2 | C2 C4 | D F F4 | G2 G4 |
+w: aa-kaash | _ chi-|ro-din | to-_-mar | aa-kaash |
+G2 G3 A | G2 F4 | G2 G A2 ^A | A2 G4- |
+w: to-mar _ | baa-taas | aa-maa _ _ | praa-ne |
+G6- | G2 c2 c2 | ^A c ^A4 | G A G2 A G |
+w: _ | _ o-go | aa-_-mar | praa-_-ne _ _ |
+F G E4 | E2 E F2 G |
+w: baa-_-jaay | bnaa-shi _ _ |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+P:Stanza 1
+C2 G2 G2 | F2 A4 | A2 A3 B | c2 B c2 e | d2 c4 |
+w: _ O maa | phaa-gu | ne tor _ | aa-me-_-_ | bo-ne |
+B2 B c2 A- | A2 A2 B2 | B2 c4- | c3 d2 e- |
+w: ghraa-ne _ _ | _ paa-gol | ko-re | _ _ _ |
+e d2 c3- | c2 B2 A2 | A B5- | B5 c | c4 c2 | B2 A G3 |
+w: _ _ _ | _ mo-ri | haay _ | _ _ | haay re | o maa _ |
+F2 A4 | A2 A3 B | c2 B c2 e | d2 c4 |
+w: phaa-gu | ne tor _ | aa-me-_-_ | bo-ne |
+B2 B c2 A- | A2 A2 B2 | B2 c4- |
+w: ghraa-ne _ _ | _ paa-gol | ko-re |
+c2 B2 B2 | B4 c2 | c2 c3 d |
+w: _ O maa | o-ghraa | ne tor _ |
+c2 B c ^A =A- | A G G2 A2 | ^A4 c2 | c2 c3 d |
+w: bho-raa _ _ _ | _ _ khe-te | o-ghraa | ne tor _ |
+^A c ^A3 =A | G2 F E2 F | F ^A3 ^A2 | G A G4- |
+w: bho-_-raa _ | khe-te _ _ | ki _ de-|khe-_-chhi |
+G6- | G2 c2 c2 | ^A c3 ^A2 | A2 G2 A G | F G E4 | E2 E F2 G |
+w: _ | _ aa-mi | ki _ de-|khe-chhi _ _ | mo-_-dhur | haa-si _ _ |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+P:Ki shobha
+C6- | C4 C2 | C2 C4 | ^A,2 ^A, C C D | C2 ^A, =A,3- |
+w: _ | _ Ki | sho-bha | ki _ _ chhaa-_ | ya go _ |
+A,4 A,2 | A,2 A,3 ^A, | C3 E E2 | F2 E2 G F- |
+w: _ ki | sne-ho _ | ki _ maa-|ya go _ _ |
+F E3 E2 | E2 C3 D | E2 E4 | F2 G3 F |
+w: _ _ ki | aan-chol _ | bi-chhaa-|ye-chho _ |
+E2 F3 E | C2 E4 | F2 E4 | D2 C2 D C |
+w: ba-ter _ | mu-le | no-dir | ku-le _ _ |
+^A,2 C4- | C3 D2 E- | E D2 C3- | C2 G2 G2 |
+w: ku-le | _ _ _ | _ _ _ | _ Maa tor |
+P:Stanza 2
+F2 ^A =A3 | A2 A3 B | c2 B c2 e | d2 c2 d c |
+w: Mu-kher _ | baa-ni _ | aa-maar _ _ | kaa-ne _ _ |
+B2 B c2 A- | A2 A2 B2 | B2 c4- | c3 d2 e- |
+w: laa-ge _ _ | _ su-dhaar | mo-to | _ _ _ |
+e d2 c3- | c2 B2 A2 | B6- | B5 c | c4 c2 | B2 A G3 |
+w: _ _ _ | _ mo-ri | haay | _ _ | haay re | maa tor _ |
+F2 ^A =A3 | A2 A3 B | c2 B c2 e | d2 c2 d c |
+w: mu-kher _ | baa-ni _ | aa-maar _ _ | kaa-ne _ _ |
+B2 B c2 A- | A2 A2 B2 | B2 c4- |
+w: laa-ge _ _ | _ su-dhaar | mo-to |
+c2 B2 B2 | B2 c4 | c2 c3 d |
+w: _ Maa tor | ba-don-|khaa-ni _ |
+^A c ^A c ^A =A- | A G G2 A2 | ^A2 c4 | c2 c3 d |
+w: mo-_-li-_ _ _ | _ _ maa tor | ba-don-|khaa-ni _ |
+^A c ^A3 =A | G2 F E2 F | ^A2 ^A4 | G A G4- |
+w: mo-_-lin _ | ho-le _ _ | aa-mi | no-_-yon |
+G6- | G2 c2 c2 | ^A c ^A4 | G A G2 A G | F G E4 | E2 E F2 G |
+w: _ | _ o maa | aa-_-mi | no-_-yon _ _ | jo-_-le | bhaa-si _ _ |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+P:Tomar ei khelaghare
+C6- | C4 C2 | C2 C4 | ^A,2 C2 ^A,/ C/ D | C2 ^A, =A,3- |
+w: _ | _ To-|mar ei | khe-laa _ _ _ | gho-re _ |
+A,4 A,2 | A,2 A,3 ^A, | C2 E4 | F2 E2 G F |
+w: _ shi-|shu-kaal _ | kaa-ti | lo re _ _ |
+E4 E2 | E2 C3 D | E2 E4 | F2 G3 F |
+w: _ To-|maa-ri _ | dhu-laa | maa-ti _ |
+E3 F E2 | C2 E4 | E3 F E2 | D2 C2 D C |
+w: ang-_-ge | maa-khi | dhon-_-no | ji-bon _ _ |
+^A,2 C4- | C3 D2 E- | E D2 C3- | C2 E4 |
+w: maa-ni | _ _ _ | _ _ _ | _ Tui |
+P:Stanza 3
+F2 ^A =A A2 | A2 A3 B | c4 c e | d2 c4 |
+w: Din _ _ phu-|raa-le _ | son-dhaa-_ | kaa-le |
+B2 B c2 A- | A2 A2 B2 | B2 c4- | c3 d2 e- |
+w: ki deep _ _ | _ jwaa-lis | gho-re | _ _ _ |
+e d2 c3- | c2 B2 A2 | B6- | B5 c | c4 c2 | B2 A G3 |
+w: _ _ _ | _ mo-ri | haay | _ _ | haay re | maa tui _ |
+F2 ^A =A3 | A2 A3 B | c2 B c2 e | d2 c2 d c |
+w: din _ phu-|raa-le _ | son-_-dhaa-_ | kaa-le _ _ |
+B2 B c2 A- | A2 A2 B2 | B2 c4- |
+w: ki deep _ _ | _ jwaa-lis | gho-re |
+c2 B2 B2 | B2 c4 | c2 c3 d |
+w: _ To-khon | khe-laa | dhu-laa _ |
+c2 ^A c ^A =A- | A G G2 A2 | ^A2 c4 | c2 c3 d |
+w: so-kol _ _ _ | _ _ phe-le | khe-laa | dhu-laa _ |
+^A c ^A3 =A | G2 F E2 F | ^A2 ^A4 | G A G4- |
+w: so-_-kol _ | phe-le _ _ | to-maar | ko-_-le |
+G6- | G2 c2 c2 | ^A c ^A4 | G A G2 A G | F G E4 | E2 E F2 G |
+w: _ | _ o maa | to-_-maar | ko-_-le _ _ | chhu-_-te | aa-si _ _ |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+P:Dhenu-chora
+C6- | C4 C2 | C2 C2 C2 | ^A,2 C2 ^A,/ C/ D | C2 ^A, =A,3- |
+w: _ | _ Dhe-|nu-cho-raa | to-maa-_-_-_ | maa-the _ |
+A,4 A,2 | A,2 A,2 ^A,2 | C2 E4 | F2 E2 G F |
+w: _ paa-|re jaa-bar | khe-yaa | ghaa-te _ _ |
+E4 E2 | E2 C3 D | E2 E4 | F2 G3 F |
+w: _ Saa-|raa din _ | paa-khi | daa-kaa _ |
+E2 F3 E | C2 E4 | F2 E4 | D3 C D C |
+w: chhaa-yaay _ | dhaa-kaa | to-mar | pol-_-li-_ |
+^A,2 C4- | C3 D2 E- | E D2 C3- | C2 G2 G2 |
+w: baa-te | _ _ _ | _ _ _ | _ To-maar |
+P:Stanza 4
+F2 ^A =A3 | A2 A3 B | c2 B c2 e | d2 c4 |
+w: Dhaa-ne _ | bho-raa _ | aa-ngi-_-_ | naa-te |
+B2 B c2 A- | A2 A2 B2 | B2 c4- | c3 d2 e- |
+w: ji-bo-_-_ | _ ner din | kaa-te | _ _ _ |
+e d2 c3- | c2 B2 A2 | B6- | B5 c | c4 c2 | B2 A G3 |
+w: _ _ _ | _ mo-ri | haay | _ _ | haay re | maa tor _ |
+F2 ^A =A3 | A2 A3 B | c2 B c2 e | d2 c4 |
+w: dhaa-ne _ | bho-raa _ | aa-ngi-_-_ | naa-te |
+B2 B c2 A- | A2 A2 B2 | B2 c4- |
+w: ji-bo-_-_ | _ ner din | kaa-te |
+c2 B2 B2 | B2 c4 | c2 c3 d |
+w: _ O maa | aa-maar | je bhaai _ |
+^A c ^A c ^A =A- | A G G2 A2 | ^A2 c4 | c2 c3 d |
+w: taa-_-raa _ _ _ | _ _ so-bai | aa-maar | je bhaai _ |
+^A c ^A3 =A | G2 F E2 F | ^A2 ^A4 | G A G4- |
+w: taa-_-raa _ | so-bai _ _ | to-mar | raa-_-khaal |
+G6- | G2 c2 c2 | ^A c ^A4 | G A G2 A G | F G E4 | E2 E F2 G |
+w: _ | _ o maa | to-_-mar | raa-_-khal _ _ | to-_-mar | chaa-shi _ _ |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+P:O maa tor charonete
+C6- | C4 C2 | C2 C4 | ^A,2 C3 D | C2 ^A, =A,3- |
+w: _ | _ O | maa tor | cho-ro _ | ne-te _ |
+A,4 A,2 | A,2 A,3 ^A, | C2 E4 | F2 E2 G F- |
+w: _ di-|lem ei _ | maa-thaa | pe-te _ _ |
+F E3 E2 | E2 C3 D | E2 E4 | F2 G3 F |
+w: _ _ De | go tor _ | paa-yer | dhu-laa _ |
+E2 F3 E | C2 E4 | E F E4 | D2 C2 D C |
+w: se je _ | aa-mar | maa-_-thar | maa-nik _ _ |
+^A,2 C4- | C3 D2 E- | E D2 C3- | C6- | C2 G2 G2 |
+w: ho-be | _ _ _ | _ _ _ | _ | _ O maa |
+P:Stanza 5
+F2 ^A =A3 | A2 A3 B | c4 c e | d2 c4 |
+w: Go-ri _ | ber dhon _ | jaa aa-_ | chhe taai |
+B2 B c2 A- | A2 A2 B2 | B2 c4- | c3 d2 e- |
+w: di-bo _ _ | _ cho-ron | to-le | _ _ _ |
+e d2 c3- | c2 B2 A2 | B6- | B5 c | c4 c2 | B2 A G3 |
+w: _ _ _ | _ mo-ri | haay | _ _ | haay re | o maa _ |
+F2 ^A =A3 | A2 A3 B | c4 c e | d2 c4 |
+w: go-ri _ | ber dhon _ | jaa aa-_ | chhe taai |
+B2 B c2 A- | A2 A2 B2 | B2 c4- |
+w: di-bo _ _ | _ cho-ron | to-le |
+c2 B2 B2 | B2 c4 | c2 c3 d |
+w: _ Aa-mi | po-rer | gho-re _ |
+c4 ^A2 | A2 G2 A2 | ^A2 c4 | c2 c3 d |
+w: kin-bo | naa aa-mi | po-rer | gho-re _ |
+^A c3 ^A2 | A2 G4 | ^A2 ^A4 | G A G4- |
+w: kin-_-bo | naa tor | bhu-shon | bo-_-le |
+G6- | G2 c2 c2 | ^A c ^A4 | G A G2 A G | F G E4 | E2 E F2 G |
+w: _ | _ maa tor | bhu-_-shon | bo-_-le _ _ | go-_-laar | phaan-si _ _ |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+C2 F2 F2 |
+w: _ aa-mar |
+E2 E F2 E | D3 C D C | ^A,/ C/ ^A,2 =A,3- | A,2 A,2 ^A,2 |
+w: so-naar _ _ | baang-_-_-_-|laa _ _ _ | _ aa-mi |
+C2 C D2 E | D2 C2 D C | ^A,2 C4- | C2 D2 E2 | D2 C4- |
+w: to-maay _ _ | bhaa-lo-_-_-|baa-si | _ _ _ | _ _ |
+C6 |]
+w: _ |

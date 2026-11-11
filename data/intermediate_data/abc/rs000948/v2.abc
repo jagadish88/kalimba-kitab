@@ -1,0 +1,73 @@
+X:1
+T:Haa Re Re Re Re
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000948.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:lyrics: data/raw_data/text/lyrics/rs000948.txt (Geetabitan transliteration)
+S:alignment: data/raw_data/swaralipi/rs000948.pdf (Geetabitan swaralipi; SNLTR has no swaralipi for this song)
+N:Notes quantized to 16ths (scripts/midi_to_ktab.py read_tracks). Sa = C.
+N:Form played by the MIDI: sthayi with its first two lines again; antara; abhog (its { } part twice, the ( ) part both times); the sthayi again.
+N:v2: the same notes, lyrics and bars as v1.abc with note values halved (L:1/16, M:3/8, Q:1/4=100 is the speed of v1 at 250); one swaralipi matra = one eighth note here.
+M:3/8
+L:1/16
+Q:1/4=125
+K:C
+P:Sthayi
+e2 e4 | d2 d4 | c2 c4 | B2 A3 G |
+w: Haa re | re re | re re | Aa-may _ |
+A2 A4 | G2 G3 ^F | E2 G4- | G6 |
+w: chhe-re | de re _ | de re | _ |
+C2 C4 | D2 E4 | F2 G4 | A2 B4 |
+w: Je-mon | chhaa-raa | bo-ner | paa-khi |
+G2 G4 | A2 B4 | G3 A2 B | c3 d2 e |
+w: mo-ner | aa-non-|de _ _ | re _ _ |
+e2 e4 | d2 d4 | c2 c4 | B2 A3 G |
+w: Haa re | re re | re re | Aa-may _ |
+A2 A4 | G2 G3 ^F | E2 G4- | G6 |
+w: chhe-re | de re _ | de re | _ |
+P:Antara
+G2 G4 | A2 A4 | A2 B4- | B6 |
+w: Gha-no-|shraa-bon-|dhaa-raa | _ |
+G2 G4 | A2 B4 | B2 c4- | c6 |
+w: Je-mon | bnaa-dhon-|haa-raa | _ |
+e2 e4 | e2 e4 | f2 e4 | d2 d4 |
+w: Baa-dol | baa-tas | je-mon | daa-kat |
+c2 c4 | B2 A3 G | G3 A2 G | G c5 |
+w: aa-kash | lu-te _ | phe-_-_-|re _ |
+P:Abhog
+c2 c4 | B2 B4 | A2 A4 | G2 G4 |
+w: Haa re | re re | re re | Aa-may |
+E4 D2 | C2 C3 D | D2 E4- | E6 |
+w: raakh-be | dho-re _ | ke re | _ |
+C2 C4 | D2 E4 | F2 G4 | A2 B4 |
+w: Daa-ba-|na-ler | naa-chon | je-mon |
+G2 G4 | A2 B4 | G3 A2 B | B c5 |
+w: sa-kol | kaa-non | ghe-_-_-|re _ |
+c2 c4 | B2 B4 | A2 A4 | G2 G4 |
+w: Haa re | re re | re re | Aa-may |
+E4 D2 | C2 C3 D | D2 E4- | E6 |
+w: raakh-be | dho-re _ | ke re | _ |
+C2 C4 | D2 E4 | F2 G4 | A2 B4 |
+w: Daa-ba-|na-ler | naa-chon | je-mon |
+G2 G4 | A2 B4 | G3 A2 B | B c5 |
+w: sa-kol | kaa-non | ghe-_-_-|re _ |
+G4 E2 | G2 G3 A | A2 B4- | B6 |
+w: Baj-ro | je-mon _ | be-ge | _ |
+G4 G2 | A2 B4 | B2 c4- | c6 |
+w: Gor-je | jho-rer | me-ghe | _ |
+e4 e2 | e4 e2 | f2 e4 | d4 d2 |
+w: At-to-|haas-ye | sa-kol | bigh-no-|
+c2 c4 | B4 A2 | G3 A2 G | c6 |
+w: baa-dhaar | bok-kho | che-_-_-|re |
+P:Sthayi again
+e2 e4 | d2 d4 | c2 c4 | B2 A3 G |
+w: Haa re | re re | re re | Aa-may _ |
+A2 A4 | G2 G3 ^F | E2 G4- | G6 |
+w: chhe-re | de re _ | de re | _ |
+C2 C4 | D2 E4 | F2 G4 | A2 B4 |
+w: Je-mon | chhaa-raa | bo-ner | paa-khi |
+G2 G4 | A2 B4 | G3 A2 B | c3 d2 e |
+w: mo-ner | aa-non-|de _ _ | re _ _ |
+e2 e4 | d2 d4 | c2 c4 | B2 A3 G |
+w: Haa re | re re | re re | Aa-may _ |
+A2 A4 | G2 G3 ^F | E2 G4- | G6 |]
+w: chhe-re | de re _ | de re | _ |
