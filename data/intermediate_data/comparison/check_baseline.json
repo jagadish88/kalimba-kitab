@@ -1216,12 +1216,12 @@
    "rests": 0,
    "retune_header": 0
   },
-  "octave": 73,
-  "rhythm": 19,
+  "octave": 0,
+  "rhythm": 0,
   "roundtrip": "exact",
-  "strong": 55,
-  "syllables": 78,
-  "weak": 60
+  "strong": 0,
+  "syllables": 98,
+  "weak": 7
  },
  "rs001363": {
   "lint": {

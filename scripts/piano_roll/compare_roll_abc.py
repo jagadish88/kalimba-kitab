@@ -41,8 +41,22 @@ def lcs_len(a, b):
     return int(prev[-1])
 
 
+def latest_abc(song):
+    """the ABC the song's latest ktab draft was made from (ktab_catalog.csv), else abc/<song>/v1.abc"""
+    try:
+        sys.path.insert(0, os.path.join(HERE, '..', 'review'))
+        import roundtrip_check as RC
+        last, rbp, _ = RC.drafts()
+        src = RC.source_of(song, rbp, last[song]) if song in last else None
+        if src and os.path.exists(src[0]):
+            return src[0]
+    except Exception:
+        pass
+    return f'data/intermediate_data/abc/{song}/v1.abc'
+
+
 def compare(song):
-    abc = f'data/intermediate_data/abc/{song}/v1.abc'
+    abc = latest_abc(song)
     rolls = glob.glob(f'data/intermediate_data/piano_roll/{song}/*_notes.csv')
     if not os.path.exists(abc) or not rolls:
         return None

@@ -1,0 +1,92 @@
+X:1
+T:Majhe Majhe Tabo 1
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4613), title মাঝে মাঝে তব দেখা পাই, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs001352.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=D4 =E2 =F =G =G2 =F2 =F2 =E2 =E4 =E4 =D4 =E4 =D2 =E2 =D2 =E =F =F2 =E2 =D4 |
+w: Maa-jhe _ _ maa-_-jhe _ ta-bo de-kha paai _ _ _ _ _ _ _
+=D4 =E4 =D8 =D4 =D4 =D2 =E2 =D2 =E =F5 =F2 =E2 =D4 =C4 |
+w: Chi-ro-din ke-no paai _ _ _ _ na _ _ _
+P:Sthayi
+=D4 =E2 =F =G =G2 =F2 =F2 =E2 =E4 =E4 =D4 =E4 =D2 =E2 =D2 =E =F =F2 =E2 =D4 |
+w: Maa-jhe _ _ maa-_-jhe _ ta-bo de-kha paai _ _ _ _ _ _ _
+=D4 =E4 =D8 =D4 =D4 =D2 =E2 =D2 =E =F5 =F2 =E2 =D4 =C4 |
+w: Chi-ro-din ke-no paai _ _ _ _ na _ _ _
+=G4 =A4 =A2 =c2 =B2 =A2 =A4 =A4 =G4 =G2 =c2 =c2 =B2 =A4 =B4 =B2 =A =G |
+w: Ke-no megh _ _ _ aa-se hri-da-_-y _ aa-ka-she _ _
+=G4 =A4 =G4 =G4 =G4 =G2 =F =E =E8 =G4 =A2 =G2 =F2 =E2 =D4 |
+w: To-ma-re de-khi-te _ _ dey _ na _ _ _ _
+=E2 =G2 =G8 =A2 =c2 =c2 =B2 =A2 =G2 =G4 =A4 =G4 =G4 =G4 =G2 =F =E |
+w: Ke-_-no me-_-gh _ _ _ to-ma-re de-khi-te _ _
+=E8 =G4 =A2 =G2 =F2 =E2 =D4 |
+w: Dey _ na _ _ _ _
+=E2 =G2 =G8 =A2 =c2 =c2 =B2 =A2 =G2 =G4 =A4 =G8 =D4 =D4 =E4 =G8 =A4 =A2 =A2 =B2 =A2 |
+w: Ke-_-no me-_-gh _ _ _ to aa-se on hr-id-ay aaka-she _ _ _
+=G4 =A4 =G4 =G4 =G4 =G2 =F =E =E8 =G4 =A2 =G2 =F2 =E2 =D2 =C2 |
+w: To-ma-re de-khi-te _ _ dey _ na _ _ _ _ _
+=D4 =E2 =F =G =G2 =F2 =F2 =E2 =E4 =E4 =D4 =E2 =D =E =E4 =E4 =E2 =F2 =F2 =E =D |
+w: Kho-ni-_-_-k _ aa-_-lo-ke aan-khi-_-_-r pa-lo-_-ke _ _
+=D4 =E4 =D2 =C2 =C4 =C2 =A, =C =C2 =D2 =D4 =D2 =E2 =D =E =F =E =D8 =C2 =C2 |
+w: To-may _ _ ja-be _ _ paai _ de-khi-_-_-_-_-_-te ohe _
+=D4 =E2 =F =G =G2 =F2 =F2 =E2 =E4 =E4 =D4 =E2 =D =E =E4 =E4 =E2 =F2 =F2 =E =D |
+w: Kho-ni-_-_-k _ aa-_-lo-ke aan-khi-_-_-r pa-lo-_-ke _ _
+=D4 =E4 =D2 =C2 =C4 =C2 =A, =C =C2 =D2 =D4 =D2 =E2 =D =E =F =E =D8 =G4 |
+w: To-may _ _ ja-be _ _ paai _ de-khi-_-_-_-_-_-te ohe
+=G4 =A4 =c2 =B =A =A4 =A8 =G4 =c4 =c2 =B2 =A4 =A2 =B2 =B2 =A =G =G4 =A4 =c2 =B =A =A4 =A8 =G4 =c4 =c2 =B2 =A4 =A2 =B2 =B2 =A =G |
+w: Haa-rai _ _ _ haa-rai sa-da hoy _ _ bhoy _ _ _ _ Haa-rai _ _ _ haa-rai sa-da hoy _ _ bhoy _ _ _ _
+=G4 =A4 =G4 =G4 =G4 =G2 =F =E =E4 =G4 =A2 =G2 =F2 =E2 =D8 |
+w: Haa-rai-_-ya phe-li _ _ cho-ki-te _ _ _ aa
+=E4 =G4 =G4 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G4 =G4 =D4 =D4 |
+w: Naa _ mi ko-t-_-_-_-_-ha paa _ yaa bo lok
+=E4 =G4 =G4 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G4 =G4 =D4 =D4 |
+w: Naa _ po ri th _ _ _ _ haa-rai-_-ya hri-day
+=E4 =G4 =G4 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G4 =G4 =G4 =G2 =F =E |
+w: Aa-_-k-as-he _ _ _ _ haa-rai-_-ya phe-li _ _
+=E4 =G4 =A2 =G2 =F2 =E2 =D2 =E6 |
+w: Cho-ki-te _ _ _ _ _
+=D4 =E2 =F =G =G2 =F2 =F2 =E2 =E4 =E4 =D4 =E2 =D =E =E4 =E4 =E2 =F2 =F2 =E =D |
+w: Ki ko-_-_-ri-_-le _ ba-lo paa-i-_-_-bo to-ma-_-re _ _
+=D4 =E4 =D2 =C2 =C4 =C2 =A, =C =C2 =D2 =D4 =D2 =E2 =D =E =F =E =D8 =C2 =C2 |
+w: Raa-khi-bo _ aan-khi-_-_-te _ aan-khi-_-_-_-_-_-te ohe _
+=D4 =E2 =F =G =G2 =F2 =F2 =E2 =E4 =E4 =D4 =E2 =D =E =E4 =E4 =E2 =F2 =F2 =E =D |
+w: Ki ko-_-_-ri-_-le _ ba-lo paa-i-_-_-bo to-ma-_-re _ _
+=D4 =E4 =D2 =C2 =C4 =C2 =A, =C =C2 =D2 =D4 =D2 =E2 =D =E =F =E =D8 =G2 =G2 |
+w: Raa-khi-bo _ aan-khi-_-_-te _ aan-khi-_-_-_-_-_-te ohe _
+=G4 =A4 =c2 =B =A5 =A4 =A4 =G4 =c4 =c2 =B2 =A4 =A2 =B2 =B2 =A =G =G4 =A4 =c2 =B =A5 =A4 =A4 =G4 =c4 =c2 =B2 =A4 =A2 =B2 =B2 =A =G |
+w: E-to prem _ _ aa-mi ko-tha paa-_-bo naa _ _ _ _ E-to prem _ _ aa-mi ko-tha paa-_-bo naath _ _ _ _
+=G4 =A4 =G4 =G4 =G4 =G2 =F =E =E4 =G4 =A2 =G2 =F2 =E2 =D4 =D4 |
+w: To-ma-re hri-da-ye _ _ raa-khi-te _ _ _ A-ar
+=E4 =G4 =G4 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G8 =D4 =D4 |
+w: Paa _ dhjo i-bo _ _ _ _ to-ma-re de-y
+=E4 =G4 =G4 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G8 =D4 =D4 |
+w: Na _ ko-ri-le _ _ _ _ k-aa-ro Tu-mi
+=E4 =G4 =G4 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G4 =G4 =G4 =G2 =F =E |
+w: Paa-_-bo naa-t-_-_-h _ to-ma-re hri-da-ye _ _
+=E4 =G4 =A2 =G2 =F2 =E2 =D2 =C6 |
+w: Raa-khi-te _ _ _ _ _
+=D4 =E2 =F =E =G2 =F2 =F2 =E2 =E4 =E4 =D4 =E2 =D =E =E4 =E4 =E2 =F2 =F2 =E =D |
+w: Aar _ _ _ kaa-_-ro _ paa-ne chaa-hi-_-_-bo na aar _ _ _ _
+=D4 =E4 =D2 =C2 =C4 =C2 =A, =C =C2 =D2 =D4 =D2 =E2 =D =E =F =E =D8 =C2 =C2 |
+w: Ko-ri-bo _ hey aa-_-_-mi _ praa-no-_-_-_-_-_-p ohe _
+=D4 =E2 =F =E =G2 =F2 =F2 =E2 =E4 =E4 =D4 =E2 =D =E =E4 =E4 =E2 =F2 =F2 =E =D |
+w: An _ _ _ kaa-_-ro _ paa-ne chaa-hi-_-_-bo na aar _ _ _ _
+=D4 =E4 =D2 =C2 =C4 =C2 =A, =C =C2 =D2 =D4 =D2 =E2 =D =E =F =E =D8 =G2 =G2 |
+w: Ko-ri-bo _ hey aa-_-_-mi _ praa-no-_-_-_-_-_-pa-ohe _
+=G4 =A4 =c2 =B =A =A4 =A4 =A4 =G4 =c4 =c2 =B2 =A4 =A2 =B2 =B2 =A =G =G4 =A4 =c2 =B =A =A4 =A4 =A4 =G4 =c4 =c2 =B2 =A4 =A2 =B2 =B2 =A =G |
+w: Tu-mi jo-_-_-di ba-lo e-kho-ni _ ko-ri-_-bo _ _ Tu-mi jo-_-_-di ba-lo e-kho-ni _ ko-ri-_-bo _ _
+=G4 =A4 =G4 =G4 =G4 =G2 =F =E =E4 =G4 =A2 =G2 =F2 =E2 =D4 =D4 |
+w: Bi-sha-yoi-baa-so-na _ _ bi-sar-ja-_-_-_-n ko
+=E4 =G8 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G8 =D4 =D4 |
+w: Shree cho ri-bo _ _ _ _ bi-sha-yo-i-b
+=E4 =G8 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G8 =D4 =D4 |
+w: O aa-so-na _ _ _ _ bi-sha-yo-i-baa-
+=E4 =G8 =A4 =A2 =c =B =A2 =G2 =G4 =A4 =G4 =G4 =G4 =G2 =F =E |
+w: So-na paa-i _ _ _ _ bi-sha-yoi-baa-so-na _ _
+=E4 =G4 =A2 =G2 =F2 =E2 =D2 =C6 |
+w: Bi-sar-j _ _ _ _ _
