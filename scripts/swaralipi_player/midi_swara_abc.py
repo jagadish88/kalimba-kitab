@@ -35,9 +35,27 @@ import swara_abc as SA  # noqa: E402
 N = 'C ^C D ^D E F ^F G ^G A ^A B'.split()
 
 
+def split_channels(mid):
+    """A type-0 MIDI (everything in one track) -> type 1 with one track per channel, so the melody
+    can be picked like a melody track. Meta messages go to every track; other files are unchanged."""
+    if mid.type != 0 or len(mid.tracks) != 1:
+        return mid
+    chans = sorted({m.channel for m in mid.tracks[0] if hasattr(m, 'channel')})
+    out = mido.MidiFile(type=1, ticks_per_beat=mid.ticks_per_beat)
+    for ch in chans:
+        t, tick, last = mido.MidiTrack(), 0, 0
+        for m in mid.tracks[0]:
+            tick += m.time
+            if m.is_meta or getattr(m, 'channel', None) == ch:
+                t.append(m.copy(time=tick - last))
+                last = tick
+        out.tracks.append(t)
+    return out
+
+
 def midi_bars(song):
     """-> (bars: [[(token, midi or None, tied_on)]], meter (num, den), tempo bpm, track name)"""
-    mid = mido.MidiFile(os.path.join(ROOT, f'data/raw_data/midi/{song}.mid'))
+    mid = split_channels(mido.MidiFile(os.path.join(ROOT, f'data/raw_data/midi/{song}.mid')))
     tpb = mid.ticks_per_beat
     tr, meta = MK.read_tracks(mid)
     c = []
