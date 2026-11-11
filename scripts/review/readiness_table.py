@@ -72,7 +72,9 @@ def main():
     midi = {r[0] for r in csv.reader(open('data/raw_data/midi/midi_catalog.csv', encoding='utf-8')) if len(r) > 2 and r[2].endswith('.mid')}
     roll = {r['song']: int(r['draft_pct']) for r in csv.DictReader(open('data/intermediate_data/comparison/roll_vs_abc.csv'))}
     sa = 'data/intermediate_data/comparison/syllable_agreement.csv'
-    sylag = {r['song']: int(r['syllable_agreement_pct']) for r in csv.DictReader(open(sa))} if os.path.exists(sa) else {}
+    sarows = list(csv.DictReader(open(sa))) if os.path.exists(sa) else []
+    sylag = {r['song']: int(r['syllable_agreement_pct']) for r in sarows}
+    rhoc = {r['song']: (int(r.get('rhythm_flags') or 0), int(r.get('octave_flags') or 0)) for r in sarows}
     flags = {}
     sc = 'data/intermediate_data/comparison/source_check.csv'
     if os.path.exists(sc):
@@ -154,7 +156,7 @@ def main():
         bad = '--' if x['bad'] is None else f"{x['bad']} ({100 * x['bad'] / max(1, x['n']):.1f}\\%)"
         lines.append(f"\\rowcolor{{{color[x['tier']]}}} {i} & {tex(x['title'])} & {x['s']} & {x['midi']} & {x['sw']} & "
                      f"{'--' if x['roll'] is None else str(x['roll']) + chr(92) + '%'} & {tex(x['scale']) or '--'} & "
-                     f"{', '.join(x['ret']) or 'none'} & {bad} & {'--' if x['lyr'] is None else str(x['lyr']) + chr(92) + '%'} & {fmt_flags(flags.get(x['s']))} & {str(sylag[x['s']]) + chr(92) + '%' if x['s'] in sylag else '--'} & {x['tier']}\\\\")
+                     f"{', '.join(x['ret']) or 'none'} & {bad} & {'--' if x['lyr'] is None else str(x['lyr']) + chr(92) + '%'} & {fmt_flags(flags.get(x['s']))} & {str(sylag[x['s']]) + chr(92) + '%' if x['s'] in sylag else '--'} & {'%d/%d' % rhoc[x['s']] if x['s'] in rhoc else '--'} & {x['tier']}\\\\")
     doc = r"""\documentclass[9pt]{article}
 \usepackage[a4paper,landscape,margin=0.9cm]{geometry}
 \usepackage{longtable,booktabs,xcolor,colortbl}
@@ -168,12 +170,13 @@ def main():
 \textbf{Roll}: share of the draft's notes Arup Paul's piano roll plays in order. \textbf{Off notes}: notes with no tine after the retuning, played a semitone off.
 \textbf{Scale}: the note Sa is on (the kalimba is in C). \textbf{Lyrics}: share of the tab's words that are words of the Geetabitan lyrics.
 \textbf{Flags}: places where independent sources disagree with the tab (source\_check.csv): strong (two sources agree on another note) / weak (one source, a run of notes). Tier A needs no strong flag.
-\textbf{Syl}: share of the tab's syllables on the notes the SNLTR swaralipi puts them on (syllable\_check.py).}
+\textbf{Syl}: share of the tab's syllables on the notes the SNLTR swaralipi puts them on (syllable\_check.py).
+\textbf{R/O}: syllables much longer or shorter than in the swaralipi / notes an octave from it.}
 \vspace{4pt}
 \footnotesize\setlength{\tabcolsep}{4pt}
-\begin{longtable}{r l l c l r l l r r r r c}
+\begin{longtable}{r l l c l r l l r r r r r c}
 \toprule
-\# & Song & id & MIDI & Swaralipi & Roll & Scale & Tines retuned & Off notes & Lyrics & Flags & Syl & Tier\\
+\# & Song & id & MIDI & Swaralipi & Roll & Scale & Tines retuned & Off notes & Lyrics & Flags & Syl & R/O & Tier\\
 \midrule\endhead
 """ % (len(out), cnt['done'], cnt['A'], cnt['B'], cnt['C']) + '\n'.join(lines) + '\n\\bottomrule\\end{longtable}\\end{document}\n'
     wd = '/tmp/kk_work/rtable'

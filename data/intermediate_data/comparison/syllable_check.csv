@@ -4,6 +4,40 @@ rs000011,different,30:14,dhe,ro,(Aa: 7)(dhe: 1')(ko: 3') (ghu: 2'),data/intermed
 rs000011,different,30:22,ko,she,(Aa: 7)(dhe: 1')(ko: 3') (ghu: 2')(me: 1'-,data/intermediate_data/ktab/rs000011/v2.ktab
 rs000011,different,30:32,ghu,mri,(Aa: 7)(dhe: 1')(ko: 3') (ghu: 2')(me: 1'-),data/intermediate_data/ktab/rs000011/v2.ktab
 rs000011,different,30:40,me,du,(Aa: 7)(dhe: 1')(ko: 3') (ghu: 2')(me: 1'-),data/intermediate_data/ktab/rs000011/v2.ktab
+rs000011,rhythm,28:21,ro,"tab 4 beats, swaralipi 1 beats at this tempo",(ju: 4)(thi: 6)(ro: 6) (maa: 7)(le: 1'-),data/intermediate_data/ktab/rs000011/v2.ktab
+rs000011,rhythm,29:6,pa,"tab 4 beats, swaralipi 1 beats at this tempo",(pa: 7)(ro: 1')(se: 3') (m,data/intermediate_data/ktab/rs000011/v2.ktab
+rs000016,rhythm,19:39,aa,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(daa: 2' 1'/)(ne: 2'-- 5/ 6/ 7/) (aa: 7/ 7)(gu: 7/)(ner: 7),data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,rhythm,19:67,daa,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",/ 7/) (aa: 7/ 7)(gu: 7/)(ner: 7) (daa: 7/ 7) (gu: 7/) (ne: 7,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,rhythm,28:6,aa,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(aa: 7/ 7)(gu: 7/)(ner: 7),data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,rhythm,28:34,gaa,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(aa: 7/ 7)(gu: 7/)(ner: 7) (gaa: 7/ 7) (gu: 7/) (ne: 7,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,rhythm,47:80,aa,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",ne: 4'-- 5/ 6/ 7/ 7/ 7 7/ 7 7/ 7) (aa: 7/ 7)(gu: 7/ 6/ 1'/ 1,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,rhythm,49:69,luk,"tab 2 beats, swaralipi 1 beats at this tempo",: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (gaa: 5- 5/,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,rhythm,50:6,Ni,"tab 9.5 beats, swaralipi 5.5 beats at this tempo",(Ni: 2'/)(shi: 2')(din: 2',data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,octave,49:69,luk,-1 octave(s) from the rest of the song,: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (gaa: 5- 5/,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,octave,49:74,,-1 octave(s) from the rest of the song,'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (gaa: 5- 5/ 5/) (,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,octave,49:84,gaa,-1 octave(s) from the rest of the song,o: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (gaa: 5- 5/ 5/) (ne: 5/),data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,octave,51:49,luk,-1 octave(s) from the rest of the song,(kha: 2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/ 7/) (gaa: 7/ 7,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,octave,51:52,,-1 octave(s) from the rest of the song,a: 2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/ 7/) (gaa: 7/ 7 7/),data/intermediate_data/ktab/rs000016/v1.ktab
+rs000017,rhythm,15:27,ro,"tab 1.75 beats, swaralipi 0.5 beats at this tempo",(So: 1'//)(khi: 2'//)(ro: 3'// 4'/ 4'/ 3'/) (hr,data/intermediate_data/ktab/rs000017/v1.ktab
+rs000017,rhythm,31:221,aa,"tab 1.25 beats, swaralipi 0.25 beats at this tempo",/ 6 5// 4// 5/ 6/// 7/// 6// 5//) (aa: 6// 5/ 3// 5//)(ha: 4,data/intermediate_data/ktab/rs000017/v1.ktab
+rs000017,rhythm,31:241,ha,"tab 1.5 beats, swaralipi 0.25 beats at this tempo",7/// 6// 5//) (aa: 6// 5/ 3// 5//)(ha: 4.),data/intermediate_data/ktab/rs000017/v1.ktab
+rs000017,octave,30:50,,+1 octave(s) from the rest of the song,)(ra: 3'//) (bu: 4'/)(jhe: 5'/// 6'/// 5'//)(o: 4'//) (bo: 3,data/intermediate_data/ktab/rs000017/v1.ktab
+rs000037,rhythm,16:58,rou,"tab 3 beats, swaralipi 1.5 beats at this tempo",5/.)(ner: 5) (khe: 5)(te: 5/ 6/) (rou: 7/ 2' 2'/ 2')(dra: 2',data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,28:7,jaa,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(jaa: 7/)(bo: 6/ 5/ 7/ 7) (,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,28:15,bo,"tab 2.5 beats, swaralipi 0.5 beats at this tempo",(jaa: 7/)(bo: 6/ 5/ 7/ 7) (na: 7) (,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,28:61,re,"tab 4 beats, swaralipi 2 beats at this tempo",/ 7) (na: 7) (aaj: 6/) (gha: 7/ 6)(re: 5---),data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,39:34,war,"tab 1.25 beats, swaralipi 4 beats at this tempo",(Je: 2'--)(no: 2') (jo: 2')(war: 3') (jalephe: 3'//)(n,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,40:33,aaj,"tab 3.5 beats, swaralipi 1 beats at this tempo",(baa: 2')(ta: 3')(se: 2') (aaj: 2'. 1'/ 7 6/) (chhut:,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,40:55,chhut,"tab 6 beats, swaralipi 1.5 beats at this tempo",')(se: 2') (aaj: 2'. 1'/ 7 6/) (chhut: 7/ 5/ 6/ 7-- 2'.)(chh,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,41:72,baa,"tab 2 beats, swaralipi 1 beats at this tempo",'/ 2'//) (kaa: 3'// 4'/)(je: 4') (baa: 3')(ji: 2')(ye: 2'/),data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,42:22,shikaat,"tab 1 beats, swaralipi 2.5 beats at this tempo",(bnaa: 3'/)(shikaat: 2')(be: 1') (sa: 7/)(,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,42:48,kol,"tab 4 beats, swaralipi 2 beats at this tempo",'/)(shikaat: 2')(be: 1') (sa: 7/)(kol: 6/ 5/) (be: 7/ 7 7 6/,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,46:59,gha,"tab 3 beats, swaralipi 1 beats at this tempo",5/.)(bo: 5) (na: 5) (aaj: 5/ 6/) (gha: 7/ 2' 2'/ 2')(re: 2'/,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,49:7,jaa,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(jaa: 7/)(bo: 6/ 5/ 7/ 7) (,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,rhythm,49:15,bo,"tab 2.5 beats, swaralipi 0.5 beats at this tempo",(jaa: 7/)(bo: 6/ 5/ 7/ 7) (na: 7) (,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,octave,26:27,jaa,+1 octave(s) from the rest of the song,(O: 3'/) (re: 2'//) (jaa: 3'//)(bo: 4'/) (na: 4,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,octave,40:120,si,-1 octave(s) from the rest of the song,/ 2' 2' 1' 2' 2'//) (haa: 3'/. 2')(si: 5 6 7/ 2'/ 2' 2'/ 3'/,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,octave,47:7,jaa,+1 octave(s) from the rest of the song,(jaa: 3'//)(bo: 4'/) (na: 4,data/intermediate_data/ktab/rs000037/v1.ktab
 rs000045,extra,18:94,aa,,: 1'/. 2'// 2'//) (so: 7 1'/ 2'/) (aa: 7/)(ji: 1'//),data/intermediate_data/ktab/rs000045/v1.ktab
 rs000045,extra,18:102,ji,,'// 2'//) (so: 7 1'/ 2'/) (aa: 7/)(ji: 1'//),data/intermediate_data/ktab/rs000045/v1.ktab
 rs000045,extra,30:83,aa,,5) (e: 5/. 6//)(so: 6//- 7/ 2'/) (aa: 7/)(ji: 1'//),data/intermediate_data/ktab/rs000045/v1.ktab
@@ -14,6 +48,11 @@ rs000045,extra,58:25,do,,(Aa: 7/)(ji: 2'//) (do: 2'//)(kho: 7/)(la: 1',data/inte
 rs000045,extra,60:7,tro,,(tro: 1'//) (so: 2'//) (aa:,data/intermediate_data/ktab/rs000045/v1.ktab
 rs000045,extra,60:18,so,,(tro: 1'//) (so: 2'//) (aa: 2'//)(kho:,data/intermediate_data/ktab/rs000045/v1.ktab
 rs000045,extra,60:29,aa,,(tro: 1'//) (so: 2'//) (aa: 2'//)(kho: 7// 1'// 2,data/intermediate_data/ktab/rs000045/v1.ktab
+rs000045,octave,22:56,bi,+1 octave(s) from the rest of the song,1'//) (bo: 7//)(ku: 1'/)(lo: 2'/)(bi: 2'/)(chha: 2'/)(no: 1,data/intermediate_data/ktab/rs000045/v1.ktab
+rs000045,octave,22:67,chha,+1 octave(s) from the rest of the song,7//)(ku: 1'/)(lo: 2'/)(bi: 2'/)(chha: 2'/)(no: 1'/ 1'//) (p,data/intermediate_data/ktab/rs000045/v1.ktab
+rs000045,octave,25:56,bi,+1 octave(s) from the rest of the song,1'//) (bo: 7//)(ku: 1'/)(lo: 2'/)(bi: 2'/)(chha: 2'/)(no: 1,data/intermediate_data/ktab/rs000045/v1.ktab
+rs000045,octave,25:67,chha,+1 octave(s) from the rest of the song,7//)(ku: 1'/)(lo: 2'/)(bi: 2'/)(chha: 2'/)(no: 1'/ 1'//) (p,data/intermediate_data/ktab/rs000045/v1.ktab
+rs000045,octave,27:16,khe,+1 octave(s) from the rest of the song,(me: 3'/)(khe: 3'/) (pi: 3'/)(ya: 4',data/intermediate_data/ktab/rs000045/v1.ktab
 rs000086,different,10:27,j,aa,(Aa: 6// 5// 7// 2'//)(j: 1') (kh: 7/ 6/)(e: 5/,data/intermediate_data/ktab/rs000086/v1.ktab
 rs000086,different,10:36,kh,aa,(Aa: 6// 5// 7// 2'//)(j: 1') (kh: 7/ 6/)(e: 5/ 6/),data/intermediate_data/ktab/rs000086/v1.ktab
 rs000101,extra,9:38,ra,,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-),data/intermediate_data/ktab/rs000101/v1.ktab
@@ -59,22 +98,131 @@ rs000101,different,33:72,na,re,he: 1') (a: 1'/ 7/ 2'/)(ja: 1' 6/)(na: 5.)(re: 2.
 rs000101,extra,33:80,re,,(a: 1'/ 7/ 2'/)(ja: 1' 6/)(na: 5.)(re: 2.),data/intermediate_data/ktab/rs000101/v1.ktab
 rs000101,missing,34:43,,dhaa,: 2/)(re: 3/ 2/)(chhi: 3/) (san: 4/ 3/ 3/)(dhan: 5-),data/intermediate_data/ktab/rs000101/v1.ktab
 rs000101,extra,34:53,dhan,,3/ 2/)(chhi: 3/) (san: 4/ 3/ 3/)(dhan: 5-),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,rhythm,10:25,ri,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,rhythm,14:17,kash,"tab 4.5 beats, swaralipi 1 beats at this tempo",(Aa: 6'/)(kash: 5')(bho: 1'.)(ra: 1'-,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,rhythm,22:24,bho,"tab 4 beats, swaralipi 0.5 beats at this tempo",(Aa: 6/)(kash: 5)(bho: 1.)(ra: 1.-),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,rhythm,24:43,pa,"tab 3 beats, swaralipi 1 beats at this tempo",aa: 4/)(se: 4/) (ghaa: 4.)(se: 4) (pa: 4.) (phe: 3)(le: 5/)(,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,rhythm,27:54,me,"tab 1 beats, swaralipi 3.5 beats at this tempo",he: 1'/)(che: 6/) (mon: 5/ 4/ 6/) (me: 5/)(te: 4/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,rhythm,28:12,Chhoriye,"tab 2.5 beats, swaralipi 0.5 beats at this tempo",(Chhoriye: 4.-) (aa: 4.)(chhe: 4,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,rhythm,28:22,aa,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(Chhoriye: 4.-) (aa: 4.)(chhe: 4/) (aa: 4),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,rhythm,28:49,non,"tab 2 beats, swaralipi 1 beats at this tempo",: 4.-) (aa: 4.)(chhe: 4/) (aa: 4)(non: 4-)(de: 4/)(ri: 3/ 5/,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),8:6,Aa,+1 octave(s) from the rest of the song,(Aa: 1'/)(kash: 1')(bho: 1,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),8:17,kash,+1 octave(s) from the rest of the song,(Aa: 1'/)(kash: 1')(bho: 1'.)(ra: 1'.,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),8:26,bho,+1 octave(s) from the rest of the song,(Aa: 1'/)(kash: 1')(bho: 1'.)(ra: 1'.-),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),8:35,ra,+1 octave(s) from the rest of the song,(Aa: 1'/)(kash: 1')(bho: 1'.)(ra: 1'.-),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:7,sur,+1 octave(s) from the rest of the song,(sur: 1')(jo: 1'/) (taa: 1',data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:15,jo,+1 octave(s) from the rest of the song,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:26,taa,+1 octave(s) from the rest of the song,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:30,,+1 octave(s) from the rest of the song,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bis,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:38,ra,+1 octave(s) from the rest of the song,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:42,,+1 octave(s) from the rest of the song,ur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)(wo:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:54,bish,+1 octave(s) from the rest of the song,1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)(wo: 4')(bha: 4',data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:64,wo,+1 octave(s) from the rest of the song,1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)(wo: 4')(bha: 4'/)(ra: 4',data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:73,bha,+1 octave(s) from the rest of the song,ra: 2'/ 2'/) (bish: 4'.-)(wo: 4')(bha: 4'/)(ra: 4' 3'/) (pra,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:82,ra,+1 octave(s) from the rest of the song,'/) (bish: 4'.-)(wo: 4')(bha: 4'/)(ra: 4' 3'/) (praan: 5'/ 4,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:85,,+1 octave(s) from the rest of the song,(bish: 4'.-)(wo: 4')(bha: 4'/)(ra: 4' 3'/) (praan: 5'/ 4'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:98,praan,+1 octave(s) from the rest of the song,(wo: 4')(bha: 4'/)(ra: 4' 3'/) (praan: 5'/ 4'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),9:102,,+1 octave(s) from the rest of the song,4')(bha: 4'/)(ra: 4' 3'/) (praan: 5'/ 4'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:7,Taa,+1 octave(s) from the rest of the song,(Taa: 4'-)(ha: 4'/)(ri: 4'.,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:16,ha,+1 octave(s) from the rest of the song,(Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:25,ri,+1 octave(s) from the rest of the song,(Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:38,maajh,+1 octave(s) from the rest of the song,(Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:41,,+1 octave(s) from the rest of the song,Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5',data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:52,khaa,+1 octave(s) from the rest of the song,a: 4'/)(ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:60,ne,+1 octave(s) from the rest of the song,ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:64,,+1 octave(s) from the rest of the song,4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:73,a,+1 octave(s) from the rest of the song,jh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/ 3'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:82,mi,+1 octave(s) from the rest of the song,.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/ 3'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),10:86,,+1 octave(s) from the rest of the song,haa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/ 3'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:7,pey,+1 octave(s) from the rest of the song,(pey: 2'/ 5'/ 4'/)(chi: 5'.,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:11,,+1 octave(s) from the rest of the song,(pey: 2'/ 5'/ 4'/)(chi: 5'.) (a,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:15,,+1 octave(s) from the rest of the song,(pey: 2'/ 5'/ 4'/)(chi: 5'.) (a: 5',data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:25,chi,+1 octave(s) from the rest of the song,(pey: 2'/ 5'/ 4'/)(chi: 5'.) (a: 5'/)(mi: 5'),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:34,a,+1 octave(s) from the rest of the song,(pey: 2'/ 5'/ 4'/)(chi: 5'.) (a: 5'/)(mi: 5') (paye: 5,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:43,mi,+1 octave(s) from the rest of the song,y: 2'/ 5'/ 4'/)(chi: 5'.) (a: 5'/)(mi: 5') (paye: 5'.)(chhi:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:54,paye,+1 octave(s) from the rest of the song,4'/)(chi: 5'.) (a: 5'/)(mi: 5') (paye: 5'.)(chhi: 5'/) (mor:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:65,chhi,+1 octave(s) from the rest of the song,'.) (a: 5'/)(mi: 5') (paye: 5'.)(chhi: 5'/) (mor: 5') (sthaa,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:76,mor,+1 octave(s) from the rest of the song,)(mi: 5') (paye: 5'.)(chhi: 5'/) (mor: 5') (sthaan: 6' 7'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:89,sthaan,+1 octave(s) from the rest of the song,ye: 5'.)(chhi: 5'/) (mor: 5') (sthaan: 6' 7'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),11:92,,+1 octave(s) from the rest of the song,5'.)(chhi: 5'/) (mor: 5') (sthaan: 6' 7'/),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:8,Bish,+1 octave(s) from the rest of the song,(Bish: 6')(ma: 1'/)(ye: 2'.),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:16,ma,+1 octave(s) from the rest of the song,(Bish: 6')(ma: 1'/)(ye: 2'.) (taai:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:25,ye,+1 octave(s) from the rest of the song,(Bish: 6')(ma: 1'/)(ye: 2'.) (taai: 3'.) (jaa,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:37,taai,+1 octave(s) from the rest of the song,(Bish: 6')(ma: 1'/)(ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6',data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:48,jaa,+1 octave(s) from the rest of the song,')(ma: 1'/)(ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge:,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:52,,+1 octave(s) from the rest of the song,a: 1'/)(ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'.,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:56,,+1 octave(s) from the rest of the song,'/)(ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:60,,+1 octave(s) from the rest of the song,ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/ 4'),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:69,ge,+1 octave(s) from the rest of the song,(taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/ 4'),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:73,,+1 octave(s) from the rest of the song,i: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/ 4'),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),12:77,,+1 octave(s) from the rest of the song,'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/ 4'),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),13:7,jaa,+1 octave(s) from the rest of the song,(jaa: 2'/)(ge: 2'/ 5'/) (aa,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),13:16,ge,+1 octave(s) from the rest of the song,(jaa: 2'/)(ge: 2'/ 5'/) (aa: 4'/)(ma,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),13:40,mar,+1 octave(s) from the rest of the song,(jaa: 2'/)(ge: 2'/ 5'/) (aa: 4'/)(mar: 5') (gaan: 4'/ 5'/ 6',data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),13:51,gaan,+1 octave(s) from the rest of the song,ge: 2'/ 5'/) (aa: 4'/)(mar: 5') (gaan: 4'/ 5'/ 6'/ 7'.),data/intermediate_data/ktab/rs000101/v1.ktab
+rs000101,octave (stanza moved to fit the kalimba),14:17,kash,+1 octave(s) from the rest of the song,(Aa: 6'/)(kash: 5')(bho: 1'.)(ra: 1'-,data/intermediate_data/ktab/rs000101/v1.ktab
+rs000115,rhythm,25:59,ye,"tab 4 beats, swaralipi 0.5 beats at this tempo",(no: 5/)(ta: 5/ 7// 6//) (dhui: 5)(ye: 4/ 3.--) (daao: 3),data/intermediate_data/ktab/rs000115/v1.ktab
 rs000133,extra,32:23,ek,,(Aa: 6/)(mar: 7) (ek: 7)(taa: 1'),data/intermediate_data/ktab/rs000133/v1.ktab
 rs000133,extra,32:31,taa,,(Aa: 6/)(mar: 7) (ek: 7)(taa: 1'),data/intermediate_data/ktab/rs000133/v1.ktab
 rs000133,extra,35:48,boi,,/)(ner: 6//) (be: 5/.)(dan: 6//) (boi: 7)(te: 1') (naa: 7)(r,data/intermediate_data/ktab/rs000133/v1.ktab
 rs000133,extra,35:55,te,,6//) (be: 5/.)(dan: 6//) (boi: 7)(te: 1') (naa: 7)(re: 1'--,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,rhythm,33:10,gaaner,"tab 1 beats, swaralipi 2 beats at this tempo",(gaaner: 7) (be: 1'--) (dan: 7,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,rhythm,34:6,Ek,"tab 1.75 beats, swaralipi 6 beats at this tempo",(Ek: 1'//)(taa: 7/) (ra: 6,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,rhythm,34:55,ti,"tab 6 beats, swaralipi 2 beats at this tempo",7/) (ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (taa: 7)(re:,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,octave,34:46,ek,-1 octave(s) from the rest of the song,'//)(taa: 7/) (ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (ta,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,octave,34:55,ti,-1 octave(s) from the rest of the song,7/) (ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (taa: 7)(re:,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,octave,34:59,,-1 octave(s) from the rest of the song,(ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (taa: 7)(re: 2'/,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000161,rhythm,16:116,mar,"tab 1 beats, swaralipi 2 beats at this tempo",ai: 5/ 6// 5//) (ni: 4/) (aa: 3/)(mar: 2//),data/intermediate_data/ktab/rs000161/v1.ktab
+rs000161,rhythm,25:112,mar,"tab 1 beats, swaralipi 2 beats at this tempo",(jaa: 5/ 6// 5//)(i: 4/) (aa: 3/)(mar: 2//),data/intermediate_data/ktab/rs000161/v1.ktab
+rs000197,octave,29:102,,-1 octave(s) from the rest of the song,'/ 6// 7/. 6//) (ei: 5/. 5// 6// 5 4 2 1/ 1// 4/. 4// 3// 5/,data/intermediate_data/ktab/rs000197/v1.ktab
+rs000215,rhythm,12:73,te,"tab 1 beats, swaralipi 2.5 beats at this tempo",'/)(har: 4'/ 4'// 3'//) (haa: 2'/)(te: 3'/.) (aamar: 2'//),data/intermediate_data/ktab/rs000215/v1.ktab
+rs000215,octave,9:90,te,-1 octave(s) from the rest of the song,o: 4'// 3'//) (praa: 2' 3'// 2'//)(te: 7//- 1'//),data/intermediate_data/ktab/rs000215/v1.ktab
+rs000215,octave,18:104,roy,-1 octave(s) from the rest of the song,4'// 5'/ 4' 3'-- 1') (tha: 1'/) (roy: 1'/ 1'/. 2'//) (praa:,data/intermediate_data/ktab/rs000215/v1.ktab
+rs000215,octave,22:36,roy,-1 octave(s) from the rest of the song,(Je: 1') (ka: 1'/)(tha: 1'/) (roy: 1'/. 2'//) (praa: 2'/,data/intermediate_data/ktab/rs000215/v1.ktab
 rs000219,different,10:16,an,bo,(Jib: 1'/)(an: 1'/) (ju: 6/ 7/)(re:,data/intermediate_data/ktab/rs000219/v1.ktab
 rs000219,different,10:26,ju,no,(Jib: 1'/)(an: 1'/) (ju: 6/ 7/)(re: 2' 6/ 4'/),data/intermediate_data/ktab/rs000219/v1.ktab
 rs000219,different,12:68,sh,bo,(ha: 6'/ 5'/)(ro: 4') (jee: 1'/) (sh: 1'/),data/intermediate_data/ktab/rs000219/v1.ktab
 rs000219,different,13:6,ju,no,(ju: 6/ 7/)(re: 2' 6/ 4'/),data/intermediate_data/ktab/rs000219/v1.ktab
 rs000277,extra,56:52,ko,,'// 7/ 6/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/),data/intermediate_data/ktab/rs000277/v1.ktab
 rs000277,extra,56:60,re,,/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,rhythm,13:104,se,"tab 3.5 beats, swaralipi 2 beats at this tempo",5///) (po: 4/)(thik: 3/ 1/) (e: 3)(se: 4/ 5--),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,rhythm,20:104,se,"tab 3.5 beats, swaralipi 2 beats at this tempo",5///) (po: 4/)(thik: 3/ 1/) (e: 3)(se: 4/ 5--),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,rhythm,35:54,se,"tab 2 beats, swaralipi 0.5 beats at this tempo",5///) (po: 4/)(thik: 3/ 1/) (e: 3)(se: 4/ 5.),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,rhythm,54:5,e,"tab 3.5 beats, swaralipi 0.5 beats at this tempo",(e: 4/ 5--)(mon: 4/. 6//),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,rhythm,55:23,chhaa,"tab 2.5 beats, swaralipi 0.5 beats at this tempo",(Ghar: 4// 6/)(chhaa: 6 7/ 1')(ra: 6/. 1'//,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,rhythm,55:55,ei,"tab 3.25 beats, swaralipi 1 beats at this tempo",chhaa: 6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/ 7) (paa: 7/,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,rhythm,55:101,ke,"tab 2.5 beats, swaralipi 1 beats at this tempo",7/ 7) (paa: 7/.)(gol: 6//)(ta: 7/)(ke: 1'- 3/),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,octave,53:75,gol,-1 octave(s) from the rest of the song,ra: 6///) (ei: 5/// 4/) (paa: 3/)(gol: 1/) (take: 3),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,octave,54:5,e,-1 octave(s) from the rest of the song,(e: 4/ 5--)(mon: 4/. 6//),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,octave,54:18,mon,-1 octave(s) from the rest of the song,(e: 4/ 5--)(mon: 4/. 6//) (ko: 6/)(re:,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,octave,56:5,e,-1 octave(s) from the rest of the song,(e: 4/ 5/. 1'// 7/ 6/ 5/.,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,octave,56:43,mon,-1 octave(s) from the rest of the song,4/ 5/. 1'// 7/ 6/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,octave,56:52,ko,-1 octave(s) from the rest of the song,'// 7/ 6/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,octave,56:60,re,-1 octave(s) from the rest of the song,/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/),data/intermediate_data/ktab/rs000277/v1.ktab
 rs000292,extra,31:31,Te,,(ba: 2'// 3'//)(son: 2'/)(Te: 3'//) (su: 2'//) (te:,data/intermediate_data/ktab/rs000292/v1.ktab
 rs000292,extra,31:42,su,,a: 2'// 3'//)(son: 2'/)(Te: 3'//) (su: 2'//) (te: 1'/. 2' 1',data/intermediate_data/ktab/rs000292/v1.ktab
 rs000306,different,9:64,ad,o,7) (chal: 1'--) (aam: 1')(ra: 2') (ad: 1' 2'-- 7/ 1'/ 2'/ 3',data/intermediate_data/ktab/rs000306/v1.ktab
 rs000306,missing,9:67,,bhu,(chal: 1'--) (aam: 1')(ra: 2') (ad: 1' 2'-- 7/ 1'/ 2'/ 3'/ 4,data/intermediate_data/ktab/rs000306/v1.ktab
 rs000306,different,18:45,m,o,7) (cho: 1'--) (aa: 1') (raa: 2') (m: 1' 2'-- 7/ 1'/ 2'/ 3',data/intermediate_data/ktab/rs000306/v1.ktab
 rs000306,missing,18:48,,bhu,(cho: 1'--) (aa: 1') (raa: 2') (m: 1' 2'-- 7/ 1'/ 2'/ 3'/ 4,data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,rhythm,22:54,bhul,"tab 5 beats, swaralipi 2 beats at this tempo",.)(ra: 2') (ko: 1') (ri: 7/ 7/) (bhul: 1'- 1'--),data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,rhythm,30:6,Je,"tab 4.5 beats, swaralipi 1 beats at this tempo",(Je: 1' 2'-- 7/) (kha: 1'/,data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,rhythm,30:37,ne,"tab 1 beats, swaralipi 3 beats at this tempo",(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne: 3'/) (daakpa: 4'/)(re,data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,rhythm,30:63,rejib,"tab 0.5 beats, swaralipi 2 beats at this tempo",1'/ 2'/)(ne: 3'/) (daakpa: 4'/)(rejib: 5'/)(an: 5'-),data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,rhythm,31:69,Tut,"tab 1 beats, swaralipi 4 beats at this tempo",aam: 4'/ 6'/)(ra: 5') (pros: 4'/)(Tut: 3'/),data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,rhythm,32:28,chan,"tab 1 beats, swaralipi 6 beats at this tempo",(Aam: 2'/)(ra: 1'/) (chan: 7/)(Chalaamra: 7/) (a,data/intermediate_data/ktab/rs000306/v1.ktab
+rs000451,rhythm,10:70,ni,"tab 1 beats, swaralipi 3 beats at this tempo",(na: 5'- 6'/ 5'/) (ja: 4')(no: 3')(ni: 2'/ 3'/),data/intermediate_data/ktab/rs000451/v2.ktab
+rs000451,rhythm,16:53,go,"tab 4 beats, swaralipi 8 beats at this tempo",hi: 5)(be: 6) (jaa: 1'-)(ni: 2'-) (go: 1'---),data/intermediate_data/ktab/rs000451/v2.ktab
+rs000451,rhythm,22:69,tha,"tab 4 beats, swaralipi 8 beats at this tempo",(paa: 4')(i: 3')(bo: 2') (ko: 2')(tha: 6'---),data/intermediate_data/ktab/rs000451/v2.ktab
+rs000451,rhythm,25:39,jo,"tab 1 beats, swaralipi 2 beats at this tempo",(ga: 6')(ho: 5')(no: 4') (ra: 3')(jo: 2'/ 3'/)(ni: 1'),data/intermediate_data/ktab/rs000451/v2.ktab
+rs000451,rhythm,25:52,ni,"tab 1 beats, swaralipi 2 beats at this tempo",5')(no: 4') (ra: 3')(jo: 2'/ 3'/)(ni: 1'),data/intermediate_data/ktab/rs000451/v2.ktab
+rs000476,rhythm,18:70,re,"tab 3 beats, swaralipi 1.5 beats at this tempo",(mon: 6// 7// 1'// 2'//)(di: 1'/)(re: 7--),data/intermediate_data/ktab/rs000476/v1.ktab
+rs000561,rhythm,37:33,yo,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(Ja: 3/)(yo: 1'/) (ja: 1'/)(yo: 1'/ 7/. 1'//) (ho: 7/,data/intermediate_data/ktab/rs000561/v1.ktab
+rs000588,rhythm,24:39,ma,"tab 2.5 beats, swaralipi 1 beats at this tempo",(phe: 7/)(lo: 7/)(na: 7) (aa: 7/)(ma: 7 7/. 5// 5/)(re: 7/,data/intermediate_data/ktab/rs000588/v1.ktab
+rs000588,rhythm,24:104,chho,"tab 3.75 beats, swaralipi 0.5 beats at this tempo",// 7// 2'/ 1'/. 5/ 5// 4// 6//) (chho: 5/. 4/ 3 3.),data/intermediate_data/ktab/rs000588/v1.ktab
+rs000588,octave,22:52,mi,+1 octave(s) from the rest of the song,: 3'/) (haa: 4')(te: 3'/) (tu: 4')(mi: 3'.),data/intermediate_data/ktab/rs000588/v1.ktab
+rs000588,octave,23:7,gne,+1 octave(s) from the rest of the song,(gne: 4'/)(the: 3'/) (ni: 3,data/intermediate_data/ktab/rs000588/v1.ktab
+rs000613,rhythm,11:72,lo,"tab 3.5 beats, swaralipi 2 beats at this tempo",dha: 6/. 5//) (dhaa: 6/. 2'/ 1'//)(lo: 2'//- 1'//),data/intermediate_data/ktab/rs000613/v1.ktab
 rs000636,extra,9:73,paa,,(ner: 6/ 7/ 1'/ 2'/) (o: 2'. 7/) (paa: 7// 1'// 7/ 6/ 7/)(re,data/intermediate_data/ktab/rs000636/v2.ktab
 rs000636,missing,9:77,,paa ,: 6/ 7/ 1'/ 2'/) (o: 2'. 7/) (paa: 7// 1'// 7/ 6/ 7/)(re: 1',data/intermediate_data/ktab/rs000636/v2.ktab
 rs000636,extra,11:88,re,,5') (to: 4'/ 3' 5'/)(ma: 4'. 3'/)(re: 3'/ 2' 3' 2'. 2'/ 4'.,data/intermediate_data/ktab/rs000636/v2.ktab
@@ -85,16 +233,47 @@ rs000636,different,22:8,Dnaa,to,(Dnaa: 1')(ri: 4')(ye: 4'. 3,data/intermediate_d
 rs000636,extra,22:16,ri,,(Dnaa: 1')(ri: 4')(ye: 4'. 3'/) (aa:,data/intermediate_data/ktab/rs000636/v2.ktab
 rs000636,extra,27:50,la,,)(kol: 6/ 7/ 1'/ 2'/) (be: 2'. 7/)(la: 7// 1'// 7/ 6/ 7/) (j,data/intermediate_data/ktab/rs000636/v2.ktab
 rs000636,missing,27:54,,laa,l: 6/ 7/ 1'/ 2'/) (be: 2'. 7/)(la: 7// 1'// 7/ 6/ 7/) (je: 1,data/intermediate_data/ktab/rs000636/v2.ktab
+rs000636,rhythm,27:74,je,"tab 4 beats, swaralipi 8 beats at this tempo",e: 2'. 7/)(la: 7// 1'// 7/ 6/ 7/) (je: 1'---),data/intermediate_data/ktab/rs000636/v2.ktab
+rs000772,rhythm,28:6,Di,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(Di: 4/ 5)(ner: 4/ 4/. 7//,data/intermediate_data/ktab/rs000772/v1.ktab
+rs000772,rhythm,38:84,rar,"tab 2.5 beats, swaralipi 1 beats at this tempo",//) (jho: 5// 6// 5 4/ 3 1/ 3 4/)(rar: 5 5/. 6// 5/),data/intermediate_data/ktab/rs000772/v1.ktab
+rs000772,octave,19:8,Shuk,-1 octave(s) from the rest of the song,(Shuk: 1/ 3 4/ 5 1'/. 3'//)(,data/intermediate_data/ktab/rs000772/v1.ktab
+rs000810,rhythm,18:62,ku,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",: 3'/)(to: 4'.) (pri: 3')(ti: 3'/)(ku: 3'/ 2'/ 1'/)(su: 2'/,data/intermediate_data/ktab/rs000810/v1.ktab
+rs000810,rhythm,21:64,ta,"tab 0.25 beats, swaralipi 1.5 beats at this tempo",3/ 4/)(bo: 3/ 5//)(no: 4/)(la: 3/)(ta: 4//) (a: 3/)(bo: 1/)(,data/intermediate_data/ktab/rs000810/v1.ktab
+rs000810,octave,16:89,,+1 octave(s) from the rest of the song,'//)(to: 2'/)(sa: 3'.)(ma: 2'/// 3'/// 2'/ 1'//)(ga: 1'/) (m,data/intermediate_data/ktab/rs000810/v1.ktab
+rs000825,octave,16:8,Taai,+1 octave(s) from the rest of the song,(Taai: 3'/. 5'//) (di: 5'/)(,data/intermediate_data/ktab/rs000825/v1.ktab
+rs000825,octave,18:8,Taai,+1 octave(s) from the rest of the song,(Taai: 3'/. 5'//) (di: 5'/)(,data/intermediate_data/ktab/rs000825/v1.ktab
 rs000920,missing,18:48,,aa,-- 4'/)(mar: 5'-- 6'/ 5'/ 4'-- 5'/ 4'/ 3'- 1' 2') (mon: 3'--,data/intermediate_data/ktab/rs000920/v3.ktab
 rs000920,missing,18:52,,maa,'/)(mar: 5'-- 6'/ 5'/ 4'-- 5'/ 4'/ 3'- 1' 2') (mon: 3'-- 4'),data/intermediate_data/ktab/rs000920/v3.ktab
 rs000920,missing,18:97,,re,(mon: 3'-- 4') (bhu: 3'-)(lay: 2' 3'/ 2'/) (re: 1'---),data/intermediate_data/ktab/rs000920/v3.ktab
 rs000920,extra,18:107,re,,- 4') (bhu: 3'-)(lay: 2' 3'/ 2'/) (re: 1'---),data/intermediate_data/ktab/rs000920/v3.ktab
 rs000920,missing,33:48,,aa,-- 4'/)(mar: 5'-- 6'/ 5'/ 4'-- 5'/ 4'/ 3'- 1' 2') (mon: 3'--,data/intermediate_data/ktab/rs000920/v3.ktab
 rs000920,missing,33:52,,maa,'/)(mar: 5'-- 6'/ 5'/ 4'-- 5'/ 4'/ 3'- 1' 2') (mon: 3'-- 4'),data/intermediate_data/ktab/rs000920/v3.ktab
+rs000920,rhythm,8:115,path,"tab 4 beats, swaralipi 8 beats at this tempo",'/) (maa: 5'-)(tir: 4' 5'/ 4'/) (path: 3'---),data/intermediate_data/ktab/rs000920/v3.ktab
+rs000920,rhythm,9:107,re,"tab 4 beats, swaralipi 8 beats at this tempo",- 4') (bhu: 3'-)(lay: 2' 3'/ 2'/) (re: 1'---),data/intermediate_data/ktab/rs000920/v3.ktab
+rs000920,rhythm,12:8,path,"tab 4 beats, swaralipi 8 beats at this tempo",(path: 3'---),data/intermediate_data/ktab/rs000920/v3.ktab
+rs000920,rhythm,24:75,re,"tab 4 beats, swaralipi 8 beats at this tempo",-)(ye: 7'-) (jaay: 6'. 5' 6' 7'/) (re: 5'---),data/intermediate_data/ktab/rs000920/v3.ktab
+rs000920,octave,29:42,ye,+1 octave(s) from the rest of the song,o: 5'-)(thay: 6'. 1''/) (gi: 1''-)(ye: 1''-) (shesh: 1''.--,data/intermediate_data/ktab/rs000920/v3.ktab
 rs000980,extra,30:42,gan,,: 5'/)(da: 5'/)(yo: 5'/)(di: 5'/)(gan: 4')(te: 3') (shan: 1',data/intermediate_data/ktab/rs000980/v1.ktab
 rs000980,extra,30:50,te,,a: 5'/)(yo: 5'/)(di: 5'/)(gan: 4')(te: 3') (shan: 1'.)(kho:,data/intermediate_data/ktab/rs000980/v1.ktab
 rs000980,extra,32:44,gan,,5'//)(da: 6'/.)(yo: 6')(di: 5'//)(gan: 6'//-)(te: 6'/) (shan,data/intermediate_data/ktab/rs000980/v1.ktab
 rs000980,extra,32:55,te,,'/.)(yo: 6')(di: 5'//)(gan: 6'//-)(te: 6'/) (shan: 5'//)(kho,data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,rhythm,13:34,mo,"tab 2 beats, swaralipi 1 beats at this tempo",(Sur: 2')(je: 5'/)(ro: 5'/) (mo: 4' 3') (ton: 3/.),data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,rhythm,13:47,ton,"tab 0.75 beats, swaralipi 3 beats at this tempo",')(je: 5'/)(ro: 5'/) (mo: 4' 3') (ton: 3/.),data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,rhythm,14:54,sh,"tab 1.5 beats, swaralipi 6 beats at this tempo",1'/)(r: 7-) (pro: 7/)(ka: 7/ 7/.)(sh: 2'//) (hok: 1'/.),data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,octave,13:47,ton,-1 octave(s) from the rest of the song,')(je: 5'/)(ro: 5'/) (mo: 4' 3') (ton: 3/.),data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,octave,15:26,ka,-1 octave(s) from the rest of the song,(ku: 7//)(heli: 6//)(ka: 5/.) (ko: 7)(Sur: 2'/,data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,octave,15:60,je,-1 octave(s) from the rest of the song,(ka: 5/.) (ko: 7)(Sur: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4,data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,octave,15:71,ro,-1 octave(s) from the rest of the song,ko: 7)(Sur: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4)(ton: 3--),data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,octave,15:80,mo,-1 octave(s) from the rest of the song,r: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4)(ton: 3--),data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,octave,15:88,ton,-1 octave(s) from the rest of the song,'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4)(ton: 3--),data/intermediate_data/ktab/rs000980/v1.ktab
+rs001068,rhythm,60:67,medaak,"tab 0.5 beats, swaralipi 2 beats at this tempo",(nei: 4/ 3/) (aa: 2/)(mi: 3/) (medaak: 2/)(bemore: 1.),data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,octave,60:54,mi,-1 octave(s) from the rest of the song,5/)(te: 5/) (nei: 4/ 3/) (aa: 2/)(mi: 3/) (medaak: 2/)(bemo,data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,octave,60:67,medaak,-1 octave(s) from the rest of the song,(nei: 4/ 3/) (aa: 2/)(mi: 3/) (medaak: 2/)(bemore: 1.),data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,octave,60:79,bemore,-1 octave(s) from the rest of the song,(aa: 2/)(mi: 3/) (medaak: 2/)(bemore: 1.),data/intermediate_data/ktab/rs001068/v1.ktab
+rs001094,octave,15:69,,-1 octave(s) from the rest of the song,'//)(lo: 2'/. 1'//) (di: 1'/)(per: 2'/ 1'// 3'//) (aa: 3'/)(,data/intermediate_data/ktab/rs001094/v1.ktab
+rs001094,octave,19:51,,-1 octave(s) from the rest of the song,'//)(lo: 2'/. 1'//) (di: 1'/)(per: 2'/ 1'// 3'//) (aa: 3'/)(,data/intermediate_data/ktab/rs001094/v1.ktab
+rs001094,octave,31:53,chho,+1 octave(s) from the rest of the song,i: 2'/)(ye: 1'// 3'//) (aa: 3'/)(chho: 2') (tu: 1'/)(mi: 2'/,data/intermediate_data/ktab/rs001094/v1.ktab
+rs001094,octave,31:53,chho,+1 octave(s) from the rest of the song,i: 2'/)(ye: 1'// 3'//) (aa: 3'/)(chho: 2') (tu: 1'/)(mi: 2'/,data/intermediate_data/ktab/rs001094/v1.ktab
 rs001194,missing,41:45,,shu,2')(to: 2') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si: 1'---,data/intermediate_data/ktab/rs001194/v2.ktab
 rs001194,different,41:54,ba,dhaa,') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si: 1'---),data/intermediate_data/ktab/rs001194/v2.ktab
 rs001194,extra,45:7,Cha,,(Cha: 5')(ro: 6'. 5'/)(ne:,data/intermediate_data/ktab/rs001194/v2.ktab
@@ -104,6 +283,76 @@ rs001194,different,46:16,da,mo,(hri: 4'-)(da: 6')(yo: 5'-) (khu: 4',data/interme
 rs001194,different,46:24,yo,ne,(hri: 4'-)(da: 6')(yo: 5'-) (khu: 4')(li: 3',data/intermediate_data/ktab/rs001194/v2.ktab
 rs001194,missing,47:69,,to,: 4') (bhe: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu: 3'),data/intermediate_data/ktab/rs001194/v2.ktab
 rs001194,different,47:78,nu,bhaa,e: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu: 3'),data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,rhythm,15:20,ro,"tab 3 beats, swaralipi 1 beats at this tempo",(Cha: 5'. 3'/)(ro: 5')(ne: 1''-) (dho: 5,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,rhythm,20:55,be,"tab 3 beats, swaralipi 1 beats at this tempo",')(ba: 4'-)(ro: 4') (bhe: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,rhythm,31:55,be,"tab 3 beats, swaralipi 1 beats at this tempo",')(ba: 4'-)(ro: 4') (bhe: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,rhythm,40:41,ka,"tab 1 beats, swaralipi 3 beats at this tempo",Ke: 4')(mo: 6')(ne: 5') (pro: 6'-)(ka: 1'')(si: 1''. 7'/ 7'/,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,rhythm,46:7,hri,"tab 2 beats, swaralipi 1 beats at this tempo",(hri: 4'-)(da: 6')(yo: 5'-),data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,rhythm,46:24,yo,"tab 6 beats, swaralipi 3 beats at this tempo",(hri: 4'-)(da: 6')(yo: 5'-) (khu: 4')(li: 3',data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,rhythm,47:78,nu,"tab 4 beats, swaralipi 1 beats at this tempo",e: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu: 3'),data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,rhythm,48:27,na,"tab 6 beats, swaralipi 3 beats at this tempo",(aa: 4'. 5'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,octave,14:27,na,-1 octave(s) from the rest of the song,(aa: 4'. 5'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,octave,41:38,lo,-1 octave(s) from the rest of the song,(ka: 2')(to: 2') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,octave,41:45,,-1 octave(s) from the rest of the song,2')(to: 2') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si: 1'---,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,octave,41:54,ba,-1 octave(s) from the rest of the song,') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si: 1'---),data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,octave,42:69,,-1 octave(s) from the rest of the song,: 4') (bhe: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu: 3'),data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,octave,43:27,na,-1 octave(s) from the rest of the song,(aa: 4'. 5'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li,data/intermediate_data/ktab/rs001194/v2.ktab
+rs001194,octave,46:57,ya,-1 octave(s) from the rest of the song,)(yo: 5'-) (khu: 4')(li: 3'.- 2'/)(ya: 1'--),data/intermediate_data/ktab/rs001194/v2.ktab
+rs001247,rhythm,13:60,taan,"tab 3 beats, swaralipi 1 beats at this tempo",/)(ro: 6'/) (maa: 5'/)(ro: 5'/) (taan: 4'/. 1'// 2'/. 5'// 4,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,rhythm,22:60,taan,"tab 3 beats, swaralipi 1 beats at this tempo",/)(ro: 6'/) (maa: 5'/)(ro: 5'/) (taan: 4'/. 1'// 2'/. 5'// 4,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,rhythm,38:6,ja,"tab 3 beats, swaralipi 0.5 beats at this tempo",(ja: 4' 3'/ 3'/ 2') (ta: 4,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,rhythm,40:55,tal,"tab 3 beats, swaralipi 1 beats at this tempo",t: 5'//)(the: 4' 2'/.) (ut: 5'//)(tal: 4'--),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,rhythm,41:6,Ho,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(Ho: 4/ 5/ 6/)(yo: 6/) (na,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,rhythm,41:60,thi,"tab 3 beats, swaralipi 1.5 beats at this tempo",/) (naa: 6)(ko: 6/) (kunt: 5/ 3/)(thi: 4/)(to: 5),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,rhythm,43:6,jo,"tab 3 beats, swaralipi 0.5 beats at this tempo",(jo: 4--)(y: 4//) (jo: 1'/,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,rhythm,43:79,gaai,"tab 2 beats, swaralipi 1 beats at this tempo",o: 1'/)(y: 7/ 1'/ 7/)(gaan: 1') (gaai: 1'/ 3'/ 3'/ 2'/) (yo:,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,rhythm,44:65,taan,"tab 3 beats, swaralipi 1 beats at this tempo",/)(ro: 6'/) (maa: 5'/)(ro: 5'/) (taan: 4'/. 1'// 2'/. 5'// 4,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,14:67,,-1 octave(s) from the rest of the song,(taan: 2'/. 5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,14:79,hn,-1 octave(s) from the rest of the song,5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,14:99,aai,-1 octave(s) from the rest of the song,/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,14:116,,-1 octave(s) from the rest of the song,: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,14:132,yo,-1 octave(s) from the rest of the song,(aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,23:67,,-1 octave(s) from the rest of the song,(taan: 2'/. 5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,23:79,hn,-1 octave(s) from the rest of the song,5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,23:99,aai,-1 octave(s) from the rest of the song,/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,23:116,,-1 octave(s) from the rest of the song,: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,23:132,yo,-1 octave(s) from the rest of the song,(aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,37:16,di,+1 octave(s) from the rest of the song,(Jo: 4'//)(di: 6'//) (maa: 6'/)(te:,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,41:6,Ho,-1 octave(s) from the rest of the song,(Ho: 4/ 5/ 6/)(yo: 6/) (na,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,41:12,,-1 octave(s) from the rest of the song,(Ho: 4/ 5/ 6/)(yo: 6/) (naa: 6)(,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,41:20,yo,-1 octave(s) from the rest of the song,(Ho: 4/ 5/ 6/)(yo: 6/) (naa: 6)(ko: 6/),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,41:30,naa,-1 octave(s) from the rest of the song,(Ho: 4/ 5/ 6/)(yo: 6/) (naa: 6)(ko: 6/) (kunt: 5/,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,41:37,ko,-1 octave(s) from the rest of the song,(Ho: 4/ 5/ 6/)(yo: 6/) (naa: 6)(ko: 6/) (kunt: 5/ 3/)(thi,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,41:48,kunt,-1 octave(s) from the rest of the song,5/ 6/)(yo: 6/) (naa: 6)(ko: 6/) (kunt: 5/ 3/)(thi: 4/)(to: 5,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,41:60,thi,-1 octave(s) from the rest of the song,/) (naa: 6)(ko: 6/) (kunt: 5/ 3/)(thi: 4/)(to: 5),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,42:8,,-1 octave(s) from the rest of the song,(ta: 5 5/)(le: 5/) (taar: 2/,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,42:16,le,-1 octave(s) from the rest of the song,(ta: 5 5/)(le: 5/) (taar: 2/) (di: 3,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,42:36,di,-1 octave(s) from the rest of the song,(ta: 5 5/)(le: 5/) (taar: 2/) (di: 3/ 4/ 5/ 6 6/ 5/) (yo,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,42:59,yo,-1 octave(s) from the rest of the song,(taar: 2/) (di: 3/ 4/ 5/ 6 6/ 5/) (yo: 3/.) (taal: 5//),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,43:6,jo,-1 octave(s) from the rest of the song,(jo: 4--)(y: 4//) (jo: 1'/,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,43:14,y,-1 octave(s) from the rest of the song,(jo: 4--)(y: 4//) (jo: 1'//)(y: 1',data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,45:67,,-1 octave(s) from the rest of the song,(taan: 2'/. 5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,45:79,hn,-1 octave(s) from the rest of the song,5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,45:99,aai,-1 octave(s) from the rest of the song,/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,45:116,,-1 octave(s) from the rest of the song,: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,octave,45:132,yo,-1 octave(s) from the rest of the song,(aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001283,octave,11:6,Ei,-1 octave(s) from the rest of the song,(Ei: 6 6/) (je: 6/ 6// 5//,data/intermediate_data/ktab/rs001283/v1.ktab
+rs001283,octave,11:17,je,-1 octave(s) from the rest of the song,(Ei: 6 6/) (je: 6/ 6// 5// 5/. 3// 5/,data/intermediate_data/ktab/rs001283/v1.ktab
+rs001313,rhythm,9:8,jaaw,"tab 1.75 beats, swaralipi 0.5 beats at this tempo",(jaaw: 1'/ 7 6//) (ar: 7/ 1',data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,9:24,ar,"tab 1 beats, swaralipi 2 beats at this tempo",(jaaw: 1'/ 7 6//) (ar: 7/ 1'//) (nei: 1'//),data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,11:6,Me,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(Me: 5/ 5/. 6//)(le: 6/) (,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,14:6,Te,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(Te: 5//)(pan: 1'//)(ta: 1,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,15:54,thar,"tab 2.5 beats, swaralipi 4.5 beats at this tempo",1'/ 7) (rup: 6// 7/) (ka: 1'//)(thar: 1'// 7// 6// 5//- 5/),data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,16:54,bhu,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",/ 7/ 6// 5/. 5/ 6/. 1'// 1'/ 1') (bhu: 1'/ 1')(le: 1'/ 2'//),data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,17:31,se,"tab 3 beats, swaralipi 1 beats at this tempo",(paa: 2'//)(re: 1'/ 7//) (se: 7/. 1'// 1'/ 1'/ 7) (,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,18:7,Paa,"tab 2.75 beats, swaralipi 1.5 beats at this tempo",(Paa: 5/)(rul: 7 6/ 7/ 6//),data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,18:37,boner,"tab 0.25 beats, swaralipi 1.5 beats at this tempo",(Paa: 5/)(rul: 7 6/ 7/ 6//) (boner: 5//) (cham: 5/. 6//)(,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,23:8,tuli,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(tuli: 6/) (aa: 6//)(mi: 5//,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,28:164,dur,"tab 3 beats, swaralipi 1 beats at this tempo",') (bhe: 1'/ 2'//)(she: 1'/ 7//) (dur: 7/ 1'/ 1'/ 1'/ 7) (di,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,28:187,di,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",1'/ 7//) (dur: 7/ 1'/ 1'/ 1'/ 7) (di: 6// 7/ 1'// 1'// 7//),data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,rhythm,31:125,mo,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",7/ 1'// 1'// 7// 6// 5//- 5/ 5//) (mo: 6/ 7// 7/ 6//)(ne: 5/,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,octave,20:63,sur,+1 octave(s) from the rest of the song,7/) (mo: 6//)(ne: 5/. 5// 1'//) (sur: 1' 1'/ 2'// 1'/ 7// 7,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001313,octave,20:100,jyo,+1 octave(s) from the rest of the song,: 1' 1'/ 2'// 1'/ 7// 7/ 1'/ 1'/)(jyo: 1'/ 7 6// 7/ 1'// 1'/,data/intermediate_data/ktab/rs001313/v1.ktab
 rs001352,extra,10:77,de,,jhe: 4/ 3///) (ta: 4///)(bo: 5//) (de: 4//)(kha: 3//) (paai:,data/intermediate_data/ktab/rs001352/v1.ktab
 rs001352,extra,10:87,kha,,//) (ta: 4///)(bo: 5//) (de: 4//)(kha: 3//) (paai: 2/),data/intermediate_data/ktab/rs001352/v1.ktab
 rs001352,extra,10:99,paai,,/)(bo: 5//) (de: 4//)(kha: 3//) (paai: 2/),data/intermediate_data/ktab/rs001352/v1.ktab
@@ -131,12 +380,126 @@ rs001352,different,50:15,sar,di,(bi: 3/)(sar: 2/)(ja: 3/ 3/ 3/)(n:,data/intermed
 rs001352,extra,51:82,o,,/)(yo: 7/)(i: 7/// 1'///)(b: 2'//) (o: 1'/),data/intermediate_data/ktab/rs001352/v1.ktab
 rs001352,extra,52:6,aa,,(aa: 7/)(so: 6//)(na: 7//),data/intermediate_data/ktab/rs001352/v1.ktab
 rs001352,extra,52:14,so,,(aa: 7/)(so: 6//)(na: 7//) (bi: 5/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,13:16,Ke,"tab 0.75 beats, swaralipi 2 beats at this tempo",(de: 2'//)(Ke: 3'//)(no: 1'//) (me:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,13:47,gh,"tab 2 beats, swaralipi 1 beats at this tempo",//)(Ke: 3'//)(no: 1'//) (me: 2'//)(gh: 1'/ 7/ 6/ 5// 4//) (t,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,15:6,Ke,"tab 0.75 beats, swaralipi 2 beats at this tempo",(Ke: 3'//)(no: 1'//) (me:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,15:37,gh,"tab 2 beats, swaralipi 0.83 beats at this tempo",(Ke: 3'//)(no: 1'//) (me: 2'//)(gh: 1'/ 7/ 6/ 5// 4//) (t,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,16:39,ma,"tab 0.5 beats, swaralipi 1.7 beats at this tempo",(aaka: 6/)(she: 7// 6//) (to: 5/)(ma: 6///)(re: 7///) (dekh,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,18:23,ke,"tab 7.25 beats, swaralipi 3.5 beats at this tempo",(pa: 3/)(lo: 3//)(ke: 4// 3/ 4/) (to: 5/)(m,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,19:35,teohe,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(de: 2'/) (khi: 2'// 1'//)(teohe: 2'/) (kho: 2'/)(ni: 1,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,35:5,E,"tab 2 beats, swaralipi 0.5 beats at this tempo",(E: 5-)(to: 6/ 6/// 2'///,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,37:47,da,"tab 3.5 beats, swaralipi 1 beats at this tempo",o: 7//)(ma: 6//)(re: 5/) (hri: 4/)(da: 5-)(ye: 2/ 2/ 3/) (ra,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,38:50,ma,"tab 0.75 beats, swaralipi 2 beats at this tempo",(i: 6/)(bo: 6/ 6/ 4//) (to: 5//) (ma: 6/)(rede: 6//)(y: 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,39:51,k,"tab 2 beats, swaralipi 0.5 beats at this tempo",ko: 7/)(ri: 6/)(le: 7// 6// 5/ 4/) (k: 5-)(aa: 6/)(ro: 6///,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,40:82,t,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",'/ 7/ 6/ 5// 4//)(bo: 5/) (naa: 6/)(t: 6// 2'// 1'/ 7/)(h: 6,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,41:44,ye,"tab 4.5 beats, swaralipi 1.5 beats at this tempo",7//)(mare: 6//) (hri: 5/)(da: 4/)(ye: 5- 6 6/) (raa: 6/)(kh,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,43:7,hey,"tab 4.75 beats, swaralipi 1.5 beats at this tempo",(hey: 1'/.) (aa: 7 6/ 6/)(m,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,43:67,no,"tab 2 beats, swaralipi 1 beats at this tempo",i: 6/ 6// 7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,43:88,p,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe: 1'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,45:56,chaa,"tab 0.75 beats, swaralipi 2 beats at this tempo",aa: 3'//)(ropaa: 4'//)(ne: 3'/) (chaa: 2'/)(hi: 1'///)(bona:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,53:16,sha,"tab 1 beats, swaralipi 2 beats at this tempo",(bi: 5//)(sha: 6//)(yoi: 4/)(baa: 3/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,rhythm,53:55,na,"tab 1.75 beats, swaralipi 0.5 beats at this tempo",6//)(yoi: 4/)(baa: 3///)(so: 4///)(na: 5// 4// 3// 2/ 2/) (b,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,9:62,,+1 octave(s) from the rest of the song,n: 6/) (ke: 7/)(no: 7///) (paai: 1'/// 2'// 1'/ 7/ 6//) (na:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,9:67,,+1 octave(s) from the rest of the song,) (ke: 7/)(no: 7///) (paai: 1'/// 2'// 1'/ 7/ 6//) (na: 7//,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,13:6,de,+1 octave(s) from the rest of the song,(de: 2'//)(Ke: 3'//)(no: 1,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,13:16,Ke,+1 octave(s) from the rest of the song,(de: 2'//)(Ke: 3'//)(no: 1'//) (me:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,13:106,,+1 octave(s) from the rest of the song,to: 5/)(ma: 6/)(na: 6/// 2'/// 1'// 2' 2'/ 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,15:6,Ke,+1 octave(s) from the rest of the song,(Ke: 3'//)(no: 1'//) (me:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,15:90,hr,+1 octave(s) from the rest of the song,4//) (to: 5/) (aa: 6/)(seon: 6//) (hr: 2'//)(id: 1'/)(ay: 7/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,18:77,,+1 octave(s) from the rest of the song,5/)(may: 6. 6/ 6/) (ja: 6/)(be: 6/ 6/ 6//) (paai: 7// 1'/ 1,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,19:6,de,+1 octave(s) from the rest of the song,(de: 2'/) (khi: 2'// 1'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,19:17,khi,+1 octave(s) from the rest of the song,(de: 2'/) (khi: 2'// 1'//)(teohe: 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,19:35,teohe,+1 octave(s) from the rest of the song,(de: 2'/) (khi: 2'// 1'//)(teohe: 2'/) (kho: 2'/)(ni: 1,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,19:46,kho,+1 octave(s) from the rest of the song,'/) (khi: 2'// 1'//)(teohe: 2'/) (kho: 2'/)(ni: 1'/)(aan: 2',data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,19:65,aan,+1 octave(s) from the rest of the song,)(teohe: 2'/) (kho: 2'/)(ni: 1'/)(aan: 2'//)(khi: 1'//)(r: 2,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,19:85,r,+1 octave(s) from the rest of the song,2'/)(ni: 1'/)(aan: 2'//)(khi: 1'//)(r: 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,20:8,palo,+1 octave(s) from the rest of the song,(palo: 3'/)(keto: 4'/)(may:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,20:19,keto,+1 octave(s) from the rest of the song,(palo: 3'/)(keto: 4'/)(may: 3'//) (jabe,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,20:29,may,+1 octave(s) from the rest of the song,(palo: 3'/)(keto: 4'/)(may: 3'//) (jabepaai: 2'//,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,20:46,jabepaai,+1 octave(s) from the rest of the song,3'/)(keto: 4'/)(may: 3'//) (jabepaai: 2'//) (de: 2'/)(khi:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,20:57,de,+1 octave(s) from the rest of the song,4'/)(may: 3'//) (jabepaai: 2'//) (de: 2'/)(khi: 1'/// 2'///,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,20:73,,+1 octave(s) from the rest of the song,(jabepaai: 2'//) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te: 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,20:79,,+1 octave(s) from the rest of the song,paai: 2'//) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te: 2'/) (ohe:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,20:89,te,+1 octave(s) from the rest of the song,) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te: 2'/) (ohe: 1'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,23:7,cho,+1 octave(s) from the rest of the song,(cho: 3'/)(ki: 4'/)(te: 3'/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,23:16,ki,+1 octave(s) from the rest of the song,(cho: 3'/)(ki: 4'/)(te: 3'//) (aa: 2,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,23:25,te,+1 octave(s) from the rest of the song,(cho: 3'/)(ki: 4'/)(te: 3'//) (aa: 2'//) (naa,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,23:36,aa,+1 octave(s) from the rest of the song,(cho: 3'/)(ki: 4'/)(te: 3'//) (aa: 2'//) (naa: 2'/ 1'///,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,24:33,bo,+1 octave(s) from the rest of the song,(paa: 6/ 2'//) (yaa: 1'//) (bo: 2'/) (lok: 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,24:44,lok,+1 octave(s) from the rest of the song,: 6/ 2'//) (yaa: 1'//) (bo: 2'/) (lok: 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,25:7,naa,+1 octave(s) from the rest of the song,(naa: 3'/ 1'//) (po: 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,27:44,hri,+1 octave(s) from the rest of the song,: 5/ 6/)(rai: 6/ 2'//)(ya: 1'//) (hri: 2'/)(day: 2'/) (aa: 3,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,27:54,day,+1 octave(s) from the rest of the song,ai: 6/ 2'//)(ya: 1'//) (hri: 2'/)(day: 2'/) (aa: 3'/ 1'//)(k,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,27:64,aa,+1 octave(s) from the rest of the song,/)(ya: 1'//) (hri: 2'/)(day: 2'/) (aa: 3'/ 1'//)(k: 2'//)(as,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,31:65,khite,+1 octave(s) from the rest of the song,4//)(khi: 3/)(bo: 4/) (aan: 5/)(khite: 6.),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,38:68,y,+1 octave(s) from the rest of the song,4//) (to: 5//) (ma: 6/)(rede: 6//)(y: 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,40:6,tu,+1 octave(s) from the rest of the song,(tu: 2'/)(mi: 2'//) (paa:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,40:15,mi,+1 octave(s) from the rest of the song,(tu: 2'/)(mi: 2'//) (paa: 3'// 1'//,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,40:27,paa,+1 octave(s) from the rest of the song,(tu: 2'/)(mi: 2'//) (paa: 3'// 1'// 2'// 1'/ 7/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,41:92,,+1 octave(s) from the rest of the song,(raa: 6/)(khi: 6/)(te: 6// 7// 1'/ 1'/ 2'/) (aar: 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,41:103,aar,+1 octave(s) from the rest of the song,hi: 6/)(te: 6// 7// 1'/ 1'/ 2'/) (aar: 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:19,chaa,+1 octave(s) from the rest of the song,(kaa: 1'//)(chaa: 2')(hi: 6/ 2'// 1'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:30,,+1 octave(s) from the rest of the song,(kaa: 1'//)(chaa: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:55,na,+1 octave(s) from the rest of the song,a: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (na: 3'/) (aar: 3'// 4'//,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:66,aar,+1 octave(s) from the rest of the song,6/ 2'// 1'//)(bo: 2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:71,,+1 octave(s) from the rest of the song,// 1'//)(bo: 2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:76,,+1 octave(s) from the rest of the song,//)(bo: 2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:80,,+1 octave(s) from the rest of the song,bo: 2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2'///,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:96,ko,+1 octave(s) from the rest of the song,/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2'///)(ri: 3'//)(bo:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:107,ri,+1 octave(s) from the rest of the song,// 4'// 3'/ 2'/ 1'///) (ko: 2'///)(ri: 3'//)(bo: 2'/ 1'// 7/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:117,bo,+1 octave(s) from the rest of the song,/ 2'/ 1'///) (ko: 2'///)(ri: 3'//)(bo: 2'/ 1'// 7// 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,42:121,,+1 octave(s) from the rest of the song,/ 1'///) (ko: 2'///)(ri: 3'//)(bo: 2'/ 1'// 7// 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,43:7,hey,+1 octave(s) from the rest of the song,(hey: 1'/.) (aa: 7 6/ 6/)(m,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,43:34,,+1 octave(s) from the rest of the song,(hey: 1'/.) (aa: 7 6/ 6/)(mi: 6/ 6// 7// 1'/ 1'/) (pra,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,43:58,praa,+1 octave(s) from the rest of the song,6/ 6/)(mi: 6/ 6// 7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2',data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,43:67,no,+1 octave(s) from the rest of the song,i: 6/ 6// 7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,43:77,,+1 octave(s) from the rest of the song,7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,43:88,p,+1 octave(s) from the rest of the song,) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe: 1'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,45:6,An,+1 octave(s) from the rest of the song,(An: 2'/ 3'/) (kaa: 3'//)(,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,45:10,,+1 octave(s) from the rest of the song,(An: 2'/ 3'/) (kaa: 3'//)(ropa,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,45:21,kaa,+1 octave(s) from the rest of the song,(An: 2'/ 3'/) (kaa: 3'//)(ropaa: 4'//)(ne,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,45:34,ropaa,+1 octave(s) from the rest of the song,(An: 2'/ 3'/) (kaa: 3'//)(ropaa: 4'//)(ne: 3'/) (chaa:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,45:44,ne,+1 octave(s) from the rest of the song,2'/ 3'/) (kaa: 3'//)(ropaa: 4'//)(ne: 3'/) (chaa: 2'/)(hi:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,45:56,chaa,+1 octave(s) from the rest of the song,aa: 3'//)(ropaa: 4'//)(ne: 3'/) (chaa: 2'/)(hi: 1'///)(bona:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,45:78,bona,+1 octave(s) from the rest of the song,(ne: 3'/) (chaa: 2'/)(hi: 1'///)(bona: 2'///),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,46:7,aar,+1 octave(s) from the rest of the song,(aar: 3'//) (ko: 2'/)(ri: 1,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,46:18,ko,+1 octave(s) from the rest of the song,(aar: 3'//) (ko: 2'/)(ri: 1'//)(bo: 7/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,46:27,ri,+1 octave(s) from the rest of the song,(aar: 3'//) (ko: 2'/)(ri: 1'//)(bo: 7// 6) (hey,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,46:59,aa,+1 octave(s) from the rest of the song,/)(ri: 1'//)(bo: 7// 6) (hey: 6/) (aa: 6/// 2'/// 1'//)(mi:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,46:80,mi,+1 octave(s) from the rest of the song,6) (hey: 6/) (aa: 6/// 2'/// 1'//)(mi: 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,47:8,praa,+1 octave(s) from the rest of the song,(praa: 2'/)(no: 2'/)(pa: 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,47:17,no,+1 octave(s) from the rest of the song,(praa: 2'/)(no: 2'/)(pa: 2'//)(oheTum,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,47:26,pa,+1 octave(s) from the rest of the song,(praa: 2'/)(no: 2'/)(pa: 2'//)(oheTumi: 3'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,47:41,oheTumi,+1 octave(s) from the rest of the song,praa: 2'/)(no: 2'/)(pa: 2'//)(oheTumi: 3'//) (jo: 1'//)(di:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,octave,51:72,b,+1 octave(s) from the rest of the song,//)(sha: 6/)(yo: 7/)(i: 7/// 1'///)(b: 2'//) (o: 1'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001367,rhythm,37:15,da,"tab 4.5 beats, swaralipi 1.5 beats at this tempo",(Hri: 4/)(da: 5/)(yo: 6-- 5/ 6/)(ka,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,rhythm,38:53,dhuNibhri,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",6- 4/)(jhe: 5/) (mo: 4//) (dhuNibhri: 5/)(to: 6//)(baa: 5/),data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,rhythm,38:80,nia,"tab 0.25 beats, swaralipi 1.5 beats at this tempo",(dhuNibhri: 5/)(to: 6//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu:,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,rhythm,38:101,tomu,"tab 0.75 beats, swaralipi 2 beats at this tempo",//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu: 2/.)(ro: 3//)(ti: 4/),data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,38:71,baa,-1 octave(s) from the rest of the song,mo: 4//) (dhuNibhri: 5/)(to: 6//)(baa: 5/)(nia: 4//)(mri: 3/,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,38:80,nia,-1 octave(s) from the rest of the song,(dhuNibhri: 5/)(to: 6//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu:,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,38:90,mri,-1 octave(s) from the rest of the song,: 5/)(to: 6//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu: 2/.)(ro: 3,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,38:101,tomu,-1 octave(s) from the rest of the song,//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu: 2/.)(ro: 3//)(ti: 4/),data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,38:110,ro,-1 octave(s) from the rest of the song,5/)(nia: 4//)(mri: 3//)(tomu: 2/.)(ro: 3//)(ti: 4/)(mo: 5/),data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,38:119,ti,-1 octave(s) from the rest of the song,4//)(mri: 3//)(tomu: 2/.)(ro: 3//)(ti: 4/)(mo: 5/),data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,40:35,baa,-1 octave(s) from the rest of the song,(Ni: 6/)(bhri: 5//)(to: 6//)(baa: 5//)(ni: 4) (ti: 4/)(,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,40:44,ni,-1 octave(s) from the rest of the song,6/)(bhri: 5//)(to: 6//)(baa: 5//)(ni: 4) (ti: 4/)(mo: 5/)(t,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,octave,40:52,ti,-1 octave(s) from the rest of the song,i: 5//)(to: 6//)(baa: 5//)(ni: 4) (ti: 4/)(mo: 5/)(tibaa: 6-,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001417,rhythm,32:35,lay,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(Dsak: 5) (dey: 6) (pro: 6/)(lay: 6/ 6/. 5//) (aa: 6/.,data/intermediate_data/ktab/rs001417/v1.ktab
+rs001417,octave,32:213,ne,-1 octave(s) from the rest of the song,/ 1'/ 6// 6 2' 2'/ 2'/ 2' 2 2 3/) (ne: 2/ 3 4/ 3/ 4/. 5// 6,data/intermediate_data/ktab/rs001417/v1.ktab
+rs001425,rhythm,23:57,she,"tab 2 beats, swaralipi 1 beats at this tempo",ra: 5/)(no: 5/) (ha: 6/)(ro: 7/) (she: 1'-),data/intermediate_data/ktab/rs001425/v1.ktab
+rs001425,rhythm,41:57,she,"tab 2 beats, swaralipi 1 beats at this tempo",ra: 5/)(no: 5/) (ha: 6/)(ro: 7/) (she: 1'-),data/intermediate_data/ktab/rs001425/v1.ktab
+rs001425,octave,52:25,chhaa,+1 octave(s) from the rest of the song,(Taar: 6'/ 7'/) (chhaa: 6'/)(ya: 7'/)(mo: 1'',data/intermediate_data/ktab/rs001425/v1.ktab
+rs001425,octave,57:25,chhaa,+1 octave(s) from the rest of the song,(Taar: 6'/ 7'/) (chhaa: 6'/)(ya: 7'/)(mo: 1'',data/intermediate_data/ktab/rs001425/v1.ktab
+rs001505,rhythm,15:114,nee,"tab 5 beats, swaralipi 1 beats at this tempo",. 7/ 6///) (jaag: 5//.-)(lo: 6/) (nee: 1' 2'/ 2' 3'.-),data/intermediate_data/ktab/rs001505/v1.ktab
+rs001505,rhythm,25:7,Nil,"tab 6 beats, swaralipi 2 beats at this tempo",(Nil: 1' 2'/ 2' 3'.--) (nee,data/intermediate_data/ktab/rs001505/v1.ktab
 rs001516,different,9:49,s,ho,)(sa: 2'/) (raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3,data/intermediate_data/ktab/rs001516/v1.ktab
 rs001516,different,9:59,ra,be,(raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3'/) (ho: 3,data/intermediate_data/ktab/rs001516/v1.ktab
 rs001516,different,43:49,s,ho,)(sa: 2'/) (raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3,data/intermediate_data/ktab/rs001516/v1.ktab
 rs001516,different,43:59,ra,be,(raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3'/) (ho: 3,data/intermediate_data/ktab/rs001516/v1.ktab
 rs001516,different,47:29,s,ho,(raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3,data/intermediate_data/ktab/rs001516/v1.ktab
 rs001516,different,47:39,ra,be,(raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3'/),data/intermediate_data/ktab/rs001516/v1.ktab
+rs001537,octave,72:50,mar,+1 octave(s) from the rest of the song,a: 5/ 5 6 6/ 6/ 6- 5/ 5/ 5 6 7/) (mar: 2'/ 1'/. 7// 6// 7//,data/intermediate_data/ktab/rs001537/v1.ktab
 rs001619,extra,8:59,maa,,: 5)(ne: 6. 7/) (naa: 7/ 3'/ 2') (maa: 7)(na: 6.--),data/intermediate_data/ktab/rs001619/v1.ktab
 rs001619,extra,8:66,na,,: 6. 7/) (naa: 7/ 3'/ 2') (maa: 7)(na: 6.--),data/intermediate_data/ktab/rs001619/v1.ktab
 rs001619,missing,10:34,,ti,(maa: 5)(ne: 6. 7/) (naa: 7/ 3'/ 2') (maa: 7)(na: 6-),data/intermediate_data/ktab/rs001619/v1.ktab
@@ -178,14 +541,52 @@ rs001619,different,20:6,ha,ko,(ha: 2'/ 3'/ 2'/ 3')(ha: 2,data/intermediate_data/
 rs001619,missing,20:10,,ye,(ha: 2'/ 3'/ 2'/ 3')(ha: 2'/ 7,data/intermediate_data/ktab/rs001619/v1.ktab
 rs001619,missing,20:18,,paa,(ha: 2'/ 3'/ 2'/ 3')(ha: 2'/ 7-) (phu:,data/intermediate_data/ktab/rs001619/v1.ktab
 rs001619,different,20:26,ha,ne,(ha: 2'/ 3'/ 2'/ 3')(ha: 2'/ 7-) (phu: 2')(le:,data/intermediate_data/ktab/rs001619/v1.ktab
+rs001619,rhythm,16:50,na,"tab 4 beats, swaralipi 8 beats at this tempo",'/)(le: 2'-) (na: 4--) (na: 5- 6) (na: 6/ 7/ 2' 7 6),data/intermediate_data/ktab/rs001619/v1.ktab
+rs001619,rhythm,19:8,Phaa,"tab 2 beats, swaralipi 1 beats at this tempo",(Phaa: 6-)(gu: 2')(no: 1') (,data/intermediate_data/ktab/rs001619/v1.ktab
+rs001620,rhythm,49:73,ki,"tab 2.5 beats, swaralipi 1 beats at this tempo",5/.) (o: 4/. 5//) (jo: 4/)(na: 3/)(ki: 2// 1/. 1/. 6// 6/),data/intermediate_data/ktab/rs001620/v1.ktab
+rs001620,rhythm,50:7,daa,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",(daa: 6/ 6/. 7//)(na: 6/ 6/,data/intermediate_data/ktab/rs001620/v1.ktab
+rs001620,octave,14:220,,-1 octave(s) from the rest of the song,6/ 6/ 6/. 7// 6/ 6/. 7// 6/ 5/. 2// 2/ 2/. 3// 4/. 5/.--),data/intermediate_data/ktab/rs001620/v1.ktab
+rs001653,rhythm,30:41,bhaai,"tab 3 beats, swaralipi 1 beats at this tempo",O: 5/ 6 6/ 5/ 4/ 5/ 6/)(re: 7) (bhaai: 1'--),data/intermediate_data/ktab/rs001653/v1.ktab
+rs001653,rhythm,56:17,nebo,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(bo: 2'/)(nebo: 1'/)(ne: 1'//) (o: 2',data/intermediate_data/ktab/rs001653/v1.ktab
+rs001653,rhythm,56:26,ne,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(bo: 2'/)(nebo: 1'/)(ne: 1'//) (o: 2'//)(re: 7,data/intermediate_data/ktab/rs001653/v1.ktab
 rs001657,extra,37:36,r,,(bhi: 3'//)(kha: 5'//)(ri: 4'/)(r: 3'/) (bi: 3')(na: 2'),data/intermediate_data/ktab/rs001657/v1.ktab
 rs001657,extra,37:46,bi,,3'//)(kha: 5'//)(ri: 4'/)(r: 3'/) (bi: 3')(na: 2') :||,data/intermediate_data/ktab/rs001657/v1.ktab
 rs001657,extra,37:36,r,,(bhi: 3'//)(kha: 5'//)(ri: 4'/)(r: 3'/) (bi: 3')(na: 2'),data/intermediate_data/ktab/rs001657/v1.ktab
 rs001657,extra,37:46,bi,,3'//)(kha: 5'//)(ri: 4'/)(r: 3'/) (bi: 3')(na: 2') :||,data/intermediate_data/ktab/rs001657/v1.ktab
 rs001657,different,41:53,l,o,) (khol: 6) (dwaar: 6/ 5/) (kho: 4)(l: 4/),data/intermediate_data/ktab/rs001657/v1.ktab
 rs001657,extra,42:7,Raa,,(Raa: 5/) (nga: 6/ 5/ 4// 5,data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,14:49,khol,"tab 1 beats, swaralipi 2 beats at this tempo",'/ 7/) (khol: 6) (dwaar: 6/ 5/) (khol: 4),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,15:49,baa,"tab 3.5 beats, swaralipi 1 beats at this tempo",) (re: 6/ 5/) (gri: 4//)(ho: 5//)(baa: 5/ 2' 1' 4)(si: 1' 1',data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,16:8,khol,"tab 2 beats, swaralipi 1 beats at this tempo",(khol: 4'/ 3'/ 3'/ 2'/),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,25:48,khol,"tab 1 beats, swaralipi 2 beats at this tempo",4/ 5/) (khol: 6) (dwaar: 6/ 5/) (khol: 4),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,26:48,baa,"tab 3.5 beats, swaralipi 1 beats at this tempo",/)(Re: 6/ 5/) (gri: 4//)(ho: 5//)(baa: 5/ 2' 1' 4)(si: 1' 1',data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,27:8,khol,"tab 2 beats, swaralipi 1 beats at this tempo",(khol: 4'/ 3'/ 3'/ 2'/),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,36:21,khay,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(Paa: 6'/ 6')(khay: 6'///) (baa: 7'/// 6',data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,36:21,khay,"tab 0.5 beats, swaralipi 1.5 beats at this tempo",(Paa: 6'/ 6')(khay: 6'///) (baa: 7'/// 6',data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,42:44,haa,"tab 2 beats, swaralipi 0.5 beats at this tempo",: 5/) (nga: 6/ 5/ 4// 5// 5/ 2') (haa: 1' 4) (si: 1') (raa:,data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,42:65,raa,"tab 1.5 beats, swaralipi 0.5 beats at this tempo",5// 5/ 2') (haa: 1' 4) (si: 1') (raa: 1'/. 2'// 3'/)(shi: 2,data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,43:18,shi,"tab 0.875 beats, swaralipi 2 beats at this tempo",(raa: 1'/.)(shi: 2'//) (a: 3'/)(shoke:,data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,rhythm,44:50,ka,"tab 1 beats, swaralipi 3 beats at this tempo",sha: 4'/) (pro: 3'/)(bhatoaa: 3'/)(ka: 2'/)(sheRaanga: 2'/),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,octave,16:8,khol,+1 octave(s) from the rest of the song,(khol: 4'/ 3'/ 3'/ 2'/),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,octave,27:8,khol,+1 octave(s) from the rest of the song,(khol: 4'/ 3'/ 3'/ 2'/),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,octave,46:6,ne,-1 octave(s) from the rest of the song,(ne: 6)(shame: 6/)(ghe: 5/,data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,octave,46:16,shame,-1 octave(s) from the rest of the song,(ne: 6)(shame: 6/)(ghe: 5/) (me: 4)(,data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,octave,46:25,ghe,-1 octave(s) from the rest of the song,(ne: 6)(shame: 6/)(ghe: 5/) (me: 4)(sha: 4'/),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,octave,46:34,me,-1 octave(s) from the rest of the song,(ne: 6)(shame: 6/)(ghe: 5/) (me: 4)(sha: 4'/),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,octave,47:50,ka,+1 octave(s) from the rest of the song,6'/) (bha: 5'/)(to: 4'/) (aa: 5'/)(ka: 2'')(she: 1''--),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001657,octave,47:60,she,+1 octave(s) from the rest of the song,5'/)(to: 4'/) (aa: 5'/)(ka: 2'')(she: 1''--),data/intermediate_data/ktab/rs001657/v1.ktab
+rs001687,octave,50:32,chaai,+1 octave(s) from the rest of the song,(aa: 2'/)(ji: 2'/ 3'/) (chaai: 1' 3'/) (go: 2'.--),data/intermediate_data/ktab/rs001687/v1.ktab
+rs001687,octave,53:110,chaai,+1 octave(s) from the rest of the song,3'//.-) (aa: 2'/)(ji: 2'/ 3'/) (chaai: 1' 3'/),data/intermediate_data/ktab/rs001687/v1.ktab
+rs001739,rhythm,21:77,praanPraano,"tab 1 beats, swaralipi 2 beats at this tempo",: 1'/) (daao: 1'/. 2'//) (praanPraano: 3'),data/intermediate_data/ktab/rs001739/v1.ktab
+rs001739,rhythm,35:75,praapraan,"tab 1 beats, swaralipi 2 beats at this tempo",ro: 1'/) (daao: 1'/. 2'//) (praapraan: 3'),data/intermediate_data/ktab/rs001739/v1.ktab
+rs001739,octave,18:23,aa,-1 octave(s) from the rest of the song,(Mo: 5/)(re: 5/) (aa: 4/)(ro: 5/),data/intermediate_data/ktab/rs001739/v1.ktab
+rs001740,rhythm,17:105,hni,"tab 0.75 beats, swaralipi 3 beats at this tempo",) (bo: 1' 7. 7/// 1'/// 7// 6//) (hni: 7// 1'// 2'//),data/intermediate_data/ktab/rs001740/v1.ktab
+rs001740,rhythm,19:119,ni,"tab 0.25 beats, swaralipi 3 beats at this tempo",// 1'// 2'// 3'// 4'// 5'// 6'//) (ni: 7'//),data/intermediate_data/ktab/rs001740/v1.ktab
+rs001740,octave,19:119,ni,+1 octave(s) from the rest of the song,// 1'// 2'// 3'// 4'// 5'// 6'//) (ni: 7'//),data/intermediate_data/ktab/rs001740/v1.ktab
 rs001822,missing,15:129,,po,// 5// 3/ 2/ 3 2-- 2/. 5// 5/) (lo: 5/ 5)(be: 5/),data/intermediate_data/ktab/rs001822/v1.ktab
 rs001822,different,15:136,be,lo,3/ 2/ 3 2-- 2/. 5// 5/) (lo: 5/ 5)(be: 5/),data/intermediate_data/ktab/rs001822/v1.ktab
+rs001822,rhythm,28:33,taar,"tab 2 beats, swaralipi 1 beats at this tempo",(Naa: 1')(hi: 2'/. 3'//) (taar: 1' 2'// 3'/ 2'//) (ki,data/intermediate_data/ktab/rs001822/v1.ktab
+rs001822,octave,28:215,,-1 octave(s) from the rest of the song,//- 4/ 4// 5// 5 4// 5// 4// 5// 3/ 2/ 3 2-- 2/. 5// 5/ 5/ 5,data/intermediate_data/ktab/rs001822/v1.ktab
 rs001827,different,20:31,la,du,(naa: 5)(ch: 6/) (mi: 6/)(la: 7/)(n: 7/) (gee: 6//,data/intermediate_data/ktab/rs001827/v1.ktab
 rs001827,different,20:38,n,lo,(naa: 5)(ch: 6/) (mi: 6/)(la: 7/)(n: 7/) (gee: 6// 7// 6//,data/intermediate_data/ktab/rs001827/v1.ktab
 rs001848,different,8:16,ko,traa,(San: 4'-)(ko: 4')(cher: 3'- 3') (bi,data/intermediate_data/ktab/rs001848/v2.ktab
@@ -199,8 +600,24 @@ rs001848,extra,21:112,haa,,1'--) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---),dat
 rs001848,missing,21:116,,haa,-) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---),data/intermediate_data/ktab/rs001848/v2.ktab
 rs001848,extra,28:114,haa,,1'--) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---),data/intermediate_data/ktab/rs001848/v2.ktab
 rs001848,missing,28:118,,haa,-) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---),data/intermediate_data/ktab/rs001848/v2.ktab
+rs001848,rhythm,14:6,ni,"tab 1 beats, swaralipi 2 beats at this tempo",(ni: 2')(je: 3')(re: 4') (,data/intermediate_data/ktab/rs001848/v2.ktab
+rs001848,rhythm,14:14,je,"tab 2 beats, swaralipi 1 beats at this tempo",(ni: 2')(je: 3')(re: 4') (ka: 3'-),data/intermediate_data/ktab/rs001848/v2.ktab
+rs001848,octave,27:41,je,+1 octave(s) from the rest of the song,du: 4')(ru: 6')(ha: 6') (kaa: 5'-)(je: 5') (ni: 4')(je: 4')(,data/intermediate_data/ktab/rs001848/v2.ktab
+rs001862,rhythm,47:24,lo,"tab 3 beats, swaralipi 0.5 beats at this tempo",(na: 1') (bhu: 7/)(lo: 6// 5// 6/. 1'//- 5/),data/intermediate_data/ktab/rs001862/v1.ktab
+rs002064,rhythm,15:31,re,"tab 4.5 beats, swaralipi 0.5 beats at this tempo",(Aa: 4)(mar: 4-) (ta: 4/)(re: 4/ 3/ 5/ 5--) (taa: 4,data/intermediate_data/ktab/rs002064/v3.ktab
+rs002064,octave,9:6,aa,-1 octave(s) from the rest of the song,(aa: 1/ 2/)(mar: 3-) (ho:,data/intermediate_data/ktab/rs002064/v3.ktab
+rs002064,octave,9:9,,-1 octave(s) from the rest of the song,(aa: 1/ 2/)(mar: 3-) (ho: 4/),data/intermediate_data/ktab/rs002064/v3.ktab
+rs002064,octave,11:101,dhaa,-1 octave(s) from the rest of the song,'-- 4// 6/. 6- 5/ 4/ 3/ 4/ 5--) (dhaa: 1/ 2/ 3- 4/ 5/ 6/ 5/),data/intermediate_data/ktab/rs002064/v3.ktab
+rs002064,octave,11:110,,-1 octave(s) from the rest of the song,/. 6- 5/ 4/ 3/ 4/ 5--) (dhaa: 1/ 2/ 3- 4/ 5/ 6/ 5/)(ra: 4--),data/intermediate_data/ktab/rs002064/v3.ktab
+rs002064,octave,11:127,ra,-1 octave(s) from the rest of the song,5--) (dhaa: 1/ 2/ 3- 4/ 5/ 6/ 5/)(ra: 4--),data/intermediate_data/ktab/rs002064/v3.ktab
+rs002064,octave,22:98,haa,-1 octave(s) from the rest of the song,4'-- 4// 6/. 6- 5/ 4/ 3/ 4/ 5--) (haa: 1/ 2/ 3- 4/ 5/ 6/ 5/),data/intermediate_data/ktab/rs002064/v3.ktab
+rs002064,octave,22:107,,-1 octave(s) from the rest of the song,6/. 6- 5/ 4/ 3/ 4/ 5--) (haa: 1/ 2/ 3- 4/ 5/ 6/ 5/)(ra: 4--),data/intermediate_data/ktab/rs002064/v3.ktab
+rs002064,octave,22:124,ra,-1 octave(s) from the rest of the song,/ 5--) (haa: 1/ 2/ 3- 4/ 5/ 6/ 5/)(ra: 4--),data/intermediate_data/ktab/rs002064/v3.ktab
 rs002077,missing,22:66,,naa,(aar: 1'-) (bne: 1'/ 7/)(dho: 7/ 1'// 7/.---) (na: 1'/) (aa,data/intermediate_data/ktab/rs002077/v2.ktab
 rs002077,extra,22:79,na,,bne: 1'/ 7/)(dho: 7/ 1'// 7/.---) (na: 1'/) (aar: 1'---),data/intermediate_data/ktab/rs002077/v2.ktab
+rs002077,rhythm,14:32,mar,"tab 3 beats, swaralipi 1 beats at this tempo",(aachhi: 6// 5/.) (to: 4)(mar: 3/ 4// 3// 2 2/ 5/) (,data/intermediate_data/ktab/rs002077/v2.ktab
+rs002077,rhythm,14:66,mar,"tab 5.5 beats, swaralipi 1 beats at this tempo",mar: 3/ 4// 3// 2 2/ 5/) (to: 5/)(mar: 4/ 5// 4// 3.---),data/intermediate_data/ktab/rs002077/v2.ktab
+rs002077,rhythm,26:143,mar,"tab 5.5 beats, swaralipi 1 beats at this tempo",5/.-) (to: 5 4// 3/. 2 2/ 5/ 5/)(mar: 4/ 5// 4// 3.---),data/intermediate_data/ktab/rs002077/v2.ktab
 rs002122,different,16:17,pa,je,(Je: 3'--) (pa: 1'/)(th: 1'),data/intermediate_data/ktab/rs002122/v1.ktab
 rs002122,different,16:26,th,po,(Je: 3'--) (pa: 1'/)(th: 1'),data/intermediate_data/ktab/rs002122/v1.ktab
 rs002122,different,37:17,pa,je,(Je: 3'--) (pa: 1'/)(th: 1'),data/intermediate_data/ktab/rs002122/v1.ktab

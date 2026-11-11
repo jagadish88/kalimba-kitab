@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Are a draft's syllables on the notes the swaralipi puts them on?
+"""Are a draft's syllables, note lengths and octaves those of the swaralipi?
 
     python scripts/review/syllable_check.py [rs000842 ...]     (default: every draft with an SNLTR swaralipi)
         -> data/intermediate_data/comparison/syllable_check.csv  (one row per flagged spot)
@@ -11,7 +11,12 @@ sit on them; note lengths break ties where a pitch repeats - note_align.py). At 
   missing    the swaralipi starts a syllable there, the tab does not
   extra      the tab starts a syllable there, the swaralipi does not
   different  both start one, and the tab's text is unlike the swaralipi's (romanized) syllable
-Agreement = share of those pairs where the two agree. Two or more problems in a row are flagged (a
+  rhythm     a syllable (from its start to the next syllable's, both paired) lasts much longer or shorter
+             in the tab than in the swaralipi: more than 1.6x either way against the local tempo and at
+             least a beat apart (splits inside a syllable, ornaments and tempo or metre changes do not count)
+  octave     a paired note an octave or more from where the rest of the song sits against the swaralipi
+             (labelled when the converter moved that stanza an octave to fit the kalimba)
+Agreement = share of those pairs where the syllables agree. Two or more problems in a row are flagged (a
 lone one is often a grace note or a held syllable); the CSV has the tab's line:column and context.
 """
 import csv
@@ -73,7 +78,11 @@ def check(s, kpath, abc_path, T):
     _, stanzas = RC.A.parse_abc(open(abc_path, encoding='utf-8').read())
     shift = RC.A.plan([[e['midi'] for ln in st for e in ln if e['kind'] == 'note'] for st in stanzas], T)[0]
     meant = [e['midi'] + shift[si] for si, st in enumerate(stanzas) for ln in st for e in ln if e['kind'] == 'note']
+    stanza_of = [si for si, st in enumerate(stanzas) for ln in st for e in ln if e['kind'] == 'note']
+    usual_shift = Counter(shift[si] for si in stanza_of).most_common(1)[0][0] if stanza_of else 0
     tp = meant if len(meant) == len(tn) else [n[0] for n in tn]
+    if len(meant) != len(tn):
+        stanza_of = [0] * len(tn)
     ev = S.song_events(s)[2]
     sp = [e['midi'] for e in ev]
     # pitches and lengths: where a pitch repeats, the note of the right length is paired
@@ -108,7 +117,67 @@ def check(s, kpath, abc_path, T):
         flags.append(dict(song=s, kind=x, tab=f'{ln}:{col}', tab_syllable=tn[i][1] or '',
                           swaralipi_syllable=(M.translit(ev[j]['syl'], final_o=True) if ev[j]['syl'] else ''),
                           context=lines[ln - 1][max(0, col - 40):col + 20].strip(), ktab=kpath))
-    return agree, len(compared), Counter(x for x in compared if x != 'ok'), flags
+    flags += rhythm_flags(s, kpath, lines, tn, tp, ev, pair, sh)
+    flags += register_flags(s, kpath, lines, tn, tp, sp, pair, sh, stanza_of, shift, usual_shift)
+    counts = Counter(x for x in compared if x != 'ok')
+    for f in flags:
+        if f['kind'] in ('rhythm', 'octave', 'octave (stanza moved to fit the kalimba)'):
+            counts[f['kind']] += 1
+    return agree, len(compared), counts, flags
+
+
+def rhythm_flags(s, kpath, lines, tn, tp, ev, pair, sh, lo=0.6, hi=1.67):
+    """stretches between two paired notes: the tab's beats against the swaralipi's units, each judged
+    against the local tempo (median of the 41 stretches around it); outside lo..hi x is flagged"""
+    # anchors: notes paired with the same pitch where the swaralipi starts a syllable (the rhythm of the
+    # words; dotted against even splits inside a syllable are performance, not reading)
+    anchors, last_j = [], -1
+    for i, j in enumerate(pair):
+        if (j is not None and j > last_j and tp[i] % 12 == (ev[j]['midi'] + sh) % 12
+                and ev[j]['syl'] and tn[i][1]):
+            anchors.append((i, j)); last_j = j
+    paired_j = {j for j in pair if j is not None}
+    spans = []
+    for (i0, j0), (i1, j1) in zip(anchors, anchors[1:]):
+        # an instrumental passage or a repeat only one side has: structure, not rhythm
+        if (sum(1 for i in range(i0, i1) if pair[i] is None) > 3
+                or sum(1 for j in range(j0, j1) if j not in paired_j) > 3):
+            continue
+        tb = sum(n[3] for n in tn[i0:i1])
+        su = sum(e['units'] for e in ev[j0:j1])
+        if tb > 0 and su > 0:
+            spans.append((i0, i1, tb, su, tb / su))
+    out = []
+    for k, (i0, i1, tb, su, r) in enumerate(spans):
+        near = sorted(x[4] for x in spans[max(0, k - 20):k + 21])
+        local = near[len(near) // 2]
+        q = r / local
+        if (q < lo or q > hi) and abs(tb - su * local) >= 1:     # and at least a beat apart
+            ln, col = tn[i0][2]
+            out.append(dict(song=s, kind='rhythm', tab=f'{ln}:{col}', tab_syllable=tn[i0][1] or '',
+                            swaralipi_syllable=f'tab {tb:g} beats, swaralipi {su * local:.2g} beats at this tempo',
+                            context=lines[ln - 1][max(0, col - 40):col + 20].strip(), ktab=kpath))
+    return out
+
+
+def register_flags(s, kpath, lines, tn, tp, sp, pair, sh, stanza_of, shift, usual_shift):
+    """paired notes an octave (or more) away from where the rest of the song sits against the swaralipi"""
+    d = {i: tp[i] - (sp[j] + sh) for i, j in enumerate(pair)
+         if j is not None and tp[i] % 12 == (sp[j] + sh) % 12}
+    if not d:
+        return []
+    base = Counter(d.values()).most_common(1)[0][0]
+    out = []
+    for i, off in sorted(d.items()):
+        if off == base:
+            continue
+        moved = shift[stanza_of[i]] != usual_shift if stanza_of and i < len(stanza_of) else False
+        ln, col = tn[i][2]
+        out.append(dict(song=s, kind='octave (stanza moved to fit the kalimba)' if moved else 'octave',
+                        tab=f'{ln}:{col}', tab_syllable=tn[i][1] or '',
+                        swaralipi_syllable=f'{(off - base) // 12:+d} octave(s) from the rest of the song',
+                        context=lines[ln - 1][max(0, col - 40):col + 20].strip(), ktab=kpath))
+    return out
 
 
 def results(songs=None):
@@ -127,7 +196,9 @@ def results(songs=None):
         except Exception as e:
             per[s] = dict(error=f'{type(e).__name__}: {str(e)[:120]}'); continue
         per[s] = dict(agree=round(100 * agree), paired=n, missing=c['missing'], extra=c['extra'],
-                      different=c['different'], pipeline=r[3], flagged=len(flags))
+                      different=c['different'], pipeline=r[3], rhythm=c['rhythm'], octave=c['octave'],
+                      octave_fit=c['octave (stanza moved to fit the kalimba)'],
+                      flagged=sum(1 for f in flags if f['kind'] in ('missing', 'extra', 'different')))
         allflags += flags
     return per, allflags
 
@@ -138,14 +209,16 @@ def main():
         if 'error' in d:
             print(f"{s}: ERROR {d['error']}"); continue
         print(f"{s}: {d['agree']}% of {d['paired']} paired notes agree ({d['pipeline']}); missing {d['missing']}, "
-              f"extra {d['extra']}, different {d['different']}; {d['flagged']} flagged (in runs)")
+              f"extra {d['extra']}, different {d['different']}; {d['flagged']} flagged (in runs); "
+              f"rhythm {d['rhythm']}, octave {d['octave']}" + (f" (+{d['octave_fit']} in stanzas moved to fit)" if d['octave_fit'] else ''))
     out = 'data/intermediate_data/comparison/syllable_check.csv'
     with open(out, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=['song', 'kind', 'tab', 'tab_syllable', 'swaralipi_syllable', 'context', 'ktab'])
         w.writeheader(); w.writerows(allflags)
     with open('data/intermediate_data/comparison/syllable_agreement.csv', 'w', newline='') as f:
-        csv.writer(f).writerows([['song', 'syllable_agreement_pct']] +
-                                sorted((s, d['agree']) for s, d in per.items() if 'agree' in d))
+        csv.writer(f).writerows([['song', 'syllable_agreement_pct', 'rhythm_flags', 'octave_flags']] +
+                                sorted((s, d['agree'], d['rhythm'], d['octave'] + d['octave_fit'])
+                                       for s, d in per.items() if 'agree' in d))
     by = {}
     for d in per.values():
         if 'agree' in d:

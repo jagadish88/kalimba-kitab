@@ -7,11 +7,12 @@
 Per draft (the latest ktab of each song in ktab_catalog.csv; songs in data/dataset/ get the lint only):
   roundtrip  roundtrip_check.py: exact / lengths / error / known / skip
   sources    source_check.py: strong, weak, octave flags
-  syllables  syllable_check.py: % of syllables on the swaralipi's notes (drafts with an SNLTR swaralipi)
+  syllables  syllable_check.py: % of syllables on the swaralipi's notes, and rhythm and octave flags
+             against the swaralipi (drafts with an SNLTR swaralipi)
   lint       the tab parses; counts of notes off the 17 tines, rests, capitals inside a line, a
              placeholder title (@title: rs...), a retune note in @subtitle without an @retune header
 Baseline: data/intermediate_data/comparison/check_baseline.json.
-Fails on: a draft that was exact and is not; a new round-trip error; more strong flags; syllable
+Fails on: a draft that was exact and is not; a new round-trip error; more strong, rhythm or octave flags; syllable
 agreement down 2 points or more; more lint problems; a new draft that is not clean (round trip exact
 or known, no lint problems, no strong flags). Warns on: more weak flags, syllable agreement down 1.
 The git pre-commit hook (scripts/review/pre-commit) runs this when drafts or scripts are committed.
@@ -74,6 +75,8 @@ def current():
             d.update(strong=sc[s]['strong'], weak=sc[s]['weak'], octave=sc[s]['octave'])
         if s in sy and 'agree' in sy[s]:
             d['syllables'] = sy[s]['agree']
+            d['rhythm'] = sy[s]['rhythm']
+            d['octave'] = sy[s]['octave'] + sy[s]['octave_fit']
         d['lint'] = lint(last[s][2])
         res[s] = d
     for s in ds:                                   # finished tabs: the lint only
@@ -97,6 +100,9 @@ def compare(base, cur, rt):
             fails.append(f"{s}: round trip {b.get('roundtrip')} -> {d['roundtrip']}: {rt.get(s, ('', ''))[1][:200]}")
         if d.get('strong', 0) > b.get('strong', 0):
             fails.append(f"{s}: strong source flags {b.get('strong', 0)} -> {d['strong']}")
+        for k in ('rhythm', 'octave'):
+            if k in d and d[k] > b.get(k, d[k]):
+                fails.append(f"{s}: {k} flags against the swaralipi {b.get(k)} -> {d[k]}")
         if d.get('weak', 0) > b.get('weak', 0):
             warns.append(f"{s}: weak source flags {b.get('weak', 0)} -> {d['weak']}")
         if 'syllables' in d and 'syllables' in b:
