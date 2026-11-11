@@ -2,7 +2,7 @@ X:1
 T:Ore Grihobasi
 C:Rabindranath Tagore
 S:notes: KumarjitDey's MuseScore arrangement (https://musescore.com/user/43447736/scores/23988415, src000644), read off the screen bar by bar; melody = top note of the right hand
-S:lyrics: as printed in that score
+S:lyrics: syllables of the SNLTR swaralipi, Latin from data/raw_data/text/lyrics/rs001657.txt (Geetabitan), placed on these notes by abc_swara_lyrics.py
 N:Repeats unrolled: bars 2-13, 16-23, 44-51 and 52-59 twice, as marked. Chords in the right hand are reduced to their top note; grace notes and arpeggio signs left out.
 N:Read by eye, not checked against a MIDI: a few notes (the lower notes of chords, e.g. bar 4 'khol') may be misread.
 N:v2: v1 with note values halved (L:1/16, Q:1/4=104 is the speed of v1 at half note = 104), so the tab plays at 104 bpm.
@@ -11,102 +11,96 @@ L:1/16
 Q:1/4=104
 K:Ab
 A2 B2 |
-w: O-o |
+w: O-_
 c2 B2 A B B2 | f4 e4 | A4 e4 |
-w: re-e gri-_-ho | ba-shi | khol dwar |
+w: Re _ gri-ho-baa-_-si khol dwaar
 e3 f g2 f e | e3 f g2 g/ a/ g | g8 |
-w: khol _ _ _ _ | lag-_-lo je _ _ | dol |
+w: khol _ _ _ _ Laag-_-lo je dol _ _
 a2 a2 g2 g2 | f2 f2 e2 e2 | e f3 f2 f/ g/ f |
-w: Stho-le jo-le | bo-no-to-le | la-g-lo je _ _ |
+w: Stha-le ja-le ba-no-ta-le Laag-_-lo _ _ je
 e4 e2 d2 | c4 c2 B2 | A4 A2 B2 |
-w: dol dw-ar | khol dw-ar | khol O-o |
+w: dol Dwaar _ khol dwaar _ khol O-_
 c2 B2 A B B2 | f4 e4 | A4 e4 |
-w: re-e gri-_-ho | ba-shi | khol dwar |
+w: Re _ gri-ho-baa-_-_-_-si
 e3 f g2 f e | e3 f g2 g/ a/ g | g8 |
-w: khol _ _ _ _ | lag-_-lo je _ _ | dol |
 a2 a2 g2 g2 | f2 f2 e2 e2 | e f3 f2 f/ g/ f |
-w: Stho-le jo-le | bo-no-to-le | la-g-lo je _ _ |
+w: * khol _ _ _ dwaar _ khol _ _ _ _ _ _
 e4 e2 d2 | c4 c2 B2 | A4 A2 B2 |
-w: dol dw-ar | khol dw-ar | khol O-o |
 c2 B2 A B B2 | f4 e4 |
-w: re-e gri-_-ho | ba-shi |
 e2 c2 e2 e2 | e2 f2 e2 f2 |
-w: Ran-ga haa-shi | raa-shi raa-shi |
+w: Raa-nga haa-si raa-shi raa-shi
 a2 a2 a2 g2 | b4 a4 |
-w: a-sho-ke pa-|la-she |
+w: a-sho-ke pa-laa-she
 a2 b2 c'2 c'2 | b2 b2 a2 a2 |
-w: Ran-ga ne-sha | me-ghe me-sha |
+w: Raa-nga ne-sha me-ghe me-sha
 g2 b2 a2 a g | f g3 f4 |
-w: pro-bha-to a-_-|ka-_-she |
+w: pro-bha-to aa-_-ka-_-she
 e2 c2 e2 e2 | e2 f2 e2 f2 |
-w: Ran-ga haa-shi | raa-shi raa-shi |
+w: Raa-nga haa-si raa-shi raa-shi
 a2 a2 a2 g2 | b4 a4 |
-w: a-sho-ke pa-|la-she |
+w: a-sho-ke pa-laa-she
 a2 b2 c'2 c'2 | b2 b2 a2 a2 |
-w: Ran-ga ne-sha | me-ghe me-sha |
+w: Raa-nga ne-sha me-ghe me-sha
 g2 b2 a2 a g | f g3 f4 |
-w: pro-bha-to a-_-|ka-_-she |
+w: pro-bha-to aa-_-ka-_-she
 c'2 c'4 b2 | b4 a2 a2 |
-w: No-bin pa-|tay laa-ge |
+w: No-bee paa-tay laa-ge
 A2 A2 A2 B2 | c4 A2 B2 | c4 c2 B2 |
-w: ran-ga hil-_-|lol dw-ar | khol dw-ar |
+w: ra-nga hil-_-lol Dwaar _ Khol dwaar _
 A4 A2 B2 | c2 B2 A B B2 | f4 e4 | A4 e4 |
-w: khol O-o | re-e gri-_-ho | ba-shi | khol dwar |
+w: khol O-_-Re _ gri-ho-baa-_-_-_-si
 e3 f g2 f e | e3 f g2 g/ a/ g | g8 |
-w: khol _ _ _ _ | lag-_-lo je _ _ | dol |
 a2 a2 g2 g2 | f2 f2 e2 e2 | e f3 f2 f/ g/ f |
-w: Stho-le jo-le | bo-no-to-le | la-g-lo je _ _ |
+w: * khol _ _ _ dwaar _ khol _ _ _ _ _ _
 e4 e2 d2 | c4 c2 B2 | A4 A2 B2 |
-w: dol dw-ar | khol dw-ar | khol O-o |
 c2 B2 A B B2 | f4 e4 |
-w: re-e gri-_-ho | ba-shi |
 A2 F2 A2 A2 | A2 B2 A2 B2- |
-w: Be-nu bo-ne | mor-_-mo-re |
+w: Be-nu-ba-no mar-_-ma-re
 B2 c2 c2 c2 | c2 d2 c2 B2 |
-w: _ dokh-in baa-|ta-a-she-e |
+w: _ do-khi-no baa-ta-se _
 c2 c f f2 f2 | e2 =d e c2 B2 |
-w: Pro-ja-a-po-ti | do-le-_ gha-she |
+w: Pro-jaa-_-pa-ti do-le _ ghaa-se
 c2 B2 A4- | A8 |
-w: gha-she _ | _ |
+w: ghaa-_-se _
 A2 F2 A2 A2 | A2 B2 A2 B2- |
-w: Be-nu bo-ne | mor-_-mo-re |
+w: Be-nu-ba-no mar-_-ma-re
 B2 c2 c2 c2 | c2 d2 c2 B2 |
-w: _ dokh-in baa-|ta-a-she-e |
+w: _ do-khi-no baa-ta-se _
 c2 c f f2 f2 | e2 =d e c2 B2 |
-w: Pro-ja-a-po-ti | do-le-_ gha-she |
+w: Pro-jaa-_-pa-ti do-le _ ghaa-se
 c2 B2 A4- | A8 |
-w: gha-she _ | _ |
+w: ghaa-_-se _
 e2 c2 e2 f2 | e2 f2 e2 f2 |
-w: Mou-ma-chhi _ | phi-re jaa-chi |
+w: Mou-_-maa-chi phi-re jaa-chiphu-
 a2 a2 a2 g2 | b2 a2 a4 |
-w: phoo-le-ro do-|_-khi-na |
+w: le-r do-_-khi-_-na
 c'2 c'4 c'/ d'/ c' | b4 a4 |
-w: Paa-khay baa-_-_-|jay tar |
+w: Paa-_-khay baa-_-jay taar
 g2 g b a2 g2 | g4 f4 |
-w: bhi-kha-_-ri-ro | bee-na |
+w: _ bhi-kha-ri-r bi-na
 e2 c2 e2 f2 | e2 f2 e2 f2 |
-w: Mou-ma-chhi _ | phi-re jaa-chi |
+w: Mou-_-maa-chi phi-re jaa-chiphu-
 a2 a2 a2 g2 | b2 a2 a4 |
-w: phoo-le-ro do-|_-khi-na |
+w: le-r do-_-khi-_-na
 c'2 c'4 c'/ d'/ c' | b4 a4 |
-w: Paa-khay baa-_-_-|jay tar |
+w: Paa-_-khay baa-_-jay taar
 g2 g b a2 g2 | g4 f4 |
-w: bhi-kha-_-ri-ro | bee-na |
+w: _ bhi-kha-ri-r bi-na
 c'2 c'2 c'2 c'2 | b2 b2 a2 a2- |
-w: Maa-dho-bi-bi-|taa-ne baa-yu |
+w: Ma-dho-bi-bi-ta-ne baa-yu
 [M:6/8] a2 A2 A2 B2 c4 | [M:2/8] A2 B2 |
-w: _ gon-dhe bi-bhol | dw-ar |
+w: _ gan-dhe bi-bhol Dwaar _
 [M:4/8] c4 c2 B2 | A4 A2 B2 |
-w: khol dw-ar | khol O-re |
+w: Khol dwaar _ kho-l Raa-
 c2 B2 A B B2 | f4 e4 |
-w: re-e gri-_-ho | ba-shi |
+w: nga _ _ _ _ _ haa-
 A4 e4 | e3 f g2 f e |
-w: khol dwar | khol _ _ _ _ |
+w: _ si raa-_-_-shi _
 e3 f g2 g/ a/ g | g8 |
-w: lag-_-lo je _ _ | dol |
+w: raa-shi a-shoke pa-laa-she
 a2 a2 g2 g2 | f2 f2 e2 e2 | e f3 f2 f/ g/ f |
-w: Stho-le jo-le | bo-no-to-le | la-g-lo je _ _ |
+w: me-sha pro-bhatoaa-ka-sheRaanga haa-si raa-shiraa-shi a-sho-ke
 e4 e2 d2 | c4 c2 B2 | A4 a2 b2 |
-w: dol dw-ar | khol dw-ar | khol O-o |
+w: pa-laa-sheRaanga ne-shame-ghe me-sha pro-
 c'2 b2 a2 b2 | f'4 e'4- | e'8 |
-w: re-e gri-ho | ba-shi | _ |
+w: _ bha-to aa-ka-she _

@@ -131,7 +131,7 @@
  },
  "rs000017": {
   "lint": {
-   "mid_capitals": 4,
+   "mid_capitals": 0,
    "off_tine": 0,
    "parse": 0,
    "placeholder_title": 0,
@@ -141,7 +141,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 62,
+  "syllables": 95,
   "weak": 4
  },
  "rs000037": {
@@ -1442,7 +1442,7 @@
  },
  "rs001657": {
   "lint": {
-   "mid_capitals": 5,
+   "mid_capitals": 0,
    "off_tine": 0,
    "parse": 0,
    "placeholder_title": 0,
@@ -1452,7 +1452,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 67,
+  "syllables": 95,
   "weak": 10
  },
  "rs001674": {
@@ -1562,7 +1562,7 @@
  },
  "rs001740": {
   "lint": {
-   "mid_capitals": 3,
+   "mid_capitals": 0,
    "off_tine": 0,
    "parse": 0,
    "placeholder_title": 0,
@@ -1572,7 +1572,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 80,
+  "syllables": 98,
   "weak": 0
  },
  "rs001795": {

@@ -150,6 +150,65 @@ def lcs_pairs(a, b):
     return out
 
 
+def place_syllables(sev, latin, s2m, n_notes):
+    """syllables (swaralipi events + their Latin) onto notes -> per note: (text, end_word, starts a sung
+    row), '_' (the syllable before goes on) or '*' (no syllable: before the first one, or in a long
+    stretch the swaralipi does not sing). s2m: swaralipi event index -> paired note index.
+    A syllable whose note is paired goes there. The others, between two such anchors, go on the free
+    notes between them in order; one or two left without a note join the syllable before; three or
+    more are a passage the notes do not play (a repeat the swaralipi sings): left out, not packed."""
+    syl_at = {}
+    syl_js = [j for j, e in enumerate(sev) if e['syl'] and j in latin]
+    item = {j: (latin[j][0], latin[j][1], sev[j]['newline']) for j in syl_js}
+    anchors, last_m = [], -1
+    for j in syl_js:
+        if j in s2m and s2m[j] > last_m:
+            anchors.append(j); last_m = s2m[j]
+    anchor_set = set(anchors)
+    for j in anchors:
+        syl_at[s2m[j]] = item[j]
+    bounds = [(-1, -1)] + [(j, s2m[j]) for j in anchors] + [(len(sev), n_notes)]
+    for (j0, m0), (j1, m1) in zip(bounds, bounds[1:]):
+        between = [j for j in syl_js if j0 < j < j1 and j not in anchor_set]
+        if not between:
+            continue
+        free = [mi for mi in range(m0 + 1, m1) if mi not in syl_at]
+        if len(free) >= len(between):
+            k = 0
+            for n, j in enumerate(between):
+                want = m0 + (j - j0)
+                while k < len(free) - (len(between) - n) and free[k] < want:
+                    k += 1
+                syl_at[free[k]] = item[j]; k += 1
+            continue
+        for mi, j in zip(free, between):
+            syl_at[mi] = item[j]
+        if len(between) - len(free) >= 3:
+            continue
+        for j in between[len(free):]:
+            prev_m = max((mi for mi in syl_at if mi < m1), default=None)
+            if prev_m is not None:
+                p0 = syl_at[prev_m]
+                syl_at[prev_m] = (p0[0] + item[j][0], item[j][1], p0[2])
+    sung = set(s2m.values())
+    toks = []
+    first_syl = min(syl_at) if syl_at else n_notes
+    for mi in range(n_notes):
+        if mi in syl_at:
+            toks.append(syl_at[mi])
+        elif mi < first_syl:
+            toks.append('*')
+        else:
+            lo = mi
+            while lo > 0 and (lo - 1) not in sung and (lo - 1) not in syl_at:
+                lo -= 1
+            hi = mi
+            while hi + 1 < n_notes and (hi + 1) not in sung and (hi + 1) not in syl_at:
+                hi += 1
+            toks.append('*' if hi - lo + 1 >= 8 and mi not in sung else '_')
+    return toks
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('song')
@@ -182,66 +241,7 @@ def main():
     Ly.last = 0
     idx = [j for j, e in enumerate(sev) if e['syl']]          # the whole song at once (swara_abc.align_song)
     latin = dict(zip(idx, SA.align_song([sev[j]['syl'] for j in idx], Ly)))
-    # syllables onto MIDI notes. A syllable whose swaralipi note is paired with a MIDI note goes there.
-    # The others, between two such anchors, go on the free MIDI notes between them in order. If one
-    # or two are left without a note, they join the syllable before; if three or more are, the MIDI
-    # does not play that passage (a repeat the swaralipi sings and the MIDI does not): they are left
-    # out rather than packed onto one note.
-    syl_at = {}                                    # MIDI note index -> (text, end_word, starts a sung row)
-    syl_js = [j for j, e in enumerate(sev) if e['syl'] and j in latin]
-    item = {j: (latin[j][0], latin[j][1], sev[j]['newline']) for j in syl_js}
-    anchors, last_m = [], -1
-    for j in syl_js:                               # paired syllables, in order on both sides
-        if j in s2m and s2m[j] > last_m:
-            anchors.append(j); last_m = s2m[j]
-    anchor_set = set(anchors)
-    for j in anchors:
-        syl_at[s2m[j]] = item[j]
-    bounds = [(-1, -1)] + [(j, s2m[j]) for j in anchors] + [(len(sev), len(mnotes))]
-    for (j0, m0), (j1, m1) in zip(bounds, bounds[1:]):
-        between = [j for j in syl_js if j0 < j < j1 and j not in anchor_set]
-        if not between:
-            continue
-        free = [mi for mi in range(m0 + 1, m1) if mi not in syl_at]
-        if len(free) >= len(between):
-            # spread in order: each at about its own distance from the anchor before, never backwards
-            k = 0
-            for j in between:
-                want = m0 + (j - j0)
-                while k < len(free) - (len(between) - between.index(j) - 1) - 1 and free[k] < want:
-                    k += 1
-                syl_at[free[k]] = item[j]; k += 1
-            continue
-        missing = len(between) - len(free)
-        for mi, j in zip(free, between):
-            syl_at[mi] = item[j]
-        if missing >= 3:
-            continue                               # a passage the MIDI does not play: left out
-        for j in between[len(free):]:              # one or two short: join the syllable before
-            prev_m = max((mi for mi in syl_at if mi < m1), default=None)
-            if prev_m is not None:
-                p0 = syl_at[prev_m]
-                syl_at[prev_m] = (p0[0] + item[j][0], item[j][1], p0[2])
-    sung = set(s2m.values())
-    # tokens per MIDI note: syllable, hold, or '*' (in a long stretch the swaralipi doesn't sing)
-    toks = []
-    first_syl = min(syl_at) if syl_at else len(mnotes)
-    last_syl = max(syl_at) if syl_at else -1
-    run_unsung = 0
-    for mi in range(len(mnotes)):
-        if mi in syl_at:
-            toks.append(syl_at[mi])
-        elif mi < first_syl:
-            toks.append('*')
-        else:
-            # count unsung notes around: a stretch of 8+ MIDI notes with no swaralipi match is instrumental
-            lo = mi
-            while lo > 0 and (lo - 1) not in sung and (lo - 1) not in syl_at:
-                lo -= 1
-            hi = mi
-            while hi + 1 < len(mnotes) and (hi + 1) not in sung and (hi + 1) not in syl_at:
-                hi += 1
-            toks.append('*' if hi - lo + 1 >= 8 and mi not in sung else '_')
+    toks = place_syllables(sev, latin, s2m, len(mnotes))
     # render bars into lines; a line starts at the bar of a syllable that starts a sung row
     note_at = {(bi, k): mi for mi, (bi, k, _) in enumerate(mnotes)}
     line_starts = {0}
