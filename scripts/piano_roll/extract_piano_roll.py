@@ -19,8 +19,12 @@ How it reads the video
     of the falling area, default 0.6). Two notes on the same key are two bars with a gap, so
     each has its own bottom edge and is never merged into one long note. Edges are tracked from
     frame to frame, because duplicate frames make a bar jump further than one frame's fall.
-  * Duration = bar length / falling speed. If several melody keys start together (a chord in
-    the right hand), only the highest is kept.
+  * Only a band of rows around the scan line is decoded and examined (+-BAND px), and the hue is
+    worked out only for bright, saturated pixels: about 20x faster than examining the whole falling
+    area. A note ends when its bar's TOP edge crosses the scan line, so duration = the time between
+    the two crossings (at the bars' constant speed, the same as bar length / speed, and long bars
+    are not cut off by the top of the screen). If several melody keys start together (a chord in the
+    right hand), only the highest is kept.
 """
 import argparse
 import csv
@@ -30,6 +34,7 @@ import subprocess
 import numpy as np
 
 W, H = 1280, 720
+BAND = 40                               # rows read above and below the scan line
 FALL_TOP = 0
 FALL_BOTTOM = 490                       # set by find_layout()
 NAMES = 'C C# D D# E F F# G G# A A# B'.split()
@@ -154,14 +159,21 @@ def find_layout(path):
 
 
 def melody_mask(rgb):
-    """True where a pixel belongs to a melody (cyan/blue) bar"""
-    r, g, b = rgb[..., 0].astype(int), rgb[..., 1].astype(int), rgb[..., 2].astype(int)
-    mx, mn = np.maximum(np.maximum(r, g), b), np.minimum(np.minimum(r, g), b)
-    sat = (mx - mn) / np.maximum(mx, 1)
-    hue = np.zeros_like(mx, dtype=float)
-    d = np.maximum(mx - mn, 1)
-    hue = np.where(mx == b, 240 + 60 * (r - g) / d, np.where(mx == g, 120 + 60 * (b - r) / d, (60 * (g - b) / d) % 360))
-    return (hue >= 175) & (hue <= 245) & (sat > 0.45) & (mx > 90)
+    """True where a pixel belongs to a melody (cyan/blue) bar: hue 175-245 degrees, saturation > 0.45,
+    brightness > 90. The hue is worked out only for pixels that pass the cheap tests."""
+    mx = rgb.max(axis=2)
+    mn = rgb.min(axis=2)
+    ok = (mx > 90) & ((mx.astype(np.int16) - mn) * 100 > 45 * mx.astype(np.int16))
+    out = np.zeros(mx.shape, bool)
+    if not ok.any():
+        return out
+    px = rgb[ok].astype(np.int32)
+    r, g, b = px[:, 0], px[:, 1], px[:, 2]
+    M, m = mx[ok].astype(np.int32), mn[ok].astype(np.int32)
+    d = np.maximum(M - m, 1)
+    hue = np.where(M == b, 240 + 60 * (r - g) / d, np.where(M == g, 120 + 60 * (b - r) / d, (60 * (g - b) / d) % 360))
+    out[ok] = (hue >= 175) & (hue <= 245)
+    return out
 
 
 def bar_centres(mask, bridge=10, min_width=7):
@@ -229,29 +241,65 @@ def main():
     lead = (FALL_BOTTOM - y_scan) / speed / fps                         # seconds from scan line to keyboard
     xs = {m: int(round(c)) for m, c in centers.items()}
     print(f'{len(centers)} keys ({NAMES[min(centers) % 12]}{min(centers) // 12 - 1}-{NAMES[max(centers) % 12]}{max(centers) // 12 - 1}), keyboard top y={kb_top}, bars fall {speed:.2f} px/frame, scan line y={y_scan}')
-    notes, last = [], {}
-    # Track every bar's bottom edge from frame to frame, per key, and count a note when its edge
-    # passes the scan line. Some frames are duplicates, so an edge can jump well over `speed`
-    # pixels between two frames; tracking (not a fixed window) never misses it.
-    prev = {m: [] for m in xs}                                      # bottom edges (y) in the last frame
-    for n, fr in frames(a.video, FALL_TOP, FALL_BOTTOM):
-        cen = bar_centres(melody_mask(fr), min_width=max(4, int(ww / 3)))
+    notes = []
+    # Only a band of rows around the scan line is read (an edge moves at most ~30 px between frames).
+    # A note starts when its bar's BOTTOM edge crosses the scan line and ends when its TOP edge does,
+    # so the bar's length is never measured in one frame and long bars are not cut by the screen.
+    b0 = max(FALL_TOP, (y_scan - BAND) // 2 * 2)
+    b1 = min(FALL_BOTTOM, (y_scan + BAND) // 2 * 2)
+    ys = y_scan - b0
+    prev_bot = {m: [] for m in xs}
+    prev_top = {m: [] for m in xs}
+    open_note = {}                                                  # key -> index in notes of the sounding note
+    started = {}                                                    # key -> frame of its last note start
+    minw = max(4, int(ww / 3))
+
+    def crossing(edges, prev):
+        """edges (y in the band) that crossed the scan line since the last frame"""
+        out = []
+        for e in edges:
+            if e < ys:
+                continue
+            before = [p for p in prev if 0 <= e - p <= 30]
+            if before and max(before) < ys:
+                out.append(e)
+        return out
+
+    def at_line(n, e):
+        return n / fps + lead - (e - ys) / speed / fps              # when the edge was exactly on the line
+
+    n = -1
+    for n, fr in frames(a.video, b0, b1):
+        cen = bar_centres(melody_mask(fr), min_width=minw)
         for m, x in xs.items():
             col = np.abs(cen[:, x] - x) < hw                        # a bar centred on this key (not a wide neighbour)
-            edges = list(np.flatnonzero(col[:-1] & ~col[1:]))       # bar above, background below
-            for e in edges:
-                if e < y_scan:
-                    continue
-                # the same edge one frame earlier was 0..30 px higher; it crossed if it was above the line
-                before = [p for p in prev[m] if 0 <= e - p <= 30]
-                if before and max(before) < y_scan:
-                    top = e
-                    while top > 0 and col[top - 1]:
-                        top -= 1
-                    length = (e - top + 1) / speed / fps
-                    t = n / fps + lead - (e - y_scan) / speed / fps   # when the edge was exactly on the line
-                    notes.append((t, length, m))
-            prev[m] = edges
+            bots = list(np.flatnonzero(col[:-1] & ~col[1:]))        # bar above, background below
+            tops = list(np.flatnonzero(~col[:-1] & col[1:]) + 1)    # background above, bar below
+            for e in crossing(tops, prev_top[m]):
+                k = open_note.get(m)
+                # a "top edge" just after the start is a gap inside the bar (a printed label): ignore it
+                if k is not None and at_line(n, e) - notes[k][0] >= 0.08:
+                    del open_note[m]
+                    notes[k] = (notes[k][0], at_line(n, e) - notes[k][0], m)
+            for e in crossing(bots, prev_bot[m]):
+                t = at_line(n, e)
+                if started.get(m) == n:                             # a second bottom edge in the same frame:
+                    continue                                        # a gap inside the bar (a label), not a note
+                started[m] = n
+                k = open_note.pop(m, None)
+                if k is not None:                                   # its top edge was missed: it ends here
+                    notes[k] = (notes[k][0], max(0.0, t - notes[k][0]), m)
+                top = e
+                while top > 0 and col[top - 1]:
+                    top -= 1
+                if top > 0:                                         # the whole bar is inside the band
+                    notes.append((t, (e - top + 1) / speed / fps, m))
+                else:
+                    notes.append((t, None, m))
+                    open_note[m] = len(notes) - 1
+            prev_bot[m], prev_top[m] = bots, tops
+    end = n / fps + lead
+    notes = [(t, d if d is not None else max(0.0, end - t), m) for t, d, m in notes]
     notes.sort()
     melody = []
     for t, d, m in notes:                                           # chord in the melody colour: keep the top note
