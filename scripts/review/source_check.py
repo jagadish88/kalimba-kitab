@@ -167,6 +167,7 @@ def check(s, kpath, abc_path, T, pipeline):
             ln = tab_lines[g[3][0] - 1] if g[3][0] - 1 < len(tab_lines) else ''
             flags.append(dict(song=s, kind=kind, tab=f'{g[3][0]}:{g[3][1]}', note=RC.A.name(dr[i]),
                               context=ln[max(0, g[3][1] - 40):g[3][1] + 20].strip(),
+                              agreeing=' '.join(sorted(k for k, v in votes[i].items() if v == dr[i] % 12)),
                               sources='; '.join(f'{k} {NAMES[v]}' for k, v in sorted(other.items())) +
                                       ('; '.join(f'{k} octave {RC.A.name(v)}' for k, v in octv[i].items())),
                               ktab=kpath))
@@ -205,7 +206,7 @@ def main():
               f"weak {d['weak']}, octave {d['octave']}" + (f"; strong at tab lines {', '.join(d['strong_lines'][:8])}" if d['strong_lines'] else ''))
     out = 'data/intermediate_data/comparison/source_check.csv'
     with open(out, 'w', newline='', encoding='utf-8') as f:
-        w = csv.DictWriter(f, fieldnames=['song', 'kind', 'tab', 'note', 'sources', 'context', 'ktab'])
+        w = csv.DictWriter(f, fieldnames=['song', 'kind', 'tab', 'note', 'sources', 'agreeing', 'context', 'ktab'])
         w.writeheader(); w.writerows(allflags)
     tot = Counter(f['kind'] for f in allflags)
     nos = sum(1 for d in per.values() if 'error' not in d and not [u for u in d['sources'] if 'ignored' not in u])

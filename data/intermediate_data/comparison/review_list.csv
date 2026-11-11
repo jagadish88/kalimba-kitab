@@ -1,0 +1,974 @@
+song,bar,tab,kind,verdict,evidence,reviewed,context
+rs000017,56,30:50,octave,likely error,+1 octave(s) from the rest of the song,,)(ra: 3'//) (bu: 4'/)(jhe: 5'/// 6'/// 5'//)(o: 4'//) (bo: 3
+rs000037,129,39:34,rhythm,likely error,"tab 1.25 beats, swaralipi 4 beats at this tempo; the roll plays it 5.5 beats long, as the swaralipi (4); tab 1",,(Je: 2'--)(no: 2') (jo: 2')(war: 3') (jalephe: 3'//)(n
+rs000045,33,18:94,syllable extra,likely error,"tab 'aa', swaralipi ''",,: 1'/. 2'// 2'//) (so: 7 1'/ 2'/) (aa: 7/)(ji: 1'//)
+rs000045,33,18:102,syllable extra,likely error,"tab 'ji', swaralipi ''",,'// 2'//) (so: 7 1'/ 2'/) (aa: 7/)(ji: 1'//)
+rs000045,71,30:83,syllable extra,likely error,"tab 'aa', swaralipi ''",,5) (e: 5/. 6//)(so: 6//- 7/ 2'/) (aa: 7/)(ji: 1'//)
+rs000045,71,30:91,syllable extra,likely error,"tab 'ji', swaralipi ''",,5/. 6//)(so: 6//- 7/ 2'/) (aa: 7/)(ji: 1'//)
+rs000045,140,58:6,syllable extra,likely error,"tab 'Aa', swaralipi ''",,(Aa: 7/)(ji: 2'//) (do: 2'
+rs000045,140,58:14,syllable extra,likely error,"tab 'ji', swaralipi ''",,(Aa: 7/)(ji: 2'//) (do: 2'//)(kho:
+rs000045,141,58:25,syllable extra,likely error,"tab 'do', swaralipi ''",,(Aa: 7/)(ji: 2'//) (do: 2'//)(kho: 7/)(la: 1'
+rs000045,143,60:7,syllable extra,likely error,"tab 'tro', swaralipi ''",,(tro: 1'//) (so: 2'//) (aa:
+rs000045,143,60:18,syllable extra,likely error,"tab 'so', swaralipi ''",,(tro: 1'//) (so: 2'//) (aa: 2'//)(kho:
+rs000045,144,60:29,syllable extra,likely error,"tab 'aa', swaralipi ''",,(tro: 1'//) (so: 2'//) (aa: 2'//)(kho: 7// 1'// 2
+rs000086,3,10:27,syllable different,likely error,"tab 'j', swaralipi 'aa'",,(Aa: 6// 5// 7// 2'//)(j: 1') (kh: 7/ 6/)(e: 5/
+rs000086,3,10:36,syllable different,likely error,"tab 'kh', swaralipi 'aa'",,(Aa: 6// 5// 7// 2'//)(j: 1') (kh: 7/ 6/)(e: 5/ 6/)
+rs000101,7,10:25,rhythm,likely error,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 0.48 beats long, as the swaralipi (0.5); tab 1.5",,(Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(
+rs000101,45,28:22,rhythm,likely error,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 0.53 beats long, as the swaralipi (0.5); tab 1.5",,(Chhoriye: 4.-) (aa: 4.)(chhe: 4/) (aa: 4)
+rs000101,46,28:49,rhythm,likely error,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 1.3 beats long, as the swaralipi (1); tab 2",,: 4.-) (aa: 4.)(chhe: 4/) (aa: 4)(non: 4-)(de: 4/)(ri: 3/ 5/
+rs000101,59,33:52,note strong,likely error,two sources: roll B; swaralipi B,,ar: 3') (maa: 2'/)(jhe: 1') (a: 1'/ 7/ 2'/)(ja: 1' 6/)(na: 5
+rs000133,154,32:23,syllable extra,likely error,"tab 'ek', swaralipi ''",,(Aa: 6/)(mar: 7) (ek: 7)(taa: 1')
+rs000133,154,32:31,syllable extra,likely error,"tab 'taa', swaralipi ''",,(Aa: 6/)(mar: 7) (ek: 7)(taa: 1')
+rs000133,170,35:48,syllable extra,likely error,"tab 'boi', swaralipi ''",,/)(ner: 6//) (be: 5/.)(dan: 6//) (boi: 7)(te: 1') (naa: 7)(r
+rs000133,170,35:55,syllable extra,likely error,"tab 'te', swaralipi ''",,6//) (be: 5/.)(dan: 6//) (boi: 7)(te: 1') (naa: 7)(re: 1'--
+rs000219,3,10:16,syllable different,likely error,"tab 'an', swaralipi 'bo'",,(Jib: 1'/)(an: 1'/) (ju: 6/ 7/)(re:
+rs000219,3,10:26,syllable different,likely error,"tab 'ju', swaralipi 'no'",,(Jib: 1'/)(an: 1'/) (ju: 6/ 7/)(re: 2' 6/ 4'/)
+rs000219,5,12:68,syllable different,likely error,"tab 'sh', swaralipi 'bo'",,(ha: 6'/ 5'/)(ro: 4') (jee: 1'/) (sh: 1'/)
+rs000219,5,13:6,syllable different,likely error,"tab 'ju', swaralipi 'no'",,(ju: 6/ 7/)(re: 2' 6/ 4'/)
+rs000277,33,15:47,note strong,likely error,two sources: roll D; swaralipi D,,// 7//)(ne: 1') (bo: 1'// 7//)(ne: 1'/ 7/) (o: 1'/)(re: 7)
+rs000277,152,43:59,note strong,likely error,two sources: roll A#; swaralipi A#,,(paa: 2'/)(ta: 1') (jaa: 7/)(be: 1'/. 7/// 1'///) (u: 7/)(r
+rs000277,193,54:5,rhythm,likely error,"tab 3.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 0.59 beats long, as the swaralipi (0.5); tab 8.5",,(e: 4/ 5--)(mon: 4/. 6//)
+rs000277,210,56:52,syllable extra,likely error,"tab 'ko', swaralipi ''",,'// 7/ 6/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/)
+rs000277,210,56:60,syllable extra,likely error,"tab 're', swaralipi ''",,/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/)
+rs000292,89,31:31,syllable extra,likely error,"tab 'Te', swaralipi ''",,(ba: 2'// 3'//)(son: 2'/)(Te: 3'//) (su: 2'//) (te:
+rs000292,89,31:42,syllable extra,likely error,"tab 'su', swaralipi ''",,a: 2'// 3'//)(son: 2'/)(Te: 3'//) (su: 2'//) (te: 1'/. 2' 1'
+rs000306,8,9:64,syllable different,likely error,"tab 'ad', swaralipi 'o'",,7) (chal: 1'--) (aam: 1')(ra: 2') (ad: 1' 2'-- 7/ 1'/ 2'/ 3'
+rs000306,9,9:67,syllable missing,likely error,"tab '', swaralipi 'bhu'",,(chal: 1'--) (aam: 1')(ra: 2') (ad: 1' 2'-- 7/ 1'/ 2'/ 3'/ 4
+rs000306,35,18:45,syllable different,likely error,"tab 'm', swaralipi 'o'",,7) (cho: 1'--) (aa: 1') (raa: 2') (m: 1' 2'-- 7/ 1'/ 2'/ 3'
+rs000306,36,18:48,syllable missing,likely error,"tab '', swaralipi 'bhu'",,(cho: 1'--) (aa: 1') (raa: 2') (m: 1' 2'-- 7/ 1'/ 2'/ 3'/ 4
+rs000306,50,22:54,rhythm,likely error,"tab 5 beats, swaralipi 2 beats at this tempo; the roll plays it 2 beats long, as the swaralipi (2); tab 5",,.)(ra: 2') (ko: 1') (ri: 7/ 7/) (bhul: 1'- 1'--)
+rs000451,46,22:69,rhythm,likely error,"tab 4 beats, swaralipi 8 beats at this tempo; the roll plays it 7.9 beats long, as the swaralipi (8); tab 4",,(paa: 4')(i: 3')(bo: 2') (ko: 2')(tha: 6'---)
+rs000476,23,18:70,rhythm,likely error,"tab 3 beats, swaralipi 1.5 beats at this tempo; the roll plays it 1.5 beats long, as the swaralipi (1.5); tab 3",,(mon: 6// 7// 1'// 2'//)(di: 1'/)(re: 7--)
+rs000636,70,27:74,rhythm,likely error,"tab 4 beats, swaralipi 8 beats at this tempo; the roll plays it 8.1 beats long, as the swaralipi (8); tab 4",,e: 2'. 7/)(la: 7// 1'// 7/ 6/ 7/) (je: 1'---)
+rs000920,5,8:115,rhythm,likely error,"tab 4 beats, swaralipi 8 beats at this tempo; the roll plays it 7.7 beats long, as the swaralipi (8); tab 4",,'/) (maa: 5'-)(tir: 4' 5'/ 4'/) (path: 3'---)
+rs000920,13,9:107,rhythm,likely error,"tab 4 beats, swaralipi 8 beats at this tempo; the roll plays it 8 beats long, as the swaralipi (8); tab 4",,- 4') (bhu: 3'-)(lay: 2' 3'/ 2'/) (re: 1'---)
+rs000920,19,12:8,rhythm,likely error,"tab 4 beats, swaralipi 8 beats at this tempo; the roll plays it 7.8 beats long, as the swaralipi (8); tab 4",,(path: 3'---)
+rs000920,77,24:75,rhythm,likely error,"tab 4 beats, swaralipi 8 beats at this tempo; the roll plays it 7.2 beats long, as the swaralipi (8); tab 4",,-)(ye: 7'-) (jaay: 6'. 5' 6' 7'/) (re: 5'---)
+rs000920,100,29:42,octave,likely error,+1 octave(s) from the rest of the song,,o: 5'-)(thay: 6'. 1''/) (gi: 1''-)(ye: 1''-) (shesh: 1''.--
+rs000980,17,13:34,rhythm,likely error,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 0.89 beats long, as the swaralipi (1); tab 2",,(Sur: 2')(je: 5'/)(ro: 5'/) (mo: 4' 3') (ton: 3/.)
+rs000980,18,13:47,rhythm,likely error,"tab 0.75 beats, swaralipi 3 beats at this tempo; the roll plays it 3.1 beats long, as the swaralipi (3); tab 0.75",,')(je: 5'/)(ro: 5'/) (mo: 4' 3') (ton: 3/.)
+rs000980,20,14:54,rhythm,likely error,"tab 1.5 beats, swaralipi 6 beats at this tempo; the roll plays it 6 beats long, as the swaralipi (6); tab 1.5",,1'/)(r: 7-) (pro: 7/)(ka: 7/ 7/.)(sh: 2'//) (hok: 1'/.)
+rs000980,21,15:26,note strong,likely error,two sources: roll E; swaralipi E,,(ku: 7//)(heli: 6//)(ka: 5/.) (ko: 7)(Sur: 2'/
+rs000980,22,15:36,note strong,likely error,two sources: roll F; swaralipi F,,(ku: 7//)(heli: 6//)(ka: 5/.) (ko: 7)(Sur: 2'/ 1'/ 7/)(j
+rs000980,23,15:52,note strong,likely error,two sources: roll E; swaralipi E,,li: 6//)(ka: 5/.) (ko: 7)(Sur: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/
+rs000980,23,15:63,note strong,likely error,two sources: roll D; swaralipi D,,: 5/.) (ko: 7)(Sur: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4)(t
+rs000980,63,30:42,syllable extra,likely error,"tab 'gan', swaralipi ''",,: 5'/)(da: 5'/)(yo: 5'/)(di: 5'/)(gan: 4')(te: 3') (shan: 1'
+rs000980,63,30:50,syllable extra,likely error,"tab 'te', swaralipi ''",,a: 5'/)(yo: 5'/)(di: 5'/)(gan: 4')(te: 3') (shan: 1'.)(kho:
+rs000980,72,32:44,syllable extra,likely error,"tab 'gan', swaralipi ''",,5'//)(da: 6'/.)(yo: 6')(di: 5'//)(gan: 6'//-)(te: 6'/) (shan
+rs000980,72,32:55,syllable extra,likely error,"tab 'te', swaralipi ''",,'/.)(yo: 6')(di: 5'//)(gan: 6'//-)(te: 6'/) (shan: 5'//)(kho
+rs001094,134,34:30,note strong,likely error,two sources: roll F#; swaralipi F#,,(bu: 2/)(ke: 2/. 5//)(ro: 5/ 4/// 5/// 6//) (po: 5
+rs001194,22,14:27,octave,likely error,-1 octave(s) from the rest of the song,,(aa: 4'. 5'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li
+rs001194,43,20:55,rhythm,likely error,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 1 beats long, as the swaralipi (1); tab 3",,')(ba: 4'-)(ro: 4') (bhe: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu
+rs001194,83,31:55,rhythm,likely error,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 1 beats long, as the swaralipi (1); tab 3",,')(ba: 4'-)(ro: 4') (bhe: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu
+rs001194,118,41:38,octave,likely error,-1 octave(s) from the rest of the song,,(ka: 2')(to: 2') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si
+rs001194,118,41:45,octave,likely error,-1 octave(s) from the rest of the song,,2')(to: 2') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si: 1'---
+rs001194,118,41:54,octave,likely error,-1 octave(s) from the rest of the song,,') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si: 1'---)
+rs001194,124,42:69,octave,likely error,-1 octave(s) from the rest of the song,,: 4') (bhe: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu: 3')
+rs001194,126,43:27,octave,likely error,-1 octave(s) from the rest of the song,,(aa: 4'. 5'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li
+rs001194,136,46:57,octave,likely error,-1 octave(s) from the rest of the song,,)(yo: 5'-) (khu: 4')(li: 3'.- 2'/)(ya: 1'--)
+rs001247,109,38:48,note strong,likely error,two sources: roll C; swaralipi C,,3'/ 3'/ 2') (ta: 4'/)(jaal: 4'/) (jha: 3'/ 3'/ 2'/ 2'/ 1' 1'
+rs001247,114,38:99,note strong,likely error,two sources: roll D; swaralipi D,,2'/ 1' 1'// 2'/. 1'-- 6' 6'/ 6'/) (re: 5'/)
+rs001247,117,40:33,note strong,likely error,two sources: roll A; swaralipi A,,(dheu: 2'/.) (ut: 5'//)(the: 4' 2'/.) (ut: 5'//)(tal:
+rs001247,121,41:60,rhythm,likely error,"tab 3 beats, swaralipi 1.5 beats at this tempo; the roll plays it 2 beats long, as the swaralipi (1.5); tab 3",,/) (naa: 6)(ko: 6/) (kunt: 5/ 3/)(thi: 4/)(to: 5)
+rs001247,125,42:71,note strong,likely error,two sources: roll D; swaralipi D,,di: 3/ 4/ 5/ 6 6/ 5/) (yo: 3/.) (taal: 5//)
+rs001247,125,43:6,rhythm,likely error,"tab 3 beats, swaralipi 0.5 beats at this tempo; the roll plays it 0.52 beats long, as the swaralipi (0.5); tab 3",,(jo: 4--)(y: 4//) (jo: 1'/
+rs001247,129,43:79,rhythm,likely error,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 1 beats long, as the swaralipi (1); tab 2",,o: 1'/)(y: 7/ 1'/ 7/)(gaan: 1') (gaai: 1'/ 3'/ 3'/ 2'/) (yo:
+rs001247,130,44:9,note strong,likely error,two sources: roll D; swaralipi D,,(Hnaai: 7/ 6 6') (maa: 6'/)(r
+rs001247,130,44:12,note strong,likely error,two sources: roll C; swaralipi C,,(Hnaai: 7/ 6 6') (maa: 6'/)(ro:
+rs001313,109,30:63,note strong,likely error,two sources: roll A; swaralipi A,,// 6/. 6/)(war: 5/. 6//) (dii: 4/. 5// 4//) (haa: 5//)(na: 4
+rs001352,4,9:7,note strong,likely error,two sources: roll E; swaralipi E,,(chi: 4//)(ro: 5//)(din: 6/
+rs001352,5,9:26,note strong,likely error,two sources: roll E; swaralipi E,,(chi: 4//)(ro: 5//)(din: 6/) (ke: 7/)(no: 7///
+rs001352,5,9:56,note strong,likely error,two sources: roll E; swaralipi E,,//)(din: 6/) (ke: 7/)(no: 7///) (paai: 1'/// 2'// 1'/ 7/ 6//
+rs001352,8,10:77,syllable extra,likely error,"tab 'de', swaralipi ''",,jhe: 4/ 3///) (ta: 4///)(bo: 5//) (de: 4//)(kha: 3//) (paai:
+rs001352,8,10:87,syllable extra,likely error,"tab 'kha', swaralipi ''",,//) (ta: 4///)(bo: 5//) (de: 4//)(kha: 3//) (paai: 2/)
+rs001352,9,10:99,syllable extra,likely error,"tab 'paai', swaralipi ''",,/)(bo: 5//) (de: 4//)(kha: 3//) (paai: 2/)
+rs001352,10,11:24,syllable extra,likely error,"tab 'din', swaralipi ''",,(chi: 2/)(ro: 3/)(din: 3/) (ke: 3/)(nopaai:
+rs001352,10,11:33,syllable extra,likely error,"tab 'ke', swaralipi ''",,(chi: 2/)(ro: 3/)(din: 3/) (ke: 3/)(nopaai: 3//) (na:
+rs001352,13,12:37,note strong,likely error,two sources: roll E; swaralipi E,,(aa: 6/)(ka: 6///)(she: 2'///) (to: 1'//)(ma: 2') (re: 2'
+rs001352,14,13:6,syllable extra,likely error,"tab 'de', swaralipi ''",,(de: 2'//)(Ke: 3'//)(no: 1
+rs001352,14,13:16,syllable different,likely error,"tab 'Ke', swaralipi 'mo'",,(de: 2'//)(Ke: 3'//)(no: 1'//) (me:
+rs001352,15,13:26,syllable extra,likely error,"tab 'no', swaralipi ''",,(de: 2'//)(Ke: 3'//)(no: 1'//) (me: 2'//)(gh:
+rs001352,16,13:61,note strong,likely error,two sources: roll E; swaralipi E,,no: 1'//) (me: 2'//)(gh: 1'/ 7/ 6/ 5// 4//) (to: 5/)(ma: 6/)
+rs001352,17,13:92,note strong,likely error,two sources: roll F; swaralipi F,,6/ 5// 4//) (to: 5/)(ma: 6/)(na: 6/// 2'/// 1'// 2' 2'/ 2'/
+rs001352,17,13:98,note strong,likely error,two sources: roll E; swaralipi E,,/ 4//) (to: 5/)(ma: 6/)(na: 6/// 2'/// 1'// 2' 2'/ 2'//)
+rs001352,18,15:6,syllable different,likely error,"tab 'Ke', swaralipi 'mo'",,(Ke: 3'//)(no: 1'//) (me:
+rs001352,19,15:16,syllable extra,likely error,"tab 'no', swaralipi ''",,(Ke: 3'//)(no: 1'//) (me: 2'//)(gh:
+rs001352,28,18:48,note strong,likely error,two sources: roll E; swaralipi E,,(lo: 3//)(ke: 4// 3/ 4/) (to: 5/)(may: 6. 6/ 6/) (ja: 6/)(be
+rs001352,31,18:93,note strong,likely error,two sources: roll E; swaralipi E,,6/) (ja: 6/)(be: 6/ 6/ 6//) (paai: 7// 1'/ 1'/)
+rs001352,32,19:22,note strong,likely error,two sources: roll E; swaralipi E,,(de: 2'/) (khi: 2'// 1'//)(teohe: 2'/) (kh
+rs001352,32,19:35,rhythm,likely error,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 1.6 beats long, as the swaralipi (1.5); tab 0.5",,(de: 2'/) (khi: 2'// 1'//)(teohe: 2'/) (kho: 2'/)(ni: 1
+rs001352,35,20:67,note strong,likely error,two sources: roll C; swaralipi C,,3'//) (jabepaai: 2'//) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te:
+rs001352,36,20:100,syllable extra,likely error,"tab 'ohe', swaralipi ''",,(khi: 1'/// 2'/// 3'//)(te: 2'/) (ohe: 1'//)
+rs001352,36,21:7,note strong,likely error,two sources: roll E; swaralipi E,,(haa: 7//)(rai: 2'//) (da:
+rs001352,36,21:7,syllable extra,likely error,"tab 'haa', swaralipi ''",,(haa: 7//)(rai: 2'//) (da:
+rs001352,37,21:40,syllable extra,likely error,"tab 'hoy', swaralipi ''",,(haa: 7//)(rai: 2'//) (da: 1'/.) (hoy: 7/) (bhoyHaa: 6/)(rai
+rs001352,37,21:54,syllable extra,likely error,"tab 'bhoyHaa', swaralipi ''",,: 2'//) (da: 1'/.) (hoy: 7/) (bhoyHaa: 6/)(rai: 6/)
+rs001352,40,22:65,note strong,likely error,two sources: roll E; swaralipi E,,6// 7// 1'/ 1'/ 2'/) (haa: 2'//)(rai: 1'// 2'/)(ya: 2'/) (p
+rs001352,42,23:16,syllable extra,likely error,"tab 'ki', swaralipi ''",,(cho: 3'/)(ki: 4'/)(te: 3'//) (aa: 2
+rs001352,42,23:25,syllable extra,likely error,"tab 'te', swaralipi ''",,(cho: 3'/)(ki: 4'/)(te: 3'//) (aa: 2'//) (naa
+rs001352,47,25:22,note strong,likely error,two sources: roll G; swaralipi G,,(naa: 3'/ 1'//) (po: 2'//) (ri: 1'/) (th:
+rs001352,47,25:33,syllable extra,likely error,"tab 'ri', swaralipi ''",,(naa: 3'/ 1'//) (po: 2'//) (ri: 1'/) (th: 7/ 6/ 5// 4
+rs001352,47,25:43,syllable extra,likely error,"tab 'th', swaralipi ''",,a: 3'/ 1'//) (po: 2'//) (ri: 1'/) (th: 7/ 6/ 5// 4//)
+rs001352,48,25:53,note strong,likely error,two sources: roll E; swaralipi E,,/) (po: 2'//) (ri: 1'/) (th: 7/ 6/ 5// 4//)
+rs001352,49,27:22,note strong,likely error,two sources: roll F; swaralipi F,,(Haa: 5/ 6/)(rai: 6/ 2'//)(ya: 1'//) (hri:
+rs001352,49,27:32,note strong,likely error,two sources: roll E; swaralipi E,,(Haa: 5/ 6/)(rai: 6/ 2'//)(ya: 1'//) (hri: 2'/)(day:
+rs001352,51,27:87,syllable extra,likely error,"tab 'as', swaralipi ''",,(day: 2'/) (aa: 3'/ 1'//)(k: 2'//)(as: 1'/)(he: 7/ 6/ 5// 4/
+rs001352,51,27:96,syllable extra,likely error,"tab 'he', swaralipi ''",,) (aa: 3'/ 1'//)(k: 2'//)(as: 1'/)(he: 7/ 6/ 5// 4//)
+rs001352,52,27:106,note strong,likely error,two sources: roll E; swaralipi E,,1'//)(k: 2'//)(as: 1'/)(he: 7/ 6/ 5// 4//)
+rs001352,54,28:56,note strong,likely error,two sources: roll G; swaralipi G,,/ 6//)(ya: 2'//) (phe: 1'/) (li: 7/ 6/ 7//) (cho: 6//) (ki:
+rs001352,65,33:33,note strong,likely error,two sources: roll E; swaralipi E,,(prem: 6/) (aa: 6/ 4// 5//)(mi: 6/) (ko: 6//)(tha: 2'
+rs001352,66,33:86,note strong,likely error,two sources: roll E; swaralipi E,,tha: 2'//) (paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/)
+rs001352,67,33:97,note strong,likely error,two sources: roll D; swaralipi D,,(paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/)
+rs001352,67,35:5,note strong,likely error,two sources: roll C; swaralipi C,,(E: 5-)(to: 6/ 6/// 2'///
+rs001352,69,35:27,note strong,likely error,two sources: roll E; swaralipi E,,(E: 5-)(to: 6/ 6/// 2'/// 1'// 2' 2'/ 2'// 3'//
+rs001352,71,35:57,note strong,likely error,two sources: roll E; swaralipi E,,// 2'/// 1'// 2' 2'/ 2'// 3'//) (prem: 1'// 2'// 1'/ 7/ 6/ 5
+rs001352,72,35:81,note strong,likely error,two sources: roll A; swaralipi A,,/ 3'//) (prem: 1'// 2'// 1'/ 7/ 6/ 5// 4// 5/)
+rs001352,73,36:24,note strong,likely error,two sources: roll G; swaralipi G,,(aa: 6/)(mi: 6//) (ko: 2'//)(tha: 1'/) (paa:
+rs001352,75,37:39,note strong,likely error,two sources: roll A; swaralipi A,,(naathto: 7//)(ma: 6//)(re: 5/) (hri: 4/)(da: 5-)(ye: 2/ 2/
+rs001352,77,37:55,note strong,likely error,two sources: roll F; swaralipi F,,ma: 6//)(re: 5/) (hri: 4/)(da: 5-)(ye: 2/ 2/ 3/) (raa: 3/)(k
+rs001352,81,38:50,note strong,likely error,two sources: roll E; swaralipi E,,(i: 6/)(bo: 6/ 6/ 4//) (to: 5//) (ma: 6/)(rede: 6//)(y: 2'/
+rs001352,81,39:6,note strong,likely error,two sources: roll E; swaralipi E,,(na: 1'/) (ko: 7/)(ri: 6/)
+rs001352,82,39:16,note strong,likely error,two sources: roll G; swaralipi G,,(na: 1'/) (ko: 7/)(ri: 6/)(le: 7// 6
+rs001352,83,39:51,rhythm,likely error,"tab 2 beats, swaralipi 0.5 beats at this tempo; the roll plays it 0.38 beats long, as the swaralipi (0.5); tab 2.5",,ko: 7/)(ri: 6/)(le: 7// 6// 5/ 4/) (k: 5-)(aa: 6/)(ro: 6///
+rs001352,85,39:78,note strong,likely error,two sources: roll G; swaralipi G,,5/ 4/) (k: 5-)(aa: 6/)(ro: 6/// 2'/// 1'// 2')
+rs001352,87,40:32,note strong,likely error,two sources: roll G; swaralipi G,,(tu: 2'/)(mi: 2'//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5
+rs001352,87,40:37,note strong,likely error,two sources: roll A; swaralipi A,,(tu: 2'/)(mi: 2'//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5// 4/
+rs001352,88,40:56,note strong,likely error,two sources: roll E; swaralipi E,,//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5// 4//)(bo: 5/) (naa: 6/
+rs001352,90,41:6,note strong,likely error,two sources: roll G; swaralipi G,,(to: 7//)(mare: 6//) (hri:
+rs001352,91,41:36,note strong,likely error,two sources: roll E; swaralipi E,,(to: 7//)(mare: 6//) (hri: 5/)(da: 4/)(ye: 5- 6 6/) (raa
+rs001352,96,42:7,note strong,likely error,two sources: roll E; swaralipi E,,(kaa: 1'//)(chaa: 2')(hi: 6
+rs001352,97,42:35,note strong,likely error,two sources: roll E; swaralipi E,,(kaa: 1'//)(chaa: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (na: 3
+rs001352,99,42:84,note strong,likely error,two sources: roll E; swaralipi E,,2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2'///)(ri
+rs001352,100,43:7,rhythm,likely error,"tab 4.75 beats, swaralipi 1.5 beats at this tempo; the roll plays it 1.4 beats long, as the swaralipi (1.5); tab 4.75",,(hey: 1'/.) (aa: 7 6/ 6/)(m
+rs001352,103,43:42,note strong,likely error,two sources: roll C; swaralipi C,,ey: 1'/.) (aa: 7 6/ 6/)(mi: 6/ 6// 7// 1'/ 1'/) (praa: 2'/)(
+rs001352,104,43:67,rhythm,likely error,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 0.79 beats long, as the swaralipi (1); tab 2",,i: 6/ 6// 7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p:
+rs001352,104,43:72,note strong,likely error,two sources: roll E; swaralipi E,,6// 7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//)
+rs001352,105,43:80,note strong,likely error,two sources: roll E; swaralipi E,,1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe: 1
+rs001352,105,43:100,note strong,likely error,two sources: roll C; swaralipi C,,)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe: 1'//)
+rs001352,107,45:65,note strong,likely error,two sources: roll E; swaralipi E,,(ropaa: 4'//)(ne: 3'/) (chaa: 2'/)(hi: 1'///)(bona: 2'///)
+rs001352,109,46:70,note strong,likely error,two sources: roll E; swaralipi E,,)(bo: 7// 6) (hey: 6/) (aa: 6/// 2'/// 1'//)(mi: 2'/)
+rs001352,110,47:26,syllable extra,likely error,"tab 'pa', swaralipi ''",,(praa: 2'/)(no: 2'/)(pa: 2'//)(oheTumi: 3'//)
+rs001352,110,47:41,syllable extra,likely error,"tab 'oheTumi', swaralipi ''",,praa: 2'/)(no: 2'/)(pa: 2'//)(oheTumi: 3'//) (jo: 1'//)(di:
+rs001352,111,47:52,note strong,likely error,two sources: roll E; swaralipi E,,no: 2'/)(pa: 2'//)(oheTumi: 3'//) (jo: 1'//)(di: 2'//) (kho:
+rs001352,116,49:79,note strong,likely error,two sources: roll A; swaralipi A,,/)(yoi: 5/)(baa: 3//)(so: 4//)(na: 5// 4// 3// 4//)
+rs001352,116,49:83,note strong,likely error,two sources: roll G; swaralipi G,,oi: 5/)(baa: 3//)(so: 4//)(na: 5// 4// 3// 4//)
+rs001352,117,50:6,syllable extra,likely error,"tab 'bi', swaralipi ''",,(bi: 3/)(sar: 2/)(ja: 3/ 3
+rs001352,117,50:15,syllable different,likely error,"tab 'sar', swaralipi 'di'",,(bi: 3/)(sar: 2/)(ja: 3/ 3/ 3/)(n:
+rs001352,118,50:46,note strong,likely error,two sources: roll C; swaralipi C,,/)(sar: 2/)(ja: 3/ 3/ 3/)(n: 3//) (ko: 4//) (shree: 3/ 4/) (
+rs001352,119,50:59,note strong,likely error,two sources: roll B; swaralipi B,,a: 3/ 3/ 3/)(n: 3//) (ko: 4//) (shree: 3/ 4/) (cho: 5/)
+rs001352,119,50:62,note strong,likely error,two sources: roll A; swaralipi A,,3/ 3/ 3/)(n: 3//) (ko: 4//) (shree: 3/ 4/) (cho: 5/)
+rs001352,120,51:22,note strong,likely error,two sources: roll E; swaralipi E,,(ri: 6/)(bo: 6// 5// 4//) (bi: 5//)(sha: 6
+rs001352,122,51:82,syllable extra,likely error,"tab 'o', swaralipi ''",,/)(yo: 7/)(i: 7/// 1'///)(b: 2'//) (o: 1'/)
+rs001352,122,52:6,syllable extra,likely error,"tab 'aa', swaralipi ''",,(aa: 7/)(so: 6//)(na: 7//)
+rs001352,122,52:14,syllable extra,likely error,"tab 'so', swaralipi ''",,(aa: 7/)(so: 6//)(na: 7//) (bi: 5/
+rs001352,128,53:115,note strong,likely error,two sources: roll C; swaralipi C,,i: 3/)(sar: 3/)(j: 3/ 3// 4// 3/ 4/ 5/ 6.)
+rs001425,35,23:57,rhythm,likely error,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 1 beats long, as the swaralipi (1); tab 2",,ra: 5/)(no: 5/) (ha: 6/)(ro: 7/) (she: 1'-)
+rs001516,2,9:49,syllable different,likely error,"tab 's', swaralipi 'ho'",,)(sa: 2'/) (raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3
+rs001516,2,9:59,syllable different,likely error,"tab 'ra', swaralipi 'be'",,(raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3'/) (ho: 3
+rs001516,27,43:49,syllable different,likely error,"tab 's', swaralipi 'ho'",,)(sa: 2'/) (raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3
+rs001516,27,43:59,syllable different,likely error,"tab 'ra', swaralipi 'be'",,(raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3'/) (ho: 3
+rs001516,28,47:29,syllable different,likely error,"tab 's', swaralipi 'ho'",,(raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3
+rs001516,28,47:39,syllable different,likely error,"tab 'ra', swaralipi 'be'",,(raa: 2'/)(khi: 2'/ 3'/)(s: 1'/) (ra: 1'// 2'// 3'/)
+rs001537,213,72:40,note strong,likely error,two sources: roll E; swaralipi E,,(O: 5/) (aa: 5/ 5 6 6/ 6/ 6- 5/ 5/ 5 6 7/) (mar: 2'/ 1'/. 7/
+rs001537,218,72:95,note strong,likely error,two sources: roll C#; swaralipi C#,,/. 7// 6// 7// 6// 5/. 4/ 5- 4/ 4/ 4/. 3//)
+rs001657,20,16:8,octave,likely error,+1 octave(s) from the rest of the song,,(khol: 4'/ 3'/ 3'/ 2'/)
+rs001657,56,27:8,octave,likely error,+1 octave(s) from the rest of the song,,(khol: 4'/ 3'/ 3'/ 2'/)
+rs001657,86,37:36,syllable extra,likely error,"tab 'r', swaralipi ''",,(bhi: 3'//)(kha: 5'//)(ri: 4'/)(r: 3'/) (bi: 3')(na: 2')
+rs001657,86,37:36,syllable extra,likely error,"tab 'r', swaralipi ''",,(bhi: 3'//)(kha: 5'//)(ri: 4'/)(r: 3'/) (bi: 3')(na: 2')
+rs001657,87,37:46,syllable extra,likely error,"tab 'bi', swaralipi ''",,3'//)(kha: 5'//)(ri: 4'/)(r: 3'/) (bi: 3')(na: 2') :||
+rs001657,87,37:46,syllable extra,likely error,"tab 'bi', swaralipi ''",,3'//)(kha: 5'//)(ri: 4'/)(r: 3'/) (bi: 3')(na: 2') :||
+rs001657,101,41:53,syllable different,likely error,"tab 'l', swaralipi 'o'",,) (khol: 6) (dwaar: 6/ 5/) (kho: 4)(l: 4/)
+rs001657,101,42:7,syllable extra,likely error,"tab 'Raa', swaralipi ''",,(Raa: 5/) (nga: 6/ 5/ 4// 5
+rs001657,112,46:6,octave,likely error,-1 octave(s) from the rest of the song,,(ne: 6)(shame: 6/)(ghe: 5/
+rs001657,112,46:16,octave,likely error,-1 octave(s) from the rest of the song,,(ne: 6)(shame: 6/)(ghe: 5/) (me: 4)(
+rs001657,112,46:25,octave,likely error,-1 octave(s) from the rest of the song,,(ne: 6)(shame: 6/)(ghe: 5/) (me: 4)(sha: 4'/)
+rs001657,113,46:34,octave,likely error,-1 octave(s) from the rest of the song,,(ne: 6)(shame: 6/)(ghe: 5/) (me: 4)(sha: 4'/)
+rs001657,115,47:50,octave,likely error,+1 octave(s) from the rest of the song,,6'/) (bha: 5'/)(to: 4'/) (aa: 5'/)(ka: 2'')(she: 1''--)
+rs001657,115,47:60,octave,likely error,+1 octave(s) from the rest of the song,,5'/)(to: 4'/) (aa: 5'/)(ka: 2'')(she: 1''--)
+rs001740,41,19:119,octave,likely error,+1 octave(s) from the rest of the song,,// 1'// 2'// 3'// 4'// 5'// 6'//) (ni: 7'//)
+rs001822,48,15:129,syllable missing,likely error,"tab '', swaralipi 'po'",,// 5// 3/ 2/ 3 2-- 2/. 5// 5/) (lo: 5/ 5)(be: 5/)
+rs001822,48,15:136,syllable different,likely error,"tab 'be', swaralipi 'lo'",,3/ 2/ 3 2-- 2/. 5// 5/) (lo: 5/ 5)(be: 5/)
+rs001827,12,20:31,syllable different,likely error,"tab 'la', swaralipi 'du'",,(naa: 5)(ch: 6/) (mi: 6/)(la: 7/)(n: 7/) (gee: 6//
+rs001827,12,20:38,syllable different,likely error,"tab 'n', swaralipi 'lo'",,(naa: 5)(ch: 6/) (mi: 6/)(la: 7/)(n: 7/) (gee: 6// 7// 6//
+rs001848,29,14:6,rhythm,likely error,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 2 beats long, as the swaralipi (2); tab 1",,(ni: 2')(je: 3')(re: 4') (
+rs001848,29,14:14,rhythm,likely error,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 1 beats long, as the swaralipi (1); tab 2",,(ni: 2')(je: 3')(re: 4') (ka: 3'-)
+rs001848,90,27:41,octave,likely error,+1 octave(s) from the rest of the song,,du: 4')(ru: 6')(ha: 6') (kaa: 5'-)(je: 5') (ni: 4')(je: 4')(
+rs002077,53,22:66,syllable missing,likely error,"tab '', swaralipi 'naa'",,(aar: 1'-) (bne: 1'/ 7/)(dho: 7/ 1'// 7/.---) (na: 1'/) (aa
+rs002077,55,22:79,syllable extra,likely error,"tab 'na', swaralipi ''",,bne: 1'/ 7/)(dho: 7/ 1'// 7/.---) (na: 1'/) (aar: 1'---)
+rs002122,11,16:17,syllable different,likely error,"tab 'pa', swaralipi 'je'",,(Je: 3'--) (pa: 1'/)(th: 1')
+rs002122,11,16:26,syllable different,likely error,"tab 'th', swaralipi 'po'",,(Je: 3'--) (pa: 1'/)(th: 1')
+rs002122,35,37:17,syllable different,likely error,"tab 'pa', swaralipi 'je'",,(Je: 3'--) (pa: 1'/)(th: 1')
+rs002122,35,37:26,syllable different,likely error,"tab 'th', swaralipi 'po'",,(Je: 3'--) (pa: 1'/)(th: 1')
+rs002165,5,14:31,syllable different,likely error,"tab 'ma', swaralipi 'po'",,(Aa: 4/)(mi: 4/) (aa: 3/)(ma: 4/)(r: 3/)
+rs002165,5,14:38,syllable different,likely error,"tab 'r', swaralipi 'no'",,(Aa: 4/)(mi: 4/) (aa: 3/)(ma: 4/)(r: 3/)
+rs002165,13,27:6,syllable different,likely error,"tab 'Ma', swaralipi 'o'",,(Ma: 1'/)(mo: 1'/) (son: 1
+rs002165,13,27:15,syllable different,likely error,"tab 'mo', swaralipi 'yi'",,(Ma: 1'/)(mo: 1'/) (son: 1')(dhya:
+rs002165,22,38:108,syllable different,likely error,"tab 'ek', swaralipi 'jo'",,'/)(no: 1'// 7//)(l: 2'// 1'// 7/)(ek: 6/)(ha: 6/)
+rs002165,22,38:116,syllable different,likely error,"tab 'ha', swaralipi 'no'",,1'// 7//)(l: 2'// 1'// 7/)(ek: 6/)(ha: 6/)
+rs002165,23,41:6,syllable different,likely error,"tab 'Ma', swaralipi 'o'",,(Ma: 4/)(mo: 4/) (mug: 4/
+rs002165,23,41:14,syllable different,likely error,"tab 'mo', swaralipi 'yi'",,(Ma: 4/)(mo: 4/) (mug: 4/ 3/)(dho:
+rs000011,59,28:14,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,(ju: 4)(thi: 6)(ro: 6) (maa: 7)(le
+rs000011,59,28:21,rhythm,check,"tab 4 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,(ju: 4)(thi: 6)(ro: 6) (maa: 7)(le: 1'-)
+rs000011,60,28:30,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,(ju: 4)(thi: 6)(ro: 6) (maa: 7)(le: 1'-)
+rs000011,65,30:6,syllable different,check,"tab 'Aa', swaralipi 'po'",,(Aa: 7)(dhe: 1')(ko: 3') (
+rs000011,65,30:14,syllable different,check,"tab 'dhe', swaralipi 'ro'",,(Aa: 7)(dhe: 1')(ko: 3') (ghu: 2')
+rs000011,65,30:22,syllable different,check,"tab 'ko', swaralipi 'she'",,(Aa: 7)(dhe: 1')(ko: 3') (ghu: 2')(me: 1'-
+rs000011,66,30:32,syllable different,check,"tab 'ghu', swaralipi 'mri'",,(Aa: 7)(dhe: 1')(ko: 3') (ghu: 2')(me: 1'-)
+rs000011,66,30:40,syllable different,check,"tab 'me', swaralipi 'du'",,(Aa: 7)(dhe: 1')(ko: 3') (ghu: 2')(me: 1'-)
+rs000017,11,15:27,rhythm,check,"tab 1.75 beats, swaralipi 0.5 beats at this tempo; no piano roll to decide",,(So: 1'//)(khi: 2'//)(ro: 3'// 4'/ 4'/ 3'/) (hr
+rs000017,19,16:113,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi F,,: 3'/) (jho: 4'/ 5'///)(re: 6'/// 5'// 6'/// 5'///) (jaay: 4
+rs000017,19,16:119,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi E,,(jho: 4'/ 5'///)(re: 6'/// 5'// 6'/// 5'///) (jaay: 4'/.-)
+rs000017,64,31:221,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi E,,/ 6 5// 4// 5/ 6/// 7/// 6// 5//) (aa: 6// 5/ 3// 5//)(ha: 4
+rs000017,64,31:221,rhythm,check,"tab 1.25 beats, swaralipi 0.25 beats at this tempo; no piano roll to decide",,/ 6 5// 4// 5/ 6/// 7/// 6// 5//) (aa: 6// 5/ 3// 5//)(ha: 4
+rs000017,64,31:225,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi D,,5// 4// 5/ 6/// 7/// 6// 5//) (aa: 6// 5/ 3// 5//)(ha: 4.)
+rs000017,65,31:241,rhythm,check,"tab 1.5 beats, swaralipi 0.25 beats at this tempo; no piano roll to decide",,7/// 6// 5//) (aa: 6// 5/ 3// 5//)(ha: 4.)
+rs000037,46,17:57,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,' 1' 2' 2'// 3'/. 2' 5 6 7/ 2'/ 2' 2'/ 3'/ 2'// 3'// 4'/ 4'/
+rs000037,48,17:89,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,2' 2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/ 2' 7. 6/ 7 1' 7/ 6/ 5- 2' 2
+rs000037,49,17:92,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/ 2' 7. 6/ 7 1' 7/ 6/ 5- 2' 2')
+rs000037,94,28:61,rhythm,check,"tab 4 beats, swaralipi 2 beats at this tempo; the roll plays it 6.5 beats; tab 4, swaralipi 2",,/ 7) (na: 7) (aaj: 6/) (gha: 7/ 6)(re: 5---)
+rs000086,7,17:77,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,(aaj: 3') (bnaa: 3'// 5'//)(dhon: 4'/ 3'/) (to: 2'/) (tut:
+rs000086,7,17:87,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(bnaa: 3'// 5'//)(dhon: 4'/ 3'/) (to: 2'/) (tut: 7)(be: 1')
+rs000101,3,9:38,syllable extra,check,"tab 'ra', swaralipi ''",,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)
+rs000101,3,9:42,syllable missing,check,"tab '', swaralipi 'bi'",,ur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)(wo:
+rs000101,4,9:54,syllable extra,check,"tab 'bish', swaralipi ''",,1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)(wo: 4')(bha: 4'
+rs000101,7,10:41,syllable missing,check,"tab '', swaralipi 'khaa'",,Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'
+rs000101,8,10:52,syllable extra,check,"tab 'khaa', swaralipi ''",,a: 4'/)(ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a:
+rs000101,8,10:60,syllable extra,check,"tab 'ne', swaralipi ''",,ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi:
+rs000101,8,10:64,syllable missing,check,"tab '', swaralipi 'ne'",,4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/
+rs000101,16,13:7,syllable extra,check,"tab 'jaa', swaralipi ''",,(jaa: 2'/)(ge: 2'/ 5'/) (aa
+rs000101,16,13:16,syllable different,check,"tab 'ge', swaralipi 'jaa'",,(jaa: 2'/)(ge: 2'/ 5'/) (aa: 4'/)(ma
+rs000101,22,17:28,syllable missing,check,"tab '', swaralipi 'taa'",,(jo: 7/)(war: 7) (bhnaa: 7 6/)(tay: 1'.-) (bhu:
+rs000101,22,17:37,syllable extra,check,"tab 'tay', swaralipi ''",,(jo: 7/)(war: 7) (bhnaa: 7 6/)(tay: 1'.-) (bhu: 7/ 1'/)(b
+rs000101,23,17:52,syllable missing,check,"tab '', swaralipi 'bo'",,: 7) (bhnaa: 7 6/)(tay: 1'.-) (bhu: 7/ 1'/)(ban: 7/) (do: 6/
+rs000101,23,17:62,syllable extra,check,"tab 'ban', swaralipi ''",,a: 7 6/)(tay: 1'.-) (bhu: 7/ 1'/)(ban: 7/) (do: 6/ 7/ 1'/)(l
+rs000101,25,18:52,syllable missing,check,"tab '', swaralipi 'to'",,i: 3')(te: 2'/) (mor: 1') (rak: 1'/ 7/ 2'/)(to: 1' 6/)(dhaa:
+rs000101,25,18:61,syllable different,check,"tab 'to', swaralipi 'dhaa'",,: 2'/) (mor: 1') (rak: 1'/ 7/ 2'/)(to: 1' 6/)(dhaa: 5.)(ray:
+rs000101,35,24:8,syllable different,check,"tab 'Ghaa', swaralipi 'se'",,(Ghaa: 4/)(se: 4/) (ghaa: 4.
+rs000101,36,24:16,syllable different,check,"tab 'se', swaralipi ' ghaa'",,(Ghaa: 4/)(se: 4/) (ghaa: 4.)(se: 4)
+rs000101,36,24:27,syllable different,check,"tab 'ghaa', swaralipi 'se'",,(Ghaa: 4/)(se: 4/) (ghaa: 4.)(se: 4) (pa: 4.) (
+rs000101,36,24:35,syllable extra,check,"tab 'se', swaralipi ''",,(Ghaa: 4/)(se: 4/) (ghaa: 4.)(se: 4) (pa: 4.) (phe: 3)(
+rs000101,37,24:43,syllable different,check,"tab 'pa', swaralipi 'le'",,aa: 4/)(se: 4/) (ghaa: 4.)(se: 4) (pa: 4.) (phe: 3)(le: 5/)(
+rs000101,37,24:43,rhythm,check,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 0.47 beats; tab 1.5, swaralipi 1",,aa: 4/)(se: 4/) (ghaa: 4.)(se: 4) (pa: 4.) (phe: 3)(le: 5/)(
+rs000101,37,24:53,syllable extra,check,"tab 'phe', swaralipi ''",,: 4/) (ghaa: 4.)(se: 4) (pa: 4.) (phe: 3)(le: 5/)(chhi: 4.-)
+rs000101,37,24:60,syllable extra,check,"tab 'le', swaralipi ''",,ghaa: 4.)(se: 4) (pa: 4.) (phe: 3)(le: 5/)(chhi: 4.-)
+rs000101,39,25:23,syllable different,check,"tab 'pa', swaralipi 'the'",,(bo: 4/)(ner: 4) (pa: 4/)(the: 3/ 5/) (je:
+rs000101,39,25:32,syllable extra,check,"tab 'the', swaralipi ''",,(bo: 4/)(ner: 4) (pa: 4/)(the: 3/ 5/) (je: 4/)(te: 5
+rs000101,39,25:35,syllable missing,check,"tab '', swaralipi 'je'",,(bo: 4/)(ner: 4) (pa: 4/)(the: 3/ 5/) (je: 4/)(te: 5.-)
+rs000101,39,25:44,syllable extra,check,"tab 'je', swaralipi ''",,4/)(ner: 4) (pa: 4/)(the: 3/ 5/) (je: 4/)(te: 5.-)
+rs000101,44,28:12,rhythm,check,"tab 2.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 0.24 beats; tab 2.5, swaralipi 0.5",,(Chhoriye: 4.-) (aa: 4.)(chhe: 4
+rs000101,45,28:22,syllable different,check,"tab 'aa', swaralipi 'ye'",,(Chhoriye: 4.-) (aa: 4.)(chhe: 4/) (aa: 4)
+rs000101,45,28:32,syllable different,check,"tab 'chhe', swaralipi 'aa'",,(Chhoriye: 4.-) (aa: 4.)(chhe: 4/) (aa: 4)(non: 4-)(
+rs000101,45,28:41,syllable different,check,"tab 'aa', swaralipi 'chhe'",,Chhoriye: 4.-) (aa: 4.)(chhe: 4/) (aa: 4)(non: 4-)(de: 4/)(r
+rs000101,51,30:7,syllable extra,check,"tab 'jaa', swaralipi ''",,(jaa: 2/)(ge: 2/ 5/) (aa: 4
+rs000101,51,30:15,syllable different,check,"tab 'ge', swaralipi 'jaa'",,(jaa: 2/)(ge: 2/ 5/) (aa: 4/)(mar:
+rs000101,52,30:50,syllable missing,check,"tab '', swaralipi 'maa'",,ge: 2/ 5/) (aa: 4/)(mar: 5/) (gaan: 4/ 5 6. 7.)
+rs000101,52,30:52,syllable missing,check,"tab '', swaralipi 'gaa'",,: 2/ 5/) (aa: 4/)(mar: 5/) (gaan: 4/ 5 6. 7.)
+rs000101,56,32:36,syllable missing,check,"tab '', swaralipi 'ke'",,(dha: 1'/)(rar: 1'/ 7/) (bu: 6/ 7/ 6/)(ke: 1'.) (praan:
+rs000101,56,32:44,syllable extra,check,"tab 'ke', swaralipi ''",,: 1'/)(rar: 1'/ 7/) (bu: 6/ 7/ 6/)(ke: 1'.) (praan: 7.) (dhe
+rs000101,57,32:70,syllable missing,check,"tab '', swaralipi 'le'",,/ 7/ 6/)(ke: 1'.) (praan: 7.) (dhe: 7/ 1'/)(le: 7/ 6/)(chhi:
+rs000101,57,32:79,syllable extra,check,"tab 'le', swaralipi ''",,ke: 1'.) (praan: 7.) (dhe: 7/ 1'/)(le: 7/ 6/)(chhi: 5--)
+rs000101,57,32:82,syllable missing,check,"tab '', swaralipi 'chhi'",,1'.) (praan: 7.) (dhe: 7/ 1'/)(le: 7/ 6/)(chhi: 5--)
+rs000101,57,32:92,syllable extra,check,"tab 'chhi', swaralipi ''",,an: 7.) (dhe: 7/ 1'/)(le: 7/ 6/)(chhi: 5--)
+rs000101,60,33:72,syllable different,check,"tab 'na', swaralipi 're'",,he: 1') (a: 1'/ 7/ 2'/)(ja: 1' 6/)(na: 5.)(re: 2.)
+rs000101,60,33:80,syllable extra,check,"tab 're', swaralipi ''",,(a: 1'/ 7/ 2'/)(ja: 1' 6/)(na: 5.)(re: 2.)
+rs000101,62,34:43,syllable missing,check,"tab '', swaralipi 'dhaa'",,: 2/)(re: 3/ 2/)(chhi: 3/) (san: 4/ 3/ 3/)(dhan: 5-)
+rs000101,62,34:53,syllable extra,check,"tab 'dhan', swaralipi ''",,3/ 2/)(chhi: 3/) (san: 4/ 3/ 3/)(dhan: 5-)
+rs000115,91,25:59,rhythm,check,"tab 4 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.9 beats; tab 4, swaralipi 0.5",,(no: 5/)(ta: 5/ 7// 6//) (dhui: 5)(ye: 4/ 3.--) (daao: 3)
+rs000133,162,34:6,rhythm,check,"tab 1.75 beats, swaralipi 6 beats at this tempo; the roll plays it 0.49 beats; tab 0.75, swaralipi 6",,(Ek: 1'//)(taa: 7/) (ra: 6
+rs000133,162,34:17,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi B,,(Ek: 1'//)(taa: 7/) (ra: 6//)(tir: 5/
+rs000133,169,35:7,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi B,,(gaa: 7//)(ner: 6//) (be: 5
+rs000141,21,27:15,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F,,(Aa: 2/)(mar: 1/) (do: 2/ 4/)(sor:
+rs000141,22,27:24,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,(Aa: 2/)(mar: 1/) (do: 2/ 4/)(sor: 4) (je: 3
+rs000146,18,39:70,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,sa: 1''/)(muk: 1''/ 7'/) (di: 6'/)(ye: 4' 5')
+rs000146,19,39:73,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C,,1''/)(muk: 1''/ 7'/) (di: 6'/)(ye: 4' 5')
+rs000146,19,40:6,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,(aa: 4'/)(se: 5'/) (jaay:
+rs000146,19,40:15,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'//
+rs000146,19,40:27,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C,,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'// 6'/) (kha:
+rs000146,19,40:32,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'// 6'/) (kha: 5'/)(
+rs000146,19,42:32,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,(sa: 1''/)(muk: 1''/ 7'/) (di: 6'/)(ye: 4' 5')
+rs000146,19,42:41,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,sa: 1''/)(muk: 1''/ 7'/) (di: 6'/)(ye: 4' 5')
+rs000146,20,42:44,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,1''/)(muk: 1''/ 7'/) (di: 6'/)(ye: 4' 5')
+rs000146,20,43:6,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,(aa: 4'/)(se: 5'/) (jaay:
+rs000146,20,43:15,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F,,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'//
+rs000146,20,43:27,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'// 6'/) (kha:
+rs000146,20,43:32,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F,,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'// 6'/) (kha: 5'/)(
+rs000215,22,12:73,rhythm,check,"tab 1 beats, swaralipi 2.5 beats at this tempo; the roll plays it 0.48 beats; tab 0.75, swaralipi 2.5",,'/)(har: 4'/ 4'// 3'//) (haa: 2'/)(te: 3'/.) (aamar: 2'//)
+rs000277,123,35:54,rhythm,check,"tab 2 beats, swaralipi 0.5 beats at this tempo; the roll plays it 3.5 beats; tab 2, swaralipi 0.5",,5///) (po: 4/)(thik: 3/ 1/) (e: 3)(se: 4/ 5.)
+rs000277,191,53:31,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi C,,(Ghar: 5/. 1'//)(chhaa: 7/ 6/ 5/.)(ra: 6///) (ei: 5
+rs000277,191,53:40,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi B,,(Ghar: 5/. 1'//)(chhaa: 7/ 6/ 5/.)(ra: 6///) (ei: 5/// 4/) (
+rs000277,196,54:18,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi D,,(e: 4/ 5--)(mon: 4/. 6//) (ko: 6/)(re:
+rs000277,200,55:23,rhythm,check,"tab 2.5 beats, swaralipi 0.5 beats at this tempo; no piano roll to decide",,(Ghar: 4// 6/)(chhaa: 6 7/ 1')(ra: 6/. 1'//
+rs000277,202,55:55,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi F,,chhaa: 6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/ 7) (paa: 7/
+rs000277,202,55:55,rhythm,check,"tab 3.25 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,chhaa: 6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/ 7) (paa: 7/
+rs000277,203,55:59,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi E,,a: 6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/ 7) (paa: 7/.)(g
+rs000277,204,55:62,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi D,,6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/ 7) (paa: 7/.)(gol:
+rs000277,205,55:84,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi C,,7//) (ei: 6// 5. 7/ 7) (paa: 7/.)(gol: 6//)(ta: 7/)(ke: 1'-
+rs000277,206,55:101,rhythm,check,"tab 2.5 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,7/ 7) (paa: 7/.)(gol: 6//)(ta: 7/)(ke: 1'- 3/)
+rs000293,4,10:126,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,/ 7/ 5 1'/ 7. 5// 3// 3/ 4/ 5/ 6/ 7/ 5 1'/ 7.)
+rs000293,4,10:130,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F,,5 1'/ 7. 5// 3// 3/ 4/ 5/ 6/ 7/ 5 1'/ 7.)
+rs000451,24,16:53,rhythm,check,"tab 4 beats, swaralipi 8 beats at this tempo; the roll plays it 36 beats; tab 4, swaralipi 8",,hi: 5)(be: 6) (jaa: 1'-)(ni: 2'-) (go: 1'---)
+rs000451,59,25:39,rhythm,check,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 11 beats; tab 1, swaralipi 2",,(ga: 6')(ho: 5')(no: 4') (ra: 3')(jo: 2'/ 3'/)(ni: 1')
+rs000451,59,25:52,rhythm,check,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 8 beats; tab 1, swaralipi 2",,5')(no: 4') (ra: 3')(jo: 2'/ 3'/)(ni: 1')
+rs000515,7,28:29,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C,,(Haw: 7/)(o: 1'/) (na: 7/// 5'/// 5/// 1/// 2'/)
+rs000515,7,28:35,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,(Haw: 7/)(o: 1'/) (na: 7/// 5'/// 5/// 1/// 2'/) (ja: 1
+rs000515,7,29:29,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C,,(Haw: 7/)(o: 1'/) (na: 7/// 5'/// 5/// 1/// 2'/)
+rs000515,7,29:35,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,(Haw: 7/)(o: 1'/) (na: 7/// 5'/// 5/// 1/// 2'/) (ja: 1
+rs000588,40,24:104,rhythm,check,"tab 3.75 beats, swaralipi 0.5 beats at this tempo; the roll plays it 8 beats; tab 3.75, swaralipi 0.5",,// 7// 2'/ 1'/. 5/ 5// 4// 6//) (chho: 5/. 4/ 3 3.)
+rs000636,6,9:73,syllable extra,check,"tab 'paa', swaralipi ''",,(ner: 6/ 7/ 1'/ 2'/) (o: 2'. 7/) (paa: 7// 1'// 7/ 6/ 7/)(re
+rs000636,6,9:77,syllable missing,check,"tab '', swaralipi 'paa '",,: 6/ 7/ 1'/ 2'/) (o: 2'. 7/) (paa: 7// 1'// 7/ 6/ 7/)(re: 1'
+rs000636,15,11:88,syllable extra,check,"tab 're', swaralipi ''",,5') (to: 4'/ 3' 5'/)(ma: 4'. 3'/)(re: 3'/ 2' 3' 2'. 2'/ 4'.
+rs000636,15,11:92,syllable missing,check,"tab '', swaralipi 're'",,(to: 4'/ 3' 5'/)(ma: 4'. 3'/)(re: 3'/ 2' 3' 2'. 2'/ 4'. 1'/
+rs000636,46,21:50,syllable extra,check,"tab 'maa', swaralipi ''",,(hri: 4'/ 3' 5'/)(day: 4'. 3'/) (maa: 3'/ 2' 4'/)(jha: 3'-)
+rs000636,46,21:54,syllable missing,check,"tab '', swaralipi 'maa'",,i: 4'/ 3' 5'/)(day: 4'. 3'/) (maa: 3'/ 2' 4'/)(jha: 3'-)(re:
+rs000636,49,22:8,syllable different,check,"tab 'Dnaa', swaralipi 'to'",,(Dnaa: 1')(ri: 4')(ye: 4'. 3
+rs000636,49,22:16,syllable extra,check,"tab 'ri', swaralipi ''",,(Dnaa: 1')(ri: 4')(ye: 4'. 3'/) (aa:
+rs000636,69,27:50,syllable extra,check,"tab 'la', swaralipi ''",,)(kol: 6/ 7/ 1'/ 2'/) (be: 2'. 7/)(la: 7// 1'// 7/ 6/ 7/) (j
+rs000636,69,27:54,syllable missing,check,"tab '', swaralipi 'laa'",,l: 6/ 7/ 1'/ 2'/) (be: 2'. 7/)(la: 7// 1'// 7/ 6/ 7/) (je: 1
+rs000772,84,28:6,rhythm,check,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 3 beats; tab 1.5, swaralipi 0.5",,(Di: 4/ 5)(ner: 4/ 4/. 7//
+rs000810,83,21:64,rhythm,check,"tab 0.25 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.063 beats; tab 0.25, swaralipi 1.5",,3/ 4/)(bo: 3/ 5//)(no: 4/)(la: 3/)(ta: 4//) (a: 3/)(bo: 1/)(
+rs000920,52,18:48,syllable missing,check,"tab '', swaralipi 'aa'",,-- 4'/)(mar: 5'-- 6'/ 5'/ 4'-- 5'/ 4'/ 3'- 1' 2') (mon: 3'--
+rs000920,52,18:52,syllable missing,check,"tab '', swaralipi 'maa'",,'/)(mar: 5'-- 6'/ 5'/ 4'-- 5'/ 4'/ 3'- 1' 2') (mon: 3'-- 4')
+rs000920,54,18:97,syllable missing,check,"tab '', swaralipi 're'",,(mon: 3'-- 4') (bhu: 3'-)(lay: 2' 3'/ 2'/) (re: 1'---)
+rs000920,55,18:107,syllable extra,check,"tab 're', swaralipi ''",,- 4') (bhu: 3'-)(lay: 2' 3'/ 2'/) (re: 1'---)
+rs000920,122,33:48,syllable missing,check,"tab '', swaralipi 'aa'",,-- 4'/)(mar: 5'-- 6'/ 5'/ 4'-- 5'/ 4'/ 3'- 1' 2') (mon: 3'--
+rs000920,122,33:52,syllable missing,check,"tab '', swaralipi 'maa'",,'/)(mar: 5'-- 6'/ 5'/ 4'-- 5'/ 4'/ 3'- 1' 2') (mon: 3'-- 4')
+rs001194,118,41:45,syllable missing,check,"tab '', swaralipi 'shu'",,2')(to: 2') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si: 1'---
+rs001194,118,41:54,syllable different,check,"tab 'ba', swaralipi 'dhaa'",,') (bhaa: 3'/ 2'/)(lo: 1' 2'/ 1'/)(ba: 7)(si: 1'---)
+rs001194,130,45:7,syllable extra,check,"tab 'Cha', swaralipi ''",,(Cha: 5')(ro: 6'. 5'/)(ne:
+rs001194,131,45:15,syllable extra,check,"tab 'ro', swaralipi ''",,(Cha: 5')(ro: 6'. 5'/)(ne: 5') (di:
+rs001194,133,46:7,syllable different,check,"tab 'hri', swaralipi 'ke'",,(hri: 4'-)(da: 6')(yo: 5'-)
+rs001194,133,46:16,syllable different,check,"tab 'da', swaralipi 'mo'",,(hri: 4'-)(da: 6')(yo: 5'-) (khu: 4'
+rs001194,134,46:24,syllable different,check,"tab 'yo', swaralipi 'ne'",,(hri: 4'-)(da: 6')(yo: 5'-) (khu: 4')(li: 3'
+rs001194,140,47:69,syllable missing,check,"tab '', swaralipi 'to'",,: 4') (bhe: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu: 3')
+rs001194,140,47:78,syllable different,check,"tab 'nu', swaralipi 'bhaa'",,e: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu: 3')
+rs001247,107,38:6,rhythm,check,"tab 3 beats, swaralipi 0.5 beats at this tempo; no piano roll to decide",,(ja: 4' 3'/ 3'/ 2') (ta: 4
+rs001247,117,40:55,rhythm,check,"tab 3 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,t: 5'//)(the: 4' 2'/.) (ut: 5'//)(tal: 4'--)
+rs001248,34,53:26,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A#,,(Pro: 1'/)(bha: 1'/)(te: 3'// 2'// 3'/)
+rs001248,34,53:31,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(Pro: 1'/)(bha: 1'/)(te: 3'// 2'// 3'/)
+rs001248,34,53:36,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,(Pro: 1'/)(bha: 1'/)(te: 3'// 2'// 3'/)
+rs001248,35,54:55,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,4') (de: 4'/)(ke: 3'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2
+rs001248,35,54:59,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(de: 4'/)(ke: 3'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2'/ 4
+rs001248,35,54:63,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,: 4'/)(ke: 3'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2'/ 4'--
+rs001248,35,54:67,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,/)(ke: 3'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2'/ 4'-- 1'/)
+rs001248,35,54:71,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A#,,e: 3'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2'/ 4'-- 1'/)
+rs001248,35,54:75,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2'/ 4'-- 1'/)
+rs001248,35,54:79,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A#,,'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2'/ 4'-- 1'/)
+rs001248,35,55:10,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(a: 1'// 4'//)(bo: 3'/)(sar: 3
+rs001248,35,55:20,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A#,,(a: 1'// 4'//)(bo: 3'/)(sar: 3') (paai:
+rs001248,35,55:60,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A#,,'/)(sar: 3') (paai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2'
+rs001248,35,55:70,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,') (paai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2'/)(mi: 1'/
+rs001248,35,55:75,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,aai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2'/)(mi: 1'/) (ha
+rs001248,37,56:31,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(Pro: 1'/)(bha: 1'/)(te: 3'// 2'// 3'/) (po: 4'/)(t
+rs001248,37,56:36,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,(Pro: 1'/)(bha: 1'/)(te: 3'// 2'// 3'/) (po: 4'/)(thik:
+rs001248,38,57:31,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(de: 4'/)(ke: 3'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4
+rs001248,38,57:35,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C,,(de: 4'/)(ke: 3'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2
+rs001248,38,57:39,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,(de: 4'/)(ke: 3'/ 4'/) (jaay: 2'/ 3'/ 2'/ 1'/ 3'/ 4'/ 2'/ 4
+rs001248,38,58:10,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(a: 1'// 4'//)(bo: 3'/)(sar: 3
+rs001248,38,58:20,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A#,,(a: 1'// 4'//)(bo: 3'/)(sar: 3') (paai:
+rs001248,38,58:60,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A#,,'/)(sar: 3') (paai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2'
+rs001248,38,58:70,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,') (paai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2'/)(mi: 1'/
+rs001248,38,58:75,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,aai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2'/)(mi: 1'/) (ha
+rs001313,5,9:24,rhythm,check,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 0.22 beats; tab 0.75, swaralipi 2",,(jaaw: 1'/ 7 6//) (ar: 7/ 1'//) (nei: 1'//)
+rs001313,9,11:6,rhythm,check,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 4.7 beats; tab 2, swaralipi 0.5",,(Me: 5/ 5/. 6//)(le: 6/) (
+rs001313,17,14:6,rhythm,check,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.12 beats; tab 0.25, swaralipi 1.5",,(Te: 5//)(pan: 1'//)(ta: 1
+rs001313,40,18:37,rhythm,check,"tab 0.25 beats, swaralipi 1.5 beats at this tempo; no piano roll to decide",,(Paa: 5/)(rul: 7 6/ 7/ 6//) (boner: 5//) (cham: 5/. 6//)(
+rs001352,4,8:78,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,: 3/)(kha: 3/) (paai: 3// 4// 3/ 4/ 5/ 6/ 6// 5//)
+rs001352,4,8:85,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D; swaralipi F,,ha: 3/) (paai: 3// 4// 3/ 4/ 5/ 6/ 6// 5//)
+rs001352,4,9:16,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F; swaralipi D,,(chi: 4//)(ro: 5//)(din: 6/) (ke: 7/
+rs001352,5,9:35,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F; swaralipi D,,(chi: 4//)(ro: 5//)(din: 6/) (ke: 7/)(no: 7///) (paai:
+rs001352,6,9:71,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G; swaralipi E,,e: 7/)(no: 7///) (paai: 1'/// 2'// 1'/ 7/ 6//) (na: 7// 5/ 6
+rs001352,14,13:16,rhythm,check,"tab 0.75 beats, swaralipi 2 beats at this tempo; no piano roll to decide",,(de: 2'//)(Ke: 3'//)(no: 1'//) (me:
+rs001352,19,15:27,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B; swaralipi A,,(Ke: 3'//)(no: 1'//) (me: 2'//)(gh: 1'/ 7/ 6/ 5
+rs001352,19,15:37,rhythm,check,"tab 2 beats, swaralipi 0.83 beats at this tempo; no piano roll to decide",,(Ke: 3'//)(no: 1'//) (me: 2'//)(gh: 1'/ 7/ 6/ 5// 4//) (t
+rs001352,23,16:39,rhythm,check,"tab 0.5 beats, swaralipi 1.7 beats at this tempo; the roll plays it 0.5 beats; tab 0.125, swaralipi 1.7",,(aaka: 6/)(she: 7// 6//) (to: 5/)(ma: 6///)(re: 7///) (dekh
+rs001352,27,18:30,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi E,,(pa: 3/)(lo: 3//)(ke: 4// 3/ 4/) (to: 5/)(may: 6.
+rs001352,27,18:39,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F; swaralipi D,,(pa: 3/)(lo: 3//)(ke: 4// 3/ 4/) (to: 5/)(may: 6. 6/ 6/) (j
+rs001352,30,18:89,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D; swaralipi F,,6/ 6/) (ja: 6/)(be: 6/ 6/ 6//) (paai: 7// 1'/ 1'/)
+rs001352,36,20:100,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D; swaralipi F,,(khi: 1'/// 2'/// 3'//)(te: 2'/) (ohe: 1'//)
+rs001352,37,21:40,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi D,,(haa: 7//)(rai: 2'//) (da: 1'/.) (hoy: 7/) (bhoyHaa: 6/)(rai
+rs001352,38,22:31,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi F,,(haa: 6/)(rai: 6/) (bhoy: 6// 7// 1'/ 1'/ 2'/) (haa
+rs001352,39,22:35,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C; swaralipi E,,(haa: 6/)(rai: 6/) (bhoy: 6// 7// 1'/ 1'/ 2'/) (haa: 2'
+rs001352,43,23:52,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E; swaralipi C,,i: 4'/)(te: 3'//) (aa: 2'//) (naa: 2'/ 1'///) (mi: 2'///) (k
+rs001352,45,24:22,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E; swaralipi A,,(paa: 6/ 2'//) (yaa: 1'//) (bo: 2'/) (lok:
+rs001352,59,31:44,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F; swaralipi D,,3/)(ma: 3//)(reraa: 4//)(khi: 3/)(bo: 4/) (aan: 5/)(khite:
+rs001352,64,33:20,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E; swaralipi F,,(prem: 6/) (aa: 6/ 4// 5//)(mi: 6/) (ko:
+rs001352,66,33:68,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi E,,mi: 6/) (ko: 6//)(tha: 2'//) (paa: 1'/ 7/)(bo: 6/) (naa: 7//
+rs001352,66,33:76,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D; swaralipi F,,(ko: 6//)(tha: 2'//) (paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/
+rs001352,66,33:90,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F; swaralipi D,,2'//) (paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/)
+rs001352,67,35:5,rhythm,check,"tab 2 beats, swaralipi 0.5 beats at this tempo; no piano roll to decide",,(E: 5-)(to: 6/ 6/// 2'///
+rs001352,75,37:47,rhythm,check,"tab 3.5 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,o: 7//)(ma: 6//)(re: 5/) (hri: 4/)(da: 5-)(ye: 2/ 2/ 3/) (ra
+rs001352,89,40:82,rhythm,check,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; no piano roll to decide",,'/ 7/ 6/ 5// 4//)(bo: 5/) (naa: 6/)(t: 6// 2'// 1'/ 7/)(h: 6
+rs001352,94,41:80,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,e: 5- 6 6/) (raa: 6/)(khi: 6/)(te: 6// 7// 1'/ 1'/ 2'/) (aar
+rs001352,95,41:84,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C; swaralipi G,,- 6 6/) (raa: 6/)(khi: 6/)(te: 6// 7// 1'/ 1'/ 2'/) (aar: 2'
+rs001352,105,43:88,rhythm,check,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 1 beats; tab 0.25, swaralipi 1.5",,) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe: 1'//)
+rs001352,127,53:109,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,2/) (bi: 3/)(sar: 3/)(j: 3/ 3// 4// 3/ 4/ 5/ 6.)
+rs001352,127,53:112,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,(bi: 3/)(sar: 3/)(j: 3/ 3// 4// 3/ 4/ 5/ 6.)
+rs001367,100,38:53,rhythm,check,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.26 beats; tab 0.5, swaralipi 1.5",,6- 4/)(jhe: 5/) (mo: 4//) (dhuNibhri: 5/)(to: 6//)(baa: 5/)
+rs001367,101,38:101,rhythm,check,"tab 0.75 beats, swaralipi 2 beats at this tempo; the roll plays it 0.48 beats; tab 0.75, swaralipi 2",,//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu: 2/.)(ro: 3//)(ti: 4/)
+rs001397,19,14:52,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,a: 2'/)(ma: 1'/)(der: 1'/. 6//) (chhu: 1'/)(ti: 1'/. 2'/ 3'/
+rs001397,19,14:66,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,/)(der: 1'/. 6//) (chhu: 1'/)(ti: 1'/. 2'/ 3'//-)
+rs001397,20,14:70,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A#,,er: 1'/. 6//) (chhu: 1'/)(ti: 1'/. 2'/ 3'//-)
+rs001397,21,15:6,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(aa: 4)(ha: 5/) (ha: 6)(ha
+rs001397,31,17:56,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C,,) (ge: 6/)(chhe: 6/. 7//) (tu: 6/)(ti: 5/ 6// 5/ 4//-)
+rs001397,31,17:59,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,ge: 6/)(chhe: 6/. 7//) (tu: 6/)(ti: 5/ 6// 5/ 4//-)
+rs001397,31,17:63,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,6/)(chhe: 6/. 7//) (tu: 6/)(ti: 5/ 6// 5/ 4//-)
+rs001425,71,41:57,rhythm,check,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 6 beats; tab 2, swaralipi 1",,ra: 5/)(no: 5/) (ha: 6/)(ro: 7/) (she: 1'-)
+rs001619,2,8:59,syllable extra,check,"tab 'maa', swaralipi ''",,: 5)(ne: 6. 7/) (naa: 7/ 3'/ 2') (maa: 7)(na: 6.--)
+rs001619,3,8:66,syllable extra,check,"tab 'na', swaralipi ''",,: 6. 7/) (naa: 7/ 3'/ 2') (maa: 7)(na: 6.--)
+rs001619,5,10:34,syllable missing,check,"tab '', swaralipi 'ti'",,(maa: 5)(ne: 6. 7/) (naa: 7/ 3'/ 2') (maa: 7)(na: 6-)
+rs001619,5,10:44,syllable extra,check,"tab 'maa', swaralipi ''",,: 5)(ne: 6. 7/) (naa: 7/ 3'/ 2') (maa: 7)(na: 6-)
+rs001619,5,10:51,syllable extra,check,"tab 'na', swaralipi ''",,: 6. 7/) (naa: 7/ 3'/ 2') (maa: 7)(na: 6-)
+rs001619,6,11:7,syllable different,check,"tab 'Aan', swaralipi 'mu'",,(Aan: 6)(khi: 2') (phi: 1')
+rs001619,7,11:34,syllable different,check,"tab 'raa', swaralipi 'ne'",,(Aan: 6)(khi: 2') (phi: 1')(raa: 2')(yi: 1')(le: 2'-)
+rs001619,7,11:42,syllable different,check,"tab 'yi', swaralipi 'che'",,an: 6)(khi: 2') (phi: 1')(raa: 2')(yi: 1')(le: 2'-)
+rs001619,9,12:39,syllable extra,check,"tab 'na', swaralipi ''",,(bo: 1'/ 3'/)(le: 2'-) (na: 4.-) (na: 5- 6) (na: 6/ 7/ 2' 7
+rs001619,10,12:42,syllable missing,check,"tab '', swaralipi 'ro'",,o: 1'/ 3'/)(le: 2'-) (na: 4.-) (na: 5- 6) (na: 6/ 7/ 2' 7 6-
+rs001619,10,12:50,syllable extra,check,"tab 'na', swaralipi ''",,'/)(le: 2'-) (na: 4.-) (na: 5- 6) (na: 6/ 7/ 2' 7 6---)
+rs001619,10,12:56,syllable missing,check,"tab '', swaralipi 'ro'",,: 2'-) (na: 4.-) (na: 5- 6) (na: 6/ 7/ 2' 7 6---)
+rs001619,10,12:59,syllable missing,check,"tab '', swaralipi 'bo'",,'-) (na: 4.-) (na: 5- 6) (na: 6/ 7/ 2' 7 6---)
+rs001619,11,12:61,syllable missing,check,"tab '', swaralipi 'ne'",,) (na: 4.-) (na: 5- 6) (na: 6/ 7/ 2' 7 6---)
+rs001619,12,13:30,syllable different,check,"tab 'li', swaralipi 'to'",,(Ja: 6)(to: 5') (bo: 5')(li: 5') (naai: 4' 4') (ra
+rs001619,13,13:41,syllable different,check,"tab 'naai', swaralipi 'bo'",,Ja: 6)(to: 5') (bo: 5')(li: 5') (naai: 4' 4') (raa: 4' 4'-)(
+rs001619,13,13:44,syllable missing,check,"tab '', swaralipi 'li'",,6)(to: 5') (bo: 5')(li: 5') (naai: 4' 4') (raa: 4' 4'-)(ti:
+rs001619,13,13:54,syllable different,check,"tab 'raa', swaralipi 'to'",,) (bo: 5')(li: 5') (naai: 4' 4') (raa: 4' 4'-)(ti: 3' 5'-)
+rs001619,13,13:57,syllable missing,check,"tab '', swaralipi 'be'",,bo: 5')(li: 5') (naai: 4' 4') (raa: 4' 4'-)(ti: 3' 5'-)
+rs001619,14,13:66,syllable extra,check,"tab 'ti', swaralipi ''",,i: 5') (naai: 4' 4') (raa: 4' 4'-)(ti: 3' 5'-)
+rs001619,15,14:14,syllable different,check,"tab 'li', swaralipi 'e'",,(mo: 5')(li: 4')(no: 3'.) (ho: 3'/
+rs001619,15,14:22,syllable different,check,"tab 'no', swaralipi 'baa'",,(mo: 5')(li: 4')(no: 3'.) (ho: 3'/ 3'/ 4'/
+rs001619,15,14:32,syllable different,check,"tab 'ho', swaralipi 'je'",,(mo: 5')(li: 4')(no: 3'.) (ho: 3'/ 3'/ 4'/)(ye: 3')(
+rs001619,16,14:36,syllable missing,check,"tab '', swaralipi 'je'",,(mo: 5')(li: 4')(no: 3'.) (ho: 3'/ 3'/ 4'/)(ye: 3')(chhe
+rs001619,16,14:40,syllable missing,check,"tab '', swaralipi 'te'",,(mo: 5')(li: 4')(no: 3'.) (ho: 3'/ 3'/ 4'/)(ye: 3')(chhe: 2'
+rs001619,16,14:49,syllable extra,check,"tab 'ye', swaralipi ''",,li: 4')(no: 3'.) (ho: 3'/ 3'/ 4'/)(ye: 3')(chhe: 2') (baa: 1
+rs001619,16,14:59,syllable different,check,"tab 'chhe', swaralipi 'ho'",,: 3'.) (ho: 3'/ 3'/ 4'/)(ye: 3')(chhe: 2') (baa: 1' 2' 7/)(t
+rs001619,16,14:69,syllable extra,check,"tab 'baa', swaralipi ''",,: 3'/ 3'/ 4'/)(ye: 3')(chhe: 2') (baa: 1' 2' 7/)(ti: 6.-)
+rs001619,17,14:72,syllable missing,check,"tab '', swaralipi 'be'",,'/ 3'/ 4'/)(ye: 3')(chhe: 2') (baa: 1' 2' 7/)(ti: 6.-)
+rs001619,18,15:14,syllable different,check,"tab 'kho', swaralipi 'yaa'",,(Mu: 6)(kho: 2')(paa: 1')(ne: 2')
+rs001619,18,15:23,syllable different,check,"tab 'paa', swaralipi 're'",,(Mu: 6)(kho: 2')(paa: 1')(ne: 2') (che: 1')
+rs001619,18,15:31,syllable different,check,"tab 'ne', swaralipi 'daan'",,(Mu: 6)(kho: 2')(paa: 1')(ne: 2') (che: 1')(ye: 2'-
+rs001619,19,15:41,syllable different,check,"tab 'che', swaralipi 'raa'",,Mu: 6)(kho: 2')(paa: 1')(ne: 2') (che: 1')(ye: 2'-)
+rs001619,22,16:50,rhythm,check,"tab 4 beats, swaralipi 8 beats at this tempo; no piano roll to decide",,'/)(le: 2'-) (na: 4--) (na: 5- 6) (na: 6/ 7/ 2' 7 6)
+rs001619,25,18:9,syllable missing,check,"tab '', swaralipi 'ye'",,(ho: 3' 3')(ye: 2' 5'-) (khya
+rs001619,25,18:17,syllable extra,check,"tab 'ye', swaralipi ''",,(ho: 3' 3')(ye: 2' 5'-) (khya: 4')(pa
+rs001619,27,18:60,syllable missing,check,"tab '', swaralipi 'ne'",,'-) (khya: 4')(pa: 3') (pa: 2')(bo: 1' 2')(ne: 7/ 6/)
+rs001619,27,18:68,syllable extra,check,"tab 'ne', swaralipi ''",,a: 4')(pa: 3') (pa: 2')(bo: 1' 2')(ne: 7/ 6/)
+rs001619,27,19:8,rhythm,check,"tab 2 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,(Phaa: 6-)(gu: 2')(no: 1') (
+rs001619,29,20:6,syllable different,check,"tab 'ha', swaralipi 'ko'",,(ha: 2'/ 3'/ 2'/ 3')(ha: 2
+rs001619,29,20:10,syllable missing,check,"tab '', swaralipi 'ye'",,(ha: 2'/ 3'/ 2'/ 3')(ha: 2'/ 7
+rs001619,29,20:18,syllable missing,check,"tab '', swaralipi 'paa'",,(ha: 2'/ 3'/ 2'/ 3')(ha: 2'/ 7-) (phu:
+rs001619,30,20:26,syllable different,check,"tab 'ha', swaralipi 'ne'",,(ha: 2'/ 3'/ 2'/ 3')(ha: 2'/ 7-) (phu: 2')(le:
+rs001620,175,50:7,rhythm,check,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 3 beats; tab 1.5, swaralipi 0.5",,(daa: 6/ 6/. 7//)(na: 6/ 6/
+rs001657,6,11:90,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi D,,1'/. 2'//)(lo: 3'/) (je: 3'///) (dol: 4'/// 3'// 3'-)
+rs001657,6,11:96,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi C,,2'//)(lo: 3'/) (je: 3'///) (dol: 4'/// 3'// 3'-)
+rs001657,13,14:49,rhythm,check,"tab 1 beats, swaralipi 2 beats at this tempo; no piano roll to decide",,'/ 7/) (khol: 6) (dwaar: 6/ 5/) (khol: 4)
+rs001657,14,15:49,rhythm,check,"tab 3.5 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,) (re: 6/ 5/) (gri: 4//)(ho: 5//)(baa: 5/ 2' 1' 4)(si: 1' 1'
+rs001657,20,16:8,rhythm,check,"tab 2 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,(khol: 4'/ 3'/ 3'/ 2'/)
+rs001657,49,25:48,rhythm,check,"tab 1 beats, swaralipi 2 beats at this tempo; no piano roll to decide",,4/ 5/) (khol: 6) (dwaar: 6/ 5/) (khol: 4)
+rs001657,50,26:48,rhythm,check,"tab 3.5 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,/)(Re: 6/ 5/) (gri: 4//)(ho: 5//)(baa: 5/ 2' 1' 4)(si: 1' 1'
+rs001657,56,27:8,rhythm,check,"tab 2 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,(khol: 4'/ 3'/ 3'/ 2'/)
+rs001657,84,36:21,rhythm,check,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; no piano roll to decide",,(Paa: 6'/ 6')(khay: 6'///) (baa: 7'/// 6'
+rs001657,84,36:21,rhythm,check,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; no piano roll to decide",,(Paa: 6'/ 6')(khay: 6'///) (baa: 7'/// 6'
+rs001657,103,42:44,rhythm,check,"tab 2 beats, swaralipi 0.5 beats at this tempo; no piano roll to decide",,: 5/) (nga: 6/ 5/ 4// 5// 5/ 2') (haa: 1' 4) (si: 1') (raa:
+rs001657,105,42:65,rhythm,check,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; no piano roll to decide",,5// 5/ 2') (haa: 1' 4) (si: 1') (raa: 1'/. 2'// 3'/)(shi: 2
+rs001657,105,42:85,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi F,,4) (si: 1') (raa: 1'/. 2'// 3'/)(shi: 2'// 1'//)
+rs001657,105,42:90,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi G,,si: 1') (raa: 1'/. 2'// 3'/)(shi: 2'// 1'//)
+rs001657,106,43:18,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi A,,(raa: 1'/.)(shi: 2'//) (a: 3'/)(shoke:
+rs001657,106,43:18,rhythm,check,"tab 0.875 beats, swaralipi 2 beats at this tempo; no piano roll to decide",,(raa: 1'/.)(shi: 2'//) (a: 3'/)(shoke:
+rs001657,106,43:28,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi G,,(raa: 1'/.)(shi: 2'//) (a: 3'/)(shoke: 3'///) (p
+rs001657,109,44:50,rhythm,check,"tab 1 beats, swaralipi 3 beats at this tempo; no piano roll to decide",,sha: 4'/) (pro: 3'/)(bhatoaa: 3'/)(ka: 2'/)(sheRaanga: 2'/)
+rs001657,110,45:21,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi A,,(raa: 1'//)(shiraa: 2'/.)(shi: 2'/) (a: 2
+rs001657,110,45:53,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi C,,hiraa: 2'/.)(shi: 2'/) (a: 2'///)(sho: 3'///)(ke: 2'//) (pa:
+rs001657,111,45:100,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi F,,e: 2'//) (pa: 1')(laa: 1'/)(sheRaanga: 7/)
+rs001657,112,46:6,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): swaralipi E,,(ne: 6)(shame: 6/)(ghe: 5/
+rs001730,11,21:62,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,)(chhe: 6) (she: 5// 6// 5// 6//)(she: 4)
+rs001730,12,22:7,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll C,,(Aaj: 6/ 7/) (bhaa: 1'/)(bi
+rs001740,33,17:105,rhythm,check,"tab 0.75 beats, swaralipi 3 beats at this tempo; no piano roll to decide",,) (bo: 1' 7. 7/// 1'/// 7// 6//) (hni: 7// 1'// 2'//)
+rs001740,41,19:119,rhythm,check,"tab 0.25 beats, swaralipi 3 beats at this tempo; no piano roll to decide",,// 1'// 2'// 3'// 4'// 5'// 6'//) (ni: 7'//)
+rs001848,1,8:16,syllable different,check,"tab 'ko', swaralipi 'traa'",,(San: 4'-)(ko: 4')(cher: 3'- 3') (bi
+rs001848,2,8:26,syllable different,check,"tab 'cher', swaralipi 'se'",,(San: 4'-)(ko: 4')(cher: 3'- 3') (bi: 2'-)(hwa
+rs001848,2,8:30,syllable missing,check,"tab '', swaralipi 'ro'",,(San: 4'-)(ko: 4')(cher: 3'- 3') (bi: 2'-)(hwaba:
+rs001848,19,11:85,syllable extra,check,"tab 'haa', swaralipi ''",,1'--) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---)
+rs001848,19,11:89,syllable missing,check,"tab '', swaralipi 'haa'",,-) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---)
+rs001848,35,14:88,syllable extra,check,"tab 'haa', swaralipi ''",,1'--) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---)
+rs001848,35,14:92,syllable missing,check,"tab '', swaralipi 'haa'",,-) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---)
+rs001848,67,21:112,syllable extra,check,"tab 'haa', swaralipi ''",,1'--) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---)
+rs001848,67,21:116,syllable missing,check,"tab '', swaralipi 'haa'",,-) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---)
+rs001848,99,28:114,syllable extra,check,"tab 'haa', swaralipi ''",,1'--) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---)
+rs001848,99,28:118,syllable missing,check,"tab '', swaralipi 'haa'",,-) (aa: 1'-- 4. 5 6 7 1' 2'/)(haa: 2'/ 1'.---)
+rs001862,133,47:24,rhythm,check,"tab 3 beats, swaralipi 0.5 beats at this tempo; the roll plays it 5 beats; tab 3, swaralipi 0.5",,(na: 1') (bhu: 7/)(lo: 6// 5// 6/. 1'//- 5/)
+rs002077,25,14:32,rhythm,check,"tab 3 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,(aachhi: 6// 5/.) (to: 4)(mar: 3/ 4// 3// 2 2/ 5/) (
+rs002077,27,14:66,rhythm,check,"tab 5.5 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,mar: 3/ 4// 3// 2 2/ 5/) (to: 5/)(mar: 4/ 5// 4// 3.---)
+rs002077,79,26:143,rhythm,check,"tab 5.5 beats, swaralipi 1 beats at this tempo; no piano roll to decide",,5/.-) (to: 5 4// 3/. 2 2/ 5/ 5/)(mar: 4/ 5// 4// 3.---)
+rs002097,41,40:65,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,/ 3/) (kaa: 2/)(jer: 4) (maa: 5/)(jhe: 6/ 7// 6//) (maa: 4/)
+rs002097,41,40:68,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,/) (kaa: 2/)(jer: 4) (maa: 5/)(jhe: 6/ 7// 6//) (maa: 4/)(jh
+rs002097,41,40:72,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,kaa: 2/)(jer: 4) (maa: 5/)(jhe: 6/ 7// 6//) (maa: 4/)(jhe: 5
+rs002097,42,41:49,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,6/)(nna: 6/)(haa: 6/)(raa: 6/ 5/) (do: 6/)(la: 6// 7// 1'/)
+rs002097,42,41:61,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,(haa: 6/)(raa: 6/ 5/) (do: 6/)(la: 6// 7// 1'/)
+rs002097,42,41:65,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F#,,: 6/)(raa: 6/ 5/) (do: 6/)(la: 6// 7// 1'/)
+rs002097,42,42:6,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,(tu: 7/)(mi: 2'// 1'// 7/)
+rs002097,43,42:39,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,(tu: 7/)(mi: 2'// 1'// 7/) (thaam: 6/ 7/)(te: 6/) (di: 5/)(
+rs002097,43,42:47,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,)(mi: 2'// 1'// 7/) (thaam: 6/ 7/)(te: 6/) (di: 5/)(le: 4/ 4
+rs002097,45,45:49,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,6/)(nna: 6/)(haa: 6/)(raa: 6/ 5/) (do: 6/)(la: 6// 7// 1'/)
+rs002097,45,45:61,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,(haa: 6/)(raa: 6/ 5/) (do: 6/)(la: 6// 7// 1'/)
+rs002097,45,45:65,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F,,: 6/)(raa: 6/ 5/) (do: 6/)(la: 6// 7// 1'/)
+rs002097,45,46:6,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,(tu: 7/)(mi: 2'// 1'// 7/)
+rs002097,46,47:14,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll E,,(di: 5/)(le: 4/ 4/) (na: 4/) (je:
+rs002097,46,47:35,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll D,,(di: 5/)(le: 4/ 4/) (na: 4/) (je: 5/)
+rs002122,2,8:98,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,aa: 7// 1'// 2'// 3'//)(re: 2'// 3'/// 2'/// 1'// 7//)
+rs002122,2,8:104,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,/ 1'// 2'// 3'//)(re: 2'// 3'/// 2'/// 1'// 7//)
+rs002122,7,13:104,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,aa: 7// 1'// 2'// 3'//)(re: 2'// 3'/// 2'/// 1'// 7//) (mon:
+rs002122,7,13:110,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,/ 1'// 2'// 3'//)(re: 2'// 3'/// 2'/// 1'// 7//) (mon: 6// 7
+rs002122,8,14:6,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F#,,(Je: 1'/) (po: 1') (di: 2'
+rs002122,8,14:25,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,(Je: 1'/) (po: 1') (di: 2'/)(ye: 3'/ 4'/) (ch
+rs002122,14,21:11,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,(mon: 6// 7/// 6/) (mon: 5/ 4/)
+rs002122,14,21:16,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F#,,(mon: 6// 7/// 6/) (mon: 5/ 4/) (re:
+rs002122,17,22:104,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,aa: 7// 1'// 2'// 3'//)(re: 2'// 3'/// 2'/// 1'// 7//) (mon:
+rs002122,17,22:110,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,/ 1'// 2'// 3'//)(re: 2'// 3'/// 2'/// 1'// 7//) (mon: 6// 7
+rs002122,30,34:32,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll G,,(paa: 2')(re: 1'/ 7/) (mo: 6// 7/// 6/) (n: 5/ 4/) (
+rs002122,30,34:37,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll F#,,(paa: 2')(re: 1'/ 7/) (mo: 6// 7/// 6/) (n: 5/ 4/) (re: 3
+rs002122,33,36:16,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,(se: 3'/) (po: 1') (e: 2'/)(khon: 3'
+rs002122,33,36:24,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(se: 3'/) (po: 1') (e: 2'/)(khon: 3') (bhu:
+rs002122,33,36:35,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,(se: 3'/) (po: 1') (e: 2'/)(khon: 3') (bhu: 2'/)(le: 3'
+rs002122,33,36:45,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,3'/) (po: 1') (e: 2'/)(khon: 3') (bhu: 2'/)(le: 3'/ 4'// 5'/
+rs002122,33,36:54,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll B,,1') (e: 2'/)(khon: 3') (bhu: 2'/)(le: 3'/ 4'// 5'//) (ge: 5
+rs002122,33,36:58,note weak,check,one source only (the roll reader and the MIDI arrangement have their own errors): roll A,,(e: 2'/)(khon: 3') (bhu: 2'/)(le: 3'/ 4'// 5'//) (ge: 5'/)(
+rs000101,1,8:6,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Aa: 1'/)(kash: 1')(bho: 1
+rs000101,1,8:17,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Aa: 1'/)(kash: 1')(bho: 1'.)(ra: 1'.
+rs000101,1,8:26,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Aa: 1'/)(kash: 1')(bho: 1'.)(ra: 1'.-)
+rs000101,2,8:35,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Aa: 1'/)(kash: 1')(bho: 1'.)(ra: 1'.-)
+rs000101,2,9:7,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(sur: 1')(jo: 1'/) (taa: 1'
+rs000101,3,9:15,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra
+rs000101,3,9:26,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/)
+rs000101,3,9:30,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bis
+rs000101,3,9:38,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(sur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)
+rs000101,3,9:42,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,ur: 1')(jo: 1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)(wo:
+rs000101,4,9:54,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,1'/) (taa: 1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)(wo: 4')(bha: 4'
+rs000101,4,9:64,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,1'/ 7/)(ra: 2'/ 2'/) (bish: 4'.-)(wo: 4')(bha: 4'/)(ra: 4'
+rs000101,5,9:73,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,ra: 2'/ 2'/) (bish: 4'.-)(wo: 4')(bha: 4'/)(ra: 4' 3'/) (pra
+rs000101,5,9:82,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,'/) (bish: 4'.-)(wo: 4')(bha: 4'/)(ra: 4' 3'/) (praan: 5'/ 4
+rs000101,5,9:85,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(bish: 4'.-)(wo: 4')(bha: 4'/)(ra: 4' 3'/) (praan: 5'/ 4'/)
+rs000101,5,9:98,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(wo: 4')(bha: 4'/)(ra: 4' 3'/) (praan: 5'/ 4'/)
+rs000101,6,9:102,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,4')(bha: 4'/)(ra: 4' 3'/) (praan: 5'/ 4'/)
+rs000101,6,10:7,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Taa: 4'-)(ha: 4'/)(ri: 4'.
+rs000101,6,10:16,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh:
+rs000101,7,10:25,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(
+rs000101,7,10:38,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne:
+rs000101,7,10:41,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,Taa: 4'-)(ha: 4'/)(ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'
+rs000101,8,10:52,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,a: 4'/)(ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a:
+rs000101,8,10:60,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,ri: 4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi:
+rs000101,8,10:64,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,4'.) (maajh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/
+rs000101,9,10:73,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,jh: 4' 4'.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/ 3'/)
+rs000101,9,10:82,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,.)(khaa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/ 3'/)
+rs000101,9,10:86,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,haa: 3')(ne: 5'/ 4'.) (a: 4'/)(mi: 4'/ 3'/)
+rs000101,9,11:7,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(pey: 2'/ 5'/ 4'/)(chi: 5'.
+rs000101,10,11:11,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(pey: 2'/ 5'/ 4'/)(chi: 5'.) (a
+rs000101,10,11:15,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(pey: 2'/ 5'/ 4'/)(chi: 5'.) (a: 5'
+rs000101,10,11:25,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(pey: 2'/ 5'/ 4'/)(chi: 5'.) (a: 5'/)(mi: 5')
+rs000101,10,11:34,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(pey: 2'/ 5'/ 4'/)(chi: 5'.) (a: 5'/)(mi: 5') (paye: 5
+rs000101,11,11:43,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,y: 2'/ 5'/ 4'/)(chi: 5'.) (a: 5'/)(mi: 5') (paye: 5'.)(chhi:
+rs000101,11,11:54,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,4'/)(chi: 5'.) (a: 5'/)(mi: 5') (paye: 5'.)(chhi: 5'/) (mor:
+rs000101,11,11:65,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,'.) (a: 5'/)(mi: 5') (paye: 5'.)(chhi: 5'/) (mor: 5') (sthaa
+rs000101,12,11:76,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,)(mi: 5') (paye: 5'.)(chhi: 5'/) (mor: 5') (sthaan: 6' 7'/)
+rs000101,12,11:89,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,ye: 5'.)(chhi: 5'/) (mor: 5') (sthaan: 6' 7'/)
+rs000101,12,11:92,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,5'.)(chhi: 5'/) (mor: 5') (sthaan: 6' 7'/)
+rs000101,12,12:8,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Bish: 6')(ma: 1'/)(ye: 2'.)
+rs000101,13,12:16,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Bish: 6')(ma: 1'/)(ye: 2'.) (taai:
+rs000101,13,12:25,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Bish: 6')(ma: 1'/)(ye: 2'.) (taai: 3'.) (jaa
+rs000101,13,12:37,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Bish: 6')(ma: 1'/)(ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'
+rs000101,14,12:48,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,')(ma: 1'/)(ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge:
+rs000101,14,12:52,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,a: 1'/)(ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'.
+rs000101,14,12:56,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,'/)(ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/
+rs000101,14,12:60,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,ye: 2'.) (taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/ 4')
+rs000101,15,12:69,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(taai: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/ 4')
+rs000101,15,12:73,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,i: 3'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/ 4')
+rs000101,15,12:77,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,'.) (jaa: 4'/ 5'/ 6'/ 5'/)(ge: 4'. 3'/ 4')
+rs000101,16,13:7,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(jaa: 2'/)(ge: 2'/ 5'/) (aa
+rs000101,16,13:16,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(jaa: 2'/)(ge: 2'/ 5'/) (aa: 4'/)(ma
+rs000101,16,13:40,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(jaa: 2'/)(ge: 2'/ 5'/) (aa: 4'/)(mar: 5') (gaan: 4'/ 5'/ 6'
+rs000101,17,13:51,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,ge: 2'/ 5'/) (aa: 4'/)(mar: 5') (gaan: 4'/ 5'/ 6'/ 7'.)
+rs000101,18,14:17,octave (stanza moved to fit the kalimba),converter,+1 octave(s) from the rest of the song,,(Aa: 6'/)(kash: 5')(bho: 1'.)(ra: 1'-
+rs000011,17,14:18,note weak,likely variant,swaralipi plays the tab's note; roll E,,(Bo: 7/ 1'/)(ne: 6)(ro: 6) (chhaa: 7)(
+rs000011,18,14:36,note weak,likely variant,swaralipi plays the tab's note; roll D,,(Bo: 7/ 1'/)(ne: 6)(ro: 6) (chhaa: 7)(ya: 1'-)
+rs000011,19,15:13,note weak,likely variant,swaralipi plays the tab's note; roll C,,(mo: 7)(ne: 6)(ro: 6) (saa: 7)(th
+rs000011,20,15:29,note weak,likely variant,swaralipi plays the tab's note; roll D,,(mo: 7)(ne: 6)(ro: 6) (saa: 7)(thi: 1'-)
+rs000011,25,17:6,note weak,likely variant,swaralipi plays the tab's note; roll A,,(Pa: 1')(ther: 3' 3') (dha
+rs000011,25,17:16,note weak,likely variant,swaralipi plays the tab's note; roll G,,(Pa: 1')(ther: 3' 3') (dhaa: 4')(re:
+rs000011,27,17:68,note weak,likely variant,swaralipi plays the tab's note; roll A,,4')(re: 5'. 4'/) (aa: 3')(so: 4')(no: 3') (paa: 2')(ti: 1'-
+rs000011,28,17:78,note weak,likely variant,swaralipi plays the tab's note; roll B,,'. 4'/) (aa: 3')(so: 4')(no: 3') (paa: 2')(ti: 1'-)
+rs000011,61,29:6,rhythm,likely variant,"tab 4 beats, swaralipi 1 beats at this tempo; the roll plays it 0.96 beats long, as the tab (1)",,(pa: 7)(ro: 1')(se: 3') (m
+rs000016,28,19:39,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,(daa: 2' 1'/)(ne: 2'-- 5/ 6/ 7/) (aa: 7/ 7)(gu: 7/)(ner: 7)
+rs000016,30,19:67,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,/ 7/) (aa: 7/ 7)(gu: 7/)(ner: 7) (daa: 7/ 7) (gu: 7/) (ne: 7
+rs000016,60,28:6,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,(aa: 7/ 7)(gu: 7/)(ner: 7)
+rs000016,62,28:34,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,(aa: 7/ 7)(gu: 7/)(ner: 7) (gaa: 7/ 7) (gu: 7/) (ne: 7
+rs000016,119,47:80,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,ne: 4'-- 5/ 6/ 7/ 7/ 7 7/ 7 7/ 7) (aa: 7/ 7)(gu: 7/ 6/ 1'/ 1
+rs000016,128,49:38,note weak,likely variant,roll plays the tab's note; swaralipi F#,,(aa: 7/)(lok: 7/) (si: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/
+rs000016,128,49:48,note weak,likely variant,roll plays the tab's note; swaralipi E,,(lok: 7/) (si: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk:
+rs000016,130,49:60,note weak,likely variant,roll plays the tab's note; swaralipi F#,,i: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (ga
+rs000016,131,49:69,rhythm,likely variant,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 1.9 beats long, as the tab (2)",,: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (gaa: 5- 5/
+rs000016,134,50:6,note weak,likely variant,roll plays the tab's note; swaralipi E,,(Ni: 2'/)(shi: 2')(din: 2'
+rs000016,134,50:6,rhythm,likely variant,"tab 9.5 beats, swaralipi 5.5 beats at this tempo; the roll plays it 0.49 beats long, as the tab (0.5)",,(Ni: 2'/)(shi: 2')(din: 2'
+rs000016,137,51:20,note weak,likely variant,roll plays the tab's note; swaralipi F#,,(si: 2'/)(kha: 2'/ 1'/ 2') (jwo: 1'/ 2'-
+rs000016,138,51:34,note weak,likely variant,roll plays the tab's note; swaralipi E,,(si: 2'/)(kha: 2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/
+rs000016,139,51:38,note weak,likely variant,roll plays the tab's note; swaralipi F#,,(si: 2'/)(kha: 2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/ 7/)
+rs000016,141,51:55,note weak,likely variant,roll plays the tab's note; swaralipi F#,,2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/ 7/) (gaa: 7/ 7 7/) (n
+rs000016,146,51:94,note weak,likely variant,roll plays the tab's note; swaralipi E,,7/) (gaa: 7/ 7 7/) (ne: 7 7/ 7 7/ 7 7/ 6/ 1'/ 1'--)
+rs000016,146,51:97,note weak,likely variant,roll plays the tab's note; swaralipi F#,,(gaa: 7/ 7 7/) (ne: 7 7/ 7 7/ 7 7/ 6/ 1'/ 1'--)
+rs000037,30,16:58,rhythm,likely variant,"tab 3 beats, swaralipi 1.5 beats at this tempo; the roll plays it 3 beats long, as the tab (3)",,5/.)(ner: 5) (khe: 5)(te: 5/ 6/) (rou: 7/ 2' 2'/ 2')(dra: 2'
+rs000037,46,17:61,note weak,likely variant,swaralipi plays the tab's note; roll F#,,2' 2'// 3'/. 2' 5 6 7/ 2'/ 2' 2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/
+rs000037,88,26:37,note weak,likely variant,roll plays the tab's note; swaralipi A,,(O: 3'/) (re: 2'//) (jaa: 3'//)(bo: 4'/) (na: 4')
+rs000037,89,27:7,note weak,likely variant,roll plays the tab's note; swaralipi B,,(aaj: 3') (gha: 2')(re: 2'/
+rs000037,91,28:7,rhythm,likely variant,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.54 beats long, as the tab (0.5)",,(jaa: 7/)(bo: 6/ 5/ 7/ 7) (
+rs000037,91,28:15,rhythm,likely variant,"tab 2.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 2.5 beats long, as the tab (2.5)",,(jaa: 7/)(bo: 6/ 5/ 7/ 7) (na: 7) (
+rs000037,94,28:61,note weak,likely variant,swaralipi plays the tab's note; roll B,,/ 7) (na: 7) (aaj: 6/) (gha: 7/ 6)(re: 5---)
+rs000037,97,29:23,note weak,likely variant,swaralipi plays the tab's note; roll A,,(O: 5/)(re: 5/) (jaa: 3/ 5)(bo: 5/)
+rs000037,133,40:33,rhythm,likely variant,"tab 3.5 beats, swaralipi 1 beats at this tempo; the roll plays it 3.4 beats long, as the tab (3.5)",,(baa: 2')(ta: 3')(se: 2') (aaj: 2'. 1'/ 7 6/) (chhut:
+rs000037,134,40:55,rhythm,likely variant,"tab 6 beats, swaralipi 1.5 beats at this tempo; the roll plays it 6 beats long, as the tab (6)",,')(se: 2') (aaj: 2'. 1'/ 7 6/) (chhut: 7/ 5/ 6/ 7-- 2'.)(chh
+rs000037,154,41:72,rhythm,likely variant,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 0.88 beats long, as the tab (1)",,'/ 2'//) (kaa: 3'// 4'/)(je: 4') (baa: 3')(ji: 2')(ye: 2'/)
+rs000037,155,42:22,rhythm,likely variant,"tab 1 beats, swaralipi 2.5 beats at this tempo; the roll plays it 0.86 beats long, as the tab (1)",,(bnaa: 3'/)(shikaat: 2')(be: 1') (sa: 7/)(
+rs000037,156,42:48,rhythm,likely variant,"tab 4 beats, swaralipi 2 beats at this tempo; the roll plays it 1 beats long, as the tab (1)",,'/)(shikaat: 2')(be: 1') (sa: 7/)(kol: 6/ 5/) (be: 7/ 7 7 6/
+rs000037,175,46:59,rhythm,likely variant,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 3 beats long, as the tab (3)",,5/.)(bo: 5) (na: 5) (aaj: 5/ 6/) (gha: 7/ 2' 2'/ 2')(re: 2'/
+rs000037,177,47:17,note weak,likely variant,roll plays the tab's note; swaralipi A,,(jaa: 3'//)(bo: 4'/) (na: 4')
+rs000037,178,48:7,note weak,likely variant,roll plays the tab's note; swaralipi B,,(aaj: 3') (gha: 2')(re: 2'/
+rs000037,180,49:7,rhythm,likely variant,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.5 beats long, as the tab (0.5)",,(jaa: 7/)(bo: 6/ 5/ 7/ 7) (
+rs000037,180,49:15,rhythm,likely variant,"tab 2.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 2.5 beats long, as the tab (2.5)",,(jaa: 7/)(bo: 6/ 5/ 7/ 7) (na: 7) (
+rs000101,18,14:17,rhythm,likely variant,"tab 4.5 beats, swaralipi 1 beats at this tempo; the roll plays it 0.98 beats long, as the tab (1)",,(Aa: 6'/)(kash: 5')(bho: 1'.)(ra: 1'-
+rs000101,34,22:6,note weak,likely variant,midi roll plays the tab's note; swaralipi C,,(Aa: 6/)(kash: 5)(bho: 1.)
+rs000101,34,22:16,note weak,likely variant,midi roll plays the tab's note; swaralipi F,,(Aa: 6/)(kash: 5)(bho: 1.)(ra: 1.-)
+rs000101,34,22:24,rhythm,likely variant,"tab 4 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,(Aa: 6/)(kash: 5)(bho: 1.)(ra: 1.-)
+rs000101,44,27:54,rhythm,likely variant,"tab 1 beats, swaralipi 3.5 beats at this tempo; the roll plays it 0.41 beats long, as the tab (0.5)",,he: 1'/)(che: 6/) (mon: 5/ 4/ 6/) (me: 5/)(te: 4/)
+rs000115,15,11:66,note weak,likely variant,roll plays the tab's note; swaralipi F#,,a: 7/ 7/ 2'/) (ka: 1'--) (dhui: 3)(ye: 4/) (daao: 6. 7. 1'.
+rs000115,16,11:77,note weak,likely variant,swaralipi plays the tab's note; roll E,,/) (ka: 1'--) (dhui: 3)(ye: 4/) (daao: 6. 7. 1'. 5'/ 5' 4'/
+rs000133,155,33:10,rhythm,likely variant,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 1 beats long, as the tab (1)",,(gaaner: 7) (be: 1'--) (dan: 7
+rs000133,163,34:26,note weak,likely variant,roll plays the tab's note; swaralipi C,,(Ek: 1'//)(taa: 7/) (ra: 6//)(tir: 5/.) (ek: 4
+rs000133,163,34:36,note weak,likely variant,roll plays the tab's note; swaralipi E,,(Ek: 1'//)(taa: 7/) (ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-
+rs000133,164,34:55,rhythm,likely variant,"tab 6 beats, swaralipi 2 beats at this tempo; the roll plays it 5.9 beats long, as the tab (6)",,7/) (ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (taa: 7)(re:
+rs000133,166,34:61,note weak,likely variant,roll plays the tab's note; swaralipi F,,ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (taa: 7)(re: 2'//
+rs000133,167,34:70,note weak,likely variant,roll plays the tab's note; swaralipi E,,tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (taa: 7)(re: 2'// 1'//-)
+rs000133,169,35:17,note weak,likely variant,roll plays the tab's note; swaralipi C,,(gaa: 7//)(ner: 6//) (be: 5/.)(dan: 6
+rs000133,169,35:27,note weak,likely variant,roll plays the tab's note; swaralipi B,,(gaa: 7//)(ner: 6//) (be: 5/.)(dan: 6//) (boi:
+rs000133,169,35:37,note weak,likely variant,roll plays the tab's note; swaralipi C,,(gaa: 7//)(ner: 6//) (be: 5/.)(dan: 6//) (boi: 7)(te: 1')
+rs000161,29,16:116,rhythm,likely variant,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 1 beats long, as the tab (1)",,ai: 5/ 6// 5//) (ni: 4/) (aa: 3/)(mar: 2//)
+rs000161,61,25:112,rhythm,likely variant,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 1 beats long, as the tab (1)",,(jaa: 5/ 6// 5//)(i: 4/) (aa: 3/)(mar: 2//)
+rs000215,53,18:75,note weak,likely variant,roll plays the tab's note; swaralipi A,,'// 5'// 4'// 5'/. 4'// 3'//- 4'// 5'/ 4' 3'-- 1') (tha: 1'/
+rs000215,54,18:78,note weak,likely variant,roll plays the tab's note; swaralipi C,,5'// 4'// 5'/. 4'// 3'//- 4'// 5'/ 4' 3'-- 1') (tha: 1'/) (
+rs000277,23,13:104,rhythm,likely variant,"tab 3.5 beats, swaralipi 2 beats at this tempo; the roll plays it 3.5 beats long, as the tab (3.5)",,5///) (po: 4/)(thik: 3/ 1/) (e: 3)(se: 4/ 5--)
+rs000277,57,20:104,rhythm,likely variant,"tab 3.5 beats, swaralipi 2 beats at this tempo; the roll plays it 3.6 beats long, as the tab (3.5)",,5///) (po: 4/)(thik: 3/ 1/) (e: 3)(se: 4/ 5--)
+rs000277,191,53:51,note weak,likely variant,roll plays the tab's note; swaralipi C,,1'//)(chhaa: 7/ 6/ 5/.)(ra: 6///) (ei: 5/// 4/) (paa: 3/)(go
+rs000277,193,54:5,note weak,likely variant,roll plays the tab's note; swaralipi B,,(e: 4/ 5--)(mon: 4/. 6//)
+rs000277,194,54:8,note weak,likely variant,roll plays the tab's note; swaralipi C,,(e: 4/ 5--)(mon: 4/. 6//) (k
+rs000277,196,54:22,note weak,likely variant,roll plays the tab's note; swaralipi C,,(e: 4/ 5--)(mon: 4/. 6//) (ko: 6/)(re: 6/)
+rs000277,199,54:72,note weak,likely variant,roll plays the tab's note; swaralipi A#,,/)(re: 6/) (ke: 6 6/ 6) (go: 6/) (daa: 5//)(ke: 6/)
+rs000306,69,29:101,note weak,likely variant,roll plays the tab's note; swaralipi E,,3'/ 4'/ 6'/ 5' 4' 3'-- 7 1' 7 1'-- 1' 2')
+rs000306,69,30:6,note weak,likely variant,roll plays the tab's note; swaralipi F#,,(Je: 1' 2'-- 7/) (kha: 1'/
+rs000306,69,30:6,rhythm,likely variant,"tab 4.5 beats, swaralipi 1 beats at this tempo; the roll plays it 4.4 beats long, as the tab (4.5)",,(Je: 1' 2'-- 7/) (kha: 1'/
+rs000306,70,30:9,note weak,likely variant,roll plays the tab's note; swaralipi G,,(Je: 1' 2'-- 7/) (kha: 1'/ 2'
+rs000306,71,30:14,note weak,likely variant,roll plays the tab's note; swaralipi F#,,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne
+rs000306,71,30:24,note weak,likely variant,roll plays the tab's note; swaralipi G,,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne: 3'/) (da
+rs000306,71,30:28,note weak,likely variant,roll plays the tab's note; swaralipi F#,,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne: 3'/) (daakpa
+rs000306,71,30:37,note weak,likely variant,roll plays the tab's note; swaralipi G,,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne: 3'/) (daakpa: 4'/)(re
+rs000306,71,30:37,rhythm,likely variant,"tab 1 beats, swaralipi 3 beats at this tempo; the roll plays it 0.7 beats long, as the tab (0.5)",,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne: 3'/) (daakpa: 4'/)(re
+rs000306,71,30:63,rhythm,likely variant,"tab 0.5 beats, swaralipi 2 beats at this tempo; the roll plays it 0.63 beats long, as the tab (0.5)",,1'/ 2'/)(ne: 3'/) (daakpa: 4'/)(rejib: 5'/)(an: 5'-)
+rs000306,74,31:69,rhythm,likely variant,"tab 1 beats, swaralipi 4 beats at this tempo; the roll plays it 0.5 beats long, as the tab (0.5)",,aam: 4'/ 6'/)(ra: 5') (pros: 4'/)(Tut: 3'/)
+rs000306,74,32:28,rhythm,likely variant,"tab 1 beats, swaralipi 6 beats at this tempo; the roll plays it 0.63 beats long, as the tab (0.5)",,(Aam: 2'/)(ra: 1'/) (chan: 7/)(Chalaamra: 7/) (a
+rs000451,9,10:70,rhythm,likely variant,"tab 1 beats, swaralipi 3 beats at this tempo; the roll plays it 1.1 beats long, as the tab (1)",,(na: 5'- 6'/ 5'/) (ja: 4')(no: 3')(ni: 2'/ 3'/)
+rs000561,81,37:33,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.4 beats long, as the tab (1.5)",,(Ja: 3/)(yo: 1'/) (ja: 1'/)(yo: 1'/ 7/. 1'//) (ho: 7/
+rs000588,38,24:39,rhythm,likely variant,"tab 2.5 beats, swaralipi 1 beats at this tempo; the roll plays it 2.6 beats long, as the tab (2.5)",,(phe: 7/)(lo: 7/)(na: 7) (aa: 7/)(ma: 7 7/. 5// 5/)(re: 7/
+rs000613,18,11:72,rhythm,likely variant,"tab 3.5 beats, swaralipi 2 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,dha: 6/. 5//) (dhaa: 6/. 2'/ 1'//)(lo: 2'//- 1'//)
+rs000772,132,38:84,rhythm,likely variant,"tab 2.5 beats, swaralipi 1 beats at this tempo; the roll plays it 2.5 beats long, as the tab (2.5)",,//) (jho: 5// 6// 5 4/ 3 1/ 3 4/)(rar: 5 5/. 6// 5/)
+rs000810,60,18:62,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,: 3'/)(to: 4'.) (pri: 3')(ti: 3'/)(ku: 3'/ 2'/ 1'/)(su: 2'/
+rs000920,62,20:134,note weak,likely variant,swaralipi plays the tab's note; roll C,,6'/ 5'/) (ko: 4'- 4'/ 3'/ 5'/ 4'/)(re: 3'---)
+rs000920,63,21:20,note weak,likely variant,swaralipi plays the tab's note; roll A,,(Paa: 3'-)(ye: 3'. 4'/) (paa: 5'-)(ye: 5
+rs000980,71,32:15,note weak,likely variant,roll plays the tab's note; swaralipi F,,(U: 5'//)(da: 6'/.)(yo: 6')(di: 5'/
+rs000980,72,32:33,note weak,likely variant,roll plays the tab's note; swaralipi E,,(U: 5'//)(da: 6'/.)(yo: 6')(di: 5'//)(gan: 6'//-)(te:
+rs000980,78,34:7,note weak,likely variant,roll plays the tab's note; swaralipi C,,(Chi: 5'/)(ro: 5'/)(nu: 5'/
+rs000980,81,34:90,note weak,likely variant,roll plays the tab's note; swaralipi D,,5'/) (di: 5'/)(lo: 5'/) (daak: 5'//-- 4' 3'/.)
+rs001068,116,29:24,note weak,likely variant,roll plays the tab's note; swaralipi C,,(taan: 5/)(pu: 6/)(ra: 5/ 5/ 4/)(tar: 3/) (t
+rs001068,117,29:30,note weak,likely variant,roll plays the tab's note; swaralipi C#,,(taan: 5/)(pu: 6/)(ra: 5/ 5/ 4/)(tar: 3/) (taar: 2
+rs001068,176,44:16,note weak,likely variant,roll plays the tab's note; swaralipi C,,(baaj: 6/)(be: 5/) (bnaa: 4/)(shi: 3
+rs001068,177,44:27,note weak,likely variant,roll plays the tab's note; swaralipi C#,,(baaj: 6/)(be: 5/) (bnaa: 4/)(shi: 3) (ei: 2/ 3
+rs001068,232,59:6,note weak,likely variant,roll plays the tab's note; swaralipi E,,(ke: 7 7/) (bo: 6/)(le: 6/
+rs001068,233,59:17,note weak,likely variant,roll plays the tab's note; swaralipi D,,(ke: 7 7/) (bo: 6/)(le: 6/) (go: 7/)
+rs001068,233,59:34,note weak,likely variant,roll plays the tab's note; swaralipi E,,(ke: 7 7/) (bo: 6/)(le: 6/) (go: 7/) (sei: 5/)
+rs001068,234,59:44,note weak,likely variant,roll plays the tab's note; swaralipi D,,7 7/) (bo: 6/)(le: 6/) (go: 7/) (sei: 5/)
+rs001068,234,60:7,note weak,likely variant,roll plays the tab's note; swaralipi C,,(pro: 6/)(bha: 5/)(te: 5/)
+rs001068,234,60:16,note weak,likely variant,roll plays the tab's note; swaralipi B,,(pro: 6/)(bha: 5/)(te: 5/) (nei: 4/
+rs001068,235,60:34,note weak,likely variant,roll plays the tab's note; swaralipi C,,(pro: 6/)(bha: 5/)(te: 5/) (nei: 4/ 3/) (aa: 2/)(mi: 3
+rs001068,236,60:67,rhythm,likely variant,"tab 0.5 beats, swaralipi 2 beats at this tempo; the roll plays it 0.5 beats long, as the tab (0.5)",,(nei: 4/ 3/) (aa: 2/)(mi: 3/) (medaak: 2/)(bemore: 1.)
+rs001194,25,15:20,rhythm,likely variant,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 1.1 beats long, as the tab (1)",,(Cha: 5'. 3'/)(ro: 5')(ne: 1''-) (dho: 5
+rs001194,114,40:41,rhythm,likely variant,"tab 1 beats, swaralipi 3 beats at this tempo; the roll plays it 0.79 beats long, as the tab (1)",,Ke: 4')(mo: 6')(ne: 5') (pro: 6'-)(ka: 1'')(si: 1''. 7'/ 7'/
+rs001194,126,43:31,note weak,likely variant,roll plays the tab's note; swaralipi A#,,(aa: 4'. 5'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li: 3'
+rs001194,127,43:50,note weak,likely variant,roll plays the tab's note; swaralipi A,,'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li: 3'.- 2'/)(ya: 1'--)
+rs001194,127,43:55,note weak,likely variant,roll plays the tab's note; swaralipi A#,,o: 5')(na: 1'. 4'/) (bhu: 4')(li: 3'.- 2'/)(ya: 1'--)
+rs001194,129,44:6,note weak,likely variant,roll plays the tab's note; swaralipi A,,(To: 1''-)(ma: 1'')(ro: 7'
+rs001194,130,44:25,note weak,likely variant,roll plays the tab's note; swaralipi A#,,(To: 1''-)(ma: 1'')(ro: 7' 6'/ 5'/)
+rs001194,133,46:7,rhythm,likely variant,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 2.3 beats long, as the tab (2)",,(hri: 4'-)(da: 6')(yo: 5'-)
+rs001194,134,46:24,rhythm,likely variant,"tab 6 beats, swaralipi 3 beats at this tempo; the roll plays it 2 beats long, as the tab (2)",,(hri: 4'-)(da: 6')(yo: 5'-) (khu: 4')(li: 3'
+rs001194,137,47:6,note weak,likely variant,roll plays the tab's note; swaralipi A#,,(Ka: 3'-)(to: 3')(ba: 4'-)
+rs001194,138,47:23,note weak,likely variant,roll plays the tab's note; swaralipi A,,(Ka: 3'-)(to: 3')(ba: 4'-)(ro: 4') (bhe: 4'
+rs001194,140,47:78,rhythm,likely variant,"tab 4 beats, swaralipi 1 beats at this tempo; the roll plays it 1 beats long, as the tab (1)",,e: 4'. 5'/)(be: 4')(chhi: 3'. 2'/)(nu: 3')
+rs001194,142,48:27,rhythm,likely variant,"tab 6 beats, swaralipi 3 beats at this tempo; the roll plays it 2 beats long, as the tab (2)",,(aa: 4'. 5'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li
+rs001247,14,13:60,rhythm,likely variant,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 3 beats long, as the tab (3)",,/)(ro: 6'/) (maa: 5'/)(ro: 5'/) (taan: 4'/. 1'// 2'/. 5'// 4
+rs001247,52,22:60,rhythm,likely variant,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 3 beats long, as the tab (3)",,/)(ro: 6'/) (maa: 5'/)(ro: 5'/) (taan: 4'/. 1'// 2'/. 5'// 4
+rs001247,119,41:6,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,(Ho: 4/ 5/ 6/)(yo: 6/) (na
+rs001247,132,44:65,rhythm,likely variant,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 3 beats long, as the tab (3)",,/)(ro: 6'/) (maa: 5'/)(ro: 5'/) (taan: 4'/. 1'// 2'/. 5'// 4
+rs001313,4,9:8,rhythm,likely variant,"tab 1.75 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.7 beats long, as the tab (1.75)",,(jaaw: 1'/ 7 6//) (ar: 7/ 1'
+rs001313,21,15:54,rhythm,likely variant,"tab 2.5 beats, swaralipi 4.5 beats at this tempo; the roll plays it 11 beats long, as the tab (8)",,1'/ 7) (rup: 6// 7/) (ka: 1'//)(thar: 1'// 7// 6// 5//- 5/)
+rs001313,27,16:54,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,/ 7/ 6// 5/. 5/ 6/. 1'// 1'/ 1') (bhu: 1'/ 1')(le: 1'/ 2'//)
+rs001313,35,17:31,rhythm,likely variant,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 2.9 beats long, as the tab (3)",,(paa: 2'//)(re: 1'/ 7//) (se: 7/. 1'// 1'/ 1'/ 7) (
+rs001313,39,18:7,rhythm,likely variant,"tab 2.75 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.5 beats long, as the tab (0.5)",,(Paa: 5/)(rul: 7 6/ 7/ 6//)
+rs001313,65,23:8,rhythm,likely variant,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.5 beats long, as the tab (0.5)",,(tuli: 6/) (aa: 6//)(mi: 5//
+rs001313,99,28:164,rhythm,likely variant,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 3.1 beats long, as the tab (3)",,') (bhe: 1'/ 2'//)(she: 1'/ 7//) (dur: 7/ 1'/ 1'/ 1'/ 7) (di
+rs001313,101,28:187,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,1'/ 7//) (dur: 7/ 1'/ 1'/ 1'/ 7) (di: 6// 7/ 1'// 1'// 7//)
+rs001313,119,31:125,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.4 beats long, as the tab (1.5)",,7/ 1'// 1'// 7// 6// 5//- 5/ 5//) (mo: 6/ 7// 7/ 6//)(ne: 5/
+rs001352,6,9:74,note weak,likely variant,roll plays the tab's note; swaralipi F,,7/)(no: 7///) (paai: 1'/// 2'// 1'/ 7/ 6//) (na: 7// 5/ 6///
+rs001352,6,9:84,note weak,likely variant,roll plays the tab's note; swaralipi E,,//) (paai: 1'/// 2'// 1'/ 7/ 6//) (na: 7// 5/ 6///)
+rs001352,7,9:88,note weak,likely variant,roll plays the tab's note; swaralipi D,,(paai: 1'/// 2'// 1'/ 7/ 6//) (na: 7// 5/ 6///)
+rs001352,7,9:91,note weak,likely variant,roll plays the tab's note; swaralipi E,,ai: 1'/// 2'// 1'/ 7/ 6//) (na: 7// 5/ 6///)
+rs001352,7,10:7,note weak,likely variant,roll plays the tab's note; swaralipi D,,(Maa: 7///)(jhe: 6//) (maa:
+rs001352,7,10:18,note weak,likely variant,roll plays the tab's note; swaralipi E,,(Maa: 7///)(jhe: 6//) (maa: 5// 6//)(j
+rs001352,7,10:29,note weak,likely variant,roll plays the tab's note; swaralipi D,,(Maa: 7///)(jhe: 6//) (maa: 5// 6//)(jhe: 4/ 3///
+rs001352,7,10:33,note weak,likely variant,roll plays the tab's note; swaralipi E,,(Maa: 7///)(jhe: 6//) (maa: 5// 6//)(jhe: 4/ 3///) (t
+rs001352,11,11:71,note weak,likely variant,roll plays the tab's note; swaralipi D,,3/)(nopaai: 3//) (na: 4// 3/ 4/) (ke: 5/)(se: 6.)
+rs001352,12,11:79,note weak,likely variant,roll plays the tab's note; swaralipi E,,aai: 3//) (na: 4// 3/ 4/) (ke: 5/)(se: 6.)
+rs001352,13,12:25,note weak,likely variant,swaralipi plays the tab's note; roll F,,(aa: 6/)(ka: 6///)(she: 2'///) (to: 1'//)(ma:
+rs001352,15,13:47,rhythm,likely variant,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 2 beats long, as the tab (2)",,//)(Ke: 3'//)(no: 1'//) (me: 2'//)(gh: 1'/ 7/ 6/ 5// 4//) (t
+rs001352,18,15:6,rhythm,likely variant,"tab 0.75 beats, swaralipi 2 beats at this tempo; the roll plays it 3.3 beats long, as the tab (2.75)",,(Ke: 3'//)(no: 1'//) (me:
+rs001352,19,15:16,note weak,likely variant,roll plays the tab's note; swaralipi G,,(Ke: 3'//)(no: 1'//) (me: 2'//)(gh:
+rs001352,21,15:100,note weak,likely variant,swaralipi plays the tab's note; roll E,,5/) (aa: 6/)(seon: 6//) (hr: 2'//)(id: 1'/)(ay: 7/)
+rs001352,22,15:109,note weak,likely variant,swaralipi plays the tab's note; roll G,,6/)(seon: 6//) (hr: 2'//)(id: 1'/)(ay: 7/)
+rs001352,23,16:49,note weak,likely variant,swaralipi plays the tab's note; roll F,,)(she: 7// 6//) (to: 5/)(ma: 6///)(re: 7///) (dekhi: 6//)(te
+rs001352,23,16:63,note weak,likely variant,swaralipi plays the tab's note; roll E,,) (to: 5/)(ma: 6///)(re: 7///) (dekhi: 6//)(tedey: 5//) (na:
+rs001352,26,18:23,rhythm,likely variant,"tab 7.25 beats, swaralipi 3.5 beats at this tempo; the roll plays it 1.2 beats long, as the tab (1.25)",,(pa: 3/)(lo: 3//)(ke: 4// 3/ 4/) (to: 5/)(m
+rs001352,35,20:89,note weak,likely variant,roll plays the tab's note; swaralipi G,,) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te: 2'/) (ohe: 1'//)
+rs001352,36,21:28,note weak,likely variant,roll plays the tab's note; swaralipi E,,(haa: 7//)(rai: 2'//) (da: 1'/.) (hoy: 7/) (bhoy
+rs001352,37,21:54,note weak,likely variant,roll plays the tab's note; swaralipi E,,: 2'//) (da: 1'/.) (hoy: 7/) (bhoyHaa: 6/)(rai: 6/)
+rs001352,43,23:64,note weak,likely variant,roll plays the tab's note; swaralipi B,,3'//) (aa: 2'//) (naa: 2'/ 1'///) (mi: 2'///) (ko: 3'//)(t:
+rs001352,43,23:76,note weak,likely variant,roll plays the tab's note; swaralipi A,,'//) (naa: 2'/ 1'///) (mi: 2'///) (ko: 3'//)(t: 2'/ 1'// 7//
+rs001352,43,23:85,note weak,likely variant,roll plays the tab's note; swaralipi G,,: 2'/ 1'///) (mi: 2'///) (ko: 3'//)(t: 2'/ 1'// 7// 6)(ha: 6
+rs001352,45,24:10,note weak,likely variant,roll plays the tab's note; swaralipi B,,(paa: 6/ 2'//) (yaa: 1'//) (bo
+rs001352,46,24:33,note weak,likely variant,roll plays the tab's note; swaralipi G,,(paa: 6/ 2'//) (yaa: 1'//) (bo: 2'/) (lok: 2'/)
+rs001352,46,25:7,note weak,likely variant,roll plays the tab's note; swaralipi A,,(naa: 3'/ 1'//) (po: 2'//)
+rs001352,59,31:54,note weak,likely variant,roll plays the tab's note; swaralipi C,,//)(reraa: 4//)(khi: 3/)(bo: 4/) (aan: 5/)(khite: 6.)
+rs001352,60,31:65,note weak,likely variant,swaralipi plays the tab's note; roll C,,4//)(khi: 3/)(bo: 4/) (aan: 5/)(khite: 6.)
+rs001352,63,32:73,note weak,likely variant,roll plays the tab's note; swaralipi D,,: 3/) (to: 3/)(ma: 3//)(re: 4//) (raa: 5/)(E: 5/)(to: 6/)
+rs001352,63,32:88,note weak,likely variant,roll plays the tab's note; swaralipi E,,ma: 3//)(re: 4//) (raa: 5/)(E: 5/)(to: 6/)
+rs001352,64,33:24,note weak,likely variant,swaralipi plays the tab's note; roll F,,(prem: 6/) (aa: 6/ 4// 5//)(mi: 6/) (ko: 6//
+rs001352,65,33:64,note weak,likely variant,roll plays the tab's note; swaralipi D,,//)(mi: 6/) (ko: 6//)(tha: 2'//) (paa: 1'/ 7/)(bo: 6/) (naa:
+rs001352,67,33:94,note weak,likely variant,roll plays the tab's note; swaralipi E,,/) (paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/)
+rs001352,81,38:50,rhythm,likely variant,"tab 0.75 beats, swaralipi 2 beats at this tempo; the roll plays it 0.46 beats long, as the tab (0.5)",,(i: 6/)(bo: 6/ 6/ 4//) (to: 5//) (ma: 6/)(rede: 6//)(y: 2'/
+rs001352,91,41:44,rhythm,likely variant,"tab 4.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 3 beats long, as the tab (3.5)",,7//)(mare: 6//) (hri: 5/)(da: 4/)(ye: 5- 6 6/) (raa: 6/)(kh
+rs001352,95,41:92,note weak,likely variant,roll plays the tab's note; swaralipi F,,(raa: 6/)(khi: 6/)(te: 6// 7// 1'/ 1'/ 2'/) (aar: 2'//)
+rs001352,97,42:45,note weak,likely variant,roll plays the tab's note; swaralipi F,,1'//)(chaa: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (na: 3'/) (aar:
+rs001352,107,45:56,rhythm,likely variant,"tab 0.75 beats, swaralipi 2 beats at this tempo; the roll plays it 0.48 beats long, as the tab (0.625)",,aa: 3'//)(ropaa: 4'//)(ne: 3'/) (chaa: 2'/)(hi: 1'///)(bona:
+rs001352,123,52:45,note weak,likely variant,swaralipi plays the tab's note; roll F,,7/)(so: 6//)(na: 7//) (bi: 5/)(i: 6/// 7/// 6//)
+rs001352,123,52:50,note weak,likely variant,swaralipi plays the tab's note; roll E,,o: 6//)(na: 7//) (bi: 5/)(i: 6/// 7/// 6//)
+rs001352,123,53:16,rhythm,likely variant,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 0.26 beats long, as the tab (0.25)",,(bi: 5//)(sha: 6//)(yoi: 4/)(baa: 3/
+rs001352,124,53:55,rhythm,likely variant,"tab 1.75 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.8 beats long, as the tab (1.75)",,6//)(yoi: 4/)(baa: 3///)(so: 4///)(na: 5// 4// 3// 2/ 2/) (b
+rs001367,93,37:15,rhythm,likely variant,"tab 4.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.6 beats long, as the tab (0.5)",,(Hri: 4/)(da: 5/)(yo: 6-- 5/ 6/)(ka
+rs001367,96,37:47,note weak,likely variant,roll plays the tab's note; swaralipi D,,/)(da: 5/)(yo: 6-- 5/ 6/)(ka: 5/.)(mo: 1'// 7/)(lo: 6/)(ba:
+rs001367,96,37:52,note weak,likely variant,roll plays the tab's note; swaralipi E,,: 5/)(yo: 6-- 5/ 6/)(ka: 5/.)(mo: 1'// 7/)(lo: 6/)(ba: 6//-)
+rs001367,96,37:60,note weak,likely variant,roll plays the tab's note; swaralipi F,,: 6-- 5/ 6/)(ka: 5/.)(mo: 1'// 7/)(lo: 6/)(ba: 6//-)(no: 5/.
+rs001367,100,38:80,rhythm,likely variant,"tab 0.25 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.25 beats long, as the tab (0.25)",,(dhuNibhri: 5/)(to: 6//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu:
+rs001367,102,39:19,note weak,likely variant,roll plays the tab's note; swaralipi E,,(ti: 4//) (baani: 5/)
+rs001367,102,40:6,note weak,likely variant,roll plays the tab's note; swaralipi D,,(Ni: 6/)(bhri: 5//)(to: 6/
+rs001367,102,40:16,note weak,likely variant,roll plays the tab's note; swaralipi E,,(Ni: 6/)(bhri: 5//)(to: 6//)(baa: 5/
+rs001367,102,40:25,note weak,likely variant,roll plays the tab's note; swaralipi D,,(Ni: 6/)(bhri: 5//)(to: 6//)(baa: 5//)(ni: 4)
+rs001367,102,40:35,note weak,likely variant,roll plays the tab's note; swaralipi E,,(Ni: 6/)(bhri: 5//)(to: 6//)(baa: 5//)(ni: 4) (ti: 4/)(
+rs001367,103,40:60,note weak,likely variant,roll plays the tab's note; swaralipi E,,to: 6//)(baa: 5//)(ni: 4) (ti: 4/)(mo: 5/)(tibaa: 6---)
+rs001367,104,40:71,note weak,likely variant,roll plays the tab's note; swaralipi D,,a: 5//)(ni: 4) (ti: 4/)(mo: 5/)(tibaa: 6---)
+rs001381,,18:28,note weak,likely variant,roll plays the tab's note; midi F#,,(Taa: 3'/)(ta: 3'/) (thoi: 5')
+rs001381,,19:15,note weak,likely variant,midi plays the tab's note; roll G#,,(tho: 5'/)(i: 4'/)
+rs001417,72,32:35,rhythm,likely variant,"tab 1.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 1.5 beats long, as the tab (1.5)",,(Dsak: 5) (dey: 6) (pro: 6/)(lay: 6/ 6/. 5//) (aa: 6/.
+rs001426,24,16:65,note weak,likely variant,roll plays the tab's note; swaralipi E,,: 3/.) (bee: 2// 1' 7/ 6/ 1' 7/ 6/ 6/. 1'// 7--)
+rs001426,24,16:70,note weak,likely variant,roll plays the tab's note; swaralipi D,,) (bee: 2// 1' 7/ 6/ 1' 7/ 6/ 6/. 1'// 7--)
+rs001426,44,21:77,note weak,likely variant,roll plays the tab's note; swaralipi E,,3/. 2//) (m: 1')(b: 7/ 6/ 1' 7/ 6/ 6/. 1'// 7--)
+rs001426,44,21:82,note weak,likely variant,roll plays the tab's note; swaralipi D,,//) (m: 1')(b: 7/ 6/ 1' 7/ 6/ 6/. 1'// 7--)
+rs001505,43,15:114,rhythm,likely variant,"tab 5 beats, swaralipi 1 beats at this tempo; the roll plays it 6.5 beats long, as the tab (5)",,. 7/ 6///) (jaag: 5//.-)(lo: 6/) (nee: 1' 2'/ 2' 3'.-)
+rs001505,77,25:7,rhythm,likely variant,"tab 6 beats, swaralipi 2 beats at this tempo; the roll plays it 5.8 beats long, as the tab (6)",,(Nil: 1' 2'/ 2' 3'.--) (nee
+rs001620,173,49:73,rhythm,likely variant,"tab 2.5 beats, swaralipi 1 beats at this tempo; the roll plays it 2.5 beats long, as the tab (2.5)",,5/.) (o: 4/. 5//) (jo: 4/)(na: 3/)(ki: 2// 1/. 1/. 6// 6/)
+rs001653,55,30:41,rhythm,likely variant,"tab 3 beats, swaralipi 1 beats at this tempo; the roll plays it 3 beats long, as the tab (3)",,O: 5/ 6 6/ 5/ 4/ 5/ 6/)(re: 7) (bhaai: 1'--)
+rs001653,114,56:17,rhythm,likely variant,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.49 beats long, as the tab (0.5)",,(bo: 2'/)(nebo: 1'/)(ne: 1'//) (o: 2'
+rs001653,115,56:26,rhythm,likely variant,"tab 0.5 beats, swaralipi 1.5 beats at this tempo; the roll plays it 0.34 beats long, as the tab (0.25)",,(bo: 2'/)(nebo: 1'/)(ne: 1'//) (o: 2'//)(re: 7
+rs001739,28,21:77,rhythm,likely variant,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 4 beats long, as the tab (4)",,: 1'/) (daao: 1'/. 2'//) (praanPraano: 3')
+rs001739,64,35:75,rhythm,likely variant,"tab 1 beats, swaralipi 2 beats at this tempo; the roll plays it 4 beats long, as the tab (4)",,ro: 1'/) (daao: 1'/. 2'//) (praapraan: 3')
+rs001822,89,28:33,rhythm,likely variant,"tab 2 beats, swaralipi 1 beats at this tempo; the roll plays it 43 beats long, as the tab (38.75)",,(Naa: 1')(hi: 2'/. 3'//) (taar: 1' 2'// 3'/ 2'//) (ki
+rs002064,38,15:31,rhythm,likely variant,"tab 4.5 beats, swaralipi 0.5 beats at this tempo; the roll plays it 4.5 beats long, as the tab (4.5)",,(Aa: 4)(mar: 4-) (ta: 4/)(re: 4/ 3/ 5/ 5--) (taa: 4
+rs000016,131,49:69,octave,variant,-1 octave(s) from the rest of the song,,: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (gaa: 5- 5/
+rs000016,132,49:74,octave,variant,-1 octave(s) from the rest of the song,,'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (gaa: 5- 5/ 5/) (
+rs000016,132,49:84,octave,variant,-1 octave(s) from the rest of the song,,o: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (gaa: 5- 5/ 5/) (ne: 5/)
+rs000016,141,51:49,octave,variant,-1 octave(s) from the rest of the song,,(kha: 2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/ 7/) (gaa: 7/ 7
+rs000016,141,51:52,octave,variant,-1 octave(s) from the rest of the song,,a: 2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/ 7/) (gaa: 7/ 7 7/)
+rs000037,88,26:27,octave,variant,+1 octave(s) from the rest of the song,,(O: 3'/) (re: 2'//) (jaa: 3'//)(bo: 4'/) (na: 4
+rs000037,141,40:120,octave,variant,-1 octave(s) from the rest of the song,,/ 2' 2' 1' 2' 2'//) (haa: 3'/. 2')(si: 5 6 7/ 2'/ 2' 2'/ 3'/
+rs000037,177,47:7,octave,variant,+1 octave(s) from the rest of the song,,(jaa: 3'//)(bo: 4'/) (na: 4
+rs000045,44,22:56,octave,variant,+1 octave(s) from the rest of the song,,1'//) (bo: 7//)(ku: 1'/)(lo: 2'/)(bi: 2'/)(chha: 2'/)(no: 1
+rs000045,45,22:67,octave,variant,+1 octave(s) from the rest of the song,,7//)(ku: 1'/)(lo: 2'/)(bi: 2'/)(chha: 2'/)(no: 1'/ 1'//) (p
+rs000045,52,25:56,octave,variant,+1 octave(s) from the rest of the song,,1'//) (bo: 7//)(ku: 1'/)(lo: 2'/)(bi: 2'/)(chha: 2'/)(no: 1
+rs000045,53,25:67,octave,variant,+1 octave(s) from the rest of the song,,7//)(ku: 1'/)(lo: 2'/)(bi: 2'/)(chha: 2'/)(no: 1'/ 1'//) (p
+rs000045,59,27:16,octave,variant,+1 octave(s) from the rest of the song,,(me: 3'/)(khe: 3'/) (pi: 3'/)(ya: 4'
+rs000101,18,14:26,note octave,variant,MIDI octave: midi octave C4,,(Aa: 6'/)(kash: 5')(bho: 1'.)(ra: 1'-)
+rs000101,59,33:61,note octave,variant,MIDI octave: midi octave C4,,maa: 2'/)(jhe: 1') (a: 1'/ 7/ 2'/)(ja: 1' 6/)(na: 5.)(re: 2.
+rs000133,163,34:46,octave,variant,-1 octave(s) from the rest of the song,,'//)(taa: 7/) (ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (ta
+rs000133,164,34:55,octave,variant,-1 octave(s) from the rest of the song,,7/) (ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (taa: 7)(re:
+rs000133,166,34:59,octave,variant,-1 octave(s) from the rest of the song,,(ra: 6//)(tir: 5/.) (ek: 4//)(ti: 3-- 4 6) (taa: 7)(re: 2'/
+rs000197,50,29:102,octave,variant,-1 octave(s) from the rest of the song,,'/ 6// 7/. 6//) (ei: 5/. 5// 6// 5 4 2 1/ 1// 4/. 4// 3// 5/
+rs000215,8,9:90,octave,variant,-1 octave(s) from the rest of the song,,o: 4'// 3'//) (praa: 2' 3'// 2'//)(te: 7//- 1'//)
+rs000215,57,18:104,octave,variant,-1 octave(s) from the rest of the song,,4'// 5'/ 4' 3'-- 1') (tha: 1'/) (roy: 1'/ 1'/. 2'//) (praa:
+rs000215,75,22:36,octave,variant,-1 octave(s) from the rest of the song,,(Je: 1') (ka: 1'/)(tha: 1'/) (roy: 1'/. 2'//) (praa: 2'/
+rs000277,192,53:75,octave,variant,-1 octave(s) from the rest of the song,,ra: 6///) (ei: 5/// 4/) (paa: 3/)(gol: 1/) (take: 3)
+rs000277,193,54:5,octave,variant,-1 octave(s) from the rest of the song,,(e: 4/ 5--)(mon: 4/. 6//)
+rs000277,196,54:18,octave,variant,-1 octave(s) from the rest of the song,,(e: 4/ 5--)(mon: 4/. 6//) (ko: 6/)(re:
+rs000277,207,56:5,octave,variant,-1 octave(s) from the rest of the song,,(e: 4/ 5/. 1'// 7/ 6/ 5/.
+rs000277,210,56:43,octave,variant,-1 octave(s) from the rest of the song,,4/ 5/. 1'// 7/ 6/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/)
+rs000277,210,56:52,octave,variant,-1 octave(s) from the rest of the song,,'// 7/ 6/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/)
+rs000277,210,56:60,octave,variant,-1 octave(s) from the rest of the song,,/ 5/. 6/// 5///)(mon: 4/) (ko: 3/)(re: 1/)
+rs000588,34,22:52,octave,variant,+1 octave(s) from the rest of the song,,: 3'/) (haa: 4')(te: 3'/) (tu: 4')(mi: 3'.)
+rs000588,35,23:7,octave,variant,+1 octave(s) from the rest of the song,,(gne: 4'/)(the: 3'/) (ni: 3
+rs000772,45,19:8,octave,variant,-1 octave(s) from the rest of the song,,(Shuk: 1/ 3 4/ 5 1'/. 3'//)(
+rs000810,44,16:89,octave,variant,+1 octave(s) from the rest of the song,,'//)(to: 2'/)(sa: 3'.)(ma: 2'/// 3'/// 2'/ 1'//)(ga: 1'/) (m
+rs000825,17,16:8,octave,variant,+1 octave(s) from the rest of the song,,(Taai: 3'/. 5'//) (di: 5'/)(
+rs000825,21,18:8,octave,variant,+1 octave(s) from the rest of the song,,(Taai: 3'/. 5'//) (di: 5'/)(
+rs000980,18,13:47,octave,variant,-1 octave(s) from the rest of the song,,')(je: 5'/)(ro: 5'/) (mo: 4' 3') (ton: 3/.)
+rs000980,21,15:26,octave,variant,-1 octave(s) from the rest of the song,,(ku: 7//)(heli: 6//)(ka: 5/.) (ko: 7)(Sur: 2'/
+rs000980,23,15:60,octave,variant,-1 octave(s) from the rest of the song,,(ka: 5/.) (ko: 7)(Sur: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4
+rs000980,23,15:71,octave,variant,-1 octave(s) from the rest of the song,,ko: 7)(Sur: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4)(ton: 3--)
+rs000980,24,15:80,octave,variant,-1 octave(s) from the rest of the song,,r: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4)(ton: 3--)
+rs000980,24,15:88,octave,variant,-1 octave(s) from the rest of the song,,'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4)(ton: 3--)
+rs001068,236,60:54,octave,variant,-1 octave(s) from the rest of the song,,5/)(te: 5/) (nei: 4/ 3/) (aa: 2/)(mi: 3/) (medaak: 2/)(bemo
+rs001068,236,60:67,octave,variant,-1 octave(s) from the rest of the song,,(nei: 4/ 3/) (aa: 2/)(mi: 3/) (medaak: 2/)(bemore: 1.)
+rs001068,237,60:79,octave,variant,-1 octave(s) from the rest of the song,,(aa: 2/)(mi: 3/) (medaak: 2/)(bemore: 1.)
+rs001094,33,15:69,octave,variant,-1 octave(s) from the rest of the song,,'//)(lo: 2'/. 1'//) (di: 1'/)(per: 2'/ 1'// 3'//) (aa: 3'/)(
+rs001094,45,19:51,octave,variant,-1 octave(s) from the rest of the song,,'//)(lo: 2'/. 1'//) (di: 1'/)(per: 2'/ 1'// 3'//) (aa: 3'/)(
+rs001094,112,31:53,octave,variant,+1 octave(s) from the rest of the song,,i: 2'/)(ye: 1'// 3'//) (aa: 3'/)(chho: 2') (tu: 1'/)(mi: 2'/
+rs001094,112,31:53,octave,variant,+1 octave(s) from the rest of the song,,i: 2'/)(ye: 1'// 3'//) (aa: 3'/)(chho: 2') (tu: 1'/)(mi: 2'/
+rs001247,20,14:67,octave,variant,-1 octave(s) from the rest of the song,,(taan: 2'/. 5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/
+rs001247,21,14:79,octave,variant,-1 octave(s) from the rest of the song,,5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2
+rs001247,23,14:99,octave,variant,-1 octave(s) from the rest of the song,,/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3
+rs001247,24,14:116,octave,variant,-1 octave(s) from the rest of the song,,: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--)
+rs001247,25,14:132,octave,variant,-1 octave(s) from the rest of the song,,(aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--)
+rs001247,58,23:67,octave,variant,-1 octave(s) from the rest of the song,,(taan: 2'/. 5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/
+rs001247,59,23:79,octave,variant,-1 octave(s) from the rest of the song,,5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2
+rs001247,61,23:99,octave,variant,-1 octave(s) from the rest of the song,,/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3
+rs001247,62,23:116,octave,variant,-1 octave(s) from the rest of the song,,: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--)
+rs001247,63,23:132,octave,variant,-1 octave(s) from the rest of the song,,(aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--)
+rs001247,105,37:16,octave,variant,+1 octave(s) from the rest of the song,,(Jo: 4'//)(di: 6'//) (maa: 6'/)(te:
+rs001247,119,41:6,octave,variant,-1 octave(s) from the rest of the song,,(Ho: 4/ 5/ 6/)(yo: 6/) (na
+rs001247,119,41:12,octave,variant,-1 octave(s) from the rest of the song,,(Ho: 4/ 5/ 6/)(yo: 6/) (naa: 6)(
+rs001247,119,41:20,octave,variant,-1 octave(s) from the rest of the song,,(Ho: 4/ 5/ 6/)(yo: 6/) (naa: 6)(ko: 6/)
+rs001247,120,41:30,octave,variant,-1 octave(s) from the rest of the song,,(Ho: 4/ 5/ 6/)(yo: 6/) (naa: 6)(ko: 6/) (kunt: 5/
+rs001247,120,41:37,octave,variant,-1 octave(s) from the rest of the song,,(Ho: 4/ 5/ 6/)(yo: 6/) (naa: 6)(ko: 6/) (kunt: 5/ 3/)(thi
+rs001247,120,41:48,octave,variant,-1 octave(s) from the rest of the song,,5/ 6/)(yo: 6/) (naa: 6)(ko: 6/) (kunt: 5/ 3/)(thi: 4/)(to: 5
+rs001247,121,41:60,octave,variant,-1 octave(s) from the rest of the song,,/) (naa: 6)(ko: 6/) (kunt: 5/ 3/)(thi: 4/)(to: 5)
+rs001247,122,42:8,octave,variant,-1 octave(s) from the rest of the song,,(ta: 5 5/)(le: 5/) (taar: 2/
+rs001247,122,42:16,octave,variant,-1 octave(s) from the rest of the song,,(ta: 5 5/)(le: 5/) (taar: 2/) (di: 3
+rs001247,123,42:36,octave,variant,-1 octave(s) from the rest of the song,,(ta: 5 5/)(le: 5/) (taar: 2/) (di: 3/ 4/ 5/ 6 6/ 5/) (yo
+rs001247,125,42:59,octave,variant,-1 octave(s) from the rest of the song,,(taar: 2/) (di: 3/ 4/ 5/ 6 6/ 5/) (yo: 3/.) (taal: 5//)
+rs001247,125,43:6,octave,variant,-1 octave(s) from the rest of the song,,(jo: 4--)(y: 4//) (jo: 1'/
+rs001247,127,43:14,octave,variant,-1 octave(s) from the rest of the song,,(jo: 4--)(y: 4//) (jo: 1'//)(y: 1'
+rs001247,138,45:67,octave,variant,-1 octave(s) from the rest of the song,,(taan: 2'/. 5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/
+rs001247,139,45:79,octave,variant,-1 octave(s) from the rest of the song,,5'// 4'-- 4/ 5/ 6/ 6/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2
+rs001247,141,45:99,octave,variant,-1 octave(s) from the rest of the song,,/ 6 6/ 5/ 3/) (hn: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3
+rs001247,142,45:116,octave,variant,-1 octave(s) from the rest of the song,,: 4/ 5 5 5/ 5/) (aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--)
+rs001247,143,45:132,octave,variant,-1 octave(s) from the rest of the song,,(aai: 2/ 3/ 4/ 5/ 6 6/ 5/ 3/. 5//)(yo: 4--)
+rs001283,16,11:6,octave,variant,-1 octave(s) from the rest of the song,,(Ei: 6 6/) (je: 6/ 6// 5//
+rs001283,17,11:17,octave,variant,-1 octave(s) from the rest of the song,,(Ei: 6 6/) (je: 6/ 6// 5// 5/. 3// 5/
+rs001313,47,20:63,octave,variant,+1 octave(s) from the rest of the song,,7/) (mo: 6//)(ne: 5/. 5// 1'//) (sur: 1' 1'/ 2'// 1'/ 7// 7
+rs001313,50,20:100,octave,variant,+1 octave(s) from the rest of the song,,: 1' 1'/ 2'// 1'/ 7// 7/ 1'/ 1'/)(jyo: 1'/ 7 6// 7/ 1'// 1'/
+rs001352,5,9:62,octave,variant,+1 octave(s) from the rest of the song,,n: 6/) (ke: 7/)(no: 7///) (paai: 1'/// 2'// 1'/ 7/ 6//) (na:
+rs001352,6,9:67,octave,variant,+1 octave(s) from the rest of the song,,) (ke: 7/)(no: 7///) (paai: 1'/// 2'// 1'/ 7/ 6//) (na: 7//
+rs001352,14,13:6,octave,variant,+1 octave(s) from the rest of the song,,(de: 2'//)(Ke: 3'//)(no: 1
+rs001352,14,13:16,octave,variant,+1 octave(s) from the rest of the song,,(de: 2'//)(Ke: 3'//)(no: 1'//) (me:
+rs001352,18,13:106,octave,variant,+1 octave(s) from the rest of the song,,to: 5/)(ma: 6/)(na: 6/// 2'/// 1'// 2' 2'/ 2'//)
+rs001352,18,15:6,octave,variant,+1 octave(s) from the rest of the song,,(Ke: 3'//)(no: 1'//) (me:
+rs001352,21,15:90,octave,variant,+1 octave(s) from the rest of the song,,4//) (to: 5/) (aa: 6/)(seon: 6//) (hr: 2'//)(id: 1'/)(ay: 7/
+rs001352,30,18:77,octave,variant,+1 octave(s) from the rest of the song,,5/)(may: 6. 6/ 6/) (ja: 6/)(be: 6/ 6/ 6//) (paai: 7// 1'/ 1
+rs001352,31,19:6,octave,variant,+1 octave(s) from the rest of the song,,(de: 2'/) (khi: 2'// 1'//)
+rs001352,32,19:17,octave,variant,+1 octave(s) from the rest of the song,,(de: 2'/) (khi: 2'// 1'//)(teohe: 2'/
+rs001352,32,19:35,octave,variant,+1 octave(s) from the rest of the song,,(de: 2'/) (khi: 2'// 1'//)(teohe: 2'/) (kho: 2'/)(ni: 1
+rs001352,32,19:46,octave,variant,+1 octave(s) from the rest of the song,,'/) (khi: 2'// 1'//)(teohe: 2'/) (kho: 2'/)(ni: 1'/)(aan: 2'
+rs001352,33,19:65,octave,variant,+1 octave(s) from the rest of the song,,)(teohe: 2'/) (kho: 2'/)(ni: 1'/)(aan: 2'//)(khi: 1'//)(r: 2
+rs001352,33,19:85,octave,variant,+1 octave(s) from the rest of the song,,2'/)(ni: 1'/)(aan: 2'//)(khi: 1'//)(r: 2'/)
+rs001352,34,20:8,octave,variant,+1 octave(s) from the rest of the song,,(palo: 3'/)(keto: 4'/)(may:
+rs001352,34,20:19,octave,variant,+1 octave(s) from the rest of the song,,(palo: 3'/)(keto: 4'/)(may: 3'//) (jabe
+rs001352,34,20:29,octave,variant,+1 octave(s) from the rest of the song,,(palo: 3'/)(keto: 4'/)(may: 3'//) (jabepaai: 2'//
+rs001352,34,20:46,octave,variant,+1 octave(s) from the rest of the song,,3'/)(keto: 4'/)(may: 3'//) (jabepaai: 2'//) (de: 2'/)(khi:
+rs001352,35,20:57,octave,variant,+1 octave(s) from the rest of the song,,4'/)(may: 3'//) (jabepaai: 2'//) (de: 2'/)(khi: 1'/// 2'///
+rs001352,35,20:73,octave,variant,+1 octave(s) from the rest of the song,,(jabepaai: 2'//) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te: 2'/)
+rs001352,35,20:79,octave,variant,+1 octave(s) from the rest of the song,,paai: 2'//) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te: 2'/) (ohe:
+rs001352,35,20:89,octave,variant,+1 octave(s) from the rest of the song,,) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te: 2'/) (ohe: 1'//)
+rs001352,42,23:7,octave,variant,+1 octave(s) from the rest of the song,,(cho: 3'/)(ki: 4'/)(te: 3'/
+rs001352,42,23:16,octave,variant,+1 octave(s) from the rest of the song,,(cho: 3'/)(ki: 4'/)(te: 3'//) (aa: 2
+rs001352,42,23:25,octave,variant,+1 octave(s) from the rest of the song,,(cho: 3'/)(ki: 4'/)(te: 3'//) (aa: 2'//) (naa
+rs001352,42,23:36,octave,variant,+1 octave(s) from the rest of the song,,(cho: 3'/)(ki: 4'/)(te: 3'//) (aa: 2'//) (naa: 2'/ 1'///
+rs001352,46,24:33,octave,variant,+1 octave(s) from the rest of the song,,(paa: 6/ 2'//) (yaa: 1'//) (bo: 2'/) (lok: 2'/)
+rs001352,46,24:44,octave,variant,+1 octave(s) from the rest of the song,,: 6/ 2'//) (yaa: 1'//) (bo: 2'/) (lok: 2'/)
+rs001352,46,25:7,octave,variant,+1 octave(s) from the rest of the song,,(naa: 3'/ 1'//) (po: 2'//)
+rs001352,50,27:44,octave,variant,+1 octave(s) from the rest of the song,,: 5/ 6/)(rai: 6/ 2'//)(ya: 1'//) (hri: 2'/)(day: 2'/) (aa: 3
+rs001352,50,27:54,octave,variant,+1 octave(s) from the rest of the song,,ai: 6/ 2'//)(ya: 1'//) (hri: 2'/)(day: 2'/) (aa: 3'/ 1'//)(k
+rs001352,50,27:64,octave,variant,+1 octave(s) from the rest of the song,,/)(ya: 1'//) (hri: 2'/)(day: 2'/) (aa: 3'/ 1'//)(k: 2'//)(as
+rs001352,60,31:65,octave,variant,+1 octave(s) from the rest of the song,,4//)(khi: 3/)(bo: 4/) (aan: 5/)(khite: 6.)
+rs001352,81,38:68,octave,variant,+1 octave(s) from the rest of the song,,4//) (to: 5//) (ma: 6/)(rede: 6//)(y: 2'//)
+rs001352,86,40:6,octave,variant,+1 octave(s) from the rest of the song,,(tu: 2'/)(mi: 2'//) (paa:
+rs001352,86,40:15,octave,variant,+1 octave(s) from the rest of the song,,(tu: 2'/)(mi: 2'//) (paa: 3'// 1'//
+rs001352,86,40:27,octave,variant,+1 octave(s) from the rest of the song,,(tu: 2'/)(mi: 2'//) (paa: 3'// 1'// 2'// 1'/ 7/
+rs001352,95,41:92,octave,variant,+1 octave(s) from the rest of the song,,(raa: 6/)(khi: 6/)(te: 6// 7// 1'/ 1'/ 2'/) (aar: 2'//)
+rs001352,96,41:103,octave,variant,+1 octave(s) from the rest of the song,,hi: 6/)(te: 6// 7// 1'/ 1'/ 2'/) (aar: 2'//)
+rs001352,96,42:19,octave,variant,+1 octave(s) from the rest of the song,,(kaa: 1'//)(chaa: 2')(hi: 6/ 2'// 1'//)
+rs001352,97,42:30,octave,variant,+1 octave(s) from the rest of the song,,(kaa: 1'//)(chaa: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (
+rs001352,98,42:55,octave,variant,+1 octave(s) from the rest of the song,,a: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (na: 3'/) (aar: 3'// 4'//
+rs001352,98,42:66,octave,variant,+1 octave(s) from the rest of the song,,6/ 2'// 1'//)(bo: 2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'/
+rs001352,98,42:71,octave,variant,+1 octave(s) from the rest of the song,,// 1'//)(bo: 2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (
+rs001352,98,42:76,octave,variant,+1 octave(s) from the rest of the song,,//)(bo: 2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2
+rs001352,99,42:80,octave,variant,+1 octave(s) from the rest of the song,,bo: 2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2'///
+rs001352,99,42:96,octave,variant,+1 octave(s) from the rest of the song,,/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2'///)(ri: 3'//)(bo:
+rs001352,99,42:107,octave,variant,+1 octave(s) from the rest of the song,,// 4'// 3'/ 2'/ 1'///) (ko: 2'///)(ri: 3'//)(bo: 2'/ 1'// 7/
+rs001352,99,42:117,octave,variant,+1 octave(s) from the rest of the song,,/ 2'/ 1'///) (ko: 2'///)(ri: 3'//)(bo: 2'/ 1'// 7// 2'//)
+rs001352,100,42:121,octave,variant,+1 octave(s) from the rest of the song,,/ 1'///) (ko: 2'///)(ri: 3'//)(bo: 2'/ 1'// 7// 2'//)
+rs001352,100,43:7,octave,variant,+1 octave(s) from the rest of the song,,(hey: 1'/.) (aa: 7 6/ 6/)(m
+rs001352,102,43:34,octave,variant,+1 octave(s) from the rest of the song,,(hey: 1'/.) (aa: 7 6/ 6/)(mi: 6/ 6// 7// 1'/ 1'/) (pra
+rs001352,103,43:58,octave,variant,+1 octave(s) from the rest of the song,,6/ 6/)(mi: 6/ 6// 7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2'
+rs001352,104,43:67,octave,variant,+1 octave(s) from the rest of the song,,i: 6/ 6// 7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p:
+rs001352,104,43:77,octave,variant,+1 octave(s) from the rest of the song,,7// 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe
+rs001352,105,43:88,octave,variant,+1 octave(s) from the rest of the song,,) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe: 1'//)
+rs001352,105,45:6,octave,variant,+1 octave(s) from the rest of the song,,(An: 2'/ 3'/) (kaa: 3'//)(
+rs001352,106,45:10,octave,variant,+1 octave(s) from the rest of the song,,(An: 2'/ 3'/) (kaa: 3'//)(ropa
+rs001352,106,45:21,octave,variant,+1 octave(s) from the rest of the song,,(An: 2'/ 3'/) (kaa: 3'//)(ropaa: 4'//)(ne
+rs001352,106,45:34,octave,variant,+1 octave(s) from the rest of the song,,(An: 2'/ 3'/) (kaa: 3'//)(ropaa: 4'//)(ne: 3'/) (chaa:
+rs001352,106,45:44,octave,variant,+1 octave(s) from the rest of the song,,2'/ 3'/) (kaa: 3'//)(ropaa: 4'//)(ne: 3'/) (chaa: 2'/)(hi:
+rs001352,107,45:56,octave,variant,+1 octave(s) from the rest of the song,,aa: 3'//)(ropaa: 4'//)(ne: 3'/) (chaa: 2'/)(hi: 1'///)(bona:
+rs001352,107,45:78,octave,variant,+1 octave(s) from the rest of the song,,(ne: 3'/) (chaa: 2'/)(hi: 1'///)(bona: 2'///)
+rs001352,107,46:7,octave,variant,+1 octave(s) from the rest of the song,,(aar: 3'//) (ko: 2'/)(ri: 1
+rs001352,107,46:18,octave,variant,+1 octave(s) from the rest of the song,,(aar: 3'//) (ko: 2'/)(ri: 1'//)(bo: 7/
+rs001352,108,46:27,octave,variant,+1 octave(s) from the rest of the song,,(aar: 3'//) (ko: 2'/)(ri: 1'//)(bo: 7// 6) (hey
+rs001352,109,46:59,octave,variant,+1 octave(s) from the rest of the song,,/)(ri: 1'//)(bo: 7// 6) (hey: 6/) (aa: 6/// 2'/// 1'//)(mi:
+rs001352,109,46:80,octave,variant,+1 octave(s) from the rest of the song,,6) (hey: 6/) (aa: 6/// 2'/// 1'//)(mi: 2'/)
+rs001352,110,47:8,octave,variant,+1 octave(s) from the rest of the song,,(praa: 2'/)(no: 2'/)(pa: 2'/
+rs001352,110,47:17,octave,variant,+1 octave(s) from the rest of the song,,(praa: 2'/)(no: 2'/)(pa: 2'//)(oheTum
+rs001352,110,47:26,octave,variant,+1 octave(s) from the rest of the song,,(praa: 2'/)(no: 2'/)(pa: 2'//)(oheTumi: 3'//)
+rs001352,110,47:41,octave,variant,+1 octave(s) from the rest of the song,,praa: 2'/)(no: 2'/)(pa: 2'//)(oheTumi: 3'//) (jo: 1'//)(di:
+rs001352,121,51:72,octave,variant,+1 octave(s) from the rest of the song,,//)(sha: 6/)(yo: 7/)(i: 7/// 1'///)(b: 2'//) (o: 1'/)
+rs001367,100,38:71,octave,variant,-1 octave(s) from the rest of the song,,mo: 4//) (dhuNibhri: 5/)(to: 6//)(baa: 5/)(nia: 4//)(mri: 3/
+rs001367,100,38:80,octave,variant,-1 octave(s) from the rest of the song,,(dhuNibhri: 5/)(to: 6//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu:
+rs001367,100,38:90,octave,variant,-1 octave(s) from the rest of the song,,: 5/)(to: 6//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu: 2/.)(ro: 3
+rs001367,101,38:101,octave,variant,-1 octave(s) from the rest of the song,,//)(baa: 5/)(nia: 4//)(mri: 3//)(tomu: 2/.)(ro: 3//)(ti: 4/)
+rs001367,101,38:110,octave,variant,-1 octave(s) from the rest of the song,,5/)(nia: 4//)(mri: 3//)(tomu: 2/.)(ro: 3//)(ti: 4/)(mo: 5/)
+rs001367,101,38:119,octave,variant,-1 octave(s) from the rest of the song,,4//)(mri: 3//)(tomu: 2/.)(ro: 3//)(ti: 4/)(mo: 5/)
+rs001367,102,40:35,octave,variant,-1 octave(s) from the rest of the song,,(Ni: 6/)(bhri: 5//)(to: 6//)(baa: 5//)(ni: 4) (ti: 4/)(
+rs001367,103,40:44,octave,variant,-1 octave(s) from the rest of the song,,6/)(bhri: 5//)(to: 6//)(baa: 5//)(ni: 4) (ti: 4/)(mo: 5/)(t
+rs001367,103,40:52,octave,variant,-1 octave(s) from the rest of the song,,i: 5//)(to: 6//)(baa: 5//)(ni: 4) (ti: 4/)(mo: 5/)(tibaa: 6-
+rs001417,85,32:213,octave,variant,-1 octave(s) from the rest of the song,,/ 1'/ 6// 6 2' 2'/ 2'/ 2' 2 2 3/) (ne: 2/ 3 4/ 3/ 4/. 5// 6
+rs001425,92,52:25,octave,variant,+1 octave(s) from the rest of the song,,(Taar: 6'/ 7'/) (chhaa: 6'/)(ya: 7'/)(mo: 1''
+rs001425,100,57:25,octave,variant,+1 octave(s) from the rest of the song,,(Taar: 6'/ 7'/) (chhaa: 6'/)(ya: 7'/)(mo: 1''
+rs001537,214,72:50,octave,variant,+1 octave(s) from the rest of the song,,a: 5/ 5 6 6/ 6/ 6- 5/ 5/ 5 6 7/) (mar: 2'/ 1'/. 7// 6// 7//
+rs001620,42,14:220,octave,variant,-1 octave(s) from the rest of the song,,6/ 6/ 6/. 7// 6/ 6/. 7// 6/ 5/. 2// 2/ 2/. 3// 4/. 5/.--)
+rs001687,213,50:32,octave,variant,+1 octave(s) from the rest of the song,,(aa: 2'/)(ji: 2'/ 3'/) (chaai: 1' 3'/) (go: 2'.--)
+rs001687,229,53:110,octave,variant,+1 octave(s) from the rest of the song,,3'//.-) (aa: 2'/)(ji: 2'/ 3'/) (chaai: 1' 3'/)
+rs001739,22,18:23,octave,variant,-1 octave(s) from the rest of the song,,(Mo: 5/)(re: 5/) (aa: 4/)(ro: 5/)
+rs001822,99,28:215,octave,variant,-1 octave(s) from the rest of the song,,//- 4/ 4// 5// 5 4// 5// 4// 5// 3/ 2/ 3 2-- 2/. 5// 5/ 5/ 5
+rs002064,5,9:6,octave,variant,-1 octave(s) from the rest of the song,,(aa: 1/ 2/)(mar: 3-) (ho:
+rs002064,5,9:9,octave,variant,-1 octave(s) from the rest of the song,,(aa: 1/ 2/)(mar: 3-) (ho: 4/)
+rs002064,21,11:101,octave,variant,-1 octave(s) from the rest of the song,,'-- 4// 6/. 6- 5/ 4/ 3/ 4/ 5--) (dhaa: 1/ 2/ 3- 4/ 5/ 6/ 5/)
+rs002064,22,11:110,octave,variant,-1 octave(s) from the rest of the song,,/. 6- 5/ 4/ 3/ 4/ 5--) (dhaa: 1/ 2/ 3- 4/ 5/ 6/ 5/)(ra: 4--)
+rs002064,23,11:127,octave,variant,-1 octave(s) from the rest of the song,,5--) (dhaa: 1/ 2/ 3- 4/ 5/ 6/ 5/)(ra: 4--)
+rs002064,85,22:98,octave,variant,-1 octave(s) from the rest of the song,,4'-- 4// 6/. 6- 5/ 4/ 3/ 4/ 5--) (haa: 1/ 2/ 3- 4/ 5/ 6/ 5/)
+rs002064,86,22:107,octave,variant,-1 octave(s) from the rest of the song,,6/. 6- 5/ 4/ 3/ 4/ 5--) (haa: 1/ 2/ 3- 4/ 5/ 6/ 5/)(ra: 4--)
+rs002064,87,22:124,octave,variant,-1 octave(s) from the rest of the song,,/ 5--) (haa: 1/ 2/ 3- 4/ 5/ 6/ 5/)(ra: 4--)
