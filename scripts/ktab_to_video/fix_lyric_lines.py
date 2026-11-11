@@ -40,6 +40,40 @@ def poem_lines(song):
     return [key(l) for l in lines]
 
 
+def poem_phrases(song):
+    """keys of the phrases that start inside a poem line: Gitabitan marks them with a wide gap"""
+    out = []
+    for l in open(f'data/raw_data/text/lyrics/{song}.txt', encoding='utf-8').read().split('\n'):
+        parts = [key(p) for p in re.split(r'\s{2,}', l.strip()) if key(p)]
+        out += [p for p in parts[1:] if len(p) >= 5]
+    return out
+
+
+def sections(song, poem):
+    """poem lines where a section of the swaralipi ({ ... } groups) first starts, the first section aside;
+    empty when the song has no SNLTR swaralipi"""
+    path = f'data/intermediate_data/swaralipi/{song}.json'
+    if not os.path.exists(path):
+        return set()
+    sys.path.insert(0, os.path.join(HERE, '..', 'swaralipi_player'))
+    import swara_abc as S
+    import match_snltr as M
+    _, lines = S.TP.load(path)
+    found = []
+    for sw, ly in lines:
+        j = next((k for k, c in enumerate(sw) if '{' in c), None)
+        if j is None:
+            continue
+        q = key(M.translit(''.join(ly[j:j + 10]).replace('৹', '')))[:10]
+        if len(q) < 5:
+            continue
+        best = max(((difflib.SequenceMatcher(None, q, p, autojunk=False).find_longest_match(0, len(q), 0, len(p)).size, -i, i)
+                    for i, p in enumerate(poem)), default=None)
+        if best and best[0] >= 5:
+            found.append(best[2])
+    return set(found[1:]) - {0, found[0] if found else 0}
+
+
 def wkey(w):
     return key(''.join(s for s, _ in R.groups(w)))
 
@@ -54,7 +88,7 @@ def line_start(words, i, poem):
         s += wkey(w)
         if len(s) >= 12:
             break
-    best = None
+    cands = []
     for j, p in enumerate(poem):
         if p[0] != k0[0]:
             continue
@@ -62,9 +96,13 @@ def line_start(words, i, poem):
         if n < 5:
             continue
         r = difflib.SequenceMatcher(None, s[:n], p[:n]).ratio()
-        if r >= 0.75 and (best is None or r > best[0]):
-            best = (r, j)
-    return best
+        if r >= 0.75:
+            cands.append((r, j))
+    if not cands:
+        return None
+    top = max(c[0] for c in cands)
+    near = sorted(j for r, j in cands if r >= top - 0.05)   # lines that open alike: the caller picks by order
+    return (top, near[0], near)
 
 
 def last_len(word):
@@ -111,7 +149,7 @@ def parse(body):
     return [(st, st[-1][1] == ':||') for st in out]
 
 
-def fix(text, poem, max_words, max_syl, max_hold):
+def fix(text, poem, max_words, max_syl, max_hold, phrases=(), section_starts=()):
     head, body = text.split('\n\n', 1) if '\n\n' in text else ('', text)
     stanzas = parse(body)
     # units: a run of free words, or a fixed line (:| line); stanza groups keep :|| stanzas apart
@@ -158,8 +196,19 @@ def fix(text, poem, max_words, max_syl, max_hold):
                         found[j] = None
                     break
                 j -= 1
-        for i in range(len(flat)):
-            flat[i][1] = found[i][1] if found[i] else None
+        prev = -1
+        for i in range(len(flat)):                # of lines that open alike, the next one in the poem
+            if found[i]:
+                near = found[i][2]
+                after = [j for j in near if j > prev]
+                pick = (prev + 1) if (prev + 1) in near else (after[0] if after else near[0])
+                if pick > prev + 2 and prev >= 0 and found[i][0] < 0.92:
+                    flat[i][1] = None             # far ahead of the song's place in the poem: a look-alike phrase
+                    continue
+                flat[i][1] = pick
+                prev = pick
+            else:
+                flat[i][1] = None
         keys = [wkey(w) for w in allw]
         for i in range(len(flat)):                # a sung repeat of a phrase inside a poem line: a new line, no capital
             if flat[i][1] is not None or i == 0 or flat[i - 1][1] is not None:
@@ -171,29 +220,56 @@ def fix(text, poem, max_words, max_syl, max_hold):
                 if keys[j:j + 3] == win:
                     flat[i][1] = -2
                     break
+        phr = [False] * len(flat)                 # a phrase of the poem line starts here (Gitabitan's gap)
+        if phrases:
+            for i in range(1, len(flat)):
+                if flat[i][1] is not None:
+                    continue
+                k0 = keys[i]
+                s = ''
+                for w in keys[i:i + 8]:
+                    s += w
+                    if len(s) >= 10:
+                        break
+                for p in phrases:
+                    n = min(len(s), len(p), 10)
+                    if k0 and p[0] == k0[0] and n >= 5 and difflib.SequenceMatcher(None, s[:n], p[:n]).ratio() >= 0.8:
+                        phr[i] = True
+                        break
         if flat:
             if flat[0][1] is None:
                 flat[0][1] = -1                   # a block starts a line anyway
         out, cur, cur_idx, fixed = [], [], None, False
-        for w, idx, mk, in_fixed in flat:
+        phrase_at = set()                         # ids of words where a poem phrase starts
+        for (w, idx, mk, in_fixed), ph in zip(flat, phr):
             if cur and idx is not None and not (fixed and in_fixed):
                 out.append((cur, cur_idx, fixed)); cur = []
             if not cur:
                 cur_idx, fixed = idx, in_fixed
-            cur.append(recase(w, idx is not None and idx >= 0 and not cur) if True else w)
+            cur.append(recase(w, idx is not None and idx >= 0 and not cur))
+            if ph and len(cur) > 1:
+                phrase_at.add((len(out), len(cur) - 1))
             if mk:
                 cur[-1] = cur[-1] + ' ' + mk
                 out.append((cur, cur_idx, fixed)); cur = []
         if cur:
             out.append((cur, cur_idx, fixed))
         res = []
-        for ws, idx, fx in out:
+        for li, (ws, idx, fx) in enumerate(out):
             if idx is not None and idx >= 0:
                 n_starts += 1
             if fx or ws[-1].endswith(':|'):
                 res.append((' '.join(ws), idx))
                 continue
-            parts = split_long(ws, max_w, max_syl)
+            nsy = [len(R.groups(w)) for w in ws]
+            parts = [ws]
+            if len(ws) > max_w or sum(nsy) > max_syl:  # too long: first at the poem's own phrase breaks
+                cuts_at = sorted(k for (l2, k) in phrase_at if l2 == li)
+                bounds = [0] + cuts_at + [len(ws)]
+                pieces = [ws[a:b] for a, b in zip(bounds, bounds[1:]) if b > a]
+                if len(pieces) > 1 and all(sum(len(R.groups(w)) for w in p) >= 3 for p in pieces):
+                    parts = pieces
+            parts = [q for p in parts for q in split_long(p, max_w, max_syl)]
             for k, p in enumerate(parts):
                 res.append((R.cap_end_hold(' '.join(p), max_hold, cuts), idx if k == 0 else None))
         merged = []                               # a lone continuation word: back onto the line before
@@ -216,7 +292,10 @@ def fix(text, poem, max_words, max_syl, max_hold):
         st, seen_max, returned = [], -1, False
         for l, idx in ls:
             if idx is not None and idx >= 0:
-                if idx == 0 and seen_max > 1:
+                if section_starts:                # the swaralipi's sections: a new one the first time it is sung
+                    if idx in section_starts and idx > seen_max and st:
+                        out_stanzas.append(st); st = []
+                elif idx == 0 and seen_max > 1:
                     returned = True
                 elif returned and idx > seen_max and st:
                     out_stanzas.append(st); st = []; returned = False
@@ -254,7 +333,8 @@ def main():
     for s in songs:
         p = last[s]
         text = open(p, encoding='utf-8').read()
-        new, n, cuts = fix(text, poem_lines(s), a.max_words, a.max_syllables, a.max_hold)
+        poem = poem_lines(s)
+        new, n, cuts = fix(text, poem, a.max_words, a.max_syllables, a.max_hold, poem_phrases(s), sections(s, poem))
         if n < 3:
             print(f'{s}: only {n} line starts found in the lyrics; left as it is')
             continue
