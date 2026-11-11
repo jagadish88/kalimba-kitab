@@ -1,0 +1,58 @@
+X:1
+T:rs001283
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001283.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (ক্লান্তি আমার ক্ষমা করো প্রভু,), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs001283.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 189 of 189 (MIDI has 228); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:3/8
+L:1/16
+Q:1/4=60
+K:C
+C3 D E2 | E2 E4 | E2 E2 E D | D3 B, D2 |
+w: Klaan-_-ti | aa-mar | ksho a-ko _ | ro _ pro- |
+C6- | C6 | E2 E2 D2 | C2 B,2 C2 |
+w: Bhu | _ | Pa-the jo-|di pi-chhiye |
+D6- | D2 B,2 C2 | C3 G G2 | ^F3 E =F2 |
+w: Ye | _ pi-chhi-|ye _ po-|ri _ ko- |
+E6- | E3 D2 E |
+w: Shu-|_-_-_- |
+C3 D E2 | E2 E4 | E2 E2 E D | D3 B, D2 | C6- | C6 | e4 e2 | e2 e3 d | e2 d4 | d2 c4 |
+w: _-_-Je | je hi-|ya _ _ _ | _ _ _ | _ | _ | tha-_-|_-_-ro-|_-tha-|_-ro |
+d2 c4 | B2 A4 | c2 B4 | A2 G4 |
+w: Knaa-pe | aa-ji | e-mon-|ta-ro |
+G3 B B2 | A2 G4 | C2 C3 D | E2 E4 |
+w: Ei _ be-|do-na | ksho a-_-|ko ro |
+C2 C2 D E | E2 E3 D | C2 C3 B | A2 G4 |
+w: Kha-ma _ _ | ko ro _ | kha-ma _ | ko ro |
+^F2 E4- | E6 | E2 E2 D2 | C2 B,2 C2 |
+w: Pro-bhu | _ | Pa-the jo-|di pi-chhiye |
+D6- | D2 B,2 C2 | C3 G G2 | ^F3 E =F2 |
+w: Ye | _ pi-chhi-|ye _ po-|ri _ ko- |
+E6- | E3 D2 E | C3 D E2 | E2 E4 | E2 E2 E D | D3 B, D2 | C6- | C6 |
+w: Shu-|_-_-_-|* * * | * * | * * * * | * * * | * | _ |
+G,3 A, B,2 | B,2 B,4 | B,2 B,2 B,2 | A, B,2 A, B,2 |
+w: E _ di-|no-ta | ksho a-ko | ro _ _ pro- |
+C6- | C6 | C2 C2 B, D | D2 D4 |
+w: Bhu | _ | Pi-chhon _ _ | paa-ne |
+D2 D B, D E | E2 E4 | E2 E4- | E6 |
+w: Taa-kai _ _ _ | jo-di | ko-bhu | _ |
+G,3 A, B,2 | B,2 B,4 | B,2 B,2 B,2 | A, B,2 A, B,2 |
+w: E _ di-|no-ta | ksho a-ko | ro _ _ pro- |
+C6- | C6 |
+w: Shu-|_- |
+e2 e4 | e2 e3 d | e4 d2 | d2 c4 |
+w: Di-ner | taa-pe _ | rou-dro-|jwaa-lay |
+d2 c4 | B2 A4 | c2 B4 | A2 G4 |
+w: Shu-kaay | maa-la | pu-jaar | thaa-lay |
+B4 B2 | A2 G4 | C2 C3 D | E2 E4 |
+w: Sei mlaa-|no-ta | ksho a-_-|ko ro |
+C2 C2 D E | E2 E3 D | C2 C3 B | A2 G4 |
+w: Kha-ma _ _ | ko ro _ | kha-ma _ | ko ro |
+^F2 E4- | E6 | E2 E2 D2 | C2 B,2 C2 |
+w: Pro-bhu | _ | Pa-the jo-|di pi-chhiye |
+D6- | D2 B,2 C2 | C3 G G2 | ^F3 E =F2 |
+w: Ye | _ pi-chhi-|ye _ po-|ri _ ko- |
+E6- | E3 D2 E | C3 D E2 | E2 E4 | E2 E2 E D | D3 B, D2 | C6- | C6 |]
+w: Shu-|_-_-_-|* * * | * * | * * * * | * * * | * | _ |

@@ -29,7 +29,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import text_player as TP  # noqa: E402
-from match_snltr import translit  # noqa: E402
+from match_snltr import translit, key  # noqa: E402
 
 NAMES = ['C', '^C', 'D', '^D', 'E', 'F', '^F', 'G', '^G', 'A', '^A', 'B']
 SPLIT = {1: [4], 2: [2, 2], 3: [2, 1, 1], 4: [1, 1, 1, 1]}
@@ -213,7 +213,11 @@ def latin_line(syls, L, after=0):
                 b = we
         piece = ''.join(L.text[L.pos[i]] for i in range(a, min(b, len(L.pos))))
         end_word = b >= we
-        out.append((piece or rough[k], end_word))
+        # a spelling that looks nothing like the syllable itself came from a wrong match: keep the
+        # syllable's own transliteration (and let it end its word)
+        if not piece or difflib.SequenceMatcher(None, key(rough[k]), key(letters(piece))).ratio() < 0.6:
+            piece, end_word = rough[k], True
+        out.append((piece, end_word))
     return out
 
 

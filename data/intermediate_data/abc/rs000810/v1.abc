@@ -1,0 +1,49 @@
+X:1
+T:rs000810
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000810.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (একি লাবণ্যে পূর্ণ প্রাণ, প্রাণেশ হে), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs000810.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 234 of 236 (MIDI has 330); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+M:3/4
+L:1/8
+Q:1/4=120
+K:C
+^A3 c2 ^A | G4 F2 | ^D4 ^D2 | D3 B, C2- | C2 D3 E | F3 E E2 | F6- | F2 B2 B2 |
+w: La-_-_-|bo-nye | pur-no | praa-_-n | _ praa-_-|ne-_-sh | he-|_-e ki |
+B c d c2 B | G4 F2 | ^D4 ^D2 | D3 B, C2- | C2 D3 E | F3 E E2 | F6- | F6 |
+w: La-_-_-_-_-|bo-nye | pur-no | praa-_-n | _ praa-_-|ne-_-sh | hey | _ |
+F6 | F4 D2 | ^D6 | ^D3 =D C2 | D6 | C/ D/ C2 B, B,2 | C6- | C2 B2 B2 | B c d c2 B | G4 F2 |
+w: Aa-|non-do-|ba-|so-_-to | * | * * * * * | * | _ * * | * * * * * | * * |
+^D4 ^D2 | D3 B, C2- | C2 D3 E | F3 E E2 | F6- | F6 | ^d2 ^d2 =d2 | ^d6 | d4 d2 | d2 c2 B2 |
+w: Bi-ko-|shi-* * | _ * * | * * * | * | _ | to _ pri-|_-|ti-ku-|_-su-m |
+c6 | B c d e2 f | f6 | f4 d2 |
+w: Hey | _ _ _ _ _ | Aa-|non-do- |
+^d6 | ^d3 =d c2 | d6 | c/ d/ c2 B B2 |
+w: Bo-|so _ t-|a | a _ _ _ go |
+c6- | c6 | ^d2 ^d2 =d2 | ^d6 |
+w: Me | _ | Bi-ko-shi-|to |
+d4 d2 | d2 c2 B2 | c6- | c2 B c d ^d | d d c c ^A ^A | G G F F D D | C2 D/ F/ G ^A/ c/ d- | d ^d5 |
+w: Pri-ti-|ku-su-m | hey | _ _ _ _ _ | _ _ _ _ _ _ | _ _ _ _ _ _ | _ _ _ _ _ _ _ | _ _ |
+^d2 ^d2 =d2 | ^d6 | d4 d2 | d2 c2 B2 | c2 B2 G2 |
+w: Bi-ko-shi-|to | pri-ti-|ku-su-m | _ _ _ |
+F2 ^D2 =D2 | ^D2 ^D2 F2- | F B B2 B2 | B c d c2 B | G4 F2 | ^D4 ^D2 | D3 B, C2- | C2 D3 E | F3 E E2 | F6- | F6 | F3 G2 F | D2 ^D2 =D2 | ^D6 | D2 B,2 C2 |
+w: Ji-* * | * * * | _ * * * | * * * * * | _ _ | _ _ | bo-* * | _ * * | * * * | * | _ | * * * | * no-la-|ta | o bo-nota |
+B,2 C3 B, | C2 ^D2 =D2 | F ^D2 =D2 ^D | F6 |
+w: Ta-_-_-|to bo cha-|ro-_-_-_-|ne |
+F G ^G =G2 F | D2 ^D2 =D2 | F ^D2 =D2 ^D | D2 B,2 C2 |
+w: Ji-_-_-_-_-|bo-no-la-|_-ta o _ | _ bo-nota |
+B,2 C3 B, | C2 ^D2 =D2 | F ^D2 =D2 ^D | F6 |
+w: Ta-_-_-|to bo cha-|ro-_-_-_-|ne |
+^d2 ^d2 =d2 | ^d4 ^d2 | d4 d2 | c/ d/ c2 B B2 |
+w: Ha-ro-sho-|gi-to | u chho-|si-_-_-_-to |
+c6 | B c d e2 f | f6 | f4 d2 |
+w: Hey | _ _ _ _ _ | Aa-|non-do- |
+^d6 | ^d3 =d c2 | d6 | c/ d/ c2 B B2 |
+w: Bo-|so _ t-|a | a _ _ _ go |
+c6- | c6 | ^d2 ^d2 =d2 | ^d4 ^d2 |
+w: Me | _ | Ha-ro-sho-|gi-to |
+d4 d2 | c/ d/ c2 B B2 | c6- | c2 B c d ^d | d d c c ^A ^A | G G F F D D | C2 D/ F/ G ^A/ c/ d- | d ^d5 |
+w: U chho-|si-_-_-_-to | hey | _ _ _ _ _ | _ _ _ _ _ _ | _ _ _ _ _ _ | _ _ _ _ _ _ _ | _ _ |
+^d2 ^d2 =d2 | ^d4 ^d2 | d4 d2 | c/ d/ c2 B B2 | c2 B2 G2 | F2 ^D2 =D2 | ^D2 ^D2 F2- | F B B2 B2 | B c d c2 B | G4 F2 | ^D4 ^D2 | D3 B, C2- | C2 D3 E | F3 E E2 | F6 |]
+w: Ha-ro-sho-|gi-to | u-chchho-|si-_-_-_-to | * * * | * * * | * * * | _ * * * | * * * * * | * * | * * | * * * | _ * * | * * * | * |

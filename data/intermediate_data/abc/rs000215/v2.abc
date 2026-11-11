@@ -1,0 +1,72 @@
+X:1
+T:rs000215
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000215.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (আমার রাত পোহালো শারদ প্রাতে), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs000215.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 243 of 250 (MIDI has 295); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:3/8
+L:1/16
+Q:1/4=75
+K:C
+^G,2 =G,3 ^G, |
+w: Aa-mar _ |
+^A,3 C2 ^D | ^D2 ^C4 | C6- | C6 |
+w: Raat _ _ | po-ha-|lo | _ |
+C2 ^C2 ^C =C | ^A,4 C ^A, | G,5 ^G, | ^A,2 C3 ^C |
+w: Shaa-ro-do _ | praa-_-_-|te _ | aa-maa _ |
+^A,3 C2 ^D | ^D2 ^C4 | C6- | C6 |
+w: Raat _ _ | po-ha-|lo | _ |
+D2 ^D4- | ^D5 C | C2 ^C4- | ^C6 |
+w: Bnaa-shi | _ _ | baan shi | _ |
+F2 F4 | ^D =D ^D4 | D2 ^D3 ^C | C2 ^C2 ^C =C |
+w: To-may | di-_-ye | jaa-bo _ | kaa-har _ _ |
+^A,2 C3 ^A, | ^G,2 =G,3 ^G, |
+w: Haa-te _ | To-mar _ |
+^A,3 C2 ^D | ^D2 ^C4 | C6- | C6 |
+w: Aamarraat _ _ | po-ha-|lo | _ |
+C2 C4 | C2 C3 ^C | ^D6 | F5 G | ^D2 F G2 ^G | F G F4- | F6- | F6 |
+w: To-mar | bu-ke _ | baaj-|lo _ | _ _ _ _ | dhwo-_-ni | _ | _ |
+F G F2 G F | ^D =D ^D4 | D2 ^D4 | ^D =D ^D3 ^C |
+w: Bi-_-day-_-_-|gaa-_-tha | a-go-|m-_-oni _ |
+C5 ^C | F ^D =D ^D2 ^C | C6- | C6 |
+w: Ka-_-|to _ _ _ _ | je | _ |
+C3 ^D ^D2 | D2 ^D4 | D2 ^D4 | D2 F ^D3 |
+w: Phaal-_-gu-|ne shraa-|bo-ne | ka-to _ |
+^G,2 ^G,4 | ^A,2 ^A,3 C | C5 D | ^D =D ^D3 ^C | C5 ^C | ^D2 ^C4 | C6- | C6 | ^G,4 ^G,2 | ^G,2 ^G,3 ^A, | ^A,2 C4 | C2 C4 |
+w: Je katha | * * * | * * | * * * * | * * | * * | * | _ | roy _ | _ _ _ | praa-ner | bhi-tor |
+C5 ^C | ^C2 =C ^D ^C2 | C6- | C6 |
+w: A-_-|go-_-_-cha-|re | _ |
+^C2 ^C4 | ^C2 ^C4 | ^C2 =C3 ^D | ^C2 ^C4 |
+w: Gaa-ne | gaa-ne | ni-e-_-|chhi-le |
+C2 ^A,4 | C2 ^G,3 ^A, | ^A,5 C | C ^C2 ^D ^C2 |
+w: Chu-ri | ko-re _ | o _ | a-_-_-cho |
+C6- | C6 |
+w: Re | _ |
+^G,4 ^G,2 | ^G,2 ^G,3 ^A, | ^A,2 C4 | C2 C4 |
+w: Je katha | roy _ _ | praa-ner | bhi-tor |
+C5 ^C | ^C2 =C ^D ^C2 | C6- | C6 |
+w: A-_-|go-_-_-cha-|re | _ |
+^C2 ^C4 | ^C2 ^C4 | ^C2 =C3 ^D | ^C2 ^C4 |
+w: Gaa-ne | gaa-ne | ni-e-_-|chhi-le |
+C2 ^A,4 | C2 ^G,3 ^A, | ^A,5 C | C ^C2 ^D ^C2 |
+w: Chu-ri | ko-re _ | o _ | a-_-_-cho |
+C6- | C6 | C2 C4 | C2 C3 ^C |
+w: Re | _ | Sa-may | je taar _ |
+^D2 F3 G- | G ^D4 ^G | G2 F4- | F6 |
+w: Ho-lo _ | _ _ _ | ga-to | _ |
+F G F2 G F | ^D =D ^D4 | D2 ^D4 | D2 ^D3 ^C |
+w: Ni-_-shi-_-_-|she-_-sher | taa-rar | mo-to _ |
+C2 ^C3 =C | ^A,2 C4 |
+w: Ho-lo _ | ga-to |
+C2 C4 | C2 C3 ^C |
+w: So mo | je taar _ |
+^D2 F3 G- | G ^D4 ^G | G2 F4- | F6 |
+w: Ho-lo _ | _ _ _ | ga-to | _ |
+F G F2 G F | ^D =D ^D4 | D2 ^D4 | D2 ^D3 ^C |
+w: Ni-_-shi-_-_-|she-_-sher | taa-rar | mo-to _ |
+C2 ^C3 =C | ^A,2 C4 | C3 ^D ^D2 | D2 ^D4 |
+w: Ho lo _ | go to | Shesh _ ko-|re daao |
+D4 ^D2 | D2 ^D4 | ^G,2 ^G,4 | ^A,5 C | C5 D | ^D =D ^D3 ^C | C5 ^C | ^D2 ^C4 | C6- | C6 | C2 ^C2 ^C =C | ^A,4 C ^A, | G,5 ^G, | ^A,2 C3 ^C | ^A,3 C2 ^D | ^D2 ^C4 | C6- | C6- | C6 |]
+w: Shiu-li-|phu-ler | ma-ron | saa-_-|* * | * * * * | * * | * * | * | _ | * * * * | * * * | * * | * * * | * * * | * * | * | _ | _ |

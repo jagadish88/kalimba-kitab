@@ -1,0 +1,96 @@
+X:1
+T:rs000588
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000588.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (চরণ ধরিতে দিয়ো গো আমারে), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs000588.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 312 of 314 (MIDI has 419); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:5/8
+L:1/16
+Q:1/4=60
+K:C
+^A,2 C2 C4 C2 | C4 C2 C2 ^A,2 |
+w: Cha-ra-no dho-|ri-te _ _ |
+C2 ^D2 ^D4 =D2 | ^D3 =D ^D4 F2 |
+w: Di-yo go aa-|ma-_-re niyo |
+^D4 ^C =C ^A, ^G, ^A,2 | C3 ^C =C ^C F ^D ^D2 |
+w: Yo na _ _ _ ni-|yo _ naa _ _ _ so |
+^D3 ^C =C6 | C2 C2 C3 ^G ^G2 |
+w: Ra-_-ye | Ji-bo-n _ ma- |
+G4 G5 ^D | G2 G ^G =G3 ^A ^G =G |
+w: Ro-n _ | su-kh _ du-_-kh _ |
+^G3 =G F6 | C3 F F4 F2 | F2 G2 G3 D ^D2 |
+w: Di-_-ye | bo-_-kkhe dho-|* * * * * |
+F3 G ^A3 ^G3 | ^D2 ^D =D F ^D3 ^C2 | C4 C6 | ^G2 ^G2 ^G4 ^G2 | ^G4 ^G5 ^A |
+w: * * * Skho-|* * * * * * | * * | li-to shi-thi-|lo _ _ |
+^A2 c2 c3 ^c ^A2 | c10 |
+w: Kaa-mo-na-_-r | bhaar |
+^d2 ^d2 ^d4 =d2 | ^d3 =d ^d5 ^c |
+w: Bo-hi-ya bo-|hi-_-ya _ |
+c2 ^c2 =c ^c2 ^d ^c2 | c9 ^G |
+w: Phi-ri ka-_-_-to | aar _ |
+^G2 ^G2 ^G4 ^G2 | ^G4 ^G5 ^A |
+w: Skho-li-to shi-|thi-lo _ |
+^A2 c2 c3 ^c ^A2 | c10 |
+w: Kaa-mo-na-_-r | bhaar |
+^d2 ^d2 ^d4 =d2 | ^d3 =d ^d5 ^c |
+w: Bo-hi-ya bo-|hi-_-ya _ |
+c2 ^c2 =c ^c2 ^d ^c2 | c10 |
+w: Phi-ri ka-_-_-to | aar |
+^A2 c2 ^c4 =c2 | ^c4 =c6 |
+w: Ni-jo haa-te | tu-mi |
+^c2 =c2 c3 ^A ^A G | G ^A2 ^G2 =G5 |
+w: Gne-the ni-_-yo _ | haar _ _ _ |
+G2 G2 G4 G2 | G4 G3 ^D ^D2 | G2 F G G ^A2 ^G3 | ^D2 ^D =D F ^D3 ^C2 |
+w: Phe-lo-na a-|ma-re _ chha-|* * * * * * | * * * * * * |
+C4 C6 | C2 C2 C4 C2 | C4 C5 ^C |
+w: Chi-ro-|pi-pa-si-to | _ _ _ |
+^D2 ^D2 F4 F2 | F4 F6 |
+w: Ba-so-na be-|do-na |
+F3 ^d ^d4 =d2 | c4 ^G5 ^A |
+w: Bnaa-_-chao taa-|ha-re _ |
+^d2 ^c2 =c6 | ^c3 =c c4 c2 |
+w: Maa-ri-ya | Shesh _ joye _ |
+^c4 =c6 | ^c3 =c c3 ^A ^A ^G |
+w: Je-no | hoy _ se _ bi-_- |
+^G4 =G6 | c2 ^A2 ^G4 =G2 |
+w: Jo-yee | to-maa-ri kaa- |
+^D3 ^C =C5 ^C | ^D2 ^C2 =C6 |
+w: Chhe-_-te _ | haa-ri-ya |
+C2 C2 C4 C2 | C4 C5 ^C |
+w: Chi-ro-pi-pa-|si-to _ |
+^D2 ^D2 F4 F2 | F4 F6 |
+w: Ba-so-na be-|do-na |
+F3 ^d ^d4 =d2 | c4 ^G5 ^A |
+w: Bnaa-_-chao taa-|ha-re _ |
+^d2 ^c2 =c6 | ^c3 =c c4 c2 |
+w: Maa-ri-ya | Shesh _ joye _ |
+^c4 =c6 | ^c3 =c c3 ^A ^A ^G |
+w: Je-no | hoy _ se _ bi-_- |
+^G4 =G6 | c2 ^A2 ^G4 =G2 |
+w: Jo-yee | to-maa-ri kaa- |
+^D3 ^C =C5 ^C | ^D2 ^C2 =C6 |
+w: Chhe-_-te _ | haa-ri-ya |
+C ^G ^G2 ^G4 ^G2 | ^G4 ^G5 ^A |
+w: Bi-_-ka-ye bi-|ka-ye _ |
+^A2 c2 c3 ^c ^A2 | c4 c6 |
+w: Di-no aa-_-po-|na-re |
+c2 ^d2 ^d4 =d2 | ^d3 =d ^d3 ^c2 =c |
+w: Paa-ri na phi-|ri-_-te _ _ |
+c2 ^c2 ^d4 ^c2 | ^c4 =c6 |
+w: Du-yaa re du-|yaa re |
+C ^G ^G2 ^G4 ^G2 | ^G4 ^G5 ^A |
+w: Bi-_-ka-ye bi-|ka-ye _ |
+^A2 c2 c3 ^c ^A2 | c4 c6 |
+w: Di-no aa-_-po-|na-re |
+c2 ^d2 ^d4 =d2 | ^d3 =d ^d3 ^c2 =c |
+w: Paa-ri na phi-|ri-_-te _ _ |
+c2 ^c2 ^d4 ^c2 | ^c4 =c6 |
+w: Du-yaa re du-|yaa re |
+c ^A c2 ^c4 =c2 | ^c4 =c6 |
+w: To-_-ma-ri ko-|ri-ya |
+^c2 =c2 c3 ^A ^A G | ^G4 =G6 |
+w: Ni-yo go _ aa-_-|ma-re |
+G2 G2 G4 G2 | G4 G3 ^D ^D2 | G3 ^A ^G6 | ^D2 ^D =D F ^D3 ^C2 | C4 C6 | C2 ^D2 ^D4 =D2 | ^D3 =D ^D4 F2 | ^D4 ^C =C ^A, ^G, ^A,2 | C3 ^C =C ^C F ^D ^D2 | ^D3 ^C =C6 | C2 C2 C3 ^G ^G2 | G4 G5 ^D | G2 G ^G =G3 ^A ^G =G | ^G3 =G F6 | C3 F F4 F2 | F2 G2 G3 D ^D2 | F3 G ^A3 ^G3 | ^D2 ^D =D F ^D3 ^C2 | C4 C6 |]
+w: Ba-ro-ne-r | maa-la _ pa-|* * * | * * * * * * | * * | * * * * | * * * * | * * * * * * | * * * * * * * | * * * | * * * * * | * * * | * * * * * * * | * * * | * * * * | * * * * * | * * * * | * * * * * * | * * |

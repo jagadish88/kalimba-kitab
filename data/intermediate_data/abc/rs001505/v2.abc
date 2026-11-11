@@ -1,0 +1,72 @@
+X:1
+T:rs001505
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001505.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (নীল দিগন্তে ওই ফুলের আগুন লাগল), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs001505.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 247 of 249 (MIDI has 308); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:3/8
+L:1/16
+Q:1/4=125
+K:C
+z2 ^A/ ^G7/2 |
+w: * Nee |
+B2 B4 | c6- | c6- | c2 B2 ^d2 |
+w: Di-gan-|te | _ | _ oi _ |
+^d2 ^d4 | ^c2 =c4 | c/ ^A11/2 | ^A/ ^G7/2 ^A ^G |
+w: Phu-ler | aa-gun | _ laag-|_-lo _ _ |
+^G/ =G7/2 ^G2 | ^G/ c11/2- | c6 | ^A2 ^A/ ^G7/2 |
+w: _ Laag-_-|_-lo | _ | _ _ nee |
+B2 B4 | c6- | c6- | c2 B2 ^d2 |
+w: Di-gan-|te | _ | _ oi _ |
+^d2 ^d4 | ^c2 =c4 | c/ ^A11/2 | ^A/ ^G7/2 ^A ^G |
+w: Phu-ler | aa-gun | _ laag-|_-lo _ _ |
+^G/ =G7/2 ^G2 | ^G/ c11/2- | c6- | c2 ^G4 |
+w: _ Laag-_-|_-lo | _ | _ nee |
+B2 B4 | c6 | C ^G ^G4 | ^G/ =G11/2- | G6- | G2 G2 ^G =G | G/ F3/2 G4 | G ^A ^A/ ^G3/2 =G2 |
+w: Di go | te | Ba-_-son-|_-te | _ | _ sou-_-_-|_-ra-bher | shi-_-_-kha _ |
+F/ E11/2 | F2 E2 ^A2 |
+w: _ Aa-|lo _ _ |
+^A/ ^G3/2 ^G4 | ^G/ =G11/2- | G6- | G2 G2 ^G =G | G/ F3/2 G4 | G ^A ^A/ ^G3/2 =G2 |
+w: Ba-_-son-|_-te | _ | _ sou-_-_-|_-ra-bher | shi-_-_-kha _ |
+F/ E11/2 | F2 ^G4 | B2 B4 | c6- |
+w: _ Jaag-|lo Nil | _ _ | _ |
+c4 ^G2 | ^G2 B2 c2 |
+w: _ Aa-|ka-sher _ |
+c/ ^c3/2 ^c/ =c7/2 | c/ B3/2 c4 | ^d2 ^d4 | ^d/ ^c3/2 =c4 |
+w: _ Laa-_-ge | _ dhnaa-dha | ro-bir | _ aa-lo |
+c/ ^A7/2 c2 | c/ ^A3/2 ^A4 | ^G6- | ^G2 ^A2 ^G2 | ^G/ =G11/2- | G2 G2 G2 | ^G2 ^G4 | ^G2 ^G4 |
+w: _ Oi ki | _ bnaa-dha | _ | _ _ _ | _ _ | _ Bu-jhi | dha-rar | kaa-chhe |
+^G/ =G7/2 G ^A | ^A/ ^G3/2 =G2 ^G =G | F2 E2 F2 | G6- | G6 | G2 G4 |
+w: _ Aap-na-_-|_-ke se _ _ | maag-_-_-|lo | _ | bu jhi |
+^G2 ^G4 | ^G2 ^G4 |
+w: Dha-rar | kaa-chhe |
+^G/ =G7/2 G ^A | ^A/ ^G3/2 =G2 ^G =G | F2 E2 F2 | G6 |
+w: _ Aap-na-_-|_-ke se _ _ | maag-_-_-|lo |
+B4 B2 | c2 c2 B2 |
+w: Sor-she-|khe-te _ |
+c2 ^d2 ^d2 | ^d/ ^c3/2 =c2 ^c =c | c/ B11/2 | c2 c/ ^G7/2 | B2 B4 | c6- | c6- | c2 C2 ^G2 |
+w: Phu _ ho-|_-ye taai _ _ | _ jaag-|lo _ N-|_-_-|nee | _ | _ _ _ |
+^G2 ^G4 | ^G/ =G11/2- | G6- | G2 C2 ^G2 |
+w: Di-gan-|_-te | _ | _ nee _ |
+^G2 ^G4 | ^G/ =G3/2 G4 | F2 G4 | G ^A ^A/ ^G3/2 =G2 |
+w: Di-gan-|_-te mor | be-dan-|kha-_-_-ni _ |
+F G ^G =G F G | G/ ^D11/2 | ^D/ ^A3/2 ^A4 | ^A/ ^G3/2 =G4 |
+w: Laag-_-_-_-_-_-|_-lo | _ A-nek | _ kaa-ler |
+F2 ^D4 | ^D/ F3/2 F2 G F | F/ ^D3/2 ^C4 | C6 |
+w: Mo-ner | _ ka-tha _ _ | _ jaag-_-|lo |
+^G2 ^G4 | B2 c4 | c/ ^c3/2 ^c2 ^c/ =c3/2 | c/ B3/2 c4 |
+w: E-lo | aa-mar | _ haa-ri-_-ye | _ jaawa yaa |
+c2 ^d2 ^d2 | ^d/ ^c3/2 =c4 | c/ ^A3/2 c4 | c/ ^A3/2 ^A4 | ^G6- | ^G2 ^A2 ^G2 | G6 | G2 G4 |
+w: Ko _ phaa-|_-gu-ner | _ paa-gol | _ haa-yaa | _ | _ _ _ | _ | Bu-jhi |
+C2 ^G2 ^G2 | ^G2 ^G4 | ^G/ =G7/2 G ^A | ^A/ ^G3/2 =G2 ^G =G |
+w: Ei _ phaa-|gu-ne | _ aap-na-_-|_-ke se _ _ |
+F2 E2 F2 | G6 |
+w: Maag-_-_-|lo |
+C2 ^G2 ^G2 | ^G2 ^G4 | ^G/ =G7/2 G ^A | ^A/ ^G3/2 =G2 ^G =G |
+w: E _ phaa-|gu-ne | _ aap-na-_-|_-ke se _ _ |
+F2 E2 F2 | G6 | B4 B2 | c2 c2 B2 |
+w: Maag-_-_-|lo | Sor-she-|khe-te _ |
+c2 ^d2 ^d2 | ^c2 =c2 ^c =c | B6 | c2 ^G4 | B2 B4 | c6- | c6 |]
+w: Dheu _ ho-|ye taai _ _ | jaag-|lo nee | _ _ | _ | _ |

@@ -1,0 +1,90 @@
+X:1
+T:rs001620
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001620.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (ও জোনাকি , কী সুখে ওই ডানা দুটি মেলেছ), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs001620.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 375 of 376 (MIDI has 467); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:3/8
+L:1/16
+Q:1/4=100
+K:C
+C2 C2 C2 |
+w: Jo-na-ki |
+C3 A A2 | A2 A3 ^A | A2 A3 ^A |
+w: Ki _ su-|khe oi _ | daa-na _ |
+A2 G3 D | D2 D3 E | F3 G3 | F3 G F2 | E2 D C3 |
+w: du-ti Me | le-_-_-|chho _ | o _ j-|a ki _ |
+C3 A A2 | A2 A3 ^A |
+w: Kee _ su-|khe oi _ |
+A2 A3 ^A |
+w: Daa-na _ |
+A2 G3 D | D2 D3 E | F3 G3 |
+w: du-ti Me-|le-_-_-|chho _ |
+C2 C3 F | F2 F4- | F6- | F4 E2 | D2 D3 G | G ^F G4- | G6- | G6 | A4 B2 | c2 c B2 d | c2 B c2 A | G5 D | D3 ^A ^A2 | A2 G4 | C3 A A2 | A2 A3 ^A | A2 A3 ^A | A2 G3 D | D2 D3 E | F3 G3 | F3 G F2 | E2 D C3 | C3 A A2 | A2 A3 ^A | A2 A3 ^A | A2 G3 D | D2 D3 E | F3 G3- | G6- | G2 G2 G2 | G4 G2 | A4 B2 |
+w: Aan-dhar _ | maa jhe | _ | _ _ | bo-ner _ | maa-_-jhe | _ | _ | u-lla-|se praan _ _ | _ _ _ _ | Tu-_-|_-_-_-|_-mi | * * * | * * * | * * * | * nao _ | _ _ _ | _ to | _ _ _ | _ _ _ | _ su-* | * * * | * * * | * * * | * * * | * * | _ | _ * * | * * | * rjo |
+c4 d2 | d e2 d c B | c6 | c2 B3 c |
+w: Nao to | chan-_-_-_-_-|dro | to-mar _ |
+A B2 A B2 | c4 d2 | c4 c B | c4 B2 |
+w: Taai _ _ bo-|le ki | kam aa-_-|no-_- |
+c4 B c- | c2 G2 G2 | G4 G2 | A4 B2 |
+w: Do _ _ | _ Tu-mi | nao to | sur-jo |
+c4 d2 | d e2 d c B | c6 | c2 B3 c |
+w: Nao to | chan-_-_-_-_-|dro | to-mar _ |
+A B2 A B2 | c4 d2 | c4 c B | c4 B2 |
+w: Taai _ _ bo-|le ki | kam aa-_-|no-_- |
+c4 B c | A2 G4 | A2 B4 | c2 c2 B d |
+w: Do _ _ | Tu-mi | aa-pon | ji-bon _ _ |
+c4 B2 | A2 G4 | A2 A3 ^A |
+w: Pur-no | ko-re | aa-pon _ |
+A2 G3 D | D2 D3 E | F3 G3 | F3 G F2 | E2 D C3 |
+w: aa-lo Je-|le-_-_-|chho _ | o _ j-|a ki _ |
+C3 A A2 | A2 A3 ^A | A2 A3 ^A | A2 G3 D | D2 D3 E | F3 G3 | F3 G F2 | E2 D C3 |
+w: Jo-na-* | * * * | * * * | * * * | * * * | * * | * * * | * * ki |
+C3 A A2 | A2 A3 ^A | A2 A3 ^A | A2 G3 D | D2 D3 E | F3 G3- | G6- | G2 C2 C2 | C3 F F2 | F2 F E2 G |
+w: Ki _ su-|khe oi _ | daa-na _ | du-ti _ | _ _ _ | _ _ | _ | _ to maar | jaa _ aa | chh-o _ _ |
+G2 G4 | G2 G4- | G6- | G2 G2 G2 |
+w: To-mar | aa-chhe | _ | _ tu-mi |
+A4 B2 | c2 d4 | c2 B2 c B | A2 G4- | G6- | G2 G2 G2 | A4 B2 | c2 d4 |
+w: Nao go | ri-ni | kaa-ro _ _ | kaa-chhe | _ | _ To-mar | o to-|re je |
+c4 B2 | A2 G4 | A2 A3 ^A |
+w: Shok-ti | aa-chhe | taa-ri _ |
+A2 G3 D | D2 D2 E2 | F3 G3- | G6- | G2 C2 C2 | C3 F F2 | F2 F E2 G |
+w: aa-desh Pe | le-_-_-|chho _ | _ | _ To-mar | ja _ aa-|chhe taa _ _ |
+G2 G4 | G2 G4- | G6- | G2 G2 G2 |
+w: To-mar | aa-chhe | _ | _ tu-mi |
+A4 B2 | c2 d4 | c2 B2 c B | A2 G4- | G6- | G2 G2 G2 | A4 B2 | c2 d4 |
+w: Nao go | ri-ni | kaa-ro _ _ | kaa-chhe | _ | _ To-mar | o to-|re je |
+c4 B2 | A2 G4 | A2 A3 ^A |
+w: Shok-ti | aa-chhe | taa-ri _ |
+A2 G3 D | D2 D2 E2 | F3 G3- | G6- | G2 G2 G2 |
+w: aa-desh Pe-|le-_-_-|chho _ | _ | _ Tu-mi |
+G2 G4 | A2 A3 B | c2 d2 d2 | d e2 d c B |
+w: Aan-dhar | bnaa-dhon _ | chhaa-ri-ye | o-_-_-_-_- |
+c6 | c2 B3 c | A2 B4 | c2 c3 d |
+w: Tho | tu-mi _ | chho-to | ho-ye _ |
+c4 B2 | c4 B2 | c2 B c3- | c2 G2 G2 |
+w: Nao go | chho-_-|to _ _ | _ tu mi |
+G2 G4 | A2 A3 B | c2 d2 d2 | d e2 d c B |
+w: Aan-dhar | bnaa-dhon _ | chhaa-ri-ye | o-_-_-_-_- |
+c6 | c2 B3 c | A2 B4 | c2 c3 d |
+w: Tho | tu-mi _ | chho-to | ho-ye _ |
+c4 B2 | c4 B2 | c2 B c A2 | G2 G4 |
+w: No go | chho-_-|to _ _ Ja-|go-te |
+A2 B4 | c2 d4 | c2 B2 c B | A2 G4 |
+w: Je-thay | jo to | aa-lo _ _ | sa-bay |
+A2 A3 ^A | A2 G3 D | D2 D3 E | F3 G3 |
+w: Aa-pon _ | ko-re phe-|le-_-_-|chho _ |
+F3 G F2 | E2 D C3 |
+w: O _ jo-|na-ki _ |
+C3 A A2 | A2 A3 ^A | A2 A3 ^A |
+w: _ Daa-na | _ _ _ | du-_-_- |
+A2 G3 D | D2 D3 E | F3 G3 | F3 G F2 | E2 D C3 |
+w: _-ti Me | le-_-_-|chho _ | o _ j-|a ki _ |
+C3 A A2 | A2 A3 ^A |
+w: Kee _ su-|khe oi _ |
+A2 A3 ^A |
+w: Daa-na _ |
+A2 G3 D | D2 D3 E | F3 G3- | G6 |]
+w: du-ti Me-|le-_-_-|chho _ | _ |

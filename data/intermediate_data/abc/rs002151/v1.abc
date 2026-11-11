@@ -1,0 +1,55 @@
+X:1
+T:rs002151
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs002151.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (তুমি কেমন করে গান করো হে গুণী,), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs002151.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 168 of 169 (MIDI has 232); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+M:4/4
+L:1/8
+Q:1/4=150
+K:C
+z4 A2 A2 |
+w: Tu-mi |
+^A4 ^A3 d | c4 ^A3 =A | G3 A3 G2 | F4 E2 E2 |
+w: Ke-mon _ | ko-re _ | gaan _ ko-|ro hey _ |
+E4 F4- | F4 F2 E2 | F4 G4- | G4 F2 E2 |
+w: Gu-ni | _ Aa-mi | o-baak | _ ho-ye |
+F4 A4- | A4 F2 E2 | F4 c4- | c4 ^A2 =A2 | ^A4 ^A3 d |
+w: Shu-ni | _ ke-bol | shu-ni | _ tu mi | _ _ _ |
+c4 ^A3 =A | G3 A3 G2 |
+w: _ _ Tu-|_-mi _ |
+F4 E2 E2 | E4 F4- | F8 | F4 F3 ^A | A4 A3 B | B4 c4 | c3 d c4 |
+w: Shu-_-_-|_-rer | _ | _ _ _ | aa-lo _ | bhu-bon | phe-_-le |
+B4 c4- | c8 | B4 B4 | B4 c4 |
+w: Chhe-ye | _ | Shu-rer | haa-yaa |
+B4 c4 | B2 c2 B2 d2 | c4 ^A4 | A8 |
+w: Cho-le | go-_-gon _ | be-ye | _ |
+A4 A4 | A4 ^A4 | c4 e4 | f4 d4 |
+w: Paa-shan | tu-te | bya-kul | be-ge |
+B4 c4- | c8 | B4 B4 | B4 c4 |
+w: Dhe-ye | _ | Boi-h-|ya jaay |
+F4 F4- | F4 E2 F2 | G3 A G3 A | G3 A G3 A | ^A4 ^A3 d |
+w: Shu-rer | _ su-ro-|dhu-_-n-_-|tu _ i _ | _ _ _ |
+c4 ^A3 =A | G3 A3 G2 | F4 E2 E2 | E4 F4- | F8 |
+w: _ _ Tu-|_-mi _ | _ _ _ | _ _ | _ |
+C4 C4 | D4 D4 | D E5 E2 | E3 F D E2 F |
+w: Mo-ne | ko-ri | om-_-ni | su-_-re _ _ |
+F8- | F8 | F3 G3 G2 | G4 G4 |
+w: Gaai | _ | Kon-_-the | aa-mar |
+G3 A3 A2 | A4 A3 ^A | A8- | A8 |
+w: Sur _ khnu-|je na _ | paai | _ |
+F3 A A4 | A4 A3 B | B4 c4 | c3 d c4 |
+w: Koi-_-te | ki chaai _ | koi-te | ko-_-tha |
+B4 c4- | c8 | B6 B2 | B4 B c3 |
+w: Baa-dhe | _ | Haar me-|ne je _ |
+B4 c4 | B3 c B3 d | c4 ^A4 | A8 |
+w: Po-ran | aa-_-mar _ | knaa-de | _ |
+A4 A4 | A4 ^A4 | c4 c e3 | e f3 d4 |
+w: Aa-may | tu-mi | phe-le-_-|chho _ kon |
+B4 c4- | c8 | B6 B2 | B4 c4 |
+w: Phnaa-de | _ | Chou-di-|ke more |
+F4 F4- | F4 E3 F | G3 A G3 A | G3 A G3 A | ^A4 ^A3 d |
+w: Shu-rer | _ jaal _ | bu-_-ni _ | tu _ mi _ | _ _ _ |
+c4 ^A3 =A | G3 A3 G2 | F4 E2 E2 | E4 F4- | F4 F2 E2 | F4 G4- | G4 F2 E2 | F4 A4- | A4 F2 E2 | F4 c4- | c4 ^A2 =A2 | ^A4 ^A3 d | c4 ^A3 =A | G3 A3 G2 | F4 E2 E2 | E4 F4 |]
+w: _ _ Tu-|_-mi * | * * * | * * | _ * * | * * | _ * * | * * | _ * * | * * | _ * * | * * * | * * * | * * * | * * * | * * |

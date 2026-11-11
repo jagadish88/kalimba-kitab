@@ -124,9 +124,11 @@ def parse(t):
     return head, R
 
 
-def notation(first=()):
-    """first: song pages (/node/N) to fetch before the rest"""
+def notation(first=(), only=False):
+    """first: song pages (/node/N) to fetch before the rest; only: fetch just those"""
     rows = list(csv.DictReader(open(f'{OUT}/snltr_index.csv', encoding='utf-8')))
+    if only:
+        rows = [r for r in rows if r['song_page'] in set(first)]
     rank = {p: i for i, p in enumerate(first)}
     rows.sort(key=lambda r: rank.get(r['song_page'], len(rank)))
     done = 0
@@ -154,6 +156,6 @@ def notation(first=()):
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == 'notation':
         first = open(sys.argv[2]).read().split() if len(sys.argv) > 2 else ()
-        notation(first)
+        notation(first, only='--only' in sys.argv)
     else:
         crawl()

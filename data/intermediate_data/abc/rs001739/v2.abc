@@ -1,0 +1,84 @@
+X:1
+T:rs001739
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001739.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (প্রাণ ভরিয়ে তৃষা হরিয়ে), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs001739.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 416 of 451 (MIDI has 461); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:3/8
+L:1/16
+Q:1/4=75
+K:C
+z2 B2 B2 |
+w: Praa-no |
+B2 B2 B2- | B2 G2 B2 | c2 B2 d c- | c ^A =A2 ^A2 |
+w: Bho-ri-ye | _ tri-sha | ho-ri-ye _ | _ _ Mo-re |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 B2 B2 |
+w: Aa-_-ro aa-|ro aa-_-ro | daa-_-praa | _ praa n |
+B2 B2 B2- | B2 G2 B2 | c2 B2 d c- | c ^A =A2 ^A2 |
+w: Bho-ri-ye | _ tri-sha | ho-ri-ye _ | _ _ Mo-re |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 G2 F2 |
+w: Aa-_-ro aa-|ro aa-_-ro | daao _ praan | _ T-abo |
+E2 F2 G2- | G2 C2 C2 | D2 E2 F2- | F2 C2 C2 |
+w: Bhu-ba-ne | _ ta-bo | bha-bo-ne | _ Mo-re |
+B,2 C2 D2 | E2 F2 G2 | A4 G A- | A ^A =A2 ^A2 |
+w: Aa-ro aa-|ro aa-ro | daao sthaa-_-|_-_-mo re |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 B2 B2 |
+w: _ Aa-ro aa-|ro aa-_-ro | daa-_-praa | _ praa n |
+B2 B2 B2- | B2 G2 B2 | c2 B2 d c- | c ^A =A2 ^A2 | ^A d c2 ^A2 | A2 G A F2 | F3 G A2- |
+w: Praa-no Bho-|_-riyetri-sha | ho-ri-ye _ | _ _ Mo-re | * * * * | * * * * | * * * |
+A2 e2 e2 |
+w: _ Aa-ro |
+e d2 e f2- | f2 f2 f e | d e f e d c- | c B B3 c |
+w: Aa-_-_-lo | _ aa-ro _ | aa-_-_-_-lo _ | _ _ Ei _ |
+c d c2 ^A2- | ^A =A A2 A ^A | G A G ^A =A2- | A2 e2 e2 |
+w: _ Na-yo-ne | _ _ pro-_-bhu | dhaa-_-_-_-l-|_-o o |
+e d2 e f2- | f2 f2 f e | d e f e d c- | c B B3 c |
+w: Aa-_-_-lo | _ aa-ro _ | aa-_-_-_-lo _ | _ _ Ei _ |
+c d c2 ^A2- | ^A =A A2 A ^A | G A G ^A =A2- | A2 B2 B2 |
+w: _ Na-yo-ne | _ _ pro-_-bhu | dhaa-_-_-_-lo | _ Su-re |
+B4 B2- | B2 G2 B2 | c3 B d c- | c2 ^A2 =A2 |
+w: Su-re | _ bnaa-shi | pu-_-_-re | _ Tu-mi |
+G F F2 E2 | F2 G2 A2 | A4 G/ A/ ^A- | ^A2 =A2 ^A2 |
+w: _ Aa-ro aa-|ro aa-ro | daao t-_-_-|_-mo re |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 B2 B2 |
+w: Aa-_-ro aa-|ro aa-_-ro | daa-_-praa | _ praa an |
+B2 B2 B2- | B2 G2 B2 | c2 B2 d c- | c ^A =A2 ^A2 |
+w: Praa-no Bho-|_-riyetri-sha | ho-ri-ye _ | _ _ Mo-re |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 C2 C2 |
+w: _ _ Aa-* | * * * * | * * * | _ ro _ |
+C B, C2 D2- | D2 D2 D B, | C2 D2 E2- | E2 E2 E2 |
+w: _ Be-do-na | _ aa-ro _ | be-do-na | _ Pro-bhu |
+E B,2 C D2 | E2 E3 F | E D E2 F2- | F2 F2 F2 |
+w: _ Daao _ mo-|re aa-ro | _ che-to-na | _ Dwaa-ro |
+F E F2 G2- | G2 G2 G A | G F G2 A2- | A2 A2 A2 |
+w: _ Chhu-ta-ye | _ bhaa-dha _ | tu-_-ta-ye | _ Mo-re |
+A ^A =A2 G/ A/ G- | G2 F2 F2 | E D E2 F2- | F2 C2 C2 |
+w: Ka-_-ro traan _ _ | _ mo-re | ka-_-ro traan | _ Aa-ro |
+C B, C2 D2- | D2 D2 D B, | C2 D2 E2- | E2 E2 E2 |
+w: _ Be-do-na | _ aa-ro _ | be-do-na | _ Pro-bhu |
+E B,2 C D2 | E2 E3 F | E D E2 F2- | F2 F2 F2 |
+w: _ Daao _ mo-|re aa-ro | _ che-to-na | _ Dwaa-ro |
+F E F2 G2- | G2 G2 G A | G F G2 A2- | A2 A2 A2 |
+w: _ Chhu-ta-ye | _ bhaa-dha _ | tu-_-ta-ye | _ Mo-re |
+A ^A =A2 G/ A/ G- | G2 F2 F2 | E D E2 F2- | F2 e2 e2 |
+w: Ka-_-ro traan _ _ | _ mo-re | ka-_-ro traan | _ Aa-ro |
+e d2 e f2- | f2 f2 f e | d e f e d c- | c B B3 c |
+w: Pre-_-_-me | _ aa-ro _ | pre-_-_-_-me _ | _ _ Mor _ |
+c d c2 ^A2 | ^A2 =A2 ^A =A | G A G ^A =A2- | A2 e2 e2 |
+w: _ Aa-mi du-|be jaak _ _ | ne-_-_-_-m-|_-aa ro |
+e d2 e f2- | f2 f2 f e | d e f e d c- | c B B3 c |
+w: Pre-_-_-me | _ aa-ro _ | pre-_-_-_-me _ | _ _ Mor _ |
+c d c2 ^A2 | ^A2 =A2 ^A =A | G A G ^A =A2- | A2 B2 B2 |
+w: _ Aa-mi du-|be jaak _ _ | ne-_-_-_-me | _ Su-dhad- |
+B4 B2- | B2 G2 B2 | c3 B d c- | c2 ^A2 =A2 |
+w: Dhaa-re | _ aa-po-|na-_-_-re | _ Tu-mi |
+G F F2 E2 | F2 G2 A2 | A2 A2 G/ A/ ^A- | ^A2 =A2 ^A2 |
+w: _ Aa-ro aa-|ro aa-ro | ko-ro daa-_-_-|_-mo re |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 B2 B2 |
+w: Aa-_-ro aa-|ro aa-_-ro | daa-_-praa | _ praa n |
+B2 B2 B2- | B2 G2 B2 | c2 B2 d c- | c ^A =A2 ^A2 |
+w: Bho-ri-ye | _ tri-sha | ho-ri-yeMoreaa-ro | _ aa-ro aarodaapraapraanbhoriyetrishahoriye |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A6 |]
+w: More Aa-ro aa-|ro aa-_-ro | daa-_-praa | _ |

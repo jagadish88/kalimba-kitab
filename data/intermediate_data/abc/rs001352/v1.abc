@@ -1,0 +1,67 @@
+X:1
+T:rs001352
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001352.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (মাঝে মাঝে তব দেখা পাই), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs001352.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 286 of 716 (MIDI has 469); Sa of the MIDI = A. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+M:3/4
+L:1/8
+Q:1/4=100
+K:C
+C2 C2 D2 |
+w: Maa-jhemaajhetabode-kha |
+D2 D2 D ^D | D2 E2 F2 | G2 G F E F |
+w: paai _ _ Chirodinkenopaai | na * * | * * * * * |
+G2 A2 A/ ^A/ c | ^A2 =A2 G A | F2 G/ A/ G F G | ^D2 =D/ ^D/ F ^D =D |
+w: * * * _ Maa-|jhe _ _ _ | _ _ _ _ maa-_-|jhe _ tabodekhapaai _ _ _ |
+C2 C2 D2 | D2 D2 D ^D |
+w: _ Chi-ro-|dinkenopaai _ _ na |
+D2 E2 F2 | G6 | G2 G/ c/ B c2- | c2 c2 c d | ^A c ^A2 =A2 |
+w: _ _ Ke-|no | megh _ aa-se hri-|_-da-_-_-|_-_-y _ |
+G2 F E F2 | G2 G/ c/ B c2- |
+w: aa-kashe _ To-|ma-redekhitedeyna _ _ _ |
+c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 |
+w: _ _ _ Mo | home _ ghe _ | _ _ _ to- |
+G2 G c ^A2 | A2 G2 A G |
+w: may redekhitedeyna _ Mohome | ghe _ _ tomaa |
+F2 G/ A/ G F G | F ^D3 =D ^D |
+w: re ondhokoreraa khe _ To-ma-|re dekhite _ deyna |
+D2 C2 D2 | D2 D2 D ^D |
+w: _ _ Khoni-|kaa-lo-ke aankhirpalo- |
+D2 E2 F2 | G6 | G2 G2 G2 | G2 G2 G A | B2 B2 c2 | c B c2 c2 | B2 c B c2 | d2 ^d2 =d c |
+w: ke _ To-|mayjobe | _ paai _ | de-_-_-_-|_-_-khi-|_-_-te oheKho-|ni-kaalokeaan-khi-_-|_-rpalo-ke _ |
+c2 B/ c/ d c2 | ^A =A c ^A3 | A2 G2 G2 | G2 G2 G A | B2 B2 c2 |
+w: To-may jobepaaidekhi-_-te | oheHaarai _ _ haaraisodahoybhoyhaaraa | _ _ h-|raa sodaaho bho _ | _ _ _ |
+c B c2 c2 | B2 c B c2 | d2 ^d2 =d c |
+w: Haa-rai-_-ya | phe-li _ _ | cho-kite _ aa |
+c2 B/ c/ d c2 | ^A =A G4 | G2 G2 c B |
+w: _ _ _ Naa _ | mitite _ _ | haaraa _ yaapo _ |
+c2 c2 d2 | ^A c ^A2 =A2 | G2 F E F2 | G2 G2 c B |
+w: lok _ Naa-|porite _ _ _ | _ _ _ haa | r-_-yaahri-_- |
+c2 c2 d2 | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G | F2 G2 F2 |
+w: daye _ Naa | _ _ _ _ | _ _ _ ju | raa te _ _ | _ _ _ Aar | _ yaaphelichokite _ |
+D ^D F ^D =D ^D | D2 C2 D2 | D2 D2 D ^D |
+w: _ Kiko-_-ri-le ba-|lopaai-_-_-|bo to-ma-_- |
+D2 E2 F2 | G6 | C2 C2 D2 | D2 D2 D ^D | F2 F2 G2 | G2 G2 E F | G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G2 G/ c/ B c2- | c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G |
+w: re _ Raa-|khiboaankhi-|te aan-khi-|_-_-teoheKiko-_-|_-ri-lebalopaaibotomareraakhiboaankhi-|teaankhiteoheeto prem _ _ | aa-mi ko-thapaa-|_-bo naa-_-|_-_-e | _ | to-_-_-_-_-|_-_-_-_-|pre _ _ _ | _ _ _ _ | Aa-mi k-thaapaa-|_-bo naa _ |
+F2 E2 F2- | F6 | C2 C2 D2 | D2 D2 D ^D | F2 F2 G2 | G2 G2 E F | G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G2 G/ c/ B c2- |
+w: _ To-marehridaye | _ | _ _ _ | raa-khite Aamaarsaa _ | _ dhjo i-|bo _ _ toaardoynaako-|ri-le _ _ | _ _ _ _ | _ _ ke | _ | paa re tu _ mi |
+c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G4 G2 | G2 G2 G A | B2 B2 c2 |
+w: _ _ _ Na-|_-_-_-_-|_-_-_-ni | naa-e _ _ | _ le _ kepaa | re hri-dayeraakhi-|_-|te _ | _ _ _ _ | _ _ _ |
+c B c4 | G2 c B c2 | d2 d ^d =d2 |
+w: Aar _ kaaropaanechaa-|hi-_-_-bo | na ar _ _ |
+c2 B/ c/ d c2 | ^A =A c ^A3 | A4 G2 | G2 G2 G A | B2 B2 c2 |
+w: _ _ Ko-ri-bo | _ hey _ aa-|_-_-|_-mi _ praa-|n-_-_- |
+c B c4 | G2 c B c2 | d2 d ^d =d2 |
+w: opan ohe Ka-|_-kaaropaanechaa-hi-_-|_-bo naar _ |
+c2 B/ c/ d c2 | ^A =A G4 | G2 G/ c/ B c2 | c2 c2 c d |
+w: _ _ Ko-ri-bo | _ hey aa-|_-mi _ _ praa-|n-_-opan ohe |
+^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G |
+w: Tumijodibaloekho-_-ni _ | ko-ribo _ tu | mi jo i-baaekhoni | _ ko ri bo |
+F2 G2 F2 | D ^D F ^D =D ^D | D2 C2 D2 | D2 D2 D ^D | D2 E2 F2 | G2 G F E F | G2 A2 A/ ^A/ c |
+w: _ Bisha-yoi-|baa-so-na _ _ bisarjan | _ di boshree | _ _ _ _ | _ _ cho | ribo ne _ _ bi-|sha-yo-i-_-ba- |
+^A2 =A2 G A | F2 G/ A/ G F G |
+w: Okore _ _ _ | bishayoibatomaa laa gi _ _ bisha- |
+^D2 =D/ ^D/ F ^D =D | C2 C2 D2 | D2 D2 D ^D | D2 E2 F2 | G6 |]
+w: yoibaasona _ Bi-sarjan _ _ | _ * * | * * * * | * * * | * |

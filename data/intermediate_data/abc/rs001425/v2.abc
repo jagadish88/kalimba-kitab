@@ -1,0 +1,92 @@
+X:1
+T:rs001425
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001425.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (মোর ভাবনারে কী হাওয়ায় মাতালো), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs001425.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 417 of 417 (MIDI has 473); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:4/8
+L:1/16
+Q:1/4=100
+K:C
+z8 | z8 |
+w:  |
+z4 C2 D2 | F2 D2 F2 F2- | F2 G2 F2 G2- | G2 A2 F2 G2 | A2 c4 B2 | A2 ^A2 G2 =A2 | F2 E2 D2 E2 | C2 C2 D2 E2 |
+w: Mor _ | bhaa-bo-na-re | _ ki haawa-y | _ maa-ta-lo | _ _ _ | Do-le mo-no | do-le a-kaa-|ra-no ha-ro- |
+F4 C2 D2 |
+w: Sh-mo _ |
+F2 D2 F2 F2- | F2 G2 F2 G2- | G2 A2 F2 G2 | A2 c4 B2 | A2 ^A2 G2 =A2 | F2 E2 D2 E2 | C2 C2 D2 E2 |
+w: Bhaa-bo-na-re | _ ki haawa-y | _ maa-ta-lo | _ _ _ | Do-le mo-no | do-le a-kaa-|ra-no ha-ro- |
+F8 | D2 F2 F2 E2 | D2 D G G4 | F2 G2 A2 ^A =A |
+w: She | Hri-da-yo-_-|ga-go-_-ne | sa-jo-lo ghano _ |
+G4 F2 G2 | A2 ^A =A G4 | F2 E2 D4 | F2 E2 D2 E2 |
+w: No-no-bi-|no me-_-ghe | Ra-se-r | dhaa-ra bo ro- |
+C4 C2 D2 |
+w: Sh-mo _ |
+F2 D2 F2 F2- | F2 G2 F2 G2- | G2 A2 F2 G2 | A2 c4 B2 | A2 ^A2 G2 =A2 | F2 E2 D2 E2 | C2 C2 D2 E2 |
+w: Bhaa-bo-na-re | _ ki haawa-y | _ maa-ta-lo | _ _ _ | Do-le mo-no | do-le a-kaa-|ra-no ha-ro- |
+F8 |
+w: Shu- |
+c2 B2 A4 | F2 G2 A2 c2 | c2 B2 A2 d2 |
+w: Taa-ha-re | de-khi na _ | je _ de-khi |
+c4 d2 e2 | d2 e2 f2 e2 | d2 e2 c2 d2 | B2 c2 A2 ^A2 |
+w: Naa Shu-dhu | mo-ne mo-ne | kha-ne kha-ne | oi _ sho-na |
+G8 |
+w: Jaay |
+c2 B2 A4 | F2 G2 A2 c2 | c2 B2 A2 d2 |
+w: Taa-ha-re | de-khi na _ | je _ de-khi |
+c4 d2 e2 | d2 e2 f2 e2 | d2 e2 c2 d2 | B2 c2 A2 ^A2 |
+w: Naa Shu-dhu | mo-ne mo-ne | kha-ne kha-ne | oi _ sho-na |
+G8 | D4 G4 | F2 G2 A2 ^A2 | A2 G2 F2 E2 |
+w: Jaa | Baa-je | a-lo-khi-to | taa-ri ch-ro |
+D8 |
+w: Ne |
+D4 G4 | F2 G2 A2 ^A2 | A2 G2 F2 E2 |
+w: Baa-je | a-lo-khi-to | taa-ri cha-rone |
+D8 | C2 D2 F2 G2 | A2 c2 A2 G2 | F2 E2 D2 E2 |
+w: Ne | Ru-nu-ru-nu | ru-nu-ru-nu | nu-pu-ro-dhwoni |
+C4 C2 D2 |
+w: Nili-ma _ |
+F2 D2 F2 F2- | F2 G2 F2 G2- | G2 A2 F2 G2 | A2 c4 B2 | A2 ^A2 G2 =A2 | F2 E2 D2 E2 | C2 C2 D2 E2 |
+w: Bhaa-bo-na-re | _ ki haawa-y | _ maa-ta-lo | _ _ _ | Do-le mo-no | do-le a-kaa-|ra-no ha-ro- |
+F8 |
+w: Shu- |
+F2 E2 D4- | D4 F2 E2 | D4 E2 F2 |
+w: Go-po-no | _ sbo po | ne chhaa-i |
+G8 | G2 A2 D2 E2 | F2 A2 G2 A2 | F2 E2 D2 E2 |
+w: Lo | A-pa-ro-sho | aan-cho-le-ro | na-bo ni-lima |
+C8 |
+w: Maa- |
+F2 E2 D4- | D4 F2 E2 | D4 E2 F2 |
+w: Go-po-no | _ sbo po | ne chhaa-i |
+G8 | G2 A2 D2 E2 | F2 A2 G2 A2 | F2 E2 D2 E2 |
+w: Lo | A-pa-ro-sho | aan-cho-le-ro | na-bo ni-lima |
+C8 | c2 B2 A4 | F2 G2 A2 c2 | c2 B2 A2 d2 |
+w: Maa | u re jaay | baa-do-le-r | ei _ baa-tase |
+c4 d2 e2 | d2 e2 f2 e2 | d2 e2 c2 d2 | B2 c2 A2 ^A2 |
+w: Se Taar _ | chhaa-ya-mo-y | e-lo kesh _ | aa-_-kaa _ |
+G8 |
+w: Se |
+c2 B2 A4 | F2 G2 A2 c2 | c2 B2 A2 d2 |
+w: U-re jaay | baa-do-le-r | ei _ baa-tase |
+c4 d2 e2 | d2 e2 f2 e2 | d2 e2 c2 d2 | B2 c2 A2 ^A2 |
+w: Se Taar _ | chhaa-ya-mo-y | e-lo kesh _ | aa-_-kaa _ |
+G8 | D4 G4 | F2 G2 A2 ^A2 | A2 G2 F2 E2 |
+w: Se | Se je | mo-n mor _ | di-lo aa-kuli |
+D8 |
+w: Li |
+D4 G4 | F2 G2 A2 ^A2 | A2 G2 F2 E2 |
+w: Se je | mo-n mor _ | di-lo aa-kuli |
+D8 | d4 d2 c2 | ^A2 =A2 G2 A2 | F2 E2 D2 E2 |
+w: L | jo bhe-ja | ke-to-kir _ | dur _ su-base |
+C4 C2 D2 |
+w: Se mon _ |
+F2 D2 F2 F2- | F2 G2 F2 G2- | G2 A2 F2 G2 | A2 c4 B2 | A2 ^A2 G2 =A2 | F2 E2 D2 E2 | C2 C2 D2 E2 |
+w: Bhaa-bo-na-re | _ ki haawa-y | _ maa-ta-lo | _ _ _ | Do-le mo-no | do-le a-kaa-|ra-no ha-ro- |
+F4 C2 D2 |
+w: Sh-mo _ |
+F2 D2 F2 F2- | F2 G2 F2 G2- | G2 A2 F2 G2 | A2 c4 B2 | A2 ^A2 G2 =A2 | F2 E2 D2 E2 | C2 C2 D2 E2 |
+w: Bhaa-bo-na-re | _ ki haawa-y | _ maa-ta-lo | _ _ _ | Do-le mo-no | do-le a-kaa-|ra-no ha-ro- |
+F8 | D2 F2 F2 E2 | D2 D G G4 | F2 G2 A2 ^A =A | G4 F2 G2 | A2 ^A =A G4 | F2 E2 D4 | F2 E2 D2 E2 | C4 C2 D2 | F2 D2 F2 F2- | F2 G2 F2 G2- | G2 A2 F2 G2 | A2 c4 B2 | A2 ^A2 G2 =A2 | F2 E2 D2 E2 | C2 C2 D2 E2 | F8- | F8 |]
+w: Shu-|* * * * | * * * * | * * * * * | * * * | * * * * | * * * | * * * * | * * * | * * * * | _ * * * | _ * * * | * * * | * * * * | * * * * | * * * * | * | _ |

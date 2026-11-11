@@ -1,0 +1,85 @@
+X:1
+T:rs000292
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000292.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (আমি তোমার সঙ্গে বেঁধেছি আমার প্রাণ), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs000292.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 369 of 376 (MIDI has 369); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+M:3/4
+L:1/8
+Q:1/4=120
+K:C
+z2 C2 C2 |
+w: Aa-mi |
+C F F2 F2 | F4 F2 | F2 G2 G2 | G2 G A G2 |
+w: To-_-mar ro | so ge | bne-dhe-chhi | aa-mar _ ro |
+F3 G3- | G F2 ^D3 | F2 F ^A ^A =A | A3 B B2 |
+w: Praan _ | _ _ _ | su-re-_-r _ | bnaa-_-dhone |
+B c5- | c2 A2 B2 | B6 | c5 d |
+w: Ne _ | _ Tu-mi | jaa-|no _ |
+B3 c2 ^A | ^A2 =A4 | A2 A ^A G2 | G2 F2 F2 |
+w: Na _ _ | aa-mi | to-ma-_-re | pe-ye-chhi |
+F2 G2 G2 | G3 c c ^A | ^A5 =A | A2 A4 |
+w: A-ja-na | saa-_-dho-_-|ne _ | aa-mi |
+A2 A ^A G2 | G3 F F2 | F2 G2 G2 | G2 G A G2 |
+w: To maa _ ro | so _ ge | bne-dhe-chhi | aa-ma-_-r |
+F3 G3- | G F2 ^D3 | F2 F ^A ^A =A | A3 B B2 |
+w: Praan _ | _ _ _ | su-re-_-r _ | bnaa-_-dhone |
+B c5- | c6 | A2 A2 A2 | A5 B |
+w: Ne _ | _ | Se saa-dho-|nay _ |
+B2 c2 B2 | c6 | B2 c2 A2 | B6 |
+w: Mi-shi-ya | jaay | bo-ku-lo-|ga- |
+B c5- | c6 | c2 c B c B | B d4 ^d |
+w: Dho _ | _ | Se saa-_-dho-_-|nay _ _ |
+d2 d2 d c | c6 | B2 c2 c2 | B2 d c B c |
+w: Mi-li-ya _ | jaay | ko-bi-ro | chha-_-_-_-_- |
+^A3 =A3 | A2 A3 B | B6 | c5 d |
+w: Do _ | Tu-mi _ | jaa-|no _ |
+B3 c3 | F2 F4 | F2 F2 G2 | G2 A2 G2 |
+w: Na _ | dhe-ke | re-khe-chhi | to-ma-ro |
+A6- | A6 | A2 A2 A2 | A2 A3 B |
+w: Naa | _ | Ro-ngi-no | chhaa-yar _ |
+B4 B c | B2 c4- | c6 | c2 c4 |
+w: Aa-chchhada-_-|do ne | _ | To-mi |
+c2 c2 c2 | c ^A2 d d ^d | d2 c2 ^A2 | A2 A ^A G2 |
+w: To maa ro | so _ _ ge _ | bne-dhe-chhi | aa-ma-_-r |
+F3 G3- | G F2 ^D3 | F2 F ^A ^A =A | A3 B B2 |
+w: Praan _ | _ _ _ | su-re-_-r _ | bnaa-_-dhone |
+B c5 | F2 F4 | F2 G2 G2 | G4 A2 |
+w: Ne _ | To-mar | o ru-po | mur-ti- |
+G2 G2 A ^A | A6 | A3 ^A ^A2 | ^A4 ^A2 |
+w: Kha-ni _ _ | _ | Phaal-_-gu-|ne-r |
+^A6 | ^A =A2 c c2 | ^A2 =A3 ^A | G2 F4 |
+w: Aa-|lo-_-_-te | ba-sai _ | aa-ni |
+F2 G2 G2 | G4 A2 |
+w: A-ru-po | mur-ti- |
+G2 G2 A ^A | A6 |
+w: Khaa ni _ _ | _ |
+F2 F ^A ^A2 | A2 A3 B | B2 c2 c2 | c d c2 d c |
+w: Bnaa-sho-_-ri | baa-jai _ | lo-li-to | ba-_-so-_-_- |
+B3 c3- | c ^A2 =A2 F | F2 F A A2 | A2 A2 F E |
+w: Te _ | _ sudurodigate _ _ | Bnaa-sho-_-ri | baa-jai _ _ |
+F2 F A A2 | A2 A F2 c | c6- | c B2 A2 F |
+w: Lo-li-_-to | ba-son-_-_-|te | _ _ _ _ |
+F2 F2 F2 | F2 F E2 G | F6- | F6 |
+w: Su-du-ro | di-g-_-_-|ante | _ |
+F2 F3 G | F2 E4 | F2 A2 B2 | c2 ^c3 =c |
+w: So-nar _ | aa-bhay | knaa-pe ta-|bo u-_- |
+B2 c4- | c B2 A2 F |
+w: Toma-ree | _ _ _ _ |
+F2 F3 G | F2 E4 | F2 A2 B2 | c2 ^c3 =c |
+w: So-nar _ | aa-bhay | knaa-pe ta-|bo u-_- |
+B2 c4- | c6 | c2 c f f2 | d2 d c c2 |
+w: To ree | _ | Gaa-ne-_-r | taa-ne-_-ro |
+B2 c4 | B2 c d c2 | ^A3 =A3 | A2 A3 B |
+w: Se un-|mada-_-_-do | ne _ | tu mi _ |
+B6 | c5 d | B3 c2 ^A | ^A2 =A4 |
+w: Jaa-|no _ | na _ _ | a-mi |
+A2 A ^A G2 | G2 F2 F2 | F2 G2 G2 | G3 c c ^A |
+w: To-ma-_-re | pe-ye-chhi | a-ja-na | saa-_-dhone _ |
+^A5 =A | A2 A4 | A2 A ^A G2 | G3 F F2 |
+w: Ne _ | aa-mi | to-ma-_-r-|so _ e |
+F2 G2 G2 | G2 G A G2 | F3 G3- | G F2 ^D3 |
+w: Bne-dhe-chhi | aa-ma-_-r | praan _ | _ _ _ |
+F2 F ^A ^A =A | A3 B B2 | B c5 |]
+w: Su-re-_-r _ | bnaa-_-dho-|ne _ |

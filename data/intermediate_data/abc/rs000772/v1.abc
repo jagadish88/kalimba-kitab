@@ -1,0 +1,69 @@
+X:1
+T:rs000772
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000772.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (এই কথাটি মনে রেখো), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs000772.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 301 of 303 (MIDI has 331); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+M:3/4
+L:1/8
+Q:1/4=120
+K:C
+G3 A G2 | F2 E4 | C2 E4 | F2 G4- | G3 E F2 | A2 A4 | A4 A2 | A3 G A2 |
+w: Ei _ ko-|tha-ti | mo-ne | re-kho | _ _ to-|ma-der | ei haa-|si-_-khe- |
+A ^A5- | ^A3 =A2 G |
+w: Laa _ | _ _ _ |
+G3 A G2 | F2 E4 | C2 E4 | F2 G4- | G4 G2 | G B B4 |
+w: E _ ko-|tha-ti | mo-ne | re-kho | _ to-|ma-_-der |
+B4 B2 | B3 A B2 | B c5- | c3 ^A2 =A |
+w: E haa-|si-_-khe-|lay _ | _ _ _ |
+G3 A G2 | F2 E4 | C2 E4 | F2 G4- | G3 E F2 | A2 A4 | A4 A2 | A3 G A2 |
+w: E _ aa-|thaa ti | mo-ne | re kho | _ _ Aa-|mi je | gaan ge-|ye-_-chhi- |
+A ^A3 =A2 | G2 E3 F | G4 G2 | B2 B4 |
+w: _-Le mo-|ne re-_-|kho aa-|mi je |
+B4 B2 | B3 A B2 | B c5- | c6 |
+w: Gaan ge-|ye-_-chhi-|lem _ | _ |
+B3 d c2 | ^A2 ^A3 =A | G A G4 | F2 E4 |
+w: Jir-_-no | paa-ta _ | jho-_-rar | be-lay |
+C2 E4 | F2 G4 | G3 A G2 | F2 E4 |
+w: Mo-ne | re-kho | _ _ _ | _ _ |
+C2 E4 | F2 G4 | c3 e e2 | e2 e4 | e3 f e2 | d2 c4 |
+w: Shuk-_-|_-_-|_-no ghaa-|se shu-|_-_-nyo | bo-ne |
+B2 c3 B | c3 B2 c | c d5- | d5 B |
+w: Aa-pon _ | mo-_-_-|ne _ | _ _ |
+B2 c4 | B2 c4 | c d c4 | ^A =A c ^A2 =A |
+w: A-aa-|do re | o _ bo-|he-_-lay _ _ |
+G2 G A G2 | F2 E3 F | G4 A2 | G2 E3 F |
+w: Gaan _ _ ge-|ye-chhi-_-|le-m | ne re _ |
+G3 E F2 | A2 A4 | A4 A2 | A3 G A2 |
+w: Kho _ Aa-|mi je | gaan ge-|ye-_-chhi- |
+A ^A3 =A2 | G2 E3 F | G4 G2 | B2 B4 |
+w: Le _ mo-|ne re-_-|kho aa-|mi je |
+B4 B2 | B3 A B2 | B c5- | c6 |
+w: Gaan ge-|ye-_-chhi-|lem _ | _ |
+B3 d c2 | ^A2 ^A3 =A | G A G4 | F2 E4 |
+w: Jir-_-no | paa-ta _ | jho-_-rar | be-lay |
+C2 E4 | F2 G4 | G3 A G2 |
+w: Mo-ne | re-kho | _ _ _ |
+F2 E4 | C2 E4 | F2 G4 | F2 F3 ^A | A2 A3 B | B2 c2 d c | B2 c4- | c4 B2 | B2 B4 | B4 B2 | B c2 B c B |
+w: Di _ | _ _ | ne _ | _ _ _ | po-thik _ | mo-ne _ _ | re-kho | _ aa-|mi cho-|le-chhi-|lem _ _ raate _ |
+B c5 | ^A =A2 G2 A | ^A3 d c2 | ^A =A G4 |
+w: Te _ | _ _ _ _ | son-_-dha-|pro-_-deep |
+F2 E3 G | F2 E4 | c2 c3 e | e2 e4 |
+w: Ni-ye _ | haa-te | Ja-khon _ | aa-may |
+e f e4 | d2 c3 d | B2 c3 B | c3 B2 c |
+w: O _ paar | the-ke _ | ge-lo _ | deke _ _ |
+c d5- | d5 B | B2 c4 | B2 c3 B |
+w: Ke _ | _ _ | bhe-se-|chhi-lem _ |
+B d c4 | ^A =A c ^A2 =A | G3 A G2 | F2 E3 F |
+w: Bhaa-_-nga | bhe-_-lay _ _ | gaan _ ge-|ye-chhi-_- |
+G4 A2 | G2 E3 F | G3 E F2 | A2 A4 |
+w: Le mo-|ne re-_-|kho _ aa-|mi je |
+A4 A2 | A3 G A2 | A ^A3 =A2 | G2 E3 F |
+w: Gaan ge-|ye-_-chhi-|le-_-m | ne re _ |
+G4 G2 | B2 B4 | B4 B2 | B3 A B2 |
+w: Kho Aa-|mi je | gaan ge-|ye-_-chhi- |
+B c5- | c6 | B3 d c2 | ^A2 ^A3 =A |
+w: Le _ | _ | jir-_-no | paa-ta _ |
+G A G4 | F2 E4 | C2 E4 | F2 G4 | G3 A G2 | F2 E4 | C2 E4 | F2 G4 |]
+w: Jho-_-rar | be-la-|mo ne | re kho | * * * | * * | * * | * * |
