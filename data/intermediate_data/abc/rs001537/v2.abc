@@ -1,0 +1,104 @@
+X:1
+T:rs001537
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001537.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (ও আমার দেশের মাটি, তোমার 'পরে ঠেকাই মাথা), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs001537.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 466 of 472 (MIDI has 532); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:3/8
+L:1/16
+Q:1/4=60
+K:C
+z4 C2 | C2 C3 B, |
+w: O | aa-mar _ |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 |
+w: De-sher _ _ _ | maa-ti | to-mar _ | po re |
+D F ^D4 | D2 C4- | C4 D2 | D2 C3 B, |
+w: The-_-kai | maa-tha | _ o-|aa mate _ |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 |
+w: De-sher _ _ _ | maa-ti | to-mar _ | po re |
+D F ^D4 | D2 C4- | C4 F2 | F2 F4 | G4 G2 | G2 G4- | G4 F2 | F2 F4 | G4 A2 | c2 ^A3 =A |
+w: The-_-kai | maa-tha | _ To-|ma-te | bi-shwo-|mo-yeer | _ to-|ma-te | bi-shwo-|maa-yer _ |
+G A G F3 | E2 F4- | F4 ^D2 | ^D2 ^D3 =D |
+w: Aan-_-chol _ | paa-ta | _ o | aa maa _ |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 | D F ^D4 | D2 C4- | C6- | C2 G2 G2 | G2 A3 F- | F2 G2 A2 |
+w: O _ aa * * | * * | * * * | * * | * * * | * maa | _ | _ Tu-mi | mi-she-_-|_-chho mor |
+B2 c4 | d3 c2 B | c6- | c6- | c6- | c2 c2 c2 | B2 c4 | d2 d4 |
+w: De-her | sa-_-_-|ne | _ | _ | _ Tu-mi | mi-le-|chho mor |
+c2 c3 d | c2 ^A3 =A |
+w: Praa-ne _ | mo-ne _ |
+G2 A3 F- | F2 G2 A2 |
+w: Mi-she-_-|_-chho mor |
+B2 c4 | d3 c2 B | c6- | c6- | c6- | c2 c2 c2 | B2 c4 | d2 d4 |
+w: De-her | sa-_-_-|ne | _ | _ | _ Tu-mi | mi-le-|chho mor |
+c2 c3 d | c2 ^A3 =A- | A G3 F2 | F2 E F2 G |
+w: Praa-ne _ | mo-ne _ | _ _ To-|mar oi _ _ |
+G2 G4 | G2 G4 | G2 G3 A | c3 ^A =A2 |
+w: Shya-mol-|ba-ron | ko-mal _ | mur-_-ti |
+G A2 G F2 | E2 F4- | F4 ^D2 | ^D2 ^D3 =D |
+w: Mar-_-_-me | gnaa-tha | _ O-|go ma _ |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 | D F ^D4 | D2 C4- | C4 D2 | D2 C3 B, | C2 B, C D ^D | ^D2 =D4 |
+w: O _ aa * * | * * | * * * | * * | * * * | * maa | _ O-|go ma _ | to-mar _ _ _ | ko-le |
+D2 D3 ^D | F2 G4 | F2 F3 ^D | D2 D ^D F ^D |
+w: Aa-aa-_-|aa-mar | mo ron _ | to-mar _ _ _ |
+D2 C4 | D2 C3 B, |
+w: Bu-ke | o-mar _ |
+C2 B, C D ^D | ^D2 =D4 |
+w: To-mar _ _ _ | ko-le |
+D2 D3 ^D | F2 G4 | F2 F3 ^D | D2 D ^D F ^D |
+w: Ja-nom _ | aa-mar | mo ron _ | to-mar _ _ _ |
+D2 C4- | C6 | F2 E F2 G | G2 G3 A |
+w: Bu-ke | _ | To-mar _ _ | po re _ |
+c2 ^A4 | A2 G2 A G | F4 F2 | E2 F4- | F6- | F2 G2 G2 | G2 A2 F2- | F2 G2 A2 |
+w: Khe-la | a-mar _ _ | duk-khe | su-khe | _ | _ Tu-mi | an-_-no | _ mu-khe |
+B2 c4 | d3 c2 B | c6- | c6- | c6- | c2 c2 c2 | B2 c4 | d2 d4 |
+w: Tu-le | di-_-_-|le | _ | _ | _ Tu-mi | shi-tal | ja-le |
+c2 c3 d | c2 ^A3 =A |
+w: Ju-ra-_-|i-le _ |
+G2 A2 F2- | F2 G2 A2 |
+w: O _ no | _ mu-khe |
+B2 c4 | d3 c2 B | c6- | c6- | c6- | c2 c2 c2 | B2 c4 | d2 d4 |
+w: Tu-le | di-_-_-|le | _ | _ | _ Tu-mi | shi-tal | ja-le |
+c2 c3 d | c2 ^A3 =A- | A G3 F2 | F2 E F2 G |
+w: Ju-ra-_-|i-le _ | _ _ Tu-|mi je _ _ |
+G2 G4 | G2 G4 | G2 G3 A | c2 ^A3 =A |
+w: Sa-kol | sa-ha | so kol _ | ba-ha _ |
+G A G3 F | E2 F4- | F4 ^D2 | ^D2 ^D3 =D |
+w: Maa-_-tar _ | maa-ta | _ O | ma ma _ |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 | D F ^D4 | D2 C4 |
+w: O _ aa-* * | * * | * * * | * * | * * * | * mar |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 |
+w: O nek _ _ _ | to-mar | khe-ye-_-|chhi go |
+F2 F3 ^D | D2 D ^D F ^D | D2 C4 | D2 C3 B, |
+w: A-nek _ | ni-ye-_-_-_-|chhi ma | o maa _ |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 |
+w: O ne _ _ _ | to-mar | khe-ye-_-|chhi go |
+F2 F3 ^D | D2 D ^D F ^D | D2 C4- | C2 F2 F2 |
+w: A-nek _ | ni-ye-_-_-_-|chhi ma | _ to bu |
+F2 E F2 G | G2 G3 A | c3 ^A ^A2 | A2 G2 A G |
+w: Jaa-ni _ _ | ne je _ | ki _ ba | to-may _ _ |
+F2 F4 | E2 F4- | F6- | F2 G2 G2 |
+w: Di-ye-|chhi ma | _ | _ a-mar |
+G2 A3 F- | F2 G2 A2 | B2 c4 | d3 c2 B |
+w: Jo no _ | _ ge-lo | bri-tha | kaaje _ _ |
+c6- | c6- | c6- | c2 c2 c2 |
+w: Je | _ | _ | _ Aa-mi |
+B2 c4 | d2 d4 | c2 c3 d | c2 ^A3 =A |
+w: Kaa-ta-|nu din | gha-rer _ | maa-jhe _ |
+G2 A3 F- | F2 G2 A2 | B2 c4 | d3 c2 B |
+w: Jo no _ | _ ge-lo | bri-tha | kaaje _ _ |
+c6- | c6- | c6- | c2 c2 c2 |
+w: Je | _ | _ | _ Aa-mi |
+B2 c4 | d2 d4 | c2 c3 d | c2 ^A3 =A- | A G5 | F2 E F2 G | G2 G4 | G2 G4 |
+w: Kaa-ta-|nu din | gha-rer _ | maa-jhe _ | _ _ | Tu-mi _ _ | bri-tha | a-may |
+G4 A2 | c2 ^A3 =A | G A2 G F2 | E2 F4- | F4 ^D2 | ^D2 ^D3 =D |
+w: Shok-ti | di-le _ | shok-_-_-ti-|daa-ta | _ o | aa maa _ |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 |
+w: De-sher _ _ _ | maa-ti | to-mar _ | po re |
+D F ^D4 | D2 C4- | C4 F2 | F2 F4 | G4 G2 | G2 G4- | G4 F2 | F2 F4 | G4 A2 | c2 ^A3 =A | G A G F3 | E2 F4- | F4 ^D2 | ^D2 ^D3 =D |
+w: The-_-kai | maa-tha | _ o-|aa * | * * | * * | _ * | * * | * * | mate * * | * * * * | * * | _ * | * * * |
+C2 B, C D ^D | ^D2 =D4 | D2 D3 ^D | F2 G4 |
+w: De-sher _ _ _ | maa-ti | to-mar _ | po re |
+D F ^D4 | D2 C4- | C6 |]
+w: The-_-kai | maa-tha | _ |

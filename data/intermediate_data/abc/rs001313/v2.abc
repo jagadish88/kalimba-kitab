@@ -1,0 +1,52 @@
+X:1
+T:rs001313
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs001313.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (কোথাও আমার হারিয়ে যাওয়ার       সুরান্তর ও পাঠান্তর), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs001313.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 167 of 188 (MIDI has 346); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
+M:3/8
+L:1/16
+Q:1/4=125
+K:C
+G c c4 | c2 d c2 B | B2 c2 c2 | c2 B4 |
+w: Ko-_-thao | aa-mar _ haa-|_-ri-ye | jaa-yaa |
+A B2 c c B | A G5 | G2 G A2 B | B2 A G3 |
+w: Nei _ _ _ maa-|na _ | mo-ne _ _ | _ mo-ne |
+G2 G3 ^G | ^G2 ^A ^G2 =G | G2 G ^G3 | ^G2 =G3 ^G |
+w: Me-ledi-lem | gaaner _ _ su-|rer _ _ | _ _ _ |
+F3 G F G | F E4 F | G2 G A2 B | B2 A G3 |
+w: E _ daa-_-|na _ _ | mo-ne _ _ | _ mo-ne |
+G c c4 | c2 d c2 B | B2 c2 c2 |
+w: Te-paa to | rer paa-thar _ | _ pe-roi |
+c2 B4 | A B2 c c B | A G5 |
+w: Rup _ | ka-_-thar _ _ | _ _ |
+G2 G A2 B | B2 A G3 | G2 A3 c | c2 c4 | c2 c4 | c2 d c2 B | B4 d2 | c6- | c4 d c- | c B5 | B3 c c2 | c2 d c2 B | B3 c c2 | c2 B4 |
+w: Path * * * | * * * | * * _ | bhu-le | jaai _ | _ _ _ dur | _ paa-|re | _ _ _ | _ ko | _ _ * | * * * * | * * * | * * |
+A2 B c B2 | A G5 | G2 B4 | A2 B2 A G | G3 ^G ^G2 | ^G2 =G4 | F3 G ^G =G | F E4 F |
+w: Chup _ _ ko-|thar _ | Paa-rul | _ _ _ bo-|nercham-_-pa | re mor | hoy jaa-_-_-|na _ _ |
+G2 G A2 B | B2 A G3 |
+w: Mo-ne _ _ | _ mo-ne |
+G c c4 | c2 d c2 B | B2 c2 c2 | c2 B4 | A B2 c c B | A G5 | G2 G A2 B | B2 A G3 | C4 C2 | D2 D4 | D4 E2 | E2 E3 F |
+w: _ Sur-jyo | jo _ * * | * * * | * * | * * * * * | * * | * * * * | * * * | * * | o _ | _ te | pore pore _ |
+D2 E4- | E5 F | F2 F3 G | G2 G4 |
+w: Dhu-li | _ me-|ghe _ _ | me-ghe |
+G2 G3 A | B2 A3 B | A2 A G3- | G6 |
+w: Aa-kash _ | ku-sum _ | tu-lia-mi | _ |
+C4 C2 | D2 D4 | D4 E2 | E2 E3 F |
+w: Sjo jo | _ o | _ te | po-re _ |
+D2 E4- | E5 F | F2 F3 G | G2 G4 |
+w: Dhu-li | _ me-|ghe _ _ | me-ghe |
+G2 G3 A | B2 A3 B |
+w: Aa-kash _ | ku-sum _ |
+A2 A G3- | G6 | A3 c c2 | c2 c4 | c2 c4 | c2 c4 |
+w: tu-li Saat | _ | _ _ saa-|go-rer | phe-nay | phe-nay |
+c2 B c2 d- | d/ c/ d/ c3/2 B3 |
+w: Mi-she _ _ | _ _ _ Aa-mi |
+B3 c c2 | c2 c3 B | B2 A G3- | G6 | G2 B4 | A2 B3 G | G3 ^G ^G2 | ^G2 =G4 |
+w: Jaai _ bhe-|she dur _ | _ de _ | _ | _ _ | she _ _ | _ _ _ | _ _ |
+F3 G A G | F E4 F | G2 G A2 B | B2 A G3 | G c c4 | c2 d c2 B | B2 c2 c2 | c2 B4 | A B2 c c B | A G5 | G2 G A2 B | B2 A G3 | G2 G3 ^G | ^G2 ^A ^G2 =G | G2 G ^G3 | ^G2 =G3 ^G |
+w: _ _ Po-_-|_-_-_-|_-_-_-rir | _ de-_-|_-_-_-|_-_-_-sher | * * * | * * | * * * * * | * ban-|_-_-dho _ | _ du-yaa | * * * | * * * * | * * * | * * * |
+F3 G F G | F E4 F | G2 G A2 B | B2 A G3 | G c c4 | c2 d c2 B | B2 c2 c2 | c2 B4 | A B2 c c B | A G5 | G2 G A2 B | B2 A G3 |]
+w: Dii haa-na _ | _ _ _ | mo-ne _ _ | _ mo-ne | * * * | * * * * | * * * | * * | * * * * * | * * | * * * * | * * * |

@@ -1,0 +1,99 @@
+X:1
+T:rs000133
+C:Rabindranath Tagore
+S:notes: data/raw_data/midi/rs000133.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (আমার বেলা যে যায় সাঁঝ-বেলাতে), aligned to the MIDI by midi_swara_abc.py
+S:lyrics: data/raw_data/text/lyrics/rs000133.txt (Geetabitan transliteration)
+N:Swaralipi notes matched to MIDI notes: 252 of 298 (MIDI has 271); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+M:3/4
+L:1/8
+Q:1/4=250
+K:C
+z2 A2 B2 |
+w: Aa-mar |
+B4 c2- | c2 B4 | c6- | c6 |
+w: Be-la | _ je | jaay | _ |
+B3 d c2- | c2 ^A4 | A6 | A2 A4 |
+w: Saan _ be-|_-la-|te | To-mar |
+A4 c ^A- | ^A =A G3 F | E6- | E6 |
+w: Su-re _ | _ _ su-_-|re | _ |
+F4 A2- | A2 ^A4 | d c5 | ^A =A G3 A |
+w: Sur me-|_-la-|te _ | Aa-_-mar _ |
+B4 c2- | c2 B4 | c6- | c6 |
+w: Aamar Bela | _ je | jaay | _ |
+c3 e e2- | e2 e4 | e6- | e6 |
+w: Ek-_-taa-|_-ra-|tir | _ |
+f4 e/ f/ g- | g2 f3 e | d c2 B3- | B c5 |
+w: Ek-ti _ _ | _ taa-_-|re _ _ | _ _ |
+B4 c2- | c2 c3 B | c3 ^d3- | ^d6 |
+w: Gaa-ner | _ be-_-|dan _ | _ |
+d4 c2 | d c B4 | c6- | c6 |
+w: Boi-te | _ _ naa-|re | _ |
+c3 e e2- | e2 e4 | e6- | e6 |
+w: Ek-_-taa-|_-ra-|tir | _ |
+f4 e/ f/ g- | g2 f3 e | d c2 B3- | B c5 |
+w: Ek-ti _ _ | _ taa-_-|re _ _ | _ _ |
+B4 c2- | c2 c3 B | c3 ^d3- | ^d6 |
+w: Gaa-ner | _ be-_-|dan _ | _ |
+d4 c2 | d c B4 | c6- | c6 |
+w: Boi-te | _ _ naa-|re | _ |
+B d3 c2- | c2 ^A4 | A6- | A6 |
+w: To-_-mar | _ saa-|the | _ |
+A4 c ^A- | ^A =A G F3 | E6- | E6 |
+w: Baa-re _ | _ _ baa-_-|re | _ |
+C4 E2- | E2 E4 | F6- | F6 |
+w: Haar me-|_-ne-|chhi | _ |
+^F C3 E2- | E2 E4 | F6 | F2 F3 E |
+w: E _ khe-|_-la-|te | To-mar _ |
+F4 A2- | A2 A4 | ^A6 | A2 G F2 E |
+w: Su-re | _ su-|resurmela-|te _ _ _ |
+F4 A2- | A2 ^A4 | c6 | A2 B4 |
+w: _ Aa-|_-_-|_-|_-mar |
+B4 c2- | c2 B4 | c6- | c6 |
+w: Be-la | _ je | jaay | _ |
+F4 A2- | A2 A4 | ^A6- | ^A6 |
+w: E taar | _ bnaa-|dha | _ |
+^A4 =A ^A | c2 ^A4 | A6- | A5 ^A |
+w: Kaa-chher _ | _ su-|re | _ _ |
+G4 G c- | c2 B4 | c6- | c6 |
+w: O bnaa-_-|_-shi | je | _ |
+G3 A G2- | G c B4 | c6 | ^A2 =A G F E |
+w: Baa-_-je | _ _ du-|re | a-maa _ _ _ |
+F4 A2- | A2 A4 | ^A6- | ^A6 |
+w: E taar | _ bnaa-|dha | _ |
+^A4 =A ^A | c2 ^A4 | A6- | A5 ^A |
+w: Kaa-chher _ | _ su-|re | _ _ |
+G4 G c- | c2 B4 | c6- | c6 |
+w: O bnaa-_-|_-shi | je | _ |
+G3 A G2- | G c B4 | c6 | z6 |
+w: Baa-_-je | _ _ du-|re | |
+B4 B2- | B2 B4 | c6- | c6 |
+w: Gaa-ner | _ li-|lar | _ |
+c3 f f2 | e2 d4 | d c2 B3- | B c5 |
+w: Sei _ ki-|_-na-|re _ _ | _ _ |
+F4 A2- | A2 A4 | ^A6 | A G2 A3 |
+w: Jog di-|_-te | ki | _ _ _ |
+^A3 d c2- | c2 ^A4 | A6- | A6 |
+w: Sa-_-bai | _ paa-|re | _ |
+c3 e e2- | e2 e4 | e6- | e6 |
+w: Bi-_-shwo-|_-hri-|da-|_- |
+e4 e2- | e d e4 | f6- | f3 e2 d |
+w: Paa r | _ _ baa | re | _ _ _ |
+d4 d2- | d ^d =d4 | B6- | B c5 |
+w: Raa-raa-|_-_-gi | nir | _ _ |
+B3 d c2- | c2 ^A4 | A6 | A2 A4 |
+w: Jaal _ phe-|_-la-|te | To-mar |
+A4 ^A2- | ^A =A G3 F | E6- | E6 |
+w: Su-re | _ _ su-_-|re | _ |
+F4 A2- | A2 ^A4 | c6 | A2 B4 |
+w: Su me-|_-la-|te | Aa-mar |
+B4 c2- |
+w: Ektaaratirektitaare _ |
+c2 B4 | c6- | c6 | B3 d c2- | c2 ^A4 | A6 | A2 A4 |
+w: _ Gaa-|ner | _ | be-danboi-te | _ _ | _ | naa-re |
+A4 c ^A- | ^A =A G3 F | E6- | E6 | F4 A2- | A2 ^A4 | d c5 |
+w: _ Ek-_-|_-taa-ratirekti taa-|_-|_-|_-_-|_-_-|re _ |
+^A =A G3 A | B4 c2- |
+w: _ _ Gaa-ner | be-dan |
+c2 B4 | c6- | c6 |]
+w: _ Boitenaa-|re | _ |
