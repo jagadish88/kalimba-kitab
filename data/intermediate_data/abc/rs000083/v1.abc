@@ -1,0 +1,66 @@
+X:1
+T:Aaj Jyotsna Raate
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/3973), title আজ জ্যোৎস্নারাতে সবাই গেছে বনে, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs000083.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=B8 |
+w: Aaj
+=C4 =e4 =d4 =c8 =B8 ^F4 =G8 =F8 =E8 |
+w: Jjo _ na-raa-te so-bai ge-chhe
+=F4 =G8 =B16 =c4 =c8 =c8 =c4 =d4 |
+w: Bo-ne a-ro son-ter ei _
+=B4 =d8 =B8 =d8 =c4 =B4 =G4 =B16 |
+w: Maa-tal so-mi-ro-ne _ aa
+P:Sthayi
+=B8 |
+w: Aa-
+=C4 =e4 =d4 =c8 =B8 ^F4 =G8 =F8 =E8 |
+w: Jjo _ na-raa-te so-bai ge-chhe
+=G12 =B16 =B2 =c2 =d2 =c2 =B4 =G16 |
+w: Jaa-bo na _ _ _ _ _
+=G4 =g8 =B8 =B4 =c4 =c4 =c8 =c4 =B4 =c8 |
+w: Jaa-bo na go _ jaa-bo na _ je
+=c8 =c4 =B8 =c8 =B4 =B4 =G4 =G4 ^F4 =G8 |
+w: Roi-nu po-re gho-rer _ maa-_ jhe
+=F8 =E4 =D4 =E4 =D4 =F4 =E28 |
+w: E ni-ra-_ _ _ lay
+=G8 =G4 =G4 ^F4 =G8 =B4 ^F8 =G8 =B8 |
+w: E ni-ra-_ lay ro bo aa-pon
+=G4 =B24 =c4 =c8 =c8 =d8 |
+w: Ko-ne Jaa-bo na ei
+=B4 =d8 =B8 =d8 =c4 =B4 =G4 =B16 |
+w: Maa-tal so-mi-ro-ne _ Aa-
+P:Sthayi
+=B8 |
+w: Aa-
+=C4 =e4 =d4 =c8 =B8 ^F4 =G8 =F8 =E8 |
+w: Jjo _ na-raa-te so-bai ge-chhe
+=C4 =C8 =B,8 =B,8 =C4 =E8 =E4 =F4 =D4 =F4 |
+w: Aa-mar e gho-r hu ja-_ ton _
+=F4 =E24 =D4 =D4 =F4 =F8 =E4 =D2 =C2 |
+w: Ko-re Dhu-te _ ho-be _ _
+=C8 =E4 =E4 =F4 =D4 =F4 =F4 =E24 |
+w: Mu te ho-_ be _ mo-re
+=G4 =G8 =B8 =B4 =c4 =c8 =c4 =c4 =B4 =c8 |
+w: Aa-ma-re je _ jaag-te ho-_ be
+=c4 =c8 =c4 =B4 =c8 =B8 =G4 =G4 ^F4 =G8 |
+w: Ki jaa-ni _ se aas-be ka-_ be
+=F4 =E8 =D4 =E4 =D4 =F4 =E28 |
+w: Jo-di aa-_ _ _ may
+=G4 =G8 =G4 ^F4 =A2 =G6 =B4 ^F8 =G8 =B8 |
+w: Jo-di aa-_ may _ po-re taa-har
+=G4 =B24 =c4 =c8 =c8 =d8 |
+w: Mo-ne Ba-son-ter ei
+=B4 =d8 =B8 =d8 =c4 =B4 =G4 =B16 |
+w: Maa-tal so-mi-ro-ne _ aa
+P:Sthayi
+=B8 |
+w: Aa-
+=C4 =e4 =d4 =c8 =B8 ^F4 =G8 =F8 =E8 |
+w: Jjo _ na-raa-te so-bai ge-chhe
