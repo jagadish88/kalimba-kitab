@@ -164,6 +164,9 @@ def main():
                  f"played a semitone off on the tine shown above it. {subs}." if play_as else
                  "Every note has a tine (none played a semitone off).")
     meter = fields.get("M", "4/4")
+    free = meter.strip().lower() == "none"          # no meter (drafts from the swaralipi): free bars
+    if free:
+        music = ['\\bar "|"' if m == "|" else m for m in music]
     ly = f"""\\version "2.24.0"
 \\header {{
   title = {ly_text(fields.get("T", Path(a.abc).stem))}
@@ -175,7 +178,7 @@ def main():
 \\score {{
   <<
     \\new Voice = "tune" {{
-      \\key c \\major \\time {meter} \\autoBeamOn
+      \\key c \\major {'\\cadenzaOn' if free else '\\time ' + meter} \\autoBeamOn
       {' '.join(music)}
     }}
     \\new Lyrics \\lyricsto "tune" {{

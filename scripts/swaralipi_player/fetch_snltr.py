@@ -52,32 +52,56 @@ def title_of(t):
 
 
 def crawl():
+    """Saves as it goes: each song found is appended to snltr_index.csv at once, and the crawl's
+    state (pages seen, pages queued) is written to crawl_state.json every 25 pages, so a stopped
+    crawl continues where it left off."""
     os.makedirs(OUT, exist_ok=True)
-    seen, queue, songs = set(), [f'/node/{n}' for n in START] + EXTRA, {}
+    index, state = f'{OUT}/snltr_index.csv', f'{OUT}/crawl_state.json'
+    if os.path.exists(state):
+        st = json.load(open(state, encoding='utf-8'))
+        seen, queue = set(st['seen']), st['queue']
+    else:
+        seen, queue = set(), [f'/node/{n}' for n in START] + EXTRA
+    songs = set()
+    if os.path.exists(index):
+        songs = {r['song_page'] for r in csv.DictReader(open(index, encoding='utf-8'))}
+    else:
+        with open(index, 'w', newline='', encoding='utf-8') as f:
+            csv.writer(f).writerow(['song_page', 'page_title', 'gaan'])
+
+    def save_state():
+        tmp = state + '.tmp'
+        json.dump(dict(seen=sorted(seen), queue=queue), open(tmp, 'w', encoding='utf-8'), ensure_ascii=False)
+        os.replace(tmp, state)
+
     while queue:
         p = queue.pop(0)
         if p in seen:
             continue
-        seen.add(p)
         t = get(p)
         if not t:
+            queue.append(p)                   # try again later instead of losing it
+            save_state()
+            time.sleep(30)
             continue
+        seen.add(p)
         g = re.findall(r'16053\?gaan=([^"\'<>]+?\.xml)', t)
-        if g:
-            songs[p] = (title_of(t), urllib.parse.unquote(g[0]))
+        if g and p not in songs:
+            songs.add(p)
+            with open(index, 'a', newline='', encoding='utf-8') as f:
+                csv.writer(f).writerow([p, title_of(t), urllib.parse.unquote(g[0])])
         for n in re.findall(r'href=["\']?/node/(\d+)["\' >]', t):
             if int(n) not in MENU and f'/node/{n}' not in seen:
                 queue.append(f'/node/{n}')
         for q in re.findall(r'href=["\']?(/node/4\?subcatid=\d+&(?:amp;)?catId=\d+)', t):
-            queue.append(html.unescape(q))
+            if html.unescape(q) not in seen:
+                queue.append(html.unescape(q))
+        if len(seen) % 25 == 0:
+            save_state()
         if len(seen) % 50 == 0:
             print(f'{len(seen)} pages, {len(songs)} with swaralipi, {len(queue)} queued', flush=True)
-    with open(f'{OUT}/snltr_index.csv', 'w', newline='', encoding='utf-8') as f:
-        w = csv.writer(f)
-        w.writerow(['song_page', 'page_title', 'gaan'])
-        for p, (ti, g) in sorted(songs.items()):
-            w.writerow([p, ti, g])
-    print(f'{len(seen)} pages crawled, {len(songs)} songs with a swaralipi -> {OUT}/snltr_index.csv')
+    save_state()
+    print(f'{len(seen)} pages crawled, {len(songs)} songs with a swaralipi -> {index}')
 
 
 def parse(t):
@@ -100,8 +124,11 @@ def parse(t):
     return head, R
 
 
-def notation():
+def notation(first=()):
+    """first: song pages (/node/N) to fetch before the rest"""
     rows = list(csv.DictReader(open(f'{OUT}/snltr_index.csv', encoding='utf-8')))
+    rank = {p: i for i, p in enumerate(first)}
+    rows.sort(key=lambda r: rank.get(r['song_page'], len(rank)))
     done = 0
     for i, r in enumerate(rows):
         node = r['song_page'].rsplit('/', 1)[-1]
@@ -119,10 +146,14 @@ def notation():
                  accessed=time.strftime('%Y-%m-%d'), rows=R)
         json.dump(d, open(path, 'w', encoding='utf-8'), ensure_ascii=False)
         done += 1
-        if done % 50 == 0:
-            print(f'{i + 1}/{len(rows)} fetched', flush=True)
+        if done % 25 == 0:
+            print(f'{i + 1}/{len(rows)} done', flush=True)
     print(f'notation tables saved: {done} new, {len(os.listdir(OUT)) - 1} in {OUT}')
 
 
 if __name__ == '__main__':
-    {'index': crawl, 'notation': notation}[sys.argv[1] if len(sys.argv) > 1 else 'index']()
+    if len(sys.argv) > 1 and sys.argv[1] == 'notation':
+        first = open(sys.argv[2]).read().split() if len(sys.argv) > 2 else ()
+        notation(first)
+    else:
+        crawl()

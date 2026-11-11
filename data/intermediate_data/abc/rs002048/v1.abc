@@ -1,0 +1,78 @@
+X:1
+T:rs002048
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4745), title তোমার অসীমে প্রাণমন লয়ে, tala তিনতালা
+S:lyrics: data/raw_data/text/lyrics/rs002048.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=G4 =G4 =B4 =A4 =C8 =B8 |
+w: To-ma-ro a-si-me
+=G4 =G2 ^F2 =A2 =G2 =G2 =F2 =F4 =E2 =F =G =E8 =E4 =F4 =B8 =A8 =G4 =G4 |
+w: Praa-no-_ mo-_ n _ lo-_ _ _ ye ja-to du-re aa-mi
+=F8 =E2 =F2 =G4 =E8 =C8 |
+w: Dhaai _ _ _ _ _
+P:Sthayi
+=G4 =G4 =B4 =A4 =C8 =B8 |
+w: To-ma-ro a-si-me
+=G4 =G2 ^F2 =A2 =G2 =G2 =F2 =F4 =E2 =F =G =E8 =E4 =F4 =B8 =A8 =G4 =G4 |
+w: Praa-no-_ mo-_ n _ lo-_ _ _ ye ja-to du-re aa-mi
+=F8 =E2 =F2 =G4 =E8 =C8 =C4 =C4 =F8 =F8 =E8 |
+w: Dhaai _ _ _ _ _ Ko-thao _ du-kho
+=E4 =E4 =G4 ^F4 =G8 =G8 =G4 =B8 =B4 =B8 =B4 =c4 |
+w: Ko-thao _ _ mri-tu ko-thaa bich-chhe-do _
+=B8 =A2 =B =c5 =B8 =G8 |
+w: Naai _ _ _ _ _
+=G8 =B4 =B4 =B8 =B8 |
+w: Mri-tyu se dha-re
+=c8 =d4 =B4 =c16 =c8 =c8 =c8 =c2 =d =c5 |
+w: Mri-tyu-ro rup du-kho hoy hey _ _
+=B8 =G4 =G4 =B16 |
+w: Du-khe-ro kup
+=G8 =B4 =B4 =B8 =B8 |
+w: Mri-tyu se dha-re
+=c8 =d4 =B4 =c16 =c8 =c8 =c8 =c2 =d =c5 |
+w: Mri-tyu-ro rup du-kho hoy hey _ _
+=B8 =G4 =G4 =B16 =c4 =e4 =d4 =d4 =c8 =B8 |
+w: Du-khe-ro kup To-ma ho-te ja-be
+=G4 =A4 =G4 =F4 =E16 =E4 =F4 =G4 =B4 =B8 =B4 =c4 |
+w: Ho-i-ye bi-mukh aa-po-nar _ paa-ne _
+=B8 =A2 =B =c5 =B8 =G8 |
+w: Chaai _ _ _ _ _
+=C4 =C4 =G4 =G4 =G8 =G8 |
+w: Hey pur-_ no ta-bo
+=G4 =G4 =G4 =G4 =G4 =A4 =F8 =G4 =B4 =B4 =B4 =B16 |
+w: Cha-ro-ne-r kaa-_ chhe jaa-ha ki-chu sab
+=c4 =c4 =c4 =c2 =B2 =B8 =G8 =c8 =c8 ^A12 =A4 |
+w: Aa-chhe aa-chhe _ aa-chhe Naai naai bhoy _
+=G4 =A4 =G4 =G2 =F2 =F8 =E8 =E4 =E4 =E4 =E4 =E4 =F4 =G4 =F4 |
+w: Se su-dhu aa-_ ma-ri ni-shi-di-no knaadi _ _ _
+=E16 =C16 |
+w: Taai _
+=C4 =C4 =G4 =G4 =G8 =G8 |
+w: Hey pur-_ no ta-bo
+=G4 =G4 =G4 =G4 =G4 =A4 =F8 =G4 =B4 =B4 =B4 =B16 |
+w: Cha-ro-ne-r kaa-_ chhe jaa-ha ki-chu sab
+=c4 =c4 =c4 =c2 =B2 =B8 =G8 =c8 =c8 ^A12 =A4 |
+w: Aa-chhe aa-chhe _ aa-chhe Naai naai bhoy _
+=G4 =A4 =G4 =G2 =F2 =F8 =E8 =E4 =E4 =E4 =E4 =E4 =F4 =G4 =F4 |
+w: Se su-dhu aa-_ ma-ri ni-shi-di-no knaadi _ _ _
+=E16 =C16 =G8 =B4 =B4 =B8 =B8 |
+w: Taa-_ i ta-ro-gla-ni
+=c8 =d4 =B4 =c16 =c4 =c4 =c4 =c4 =c8 =c2 =d =c5 |
+w: Song-sa-ro-bhar loko lo-ko phe-li-te _ _
+=B4 =B4 =G4 =G4 =B16 |
+w: Ko-tha e-kaa-kar
+=G8 =B4 =B4 =B8 =B8 |
+w: An-ta-ro-gla-ni
+=c8 =d4 =B4 =c16 =c4 =c4 =c4 =c4 =c8 =c2 =d =c5 |
+w: Song-sa-ro-bhar loko lo-ko phe-li-te _ _
+=B4 =B4 =G4 =G4 =B16 =c4 =e4 =d4 =d4 =c8 =B8 |
+w: Ko-tha e-kaa-kar Ji-bo-ne-r maa-jhe
+=G4 =A4 =G4 =F4 =E16 =E4 =F4 =G4 =B4 =B8 =B4 =c4 |
+w: Swa-ru-po to-mar raa-khi-ba-_ re jo-di
+=B8 =A2 =B =c5 =B8 =G8 |
+w: Paai _ _ _ _ _

@@ -1,0 +1,61 @@
+X:1
+T:rs001277
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/6270), title কী পাই নি তারি হিসাব মিলাতে, tala কাহারবা
+S:lyrics: data/raw_data/text/lyrics/rs001277.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=G4 =B4 =B4 =A4 =G24 =G4 ^F4 =G4 =B8 =B4 |
+w: Ki _ paai _ ni taa-ri hi-shab mi-
+=B4 =B2 =c6 =B4 =c8 =B8 =A8 =G4 ^F4 =E4 ^F4 |
+w: Mon _ _ mon more no-he raa-_ ji _
+=G4 =B4 =B4 =A4 =G16 =G4 =B4 =B4 =B2 =A2 =G16 |
+w: Raaji _ raa-_ ji Aaj _ hri-d-_ ayer
+^F4 =G4 =A4 =G4 ^F8 =G8 ^F4 =G4 =A4 =G4 ^F8 =E4 =C4 |
+w: Chhaa-ya-te aa-lo-te bnaa-sho-ri u-tthe-chhe _
+=C4 =E4 =E4 ^F4 =G4 =B4 =B4 =A4 =G32 |
+w: Baa-_ ji _ B-_ haa-_ lo-
+=c4 =c4 =c4 =c4 =c8 =c4 =d4 =B4 =c4 =B4 =B4 =B8 =B2 =A2 =G4 |
+w: Bhaa-lo-be-she-chhi-nu _ ei _ dha-ro-ni-re _ _
+=G4 =B4 =B8 =A4 =B4 =A8 =G32 |
+w: Bhaa-lo-be-she-_ chhi-nu
+=c4 =c4 =c4 =c4 =c8 =c4 =d4 =B4 =c4 =B4 =B4 =B8 =B2 =A2 =G4 |
+w: Bhaa-lo-be-she-chhi-nu _ ei _ dha-ro-ni-re _ _
+=G4 =B4 =B8 =A4 =B4 =A8 =G32 |
+w: Bhaa-lo-be-she-_ chhi-nu
+=G4 =B4 =B4 =B4 =A8 =G8 ^F8 =G16 =A4 =G4 |
+w: Sei _ smri-ti mo-ne aa-se phi-re
+^F8 =G24 =G4 =G2 =B2 =B8 =A8 =G8 |
+w: Phi-re Ka-to _ ba-son-te
+^F4 =G4 =A4 =G4 ^F8 =E8 =E4 =F4 =F4 =E4 =E8 =C4 =B,4 |
+w: Do-khi-no-so-mi-re bho-re-chhe aa-mar aji _
+=C4 =E4 =E20 ^F4 |
+w: Saa-_ ji _
+^F4 =G4 =A4 =G4 ^F16 =E4 ^F4 =G4 ^F4 =E8 =E8 |
+w: Nayo-ner ne-r jal go-bhi-r ga-ho-ne
+=D4 =E4 =D4 =D4 =C8 =C8 =B,4 =D4 =C24 |
+w: Aa-che hri-da-ye-r sta-_ re
+=A,2 =C2 =C4 =C4 =C4 =C4 =D4 =B,8 =C4 =E4 =E4 =E4 ^F8 =G4 ^F4 |
+w: Be-_ do-nar se se _ se go-pa-ne go-pa-ne _
+=E4 ^F4 =E2 ^F2 ^F4 =G16 ^F4 =G4 =A4 =G4 ^F4 ^F2 =G2 =E4 ^F4 |
+w: Saa-_ _ _ dho-na phal pha-l ko-re _ _ _ _
+=E4 ^F4 =E2 ^F2 ^F4 =G16 =G4 =B4 =B4 =B4 =B8 =B2 =c2 =d2 =c2 |
+w: Sapha-_ _ _ l re Maa-jhe maa-jhe ba-te _ _ _
+=B2 =d2 =d4 =c4 =c4 =B16 =B4 =c4 =c4 =c4 =B4 =A4 =G8 |
+w: Chhni-_ re-chhi-lo taar taai _ ni-ye ke-_ ba
+^F4 =G4 =A4 =G4 ^F8 =G8 |
+w: Ko-re haa-ha-kar _
+=G4 =B4 =B4 =B4 =B8 =B2 =c2 =d2 =c2 |
+w: Maa-jhe maa-jhe ba-te _ _ _
+=B2 =d2 =d4 =c4 =c4 =B16 =B4 =c4 =c4 =c4 =B4 =A4 =G8 |
+w: Chhni-_ re-chhi-lo taar taai _ ni-ye ke-_ ba
+^F4 =G4 =A4 =G4 ^F8 =G8 =G4 =B4 =B4 =B4 =A8 =G4 =A4 |
+w: Ko-re haa-ha-kar _ Sur _ to-bu le-ge-_
+^F8 =G16 =A4 =G4 ^F8 =G8 ^F4 =G4 =A4 =G4 |
+w: Chhi-lo baa-re-bar _ mo-ne po-re
+^F8 =E4 =C4 =C4 =E8 ^F4 |
+w: Taai aa-_ ji _ _

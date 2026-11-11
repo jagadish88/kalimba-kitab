@@ -1,0 +1,81 @@
+X:1
+T:rs000907
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/5720), title ঘরেতে ভ্রমর এলো, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs000907.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=E4 =F4 =G4 ^G4 |
+w: Gha-re-te _
+=G4 ^G2 =c2 =B2 =c =B ^G4 =G4 ^G4 =F8 =G2 ^G2 =G4 =E16 =E4 =F4 =G4 ^G4 |
+w: Bhro-mor _ _ _ _ e-lo _ gun-gu-_ ni-ye ye ye ye _
+=G4 ^G2 =c2 =B2 =c =B ^G4 =G4 ^G4 =F8 =G2 ^G2 =G4 =E16 =B4 =B4 =c4 ^c4 |
+w: Bhro-mor _ _ _ _ e-lo _ gun-gu-_ ni-ye Aa-ma-re _
+=B4 =c4 =B4 ^G4 =G4 =F4 =G4 =c4 =B2 =c =B ^G4 =G4 ^G4 |
+w: Kaar _ ka-tha se _ jaay _ shu-_ _ ni-ye _
+=G4 =F2 =E2 =E4 =F4 =G4 ^G4 |
+w: _ _ _ Gha-re-te _
+P:Sthayi
+=E4 =F4 =G4 ^G4 |
+w: Gha-re-te _
+^G4 ^G4 =B4 =c4 |
+w: Aa-lo-te _
+=c4 ^c4 ^c2 =c2 =B4 =c16 =c2 =B2 =c2 ^d2 ^c4 =c4 |
+w: Kon _ ga-_ go-ne maa-_ dho-_ bi _
+=B8 =c4 =B4 =c4 =B2 =c =B ^G8 ^G4 ^G4 =B4 =c4 |
+w: Jaag-lo bo-ne _ _ _ _ E-lo sei _
+=c4 ^c4 ^c2 =c2 =B4 =c16 =c2 =B2 =c2 ^d2 ^c4 =c4 |
+w: Ga-_ ga-_ go-ne maa-_ dho-_ bi _
+=B8 =c4 =B4 =c4 =B2 =c =B |
+w: Jaag-lo bo-ne _ _ _
+^G4 =G4 =E4 =F4 =G4 ^G4 =G4 =c4 =B4 ^G4 =G4 ^G4 |
+w: _ _ E-lo sei _ phul _ jaa-ga-nor _
+=F4 =G4 ^G4 =G4 =E16 =E4 =F4 =G4 ^G4 |
+w: Kha-bor _ ni-ye S-Sa-Sa-_
+=G4 =c4 =B4 ^G4 =G4 ^G4 |
+w: Phul _ jaa-ga-nor _
+=F4 =G4 ^G4 =G4 =E16 =B4 =B4 =c4 ^c4 =B4 =c4 =B4 ^G4 =G4 =F4 |
+w: Kha-bor _ ni-ye Saa-ra din _ sei _ ka-tha se _
+=G4 =c4 =B2 =c =B ^G4 =G4 ^G4 =G4 =F2 =E2 =E4 =F4 =G4 ^G4 |
+w: Jaay _ shu-_ _ ni-ye _ _ _ _ Kem-Ke-mone _
+P:Sthayi
+=E4 =F4 =G4 ^G4 |
+w: Gha-re-te _
+=C4 ^C4 =E4 =F4 |
+w: Ke-mo-ne _
+=F4 =F8 =F4 =F2 =G2 =F2 =G =F =E8 =F4 =E4 =C4 ^C4 |
+w: Ro-hi gho-re _ _ _ _ _ mo-n je _
+=E4 =F4 =E2 =F =E ^C4 =C16 =F4 =F4 =F4 =E4 |
+w: Ke-mon _ _ _ ko-re Ke-mo-ne _
+=F4 ^A4 ^G4 =B4 =c4 =G4 =G4 ^A4 ^G2 ^A ^G ^G4 =G16 =F4 =F4 =F4 =E4 |
+w: Kaa-te _ je din _ din _ gu-_ _ ni-ye Ke m-aaya _
+=F4 ^A4 ^G4 =B4 =c4 =G4 =G4 ^A4 ^G2 ^A ^G ^G4 =G16 ^G4 ^G4 =B4 =c4 |
+w: Kaa-te _ je din _ din _ gu-_ _ ni-ye Ke maa-ya _
+=c4 ^c4 =c4 =B4 =c16 =B4 =c2 =e2 ^c4 =c4 |
+w: Dey _ bu-la-ye di-lo _ sab _
+=B8 =c4 =B4 =c4 =B2 =c =B ^G8 ^G4 ^G4 =B4 =c4 |
+w: Kaaj bhu-la-ye _ _ _ _ Be-la jaay _
+=c4 ^c4 =c4 =B4 =c16 =B4 =c2 =e2 ^c4 =c4 |
+w: Bu-_ bu-la-ye di-lo _ sab _
+=B8 =c4 =B4 =c4 =B2 =c =B |
+w: Kaaj bhu-la-ye _ _ _
+^G4 =G4 =E4 =F4 =G4 ^G4 =G4 =G2 =c2 =B2 =c =B ^G4 =G4 ^G4 |
+w: _ _ Be-la jaay _ gaa-ner _ _ _ _ su-re _
+=F8 =G2 ^G2 =G4 =F4 =G4 =E8 =E4 =F4 =G4 ^G4 |
+w: Jaal bu-_ ni-ye _ _ Aa-Aa-mare _
+=G4 =G2 =c2 =B2 =c =B ^G4 =G4 ^G4 |
+w: Gaa-ner _ _ _ _ su-re _
+=F8 =G2 ^G2 =G4 =F4 =G4 |
+w: Jaal bu-_ ni-ye _
+=E8 =B4 =B4 =c4 ^c4 =B4 =c4 =B2 =c =B ^G4 =G4 =F4 |
+w: _ Aa-ma-re _ kaar _ ka-_ _ tha se _
+=G4 =c4 =B2 =c =B ^G4 =G4 ^G4 =G4 =F2 =E2 =E4 =F4 =G4 ^G4 |
+w: Jaay _ shu-_ _ ni-ye _ _ _ _ gho re te _
+=G4 ^G2 =c2 =B2 =c =B ^G4 =G4 ^G4 =F8 =G2 ^G2 =G4 =E16 =E4 =F4 =G4 ^G4 |
+w: Bhro-mor _ _ _ _ e-lo _ gun-gu-_ ni-ye ye ye ye _
+=G4 ^G2 =c2 =B2 =c =B ^G4 =G4 ^G4 =F8 =G2 ^G2 =G4 =E8 |
+w: Bhro-mor _ _ _ _ e-lo _ gun-gu-_ ni-ye

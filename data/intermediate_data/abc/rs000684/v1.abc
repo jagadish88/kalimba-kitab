@@ -1,0 +1,71 @@
+X:1
+T:rs000684
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/6249), title দিনগুলি মোর সোনার খাঁচায়, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs000684.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=C2 =G6 =G4 =G4 =G8 ^F4 =G8 =G2 ^F2 =E2 ^F2 =G2 ^F2 |
+w: Din-_ gu-li mor so-nar khnaa-_ _ _ _ _
+=E24 =E2 =C6 =D4 =D2 =E10 |
+w: Taa-ra _ lo na _
+=E2 =C6 =D4 =D4 =B8 =A8 =G4 ^F4 =A2 =G2 ^F4 |
+w: Koi-_ lo na _ Sei je aa-mar _ _
+=E4 =E4 ^F4 =G4 ^F4 =E4 =D2 =E6 =D4 =C12 |
+w: Naa-na _ nger nger _ din-_ gu-li
+=C2 =E6 =E4 =D4 =D8 =C4 =C8 =D4 =E4 =D4 |
+w: Kaa-_ nna-haa-sir bnaa-dhan _ _ _
+=C16 =C4 =C4 =C8 =D4 =D4 =E8 |
+w: _ Taa-ra soi-lo na _
+=E2 =C6 =D4 =D4 =B8 =A8 =G4 ^F4 =A2 =G2 ^F4 |
+w: Koi-_ lo na _ Sei je aa-mar _ _
+=E4 =E4 ^F4 ^F2 =G2 ^F4 =E4 =D2 =E6 =D4 =C12 |
+w: Naa-na _ nger _ nger _ din-_ gu-li
+=G4 =E8 =G4 =G8 =G4 =A8 =A4 =A4 =G4 |
+w: Aa-mar praa-ner gaa-ner bhaa-sha _
+=c24 =c4 =e4 =e4 =d4 =c4 =G4 |
+w: _ Shik-_ be taa-ra _
+=G4 =G2 =A2 =B4 =B4 =A4 =B2 =A2 =G12 =A4 =B4 =A4 |
+w: Chhi-lo _ _ aa-sha _ _ _ _ _ _
+=G24 =G4 =G2 =A2 =B4 =B4 =A4 =B2 =A2 |
+w: _ U-re _ _ ge-lo _ _
+=G12 =A4 =B4 =A4 =G24 |
+w: _ _ _ _ _
+=C4 =C4 =D4 =E4 =E4 =D4 =C8 =D4 =D2 =G10 |
+w: Ka-k-_ a-tha _ koi-lo na _
+=G2 =C6 =D4 =D4 =B8 =A8 =G4 ^F4 =A2 =G2 ^F4 |
+w: Roi-_ lo na _ Sei je aa-mar _ _
+=E4 =E4 ^F4 =G4 =G2 ^F2 =E4 =D2 =E6 =D4 =C12 |
+w: Naa-na _ nger nger _ _ din-_ gu-li
+=C4 =C4 =A,4 =A,2 =C6 =D4 =E24 |
+w: Swa-pon _ de-_ _ khi
+=E2 =G2 =G8 =G4 =G8 =G4 ^F4 =G4 =G4 ^G8 |
+w: Je-_ no taa-ra kaar _ aa-she _
+=G4 =G8 ^F4 =E8 =E4 =E4 ^F4 =G4 =G2 ^F2 =E4 |
+w: Phe-re aa-mar bhaa-nga _ khnaa-char _ _
+=D2 =E6 =D4 =C12 =C8 =A,4 =A,2 =C2 =C8 |
+w: Chaar _ paa-she Sei je aa-_ mar
+=C4 =C4 =D4 =E4 =E4 =F4 =D2 =E6 =D4 =C12 |
+w: Naa-na _ nger nger _ din-_ gu-li
+=C4 =C4 =A,4 =A,2 =C6 =D4 =E24 |
+w: Swa-pon _ de-_ _ khi
+=E2 =G2 =G8 =G4 =G8 =G4 ^F4 =G4 =G4 ^G8 |
+w: Je-_ no taa-ra kaar _ aa-she _
+=G4 =G8 ^F4 =E8 =E4 =E4 ^F4 =G4 =G2 ^F2 =E4 |
+w: Phe-re aa-mar bhaa-nga _ khnaa-char _ _
+=D2 =E6 =D4 =C12 =C8 =A,4 =A,2 =C2 =C8 |
+w: Chaar _ paa-she Sei je aa-_ mar
+=C4 =C4 =D4 =E4 =E4 =F4 =D2 =E6 =D4 =C12 |
+w: Naa-na _ nger nger _ din-_ gu-li
+=C2 =G2 =G4 =E4 =G4 =G8 =G8 =A4 =A4 =A4 =G8 =c20 =c2 =e2 =e8 =d4 =c28 =C4 =C4 =C4 =D4 =D4 =E32 =E2 =G2 =G8 ^F4 =G8 |
+w: Hoy _ hoy _ hoy hoy hoy ki phnaa-ki _ _ O-_ ra ki sab _ chhaa-yar _ paa-khi Aa-_ kash paa-re
+=G2 =B2 =B8 =A4 =G4 ^F4 =E2 ^F6 =E4 =E2 =G10 |
+w: Ki-_ chui ki go _ roi-_ lo na _
+=G2 =D6 =E4 =E4 =B8 =A8 =G4 ^F4 =A2 =G2 ^F4 |
+w: Roi-_ lo na _ Sei je aa-mar _ _
+=E4 =E4 ^F4 =G4 ^F4 =E4 =D2 =E6 =D4 =C12 |
+w: Naa-na _ nger nger _ din-_ gu-li

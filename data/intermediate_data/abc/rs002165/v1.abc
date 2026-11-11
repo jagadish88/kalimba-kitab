@@ -1,0 +1,74 @@
+X:1
+T:rs002165
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4979), title তুমি সন্ধ্যার মেঘমালা-, tala একতালা
+S:lyrics: data/raw_data/text/lyrics/rs002165.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=G4 =G2 =B2 |
+w: Tu-mi _
+=A8 =G4 =G4 =G4 =G2 ^F2 =A2 =G2 ^F4 =E8 =E4 =E4 |
+w: Son-dhya-ro me-gho-_ ma-_ _ la tu-mi
+=D4 =E4 =D4 =E4 =F4 =F4 =E2 =D2 =E4 =D4 =C4 =C4 =C4 |
+w: Aa-ma-ro ni-bh-rito saa-_ _ dho-na mo bi-
+=C4 =B,4 =A,4 =B,4 =C4 =C2 =E2 =D4 =D2 =B,2 =D4 =C4 =C4 =C4 |
+w: Bija-_ no-ga-go-no-_ bi-ha-_ _ ri Aa-mi
+=B,4 =C4 =B,4 =A,4 =B,4 =A,4 =G,4 =G,2 =C2 =C4 =C4 =C4 =C4 |
+w: Mo-mo-mo-mo-ne-r ma-dhu-_ ri mi-sha-ye
+=B,4 =D4 =D4 =B,4 =D4 =E4 =D4 =E4 ^F4 =G4 =G4 =G4 |
+w: To-ma-re ko-re-chhi ra-cho-na _ Tu-mi
+=G4 =G2 =A2 =A8 =A4 =A2 =G2 =A4 =A2 =B2 =B8 =A4 =B4 |
+w: Aa-ma-_ ri tu-mi _ aa-ma-_ ri m-amo
+=c4 =c2 =e2 =d4 =c4 =B4 =A4 =G2 ^F2 =A2 =G2 ^F4 =E2 ^F2 =G4 =G2 =B2 |
+w: M-a-_ mo mo-honomaro-no-bi-_ ha-_ _ r-_ i i _
+P:Sthayi
+=G4 =G2 =B2 |
+w: Tu-mi _
+=A8 =G4 =G4 =G4 =G2 ^F2 =A2 =G2 ^F4 =E8 =E4 =E4 |
+w: Son-dhya-ro me-gho-_ ma-_ _ la tu-mi
+=G4 =G4 |
+w: Mo-ho-
+=G2 ^F2 =A4 =G4 =G2 =c6 =c2 =B2 =d2 =c6 =c8 =c4 =c2 =B2 |
+w: Hri-_ dayo-r-rak-_ to-_ ra-_ ge ta-bo _
+=A4 =B4 =A4 =B4 =B2 =d2 =c4 =B2 =A2 =B4 =A2 =G6 =G4 =G4 |
+w: Cha-ro-no di-ye-_ chhi raa-_ ngi-ya _ o so-
+=G8 =D4 =E4 =F4 =E2 =G2 =F4 =D2 =E6 =D4 =C4 =C4 |
+w: Son-dhyaga-gon-go-no-_ bi-hari _ bo bo bo
+=C4 =C2 =c2 =c4 =B4 =B2 =d2 =c2 =B2 =A4 =A2 =B2 =B4 =A4 =G4 =G4 |
+w: E-enk-_ en-en-ke-_ chhi _ su-dha-_ bi-she mi-she
+=D4 =D4 =E4 =E4 ^F4 =G4 ^F8 =G4 =A4 =G4 =A2 =G2 |
+w: Ma-mo su-kha-du-kha bhaa-ngi-ya Tu-mi _
+=A4 =A2 =B2 =B8 =B4 =B2 =G2 =A4 =B4 =c4 =B4 =A4 =B4 |
+w: Aa-ma-_ ri tu-mi _ aa-ma-ri _ mo mo-
+=c4 =c2 =e2 =d4 =c4 =B4 =A4 =G2 ^F2 =A2 =G2 ^F4 =E2 ^F2 =G4 =G2 =B2 |
+w: Bi-ja-_ no-swa-po-no-bi-_ ha-_ _ r-_ i i _
+P:Sthayi
+=G4 =G2 =B2 |
+w: Tu-mi _
+=A8 =G4 =G4 =G4 =G2 ^F2 =A2 =G2 ^F4 =E8 =E4 =E4 |
+w: Son-dhya-ro me-gho-_ ma-_ _ la tu-mi
+=G4 =G2 =B2 |
+w: Mo-ho-_
+=A4 =G4 =G4 =G4 =G4 =G2 ^F2 =A2 =G2 ^F4 =E4 =E4 =E4 =E4 |
+w: Mo-h-on-ono-o-no-_ m-_ _ aro-no-bi-bi-
+=D4 =E4 =D4 =E4 =F4 =F4 =E2 =D2 =E8 =D4 =C4 =C4 |
+w: Nayo-ne ne di-ye-chhi pa-_ ra-ye ye ye
+=C4 =B,4 =A,4 =B,4 =C4 =C2 =E2 =D4 =D2 =B,2 =D4 =C4 =G4 =G4 |
+w: Mug-_ dho-nayo-n-no-_ bi-hari _ _ mo mo sa-
+=G2 ^F2 =A4 =G4 =G2 =c2 =c4 =c2 =B2 =B2 =d2 =c4 =c4 =c8 =c2 =B2 |
+w: San-_ _ gi-to _ ta-bo _ an-_ _ ge an-ge _
+=A4 =B4 =A4 =B4 =c2 =d2 =c4 =B2 =A2 =B4 =A4 =G4 =G4 =G2 =e2 |
+w: Di-ye-chhi j-ara-_ ye j-_ ara-ye _ Tu-mi _
+=e4 =e4 =e8 =e4 =e2 =f2 =d4 =d4 =c4 =B4 =A4 =B4 |
+w: Aa-ma-ri tu-mi _ aa-ma-ri _ mo mo-
+=c4 =c2 =e2 =d4 =c4 =B4 =A4 =G2 ^F2 =A2 =G2 ^F4 =E2 ^F2 =G4 =G2 =B2 |
+w: Mo-ho-_ no-ma-ro-no-bi-_ ha-_ _ r-_ i i _
+P:Sthayi
+=G4 =G2 =B2 |
+w: Tu-mi _
+=A8 =G4 =G4 =G4 =G2 ^F2 =A2 =G2 ^F4 =E8 =E4 =E4 |
+w: Son-dhya-ro me-gho-_ ma-_ _ la tu-mi

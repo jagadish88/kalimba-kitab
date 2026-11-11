@@ -1,0 +1,90 @@
+X:1
+T:rs001103
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4756), title যে তোমায় ছাড়ে ছাড়ুক, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs001103.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=F4 =E4 =C4 =D4 |
+w: Je to-may _
+=E4 =E2 =F =E5 =D4 =C8 =C4 =C8 =E4 =E8 |
+w: Chhaa-re _ _ chhaa-ruk aa-mi to-may
+=E8 =F4 =G4 =G4 ^G2 =G2 =G8 =F4 =E4 =C4 =D4 |
+w: Chhaar-bo na m-_ _ _ i to-mar _
+=E4 =E2 =F =E5 =D4 =C24 =G4 =G4 |
+w: Chhaa-re _ _ chhaa-ruk aa-mi
+=G4 =G8 =G4 =G8 =G4 =A4 =G2 =A2 ^A4 ^A4 ^A4 |
+w: To-mar cha-ron Ma _ go _ _ aa-mi
+^A4 ^A4 =A4 =G4 =G8 ^A8 ^A4 =A4 =G4 =A2 =G2 |
+w: To-mar _ cha-r-bo bo sha-ron _ _
+=G8 =F4 =E4 =E8 =E8 =F4 =G4 =G4 =c4 |
+w: Ka-kaa-ro dhaar dhaar-bo na ma _
+=B8 =G4 =F4 =E8 =E8 =F4 =G4 =G4 ^G2 =G2 |
+w: Ka-kaa-ro dhaar dhaar-bo na ma _ _
+=G8 =F4 =E4 =C4 =D4 |
+w: _ Je to-may _
+P:Sthayi
+=F4 =E4 =C4 =D16 |
+w: Je to-may _
+=G4 =G8 =B4 =B8 =c4 =c8 =c4 =c12 =B4 =c4 =e4 =d4 =c4 =B4 =B4 =A4 =B4 =c2 =B2 =c2 =d2 |
+w: Ke bo-le tor do-ri-dro ghor _ hri-da-ye tor ra-ton-_ raa-shi _ _ _
+=c2 =B2 =c12 =B4 =B4 =B4 =c8 =c4 =c8 |
+w: _ _ _ Aa-mi jaa-ni go taar
+=B8 =G4 =B4 =B8 |
+w: Mu-lyo jaa-ni
+=B4 =c8 =c4 =c8 |
+w: Jaa-ni go taar
+=B8 =G4 =B4 =B8 =c4 =B4 =G4 =F4 =E8 |
+w: Mu-lyo jaa-ni po-rer _ aa-dor
+=E8 =F4 =G4 =G4 =B4 =A4 =G4 =A2 =G2 =F4 =E8 |
+w: Kaar-bo na Maa-_ ne-r _ _ aa-she
+=E8 =F4 =G4 =G4 ^F2 =G2 =G8 =F4 =E4 =C4 =D4 |
+w: Kaar-bo na Maa-_ _ _ ne-r r _
+P:Sthayi
+=F4 =E4 =C4 =D16 |
+w: Je to-may _
+=G4 =G8 =B4 =B8 =c8 =c4 =c4 =c12 =B4 =c4 =e4 =d4 =c4 =B4 =B4 =A4 =B4 =c2 =B2 =c2 =d2 |
+w: Maa-ner aa-she desh bi-de-she _ je mo-re se mo-ruk _ ghu-re _ _ _
+=c2 =B2 =c12 =B4 =B4 =B4 =c8 =c4 =c8 |
+w: _ _ _ To-mar chne-ra kaan-tha
+=B4 =B4 =G4 =B4 =B8 |
+w: Aa-chhe _ paa-ta
+=B4 =c8 =c4 =c8 |
+w: Chne-ra kaan-tha
+=B4 =B4 =G4 =B4 =B8 =c4 =B4 =G4 =F4 =E8 |
+w: Aa-chhe _ paa-ta bhul-_ te se je
+=E8 =F4 =G4 =G4 =B4 =A4 =G4 =A2 =G2 =F4 =E4 =A4 |
+w: Paa-ta ta ta _ bhul-_ te _ se je _
+=E8 =F4 =G4 =G4 ^G2 =G2 =G8 =F4 =E4 =C4 =D4 |
+w: Paar-bo na maa-_ _ _ ne lo-ker _
+P:Sthayi
+=F4 =E4 =C4 =D16 |
+w: Je to-may _
+=G4 =G8 =B4 =B8 =c4 =c8 =c4 =c4 =B4 |
+w: Dho-ne maa-ne lo-ker taa-ne _
+=c4 =c4 =e4 =d4 =c8 =B8 =A4 =B4 =c2 =B2 =c2 =d2 |
+w: Bhu-li-ye ni-te chaay je aa-may _ _ _
+=c2 =B2 =c12 =B4 =B4 =B4 =c4 =c4 =c4 =c8 |
+w: _ _ _ O ma bhoy _ je jaa-ge
+=B4 =B4 =G4 =B4 =B8 |
+w: Shi-yor _ baa-ge
+=B4 =c4 =c4 =c4 =c8 |
+w: Bhoy _ je jaa-ge
+=B4 =B4 =G4 =B4 =B8 =c4 =B4 =G4 =F4 =E8 |
+w: Baage b-_ baa-ge kaa-ro _ kaa-chei
+=E8 =F4 =G4 =G4 =B4 =A4 =G4 =A2 =G2 =F4 =E8 |
+w: Baa-g-e e _ kaa-ro _ _ kaa-chei
+=E8 =F4 =G4 =G4 ^G2 =G2 =F2 =G6 =F4 =E4 =C4 =D4 |
+w: Haar-bo na ma _ _ _ _ je to maa _
+=B4 =c8 =c4 =c8 |
+w: Jaa-ni go taar
+=B8 =G4 =B4 =B8 |
+w: Mu-lyo jaa-ni
+=B4 =c8 =c4 =c8 |
+w: Jaa-ni go taar
+=B8 =G4 =B4 =B8 |
+w: Mu-lyo jaa-ni

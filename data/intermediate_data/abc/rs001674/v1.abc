@@ -1,0 +1,41 @@
+X:1
+T:rs001674
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4154), title ওঠো ওঠো রে, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs001674.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=A8 =G8 =E4 =D4 =C8 =C4 =D4 =E4 =D4 |
+w: Ot-tho ot-tho re bi-pha-le pro-
+=C4 =B,4 =A,4 =G,4 =D8 =C8 =C4 =D4 =E4 =G4 |
+w: Bohe bohe bo-he jaay je Me-lo aan-khi
+=G4 =A4 =c4 =c4 =G4 =A2 =c2 =A4 =G4 =E4 =D4 =C4 =D4 |
+w: Jaa-go jaa-go the-ko _ na re a-che-ta-n
+=G4 =A4 =A4 =c4 =c4 =c4 =c4 =c4 =c4 =d4 =d4 =e4 |
+w: Sa-ko-lei _ tnaa-ro kaa-je dhaa-i-lo ja-
+=d4 =c4 =B4 =A4 =G4 =A4 =d4 =c4 =B4 =A2 =B2 =A4 =G4 |
+w: Go-to-maa-jhe Jaa-gi-lo pro-bha-to-_ baa-yu
+=A4 =d4 =c4 =B2 =c2 =A4 =G4 =E4 =G4 =E4 =D4 =C4 =D4 |
+w: Bhaa-_ nu _ _ dhaa-i-lo aa-ka-sho-pa-the
+=C4 =D4 =D4 =D2 =E2 =E8 =E4 =E4 =E4 =D4 =E2 =A2 =G4 |
+w: E-ke e-ke _ naam dho-re daa-ki-chhe-_ n
+=E4 =E2 =D2 =E2 =D2 =C4 =G4 =A4 =d4 =c4 =B4 =B4 =A4 =G4 |
+w: Bu-jhi _ pro-_ bhu E-ke e-ke phul-_ gu-li
+=A4 =d4 =c4 =B2 =c2 =A4 =G4 =E4 =G4 =E4 =E4 =D4 =C4 |
+w: Taa-_ i _ _ phu-ti-ya ut-thi-chhe bo-ne
+=C4 =D4 =D4 =D2 =E2 =E8 =E4 =E4 =E4 =D4 =E2 =A2 =G4 |
+w: E-ke e-ke _ naam dho-re daa-ki-chhe-_ n
+=E4 =E2 =D2 =E2 =D2 =C4 =G4 =A4 =d4 =c4 =B4 =B4 =A4 =G4 |
+w: Bu-jhi _ pro-_ bhu E-ke e-ke phul-_ gu-li
+=A4 =d4 =c4 =B2 =c2 =A4 =G4 =E4 =G4 =E4 =E4 =D4 =C4 |
+w: Taa-_ i _ _ phu-ti-ya ut-thi-chhe bo-ne
+=G4 =A4 =A4 =c4 =c4 =c4 =c4 =c4 =c4 =d4 =d4 =e4 |
+w: Shu-no se aa-hwaanbaa-n-i i chaa-ho sei _
+=d4 =c4 =B4 =A4 =G4 =A4 =d4 =c4 =B4 =A2 =B2 =A4 =G4 |
+w: Mu-kho-paa-ne Tnaa-ha-ro aa-shi-sho _ lo-ye
+=A4 =d4 =c4 =B2 =c2 =A4 =G4 =E4 =G4 =E4 =D4 =C4 =D4 |
+w: Cha-lo re _ _ jaai _ sa-be tnaa-ro kaa-je

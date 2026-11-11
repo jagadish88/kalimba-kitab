@@ -19,14 +19,18 @@ import re
 
 V = {'অ': 'o', 'আ': 'aa', 'ই': 'i', 'ঈ': 'ee', 'উ': 'u', 'ঊ': 'u', 'ঋ': 'ri', 'এ': 'e', 'ঐ': 'oi', 'ও': 'o', 'ঔ': 'ou'}
 S = {'া': 'aa', 'ি': 'i', 'ী': 'ee', 'ু': 'u', 'ূ': 'u', 'ৃ': 'ri', 'ে': 'e', 'ৈ': 'oi', 'ো': 'o', 'ৌ': 'ou'}
-C = {'ক': 'k', 'খ': 'kh', 'গ': 'g', 'ঘ': 'gh', 'ঙ': 'ng', 'চ': 'ch', 'ছ': 'chh', 'জ': 'j', 'ঝ': 'jh', 'ঞ': 'n',
+C = {'য়': 'y', 'ড়': 'r', 'ঢ়': 'rh', 'ক': 'k', 'খ': 'kh', 'গ': 'g', 'ঘ': 'gh', 'ঙ': 'ng', 'চ': 'ch', 'ছ': 'chh', 'জ': 'j', 'ঝ': 'jh', 'ঞ': 'n',
      'ট': 't', 'ঠ': 'th', 'ড': 'd', 'ঢ': 'dh', 'ণ': 'n', 'ত': 't', 'থ': 'th', 'দ': 'd', 'ধ': 'dh', 'ন': 'n',
      'প': 'p', 'ফ': 'ph', 'ব': 'b', 'ভ': 'bh', 'ম': 'm', 'য': 'j', 'র': 'r', 'ল': 'l', 'শ': 'sh', 'ষ': 'sh',
      'স': 's', 'হ': 'h', 'ড়': 'r', 'ঢ়': 'rh', 'য়': 'y', 'ৎ': 't', 'ং': 'ng', 'ঃ': '', 'ঁ': 'n'}
 
 
-def translit(s):
-    s = s.replace('ড়', 'ড়').replace('ঢ়', 'ঢ়').replace('য়', 'য়')
+def translit(s, final_o=False):
+    """rough Latin for Bengali text; final_o: a consonant that ends the text with no vowel sign or
+    hasanta is sounded with 'o' (as in a swaralipi syllable cell: দ -> do, ম -> mo)"""
+    for a, b in (('\u09af\u09bc', 'য়'), ('\u09a1\u09bc', 'ড়'), ('\u09a2\u09bc', 'ঢ়'),
+                 ('\u09df', 'য়'), ('\u09dc', 'ড়'), ('\u09dd', 'ঢ়')):
+        s = s.replace(a, b)
     out, i = [], 0
     while i < len(s):
         ch = s[i]
@@ -40,6 +44,8 @@ def translit(s):
             elif nxt == '্':
                 i += 1
             elif nxt and (nxt in C or nxt in V):
+                out.append('o')
+            elif final_o and not nxt.strip('\u200c\u200d'):
                 out.append('o')
         elif ch in V:
             out.append(V[ch])

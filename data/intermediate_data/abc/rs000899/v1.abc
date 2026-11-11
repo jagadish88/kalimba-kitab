@@ -1,0 +1,63 @@
+X:1
+T:rs000899
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4206), title গহন কুসুম কুঞ্জ মাঝে, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs000899.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=G4 =G4 =G4 =G4 =G4 =A2 =G2 =F4 =G4 =F4 =E4 =D4 =E4 |
+w: Ga-ha-na ku-su-ma-_ kun-_ ja maa-_ jhe
+=G4 =G4 =G4 =G4 =G4 =A4 =B8 =B4 =B8 =B4 |
+w: Mri-du-la ma-dhu-ra bang-shi ba-je
+=c4 =c4 =c4 =c8 =c4 =c8 =c4 =c4 =d4 =c4 |
+w: Bi-sa-ri traa-sa lo-ka-la-_ je
+=G4 =G4 =G4 =G4 =A2 =G2 =A4 =B8 =B4 =B8 =B4 |
+w: Pi-na-ha cha-_ _ ru nee-la ba-sa
+=c4 =c4 =c2 =B2 =c4 =c4 =d4 =c4 =c4 =c4 =B8 =c2 =B2 |
+w: Hri-da-ye _ pra-na-ya-ku-su-ma-ra-sha _
+=G4 =G4 =G4 =G4 =A2 =G2 =A4 =B8 =B4 =B8 =B4 |
+w: Pi-na-ha cha-_ _ ru nee-la basa hr-
+=c4 =c4 =c2 =B2 =c4 =c4 =d4 =c4 =c4 =c4 =B8 =c2 =B2 |
+w: Hri-da-ye _ pra-na-ya-ku-su-ma-ra-sha _
+=A4 =d4 =c4 =d8 =e2 =d2 =c4 =d4 =c4 =B8 =B4 =A4 =d4 =c4 =d8 =e2 =d2 =c4 =d4 =c4 =B8 =B4 |
+w: Ha-ri-na-ne-tre _ bi-ma-la haa-sa k-u-njaba-name a-_ ao ao lo hal-e
+=G8 =G4 =G4 =G4 =A2 =G2 =F4 =G4 =F4 =E2 =F2 =D4 =E4 |
+w: Dha-le ku-su-ma _ su-r-a-bha-_ _ bh-
+=G8 =G4 =G4 =G4 =G4 =G4 =A4 =A4 =A8 =A4 |
+w: Dha-le bi-ha-ga-su-ra-ba-sara Dh-
+=c8 =c4 =c8 =c4 =c4 =c4 =c4 =c4 =B2 =d2 =c4 |
+w: Dha-le in-du a-mri-ta-dha-_ _ r
+=B4 =B4 =B2 =A2 =G4 =G4 =A4 =A8 =B4 =G12 |
+w: Bi-ma-la-_ ra-ja-ta bha-ti re
+=G8 =A4 =G8 =A4 =B8 =B4 =B8 =B4 |
+w: Man-d-a a bhrin-ga gun-je
+=c4 =c4 =c2 =B2 =c4 =c4 =d4 =c2 =d2 =c4 =c4 =B8 =B2 =c2 |
+w: K-ku-ku-_ ku-su-ma kun-_ _ je kun-je _
+=G8 =A4 =G8 =A4 =B8 =B4 =B8 =B4 |
+w: Man-d-a a bhrin-ga gun-je
+=c4 =c4 =c2 =B2 =c4 =c4 =d4 =c2 =d2 =c4 =c4 =B8 =B2 =c2 |
+w: K-ku-ku-_ ku-su-ma kun-_ _ je kun-je _
+=A4 =d4 =c8 =d4 =d4 =e2 =d2 =c4 =d4 =c4 =B2 =c =B5 =B4 =A4 =d4 =c8 =d4 =d4 =e2 =d2 =c4 =d4 =c4 =B2 =c =B5 =B4 |
+w: Phu-ta-la sa-ja-ni _ pun-_ je pun-_ _ je bak-th-i i ja-ti _ re _ re De-_ _ De-
+=G8 =G4 =G4 =G4 =G2 =A2 =F4 =G4 =F4 =E2 =F2 =D4 =E4 |
+w: De-kha lo sa-khi _ shya-_ ma-raa-_ _ y
+=G4 =G4 =G4 =G8 =G4 =G4 =A4 =A4 =A12 |
+w: Pr-p-pr-pre-ma u-tha-la jaay
+=c4 =c4 =c4 =c4 =c4 =c4 =c4 =c4 =c4 =d4 =c4 =c4 |
+w: Ma-dhu-ra ba-da-na a-mri-ta-sa-da-na
+=B8 =B2 =A2 =G8 =A4 =A8 =B4 =G12 |
+w: Chan-dra-_ maa-y nin-di-chhe
+=G8 =A4 =G8 =A4 =B4 =B4 =B4 =B4 =B4 |
+w: Aa-o aa-o sa-ja-ni-brin-da
+=c4 =B4 =B4 =c4 =c4 =d4 =c2 =d2 =c4 =c4 =B8 =c2 =B2 |
+w: He-_ ra-ba sa-khi shree-_ _ go-bin-da _
+=G8 =A4 =G8 =A4 =B4 =B4 =B4 =B4 =B4 |
+w: Aa-o aa-o sa-ja-ni-brin-da
+=c4 =B4 =B4 =c4 =c4 =d4 =c2 =d2 =c4 =c4 =B8 =c2 =B2 |
+w: He-_ ra-ba sa-khi shree-_ _ go-bin-da _
+=A4 =d4 =c4 =d8 =e4 =d4 =c4 =c4 =B8 =c2 =B2 =A4 =d4 =c4 =d8 =e4 =d4 =c4 =c4 =B8 =c2 =B2 |
+w: Shjaa _ mo ko po daa _ ro bi do _ shjaa _ mo ko po daa _ ro bi do _

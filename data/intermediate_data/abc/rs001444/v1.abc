@@ -1,0 +1,67 @@
+X:1
+T:rs001444
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/5516), title না   চাহিলে যারে পাওয়া যায়,, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs001444.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=F4 =G4 =G4 =G4 =A4 =B2 =A =G =G12 =A2 =B2 =c2 =B2 =A2 =B2 |
+w: Na chaa-hi-le jaa-re _ _ paawa jaay _ _ _ _ _
+=A2 =G18 =F4 =F4 =G4 =G4 =G4 =G2 ^G2 =G4 |
+w: Na _ _ Na chaa-hi-le jaa-_ re
+=F12 =G2 =A =G =F2 =G6 =E20 =F4 |
+w: Paa-wa _ _ _ _ jaay _
+=F4 =G4 =G4 =G4 =A4 =G2 =F2 =G4 =G2 =A2 =B12 =A2 =G2 |
+w: Te-ya-gi-le aa-se _ haa-te _ _ _ _
+=G4 =A4 =c4 =c4 =B4 =A2 =G2 =G4 =G4 =A4 =B4 =A4 =B4 |
+w: Di-ba-se se dhan _ _ haa-ra-_ ye-_ _
+=G12 =A4 =G8 =F4 =G4 =G4 =G4 =A4 =G4 |
+w: Aami aa-mi pe-ye-chhi aan-dha-ro
+=F2 =G2 =F2 =E14 =F8 |
+w: Raa-_ te _ _
+=G4 =A4 =c4 =c4 =B2 =c2 =d2 =e2 =c20 =G4 |
+w: Na de-khi-be taa-_ _ _ re _
+=B2 =c2 =c4 =c4 =B4 =G2 =A2 =B2 =c2 =B20 =A2 =G2 |
+w: Pa-_ ro-shi-be na _ _ _ go _ _
+=G4 =A4 =c4 =c4 =B2 =c2 =d2 =e2 =c20 =G4 |
+w: Dek-de-khi-be taa-_ _ _ re _
+=B2 =c2 =c4 =c4 =B4 =G2 =A2 =B2 =c2 =B20 =A2 =G2 |
+w: Pa-_ ro-shi-be na _ _ _ go _ _
+=G4 =B4 =B4 =B4 =G4 =A4 =F4 =G8 =A4 =G4 =A4 |
+w: Taa-ri paa-ne praan _ me-le di-ye _
+=F2 =G2 =F2 =E6 =F4 =G2 =A2 =B2 =c2 =B4 =G20 |
+w: Jaa-_ go _ Taa-ra-_ _ _ y ray
+=B4 =B4 =c4 =c4 =c8 =B2 =c2 =c4 =c4 =c4 =B2 =c2 =d4 |
+w: Taa-ra-_ y ra-be _ be taa-ri baani _ _
+=c4 =d4 =c2 =d =c =B12 =B4 =c4 =c4 =c4 =c4 =B4 |
+w: Kus-_ _ _ _ _ ku-su-me phu-ti-be
+=B4 =G8 =G4 =E4 =F8 |
+w: Praa-te _ _ _
+=C4 =C4 =C4 =D4 =D4 =D4 =D4 =D4 =E4 =D4 =G4 =G4 |
+w: Taa-ri laa-gi ja-to phe-le-chhi o-_ shru-
+=E24 =E4 =E2 =F2 =F4 =F4 =F8 |
+w: Bi-Bi-na-_ baa-di-nir
+=F4 =G4 =G4 =G4 =F4 =E4 =E4 =F4 =F4 =E4 =D4 =E2 =F2 |
+w: Sha-to-da-lo-da-le ko-ri-chhe se ta-lo-_
+=E24 |
+w: Mor
+=C4 =C4 =C4 =D4 =D4 =D4 =D4 =D4 =E4 =D4 =G4 =G4 |
+w: Taa-ri laa-gi ja-to phe-le-chhi o-_ shru-
+=E24 =E4 =E2 =F2 =F4 =F4 =F8 |
+w: Bi-Bi-na-_ baa-di-nir
+=F4 =G4 =G4 =G4 =F4 =E4 =E4 =F4 =F4 =E4 =D4 =E2 =F2 |
+w: Sha-to-da-lo-da-le ko-ri-chhe se ta-lo-_
+=E24 =G2 =A2 =c4 =c4 =c4 =c4 =d4 |
+w: Mo-r _ _ gaa-ne gaane _
+=c24 =B4 =c4 =c4 =B4 =c4 =B4 |
+w: Pa-pa-lo-ke pa-lo-ke
+=A4 =B4 =A4 =G4 =A4 =G4 =F4 =G4 =G4 =E4 =F4 |
+w: Jha-lo-si ut-thi-chhe jh-a-a-lo-ke
+=F2 =G6 =G4 =G4 =G8 =C4 =C4 =C4 =D4 =D4 =E4 |
+w: Shaan-_ to haa-siro ko-ru-no aa-lo-ke
+=D4 =D4 =E4 =D4 =D2 =G2 =G4 =F4 =E16 =F4 |
+w: Bhaa-ti-chhe nayo-n-_ n-paa-te _

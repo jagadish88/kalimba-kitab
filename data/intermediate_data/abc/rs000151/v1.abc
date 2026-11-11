@@ -1,0 +1,106 @@
+X:1
+T:rs000151
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4652), title আমারে  কে নিবি ভাই, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs000151.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=G4 =G4 =G4 =A4 |
+w: Aa-ma-re _
+=G4 =F4 =G4 =G4 =G4 =A4 |
+w: Ke _ ni-bi bhaai _
+=F4 =G4 =A4 =A2 =G2 =F4 =E4 =D4 =E8 =F4 =G8 |
+w: Sno-pi-_ te _ chaai _ aa-po-na-re
+=G4 =A2 =B2 =B4 =B4 =A4 =B2 =A2 =G8 =G4 =G4 =G4 =A4 |
+w: _ _ _ Kare ka-re _ _ _ Aa-ma-r _
+=G4 =F4 =G4 =G4 =G4 =A4 |
+w: Ke _ ni-bi bhaai _
+=F4 =G4 =A4 =A2 =G2 =F4 =E4 =D4 =E8 =F4 =G8 |
+w: Sno-pi-_ te _ chaai _ aa-po-na-re
+=G4 =A2 =B2 =B4 =B4 =A4 =B2 =A2 |
+w: _ _ _ Aa-ma-r _ _
+=G8 =G4 =A4 =A4 =c4 =c8 =c4 =c4 =c12 =G4 =G4 =A4 =A4 =c4 |
+w: _ Aa-mar ei _ mon go-li-ye _ aa-j h-_
+=c8 =c4 =c4 =c8 |
+w: Go-go-li-ye
+=B2 =c6 =c4 =c2 =d2 =c4 =d4 |
+w: Kaaj _ bhu-li-_ ye _
+=B8 =c4 =B4 =A4 =B4 =G4 =G4 =A4 =A4 =B4 =c4 |
+w: To-to-to-der _ ni-ye _ ja re _
+=B2 =c6 =c4 =B4 =A4 =G12 =G4 =G4 =G4 =A4 |
+w: _ _ Kare ka-re _ Aa-ma-r _
+P:Sthayi
+=G4 =G4 =G4 =A4 |
+w: Aa-ma-r _
+=C4 =C4 =D4 =F4 =F4 =G8 =G4 =G16 =G4 =A4 =c8 =B4 =c8 =B4 =A4 =B4 |
+w: Kon kon kon _ ru-per haa-te cho-le-chhis bho-ber baa-te _
+=G4 =B4 =B4 =A4 =G4 =A2 =G2 |
+w: _ _ To-ra kon _ _
+=F4 =G8 =G4 =G16 =G4 =A4 =c8 =B4 =c8 =B4 =A4 =B4 |
+w: Ru-per haa-te cho-le-chhis bho-ber ba-ate _
+=G8 =G4 =A4 =A4 =B4 =G4 =G4 =B4 =A4 =G4 =A4 |
+w: _ Pi-chhi-ye _ aa-chhi _ aa-mi _
+=F2 =G2 =F2 =E6 =F4 =G16 =G4 =A4 =A4 =c4 |
+w: Aa-_ pon _ bhaa-re To-der oi _
+=c4 =c8 =c4 =c12 =G4 =G4 =A4 =A4 =c4 =c4 =c8 =c4 =c8 |
+w: Haa-si-khu-si _ di-di-b-_ ba-ni-shi shi
+=c4 =c8 =c2 =d2 =c4 =d4 =B4 =c4 =c4 =B4 =A4 =B4 |
+w: Di-ba-ni-_ shi _ _ _ de-khe mon _
+=G4 =G4 =A4 =A4 =B8 =B4 =c4 =c4 =B4 =A4 =B4 =A2 =G6 =G4 =G4 =G4 =A4 |
+w: Ke-mon _ k-are _ _ are a-re _ _ _ Aa-ma-r _
+P:Sthayi
+=G4 =G4 =G4 =A4 |
+w: Aa-ma-r _
+=C4 =C4 =D4 =F4 =F4 =G8 =G4 =G16 =G4 =A4 =c8 =B4 =c8 =B4 =A4 =B4 |
+w: Aa-mar ei _ bnaa-dha tu-te ni-ye ja lu-te-pu-te _
+=G4 =B4 =B4 =A4 =G4 =A4 |
+w: _ _ Aa-mar ei _
+=F4 =G8 =G4 =G16 =G4 =A4 =c8 =B4 =c8 =B4 =A4 =B4 |
+w: Bnaa-dha tu-te ni-ye ja lu-te-pu-te _
+=G8 =G4 =A4 =A4 =B4 =G4 =G4 =B4 =A4 =G4 =A4 |
+w: _ Th-th-thaak _ mo-ner _ bo-jha _
+=F2 =G2 =F2 =E6 =F4 =G16 =G4 =A4 =A4 =c4 |
+w: Gha-_ rer _ dwaa-re Je-mon oi _
+=c8 =c4 =c4 =c12 =G4 =G4 =A4 =A4 =c4 =c8 =c4 =c4 =c8 |
+w: Ek ni-mi-she _ bo-bon-na _ na n-a se
+=c8 =c4 =c2 =d2 =c4 =d4 =B4 =c4 =c4 =B4 =A4 =B4 |
+w: Bo-nna e-_ se _ Bhaa-si-ye ne jaay _
+=G4 =G4 =A4 =A4 =B8 =B4 =c4 =c4 =B4 =A4 =B4 =A2 =G6 =G4 =G4 =G4 =A4 |
+w: Paa-ra-_ ba-re _ _ Et-o je _ _ _ aa-nagona ke _
+P:Sthayi
+=G4 =G4 =G4 =A4 |
+w: Aa-ma-r _
+=C4 =C4 =D4 =F4 =F4 =G8 =G4 =G16 =G4 =A4 =c8 =B4 =c8 =B4 =A4 =B4 |
+w: E-to je _ aa-na-go-na ke aa-chhe jaa-na-sho-na _
+=G4 =B4 =B4 =A4 =G4 =A4 |
+w: _ _ E-to je _
+=F4 =G8 =G4 =G16 =G4 =A4 =c8 =B4 =c8 =B4 =A4 =B4 |
+w: Aa-na-go-na ke aa-chhe jaa-na-sho-na _
+=G8 =G4 =A4 =A8 =G4 =B4 =B4 =A4 =G4 =A4 |
+w: _ Aa-aa-chhe naam _ dho-re mor _
+=F2 =G2 =F2 =E2 =E4 =F4 =G16 =G4 =A4 =A4 =c4 |
+w: Daak-_ _ _ te paa-re Jo-di se _
+=c4 =c8 =c4 =c12 =G4 =G4 =A4 =A4 =c4 =c4 =c8 =c4 =c8 |
+w: Paa-r-e e _ Jo-di se _ baa-rek e-se
+=c4 =c8 =c2 =d2 =c4 =d4 =B4 =c4 =c4 =B4 =A4 =B4 |
+w: Hese hese he-_ se _ Chin-_ te paa-ri _
+=G4 =G4 =A4 =A4 =B8 =B4 =c4 =c4 =B4 =A4 =B4 |
+w: De-khe _ taa-re _ _ aa maa re _
+=A2 =G6 =G4 =G4 =G4 =A4 |
+w: _ _ Aa-ma-r _
+=G4 =F4 =G4 =G4 =G4 =A4 |
+w: Ke _ ni-bi bhaai _
+=F4 =G4 =A4 =A2 =G2 =F4 =E4 =D4 =E8 =F4 =G8 |
+w: Sno-pi-_ te _ chaai _ aa-po-na-re
+=G4 =A2 =B2 =B4 =B4 =A4 =B2 =A2 =G8 =G4 =G4 =G4 =A4 |
+w: _ _ _ Kare ka-re _ _ _ Aa-ma-r _
+=G4 =F4 =G4 =G4 =G4 =A4 |
+w: Ke _ ni-bi bhaai _
+=F4 =G4 =A4 =A2 =G2 =F4 =E4 =D4 =E8 =F4 =G8 |
+w: Sno-pi-_ te _ chaai _ aa-po-na-re
+=G4 =A2 =B2 =B4 =B4 =A4 =B2 =A2 |
+w: _ _ _ Aa-ma-r _ _

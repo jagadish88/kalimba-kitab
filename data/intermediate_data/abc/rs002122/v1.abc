@@ -1,0 +1,87 @@
+X:1
+T:rs002122
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/5651), title তুই ফেলে এসেছিস কারে, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs002122.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=C4 |
+w: Tui
+=C4 ^G4 ^G4 =G4 =G8 =G2 ^G2 ^A2 =c2 ^A2 =c ^A ^G2 =G2 =F2 =G =F5 |
+w: Phe-le e-se-chhis kaa-_ _ _ re _ _ _ _ mon _ _
+^D4 ^C4 =C2 ^C ^D ^C4 =C24 =c8 |
+w: Mon _ re _ _ aa-mar Taai
+=c4 =c8 ^c4 ^c4 =c4 ^A8 ^A4 ^A2 =c2 =c4 ^A4 |
+w: Ja-nom ge-lo _ shaan-ti pe-_ li _
+^G2 ^A ^G5 =G2 ^G =F5 =F2 =G =F5 ^D4 ^C4 =C2 ^C ^D ^C4 =C24 =C8 |
+w: Re _ _ re _ _ mon _ _ mon _ re _ _ aa-ma-r
+P:Sthayi
+=C4 |
+w: Tui
+=C4 ^G4 ^G4 =G4 =G8 =G2 ^G2 ^A2 =c2 ^A2 =c ^A ^G2 =G2 =F2 =G =F5 |
+w: Phe-le e-se-chhis kaa-_ _ _ re _ _ _ _ mon _ _
+^G4 ^G8 ^A4 =c4 ^c4 =c4 ^G8 ^A4 =c8 |
+w: Je path di-ye _ cho-le e-li
+=c4 ^G8 ^A4 =c8 ^A4 =c4 =d2 ^d2 ^d4 ^c4 ^d2 ^c2 |
+w: Path path e-khon bhu-le _ _ ge-li _ _
+=c24 |
+w: Re
+^G4 ^G8 ^A4 =c4 ^c4 =c4 ^G8 ^A4 =c8 |
+w: Diye diye di-ye _ cho-le e-li
+=c4 ^G8 ^A4 =c8 ^A4 =c4 =d2 ^d2 ^d4 ^c4 ^d2 ^c2 |
+w: Se path e-khon bhu-le _ _ ge-li _ _
+=c24 =f4 ^d8 ^c4 =c8 |
+w: Ke-Ke-mon ko-re
+=c4 ^c4 ^c2 =c2 ^A4 ^A4 =c2 ^A2 ^A8 ^G4 =G4 =F2 =G =F5 |
+w: Phir-_ bi _ taa-har _ _ dwaa-re _ mon _ _
+^D4 ^C4 =C2 ^C ^D ^C4 =C24 =C8 |
+w: Mon _ re _ _ aa-ma-r
+P:Sthayi
+=C4 |
+w: Tui
+=C4 ^G4 ^G4 =G4 =G8 =G2 ^G2 ^A2 =c2 ^A2 =c ^A ^G2 =G2 =F2 =G =F5 |
+w: Phe-le e-se-chhis kaa-_ _ _ re _ _ _ _ mon _ _
+=C4 =C8 =C4 =C4 =D4 ^D4 =F8 =F4 =F8 |
+w: No-dir ja-le _ thaa-ki re kaan
+=F4 ^D2 =F =G ^G12 =G4 =F2 =G2 =F2 ^D6 =D4 ^D4 ^C2 =C2 |
+w: Pe-te _ _ _ _ Knaa-_ pe _ re praan _ _
+=C4 =C4 ^C4 ^C2 =F2 ^D2 =F ^D ^C2 ^D2 ^C4 =C20 |
+w: Paa-tar _ mor-_ _ _ _ mo-_ re-te
+=C4 =C8 =C4 =C4 =D4 ^D4 =F8 =F4 =F8 |
+w: Jale jale ja-le _ thaa-ki re kaan
+=F4 ^D2 =F =G ^G12 =G4 =F2 =G2 =F2 ^D6 =D4 ^D4 ^C2 =C2 |
+w: Pe-te _ _ _ _ Knaa-_ pe _ re praan _ _
+=C4 =C4 ^C4 ^C2 =F2 ^D2 =F ^D ^C2 ^D2 ^C4 =C20 |
+w: Paa-tar _ mor-_ _ _ _ mo-_ re-te
+^G4 ^G8 ^A8 =c2 ^c2 =c4 ^G8 ^A4 =c8 |
+w: Mo-ne hoy je _ paa-bo khnu-ji
+=c4 ^G8 ^A4 =c8 ^A4 =c4 =d2 ^d2 ^d4 ^c4 ^d2 ^c2 |
+w: Phu-ler bhaa-sha jo-di _ _ bu-jhi _ _
+=c24 |
+w: Re
+^G4 ^G8 ^A8 =c2 ^c2 =c4 ^G8 ^A4 =c8 |
+w: Mo-ne hoy je _ paa-bo khnu-ji
+=c4 ^G8 ^A4 =c8 ^A4 =c4 =d2 ^d2 ^d4 ^c4 ^d2 ^c2 |
+w: Phu-ler bhaa-sha jo-di _ _ bu-jhi _ _
+=c24 =f4 ^d8 ^c4 =c8 |
+w: Je Je poth ge-chhe
+=c4 ^c4 ^c2 =c2 ^A4 ^A4 =c2 ^A2 ^A8 ^G4 =G4 =F2 =G =F5 |
+w: Son-_ dhya-_ taa-rar _ _ paa-re _ mon _ _
+^D4 ^C4 =C2 ^C ^D ^C4 =C24 =C8 |
+w: Mon _ re _ _ aa-ma-r
+^G4 ^G8 ^A4 =c4 ^c4 =c4 ^G8 ^A4 =c8 |
+w: Diye diye di-ye _ cho-le e-li
+=c4 ^G8 ^A4 =c8 ^A4 =c4 =d2 ^d2 ^d4 ^c4 ^d2 ^c2 |
+w: Se path e-khon bhu-le _ _ ge-li _ _
+=c24 |
+w: Re
+^G4 ^G8 ^A4 =c4 ^c4 =c4 ^G8 ^A4 =c8 |
+w: Diye diye di-ye _ cho-le e-li
+=c4 ^G8 ^A4 =c8 ^A4 =c4 =d2 ^d2 ^d4 ^c4 ^d2 ^c2 |
+w: Se path e-khon bhu-le _ _ ge-li _ _
+=c24 |
+w: Re

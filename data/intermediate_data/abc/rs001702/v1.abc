@@ -1,0 +1,63 @@
+X:1
+T:rs001702
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/5749), title ফাগুন-হাওয়ায় রঙে রঙে, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs001702.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=B2 =c2 =c2 ^G6 ^G2 =B6 =c4 =c2 ^c18 =c4 |
+w: Pha-_ gun _ haa-_ _ way _ _
+=B2 =c22 =B2 =c2 ^G8 ^G2 =B6 =c4 |
+w: _ _ Ra-_ nge ra-_ _
+=B2 ^c18 =c2 =B2 =B2 =c22 |
+w: Nge _ _ _ _ _
+=c2 =e2 =e8 ^c4 =c8 =c2 ^A2 =c4 =c2 ^A2 ^A4 ^A4 ^G4 |
+w: Paa-_ gol jho-ra lu-_ ki-ye _ jha-re _
+^A2 ^G2 ^A8 ^A2 ^G2 ^A4 ^G4 =G4 ^G8 =G4 ^G4 =G4 |
+w: Go-_ lap baa _ baa _ pa-rul pa-lash _
+=F4 =E8 =F4 =F2 =G2 =F4 =E4 =F4 =E4 ^C4 =C4 |
+w: Paa-ri-ja-ter _ _ bu-ker _ pa-re
+=B2 =c6 ^G4 ^G2 =B2 =c8 =B2 =c2 =c2 ^G6 =B4 =c8 |
+w: Sei-_ kha-ne _ mor pa-_ ran-_ kha-ni
+=B2 =c2 ^G8 ^G8 =B4 =B20 =c2 ^c2 |
+w: Ja-_ khon paa-_ ri _ _
+=B2 =c2 ^G8 ^G8 =B4 =B8 =c12 |
+w: Bo-_ he aa-_ ni _
+=C4 =C4 =F4 =F4 =E8 =F4 =B8 =B4 =E8 |
+w: Ni-lajo _ raa-nga paa-gol ra-nge
+=F4 ^G4 ^G4 ^G2 =B2 =c8 =c2 =E2 =E8 =F4 =F4 =G4 |
+w: Ra-ngi-ye ni-_ te tha-_ re r-e _
+=E4 =F4 =E4 ^C4 =C4 =B,4 =C4 =F4 =F4 =F4 =E8 |
+w: Ra-ngi-ye ni-te _ r-e e th-th-
+=F4 ^G8 ^G2 =B2 =c4 ^c4 |
+w: Tha-re tha-_ re _
+=C4 =C4 =F4 =F4 =F2 =E6 =F4 =F4 ^G4 ^G8 =B4 |
+w: Baa-hir _ ho-lem _ ba-kul _ haa-_
+=B12 =E12 =E4 =E8 =F4 =F4 =G4 |
+w: Utal _ u-tal pa-ther _
+=E4 =F4 =F2 =E2 ^C4 =C8 =C4 =C4 =F4 =F4 =E8 |
+w: Chin-_ ho _ dha-re O-go _ tu-mi
+=F4 =F4 ^G4 ^G4 =B4 =B4 =B12 =c8 ^c4 |
+w: Ra-nge _ paa-_ _ gol _ _
+=B2 =c6 ^A4 ^A4 ^G4 =G4 =G4 ^G4 =G4 =F4 =F2 =E6 |
+w: Dhor-_ bo to-may _ ke-mon _ ko-re _
+=F4 =F2 ^G6 ^G2 =B6 =c4 =c24 |
+w: Ra-nge _ paa-_ _ gol
+=B2 =c6 ^G4 =B4 =c8 =c2 =e2 =e4 =e4 ^c4 =c8 |
+w: Kore _ aa-ra-le lu-_ ki-ye ra-be
+=E4 =E8 =F4 =F4 =G4 =G2 =E2 =F4 =E4 ^C4 =C8 |
+w: To-may jo-di _ naa _ paai _ ta-be
+=C8 =C2 =F2 =F4 =F2 =E6 =F4 =F2 ^G6 =B4 =c4 ^c4 |
+w: Rak-te _ aa-mar _ to-maar _ paa-yer _
+=B2 =c6 ^G4 =B4 =c8 =c2 =e2 =e8 ^c4 =c8 |
+w: Rang _ le-ge-chhe ki-_ ser ta-re
+=c2 =e6 =e4 =f4 =f2 =g6 =f4 =e8 ^c4 =c8 |
+w: Le-_ le-ge-chhe _ _ _ _ _
+=C8 =C2 =F2 =F4 =F2 =E6 =F4 =F2 ^G6 =B4 =c4 ^c4 |
+w: Rak-te _ aa-mar _ to-maar _ paa-yer _
+=B2 =c6 ^G4 =B4 =c8 =c2 =e2 =e8 ^c4 =c8 |
+w: Rang _ le-ge-chhe ki-_ ser ta-re

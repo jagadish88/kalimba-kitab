@@ -1,0 +1,105 @@
+X:1
+T:rs002097
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4912), title তোমায় গান শোনাব তাই তো আমায় জাগিয়ে রাখ, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs002097.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+^D2 =D2 =F2 ^D2 =D4 |
+w: To-_ may _ _
+=C4 =D4 =G4 =F4 ^D4 =D4 =C24 |
+w: _ _ _ _ _ _ _
+=C4 =D4 =C4 ^A,4 ^A,4 =C4 =D4 =F4 =F4 =E4 |
+w: Taai _ to aa-may _ jaa-gi-ye raa-
+=C16 ^D4 ^D4 ^D8 ^D4 ^D4 ^D4 =D4 |
+w: _ O-go ghum bhaa-nga-niya _
+=D2 ^D2 =D2 =F2 ^D4 ^D2 =D2 =F2 ^D2 =D4 =C4 =D4 =G4 =F4 ^D4 =D4 |
+w: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+=C24 =F4 =E8 =D4 =C4 =D4 |
+w: Buke cha-mak di-ye _
+^A,8 =C4 =D4 =F4 =E4 =D16 =G4 =G4 |
+w: Taai _ to _ daa-k-o o
+=G4 =F8 =E4 =D4 =C4 ^A,8 =C4 =D4 =F4 =E4 |
+w: Diye diye di-ye _ taai _ to _ daako
+=D8 ^D8 ^D4 ^D4 ^D4 ^D4 ^D4 ^D4 ^D4 =D4 |
+w: Ogo _ O-go dhu-kho-jaa-ga-niya _
+=D2 ^D2 =D2 =F2 ^D4 ^D2 =D2 =F2 ^D2 =D4 =C4 =D4 =G4 =F4 ^D4 =D4 |
+w: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+=C16 =E4 =E4 =E4 =E4 =E4 =E4 =E4 =F4 |
+w: Naako O-go dhu-kho-jaa-ga-niya _
+=E2 =F2 =E2 =G2 =F4 ^D2 =D2 =F2 ^D2 =D4 |
+w: Je _ _ _ _ may _ may _ _
+P:Sthayi
+^D2 =D2 =F2 ^D2 =D4 |
+w: To _ aamay _ _
+=C4 =D4 =G4 =F4 ^D4 =D4 =C24 |
+w: _ _ _ _ _ _ _
+=F4 =F4 |
+w: E-lo
+=F4 =F4 =G4 =G4 =G20 =F4 =F4 ^A4 |
+w: Aan-dhar _ ghi-re paa-khi _
+=A4 ^A8 =A4 =c2 ^A18 =A4 =G4 =A4 |
+w: E-lo ni-re _ To-ri _
+=F4 =F4 =G4 =G4 =G24 =G4 =G4 |
+w: E-lo _ ti-re Shu-dhu
+=F4 =G8 =G2 ^A2 ^A8 =A4 =G4 =A2 =G2 =F8 =E4 |
+w: Aa-mar hi-_ ya bi-ram _ _ paay naako
+=D8 ^D8 ^D4 ^D4 ^D4 ^D4 ^D4 ^D4 ^D4 =D4 |
+w: Ogo _ O-go dhu-kho-jaa-ga-niya _
+=D2 ^D2 =D2 =F2 ^D4 ^D2 =D2 =F2 ^D2 =D4 =C4 =D4 =G4 =F4 ^D4 =D4 |
+w: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+=C16 =E4 =E4 =E4 =E4 =E4 =E4 =E4 =F4 |
+w: Thaako O-go dhu-kho-jaa-ga-niya _
+=E2 =F2 =E2 =G2 =F4 ^D2 =D2 =F2 ^D2 =D4 |
+w: Je _ _ _ _ may _ may _ _
+P:Sthayi
+^D2 =D2 =F2 ^D2 =D4 |
+w: To _ aamay _ _
+=C4 =D4 =G4 =F4 ^D4 =D4 =C24 |
+w: _ _ _ _ _ _ _
+=C4 =B,4 |
+w: Aa-mar
+=C4 =E8 =F4 =G4 =A2 =G2 =E4 =F20 |
+w: Kaa-jer maa-jhe _ _ maa-jhe
+=F4 =G4 =G4 =G4 =G4 =F4 =G4 =G2 =A2 ^A4 =A4 =c2 ^A2 =A4 |
+w: Kaa-_ nna-haasi-r _ do-la _ _ tu-mi _ _
+=G4 =A4 =G4 =F4 =E4 =E4 =E4 =F4 =G2 =F2 ^D2 =D2 =C4 =B,4 |
+w: Thaam-_ te di-le _ na je _ _ Aa-_ may _
+=C4 =E8 =F4 =G4 =A2 =G2 =E4 =F20 |
+w: Kaa-jer maa-jhe _ _ maa-jhe
+=F4 =G4 =G4 =G4 =G4 =F4 =G4 =G2 =A2 ^A4 =A4 =c2 ^A2 =A4 |
+w: Kaa-_ nna-haasi-r _ do-la _ _ tu-mi _ _
+=G4 =A4 =G4 =F4 =E4 =E4 =E4 =F12 =F4 =F4 |
+w: Thaam-_ te di-le _ na je Aa-may
+=F4 =F4 =G4 =G4 =G24 =F4 ^A4 |
+w: Kore kore _ ko-re praan _
+=A4 ^A8 =A4 =c2 ^A18 =A4 =G4 =A4 |
+w: Su-dhay bho-re _ Tu-mi _
+=F4 =G4 =G4 =G4 =G24 =F4 =F4 |
+w: Jaao _ je so-re Bhu-ji
+=F4 =G8 =G2 ^A2 ^A8 =A4 =G4 =A2 =G2 =F4 =F4 =E4 |
+w: Aa-mar thar _ thar a-ra-_ _ le-te _
+=D4 =F4 =F4 =E4 =D2 =C14 ^D8 ^D4 ^D4 |
+w: Dnaa-ri-ye thaa-ko _ _ O-go
+^D4 ^D4 ^D4 ^D4 ^D4 =D4 =D2 ^D2 =D2 =F2 ^D4 ^D2 =D2 =F2 ^D2 =D4 |
+w: Dhu-kho-jaa-ga-ni-_ ya _ _ _ _ a-_ mar _ _
+=C4 =D4 =G4 =F4 ^D4 =D4 =C16 =E4 =E4 |
+w: _ _ _ _ _ _ _ _ _
+=E4 =E4 =E4 =E4 =E4 =F4 =E2 =F2 =E2 =G2 =F4 ^D2 =D2 =F2 ^D2 =D4 |
+w: Dhu-kho-jaa-ga-ni-_ ya _ _ _ _ a-_ mar _ _
+=C4 =E8 =F4 =G4 =A2 =G2 =E4 =F20 |
+w: Kaa-jer maa-jhe _ _ maa-jhe
+=F4 =G4 =G4 =G4 =G4 =F4 =G4 =G2 =A2 ^A4 =A4 =c2 ^A2 =A4 |
+w: Kaa-_ nna-haasi-r _ do-la _ _ tu-mi _ _
+=G4 =A4 =G4 =F4 =E4 =E4 =E4 =F4 =G2 =F2 ^D2 =D2 =C4 =B,4 |
+w: Thaam-_ te di-le _ na je _ _ Aa-_ may _
+=C4 =E8 =F4 =G4 =A2 =G2 =E4 =F20 |
+w: Kaa-jer maa-jhe _ _ maa-jhe
+=F4 =G4 =G4 =G4 =G4 =F4 =G4 =G2 =A2 ^A4 =A4 =c2 ^A2 =A4 |
+w: Kaa-_ nna-haasi-r _ do-la _ _ tu-mi _ _
+=G4 =A4 =G4 =F4 =E4 =E4 =E4 =F4 |
+w: Thaam-_ te di-le _ na je

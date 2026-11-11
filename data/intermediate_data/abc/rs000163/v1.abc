@@ -1,0 +1,83 @@
+X:1
+T:rs000163
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/3806), title আমার হৃদয় তোমার আপন হাতে, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs000163.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+^C4 =C4 ^A,4 |
+w: Aa-mar _
+=C4 =C4 =F28 =G4 =G4 ^G4 |
+w: Hri-day _ to-mar _
+=F4 =G8 =G2 ^A2 ^G4 =G4 =F2 =G2 ^D16 =G4 |
+w: Aa-pon haa-_ ter _ do-_ le _
+=G2 ^A2 ^G4 =G4 =F2 =G2 ^D8 ^D2 =F2 ^D8 ^C4 =C4 ^A,4 |
+w: Do _ laa _ do _ laa do _ laa aa maa _
+=C4 =C4 =F40 |
+w: Hri-day _
+=c4 ^d4 ^d4 ^c4 =c28 ^c4 |
+w: Ke _ aa-ma-re _
+^A4 =c4 ^c4 =c4 ^A2 ^G22 ^A4 =c4 |
+w: Je _ je ba-le _ _ _
+=c4 ^d4 ^d4 ^c4 =c28 ^c4 |
+w: Ke _ aa-ma-re _
+^A4 =c4 ^c4 =c4 ^A2 ^G26 ^A4 |
+w: Je _ je ba-le _ _
+^A2 ^d2 ^d8 ^c4 =c8 ^A4 ^G4 =G4 =F4 ^D4 ^C16 |
+w: Bho-_ lao bho-lao bo-l _ a-ake _
+^G4 ^G8 ^A4 =c4 ^c4 ^A2 =c22 |
+w: O-ra ke-bol _ _ _
+=c2 ^d2 ^d8 =d4 =f2 ^d2 ^c4 =c8 =c2 ^d2 ^c4 =c4 ^c4 |
+w: Ka-_ thar paa-ke _ _ ni-tyo _ aa-may _
+^A4 ^A4 ^d4 ^d4 ^c4 ^d2 ^c2 =c24 |
+w: Bne-dhe _ raa-khe _ _ _
+^G4 ^G8 ^A4 =c4 ^c4 ^A2 =c22 |
+w: O-ra ke-bol _ _ _
+=c2 ^d2 ^d8 =d4 =f2 ^d2 ^c4 =c8 =c2 ^d2 ^c4 =c4 ^c4 |
+w: Ka-_ thar paa-ke _ _ ni-tyo _ aa-may _
+^A4 ^A4 ^d4 ^d4 ^c4 ^d2 ^c2 =c24 |
+w: Bne-dhe _ raa-khe _ _ _
+^c4 =c8 ^A4 ^G4 =G4 =F4 ^G8 ^A4 =c4 ^c4 |
+w: Bnaa-shir daa-ke _ sa-kol bnaa-dhon _
+^A2 =c22 ^c4 =c8 ^A4 ^A4 =G4 |
+w: _ _ Bho-lao kebo-l _
+=G2 ^A2 ^G4 =G4 =F4 ^D4 ^C16 |
+w: Kho-_ la-_ o Mone _
+^G,4 ^G,4 ^A,4 ^A,4 =C32 |
+w: Mo-ne _ pa-re
+=C4 =C4 =F4 =F4 =F8 =F4 =F8 =F4 =G4 ^G4 |
+w: Ko-to _ na din raa-ti _ _ _
+=F2 =G2 =F4 ^D4 =D4 ^D32 |
+w: Aa-_ mi _ chhi-lem
+=F4 ^D8 ^D4 ^C4 ^D4 ^C4 =C20 |
+w: To-mar khe-lar _ saa-thi
+^G,4 ^G,4 ^A,4 ^A,4 =C32 |
+w: Mo-ne _ pa-re
+=C4 =C4 =F4 =F4 =F8 =F4 =F8 =F4 =G4 ^G4 |
+w: Ko-to _ na din raa-ti _ _ _
+=F2 =G2 =F4 ^D4 =D4 ^D32 |
+w: Aa-_ mi _ chhi-lem
+=F4 ^D8 ^D4 ^C4 ^D4 ^C4 =C20 |
+w: To-mar khe-lar _ saa-thi
+=C2 ^G6 ^G4 ^A4 =c4 ^c4 ^A2 =c22 |
+w: Aaj-_ ke tu-mi _ _ _
+=c2 ^d6 ^d4 =d4 =f2 ^d2 ^c4 =c8 ^d4 ^c4 =c4 ^c4 |
+w: Tem-_ ni ko-re _ _ saam-ne to-mar _
+^A4 ^A4 ^d4 ^d4 ^c4 ^d2 ^c2 =c24 |
+w: Raa-kho _ dho-re _ _ _
+=C2 ^G6 ^G4 ^A4 =c4 ^c4 ^A2 =c22 |
+w: Aaj-_ ke tu-mi _ _ _
+=c2 ^d6 ^d4 =d4 =f2 ^d2 ^c4 =c8 ^d4 ^c4 =c4 ^c4 |
+w: Tem-_ ni ko-re _ _ saam-ne to-mar _
+^A4 ^A4 ^d4 ^d4 ^c4 ^d2 ^c2 =c24 |
+w: Raa-kho _ dho-re _ _ _
+^c4 =c8 ^A4 ^G4 =G4 =F4 ^G8 ^A4 =c4 ^c2 =c2 |
+w: Aa-mar praa-ne _ khe-lar se dheu _ _
+^A2 =c22 =c2 ^c2 =c8 ^A4 ^A4 =G4 |
+w: _ _ To-_ la-o laa _
+=G2 ^A2 ^G4 =G4 =F4 ^D4 ^C4 |
+w: Tyo _ aamay _ aa-may _

@@ -1,0 +1,69 @@
+X:1
+T:rs001808
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4786), title রইল বলে রাখলে কারে,, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs001808.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=D4 =F4 =F4 =F4 =F4 =G4 =G8 =G4 =G4 =G8 |
+w: Roi-_ lo bo-le _ raakh-le kaa-re
+=G4 =A8 =c4 =c8 =B8 =c4 =B4 =A4 =B4 |
+w: Hu-kum to-mar phol-be ka-be _
+=A4 =G12 =G4 =G4 =G4 =G4 ^G4 ^G4 ^G4 ^A4 |
+w: _ _ To-mar taa-na-_ taa-ni _
+=G8 ^A4 ^G4 =G4 =F4 ^A4 ^A8 ^G4 =G8 |
+w: Tik-be na bhaai _ ra-bar je-ta
+=E4 =E8 =D4 =C8 |
+w: Se-tai be be
+=G8 =G4 =F4 =G8 =A8 =c4 =c4 =c4 =d4 |
+w: Ja khu-shi taai kor-te paa-ro _
+=c4 =c20 =c4 =c4 =d4 =d4 =d2 =d2 =e4 |
+w: _ _ Gaa-yer _ jo-re _ _
+=d4 =c8 =B4 =A4 =B4 =A4 =G20 |
+w: Raa-kho maa-ro _ _ _
+=G8 =G4 =F4 =G8 =A8 =c4 =c4 =c4 =d4 |
+w: Khu-khu-shi taai kor-te paa-ro _
+=c4 =c20 =c4 =c4 =d4 =d4 =d2 =d2 =e4 |
+w: _ _ Gaa-yer _ jo-re _ _
+=d4 =c8 =B4 =A4 =B4 =A4 =G20 |
+w: Raa-kho maa-ro _ _ _
+=G8 =A4 =d4 =c8 =B4 =B8 =A4 =G8 |
+w: Jaar gaa-ye sa-b tha baa-je
+=B4 =B8 =A4 =G8 =E4 =E8 =D4 =C8 |
+w: Ti-ni ja son se-tai be be
+=D4 =D4 =F4 =F4 =F4 =G4 =G4 =G8 =G4 =G8 |
+w: A-nek _ to-mar _ taa-ka-ko-ri
+=G4 =A4 =c4 =c4 =c8 =B4 =B8 =A4 =A4 =G4 |
+w: A-ne-_ k dara a-ne-k k _
+=G4 =G4 ^G4 ^G8 ^A4 =G4 =G4 ^G4 =G4 =G4 ^G2 =F2 |
+w: Ori ne-_ k sho a-ne-_ k kori _ _
+^A4 ^A8 ^G4 =G8 =E4 =E8 =D4 =C8 |
+w: A-nek to-mar aa-chhe bha-be
+=D4 =D4 =F4 =F4 =F4 =G4 =G4 =G8 =G4 =G8 |
+w: T-to-_ to-mar _ taa-ka-ko-ri
+=G4 =A4 =c4 =c4 =c8 =B4 =B8 =A4 =A4 =G4 |
+w: A-ne-_ k dara a-ne-k k _
+=G4 =G4 ^G4 ^G8 ^A4 =G4 =G4 ^G4 =G4 =G4 ^G2 =F2 |
+w: Ori ne-_ k sho a-ne-_ k kori _ _
+^A4 ^A8 ^G4 =G8 =E4 =E8 =D4 =C8 |
+w: A-nek to-mar aa-chhe bha-be
+=G8 =G4 =F4 =G8 =A4 =c8 =c4 =c8 |
+w: Bhaab-chho ha-be tu-mi ja chaao
+=c4 =d8 =d4 =d4 =c4 =e4 =e4 =d4 =c4 =B4 =A4 |
+w: Ja-go-tta-ke _ tu-mi _ naa-chao _
+=A4 =B4 =A4 =G12 |
+w: _ _ _ _
+=G8 =G4 =F4 =G8 =A4 =c8 =c4 =c8 |
+w: Bhaab-chho ha-be tu-mi ja chaao
+=c4 =d8 =d4 =d4 =c4 =e4 =e4 =d4 =c4 =B4 =A4 |
+w: Ja-go-tta-ke _ tu-mi _ naa-chao _
+=A4 =B4 =A4 =G12 =G8 =A4 =d4 =c8 |
+w: _ _ _ _ Dekh-be ha-that
+=B4 =c4 =B4 =A4 =G8 =B8 =B4 =A4 =G8 |
+w: Nayo-n _ khu-le hoy na je-ta
+=E4 =E8 =D4 =C8 |
+w: Se-tao be be

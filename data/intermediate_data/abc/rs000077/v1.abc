@@ -1,0 +1,42 @@
+X:1
+T:rs000077
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4471), title আজি শুভদিনে পিতার ভবনে, tala তালমুক্ত
+S:lyrics: data/raw_data/text/lyrics/rs000077.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=c4 =d4 =c4 =c4 ^A4 =A4 =A4 ^A4 =A4 =A4 =G4 =F4 |
+w: Aa-ji shu-bho-di-ne pi-ta-ro bha-bo-ne
+=F4 =G4 =A4 =G4 =A4 =c4 =F8 =G4 =F12 |
+w: A-mri-to-sa-do-ne cha-lo jaai
+=d8 =c4 =d8 =c4 =f4 =e4 =d4 =c12 |
+w: Cha-lo cha-lo cha-_ lo bhaai
+P:Sthayi
+=c4 =d4 =c4 =c4 ^A4 =A4 =A4 ^A4 =A4 =A4 =G4 =F4 |
+w: Aa-ji shu-bho-di-ne pi-ta-ro bha-bo-ne
+=F4 =G4 =A4 =G4 =A4 =c4 =F8 =G4 =F12 |
+w: A-mri-to-sa-do-ne cha-lo jaai
+=d8 =c4 =d8 =c4 =f4 =e4 =d4 =c12 |
+w: Cha-lo cha-lo cha-_ lo bhaai
+=F4 =F4 =F8 =F8 =F8 =E4 =F4 =G4 =F4 =E4 =D4 =C8 =F4 =F4 =F8 =F8 =F8 =E4 =F4 =G4 =F4 =E4 =D4 =C8 |
+w: Na jaa-ni se-tha to to su-kho mi-li-be aan-aa-no-ke-ta-ne ne ne ne ne ne ne
+=f8 =e8 =d8 =c8 ^A8 =A8 =G8 =F8 |
+w: Aa-non-de-ro ni-ke-ta-ne
+=f8 =c4 =d8 =c4 =f4 =e4 =d4 =c12 =f8 =c4 =d8 =c4 =f4 =e4 =d4 =c12 |
+w: Uthali-lo Cha-lo ch-_ alo a-lo lo cha-lo bh-_ aai aai
+=F8 =F8 =F8 =F8 =E4 =F4 =G4 =F4 =E4 =D4 =C8 =F8 =F8 =F8 =F8 =E4 =F4 =G4 =F4 =E4 =D4 =C8 |
+w: Tr-tr-tr-tr-tri-bhu-ba-no maa-ti-lo ki ki ki ki ki aa-no-ndo utha-li-lo
+=f8 =e8 =d8 =c8 ^A8 =A8 =G8 =F8 |
+w: Aan-aa-non-do u-tha-li-lo
+=f8 =c4 =d8 =c4 =f4 =e4 =d4 =c12 =f8 =c4 =d8 =c4 =f4 =e4 =d4 =c12 |
+w: Cha-lo cha-lo cha-_ lo bhaa-i loke ch-he h-_ e e
+=F8 =F8 =F8 =F8 =E4 =F4 =G4 =F4 =E4 =D4 =C8 =F8 =F8 =F8 =F8 =E4 =F4 =G4 =F4 =E4 =D4 =C8 |
+w: De-bo-lo-ke u-tthi-ya-chhe jayo-g-gaa-n Ba-lo sabe s-sabe sa-be joy j-oy
+=f8 =e8 =d8 =c8 ^A8 =A8 =G8 =F8 |
+w: Gaa-ho sa-be e-k-taan _
+=f8 =C4 =d8 =C4 =f4 =e4 =d4 =c12 =f8 =C4 =d8 =C4 =f4 =e4 =d4 =c12 |
+w: Ba-lo sa-be jo-_ y jo-y y y y y _ y y

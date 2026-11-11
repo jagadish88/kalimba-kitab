@@ -1,0 +1,69 @@
+X:1
+T:rs000823
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/4311), title এক সূত্রে বাঁধিয়াছি সহস্রটি মন., tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs000823.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=C8 =C4 =E8 =E4 =F8 =F4 =G8 =G4 |
+w: E-k su-tre bnaa-dhi-ya-chhi
+^A8 =A4 =G4 =F4 =E4 =F24 |
+w: Sa-ho-sro-_ ti mon
+=c8 =c4 =c4 ^A4 =A4 ^A8 ^A4 ^A4 =A4 =G4 |
+w: E-k kaar-_ je sno-pi-ya-_ chhi
+=A8 =A4 =G4 =F4 =E4 =F24 |
+w: Sa-ho-sro _ ji-bon
+=c12 =c12 =A8 =G4 =F12 =c12 =c12 =A8 =G4 =F12 |
+w: Ban-de maa-ta-r-am a-m suk ro
+=F8 =F4 =A8 =A4 =c8 =B4 =c8 =c4 |
+w: Aa-su-k sa-ho-sro baa-dha
+=e8 =e4 =f8 =g4 =f24 |
+w: Baa-dhu-k pro-loy
+=F8 =F4 =G8 =A4 =G8 =F4 =E12 |
+w: Aa-m-ra ho-ho-sro praan
+=C8 =C4 =E8 =E4 =F24 |
+w: Ro-hi-bo nir-bhoy
+=e8 =e4 =e8 =e4 =f8 =d4 =c12 |
+w: Aa-m-ra ho-ho-sro praan
+=A4 ^A4 =G4 =F8 =E4 =F24 |
+w: Ro-_ hi-bo nir-bhoy
+=c12 =c12 =A8 =G4 =F12 =c12 =c12 =A8 =G4 =F12 |
+w: Ban-de maa-ta-r-am a-m m-ra
+=c8 =c4 =c8 =c4 =c2 =d10 =c8 =c4 |
+w: Aa-m-ra ra-rai-_ bo na
+=A8 =A4 =G8 =G4 =F24 |
+w: Jho-ti-ka jhan-jhay
+=c8 =c4 =c8 =c4 =c2 =d10 =c8 =c4 |
+w: Aa-m-ra ra-rai-_ bo na
+=A8 =A4 =G8 =G4 =F24 |
+w: Jho-ti-ka jhan-jhay
+=C8 =D4 =E8 =E4 =F8 =F4 =G8 =G4 |
+w: A-ju-to ta-ron-go bo-kkhe
+=A8 =A4 =B8 =B4 =c24 |
+w: So-hi-bo he-lay
+=C8 =D4 =E8 =E4 =F8 =F4 =G8 =G4 |
+w: A-ju-to ta-ron-go bo-kkhe
+=A8 =A4 =B8 =B4 =c24 |
+w: So-hi-bo he-lay
+=e8 =e4 =e8 =e4 =f8 =d4 =c12 |
+w: Tu-te to tu-tu-k ei
+=A4 ^A4 =G4 =F8 =E4 =F24 |
+w: No-_ shwo-r ji-bon
+=e8 =e4 =e8 =e4 =f8 =d4 =c12 |
+w: Tu-te to tu-tu-k ei
+=A4 ^A4 =G4 =F8 =E4 =F24 |
+w: No-_ shwo-r ji-bon
+=C8 =C4 =F8 =F4 =C8 =C4 =F8 =F4 |
+w: To-bu na chhni-ri-be ko-bhu
+=C8 =C4 =E8 =E4 =F24 |
+w: E dri-rho ban-dhan
+=C8 =C4 =F8 =F4 =C8 =C4 =F8 =F4 |
+w: To-bu na chhni-ri-be ko-bhu
+=C8 =C4 =E8 =E4 =F24 |
+w: E dri-rho ban-dhan
+=c12 =c12 =A8 =G4 =F12 =c12 =c12 =A8 =G4 =F12 |
+w: Ban-de maa-ta-r-am a-m to ro

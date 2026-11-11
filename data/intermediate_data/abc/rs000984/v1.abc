@@ -1,0 +1,63 @@
+X:1
+T:rs000984
+C:Rabindranath Tagore
+S:notes and syllables: SNLTR Rabindra Rachanabali swaralipi (https://rabindra-rachanabali.nltr.org/node/5353), title হিমের রাতে ওই গগনের দীপগুলিরে, tala দাদরা
+S:lyrics: data/raw_data/text/lyrics/rs000984.txt (Geetabitan transliteration), aligned to the swaralipi syllables
+N:Made by scripts/swaralipi_player/swara_abc.py: one matra = one eighth note; Sa = C; grace notes left out.
+M:none
+L:1/32
+Q:1/4=60
+K:C
+P:Sthayi
+=C4 =D4 =E4 =E4 =E8 =E8 =E4 =E4 =E4 =F4 |
+w: Hi-me-ro raa-te oi ga-go-ner _
+=D2 =E2 =D4 =E4 =E4 =E4 =G4 =F4 =G2 =F6 =E4 =D2 =C2 =B,4 |
+w: Dip-_ _ gu-li-re _ He-mon-_ ti-ka _ _
+=C8 =E4 =F4 =G8 =C4 =C2 =E6 =F4 =G8 |
+w: Kor-lo go-pan Aan-chol _ ghi-re
+=E4 =G2 =F6 =E4 =D2 =C2 =B,4 |
+w: Ghi-re _ Gha-re _ _
+=c4 =c4 =e4 =d4 =d8 =c8 =c4 =c4 =c8 |
+w: Gha-re _ gha-re daak paa-tha-lo
+=B4 =B4 =d4 =c4 =c8 =B4 =A4 =c4 =B4 =A2 =G6 |
+w: Di-paa-_ li-kay jwaa-lao _ aa-lo _
+=G2 =c2 =c8 =B4 =A2 =G6 =G2 =c2 =c8 =B4 =A2 =G6 |
+w: Jwaa-_ lao aa-lo _ aa-_ pon aa-lo _
+=G2 =c2 =c2 ^A6 =A4 =G4 =A2 =G2 =E4 =G2 =F6 =E4 =D2 =C2 =B4 |
+w: Saa-_ jao _ aa-loy _ _ dho-ri-_ tri-re _ _
+=C4 =G4 =G4 =G4 =G8 =G4 =G4 ^F4 =G4 ^F4 =A4 |
+w: Shu-_ nyo e-khon phu-ler _ baa-_ _
+=G24 =F4 =F8 =F4 =F8 |
+w: Doyel Do-yel ko-kil
+=F4 =F4 =E4 =D8 =E2 =F2 =E24 |
+w: Gaa-he _ na _ _ gaan
+=C8 =C4 =C2 =E2 =E16 =E4 =E2 =F2 =F16 =F4 =G2 =F2 =G8 =F4 =E4 =D4 =D2 =F2 =E8 |
+w: Kaash jho-re _ jaa-y re _ Jaa-k k _ k bo-bosad _ bosad _ bo-
+=c4 =e4 =d4 =d4 =d8 =c4 =c8 =c4 =c8 |
+w: A-_ b-bo-sad bi-shad kaa-lo
+=B4 =B4 =c4 =c8 =B4 =A4 =c4 =B4 =A2 =G6 |
+w: Di-pa-li-kay jwaa-lao _ aa-lo _
+=G2 =c2 =c8 =B4 =A2 =G6 =G2 =c2 =c8 =B4 =A2 =G6 |
+w: Jwaa-_ lao a-lo _ aa-_ pon aa-lo _
+=G2 =c2 =c8 =A4 =G8 =E4 =G4 =F4 =E4 =D2 =C2 =B,4 |
+w: Shu-_ nao aa-lor joy-_ baa-ni-re _ _
+=C4 =G4 =G4 =G4 =G8 =G4 =G8 =G4 =G4 ^F4 |
+w: Deb-_ ta-ra aj aa-chhe che-ye _
+=G4 ^F4 =B4 =A2 =G22 =F4 =F4 =E4 |
+w: _ _ _ _ _ _ _ _
+=D4 =D4 =F4 =F4 =E4 =F4 =D8 =E2 =F2 =E12 |
+w: Chhe-le _ me-ye _ Aa-_ _ loy
+=E4 =F4 =E4 =D4 =E24 |
+w: Aa-loy _ jaa-gao
+=E4 =E4 =D4 =C2 =B,10 =C12 =E4 |
+w: Jaa-mi-_ nire _ lo _
+=E2 =G2 =F4 =E4 =D4 =E24 |
+w: Aa-_ loy _ jaa-gao
+=c4 =c4 =e4 =d4 =d8 =c8 =c4 =c4 =c8 |
+w: E-lo _ aan-dhar din phu-ra-lo
+=B4 =B4 =d4 =C4 =c8 =B4 =A4 =c4 =B4 =A2 =G6 |
+w: Di-pa-_ li-kay jwaa-lao _ aa-lo _
+=G2 =c2 =c8 =B4 =A2 =G6 =G2 =c2 =c8 =B4 =A2 =G6 |
+w: Jwaa-_ lao aa-lo _ aa-_ pon aa-lo _
+=G4 =c4 ^A4 =A4 =G4 =A2 =G2 =E4 =G2 =F6 =E4 =D2 =C2 =B,4 |
+w: Joy _ ka-ro ei _ _ taa-mo-_ si-re _ _
