@@ -15,7 +15,7 @@ How
      A swaralipi syllable goes on its matched MIDI note; if its note is not matched, on the next
      matched MIDI note.
   4. Lyrics: each syllable's Latin spelling and word ends come from the Geetabitan transliteration
-     (swara_abc.latin_line); MIDI notes between syllables hold the syllable before ('_'); a stretch
+     (swara_abc.align_song); MIDI notes between syllables hold the syllable before ('_'); a stretch
      of MIDI notes the swaralipi doesn't sing (an introduction or interlude) gets '*'.
   5. Lines: a new ABC line starts at the bar where a sung swaralipi row's first syllable falls.
 """
@@ -166,16 +166,8 @@ def main():
     glines = [l.strip() for l in open(lyr_path, encoding='utf-8') if l.strip()] if os.path.exists(lyr_path) else []
     Ly = SA.Lyrics(glines)
     Ly.last = 0
-    latin, group = {}, []
-    for i, e in enumerate(sev + [dict(newline=True, syl='')]):
-        if e.get('newline') and group:
-            idx = [j for j in group if sev[j]['syl']]
-            if idx:
-                for j, (txt, end) in zip(idx, SA.latin_line([sev[j]['syl'] for j in idx], Ly, Ly.last)):
-                    latin[j] = (txt, end)
-            group = []
-        if i < len(sev):
-            group.append(i)
+    idx = [j for j, e in enumerate(sev) if e['syl']]          # the whole song at once (swara_abc.align_song)
+    latin = dict(zip(idx, SA.align_song([sev[j]['syl'] for j in idx], Ly)))
     # syllables onto MIDI notes
     syl_at = {}                                    # MIDI note index -> (text, end_word, starts a sung row)
     js = sorted(s2m)

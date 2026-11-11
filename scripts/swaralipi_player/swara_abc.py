@@ -221,6 +221,100 @@ def latin_line(syls, L, after=0):
     return out
 
 
+_ED = {}
+
+
+def edit(a, b):
+    """Levenshtein distance (cached; syllables are short)"""
+    k = (a, b)
+    if k not in _ED:
+        prev = list(range(len(b) + 1))
+        for i, ca in enumerate(a, 1):
+            cur = [i]
+            for j, cb in enumerate(b, 1):
+                cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb)))
+            prev = cur
+        _ED[k] = prev[-1]
+    return _ED[k]
+
+
+def align_song(syls, L, jump=2.0, insert=1.6, per_letter=1.0):
+    """Latin for every swaralipi syllable of the song at once -> [(latin text, word ends after it)].
+
+    The syllables (in singing order) walk through the Geetabitan lyrics letter by letter: each one
+    covers the next few letters of the poem (about as many as its rough transliteration has), with a
+    cost for the letters that differ. The walk may jump to any word start (a sung repeat, a return to
+    the refrain, a skipped word) at a fixed cost, and a syllable may match nothing (a sung 'o' or
+    'aa' that the poem does not spell) at a fixed cost; it then keeps its own transliteration.
+    Replaces latin_line's line-by-line window match, which drifted when a sung line repeated words or
+    crossed the poem's line ends."""
+    rough = [letters(translit(s, final_o=True)) or 'a' for s in syls]
+    gl, P = L.gl, len(L.gl)
+    if not P or not syls:
+        return [(r, True) for r in rough]
+    INF = float('inf')
+    is_start = [False] * (P + 1)
+    for s in L.starts:
+        is_start[s] = True
+    nxt_start = [P] * (P + 1)                     # a syllable never runs into the next word
+    for s in range(P - 1, -1, -1):
+        nxt_start[s] = s + 1 if is_start[s + 1] else nxt_start[s + 1] if s + 1 <= P - 1 else P
+    D = [0.0 if is_start[s] else INF for s in range(P + 1)]   # before the first syllable
+    D[0] = 0.0
+    back = []                                     # per syllable: e -> (kind, s)
+    argbest = []                                  # per syllable: the best end before it (where a jump comes from)
+    for r in rough:
+        # a jump leaves from the end of a word; leaving in the middle of one costs more
+        bi = min(range(P + 1), key=lambda k: D[k] + (0 if (k == P or is_start[k]) else 1.5))
+        best_prev = D[bi] + (0 if (bi == P or is_start[bi]) else 1.5)
+        argbest.append(bi)
+        N = [INF] * (P + 1)
+        B = [None] * (P + 1)
+        lr = len(r)
+        for e in range(P + 1):                    # nothing matched: stay at e
+            c = D[e] + insert + 0.2 * lr
+            if c < N[e]:
+                N[e], B[e] = c, ('ins', e)
+        for l in range(max(1, lr - 2), lr + 3):
+            for s in range(0, P - l + 1):
+                if s + l > nxt_start[s]:
+                    continue
+                base = D[s]
+                kind = 'go'
+                if is_start[s] and best_prev + jump < base:
+                    base, kind = best_prev + jump, 'jump'
+                if base == INF:
+                    continue
+                e = s + l
+                c = base + per_letter * edit(r, gl[s:e])
+                if c < N[e]:
+                    N[e], B[e] = c, (kind, s)
+        back.append(B)
+        D = N
+    # back-track
+    e = min(range(P + 1), key=lambda k: D[k])
+    spans = []
+    for i in range(len(rough) - 1, -1, -1):
+        kind, s = back[i][e]
+        spans.append(None if kind == 'ins' else (s, e))
+        e = argbest[i] if kind == 'jump' else s
+    spans.reverse()
+    out = []
+    for i, sp in enumerate(spans):
+        if sp is None:
+            out.append((rough[i], True))
+            continue
+        s, e = sp
+        piece = ''.join(L.text[L.pos[k]] for k in range(s, e))
+        if edit(rough[i], gl[s:e]) > max(2, round(0.75 * len(rough[i]))):
+            out.append((rough[i], True))          # too unlike the syllable: its own spelling
+            continue
+        nxt = spans[i + 1] if i + 1 < len(spans) else None
+        end_word = e >= L.word_end(e - 1) or nxt is None or nxt[0] != e
+        out.append((piece, end_word))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('song')
@@ -241,9 +335,11 @@ def main():
             groups.append([])
         groups[-1].append(e)
     body = []
+    every = [e for g in groups for e in g if e['syl']]
+    aligned = dict(zip(map(id, every), align_song([e['syl'] for e in every], L)))
     for g in groups:
         syl_idx = [i for i, e in enumerate(g) if e['syl']]
-        latin = latin_line([g[i]['syl'] for i in syl_idx], L, L.last) if syl_idx else []
+        latin = [aligned[id(g[i])] for i in syl_idx]
         toks = ['_'] * len(g)
         first = True
         for (i, (txt, end)) in zip(syl_idx, latin):
@@ -252,11 +348,17 @@ def main():
                 t = t[0].upper() + t[1:]
             first = False
             toks[i] = t + ('' if end else '-')
-        # a syllable joined to the next with '-' must not be followed by a space-separated hold
-        w = []
-        for i, t in enumerate(toks):
-            w.append(t)
-        line_w = ' '.join(w).replace('- _', '-_').replace('- ', '-')
+        # a word held over notes stays one word: "aa-_-pon", not "aa-_ pon" (a space starts a new word)
+        line_w, join = '', False
+        for t in toks:
+            if not line_w:
+                line_w = t
+            elif line_w.endswith('-'):
+                line_w += t
+            else:
+                line_w += ('-' if join else ' ') + t
+            if t != '_':
+                join = t.endswith('-')
         notes = ' '.join(abc_note(e['midi'], e['units']) for e in g)
         if g[0].get('newline') and g[0]['line'] == groups[0][0]['line'] and body:
             body.append('P:Sthayi')
