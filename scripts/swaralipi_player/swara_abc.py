@@ -238,7 +238,7 @@ def edit(a, b):
     return _ED[k]
 
 
-def align_song(syls, L, jump=2.0, insert=1.6, per_letter=1.0):
+def align_song(syls, L, jump=2.0, insert=1.6, per_letter=1.0, latin=False):
     """Latin for every swaralipi syllable of the song at once -> [(latin text, word ends after it)].
 
     The syllables (in singing order) walk through the Geetabitan lyrics letter by letter: each one
@@ -248,7 +248,8 @@ def align_song(syls, L, jump=2.0, insert=1.6, per_letter=1.0):
     'aa' that the poem does not spell) at a fixed cost; it then keeps its own transliteration.
     Replaces latin_line's line-by-line window match, which drifted when a sung line repeated words or
     crossed the poem's line ends."""
-    rough = [letters(translit(s, final_o=True)) or 'a' for s in syls]
+    # latin=True: the syllables are already in Latin letters (a draft's own lyrics), not Bengali
+    rough = [(letters(s) if latin else letters(translit(s, final_o=True))) or 'a' for s in syls]
     gl, P = L.gl, len(L.gl)
     if not P or not syls:
         return [(r, True) for r in rough]
