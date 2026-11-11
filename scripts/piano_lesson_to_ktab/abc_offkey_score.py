@@ -100,6 +100,10 @@ def main():
     ap.add_argument("abc")
     ap.add_argument("--transpose", type=int, help="as for abc_to_ktab.py (default: its best fit)")
     ap.add_argument("--out", help="output .pdf (default: comparison/<song>_<abc name>_offkey.pdf)")
+    ap.add_argument("--mark", action="append", default=[], metavar="F4=4(F#)",
+                    help="mark these written pitches red with this label instead of the converter's substitutions "
+                         "(e.g. to show what a retuned tine does to the song's other notes)")
+    ap.add_argument("--note", help="the explanation printed under the title (default: the substitutions)")
     a = ap.parse_args()
 
     text = Path(a.abc).read_text(encoding="utf-8")
@@ -109,6 +113,7 @@ def main():
     for r in report:
         print(r)
     fields, items = read_abc(text)
+    marks = dict(m.split("=", 1) for m in a.mark)
 
     music, lyrics, si, n_off = [], [], -1, 0
     first_part = True
@@ -136,12 +141,15 @@ def main():
                 p = ly_pitch(midi)
                 note = p + durs[0]
                 played = play_as.get(midi + stanza_shift[si])
-                if played is not None:
+                label = A.tine(played) if played is not None else None
+                if marks:
+                    label = marks.get(A.name(midi))
+                if label is not None:
                     n_off += 1
                     note = (f"\\override NoteHead.color = #red {note}"
-                            f'^\\markup \\with-color #red \\small {ly_text(A.tine(played))}')
+                            f'^\\markup \\with-color #red \\small {ly_text(label)}')
                 note += "".join(f"~ {p}{d}" for d in durs[1:]) + ("~" if tie else "")
-                if played is not None:
+                if label is not None:
                     note += " \\revert NoteHead.color"
                 music.append(note)
                 parts.append(len(durs))
@@ -163,6 +171,8 @@ def main():
     note_line = (f"Red: no tine for the note (kalimba transposition {shifts[0]:+d}); "
                  f"played a semitone off on the tine shown above it. {subs}." if play_as else
                  "Every note has a tine (none played a semitone off).")
+    if a.note:
+        note_line = a.note
     meter = fields.get("M", "4/4")
     free = meter.strip().lower() == "none"          # no meter (drafts from the swaralipi): free bars
     if free:

@@ -1,0 +1,21 @@
+\version "2.24.0"
+\header {
+  title = "Tumi Robe Nirobe"
+  subtitle = "data/intermediate_data/abc/rs002164/v1.abc"
+  tagline = ##f
+}
+\paper { #(set-paper-size "a4") indent = 0 ragged-last = ##t }
+\markup \with-color #red \small \wordwrap-string "No retuning: the 13 tivra Ma notes (F#4) have no tine and are played on tine 4 (F4), a semitone low. Every other note is exact."
+\score {
+  <<
+    \new Voice = "tune" {
+      \key c \major \time 4/4 \autoBeamOn
+      \mark \markup \small "Stanza 1" g'8 f'8 f'8 e'8 e'4 e'4 | f'4 e'8 d'8 e'8 d'8 e'4 | f'2.~ f'8 \break e'8~ | e'8 e'4 g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 | b'8 a'4 g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 a'8 f'8 | g'8 e'8 f'8 e'4 \break g'8 f'8 f'8 | e'8 e'4 e'4 f'4 e'8 | d'8 e'8 d'8 e'4 f'4.~ | f'2 r2 | \break \mark \markup \small "Stanza 2" f'4 e'4 d'4 c'4 | b4 a4 \break g4. c'8 | c'4 c'2 c'4 | c'8 b8 c'8 d'8 d'4 d'8 c'8 | d'8 e'8 e'4 e'4. \break \mark \markup \small "Stanza 3" g'8~ | g'8 g'4 \override NoteHead.color = #red fis'4^\markup \with-color #red \small "4 (F)" \revert NoteHead.color a'4 a'8 | g'8 g'8 b'8 a'4 b'4 c''8~ | c''2. \break c''4 | b'4 c''4 e''4 e''4 | e''8 f''8 g''4 f''4 e''4~ | e''4 d''4 c''4 \break c''4 | c''4 b'4 b'4 b'8 a'8 | g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'4 c''4~ | c''4 b'8 a'8 b'2 | \break g'4 g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 a'8 g'4 | f'8 e'8 f'8 g'8 f'4 e'4~ | e'2. \break \mark \markup \small "Stanza 4" g'4 | g'4 g'4 g'2 | \override NoteHead.color = #red fis'4^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'2. | \break f'4 f4 e'4 e'4 | e'4 d'2 e'8 f'8 | e'2.~ e'8 \break e'8~ | e'8 e'4 e'4 f'4 e'8~ | e'8 d'4 d'4 e'8 f'8 e'8~ | e'4. g'4 \override NoteHead.color = #red fis'4^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8~ | g'4. \break g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 | \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 b'8 a'4 g'8 \override NoteHead.color = #red fis'8^\markup \with-color #red \small "4 (F)" \revert NoteHead.color g'8 \bar "|." \break
+    }
+    \new Lyrics \lyricsto "tune" {
+      \set ignoreMelismata = ##t
+      "Tu" -- "mi" _ _ "ro" -- "be" _ "ni" -- "ro" -- "be" _ _ "?" _ "hri" _ "doy" _ _ _ _ _ _ _ "ma" -- "mo" _ _ _ _ _ _ _ "Tu" -- "mi" _ _ "ro" -- "be" _ "ni" -- "ro" -- "be" _ _ _ _ "Ni" -- "bhi" -- "ro" "nibh" -- "ri" -- "to" "pur" -- "ni" -- "ma" -- "ni" -- "shi" -- "thi" -- "ni" _ _ _ _ _ _ _ "sa" -- "mo?" "Ma" _ "mo" "ji" -- "ba" -- "no" _ "jou" -- "ba" -- "no" _ "?" _ "Ma" -- "mo" "a" -- "khi" -- "lo" "bhu" -- "ba" -- "no" _ _ _ _ _ "Tu" -- "mi" "bho" -- "ri" -- "be" _ "gou" -- "ra" -- "be" _ _ "?" _ _ _ "?" "Ni" -- "shi" -- "thi" -- "ni" _ _ _ _ _ _ "sa" -- "mo?" _ "Jaa" -- "gi" -- "be" "e" -- "kaa" -- "ki?" "ta" -- "bo" "ka" -- "ru" -- "no" "aa" -- "khi" _ "?" _ "Ta" _ "bo" "an" -- "chalch" -- "ha" _ "ya" _ _ _ _ _ _ "mo" -- "re" _ "ro" -- "hi" -- "be" _ _ _ "dhaa" -- "ki" _ _ _ "?"
+    }
+  >>
+  \layout { \context { \Score \remove "Bar_number_engraver" } }
+}
