@@ -1,62 +1,43 @@
 X:1
 T:Tomar Holo Shuru Amar Holo Sara
 C:Rabindranath Tagore
-S:notes: data/raw_data/midi/rs002064.mid (Geetabitan, arranged by Anjan Ganguly), violin track
+S:notes: data/raw_data/midi/rs002064.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
+S:syllables: SNLTR Rabindra Rachanabali swaralipi (তোমার হল শুরু, আমার হল সারা), aligned to the MIDI by midi_swara_abc.py
 S:lyrics: data/raw_data/text/lyrics/rs002064.txt (Geetabitan transliteration)
-S:alignment: data/raw_data/swaralipi/rs002064.pdf (Geetabitan swaralipi)
-N:Notes quantized to 16ths, pitch bends applied (scripts/midi_to_ktab.py read_tracks).
-N:Syllables placed on the notes as in the swaralipi (Sa = C); 4 swaralipi matras = one 4/4 bar.
-N:Tivra Ma (F#) only, no shuddha Ma. The first two lines return after each section.
+N:Swaralipi notes matched to MIDI notes: 122 of 123 (MIDI has 170); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
 M:4/4
 L:1/8
 Q:1/4=150
 K:C
-P:Sthayi
 C E3 E4- | E4 D2 C2 | B,2 C2 D4- | D8 |
-w: To-_-mar-|_ ho-lo | shu-_-ru-|_ |
+w: To-_-mar | _ ho-lo | shu-_-ru | _ |
 G,2 A,2 B,4- | B,4 C2 D2 | E2 D2 C4- | C8 |
-w: aa-_-mar-|_ ho-lo | saa-_-ra-|_ |
+w: Aa-_-mar | _ ho-lo | saa-_-ra | _ |
 E2 ^F2 E2 G2- | G4 G2 G2 | G2 ^F2 A4- | A8 |
-w: To-_-maay-_-|_ aa-maay | mi-_-le-|_ |
-G2 A B B4- | B4 A2 G ^F | G2 c2 c4- | c8 |
-w: em-_-_-ni-|_ ba-he-_ | dhaa-_-ra-|_ |
-C E3 E4- | E4 D2 C2 | B,2 C2 D4- | D8 |
-w: To-_-mar-|_ ho-lo | shu-_-ru-|_ |
-G,2 A,2 B,4- | B,4 C2 D2 | E2 D2 C4- | C8 |
-w: aa-_-mar-|_ ho-lo | saa-_-ra-|_ |
-P:Antara
+w: To-_-maay _ | _ aa-maay | mi-_-le | _ |
+G2 A B B4- | B4 A2 G ^F | G2 c2 c4- | c8 | C E3 E4- | E4 D2 C2 | B,2 C2 D4- | D8 | G,2 A,2 B,4- | B,4 C2 D2 | E2 D2 C4- | C8 |
+w: Em-_-_-ni | _ ba-he _ | * * * | _ | * * * | _ * * | * * * | _ | dhaa-_-_-|_-_-_-|_-_-ra | _ |
 E G3 G4- | G2 E2 G2 A2 | A2 c2 c4- | c8 |
-w: To-_-mar-|_-_ jwa-le | baa-_-ti-|_ |
+w: To-_-mar | _ _ jwa-le | baa-_-ti | _ |
 c2 B2 d4- | d4 d2 d2 | c2 e2 e4- | e8 |
-w: To-_-mar-|_ gho-re | saa-_-thi-|_ |
+w: To-_-mar | _ gha-re | saa-_-thi | _ |
 d4 c4- | c4 B2 A2 | B2 A2 G4- | G8 |
-w: Aa-mar-|_ ta-re | raa-_-ti-|_ |
-C4 C4- | C4 C2 C2 | B,2 D2 D4- | D8 |
-w: aa-mar-|_ ta-re | taa-_-ra-|_ |
-C E3 E4- | E4 D2 C2 | B,2 C2 D4- | D8 |
-w: To-_-mar-|_ ho-lo | shu-_-ru-|_ |
-G,2 A,2 B,4- | B,4 C2 D2 | E2 D2 C4- | C8 |
-w: aa-_-mar-|_ ho-lo | saa-_-ra-|_ |
-P:Sanchari
+w: Aa-mar | _ ta-re | raa-_-ti | _ |
+C4 C4- | C4 C2 C2 | B,2 D2 D4- | D8 | C E3 E4- | E4 D2 C2 | B,2 C2 D4- | D8 | G,2 A,2 B,4- | B,4 C2 D2 | E2 D2 C4- | C8 |
+w: Aa-mar | _ ta-re | _ _ _ | _ | taa-* * | _ * * | * * * | _ | * * _ | _ _ _ | _ ra _ | _ |
 E2 ^F2 E2 G2- | G4 G2 G2 | G2 ^F2 G4- | G8 |
-w: To-_-mar-_-|_ aa-chhe | daa-_-nga-|_ |
+w: To-_-mar _ | _ aa-che | daa-_-nga | _ |
 G4 A4- | A4 G2 ^F2 | G8- | G8 |
-w: aa-mar-|_ aa-chhe | jal | _ |
+w: Aa-mar | _ aa-chhe | jal | _ |
 G B3 B4- | B4 A2 G2 | ^F2 G2 A4- | A8 |
-w: To-_-mar-|_ bo-se | thaa-_-ka-|_ |
+w: To-_-mar | _ bo-se | thaa-_-ka | _ |
 G4 ^F4- | ^F4 E2 D2 | E8- | E8 |
-w: aa-mar-|_ cha-laa-|chal | _ |
-P:Abhog
+w: Aa-mar | _ cha-laa-|chal | _ |
 E G3 G4- | G2 E2 G2 A2 | A c7- | c8 |
-w: To-_-maar-|_-_ haa-te | roy-_ | _ |
+w: To-_-maar | _ _ haa-te | roy _ | _ |
 C4 C4- | C4 B,2 C2 | D8- | D8 |
-w: Aa-mar-|_ haa-te | khoy | _ |
+w: Aa-mar | _ haa-te | khoy | _ |
 E2 ^F2 E2 G2- | G4 G2 ^F2 | G8- | G8 |
-w: To-_-maar-_-|_ mo-ne | bhoy | _ |
-G B3 B4- | B4 A2 G ^F | G2 c2 c4- | c8 |
-w: aa-_-maar-|_ bhoy-_-_ | haa-_-ra-|_ |
-P:Sthayi
-C E3 E4- | E4 D2 C2 | B,2 C2 D4- | D8 |
-w: To-_-mar-|_ ho-lo | shu-_-ru-|_ |
-G,2 A,2 B,4- | B,4 C2 D2 | E2 D2 C4- | C8 |]
-w: aa-_-mar-|_ ho-lo | saa-_-ra-|_ |
+w: To-_-maar _ | _ mo-ne | bhoy | _ |
+G B3 B4- | B4 A2 G ^F | G2 c2 c4- | c8 | C E3 E4- | E4 D2 C2 | B,2 C2 D4- | D8 | G,2 A,2 B,4- | B,4 C2 D2 | E2 D2 C4- | C8 |]
+w: Aa-_-maar | _ bho-y _ | * * * | _ | * * * | _ * * | * * * | _ | haa-_-_-|_-_-_-|_-_-ra | _ |

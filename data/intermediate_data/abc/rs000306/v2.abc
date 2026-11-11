@@ -16,12 +16,12 @@ G2 A2 ^A2 d2 c4 | ^A2 =A2 G2 F2 E2 E2 |
 w: Nu-_-tan _ jau-|bo-_-ne-_-ri _ |
 F4 z8 | E4 F4 E4 |
 w: Dut | Aam-ra chan- |
-F4 z8 | F4 G4 F4 |
-w: Chal | aam-ra ad- |
-G4 z8 |
-w: Bhut |
-E2 F2 G2 A2 ^A2 c2 | c8 G4 | G2 A2 ^A2 d2 c4 | ^A2 =A2 G2 F2 E2 E2 | F4 z8 | F4 F2 A2 A2 B2 | B4 B4 c4 |
-w: _ Aam-* * * * | * * | * * * * * | * * * ra _ _ | _ | _ _ _ be-_-|ra bhaa-ngi |
+F4 z8 | F4 G4 F4 | G4 z8 | E2 F2 G2 A2 ^A2 c2 | c8 G4 | G2 A2 ^A2 d2 c4 |
+w: Chal | aam-ra ad-|* | * * * * * * | * * | * * * * * |
+^A2 =A2 G2 F2 E2 E2 | F4 z8 |
+w: * * Bhut _ _ _ | _ |
+F4 F2 A2 A2 B2 | B4 B4 c4 |
+w: Aam-ra _ be-_-|ra bhaa-ngi |
 B4 c4 c2 B2 | c4 ^A2 =A2 G2 A2 |
 w: Aam-ra a-_-|shok-bo-_-ner _ |
 ^A2 d2 c4 ^A2 =A2 | c2 ^A2 =A4 G4 |
@@ -40,12 +40,12 @@ E4 F4 E4 | F4 z8 |
 w: Aam-ra bi-|dyu- |
 E4 F4 E4 | F4 z8 |
 w: T raa cho | cho |
-F4 G4 F4 | G4 z8 |
-w: Aa raa m | bhu |
-E2 F2 G2 A2 ^A2 c2 | c8 G4 | G2 A2 ^A2 d2 c4 | ^A2 =A2 G2 F2 E2 E2 |
-w: _ _ _ _ _ Aa | ra _ | _ _ _ ko-_-|_-_-_-_-ri bhul |
-F4 z8 | C4 C4 D4 | E4 E8 | F4 F2 G2 G2 ^F2 | G8 F2 E2 |
-w: A-|_-_-_-|_-_-|gaadh _ _ ja-_-|le _ _ |
+F4 G4 F4 | G4 z8 | E2 F2 G2 A2 ^A2 c2 | c8 G4 | G2 A2 ^A2 d2 c4 | ^A2 =A2 G2 F2 E2 E2 | F4 z8 |
+w: Aa raa m | * | * * * * * * | * * | * * * * * | * * bhu _ _ _ | _ |
+C4 C4 D4 | E4 E8 |
+w: Aa ra ko-|ri bhul |
+F4 F2 G2 G2 ^F2 | G8 F2 E2 |
+w: A-gaadh _ ja-_-|le _ _ |
 F4 A4 A4 | ^A4 c4 c4 |
 w: Jhnaap di-ye | ju-jhi-ye |
 A2 c2 ^A2 =A2 G2 z2 | G A3 G4 F4 |
@@ -64,11 +64,13 @@ E2 E2 F8 | F4 F2 A2 A2 B2 |
 w: Ri _ bhul | Je-kha-_-ne _ |
 B4 B4 c4 | B4 c6 B2 |
 w: Daak pa-re | jib-an ma- |
-c4 ^A2 =A2 G2 A2 | ^A2 d2 c4 ^A4 | A4 z8 |
-w: Ron jha-_-re _ | _ _ _ _ | _ |
-E4 F4 E4 | F4 z8 | F4 G4 F4 | G4 z8 |
-w: _ Je-_-|kha-|_-_-_-|_- |
-E2 F2 G2 A2 ^A2 c2 | c8 G4 | G2 A2 ^A2 d2 c4 |
-w: _-_-_-ne _ Daakparejiban | maron jhare | _ _ aam-_-ra |
+c4 ^A2 =A2 G2 A2 | ^A2 d2 c4 ^A4 | A4 z8 | E4 F4 E4 | F4 z8 |
+w: Ron jha-_-re _ | * * * * | * | * * * | * |
+F4 G4 F4 | G4 z8 |
+w: * * Je-|_- |
+E2 F2 G2 A2 ^A2 c2 | c8 G4 |
+w: _-kha-_-ne _ Daakpare | jiban ma- |
+G2 A2 ^A2 d2 c4 |
+w: Ronjhare _ aam-_-ra |
 ^A2 =A2 G2 F2 E2 E2 | F4 |]
 w: pros-Tut Aam-ra chan-Chal | aamraadbhu |

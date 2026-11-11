@@ -22,18 +22,22 @@ c6 e2 | d4 e d3 | c4 c4 | c4 d c B2 |
 w: Tuk-ro | ko-re _ | kaa-chhi | Aa-mi _ _ |
 B6 d2 | c4 d c B2 | B2 c2 c4 | d c B2 B2 c B |
 w: Dub-te | raa-ji _ _ | aa-_-chhi | aa-_-_-mi _ _ |
-A6 B2 | c4 B2 c B | z4 A G3 | F4 E2 F E |
-w: Dub-te | raa-ji _ _ | aachhi _ | To-mar _ _ |
-D4 D2 G2 | G2 F2 G F E2- | E8- | E8 |
-w: _ _ To-|_-mar _ _ _ | _ | _ |
-C4 C2 E2 | E4 E2 F2 | F4 G4 | A G z2 G4 | F4 F2 A2 | G4 A G F2 | F4 G2 A2 | z4 A G F2 |
-w: Sa-kal _ | aa-mar _ | ge-lo | mi-_-_-|chhebi-kel _ | je jaay _ _ | taa-ri _ | pichhe _ _ |
+A6 B2 | c4 B2 c B | z4 A G3 | F4 E2 F E | D4 D2 G2 |
+w: Dub-te | raa-ji _ _ | aachhi _ | To-mar _ _ | _ _ _ |
+G2 F2 G F E2- | E8- | E8 |
+w: To-mar _ _ _ | _ | _ |
+C4 C2 E2 | E4 E2 F2 | F4 G4 | A G z2 G4 |
+w: Sa-kal _ | aa-mar _ | ge-lo | mi-_-chhe |
+F4 F2 A2 | G4 A G F2 | F4 G2 A2 | z4 A G F2 |
+w: Bi-kel _ | je jaay _ _ | taa-ri _ | pichhe _ _ |
 G2 z2 E4 | E2 F E D2 E2 |
 w: Go _ | _ _ _ _ _ |
-C4 C2 E2 | E4 E2 F2 | F4 G4 | A G z2 G4 | F4 F2 A2 | G4 A G F2 | F4 G2 A2 | z4 A G F2 |
-w: Sa-kal _ | aa-mar _ | ge-lo | mi-_-_-|chhebi-kel _ | je jaay _ _ | taa-ri _ | pichhe _ _ |
+C4 C2 E2 | E4 E2 F2 | F4 G4 | A G z2 G4 |
+w: Sa-kal _ | aa-mar _ | ge-lo | mi-_-chhe |
+F4 F2 A2 | G4 A G F2 | F4 G2 A2 | z4 A G F2 |
+w: Bi-kel _ | je jaay _ _ | taa-ri _ | pichhe _ _ |
 G2 z2 E4- | E4 B2 B2 | z8 | z6 c2 |
-w: Go _ | _ Re-kho |  | na |
+w: Go _ | _ Rekho na |  | _ |
 c8 | c2 B2 B2 c B | z8 | z6 c2 |
 w: Aar | bne-_-dho _ _ |  | na |
 c8- | c8 | c4 B2 d2 | c4 d c B2 |
@@ -42,32 +46,28 @@ B2 c2 c4 | d c B2 B2 c B | A6 B2 | B2 c2 c2 B2 |
 w: Kaa-_-chhi | Aa-_-_-mi _ _ | dub-te | raa-_-ji _ |
 z4 A G3 | G4 A G F2 | F6 A2 | G4 A G F2 |
 w: Aachhi _ | aa-mi _ _ | dub-te | raa-ji _ _ |
-F2 G2 F E3 | E4 F E3 |
-w: Aa-_-chhi _ | To-mar _ |
-D4 D2 G2 | G2 F2 G F E2- | E8- | E8 |
-w: _ _ To-|_-mar _ _ _ | _ | _ |
-C2 E2 E2 F2 | F2 G2 G2 A2 | F G7 | G4 F E3 | D4 D2 G2 | G2 F2 G F E2- | E8- | E8 | C4 C2 E2 | E4 E2 F2 | F4 G2 A2 | G2 A G F2 G F |
-w: Maa-* * * | * * * * | * * | * * * | * * * | * * * * * | _ | _ | jhir _ _ | laa-gi _ | aa-chi _ | jaa-_-_-gi _ _ |
-E4 E4 | E4 E2 F2 | z4 G4- | G8 |
-w: Sa-kol | raa-tri-_-|be-|_- |
-G4 A2 A2 | A4 B2 A G | G2 B2 B2 c B | A2 B A z4 |
-w: la Dheu-gu-|lo je _ _ | aa-_-may _ _ | ni-_-_- |
-G2 B2 B2 c B | A2 B A G2 A G | F2 G F E4 | E2 F E D2 E2 |
-w: ye Ka-re _ _ | ke-_-_-bol _ _ | khe-_-_-la | _ _ _ _ _ |
+F2 G2 F E3 | E4 F E3 | D4 D2 G2 | G2 F2 G F E2- | E8- | E8 | C2 E2 E2 F2 | F2 G2 G2 A2 | F G7 |
+w: Aa-_-chhi _ | To-mar _ | * * * | * * * * * | _ | _ | * * * * | * * * * | * * |
+G4 F E3 | D4 D2 G2 | G2 F2 G F E2- | E8- | E8 |
+w: To-_-_-|_-_-_-|_-mar _ _ _ | _ | _ |
 C4 C2 E2 | E4 E2 F2 | F4 G2 A2 | G2 A G F2 G F |
 w: Maa-jhir _ | laa-gi _ | aa-chi _ | jaa-_-_-gi _ _ |
 E4 E4 | E4 E2 F2 | z4 G4- | G8 |
-w: Sa-kol | raa-tri-_-|be-|_- |
-G4 A2 A2 | A4 B2 A G | G2 B2 B2 c B | A2 B A z4 |
-w: la Dheu-gu-|lo je _ _ | aa-_-may _ _ | ni-_-_- |
-G2 B2 B2 c B | A2 B A G2 A G | F2 G F E4- | E8 |
-w: ye Ka-re _ _ | ke-_-_-bol _ _ | khe-_-_-la | _ |
+w: Sa-kol | raa-tri-be-|la | _ |
+G4 A2 A2 | A4 B2 A G | G2 B2 B2 c B | A2 B A z4 | G2 B2 B2 c B | A2 B A G2 A G | F2 G F E4 | E2 F E D2 E2 |
+w: Dheu-_-gu-|lo je _ _ | aa-_-may _ _ | ni-_-_-|yeka-_-re _ _ | ke-_-_-bol _ _ | khe-_-_-la | _ _ _ _ _ |
+C4 C2 E2 | E4 E2 F2 | F4 G2 A2 | G2 A G F2 G F |
+w: Maa-jhir _ | laa-gi _ | aa-chi _ | jaa-_-_-gi _ _ |
+E4 E4 | E4 E2 F2 | z4 G4- | G8 |
+w: Sa-kol | raa-tri-be-|la | _ |
+G4 A2 A2 | A4 B2 A G | G2 B2 B2 c B | A2 B A z4 | G2 B2 B2 c B | A2 B A G2 A G | F2 G F E4- | E8 |
+w: Dheu-_-gu-|lo je _ _ | aa-_-may _ _ | ni-_-_-|yeka-_-re _ _ | ke-_-_-bol _ _ | khe-_-_-la | _ |
 c6 e2 | d4 e d c2 | c6 d2 | c4 d c B2 |
 w: Jhar-ke | aa-mi _ _ | kor-bo | mi-te _ _ |
 B6 d2 | c4 d c B2 | B2 c B A G3 | A4 B2 c2 | z8 | z8 | z6 c2 | c4 c4 |
-w: Dor-bo | na taar _ _ | bhru-_-_-ku-_-|ti-te _ |  |  | Daao | che-ye |
+w: Dor-bo | na taar _ _ | bhru-_-_-ku-_-|ti-te _ |  |  | Daaoche-|ye daao |
 c4 c4 | c2 d2 z B3 | B2 d2 d4 | c4 d c B2 |
-w: daao O-|go aa-mi | tu-_-phan | pe-le _ _ |
+w: O-go | aa-_-mi | tu-_-phan | pe-le _ _ |
 B2 c2 c4 | c2 B2 B2 c B | A6 B2 | B2 c2 c2 B2 |
 w: Bnaa-_-chi | Aa-_-mi _ _ | dub-te | raa-_-ji _ |
 z4 A G3 | G4 A G F2 | F6 A2 | G4 A G F2 |

@@ -7,7 +7,7 @@
 The SNLTR swaralipi (swara_abc.song_events) gives each note and the syllable sung from it. Its notes
 are aligned to the tab's notes in played order (pitch classes, the swaralipi's own transposition,
 gaps allowed for ornaments and repeats the other lacks; repeated notes are not merged, since syllables
-sit on them). At every pair of notes with the same pitch class:
+sit on them; note lengths break ties where a pitch repeats - note_align.py). At every pair of notes with the same pitch class:
   missing    the swaralipi starts a syllable there, the tab does not
   extra      the tab starts a syllable there, the swaralipi does not
   different  both start one, and the tab's text is unlike the swaralipi's (romanized) syllable
@@ -27,6 +27,7 @@ sys.path.insert(0, os.path.join(ROOT, 'scripts', 'swaralipi_player'))
 import roundtrip_check as RC  # noqa: E402
 import source_check as SC  # noqa: E402
 import swara_abc as S  # noqa: E402
+import note_align as NA  # noqa: E402
 import match_snltr as M  # noqa: E402
 import ktab  # noqa: E402
 from ktab.model import Note, Hold  # noqa: E402
@@ -57,8 +58,10 @@ def tab_notes(song):
                 for ev in syl.events:
                     if isinstance(ev, Note) and not ev.is_rest:
                         base = 60 + ev.semitone
-                        out.append((rt.get(base, base), syl.text.strip() if first else None, ev.pos))
+                        out.append([rt.get(base, base), syl.text.strip() if first else None, ev.pos, float(ev.beats)])
                         first = False
+                    elif out:                     # a hold (or a rest) lengthens the note before it
+                        out[-1][3] += float(ev.beats)
     return out
 
 
@@ -73,12 +76,8 @@ def check(s, kpath, abc_path, T):
     tp = meant if len(meant) == len(tn) else [n[0] for n in tn]
     ev = S.song_events(s)[2]
     sp = [e['midi'] for e in ev]
-    best = None
-    for sh in SC.best_shifts(tp, sp):
-        pair, score = SC.align([p % 12 for p in tp], [(p + sh) % 12 for p in sp])
-        if best is None or score > best[1]:
-            best = (pair, score, sh)
-    pair, _, sh = best
+    # pitches and lengths: where a pitch repeats, the note of the right length is paired
+    pair, sh = NA.align(tp, sp, [n[3] for n in tn], [e['units'] for e in ev])
     status = []                                   # per tab note: None (not compared), 'ok', or a problem
     for i, j in enumerate(pair):
         if j is None or tp[i] % 12 != (sp[j] + sh) % 12:

@@ -20,10 +20,10 @@ w: Yo na _ _ _ ni-|yo _ naa _ _ _ sa- |
 w: Ra-_-ye | Ji-bo-n _ ma- |
 G4 G5 ^D | G2 G ^G =G3 ^A ^G =G |
 w: Ro-n _ | su-kh _ du-_-kh _ |
-^G3 =G F6 | C3 F F4 F2 | F2 G2 G3 D ^D2 |
-w: Di-_-ye | bok-_-khe dho | * * * * * |
-F3 G ^A3 ^G3 | ^D2 ^D =D F ^D3 ^C2 | C4 C6 | ^G2 ^G2 ^G4 ^G2 | ^G4 ^G5 ^A |
-w: * * * Skho-|* * * * * * | * * | li-to shi-thi-|lo _ _ |
+^G3 =G F6 | C3 F F4 F2 | F2 G2 G3 D ^D2 | F3 G ^A3 ^G3 | ^D2 ^D =D F ^D3 ^C2 | C4 C6 |
+w: Di-_-ye | bok-_-khe _ | dho * * * * | * * * * | * * * * * * | * * |
+^G2 ^G2 ^G4 ^G2 | ^G4 ^G5 ^A |
+w: Skho-li-to shi-|thi-lo _ |
 ^A2 c2 c3 ^c ^A2 | c10 |
 w: Kaa-mo-na-_-r | bhaar |
 ^d2 ^d2 ^d4 =d2 | ^d3 =d ^d5 ^c |
@@ -42,16 +42,16 @@ w: Phi-ri ka-_-_-to | aar |
 w: Ni-jo haa-te | tu-mi |
 ^c2 =c2 c3 ^A ^A G | G ^A2 ^G2 =G5 |
 w: Gne-the ni-_-yo _ | haar _ _ _ |
-G2 G2 G4 G2 | G4 G3 ^D ^D2 | G2 F G G ^A2 ^G3 | ^D2 ^D =D F ^D3 ^C2 |
-w: Phe-lo-na aa-|ma-re _ chho | * * * * * * | * * * * * * |
-C4 C6 | C2 C2 C4 C2 | C4 C5 ^C |
-w: Chi-ro-|pi-pa-si-to | _ _ _ |
+G2 G2 G4 G2 | G4 G3 ^D ^D2 | G2 F G G ^A2 ^G3 | ^D2 ^D =D F ^D3 ^C2 | C4 C6 |
+w: Phe-lo-na aa-|ma-_-_-_-|re _ _ _ _ _ | _ _ _ _ chho _ | _ _ |
+C2 C2 C4 C2 | C4 C5 ^C |
+w: Chi-ro-pi-pa-|si-to _ |
 ^D2 ^D2 F4 F2 | F4 F6 |
 w: Ba-so-na be-|do-na |
 F3 ^d ^d4 =d2 | c4 ^G5 ^A |
 w: Bnaa-_-chao taa-|ha-re _ |
 ^d2 ^c2 =c6 | ^c3 =c c4 c2 |
-w: Maa-ri-ya | Shesh _ joye _ |
+w: Maa-ri-ya | Shesh _ jo-ye |
 ^c4 =c6 | ^c3 =c c3 ^A ^A ^G |
 w: Je-no | hoy _ se _ bi-_- |
 ^G4 =G6 | c2 ^A2 ^G4 =G2 |
@@ -65,7 +65,7 @@ w: Ba-so-na be-|do-na |
 F3 ^d ^d4 =d2 | c4 ^G5 ^A |
 w: Bnaa-_-chao taa-|ha-re _ |
 ^d2 ^c2 =c6 | ^c3 =c c4 c2 |
-w: Maa-ri-ya | Shesh _ joye _ |
+w: Maa-ri-ya | Shesh _ jo-ye |
 ^c4 =c6 | ^c3 =c c3 ^A ^A ^G |
 w: Je-no | hoy _ se _ bi-_- |
 ^G4 =G6 | c2 ^A2 ^G4 =G2 |
@@ -93,4 +93,4 @@ w: To-_-ma-ri ko-|ri-ya |
 ^c2 =c2 c3 ^A ^A G | ^G4 =G6 |
 w: Ni-yo go _ aa-_-|ma-re |
 G2 G2 G4 G2 | G4 G3 ^D ^D2 | G3 ^A ^G6 | ^D2 ^D =D F ^D3 ^C2 | C4 C6 | C2 ^D2 ^D4 =D2 | ^D3 =D ^D4 F2 | ^D4 ^C =C ^A, ^G, ^A,2 | C3 ^C =C ^C F ^D ^D2 | ^D3 ^C =C6 | C2 C2 C3 ^G ^G2 | G4 G5 ^D | G2 G ^G =G3 ^A ^G =G | ^G3 =G F6 | C3 F F4 F2 | F2 G2 G3 D ^D2 | F3 G ^A3 ^G3 | ^D2 ^D =D F ^D3 ^C2 | C4 C6 |]
-w: Ba-ro-ne-r | maa-la _ p | * * * | * * * * * * | * * | * * * * | * * * * | * * * * * * | * * * * * * * | * * * | * * * * * | * * * | * * * * * * * | * * * | * * * * | * * * * * | * * * * | * * * * * * | * * |
+w: Ba-ro-ne-r | * * * * | * * * | * * * * * * | * * | * * * * | * * * * | * * * * * * | * * * * * * * | * * * | * * * * * | maa-* * | * * * * * * * | * * * | * * * * | * la _ _ _ | _ _ _ _ | p _ _ _ _ _ | _ _ |

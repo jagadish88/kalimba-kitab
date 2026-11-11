@@ -25,6 +25,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 sys.path.insert(0, os.path.join(ROOT, 'scripts', 'ktab_to_video'))
 import fix_lyric_lines as F  # noqa: E402
 import reflow_ktab as R  # noqa: E402
+import no_rests as NR  # noqa: E402
 
 TITLES = {r[0]: r[1] for r in csv.reader(open(os.path.join(ROOT, 'data/raw_data/text/catalog.csv'), encoding='utf-8')) if r}
 TMP = os.environ.get('KK_TMP', '/tmp/kk_work/realign')
@@ -59,7 +60,13 @@ def build(s, abc_text, T, hdr, out, tag):
     order = ['title', 'subtitle', 'retune']
     head = '\n'.join(sorted(head.split('\n'), key=lambda l: order.index(l[1:].split(':')[0]) if l[1:].split(':')[0] in order else 3))
     poem = F.poem_lines(s)
-    return F.fix(head + '\n\n' + body, poem, 6, 10, 3, F.poem_phrases(s), F.sections(s, poem))[0]
+    return NR.no_rests(F.fix(head + '\n\n' + body, poem, 6, 10, 3, F.poem_phrases(s), F.sections(s, poem))[0])
+
+
+def music(text):
+    """the notes, rests and bar lines of an ABC, whatever its line breaks"""
+    body = [l for l in text.split('\n') if l and not re.match(r'^[A-Za-z]:', l)]
+    return ' '.join(body).split()
 
 
 def non_w(text):
@@ -106,13 +113,17 @@ def main():
             if not os.path.exists(old_p) or not os.path.exists(p):
                 continue
             old, new = open(old_p, encoding='utf-8').read(), open(p, encoding='utf-8').read()
-            if non_w(old) != non_w(new):
-                if old_p == src_abc:
-                    ok = False
-                continue
-            # the draft's own lines, with the new w: lines in their places
-            nw = iter([l for l in new.split('\n') if l.startswith('w:')])
-            new_abc[old_p] = '\n'.join(next(nw) if l.startswith('w:') else l for l in old.split('\n'))
+            if non_w(old) == non_w(new):
+                # same lines: the draft's own text, with the new w: lines in their places
+                nw = iter([l for l in new.split('\n') if l.startswith('w:')])
+                new_abc[old_p] = '\n'.join(next(nw) if l.startswith('w:') else l for l in old.split('\n'))
+            elif music(old) == music(new):
+                # same notes, other line breaks (lines start where a sung row's first syllable falls):
+                # the new text, with the draft's title
+                t_old = next((l for l in old.split('\n') if l.startswith('T:')), None)
+                new_abc[old_p] = '\n'.join(t_old if (l.startswith('T:') and t_old) else l for l in new.split('\n'))
+            elif old_p == src_abc:
+                ok = False
         if not ok or src_abc not in new_abc:
             skipped.append((s, f'{src_abc}: notes differ from a fresh run (edited by hand?)')); continue
         old_k = open(kpath, encoding='utf-8').read()

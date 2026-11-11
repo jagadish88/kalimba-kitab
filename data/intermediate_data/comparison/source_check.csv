@@ -9,30 +9,30 @@ rs000011,weak,17:68,E5,roll A,4')(re: 5'. 4'/) (aa: 3')(so: 4')(no: 3') (paa: 2'
 rs000011,weak,17:78,D5,roll B,'. 4'/) (aa: 3')(so: 4')(no: 3') (paa: 2')(ti: 1'-),data/intermediate_data/ktab/rs000011/v2.ktab
 rs000011,weak,28:14,A4,roll E,(ju: 4)(thi: 6)(ro: 6) (maa: 7)(le,data/intermediate_data/ktab/rs000011/v2.ktab
 rs000011,weak,28:30,B4,roll D,(ju: 4)(thi: 6)(ro: 6) (maa: 7)(le: 1'-),data/intermediate_data/ktab/rs000011/v2.ktab
-rs000016,weak,48:67,B4,swaralipi F#,) (aa: 7/)(lok: 7/) (si: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/,data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,48:77,A4,swaralipi E,(lok: 7/) (si: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk:,data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,48:89,B4,swaralipi F#,i: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (ga,data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,49:49,D5,swaralipi E,inaaloksikhajwo: 5/)(luk: 5/) (gaa: 5/ 2'/ 2') (ne: 2'/ 2'/,data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,49:81,C#5,swaralipi F#,aa: 5/ 2'/ 2') (ne: 2'/ 2'/ 2' 2'/ 2'/ 1'/ 2' 1'/ 2'-- 5/ 6/,data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,49:88,C#5,swaralipi E,2'/ 2') (ne: 2'/ 2'/ 2' 2'/ 2'/ 1'/ 2' 1'/ 2'-- 5/ 6/ 7/ 7/,data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,49:92,D5,swaralipi F#,2') (ne: 2'/ 2'/ 2' 2'/ 2'/ 1'/ 2' 1'/ 2'-- 5/ 6/ 7/ 7/ 7 7/,data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,49:103,B4,swaralipi F#,/ 2'/ 2' 2'/ 2'/ 1'/ 2' 1'/ 2'-- 5/ 6/ 7/ 7/ 7 7/ 7 7/ 7 7/,data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,49:129,A4,swaralipi E,/ 2'-- 5/ 6/ 7/ 7/ 7 7/ 7 7/ 7 7/ 7 7/ 6/ 1'/ 1'--),data/intermediate_data/ktab/rs000016/v1.ktab
-rs000016,weak,49:132,C5,swaralipi F#,'-- 5/ 6/ 7/ 7/ 7 7/ 7 7/ 7 7/ 7 7/ 6/ 1'/ 1'--),data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,49:38,B4,swaralipi F#,(aa: 7/)(lok: 7/) (si: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,49:48,A4,swaralipi E,(lok: 7/) (si: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk:,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,49:60,B4,swaralipi F#,i: 7)(kha: 6 1'/ 7/) (jwo: 6- 6/ 6/ 6/ 7/)(luk: 5 7/ 6/) (ga,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,50:6,D5,swaralipi E,(Ni: 2'/)(shi: 2')(din: 2',data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,51:20,C#5,swaralipi F#,(si: 2'/)(kha: 2'/ 1'/ 2') (jwo: 1'/ 2'-,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,51:34,C#5,swaralipi E,(si: 2'/)(kha: 2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/),data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,51:38,D5,swaralipi F#,(si: 2'/)(kha: 2'/ 1'/ 2') (jwo: 1'/ 2'--)(luk: 5/ 6/) (ga,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,51:62,B4,swaralipi F#,2') (jwo: 1'/ 2'--)(luk: 5/ 6/) (gaa: 7/ 7/ 7) (ne: 7/ 7 7/,data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,51:94,A4,swaralipi E,(gaa: 7/ 7/ 7) (ne: 7/ 7 7/ 7 7/ 7 7/ 6/ 1'/ 1'--),data/intermediate_data/ktab/rs000016/v1.ktab
+rs000016,weak,51:97,C5,swaralipi F#,aa: 7/ 7/ 7) (ne: 7/ 7 7/ 7 7/ 7 7/ 6/ 1'/ 1'--),data/intermediate_data/ktab/rs000016/v1.ktab
 rs000017,weak,18:59,A5,swaralipi F,(jho: 4'/) (re: 5'/// 6'/// 5'//) (ja: 6'///) (a: 5'///) (i:,data/intermediate_data/ktab/rs000017/v1.ktab
 rs000017,weak,18:70,G5,swaralipi E,(re: 5'/// 6'/// 5'//) (ja: 6'///) (a: 5'///) (i: 4'/.),data/intermediate_data/ktab/rs000017/v1.ktab
 rs000017,weak,41:46,A4,swaralipi E,) (to: 6/// 7/// 6//) (ban: 5//) (shi: 6// 5/) (ba: 3//) (aa,data/intermediate_data/ktab/rs000017/v1.ktab
 rs000017,weak,41:50,G4,swaralipi D,o: 6/// 7/// 6//) (ban: 5//) (shi: 6// 5/) (ba: 3//) (aa: 5/,data/intermediate_data/ktab/rs000017/v1.ktab
-rs000037,weak,17:144,E5,roll G,' 2'// 3'/. 2' 5) (mo: 6 7/ 2'/ 2' 2'/ 3'/ 2'// 3'// 4'/ 4'/,data/intermediate_data/ktab/rs000037/v1.ktab
-rs000037,weak,17:148,D5,roll F#,// 3'/. 2' 5) (mo: 6 7/ 2'/ 2' 2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/,data/intermediate_data/ktab/rs000037/v1.ktab
-rs000037,weak,17:176,A4,roll E,2' 2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/ 2' 7. 6/ 7 1' 7/ 6/) (dhu:,data/intermediate_data/ktab/rs000037/v1.ktab
-rs000037,weak,17:179,B4,roll D,2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/ 2' 7. 6/ 7 1' 7/ 6/) (dhu: 5-,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,weak,17:57,E5,roll G,' 1' 2' 2'// 3'/. 2' 5 6 7/ 2'/ 2' 2'/ 3'/ 2'// 3'// 4'/ 4'/,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,weak,17:61,D5,roll F#,2' 2'// 3'/. 2' 5 6 7/ 2'/ 2' 2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,weak,17:89,A4,roll E,2' 2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/ 2' 7. 6/ 7 1' 7/ 6/ 5- 2' 2,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,weak,17:92,B4,roll D,2'/ 3'/ 2'// 3'// 4'/ 4'/ 3'/ 2' 7. 6/ 7 1' 7/ 6/ 5- 2' 2'),data/intermediate_data/ktab/rs000037/v1.ktab
 rs000037,weak,26:23,F#5,swaralipi A,(O: 2'//)(rejaa: 3'// 4'/)(bo: 4') (na: 3'),data/intermediate_data/ktab/rs000037/v1.ktab
 rs000037,weak,26:41,E5,swaralipi B,O: 2'//)(rejaa: 3'// 4'/)(bo: 4') (na: 3') (aajgha: 2')(re:,data/intermediate_data/ktab/rs000037/v1.ktab
-rs000037,weak,27:57,G4,roll B,5/) (na: 7/) (aajgha: 7 7 6/ 7/ 6)(re: 5---),data/intermediate_data/ktab/rs000037/v1.ktab
-rs000037,weak,28:23,E4,roll A,(O: 5/)(re: 5/) (jaa: 3/ 5)(bo: 5/) (na: 5),data/intermediate_data/ktab/rs000037/v1.ktab
-rs000037,weak,44:79,F#5,swaralipi A,'//) (bhaaijaabonaaajghareOrejaa: 3'// 4'/)(bo: 4'),data/intermediate_data/ktab/rs000037/v1.ktab
-rs000037,weak,45:6,E5,swaralipi B,(na: 3') (aajgha: 2')(re:,data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,weak,27:61,G4,roll B,/ 7) (na: 7) (aaj: 6/) (gha: 7/ 6)(re: 5---),data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,weak,28:23,E4,roll A,(O: 5/)(re: 5/) (jaa: 3/ 5)(bo: 5/),data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,weak,45:46,F#5,swaralipi A,'//) (bhaaijaabonaaajghareOrejaa: 3'// 4'/)(bo: 4') (na: 3'),data/intermediate_data/ktab/rs000037/v1.ktab
+rs000037,weak,45:64,E5,swaralipi B,aajghareOrejaa: 3'// 4'/)(bo: 4') (na: 3') (aajgha: 2')(re:,data/intermediate_data/ktab/rs000037/v1.ktab
 rs000086,weak,17:77,E5,roll G,(aaj: 3') (bnaa: 3'// 5'//)(dhon: 4'/ 3'/) (to: 2'/) (tut:,data/intermediate_data/ktab/rs000086/v1.ktab
 rs000086,weak,17:87,D5,roll A,(bnaa: 3'// 5'//)(dhon: 4'/ 3'/) (to: 2'/) (tut: 7)(be: 1'),data/intermediate_data/ktab/rs000086/v1.ktab
 rs000101,octave,14:26,C5,midi octave C4,(Aa: 6'/)(kash: 5')(bho: 1'.)(ra: 1'-),data/intermediate_data/ktab/rs000101/v1.ktab
@@ -42,15 +42,15 @@ rs000101,strong,33:52,D5,roll B; swaralipi B,ar: 3') (maa: 2'/)(jhe: 1') (a: 1'/
 rs000101,octave,33:61,C5,midi octave C4,maa: 2'/)(jhe: 1') (a: 1'/ 7/ 2'/)(ja: 1' 6/)(na: 5.)(re: 2.,data/intermediate_data/ktab/rs000101/v1.ktab
 rs000115,weak,11:66,F4,swaralipi F#,a: 7/ 7/ 2'/) (ka: 1'--) (dhui: 3)(ye: 4/) (daao: 6. 7. 1'.,data/intermediate_data/ktab/rs000115/v1.ktab
 rs000115,weak,11:77,A4,roll E,/) (ka: 1'--) (dhui: 3)(ye: 4/) (daao: 6. 7. 1'. 5'/ 5' 4'/,data/intermediate_data/ktab/rs000115/v1.ktab
-rs000133,weak,34:11,A#4,swaralipi B,(Ek: 1'// 7/)(taa: 6//)(ratirek,data/intermediate_data/ktab/rs000133/v1.ktab
-rs000133,weak,34:20,A4,swaralipi C,(Ek: 1'// 7/)(taa: 6//)(ratirekti: 5/.),data/intermediate_data/ktab/rs000133/v1.ktab
-rs000133,weak,34:36,G4,swaralipi E,(Ek: 1'// 7/)(taa: 6//)(ratirekti: 5/.) (taa: 4// 3-- 4,data/intermediate_data/ktab/rs000133/v1.ktab
-rs000133,weak,34:57,A4,swaralipi F,: 6//)(ratirekti: 5/.) (taa: 4// 3-- 4 6 7)(re: 2'// 1'//- 7,data/intermediate_data/ktab/rs000133/v1.ktab
-rs000133,weak,34:59,A#4,swaralipi E,6//)(ratirekti: 5/.) (taa: 4// 3-- 4 6 7)(re: 2'// 1'//- 7//,data/intermediate_data/ktab/rs000133/v1.ktab
-rs000133,weak,34:77,A#4,swaralipi B,.) (taa: 4// 3-- 4 6 7)(re: 2'// 1'//- 7// 6//),data/intermediate_data/ktab/rs000133/v1.ktab
-rs000133,weak,34:81,A4,swaralipi C,taa: 4// 3-- 4 6 7)(re: 2'// 1'//- 7// 6//),data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,weak,34:11,A#4,swaralipi B,(Ek: 1'// 7/)(taa: 6//)(ra: 5/.,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,weak,34:20,A4,swaralipi C,(Ek: 1'// 7/)(taa: 6//)(ra: 5/.)(tirek:,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,weak,34:29,G4,swaralipi E,(Ek: 1'// 7/)(taa: 6//)(ra: 5/.)(tirek: 4//)(ti:,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,weak,34:56,A4,swaralipi F,a: 6//)(ra: 5/.)(tirek: 4//)(ti: 3-- 4 6) (taa: 7)(re: 2'//,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,weak,34:65,A#4,swaralipi E,a: 5/.)(tirek: 4//)(ti: 3-- 4 6) (taa: 7)(re: 2'// 1'//- 7//,data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,weak,34:83,A#4,swaralipi B,)(ti: 3-- 4 6) (taa: 7)(re: 2'// 1'//- 7// 6//),data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,weak,34:87,A4,swaralipi C,: 3-- 4 6) (taa: 7)(re: 2'// 1'//- 7// 6//),data/intermediate_data/ktab/rs000133/v1.ktab
 rs000133,weak,35:7,G4,swaralipi B,(gaa: 5/.)(ner: 6//) (be: 7,data/intermediate_data/ktab/rs000133/v1.ktab
-rs000133,weak,35:17,A4,swaralipi C,(gaa: 5/.)(ner: 6//) (be: 7)(dan: 1'),data/intermediate_data/ktab/rs000133/v1.ktab
+rs000133,weak,35:17,A4,swaralipi C,(gaa: 5/.)(ner: 6//) (be: 7)(danboite,data/intermediate_data/ktab/rs000133/v1.ktab
 rs000141,weak,27:15,C#4,roll F,(Aa: 2/)(mar: 1/) (do: 2/ 4/)(sor:,data/intermediate_data/ktab/rs000141/v1.ktab
 rs000141,weak,27:24,D4,roll E,(Aa: 2/)(mar: 1/) (do: 2/ 4/)(sor: 4) (je: 3,data/intermediate_data/ktab/rs000141/v1.ktab
 rs000146,weak,39:70,F#5,roll B,sa: 1''/)(muk: 1''/ 7'/) (di: 6'/)(ye: 4' 5'),data/intermediate_data/ktab/rs000146/v1.ktab
@@ -66,31 +66,31 @@ rs000146,weak,43:6,F#5,roll E,(aa: 4'/)(se: 5'/) (jaay:,data/intermediate_data/k
 rs000146,weak,43:15,G5,roll F,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'//,data/intermediate_data/ktab/rs000146/v1.ktab
 rs000146,weak,43:27,F#5,roll E,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'// 6'/) (kha:,data/intermediate_data/ktab/rs000146/v1.ktab
 rs000146,weak,43:32,G5,roll F,(aa: 4'/)(se: 5'/) (jaay: 4'// 5'// 6'/) (kha: 5'/)(,data/intermediate_data/ktab/rs000146/v1.ktab
-rs000215,weak,18:82,F5,swaralipi A,'// 5'// 4'// 5'/. 4'// 3'//- 4'// 5'/ 4' 3'--) (roy: 1' 1'/,data/intermediate_data/ktab/rs000215/v1.ktab
-rs000215,weak,18:85,E5,swaralipi C,5'// 4'// 5'/. 4'// 3'//- 4'// 5'/ 4' 3'--) (roy: 1' 1'/ 1',data/intermediate_data/ktab/rs000215/v1.ktab
+rs000215,weak,17:75,F5,swaralipi A,'// 5'// 4'// 5'/. 4'// 3'//- 4'// 5'/ 4' 3'-- 1') (tha: 1'/,data/intermediate_data/ktab/rs000215/v1.ktab
+rs000215,weak,17:78,E5,swaralipi C,5'// 4'// 5'/. 4'// 3'//- 4'// 5'/ 4' 3'-- 1') (tha: 1'/) (,data/intermediate_data/ktab/rs000215/v1.ktab
 rs000277,strong,16:47,B4,roll D; swaralipi D,// 7//)(ne: 1') (bo: 1'// 7//)(ne: 1'/ 7/) (o: 1'/)(re: 7),data/intermediate_data/ktab/rs000277/v1.ktab
 rs000277,strong,43:59,B4,roll A#; swaralipi A#,(paa: 2'/)(ta: 1') (jaa: 7/)(be: 1'/. 7/// 1'///) (u: 7/)(r,data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,53:36,G4,swaralipi C,(Ghar: 5/. 1'//)(chhaa: 7/)(ra: 6/ 5/.) (ei: 6/// 5///),data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,53:46,A4,swaralipi B,5/. 1'//)(chhaa: 7/)(ra: 6/ 5/.) (ei: 6/// 5///) (paagoltak,data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,53:51,G4,swaralipi C,1'//)(chhaa: 7/)(ra: 6/ 5/.) (ei: 6/// 5///) (paagoltakeemon,data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,54:19,F4,swaralipi B,(kore: 1/) (ke: 3 4/ 5--) (go: 4/.) (da,data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,54:22,G4,swaralipi C,(kore: 1/) (ke: 3 4/ 5--) (go: 4/.) (daake,data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,54:32,F4,swaralipi D,(kore: 1/) (ke: 3 4/ 5--) (go: 4/.) (daake: 6// 6/ 6,data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,54:45,A4,swaralipi C,: 1/) (ke: 3 4/ 5--) (go: 4/.) (daake: 6// 6/ 6/ 6 6/ 6 6/ 5,data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,54:65,G4,swaralipi A#,(go: 4/.) (daake: 6// 6/ 6/ 6 6/ 6 6/ 5// 6/),data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,55:55,A4,swaralipi F,chhaa: 6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/) (paa: 7),data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,55:59,G4,swaralipi E,a: 6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/) (paa: 7),data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,55:62,B4,swaralipi D,6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/) (paa: 7),data/intermediate_data/ktab/rs000277/v1.ktab
-rs000277,weak,56:18,A4,swaralipi C,(golta: 7/.)(ke: 6//) (emonkoreke: 7/,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,53:31,G4,swaralipi C,(Ghar: 5/. 1'// 7/ 6/)(chhaa: 5/.)(ra: 6///) (ei: 5,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,53:40,A4,swaralipi B,(Ghar: 5/. 1'// 7/ 6/)(chhaa: 5/.)(ra: 6///) (ei: 5/// 4/) (,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,53:51,G4,swaralipi C,1'// 7/ 6/)(chhaa: 5/.)(ra: 6///) (ei: 5/// 4/) (paa: 3/)(go,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,53:91,F4,swaralipi B,/// 4/) (paa: 3/)(gol: 1/)(ta: 3)(kee: 4/ 5--)(mon: 4/. 6//),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,53:94,G4,swaralipi C,4/) (paa: 3/)(gol: 1/)(ta: 3)(kee: 4/ 5--)(mon: 4/. 6//),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,53:104,F4,swaralipi D,3/)(gol: 1/)(ta: 3)(kee: 4/ 5--)(mon: 4/. 6//),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,53:108,A4,swaralipi C,(gol: 1/)(ta: 3)(kee: 4/ 5--)(mon: 4/. 6//),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,54:46,G4,swaralipi A#,/)(re: 6/) (ke: 6 6/ 6) (go: 6/) (daa: 5//)(ke: 6/),data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,55:55,A4,swaralipi F,chhaa: 6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/ 7) (paa: 7/,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,55:59,G4,swaralipi E,a: 6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/ 7) (paa: 7/.)(g,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,55:62,B4,swaralipi D,6 7/ 1')(ra: 6/. 1'// 7//) (ei: 6// 5. 7/ 7) (paa: 7/.)(gol:,data/intermediate_data/ktab/rs000277/v1.ktab
+rs000277,weak,55:84,A4,swaralipi C,7//) (ei: 6// 5. 7/ 7) (paa: 7/.)(gol: 6//)(ta: 7/)(ke: 1'-,data/intermediate_data/ktab/rs000277/v1.ktab
 rs000293,weak,10:126,C5,roll E,/ 7/ 5 1'/ 7. 5// 3// 3/ 4/ 5/ 6/ 7/ 5 1'/ 7.),data/intermediate_data/ktab/rs000293/v1.ktab
 rs000293,weak,10:130,A#4,roll F,5 1'/ 7. 5// 3// 3/ 4/ 5/ 6/ 7/ 5 1'/ 7.),data/intermediate_data/ktab/rs000293/v1.ktab
-rs000306,weak,33:25,D5,swaralipi E,(Je: 1' 7)(kha: 1'-- 1' 2' 1' 2'-- 7/ 1'/ 2'/,data/intermediate_data/ktab/rs000306/v1.ktab
-rs000306,weak,33:28,C5,swaralipi F#,(Je: 1' 7)(kha: 1'-- 1' 2' 1' 2'-- 7/ 1'/ 2'/) (,data/intermediate_data/ktab/rs000306/v1.ktab
-rs000306,weak,33:31,D5,swaralipi G,(Je: 1' 7)(kha: 1'-- 1' 2' 1' 2'-- 7/ 1'/ 2'/) (ne:,data/intermediate_data/ktab/rs000306/v1.ktab
-rs000306,weak,33:36,B4,swaralipi F#,(Je: 1' 7)(kha: 1'-- 1' 2' 1' 2'-- 7/ 1'/ 2'/) (ne: 3'/,data/intermediate_data/ktab/rs000306/v1.ktab
-rs000306,weak,33:39,C5,swaralipi G,(Je: 1' 7)(kha: 1'-- 1' 2' 1' 2'-- 7/ 1'/ 2'/) (ne: 3'/ 4'/,data/intermediate_data/ktab/rs000306/v1.ktab
-rs000306,weak,33:43,D5,swaralipi F#,: 1' 7)(kha: 1'-- 1' 2' 1' 2'-- 7/ 1'/ 2'/) (ne: 3'/ 4'/) (d,data/intermediate_data/ktab/rs000306/v1.ktab
-rs000306,weak,33:53,E5,swaralipi G,a: 1'-- 1' 2' 1' 2'-- 7/ 1'/ 2'/) (ne: 3'/ 4'/) (daakparejib,data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,weak,29:101,D5,swaralipi E,3'/ 4'/ 6'/ 5' 4' 3'-- 7 1' 7 1'-- 1' 2'),data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,weak,30:6,C5,swaralipi F#,(Je: 1' 2'-- 7/) (kha: 1'/,data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,weak,30:9,D5,swaralipi G,(Je: 1' 2'-- 7/) (kha: 1'/ 2',data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,weak,30:14,B4,swaralipi F#,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne,data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,weak,30:24,C5,swaralipi G,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne: 3'/ 4'/),data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,weak,30:28,D5,swaralipi F#,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne: 3'/ 4'/) (da,data/intermediate_data/ktab/rs000306/v1.ktab
+rs000306,weak,30:37,E5,swaralipi G,(Je: 1' 2'-- 7/) (kha: 1'/ 2'/)(ne: 3'/ 4'/) (daakpare: 5,data/intermediate_data/ktab/rs000306/v1.ktab
 rs000515,weak,28:29,G#5,roll C,(Haw: 7/)(o: 1'/) (na: 7/// 5'/// 5/// 1/// 2'/),data/intermediate_data/ktab/rs000515/v1.ktab
 rs000515,weak,28:35,G#4,roll B,(Haw: 7/)(o: 1'/) (na: 7/// 5'/// 5/// 1/// 2'/) (ja: 1,data/intermediate_data/ktab/rs000515/v1.ktab
 rs000515,weak,29:29,G#5,roll C,(Haw: 7/)(o: 1'/) (na: 7/// 5'/// 5/// 1/// 2'/),data/intermediate_data/ktab/rs000515/v1.ktab
@@ -101,22 +101,22 @@ rs000980,strong,15:26,G4,roll E; swaralipi E,(ku: 7//)(he: 6//)(lika: 5/.) (ko: 
 rs000980,strong,15:36,B4,roll F; swaralipi F,(ku: 7//)(he: 6//)(lika: 5/.) (ko: 7)(riudghatanSur: 2'/,data/intermediate_data/ktab/rs000980/v1.ktab
 rs000980,strong,15:62,B4,roll E; swaralipi E,a: 5/.) (ko: 7)(riudghatanSur: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/,data/intermediate_data/ktab/rs000980/v1.ktab
 rs000980,strong,15:73,A4,roll D; swaralipi D,: 7)(riudghatanSur: 2'/ 1'/ 7/)(je: 5/ 6/)(ro: 5/) (mo: 4)(t,data/intermediate_data/ktab/rs000980/v1.ktab
-rs000980,weak,32:36,A5,swaralipi F,(U: 6'/)(da: 6'/ 6'/ 6'/)(yo: 5'// 6'/. 6')(di: 5'//)(ga,data/intermediate_data/ktab/rs000980/v1.ktab
-rs000980,weak,32:49,G5,swaralipi E,da: 6'/ 6'/ 6'/)(yo: 5'// 6'/. 6')(di: 5'//)(gante: 6'//- 6',data/intermediate_data/ktab/rs000980/v1.ktab
-rs000980,weak,33:7,G5,swaralipi C,(Chi: 5'/)(ro: 5'/)(nu: 5'/,data/intermediate_data/ktab/rs000980/v1.ktab
-rs000980,weak,33:90,F5,swaralipi D,5'/) (di: 5'/)(lo: 5'/) (daak: 5'//-- 4' 3'/.),data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,weak,32:15,A5,swaralipi F,(U: 5'//)(da: 6'/.)(yo: 6')(di: 5'/,data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,weak,32:33,G5,swaralipi E,(U: 5'//)(da: 6'/.)(yo: 6')(di: 5'//)(gante: 6'//- 6',data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,weak,34:7,G5,swaralipi C,(Chi: 5'/)(ro: 5'/)(nu: 5'/,data/intermediate_data/ktab/rs000980/v1.ktab
+rs000980,weak,34:90,F5,swaralipi D,5'/) (di: 5'/)(lo: 5'/) (daak: 5'//-- 4' 3'/.),data/intermediate_data/ktab/rs000980/v1.ktab
 rs001068,weak,29:24,G4,swaralipi C,(taan: 5/)(pu: 6/)(ra: 5/ 5/ 4/)(tar: 3/) (t,data/intermediate_data/ktab/rs001068/v1.ktab
 rs001068,weak,29:30,F4,swaralipi C#,(taan: 5/)(pu: 6/)(ra: 5/ 5/ 4/)(tar: 3/) (taar: 2,data/intermediate_data/ktab/rs001068/v1.ktab
 rs001068,weak,44:16,G4,swaralipi C,(baaj: 6/)(be: 5/) (bnaa: 4/)(shi: 3,data/intermediate_data/ktab/rs001068/v1.ktab
 rs001068,weak,44:27,F4,swaralipi C#,(baaj: 6/)(be: 5/) (bnaa: 4/)(shi: 3) (ei: 2/ 3,data/intermediate_data/ktab/rs001068/v1.ktab
-rs001068,weak,58:93,B4,swaralipi E,7/ 1'/) (kebolegoseiprobhateneiaamiNo: 7)(tun: 7/ 6/ 6/ 7/ 5,data/intermediate_data/ktab/rs001068/v1.ktab
-rs001068,weak,58:104,A4,swaralipi D,bolegoseiprobhateneiaamiNo: 7)(tun: 7/ 6/ 6/ 7/ 5/ 6/ 5/ 5/,data/intermediate_data/ktab/rs001068/v1.ktab
-rs001068,weak,58:110,B4,swaralipi E,seiprobhateneiaamiNo: 7)(tun: 7/ 6/ 6/ 7/ 5/ 6/ 5/ 5/ 4/ 3/),data/intermediate_data/ktab/rs001068/v1.ktab
-rs001068,weak,58:113,G4,swaralipi D,probhateneiaamiNo: 7)(tun: 7/ 6/ 6/ 7/ 5/ 6/ 5/ 5/ 4/ 3/),data/intermediate_data/ktab/rs001068/v1.ktab
-rs001068,weak,58:116,A4,swaralipi C,bhateneiaamiNo: 7)(tun: 7/ 6/ 6/ 7/ 5/ 6/ 5/ 5/ 4/ 3/),data/intermediate_data/ktab/rs001068/v1.ktab
-rs001068,weak,58:119,G4,swaralipi B,teneiaamiNo: 7)(tun: 7/ 6/ 6/ 7/ 5/ 6/ 5/ 5/ 4/ 3/),data/intermediate_data/ktab/rs001068/v1.ktab
-rs001068,weak,58:125,F4,swaralipi C,amiNo: 7)(tun: 7/ 6/ 6/ 7/ 5/ 6/ 5/ 5/ 4/ 3/),data/intermediate_data/ktab/rs001068/v1.ktab
-rs001094,strong,41:30,F4,roll F#; swaralipi F#,(bu: 2/)(ke: 2/. 5//)(ro: 5/ 4/// 5/// 6//) (po: 5,data/intermediate_data/ktab/rs001094/v1.ktab
+rs001068,weak,58:59,B4,swaralipi E,/-) (aa: 1// 5//-)(ha: 6/ 7/ 1'/) (ke: 7 7/) (bo: 6/)(le: 6/,data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,weak,58:70,A4,swaralipi D,/ 5//-)(ha: 6/ 7/ 1'/) (ke: 7 7/) (bo: 6/)(le: 6/) (go: 7/),data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,weak,58:87,B4,swaralipi E,1'/) (ke: 7 7/) (bo: 6/)(le: 6/) (go: 7/) (sei: 5/),data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,weak,58:97,G4,swaralipi D,7 7/) (bo: 6/)(le: 6/) (go: 7/) (sei: 5/),data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,weak,59:7,A4,swaralipi C,(pro: 6/)(bha: 5/)(te: 5/),data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,weak,59:16,G4,swaralipi B,(pro: 6/)(bha: 5/)(te: 5/) (nei: 4/,data/intermediate_data/ktab/rs001068/v1.ktab
+rs001068,weak,59:34,F4,swaralipi C,(pro: 6/)(bha: 5/)(te: 5/) (nei: 4/ 3/) (aa: 2/)(miNot,data/intermediate_data/ktab/rs001068/v1.ktab
+rs001094,strong,34:30,F4,roll F#; swaralipi F#,(bu: 2/)(ke: 2/. 5//)(ro: 5/ 4/// 5/// 6//) (po: 5,data/intermediate_data/ktab/rs001094/v1.ktab
 rs001194,weak,43:31,F5,swaralipi A#,(aa: 4'. 5'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li: 3',data/intermediate_data/ktab/rs001194/v2.ktab
 rs001194,weak,43:50,E5,swaralipi A,'/)(po: 5')(na: 1'. 4'/) (bhu: 4')(li: 3'.- 2'/)(ya: 1'--),data/intermediate_data/ktab/rs001194/v2.ktab
 rs001194,weak,43:55,D5,swaralipi A#,o: 5')(na: 1'. 4'/) (bhu: 4')(li: 3'.- 2'/)(ya: 1'--),data/intermediate_data/ktab/rs001194/v2.ktab
@@ -124,12 +124,12 @@ rs001194,weak,44:6,C6,swaralipi A,(To: 1''-)(ma: 1'')(ro: 7',data/intermediate_d
 rs001194,weak,44:25,B5,swaralipi A#,(To: 1''-)(ma: 1'')(ro: 7' 6'/ 5'/),data/intermediate_data/ktab/rs001194/v2.ktab
 rs001194,weak,47:6,E5,swaralipi A#,(Ka: 3'-)(to: 3')(ba: 4'-),data/intermediate_data/ktab/rs001194/v2.ktab
 rs001194,weak,47:23,F5,swaralipi A,(Ka: 3'-)(to: 3')(ba: 4'-)(ro: 4') (bhe: 4',data/intermediate_data/ktab/rs001194/v2.ktab
-rs001247,strong,45:11,E5,roll C; swaralipi C,(jha: 4'/ 3'/ 3'/ 2'/ 2'/ 1' 1',data/intermediate_data/ktab/rs001247/v1.ktab
-rs001247,strong,45:62,G5,roll D; swaralipi D,2'/ 1' 1'// 2'/. 1'-- 6' 6'/ 6'/) (re: 5'/) (hoy: 5'/) (lunt,data/intermediate_data/ktab/rs001247/v1.ktab
-rs001247,strong,45:149,D5,roll A; swaralipi A,hi: 2'/.)(todheuuttheut: 5'//)(tal: 4' 2'/. 5'//),data/intermediate_data/ktab/rs001247/v1.ktab
-rs001247,strong,47:58,G4,roll D; swaralipi D,di: 3/ 4/ 5/ 6 6/ 5/) (yo: 3/.) (taal: 5//),data/intermediate_data/ktab/rs001247/v1.ktab
-rs001247,strong,49:39,B4,roll D; swaralipi D,(Hnaai: 1'/ 7/ 1' 1'/ 3'/ 3'/ 2'/ 1'/ 7/ 6) (maa: 6')(ro: 6,data/intermediate_data/ktab/rs001247/v1.ktab
-rs001247,strong,49:42,A4,roll C; swaralipi C,naai: 1'/ 7/ 1' 1'/ 3'/ 3'/ 2'/ 1'/ 7/ 6) (maa: 6')(ro: 6'/,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,strong,38:48,E5,roll C; swaralipi C,3'/ 3'/ 2') (ta: 4'/)(jaal: 4'/) (jha: 3'/ 3'/ 2'/ 2'/ 1' 1',data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,strong,38:99,G5,roll D; swaralipi D,2'/ 1' 1'// 2'/. 1'-- 6' 6'/ 6'/) (re: 5'/),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,strong,39:80,D5,roll A; swaralipi A,)(thi: 2'/.)(to: 5'//) (dheu: 4') (ut: 2'/.)(theut: 5'//)(ta,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,strong,41:71,G4,roll D; swaralipi D,di: 3/ 4/ 5/ 6 6/ 5/) (yo: 3/.) (taal: 5//),data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,strong,43:9,B4,roll D; swaralipi D,(Hnaai: 7/ 6 6') (maa: 6'/)(r,data/intermediate_data/ktab/rs001247/v1.ktab
+rs001247,strong,43:12,A4,roll C; swaralipi C,(Hnaai: 7/ 6 6') (maa: 6'/)(ro:,data/intermediate_data/ktab/rs001247/v1.ktab
 rs001248,weak,53:26,E5,roll A#,(Pro: 1'/)(bha: 1'/)(te: 3'// 2'// 3'/),data/intermediate_data/ktab/rs001248/v1.ktab
 rs001248,weak,53:31,D5,roll A,(Pro: 1'/)(bha: 1'/)(te: 3'// 2'// 3'/),data/intermediate_data/ktab/rs001248/v1.ktab
 rs001248,weak,53:36,E5,roll G,(Pro: 1'/)(bha: 1'/)(te: 3'// 2'// 3'/),data/intermediate_data/ktab/rs001248/v1.ktab
@@ -155,132 +155,132 @@ rs001248,weak,58:20,E5,roll A#,(a: 1'// 4'//)(bo: 3'/)(sar: 3') (paai:,data/inte
 rs001248,weak,58:60,B4,roll A#,'/)(sar: 3') (paai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2',data/intermediate_data/ktab/rs001248/v1.ktab
 rs001248,weak,58:70,C5,roll A,') (paai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2'/)(mi: 1'/,data/intermediate_data/ktab/rs001248/v1.ktab
 rs001248,weak,58:75,B4,roll G,aai: 2'/ 1'/) (ne: 1'// 7//) (aa: 1'// 7// 2'/)(mi: 1'/) (ha,data/intermediate_data/ktab/rs001248/v1.ktab
-rs001313,strong,28:94,F4,roll A; swaralipi A,6/ 5/. 6//) (dii: 4/.) (haa: 5//)(na: 4// 5// 4// 3 4//),data/intermediate_data/ktab/rs001313/v1.ktab
-rs001352,weak,8:97,A4,roll E,(chirodinkenopaai: 4//) (na: 3/ 4/ 5/ 6/ 6// 5// 4// 5// 6/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,8:104,G4,roll D; swaralipi F,dinkenopaai: 4//) (na: 3/ 4/ 5/ 6/ 6// 5// 4// 5// 6/ 7/ 7//,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,8:108,F#4,roll E; swaralipi E,enopaai: 4//) (na: 3/ 4/ 5/ 6/ 6// 5// 4// 5// 6/ 7/ 7/// 1',data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,8:112,G4,roll F; swaralipi D,aai: 4//) (na: 3/ 4/ 5/ 6/ 6// 5// 4// 5// 6/ 7/ 7/// 1'///),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,8:116,A4,roll E; swaralipi E,4//) (na: 3/ 4/ 5/ 6/ 6// 5// 4// 5// 6/ 7/ 7/// 1'///),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,8:119,B4,roll F; swaralipi D,/) (na: 3/ 4/ 5/ 6/ 6// 5// 4// 5// 6/ 7/ 7/// 1'///),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,8:127,C5,roll E; swaralipi E,3/ 4/ 5/ 6/ 6// 5// 4// 5// 6/ 7/ 7/// 1'///),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:22,B4,roll G; swaralipi E,(Maa: 2'//)(jhe: 1'/ 7/ 6// 7// 5/ 6/// 7/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:25,A4,swaralipi F,(Maa: 2'//)(jhe: 1'/ 7/ 6// 7// 5/ 6/// 7///,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:29,B4,swaralipi E,(Maa: 2'//)(jhe: 1'/ 7/ 6// 7// 5/ 6/// 7/// 6//),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:33,G4,swaralipi D,(Maa: 2'//)(jhe: 1'/ 7/ 6// 7// 5/ 6/// 7/// 6//) (ma,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:36,A4,swaralipi E,(Maa: 2'//)(jhe: 1'/ 7/ 6// 7// 5/ 6/// 7/// 6//) (maa:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:41,B4,swaralipi D,Maa: 2'//)(jhe: 1'/ 7/ 6// 7// 5/ 6/// 7/// 6//) (maa: 5// 6,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:46,A4,swaralipi E,2'//)(jhe: 1'/ 7/ 6// 7// 5/ 6/// 7/// 6//) (maa: 5// 6//)(j,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:57,G4,swaralipi D,1'/ 7/ 6// 7// 5/ 6/// 7/// 6//) (maa: 5// 6//)(jhe: 4/ 3///,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,9:61,A4,swaralipi E,7/ 6// 7// 5/ 6/// 7/// 6//) (maa: 5// 6//)(jhe: 4/ 3///) (t,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,11:6,G4,swaralipi D,(Ke: 5/)(no: 6.) (megh: 6/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,11:14,A4,swaralipi E,(Ke: 5/)(no: 6.) (megh: 6/ 6///) (,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,11:39,D5,roll F,(Ke: 5/)(no: 6.) (megh: 6/ 6///) (aa: 2'///)(se: 1'//) (hri,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,11:50,C#5,roll E; swaralipi E,o: 6.) (megh: 6/ 6///) (aa: 2'///)(se: 1'//) (hri: 2')(da: 2,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,12:21,F#4,roll E; swaralipi E,(aa: 6/)(kashe: 5// 4//) (to: 5/)(ma: 6/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,12:64,D5,roll F; swaralipi F,(to: 5/)(ma: 6/)(redekhitedeyna: 6/// 2'/// 1'// 2' 2'/ 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,12:70,C#5,roll E; swaralipi E,5/)(ma: 6/)(redekhitedeyna: 6/// 2'/// 1'// 2' 2'/ 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,13:18,C5,swaralipi G,(Ke: 3'//)(nome: 1'// 2'//)(gh: 1'/ 7/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,13:23,D5,roll B; swaralipi A,(Ke: 3'//)(nome: 1'// 2'//)(gh: 1'/ 7/ 6/ 5,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,14:10,C5,roll E,(Kenome: 1'/)(gh: 7/ 6/ 7//) (,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,14:19,B4,roll G,(Kenome: 1'/)(gh: 7/ 6/ 7//) (toaa: 6//,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,14:77,B4,roll F,//) (se: 5/) (onhridayaaka: 6///)(she: 7/// 6//),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,14:82,A4,roll E,se: 5/) (onhridayaaka: 6///)(she: 7/// 6//),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,16:66,F#4,swaralipi E,/)(ke: 3//) (aankhirpalo: 4//) (ke: 3/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,17:6,G4,roll F; swaralipi D,(to: 5/)(mayjabe: 6. 6/) (,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,17:19,A4,roll E; swaralipi E,(to: 5/)(mayjabe: 6. 6/) (paai: 6/ 6/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,17:55,B4,roll D; swaralipi F,e: 6. 6/) (paai: 6/ 6/) (de: 6/ 6/ 6// 7// 1'/ 1'/)(khi: 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,17:59,C#5,roll E; swaralipi E,. 6/) (paai: 6/ 6/) (de: 6/ 6/ 6// 7// 1'/ 1'/)(khi: 2'/ 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,17:82,C#5,roll E; swaralipi E,: 6/ 6/ 6// 7// 1'/ 1'/)(khi: 2'/ 2'// 1'//)(te: 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,18:103,C#5,roll C; swaralipi C,lo: 4'/)(ke: 3'// 2'//) (to: 2'/)(may: 1'///) (jabepaaidekhi,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,18:142,D5,swaralipi G,1'///) (jabepaaidekhi: 2'/// 3'//)(te: 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,19:13,C5,roll D; swaralipi F,(oheHaarai: 1'// 7// 2'//) (haara,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,19:18,B4,roll E; swaralipi E,(oheHaarai: 1'// 7// 2'//) (haaraisada,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,19:54,C5,swaralipi E,// 7// 2'//) (haaraisadahoybhoyHaarai: 1'/. 7/ 6/) (haa: 6/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,19:59,B4,swaralipi D,/ 2'//) (haaraisadahoybhoyHaarai: 1'/. 7/ 6/) (haa: 6/)(rai:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,19:62,A4,swaralipi E,'//) (haaraisadahoybhoyHaarai: 1'/. 7/ 6/) (haa: 6/)(rai: 6/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,20:12,B4,swaralipi F,(bhoy: 6// 7// 1'/ 1'/ 2'/) (haa,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,20:16,C#5,roll C; swaralipi E,(bhoy: 6// 7// 1'/ 1'/ 2'/) (haa: 2',data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,20:46,C#5,roll E; swaralipi E,6// 7// 1'/ 1'/ 2'/) (haa: 2'//)(rai: 1'// 2'/)(ya: 2'/) (p,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,21:42,C#5,roll E; swaralipi C,ho: 3'/)(kite: 4'/ 3'//) (aa: 2'// 2'/ 1'/// 2'///) (naa: 3',data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,21:48,D5,swaralipi B,/)(kite: 4'/ 3'//) (aa: 2'// 2'/ 1'/// 2'///) (naa: 3'// 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,21:61,E5,swaralipi A,3'//) (aa: 2'// 2'/ 1'/// 2'///) (naa: 3'// 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,21:66,D5,swaralipi G,(aa: 2'// 2'/ 1'/// 2'///) (naa: 3'// 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,22:43,D5,swaralipi B,kot: 1'// 7// 6)(hapaa: 6/ 6/) (yaabo: 2'// 1'//) (lok: 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,22:48,C#5,roll E; swaralipi A,1'// 7// 6)(hapaa: 6/ 6/) (yaabo: 2'// 1'//) (lok: 2'/ 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,22:60,D5,swaralipi G,hapaa: 6/ 6/) (yaabo: 2'// 1'//) (lok: 2'/ 2'/) (naa: 3'/) (,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,22:75,E5,swaralipi A,yaabo: 2'// 1'//) (lok: 2'/ 2'/) (naa: 3'/) (porith: 1'// 2',data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,22:94,D5,roll G; swaralipi G,lok: 2'/ 2'/) (naa: 3'/) (porith: 1'// 2'// 1'/ 7/ 6/ 5// 4/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,22:113,F#4,roll E; swaralipi E,3'/) (porith: 1'// 2'// 1'/ 7/ 6/ 5// 4//),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,24:30,D5,roll F; swaralipi F,(Haa: 5/)(rai: 6/ 6/)(yahri: 2'// 1'//) (day: 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,24:35,C#5,roll E; swaralipi E,(Haa: 5/)(rai: 6/ 6/)(yahri: 2'// 1'//) (day: 2'/ 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,24:89,F#4,roll E; swaralipi E,2'/) (aa: 3'/ 1'// 2'// 1'/ 7/ 6/ 5// 4//)(k: 5/)(as: 6/)(h,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,24:132,B4,roll G; swaralipi G,(k: 5/)(as: 6/)(he: 6// 2'// 1'/ 7/ 6/ 7//) (haarai: 6// 5/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,27:31,F#4,roll F; swaralipi D,(to: 3/)(ma: 3// 4//) (re: 3/ 4/) (raa: 5/)(khiboaa,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,27:41,G4,swaralipi C,to: 3/)(ma: 3// 4//) (re: 3/ 4/) (raa: 5/)(khiboaankhi: 6.)(,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,27:58,A4,roll C,//) (re: 3/ 4/) (raa: 5/)(khiboaankhi: 6.)(te: 2/) (aan: 2/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,27:114,G4,swaralipi D,2/)(khi: 3/ 3/ 3/)(teoheKiko: 3// 4// 5/)(ri: 5/)(lebalopaa,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,27:160,A4,swaralipi E,5/)(lebalopaaibotomareraakhiboaankhi: 6/)(teaankhiteoheEto:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,28:11,F#4,roll E; swaralipi F,(prem: 6/ 4// 5//) (aa: 6/)(mi:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,28:15,G4,roll F,(prem: 6/ 4// 5//) (aa: 6/)(mi: 6//,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,28:25,A4,roll E; swaralipi E,(prem: 6/ 4// 5//) (aa: 6/)(mi: 6//) (ko: 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,28:57,C5,swaralipi D,) (aa: 6/)(mi: 6//) (ko: 2'//)(thapaa: 1'/ 7/)(bo: 6/) (naa:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,28:61,B4,swaralipi E,a: 6/)(mi: 6//) (ko: 2'//)(thapaa: 1'/ 7/)(bo: 6/) (naa: 7//,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,28:69,A4,roll D; swaralipi F,i: 6//) (ko: 2'//)(thapaa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,28:79,B4,roll E; swaralipi E,o: 2'//)(thapaa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,28:83,A4,roll F; swaralipi D,'//)(thapaa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,28:87,G4,swaralipi E,(thapaa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,28:90,F#4,roll D; swaralipi D,apaa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,30:5,G4,roll C; swaralipi C,(E: 5-)(to: 6/ 6/// 2'///,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,30:27,C#5,roll E; swaralipi E,(E: 5-)(to: 6/ 6/// 2'/// 1'// 2' 2'/ 2'// 3'//,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,30:57,C5,roll E; swaralipi E,// 2'/// 1'// 2' 2'/ 2'// 3'//) (prem: 1'// 2'// 1'/ 7/ 6/ 5,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,30:81,F#4,roll A; swaralipi A,/ 3'//) (prem: 1'// 2'// 1'/ 7/ 6/ 5// 4// 5/) (aa: 6/)(mi:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,30:112,D5,roll G; swaralipi G,6/ 5// 4// 5/) (aa: 6/)(mi: 6//) (ko: 2'//)(thapaa: 1'/ 7/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,31:26,F#4,roll A; swaralipi A,(naath: 7// 6// 5/) (to: 4/)(marehridaye: 5- 2,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,31:46,D4,roll F; swaralipi F,: 7// 6// 5/) (to: 4/)(marehridaye: 5- 2/ 2/ 3/) (raa: 3/)(k,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,32:26,A4,roll E; swaralipi E,(tomaredeynako: 5//)(ri: 6/)(le: 6// 2'// 1'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,32:43,C5,roll E; swaralipi E,maredeynako: 5//)(ri: 6/)(le: 6// 2'// 1'/ 7/ 6/ 7// 6// 5/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,32:47,B4,roll G; swaralipi G,deynako: 5//)(ri: 6/)(le: 6// 2'// 1'/ 7/ 6/ 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,32:105,C#5,roll G; swaralipi G,) (k: 5-)(aa: 6/)(ro: 6///) (tu: 2'/// 1'//)(mi: 2' 2'/ 2'//,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,32:139,C5,roll G; swaralipi G,'/// 1'//)(mi: 2' 2'/ 2'//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,32:144,D5,roll A; swaralipi A,1'//)(mi: 2' 2'/ 2'//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5// 4/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,32:163,F#4,roll E; swaralipi E,//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5// 4//)(bo: 5/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,33:37,B4,roll G; swaralipi G,(naa: 6/)(t: 6// 2'// 1'/ 7/)(h: 6/ 7//) (toma: 6//)(re:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,33:68,F#4,roll E; swaralipi E,)(h: 6/ 7//) (toma: 6//)(re: 5/) (hri: 4/)(dayeraakhi: 5-)(t,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,33:107,B4,roll D,4/)(dayeraakhi: 5-)(te: 6 6/ 6/ 6/ 6// 7// 1'/ 1'/ 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,33:111,C#5,roll C; swaralipi G,dayeraakhi: 5-)(te: 6 6/ 6/ 6/ 6// 7// 1'/ 1'/ 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,33:119,D5,swaralipi F,hi: 5-)(te: 6 6/ 6/ 6/ 6// 7// 1'/ 1'/ 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,35:12,C#5,roll E; swaralipi E,(Aar: 2'// 1'//) (kaaropaanechaa,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,35:51,C#5,roll E; swaralipi E,1'//) (kaaropaanechaa: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (na: 3,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,35:61,D5,swaralipi F,ropaanechaa: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (na: 3'/) (aar:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,35:100,C#5,roll E; swaralipi E,2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2'///)(ri,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,36:64,C#5,roll C; swaralipi C,. 7 6/ 6/)(mi: 6/ 6//) (praa: 7//)(no: 1'/ 1'/ 2'/) (p: 2'//,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,36:93,C#5,roll E; swaralipi E,7//)(no: 1'/ 1'/ 2'/) (p: 2'//) (ohe: 1'//),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,37:9,A4,roll E; swaralipi E,(An: 2' 6/) (kaaropaanechaa:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,37:40,C#5,roll C; swaralipi C,(An: 2' 6/) (kaaropaanechaa: 2'//)(hi: 1'// 2'/ 3'/)(bo: 3'/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,37:85,C#5,roll E; swaralipi E,'/ 3'/)(bo: 3'//) (naaar: 4'// 3'/ 2'/ 1'///),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,38:74,C#5,roll E; swaralipi E,) (hey: 7//) (aa: 6 6/)(mi: 6/// 2'/// 1'//) (praa: 2'/)(no:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,40:20,C5,roll E; swaralipi E,(Tumijodibaloekho: 1'// 2'//)(ni: 1'/ 7/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,42:49,F4,roll A; swaralipi A,/)(yoi: 5/)(baa: 3//)(so: 4//)(na: 5// 4// 3//) (bisarja: 4/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,42:53,E4,roll G; swaralipi G,oi: 5/)(baa: 3//)(so: 4//)(na: 5// 4// 3//) (bisarja: 4// 3/,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,42:106,F4,roll C; swaralipi C,4// 3/)(n: 2/) (koshree: 3/ 3/ 3/ 3// 4// 3/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,42:110,E4,roll B; swaralipi B,3/)(n: 2/) (koshree: 3/ 3/ 3/ 3// 4// 3/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,42:113,F#4,roll A; swaralipi A,)(n: 2/) (koshree: 3/ 3/ 3/ 3// 4// 3/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,43:32,F#4,roll E; swaralipi E,(cho: 5/) (ri: 6/)(bo: 6// 5// 4//) (bi: 5//)(sha: 6,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,44:64,B4,roll F,) (bishayoibaasona: 5/) (paa: 6///)(i: 7/// 6// 5//) (bisha:,data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,44:69,A4,roll E,shayoibaasona: 5/) (paa: 6///)(i: 7/// 6// 5//) (bisha: 6//),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,44:168,F#4,roll E,5// 4// 3// 2/ 2/ 3/ 3/ 3/ 3// 4// 3/ 4/ 5/ 6.),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,weak,44:171,G4,roll D,/ 4// 3// 2/ 2/ 3/ 3/ 3/ 3// 4// 3/ 4/ 5/ 6.),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001352,strong,44:174,A4,roll C; swaralipi C,// 3// 2/ 2/ 3/ 3/ 3/ 3// 4// 3/ 4/ 5/ 6.),data/intermediate_data/ktab/rs001352/v1.ktab
-rs001367,weak,40:56,C5,swaralipi D,)(yo: 6--)(ka: 5/)(molobanomaa: 6/ 5/. 1'// 7/ 6/ 6//- 5/.),data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,40:61,B4,swaralipi E,6--)(ka: 5/)(molobanomaa: 6/ 5/. 1'// 7/ 6/ 6//- 5/.) (jhe:,data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,40:64,A4,swaralipi F,-)(ka: 5/)(molobanomaa: 6/ 5/. 1'// 7/ 6/ 6//- 5/.) (jhe: 3/,data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,42:7,G4,swaralipi E,(baa: 5/)(niNibhri: 6/ 5//),data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,42:21,A4,swaralipi D,(baa: 5/)(niNibhri: 6/ 5//)(to: 6//)(baas,data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,42:24,G4,swaralipi E,(baa: 5/)(niNibhri: 6/ 5//)(to: 6//)(baasini,data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,42:33,A4,swaralipi D,(baa: 5/)(niNibhri: 6/ 5//)(to: 6//)(baasinibinapaa:,data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,42:54,G4,swaralipi E,bhri: 6/ 5//)(to: 6//)(baasinibinapaa: 5// 4) (ni: 4/) (a: 5,data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,42:74,G4,swaralipi E,/)(baasinibinapaa: 5// 4) (ni: 4/) (a: 5/)(mritomurotimotiba,data/intermediate_data/ktab/rs001367/v1.ktab
-rs001367,weak,42:98,A4,swaralipi D,) (ni: 4/) (a: 5/)(mritomurotimotibaa: 6---),data/intermediate_data/ktab/rs001367/v1.ktab
+rs001313,strong,28:63,F4,roll A; swaralipi A,// 6/. 6/)(war: 5/. 6//) (dii: 4/. 5// 4//) (haa: 5//)(na: 4,data/intermediate_data/ktab/rs001313/v1.ktab
+rs001352,weak,9:15,A4,roll E,(chi: 5/)(ro: 6/)(din: 6//) (ke: 5/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,9:34,G4,roll D; swaralipi F,(chi: 5/)(ro: 6/)(din: 6//) (ke: 5//)(no: 4//) (paai:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,9:43,F#4,roll E; swaralipi E,i: 5/)(ro: 6/)(din: 6//) (ke: 5//)(no: 4//) (paai: 5// 6/ 7/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,9:55,G4,roll F; swaralipi D,/)(din: 6//) (ke: 5//)(no: 4//) (paai: 5// 6/ 7/ 7/// 1'///),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,9:59,A4,roll E; swaralipi E,in: 6//) (ke: 5//)(no: 4//) (paai: 5// 6/ 7/ 7/// 1'///) (na,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,9:62,B4,roll F; swaralipi D,6//) (ke: 5//)(no: 4//) (paai: 5// 6/ 7/ 7/// 1'///) (na: 2,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,9:70,C5,roll E; swaralipi E,e: 5//)(no: 4//) (paai: 5// 6/ 7/ 7/// 1'///) (na: 2'// 1'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:7,B4,roll G; swaralipi E,(Maa: 7/)(jhe: 6// 7// 5/ 6,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:16,A4,swaralipi F,(Maa: 7/)(jhe: 6// 7// 5/ 6/// 7///,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:20,B4,swaralipi E,(Maa: 7/)(jhe: 6// 7// 5/ 6/// 7/// 6//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:24,G4,swaralipi D,(Maa: 7/)(jhe: 6// 7// 5/ 6/// 7/// 6//) (ma,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:27,A4,swaralipi E,(Maa: 7/)(jhe: 6// 7// 5/ 6/// 7/// 6//) (maa:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:32,B4,swaralipi D,(Maa: 7/)(jhe: 6// 7// 5/ 6/// 7/// 6//) (maa: 5// 6,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:37,A4,swaralipi E,(Maa: 7/)(jhe: 6// 7// 5/ 6/// 7/// 6//) (maa: 5// 6//)(j,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:48,G4,swaralipi D,)(jhe: 6// 7// 5/ 6/// 7/// 6//) (maa: 5// 6//)(jhe: 4/) (ta,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,10:52,A4,swaralipi E,e: 6// 7// 5/ 6/// 7/// 6//) (maa: 5// 6//)(jhe: 4/) (tabode,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,12:6,G4,swaralipi D,(Ke: 5/)(nomeghaase: 6.) (,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,12:22,A4,swaralipi E,(Ke: 5/)(nomeghaase: 6.) (hridayaa: 6/)(ka,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,12:53,D5,roll F,ghaase: 6.) (hridayaa: 6/)(kashe: 6/// 2'///) (to: 1'//)(ma:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,12:65,C#5,roll E; swaralipi E,(hridayaa: 6/)(kashe: 6/// 2'///) (to: 1'//)(ma: 2') (re: 2',data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,13:47,F#4,roll E; swaralipi E,//)(nome: 1'// 2'//)(gh: 1'/ 7/ 6/ 5// 4//) (to: 5/)(ma: 6/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,13:90,D5,roll F; swaralipi F,(to: 5/)(ma: 6/)(redekhitedeyna: 6/// 2'/// 1'// 2' 2'/ 2'/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,13:96,C#5,roll E; swaralipi E,5/)(ma: 6/)(redekhitedeyna: 6/// 2'/// 1'// 2' 2'/ 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,14:18,C5,swaralipi G,(Ke: 3'//)(nome: 1'// 2'//)(gh: 1'/ 7/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,14:23,D5,roll B; swaralipi A,(Ke: 3'//)(nome: 1'// 2'//)(gh: 1'/ 7/ 6/ 5,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,14:96,C5,roll E,5/) (aa: 6/)(se: 6//) (onhr: 2'//)(id: 1'/)(ay: 7/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,14:105,B4,roll G,6/)(se: 6//) (onhr: 2'//)(id: 1'/)(ay: 7/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,15:49,B4,roll F,)(she: 7// 6//) (to: 5/)(ma: 6///)(re: 7///) (de: 6//)(khite,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,15:60,A4,roll E,6//) (to: 5/)(ma: 6///)(re: 7///) (de: 6//)(khite: 5//) (dey,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,17:30,F#4,swaralipi E,(pa: 3/)(lo: 3//)(ke: 4// 3/ 4/) (to: 5/)(may: 6.,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,17:39,G4,roll F; swaralipi D,(pa: 3/)(lo: 3//)(ke: 4// 3/ 4/) (to: 5/)(may: 6. 6/ 6/) (j,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,17:48,A4,roll E; swaralipi E,(lo: 3//)(ke: 4// 3/ 4/) (to: 5/)(may: 6. 6/ 6/) (ja: 6/)(be,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,17:81,B4,roll D; swaralipi F,(may: 6. 6/ 6/) (ja: 6/)(be: 6/ 6/ 6// 7//) (paai: 1'/ 1'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,17:93,C#5,roll E; swaralipi E,6/) (ja: 6/)(be: 6/ 6/ 6// 7//) (paai: 1'/ 1'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,18:21,C#5,roll E; swaralipi E,(de: 2'/)(khi: 2'// 1'//)(te: 2'/) (oheKh,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,19:69,C#5,roll C; swaralipi C,3'//) (jabepaai: 2'//) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,19:91,D5,swaralipi G,) (de: 2'/)(khi: 1'/// 2'/// 3'//)(te: 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,20:13,C5,roll D; swaralipi F,(oheHaarai: 1'// 7// 2'//) (haara,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,20:18,B4,roll E; swaralipi E,(oheHaarai: 1'// 7// 2'//) (haaraisada,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,20:41,C5,swaralipi E,oheHaarai: 1'// 7// 2'//) (haaraisada: 1'/.) (hoy: 7/ 6/) (b,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,20:53,B4,swaralipi D,'// 7// 2'//) (haaraisada: 1'/.) (hoy: 7/ 6/) (bhoyHaarai: 6,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,20:56,A4,swaralipi E,7// 2'//) (haaraisada: 1'/.) (hoy: 7/ 6/) (bhoyHaarai: 6/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,21:12,B4,swaralipi F,(bhoy: 6// 7// 1'/ 1'/ 2'/) (haa,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,21:16,C#5,roll C; swaralipi E,(bhoy: 6// 7// 1'/ 1'/ 2'/) (haa: 2',data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,21:46,C#5,roll E; swaralipi E,6// 7// 1'/ 1'/ 2'/) (haa: 2'//)(rai: 1'// 2'/)(ya: 2'/) (p,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,22:49,C#5,roll E; swaralipi C,)(kite: 4'/ 3'//) (aa: 2'//) (naa: 2'/ 1'///) (mi: 2'///) (k,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,22:61,D5,swaralipi B,3'//) (aa: 2'//) (naa: 2'/ 1'///) (mi: 2'///) (ko: 3'//)(t:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,22:73,E5,swaralipi A,'//) (naa: 2'/ 1'///) (mi: 2'///) (ko: 3'//)(t: 2'/ 1'// 7//,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,22:82,D5,swaralipi G,: 2'/ 1'///) (mi: 2'///) (ko: 3'//)(t: 2'/ 1'// 7// 6 6/)(ha,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,22:111,D5,swaralipi B,3'//)(t: 2'/ 1'// 7// 6 6/)(hapaa: 6/ 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,23:7,C#5,roll E; swaralipi A,(yaa: 1'//) (bo: 2'/) (lok:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,23:18,D5,swaralipi G,(yaa: 1'//) (bo: 2'/) (lok: 2'/) (naa:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,23:40,E5,swaralipi A,(yaa: 1'//) (bo: 2'/) (lok: 2'/) (naa: 3'/ 1'//) (po: 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,23:55,D5,roll G; swaralipi G,: 2'/) (lok: 2'/) (naa: 3'/ 1'//) (po: 2'//) (rith: 1'/ 7/ 6,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,23:82,F#4,roll E; swaralipi E,1'//) (po: 2'//) (rith: 1'/ 7/ 6/ 5// 4//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,25:22,D5,roll F; swaralipi F,(Haa: 5/ 6/)(rai: 6/ 2'//)(ya: 1'//) (hri:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,25:32,C#5,roll E; swaralipi E,(Haa: 5/ 6/)(rai: 6/ 2'//)(ya: 1'//) (hri: 2'/)(day:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,25:103,F#4,roll E; swaralipi E,3'/ 1'//)(k: 2'//)(ashe: 1'/ 7/ 6/ 5// 4//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,26:56,B4,roll G; swaralipi G,/ 6//)(ya: 2'//) (phe: 1'/) (li: 7/ 6/ 7//) (cho: 6//)(ki: 5,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,29:45,F#4,roll F; swaralipi D,3/)(ma: 3//)(re: 4//) (raakhi: 3/)(bo: 4/ 5/) (aankhi: 6.)(t,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,29:48,G4,swaralipi C,(ma: 3//)(re: 4//) (raakhi: 3/)(bo: 4/ 5/) (aankhi: 6.)(teaa,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,29:61,A4,roll C,4//) (raakhi: 3/)(bo: 4/ 5/) (aankhi: 6.)(teaan: 2/)(khiteo,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,30:88,G4,swaralipi D,re: 4//) (raakhiboaankhiteaankhiteohe: 5/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,32:13,A4,swaralipi E,(E: 5/)(to: 6/) (prem: 6/) (aa: 6,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,32:36,F#4,roll E; swaralipi F,(E: 5/)(to: 6/) (prem: 6/) (aa: 6/ 4// 5//)(mi: 6/) (ko:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,32:40,G4,roll F,(E: 5/)(to: 6/) (prem: 6/) (aa: 6/ 4// 5//)(mi: 6/) (ko: 6//,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,32:49,A4,roll E; swaralipi E,o: 6/) (prem: 6/) (aa: 6/ 4// 5//)(mi: 6/) (ko: 6//)(tha: 2',data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,32:80,C5,swaralipi D,//)(mi: 6/) (ko: 6//)(tha: 2'//) (paa: 1'/ 7/)(bo: 6/) (naa:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,32:84,B4,swaralipi E,mi: 6/) (ko: 6//)(tha: 2'//) (paa: 1'/ 7/)(bo: 6/) (naa: 7//,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,32:92,A4,roll D; swaralipi F,(ko: 6//)(tha: 2'//) (paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,32:102,B4,roll E; swaralipi E,tha: 2'//) (paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,32:106,A4,roll F; swaralipi D,2'//) (paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,32:110,G4,swaralipi E,/) (paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,32:113,F#4,roll D; swaralipi D,(paa: 1'/ 7/)(bo: 6/) (naa: 7// 6// 5/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,33:5,G4,roll C; swaralipi C,(E: 5-)(to: 6/ 6/// 2'///,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,33:27,C#5,roll E; swaralipi E,(E: 5-)(to: 6/ 6/// 2'/// 1'// 2' 2'/ 2'// 3'//,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,33:57,C5,roll E; swaralipi E,// 2'/// 1'// 2' 2'/ 2'// 3'//) (prem: 1'// 2'// 1'/ 7/ 6/ 5,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,33:81,F#4,roll A; swaralipi A,/ 3'//) (prem: 1'// 2'// 1'/ 7/ 6/ 5// 4// 5/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,34:24,D5,roll G; swaralipi G,(aa: 6/)(mi: 6//) (ko: 2'//)(tha: 1'/) (paa:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,35:7,F#4,roll A; swaralipi A,(hri: 4/)(da: 5-)(ye: 2/ 2/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,35:23,D4,roll F; swaralipi F,(hri: 4/)(da: 5-)(ye: 2/ 2/ 3/) (raa: 3/)(k,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,36:50,A4,roll E; swaralipi E,(i: 6/)(bo: 6/ 6/ 4//) (to: 5//) (ma: 6/)(re: 6//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,37:18,C5,roll E; swaralipi E,(dey: 2'//) (na: 1'/ 7/) (kori: 6/)(le,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,37:22,B4,roll G; swaralipi G,(dey: 2'//) (na: 1'/ 7/) (kori: 6/)(le: 7/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,37:87,C#5,roll G; swaralipi G,5/ 4/) (k: 5-)(aa: 6/)(ro: 6/// 2'/// 1'// 2'),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,38:32,C5,roll G; swaralipi G,(tu: 2'/)(mi: 2'//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,38:37,D5,roll A; swaralipi A,(tu: 2'/)(mi: 2'//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5// 4/,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,38:56,F#4,roll E; swaralipi E,//) (paa: 3'// 1'// 2'// 1'/ 7/ 6/ 5// 4//)(bo: 5/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,39:37,B4,roll G; swaralipi G,(naa: 6/)(t: 6// 2'// 1'/ 7/)(h: 6/ 7//) (toma: 6//)(rehr,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,39:69,F#4,roll E; swaralipi E,(h: 6/ 7//) (toma: 6//)(rehri: 5/)(da: 4/)(ye: 5- 6 6/) (raa,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,39:113,B4,roll D,e: 5- 6 6/) (raa: 6/)(khi: 6/)(te: 6// 7// 1'/ 1'/ 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,39:117,C#5,roll C; swaralipi G,- 6 6/) (raa: 6/)(khi: 6/)(te: 6// 7// 1'/ 1'/ 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,39:125,D5,swaralipi F,(raa: 6/)(khi: 6/)(te: 6// 7// 1'/ 1'/ 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,41:12,C#5,roll E; swaralipi E,(Aar: 2'// 1'//) (kaaropaanechaa,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,41:51,C#5,roll E; swaralipi E,1'//) (kaaropaanechaa: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (na: 3,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,41:61,D5,swaralipi F,ropaanechaa: 2')(hi: 6/ 2'// 1'//)(bo: 2'/) (na: 3'/) (aar:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,41:100,C#5,roll E; swaralipi E,2'/) (na: 3'/) (aar: 3'// 4'// 3'/ 2'/ 1'///) (ko: 2'///)(ri,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,42:42,C#5,roll C; swaralipi C,ey: 1'/.) (aa: 7 6/ 6/ 6/ 6// 7//)(mi: 1'/ 1'/) (praa: 2'/)(,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,42:72,C#5,roll E; swaralipi E,7//)(mi: 1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,42:80,A4,roll E; swaralipi E,1'/ 1'/) (praa: 2'/)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe: 1,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,42:100,C#5,roll C; swaralipi C,)(no: 2'// 1'// 2' 6/) (p: 2'//) (ohe: 1'//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,43:63,C#5,roll E; swaralipi E,ro: 4'//) (paane: 3'/) (chaa: 2'/)(hi: 1'/// 2'///)(bonaaar:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,44:60,C#5,roll E; swaralipi E,) (hey: 7//) (aa: 6 6/ 6/// 2'///)(mi: 1'// 2'/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,45:45,C5,roll E; swaralipi E,: 2'/)(no: 2'/ 2'// 3'//)(paoheTumijo: 1'// 2'//)(dibaloekho,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,47:139,F4,roll A; swaralipi A,/)(yoi: 5/)(baa: 3//)(so: 4//)(na: 5// 4// 3// 4//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,47:143,E4,roll G; swaralipi G,oi: 5/)(baa: 3//)(so: 4//)(na: 5// 4// 3// 4//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,48:40,F4,roll C; swaralipi C,(bi: 3/)(sar: 2/)(ja: 3/ 3/ 3/ 3//)(n: 4//) (koshree: 3/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,48:55,E4,roll B; swaralipi B,/)(ja: 3/ 3/ 3/ 3//)(n: 4//) (koshree: 3/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,48:58,F#4,roll A; swaralipi A,ja: 3/ 3/ 3/ 3//)(n: 4//) (koshree: 3/ 4/),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,49:32,F#4,roll E; swaralipi E,(cho: 5/) (ri: 6/)(bo: 6// 5// 4//) (bi: 5//)(sha: 6,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,50:34,B4,roll F,(bi: 5/)(shayoibaasonapaai: 6/// 7/// 6// 5//) (bisha:,data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,50:39,A4,roll E,(bi: 5/)(shayoibaasonapaai: 6/// 7/// 6// 5//) (bisha: 6//),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,50:149,F#4,roll E,2/) (bi: 3/)(sar: 3/)(j: 3/ 3// 4// 3/ 4/ 5/ 6.),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,weak,50:152,G4,roll D,(bi: 3/)(sar: 3/)(j: 3/ 3// 4// 3/ 4/ 5/ 6.),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001352,strong,50:155,A4,roll C; swaralipi C,i: 3/)(sar: 3/)(j: 3/ 3// 4// 3/ 4/ 5/ 6.),data/intermediate_data/ktab/rs001352/v1.ktab
+rs001367,weak,39:47,C5,swaralipi D,/)(da: 5/)(yo: 6-- 5/ 6/)(ka: 5/.)(mo: 1'// 7/)(lo: 6/ 6//-),data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,39:52,B4,swaralipi E,: 5/)(yo: 6-- 5/ 6/)(ka: 5/.)(mo: 1'// 7/)(lo: 6/ 6//-)(bano,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,39:60,A4,swaralipi F,: 6-- 5/ 6/)(ka: 5/.)(mo: 1'// 7/)(lo: 6/ 6//-)(bano: 5/.) (,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,41:7,G4,swaralipi E,(baa: 5/)(niNi: 6/)(bhri: 5,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,41:17,A4,swaralipi D,(baa: 5/)(niNi: 6/)(bhri: 5//)(to: 6/,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,41:27,G4,swaralipi E,(baa: 5/)(niNi: 6/)(bhri: 5//)(to: 6//)(baasini,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,41:36,A4,swaralipi D,(baa: 5/)(niNi: 6/)(bhri: 5//)(to: 6//)(baasinibinapaa:,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,41:57,G4,swaralipi E,/)(bhri: 5//)(to: 6//)(baasinibinapaa: 5//) (ni: 4) (amritom,data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,41:93,G4,swaralipi E,a: 5//) (ni: 4) (amritomuroti: 4/)(mo: 5/)(tibaa: 6---),data/intermediate_data/ktab/rs001367/v1.ktab
+rs001367,weak,41:104,A4,swaralipi D,: 4) (amritomuroti: 4/)(mo: 5/)(tibaa: 6---),data/intermediate_data/ktab/rs001367/v1.ktab
 rs001381,weak,18:28,G5,midi F#,(Taa: 3'/)(ta: 3'/) (thoi: 5'),data/intermediate_data/ktab/rs001381/v5.ktab
 rs001381,weak,19:15,F5,roll G#,(tho: 5'/)(i: 4'/),data/intermediate_data/ktab/rs001381/v5.ktab
 rs001397,weak,14:52,C5,roll G,a: 2'/)(ma: 1'/)(der: 1'/. 6//) (chhu: 1'/)(ti: 1'/. 2'/ 3'/,data/intermediate_data/ktab/rs001397/v1.ktab
@@ -290,8 +290,8 @@ rs001397,weak,15:6,F4,roll A,(aa: 4)(ha: 5/) (ha: 6)(ha,data/intermediate_data/k
 rs001397,weak,17:56,G4,roll C,) (ge: 6/)(chhe: 6/. 7//) (tu: 6/)(ti: 5/ 6// 5/ 4//-),data/intermediate_data/ktab/rs001397/v1.ktab
 rs001397,weak,17:59,A4,roll D,ge: 6/)(chhe: 6/. 7//) (tu: 6/)(ti: 5/ 6// 5/ 4//-),data/intermediate_data/ktab/rs001397/v1.ktab
 rs001397,weak,17:63,G4,roll E,6/)(chhe: 6/. 7//) (tu: 6/)(ti: 5/ 6// 5/ 4//-),data/intermediate_data/ktab/rs001397/v1.ktab
-rs001426,weak,17:40,C5,swaralipi E,(Aa: 1' 7/ 6/)(se: 1' 7/ 6/ 6/.) (kon: 1'// 7-- 1'/ 1'/ 1'/.,data/intermediate_data/ktab/rs001426/v1.ktab
-rs001426,weak,17:45,B4,swaralipi D,1' 7/ 6/)(se: 1' 7/ 6/ 6/.) (kon: 1'// 7-- 1'/ 1'/ 1'/. 2'//,data/intermediate_data/ktab/rs001426/v1.ktab
+rs001426,weak,16:65,C5,swaralipi E,: 3/.) (bee: 2// 1' 7/ 6/ 1' 7/ 6/ 6/. 1'// 7--),data/intermediate_data/ktab/rs001426/v1.ktab
+rs001426,weak,16:70,B4,swaralipi D,) (bee: 2// 1' 7/ 6/ 1' 7/ 6/ 6/. 1'// 7--),data/intermediate_data/ktab/rs001426/v1.ktab
 rs001426,weak,21:77,C5,swaralipi E,3/. 2//) (m: 1')(b: 7/ 6/ 1' 7/ 6/ 6/. 1'// 7--),data/intermediate_data/ktab/rs001426/v1.ktab
 rs001426,weak,21:82,B4,swaralipi D,//) (m: 1')(b: 7/ 6/ 1' 7/ 6/ 6/. 1'// 7--),data/intermediate_data/ktab/rs001426/v1.ktab
 rs001537,strong,72:40,B4,roll E; swaralipi E,(O: 5/) (aa: 5/ 5 6 6/ 6/ 6- 5/ 5/ 5 6 7/) (mar: 2'/ 1'/. 7/,data/intermediate_data/ktab/rs001537/v1.ktab

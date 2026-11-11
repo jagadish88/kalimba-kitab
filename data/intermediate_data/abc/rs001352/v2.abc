@@ -4,65 +4,71 @@ C:Rabindranath Tagore
 S:notes: data/raw_data/midi/rs001352.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
 S:syllables: SNLTR Rabindra Rachanabali swaralipi (মাঝে মাঝে তব দেখা পাই), aligned to the MIDI by midi_swara_abc.py
 S:lyrics: data/raw_data/text/lyrics/rs001352.txt (Geetabitan transliteration)
-N:Swaralipi notes matched to MIDI notes: 286 of 716 (MIDI has 469); Sa of the MIDI = A. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:Swaralipi notes matched to MIDI notes: 278 of 716 (MIDI has 469); Sa of the MIDI = A. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
 N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
 M:3/8
 L:1/16
 Q:1/4=50
 K:C
-C2 C2 D2 |
-w: Maa-jhemaajhetabode-kha |
-D2 D2 D ^D | D2 E2 F2 | G2 G F E F |
-w: paai _ _ Chirodinkenopaai | na * * | * * * * * |
-G2 A2 A/ ^A/ c | ^A2 =A2 G A | F2 G/ A/ G F G | ^D2 =D/ ^D/ F ^D =D |
-w: * * * _ Maa-|jhe _ _ _ | _ _ _ _ maa-_-|jhe _ tabodekhapaai _ _ _ |
+C2 C2 D2 | D2 D2 D ^D |
+w: Maa-jhe maajheta-|bo dekha paai _ |
+D2 E2 F2 | G2 G F E F | G2 A2 A/ ^A/ c |
+w: _ _ Chi-|ro-din ke-no paai | _ _ _ _ na |
+^A2 =A2 G A | F2 G/ A/ G F G | ^D2 =D/ ^D/ F ^D =D |
+w: _ Maa-jhe _ | _ _ _ _ maa-_-|jhe tabodekhapaai _ _ _ _ |
 C2 C2 D2 | D2 D2 D ^D |
 w: _ Chi-ro-|dinkenopaai _ _ na |
-D2 E2 F2 | G6 | G2 G/ c/ B c2- | c2 c2 c d | ^A c ^A2 =A2 |
-w: _ _ Ke-|no | megh _ aa-se hri-|_-da-_-_-|_-_-y _ |
-G2 F E F2 | G2 G/ c/ B c2- |
-w: aa-kashe _ To-|ma-redekhitedeyna _ _ _ |
-c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 |
-w: _ _ _ Ke-|nome-_-gh _ | _ _ _ to- |
-G2 G c ^A2 | A2 G2 A G |
-w: ma-redekhitedeyna _ Kenome-|gh _ _ toaa- |
-F2 G/ A/ G F G | F ^D3 =D ^D |
-w: se onhridayaaka-she _ To-ma-|re dekhite _ deyna |
-D2 C2 D2 | D2 D2 D ^D |
-w: _ _ Khoni-|kaa-lo-ke aankhirpalo- |
-D2 E2 F2 | G6 | G2 G2 G2 | G2 G2 G A | B2 B2 c2 | c B c2 c2 | B2 c B c2 | d2 ^d2 =d c |
-w: ke _ To-|mayjabe | _ paai _ | de-_-_-_-|_-_-khi-|_-_-te oheKho-|ni-kaalokeaan-khi-_-|_-rpalo-ke _ |
-c2 B/ c/ d c2 | ^A =A c ^A3 | A2 G2 G2 | G2 G2 G A | B2 B2 c2 |
-w: To-may jabepaaidekhi-_-te | oheHaarai _ _ haaraisadahoybhoyHaarai | _ _ haa-|rai sadahoy bhoy _ | _ _ _ |
+D2 E2 F2 | G6 |
+w: _ _ Ke-|nomeghaase |
+G2 G/ c/ B c2- |
+w: hridayaa-kashe _ To-ma- |
+c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G/ c/ B c2- |
+w: _-re dekhitedeyna Ke-|nome-_-gh _ | _ _ _ to-|ma-redekhitedeyna _ _ _ |
+c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G |
+w: _ _ _ Ke-|nome-_-gh _ | _ _ _ to | aa-se onhr-id-|ay aaka-she _ |
+F2 G/ A/ G F G |
+w: To-ma-re de-khite deyna |
+F ^D3 =D ^D | D2 C2 D2 | D2 D2 D ^D |
+w: _ _ Khoni-kaa-|loke aan-khi-|r pa-lo-ke |
+D2 E2 F2 | G6 | G2 G2 G2 | G2 G2 G A | B2 B2 c2 | c B c2 c2 | B2 c B c2 |
+w: _ _ To-|may | _ _ ja-|be _ _ _ | paai _ de-|khi-_-te oheKho-|ni-kaalokeaan-khi-_- |
+d2 ^d2 =d c | c2 B/ c/ d c2 | ^A =A c ^A3 | A2 G2 G2 | G2 G2 G A | B2 B2 c2 |
+w: rpa-loke Tomay jabepaai | de-khi-_-_-te | oheHaarai _ _ haaraisada | hoy _ bhoyHaarai | haa-raisadahoy bhoy _ | _ _ _ |
 c B c2 c2 | B2 c B c2 | d2 ^d2 =d c |
 w: Haa-rai-_-ya | phe-li _ _ | cho-kite _ aa |
 c2 B/ c/ d c2 | ^A =A G4 | G2 G2 c B |
-w: _ _ _ Naa _ | mikot-_-_-|hapaa _ yaabo _ |
+w: Naa _ mi ko-t-|_-_-_-|_-hapaa _ yaa |
 c2 c2 d2 | ^A c ^A2 =A2 | G2 F E F2 | G2 G2 c B |
-w: lok _ Naa | porith _ _ _ | _ _ _ haa-|rai-_-yahri-_- |
-c2 c2 d2 | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G | F2 G2 F2 |
-w: day _ Aa-|_-_-_-_-|_-_-_-k-|as-he _ _ | _ _ _ haarai-|_-yaphelichokite _ |
+w: bo lok Naa | _ po rith _ | _ _ _ haa-|_-rai-_-ya |
+c2 c2 d2 | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 |
+w: hri-day Aa-|_-k-ashe _ | _ _ _ haa-|rai-_-ya phe- |
+A2 G2 A G | F2 G2 F2 |
+w: li _ _ Cho-|ki-te _ |
 D ^D F ^D =D ^D | D2 C2 D2 | D2 D2 D ^D |
-w: _ Kiko-_-ri-le ba-|lopaai-_-_-|bo to-ma-_- |
-D2 E2 F2 | G6 | C2 C2 D2 | D2 D2 D ^D | F2 F2 G2 | G2 G2 E F | G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G2 G/ c/ B c2- | c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G |
-w: re _ Raa-|khiboaankhi-|te aan-khi-|_-_-teoheKiko-_-|_-ri-lebalopaaibotomareraakhiboaankhi-|teaankhiteoheEto prem _ _ | aa-mi ko-thapaa-|_-bo naa _ | _ _ E-|_-|to _ _ _ _ | _ _ _ _ | prem _ _ _ | _ _ _ _ | aa-mi ko-thapaa-|_-bo naath _ |
-F2 E2 F2- | F6 | C2 C2 D2 | D2 D2 D ^D | F2 F2 G2 | G2 G2 E F | G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G2 G/ c/ B c2- |
-w: _ To-marehridaye | _ | _ _ _ | raa-khite Aarpaa _ | _ dhjo i-|bo _ _ tomaredeynako-|ri-le _ _ | _ _ _ _ | _ _ k-|_-|aa-ro Tu-_-mi |
-c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G4 G2 | G2 G2 G A | B2 B2 c2 |
-w: _ _ _ Paa-|_-_-_-_-|_-_-_-bo | naa-t-_-_-|_-h _ toma-|re hri-dayeraakhi-|_-|te _ | _ _ _ _ | _ _ _ |
+w: Kiko-_-ri-le _ ba-|lo paa-i-|bo to-ma-re |
+D2 E2 F2 | G6 | C2 C2 D2 | D2 D2 D ^D |
+w: Raakhi-bo _ | aankhi-|teaan-khiteoheKi korilebalo | paaibo to-ma-re |
+F2 F2 G2 | G2 G2 E F | G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G2 G/ c/ B c2- | c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 |
+w: Raakhiboaankhiteaankhiteohe E-to | prem aa-_-_-|mi ko-tha paa-|_-bo naa _ | _ _ E-|_-|to _ _ _ _ | _ _ _ _ | prem _ _ _ | _ _ _ _ | aa-mi ko-tha |
+A2 G2 A G | F2 E2 F2- | F6 | C2 C2 D2 | D2 D2 D ^D | F2 F2 G2 | G2 G2 E F |
+w: paa-bo naath Toma-|re hri-da-|_-|ye _ _ | raa-khite Aarpaa _ | _ dhjo i-|bo _ _ to- |
+G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G2 G/ c/ B c2- |
+w: ma-re dey Na | _ kori-le _ | _ _ k-|_-|aa-ro _ _ _ |
+c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G | F2 E2 F2- | F6 | G4 G2 |
+w: _ Tu-mi Paa-|_-_-_-_-|_-_-_-bo | naa-t-_-_-|_-h _ toma-|rehri-da-ye | _ | _ _ |
+G2 G2 G A | B2 B2 c2 |
+w: Raa-khi-te _ | _ _ _ |
 c B c4 | G2 c B c2 | d2 d ^d =d2 |
 w: Aar _ kaaropaanechaa-|hi-_-_-bo | na aar _ _ |
-c2 B/ c/ d c2 | ^A =A c ^A3 | A4 G2 | G2 G2 G A | B2 B2 c2 |
-w: _ _ Ko-ri-bo | _ hey _ aa-|_-_-|_-mi _ praa-|no-_-_- |
-c B c4 | G2 c B c2 | d2 d ^d =d2 |
-w: p ohe An | _ kaaropaanechaa-hi-_-|_-bo naaar _ |
-c2 B/ c/ d c2 | ^A =A G4 | G2 G/ c/ B c2 | c2 c2 c d |
-w: _ _ Ko-ri-bo | _ hey aa-|_-mi _ _ praa-|no-_-pa-ohe |
-^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G |
-w: Tumijodibaloekho-_-ni _ | ko-ribo _ Tu-|mi jo-di baloekhoni | _ ko-ri-bo |
+c2 B/ c/ d c2 | ^A =A c ^A3 | A4 G2 | G2 G2 G A | B2 B2 c2 | c B c4 |
+w: _ _ Ko-ri-bo | _ _ _ hey | aa-_-|_-_-_-_-|mi _ praa-|no-_-_- |
+G2 c B c2 | d2 d ^d =d2 |
+w: _-p ohe An | _ _ kaaro paane |
+c2 B/ c/ d c2 | ^A =A G4 | G2 G/ c/ B c2 | c2 c2 c d | ^A c ^A2 =A2 | G2 F E F2 | G2 G c ^A2 | A2 G2 A G |
+w: chaa-hi-_-bonaaar Ko-|ribo hey aa-|_-_-_-mi _ | praa-no-_-_-|paoheTumijo-_-dibaloekho-ni | ko-ribo _ Tu-|mijodiba-lo e-kho-|ni ko-ribo _ |
 F2 G2 F2 | D ^D F ^D =D ^D | D2 C2 D2 | D2 D2 D ^D | D2 E2 F2 | G2 G F E F | G2 A2 A/ ^A/ c |
-w: _ Bisha-yoi-|baa-so-na _ _ bisarja-|_-n koshree | _ _ _ _ | _ _ cho | ri-bo _ _ bi-|sha-yo-i-_-b |
-^A2 =A2 G A | F2 G/ A/ G F G |
-w: Oaasona _ _ _ | bishayoibaasona paa-i _ _ bisha- |
-^D2 =D/ ^D/ F ^D =D | C2 C2 D2 | D2 D2 D ^D | D2 E2 F2 | G6 |]
-w: yoibaasona _ Bi-sarj _ _ | _ * * | * * * * | * * * | * |
+w: Bi-sha-yoi-|baa-so-na _ _ _ | bi-sar-ja-|_-_-_-n | koshree _ cho | ri-bo _ _ bi-|sha-yo-i-_-b |
+^A2 =A2 G A | F2 G/ A/ G F G | ^D2 =D/ ^D/ F ^D =D |
+w: Oaasona _ _ _ | bi-shayoibaasonapaai _ _ _ bisha-|yoi-baa-so-na _ _ |
+C2 C2 D2 | D2 D2 D ^D | D2 E2 F2 | G6 |]
+w: _ _ Bi-|sar-j _ _ | _ _ _ | _ |

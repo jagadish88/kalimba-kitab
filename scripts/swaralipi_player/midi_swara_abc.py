@@ -20,6 +20,7 @@ How
   5. Lines: a new ABC line starts at the bar where a sung swaralipi row's first syllable falls.
 """
 import argparse
+import re
 import os
 import sys
 from fractions import Fraction as F
@@ -31,6 +32,7 @@ sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 import mido  # noqa: E402
 import midi_to_ktab as MK  # noqa: E402
 import swara_abc as SA  # noqa: E402
+import note_align as NA  # noqa: E402
 
 N = 'C ^C D ^D E F ^F G ^G A ^A B'.split()
 
@@ -118,6 +120,16 @@ def midi_bars(song):
     return out, (num, den), tempo, tr[i][0]
 
 
+def tok_len(tok):
+    """length of an ABC note token in eighths ('c2' 2, 'd/' 1/2, 'e3/2' 3/2, 'f' 1)"""
+    m = re.search(r'(\d*)(/*)(\d*)-?$', tok)
+    num = int(m.group(1) or 1)
+    if m.group(2):
+        den = int(m.group(3)) if m.group(3) else 2 ** len(m.group(2))
+        return num / den
+    return float(num)
+
+
 def lcs_pairs(a, b):
     """index pairs of an exact longest common subsequence of a and b"""
     n, m = len(a), len(b)
@@ -146,21 +158,23 @@ def main():
     s = a.song
     bars, (num, den), tempo, track = midi_bars(s)
     # MIDI notes (tied notes joined): (bar, index in bar, midi)
-    mnotes = []
+    mnotes, mlen = [], []
     for bi, b in enumerate(bars):
         for k, (tok, p, tied_on) in enumerate(b):
-            if p is not None and not tied_on:
-                mnotes.append((bi, k, p))
+            if p is None:
+                continue
+            if not tied_on:
+                mnotes.append((bi, k, p)); mlen.append(0.0)
+            if mlen:
+                mlen[-1] += tok_len(tok)
     doc, lines, sev = SA.song_events(s)
-    spc = [e['midi'] % 12 for e in sev]
-    best = (-1, 0)
-    for sh in range(12):
-        n = len(lcs_pairs(spc, [(p - sh) % 12 for _, _, p in mnotes]))
-        if n > best[0]:
-            best = (n, sh)
-    sa_shift = best[1]
-    pairs = lcs_pairs(spc, [(p - sa_shift) % 12 for _, _, p in mnotes])
-    s2m = dict(pairs)
+    # swaralipi notes paired with MIDI notes by pitch class and length (note_align: where a pitch
+    # repeats, the note of the right length is taken); only pairs of equal pitch class count
+    pair, sh = NA.align([e['midi'] for e in sev], [p for _, _, p in mnotes], [e['units'] for e in sev], mlen)
+    s2m = {j: mi for j, mi in enumerate(pair)
+           if mi is not None and sev[j]['midi'] % 12 == (mnotes[mi][2] + sh) % 12}
+    pairs = sorted(s2m.items())
+    sa_shift = (-sh) % 12                          # MIDI pitch - sa_shift = the swaralipi's (Sa = C)
     # Latin for every swaralipi syllable, sung line by sung line
     lyr_path = os.path.join(ROOT, f'data/raw_data/text/lyrics/{s}.txt')
     glines = [l.strip() for l in open(lyr_path, encoding='utf-8') if l.strip()] if os.path.exists(lyr_path) else []

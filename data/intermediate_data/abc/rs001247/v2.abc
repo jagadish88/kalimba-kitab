@@ -16,10 +16,10 @@ A,2 B,2 C2 D2 | E4 E2 D2 | B,3 D C4- | C8 |
 w: O-go ne-ye | naao-kha-ni | baai-_-yo | _ |
 C G G2 G2 ^F2 | G2 ^F2 G4 | G2 B2 B2 A2 | G2 ^F2 E4 |
 w: Tu-_-mi ko-she | dha-ro haal | aa-mi tu-le | bnaa-dhi paal |
-e4 e2 e2 | d2 d2 c3 G | A3 d c4 | A3 d c4 |
-w: Hnaai maa-ro | maa-ro taan _ | hnaai-_-yo | taan _ hn- |
-A3 d c4- | c8 | C2 D2 E2 E2 | E4 E2 D2 | B,2 C2 D4 | D4 D2 D2 | A,2 B,2 C2 D2 | E4 E2 D2 | B,3 D C4- | C8 |
-w: Aai-_-yo | _ | * * * * | * * * | * * * | * * * | * * * * | * * * | * * * | _ |
+e4 e2 e2 | d2 d2 c3 G | A3 d c4 | A3 d c4 | A3 d c4- | c8 | C2 D2 E2 E2 | E4 E2 D2 | B,2 C2 D4 | D4 D2 D2 |
+w: Hnaai maa-ro | maa-ro taan _ | _ _ _ | hnaai-_-yo | taan * * | _ | * * * * | * * _ | _ hn-_-|_-_-_- |
+A,2 B,2 C2 D2 | E4 E2 D2 | B,3 D C4- | C8 |
+w: Aai-_-_-_-|_-_-_-|_-_-yo | _ |
 G4 G2 E2 | G4 G3 A | A3 c c2 c2 | c4 c4 |
 w: Shrin-kha-le | baar-bar _ | jho _ jha-no | jho kar |
 c3 d d2 d2 | d2 d2 c d2 e | e4 e2 e2 | d4 c4 |
@@ -32,12 +32,12 @@ c e3 e2 e2 | d4 c4 | d4 c2 c2 | B4 A4 |
 w: Ban-_-dha-no | dur-bar | so-jhyo na | hoy aar |
 c2 c2 B2 B2 | A2 A2 G4 | G A3 G4- | G8 |
 w: Ta-lo-ma-lo | ka-re aaj | taai _ o | _ |
-e4 e2 e2 | d2 d2 c3 G | A3 d c4 | A3 d c4 |
-w: Hnaai _ maa-|romaa-ro taan _ | hnaai-_-yo | taan _ hn- |
-A3 d c4- | c8 |
-w: Aai-_-yo | _ |
-C2 D2 E2 E2 | E4 E2 D2 | B,2 C2 D4 | D4 D2 D2 | A,2 B,2 C2 D2 | E4 E2 D2 | B,3 D C4- | C8 | C2 D2 E2 E2 | E2 E2 E4 | E4 E2 E2 | D2 D2 C4 |
-w: Go-ni go-ni | di-n * | * * * | * * * | * * * * | khan chan-_-|_-_-_-|_-|_-_-cha-lo | _ _ _ | _ _ _ | ko-ri mon |
+e4 e2 e2 | d2 d2 c3 G | A3 d c4 | A3 d c4 | A3 d c4- | c8 | C2 D2 E2 E2 | E4 E2 D2 | B,2 C2 D4 | D4 D2 D2 |
+w: Hnaai maa-ro | maa-ro taan _ | _ _ _ | hnaai-_-yo | taan * * | _ | * * * * | * * _ | _ hn-_-|_-_-_- |
+A,2 B,2 C2 D2 | E4 E2 D2 | B,3 D C4- | C8 |
+w: Aai-_-_-_-|_-_-_-|_-_-yo | _ |
+C2 D2 E2 E2 | E2 E2 E4 | E4 E2 E2 | D2 D2 C4 |
+w: Go-ni go-ni | di-n khan | chan-cha-lo | ko-ri mon |
 A,2 B,2 C2 D2- | D E E2 E4 | D E2 D C4- | C8 |
 w: Bo-lo na Jaai | _ _ ki naai | jaai _ _ re | _ |
 E3 G G2 G2 | G2 ^F2 G4 | G3 B B2 A2 | G2 ^F2 E4 |
@@ -57,14 +57,14 @@ w: Jo-di maa-te | ma-ha-kaal _ | ud-_-daa-m | ja-ta-jaal |
 c2 d2 d4 | c d3/2 c/ e e2 e2 | e4 e2 e2 | d4 c4 |
 w: Jha-re hoy | lunt-_-_-_-thi-to | dheu ut-the | ut-tal |
 c e e2 e2 e2 | d4 c2 c2 | c d d2 c4 | B2 B2 A4 |
-w: Jodimaatemahakaalud-_-_-_-_-|_-daa-m | ja-_-_-ta-|_-_-_- |
-c2 c2 B2 B2 | A2 A2 G4 | G A3 G4- | G8 | e4 e2 e2 | d2 d2 c3 G | A3 d c4 | A3 d c4 |
-w: jaal Jha-* * | * * * | * * * | _ | * * * | re hoy lunt-_-|_-_-_-|thi-todheuuttheut-tal |
-A3 d c4- | c8 | C2 D2 E2 E2 | E4 E2 D2 | B,2 C2 D4 | D4 D2 D2 | A,2 B,2 C2 D2 | E4 E2 D2 |
-w: _ _ Ho-|_-|_-_-_-yo | naa-ko kunt-|thi-tota-_-|le taar _ | _ di-_-_-|_-_-_- |
-B,3 D C4- | C8 | C G G2 G2 ^F2 |
-w: yo taal Jo-|_-|y joyjoygaan gaai-yo _ |
-G2 ^F2 G4 | G2 B2 B2 A2 | G2 ^F2 E4 | e4 e2 e2 | d2 d2 c3 G | A3 d c4 | A3 d c4 |
-w: Hnaai * * | * * * * | * * _ | maa-ro _ | maa-ro taan _ | hnaai-_-yo | taan _ hn- |
-A3 d c4- | c8 | C2 D2 E2 E2 | E4 E2 D2 | B,2 C2 D4 | D4 D2 D2 | A,2 B,2 C2 D2 | E4 E2 D2 | B,3 D C4- | C8 |]
-w: Aai-_-yo | _ | * * * * | * * * | * * * | * * * | * * * * | * * * | * * * | _ |
+w: Jo-di maa-te ma-|ha-kaalud-daa-|m _ _ ja-|_-_-_- |
+c2 c2 B2 B2 | A2 A2 G4 | G A3 G4- | G8 | e4 e2 e2 | d2 d2 c3 G | A3 d c4 | A3 d c4 | A3 d c4- | c8 |
+w: ta-jaal Jha-* | * * * | * * * | _ | * * * | re hoy lunt-_-|_-_-_-|thi-to dheu | ut-theut-tal | _ |
+C2 D2 E2 E2 | E4 E2 D2 | B,2 C2 D4 | D4 D2 D2 | A,2 B,2 C2 D2 | E4 E2 D2 |
+w: Ho-_-_-yo | naa-ko kunt-|_-thi-to | ta-_-le | taar di-_-_-|_-_-_- |
+B,3 D C4- | C8 | C G G2 G2 ^F2 | G2 ^F2 G4 | G2 B2 B2 A2 |
+w: yo taal Jo-|_-|y jo-y jo-y-|_-_-gaan | gaai-_-_-_- |
+G2 ^F2 E4 | e4 e2 e2 | d2 d2 c3 G | A3 d c4 | A3 d c4 | A3 d c4- | c8 | C2 D2 E2 E2 | E4 E2 D2 | B,2 C2 D4 | D4 D2 D2 |
+w: yo Hnaai _ | _ maa-ro | maa-ro taan _ | _ _ _ | hnaai-_-yo | taan * * | _ | * * * * | * * _ | _ hn-_-|_-_-_- |
+A,2 B,2 C2 D2 | E4 E2 D2 | B,3 D C4- | C8 |]
+w: Aai-_-_-_-|_-_-_-|_-_-yo | _ |

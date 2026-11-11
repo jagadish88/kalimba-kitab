@@ -111,7 +111,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 93,
+  "syllables": 95,
   "weak": 10
  },
  "rs000016": {
@@ -126,7 +126,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 93,
+  "syllables": 100,
   "weak": 10
  },
  "rs000017": {
@@ -141,7 +141,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 56,
+  "syllables": 62,
   "weak": 4
  },
  "rs000037": {
@@ -156,7 +156,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 88,
+  "syllables": 98,
   "weak": 10
  },
  "rs000039": {
@@ -186,7 +186,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 91,
+  "syllables": 99,
   "weak": 0
  },
  "rs000077": {
@@ -246,7 +246,7 @@
   "octave": 2,
   "roundtrip": "exact",
   "strong": 1,
-  "syllables": 66,
+  "syllables": 69,
   "weak": 2
  },
  "rs000111": {
@@ -275,7 +275,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 92,
+  "syllables": 99,
   "weak": 2
  },
  "rs000130": {
@@ -305,7 +305,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 95,
+  "syllables": 98,
   "weak": 9
  },
  "rs000141": {
@@ -365,7 +365,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 99,
+  "syllables": 100,
   "weak": 0
  },
  "rs000163": {
@@ -410,7 +410,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 92,
+  "syllables": 99,
   "weak": 0
  },
  "rs000211": {
@@ -440,7 +440,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 95,
+  "syllables": 98,
   "weak": 2
  },
  "rs000219": {
@@ -484,7 +484,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 2,
-  "syllables": 97,
+  "syllables": 99,
   "weak": 12
  },
  "rs000292": {
@@ -499,7 +499,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 97,
+  "syllables": 99,
   "weak": 0
  },
  "rs000293": {
@@ -529,7 +529,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 84,
+  "syllables": 93,
   "weak": 7
  },
  "rs000309": {
@@ -588,7 +588,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 90,
+  "syllables": 100,
   "weak": 0
  },
  "rs000472": {
@@ -603,7 +603,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 85,
+  "syllables": 99,
   "weak": 0
  },
  "rs000476": {
@@ -618,7 +618,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 92,
+  "syllables": 99,
   "weak": 0
  },
  "rs000493": {
@@ -662,7 +662,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 84,
+  "syllables": 99,
   "weak": 0
  },
  "rs000588": {
@@ -677,7 +677,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 90,
+  "syllables": 100,
   "weak": 0
  },
  "rs000613": {
@@ -692,7 +692,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 88,
+  "syllables": 99,
   "weak": 0
  },
  "rs000616": {
@@ -707,7 +707,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 91,
+  "syllables": 99,
   "weak": 0
  },
  "rs000636": {
@@ -722,7 +722,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 70,
+  "syllables": 76,
   "weak": 0
  },
  "rs000684": {
@@ -782,7 +782,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 89,
+  "syllables": 99,
   "weak": 0
  },
  "rs000810": {
@@ -797,7 +797,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 88,
+  "syllables": 99,
   "weak": 0
  },
  "rs000823": {
@@ -827,7 +827,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 93,
+  "syllables": 100,
   "weak": 0
  },
  "rs000833": {
@@ -917,7 +917,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 88,
+  "syllables": 94,
   "weak": 2
  },
  "rs000948": {
@@ -961,7 +961,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 4,
-  "syllables": 89,
+  "syllables": 96,
   "weak": 4
  },
  "rs000984": {
@@ -1005,7 +1005,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 86,
+  "syllables": 99,
   "weak": 11
  },
  "rs001083": {
@@ -1035,7 +1035,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 1,
-  "syllables": 95,
+  "syllables": 99,
   "weak": 0
  },
  "rs001103": {
@@ -1065,7 +1065,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 86,
+  "syllables": 87,
   "weak": 7
  },
  "rs001247": {
@@ -1080,7 +1080,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 6,
-  "syllables": 86,
+  "syllables": 97,
   "weak": 0
  },
  "rs001248": {
@@ -1125,7 +1125,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 94,
+  "syllables": 100,
   "weak": 0
  },
  "rs001313": {
@@ -1140,7 +1140,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 1,
-  "syllables": 69,
+  "syllables": 95,
   "weak": 0
  },
  "rs001352": {
@@ -1155,7 +1155,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 55,
-  "syllables": 58,
+  "syllables": 81,
   "weak": 60
  },
  "rs001363": {
@@ -1184,7 +1184,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 92,
+  "syllables": 98,
   "weak": 10
  },
  "rs001376": {
@@ -1272,7 +1272,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 77,
+  "syllables": 99,
   "weak": 0
  },
  "rs001425": {
@@ -1287,7 +1287,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 90,
+  "syllables": 98,
   "weak": 0
  },
  "rs001426": {
@@ -1302,7 +1302,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 93,
+  "syllables": 97,
   "weak": 4
  },
  "rs001444": {
@@ -1347,7 +1347,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 78,
+  "syllables": 98,
   "weak": 0
  },
  "rs001516": {
@@ -1407,7 +1407,7 @@
   "octave": 0,
   "roundtrip": "known",
   "strong": 0,
-  "syllables": 56,
+  "syllables": 58,
   "weak": 0
  },
  "rs001620": {
@@ -1422,7 +1422,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 95,
+  "syllables": 99,
   "weak": 0
  },
  "rs001653": {
@@ -1437,7 +1437,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 98,
+  "syllables": 99,
   "weak": 0
  },
  "rs001657": {
@@ -1452,7 +1452,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 64,
+  "syllables": 67,
   "weak": 10
  },
  "rs001674": {
@@ -1482,7 +1482,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 96,
+  "syllables": 99,
   "weak": 0
  },
  "rs001702": {
@@ -1557,7 +1557,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 90,
+  "syllables": 100,
   "weak": 0
  },
  "rs001740": {
@@ -1572,7 +1572,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 70,
+  "syllables": 80,
   "weak": 0
  },
  "rs001795": {
@@ -1617,7 +1617,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 92,
+  "syllables": 97,
   "weak": 0
  },
  "rs001827": {
@@ -1647,7 +1647,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 81,
+  "syllables": 84,
   "weak": 0
  },
  "rs001862": {
@@ -1662,7 +1662,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 97,
+  "syllables": 100,
   "weak": 0
  },
  "rs001865": {
@@ -1736,7 +1736,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 93,
+  "syllables": 100,
   "weak": 0
  },
  "rs002077": {
@@ -1751,7 +1751,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 90,
+  "syllables": 98,
   "weak": 0
  },
  "rs002097": {
@@ -1796,7 +1796,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 95,
+  "syllables": 99,
   "weak": 0
  },
  "rs002159": {
@@ -1811,7 +1811,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 94,
+  "syllables": 100,
   "weak": 0
  },
  "rs002165": {

@@ -4,7 +4,7 @@ C:Rabindranath Tagore
 S:notes: data/raw_data/midi/rs000133.mid (Geetabitan, arranged by Anjan Ganguly), Violin track
 S:syllables: SNLTR Rabindra Rachanabali swaralipi (আমার বেলা যে যায় সাঁঝ-বেলাতে), aligned to the MIDI by midi_swara_abc.py
 S:lyrics: data/raw_data/text/lyrics/rs000133.txt (Geetabitan transliteration)
-N:Swaralipi notes matched to MIDI notes: 252 of 298 (MIDI has 271); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
+N:Swaralipi notes matched to MIDI notes: 251 of 298 (MIDI has 271); Sa of the MIDI = C. Notes quantized to 16ths. "*" = notes the swaralipi does not sing.
 N:v2: v1 with note values halved, so the tab plays at half the beats per minute.
 M:3/8
 L:1/16
@@ -18,10 +18,10 @@ B3 d c2- | c2 ^A4 | A6 | A2 A4 |
 w: Snaajh _ be-|_-la-|te | To-mar |
 A4 c ^A- | ^A =A G3 F | E6- | E6 |
 w: Su-re _ | _ _ su-_-|re | _ |
-F4 A2- | A2 ^A4 | d c5 | ^A =A G3 A |
-w: Sur me-|_-la-|te _ | Aa-_-mar _ |
-B4 c2- | c2 B4 | c6- | c6 |
-w: Aamar Bela | _ je | jaay | _ |
+F4 A2- | A2 ^A4 | d c5 |
+w: Sur me-|_-la-|te _ |
+^A =A G3 A | B4 c2- | c2 B4 | c6- | c6 |
+w: Aa-_-mar Aa-|marbe-la | _ je | jaay | _ |
 c3 e e2- | e2 e4 | e6- | e6 |
 w: Ek-_-taa-|_-ra-|tir | _ |
 f4 e/ f/ g- | g2 f3 e | d c2 B3- | B c5 |
@@ -47,9 +47,11 @@ w: Haar me-|_-ne-|chhi | _ |
 ^F C3 E2- | E2 E4 | F6 | F2 F3 E |
 w: Ei _ khe-|_-la-|te | To-mar _ |
 F4 A2- | A2 A4 | ^A6 | A2 G F2 E |
-w: Su-re | _ su-|resurmela-|te _ _ _ |
-F4 A2- | A2 ^A4 | c6 | A2 B4 |
-w: _ Aa-|_-_-|_-|_-mar |
+w: Su-re | _ su-|re | _ _ _ _ |
+F4 A2- | A2 ^A4 | c6 |
+w: Sur me-|_-la-|te |
+A2 B4 |
+w: Aa-mar |
 B4 c2- | c2 B4 | c6- | c6 |
 w: Be-la | _ je | jaay | _ |
 F4 A2- | A2 A4 | ^A6- | ^A6 |
@@ -91,10 +93,8 @@ w: Sur me-|_-la-|te | Aa-mar |
 B4 c2- |
 w: Ektaaratirektitaare _ |
 c2 B4 | c6- | c6 | B3 d c2- | c2 ^A4 | A6 | A2 A4 |
-w: _ Gaa-|ner | _ | be-danboi-te | _ _ | _ | naa-re |
+w: _ Gaa-|nerbe-|_-|_-danboi-te | _ _ | _ | naa-re |
 A4 c ^A- | ^A =A G3 F | E6- | E6 | F4 A2- | A2 ^A4 | d c5 |
-w: _ Ek-_-|_-taa-ratirekti taa-|_-|_-|_-_-|_-_-|re _ |
-^A =A G3 A | B4 c2- |
-w: _ _ Gaa-ner | be-dan |
-c2 B4 | c6- | c6 |]
-w: _ Boitenaa-|re | _ |
+w: _ Ek-_-|_-taa-ra-tirek-|ti | _ | _ _ | _ taa-|re _ |
+^A =A G3 A | B4 c2- | c2 B4 | c6- | c6 |]
+w: _ _ Gaa-ner | be-danboite | _ naa-|re | _ |

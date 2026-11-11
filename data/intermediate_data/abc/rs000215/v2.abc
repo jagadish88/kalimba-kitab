@@ -23,9 +23,9 @@ w: Bnaa-shi | _ _ | Bnaa-shi | _ |
 F2 F4 | ^D =D ^D4 | D2 ^D3 ^C | C2 ^C2 ^C =C |
 w: To-may | di-_-ye | jaa-bo _ | kaa-har _ _ |
 ^A,2 C3 ^A, | ^G,2 =G,3 ^G, |
-w: Haa-te _ | Aa-mar _ |
+w: Haa-te _ | AamarAa-mar _ |
 ^A,3 C2 ^D | ^D2 ^C4 | C6- | C6 |
-w: Aamarraat _ _ | po-ha-|lo | _ |
+w: Raat _ _ | po-ha-|lo | _ |
 C2 C4 | C2 C3 ^C | ^D6 | F5 G | ^D2 F G2 ^G | F G F4- | F6- | F6 |
 w: To-mar | bu-ke _ | baaj-|lo _ | _ _ _ _ | dhwo-_-ni | _ | _ |
 F G F2 G F | ^D =D ^D4 | D2 ^D4 | ^D =D ^D3 ^C |
@@ -35,7 +35,7 @@ w: Ka-_-|to _ _ _ _ | je | _ |
 C3 ^D ^D2 | D2 ^D4 | D2 ^D4 | D2 F ^D3 |
 w: Phaal-_-gu-|ne shraa-|bo-ne | ka-to _ |
 ^G,2 ^G,4 | ^A,2 ^A,3 C | C5 D | ^D =D ^D3 ^C | C5 ^C | ^D2 ^C4 | C6- | C6 | ^G,4 ^G,2 | ^G,2 ^G,3 ^A, | ^A,2 C4 | C2 C4 |
-w: Je katha | * * * | * * | * * * * | * * | * * | * | _ | roy _ | _ _ _ | praa-ner | bhi-tor |
+w: _ Je | ka-* * | * * | * * * * | * * | * * | * | _ | * tha | roy _ _ | praa-ner | bhi-tor |
 C5 ^C | ^C2 =C ^D ^C2 | C6- | C6 |
 w: A-_-|go-_-_-cha-|re | _ |
 ^C2 ^C4 | ^C2 ^C4 | ^C2 =C3 ^D | ^C2 ^C4 |
@@ -45,7 +45,7 @@ w: Chu-ri | ko-re _ | a-_-|go-_-_-cha- |
 C6- | C6 |
 w: Re | _ |
 ^G,4 ^G,2 | ^G,2 ^G,3 ^A, | ^A,2 C4 | C2 C4 |
-w: Je katha | roy _ _ | praa-ner | bhi-tor |
+w: Je ka-|tha roy _ | praa-ner | bhi-tor |
 C5 ^C | ^C2 =C ^D ^C2 | C6- | C6 |
 w: A-_-|go-_-_-cha-|re | _ |
 ^C2 ^C4 | ^C2 ^C4 | ^C2 =C3 ^D | ^C2 ^C4 |
@@ -69,4 +69,4 @@ w: Ni-_-shi-_-_-|she-_-sher | taa-rar | mo-to _ |
 C2 ^C3 =C | ^A,2 C4 | C3 ^D ^D2 | D2 ^D4 |
 w: Ho-lo _ | mo-to | Shesh _ ko-|re daao |
 D4 ^D2 | D2 ^D4 | ^G,2 ^G,4 | ^A,5 C | C5 D | ^D =D ^D3 ^C | C5 ^C | ^D2 ^C4 | C6- | C6 | C2 ^C2 ^C =C | ^A,4 C ^A, | G,5 ^G, | ^A,2 C3 ^C | ^A,3 C2 ^D | ^D2 ^C4 | C6- | C6- | C6 |]
-w: Shiu-li-|phu-ler | ma-ron | saa _ | * * | * * * * | * * | * * | * | _ | * * * * | * * * | * * | * * * | * * * | * * | * | _ | _ |
+w: Shiu-li-|phu-ler | ma-ron | * * | * * | * * * * | * * | * * | * | _ | * * * * | saa * * | * * | * * * | * _ _ | _ _ | _ | _ | _ |

@@ -15,10 +15,10 @@ E2 E4 | E2 E4 | E2 E4 | E2 D2 F2 |
 w: Pa-rosh-|mo-ni | chno-ao | praa-_-_- |
 F4 F2 | F2 F4 | E4 G2 | F2 E4- | E4 E2 | E2 E4 | D4 F2 | E2 D4- | D4 D2 | D2 D2 E2 | C4 E2 | D2 C4- | C4 C2 | C2 C2 G2 | G4 G2 | G2 G4 |
 w: Ne E | ji-bon | pu-nyo | ka-ro | _ E | ji-bon | pu-nyo | ka-ro | _ E | ji-bon _ | pu-nyo | ka-ro | _ E | ji-bon _ | pu-nyo | ka-ro |
-G2 G2 ^F2 | G4 ^F2 | G6- | G6 | C2 D2 E2 | E2 E4 |
-w: Da-hon _ | daa-_-|ne | _ | _ _ Aa-|gu-ner |
-E2 E4 | E2 E4 | E2 E4 | E2 D2 F2 |
-w: Daa gu | ne _ | _ _ | _ _ _ |
+G2 G2 ^F2 | G4 ^F2 | G6- | G6 | C2 D2 E2 | E2 E4 | E2 E4 |
+w: Da-hon _ | daa-_-|ne | _ | _ _ _ | Aa-_-|gu-ner |
+E2 E4 | E2 E4 | E2 D2 F2 |
+w: Daa _ | gu ne | _ _ _ |
 F4 G2 | G2 G4 |
 w: _ Aa-|mar ei |
 G2 G4 | G2 G4 | G2 G2 ^F2 | G4 ^F2 |
@@ -33,10 +33,10 @@ B4 G2 | B2 B4 |
 w: Ne Ni-|shi-din |
 B2 B4 | B2 B A B2 | c2 c B d2 | c4 B A |
 w: Aa-lok | si-kha _ _ | jwo-luk _ _ | gaa-_-_- |
-B6- | B6 | C2 D2 E2 | E2 E4 |
-w: Ne | _ | _ _ Aa-|gu-ner |
-E2 E4 | E2 E4 | E2 E4 | E2 D2 F2 |
-w: Gaa gu | ne _ | _ _ | _ _ _ |
+B6- | B6 | C2 D2 E2 | E2 E4 | E2 E4 |
+w: Ne | _ | _ _ _ | Aa-_-|gu-ner |
+E2 E4 | E2 E4 | E2 D2 F2 |
+w: Gaa _ | gu ne | _ _ _ |
 F4 C2 | C2 C4 |
 w: _ Aan-|dha-rer |
 C2 C4 | C2 C4 | C2 C4 | C2 B,2 C D |
@@ -64,12 +64,14 @@ w: Ne Bya-|tha mor |
 B4 B2 | B2 B A B2 | c4 d2 | c4 B A |
 w: Utt-hbe | jwo-le _ _ | ur-dho | paa-_-_- |
 B6- | B6 | C2 D2 E2 | E2 E4 | E2 E4 | E2 E4 | E2 E4 | E2 D2 F2 | F4 F2 | F2 F4 |
-w: Ne | _ | _ _ Aa-|gu-ner | * * | * * | * * | * * * | * * | * * |
+w: Ne | _ | _ _ _ | _ _ | _ _ | _ _ | Aa-_-|gu-_-_-|_-_-|_-_- |
 E4 G2 | F2 E4- |
-w: * Ni-|shi-din |
-E4 E2 | E2 E4 | D4 F2 | E2 D4- | D4 D2 | D2 D2 E2 | C4 E2 | D2 C4- |
-w: _ Aa-|lok si-|kha _ | _ jwo-|_-_-|_-_-_-|luk _ | _ gaa- |
-C4 C2 | C2 C2 G2 |
-w: _-NeNishidinaaloksikhajwo-|luk gaa-_- |
-G4 G2 | G2 G4 | G2 G2 ^F2 | G4 ^F2 | G6- | G6 | C2 D2 E2 | E2 E4 | E2 E4 | E2 E4 | E2 E4 | E2 D2 F2 | F6- | F6 |]
-w: _-Ne | * * | * * * | * * | * | _ | * * * | * * | * * | * * | * * | * * * | * | _ |
+w: ner Ni-|shi-din |
+E4 E2 | E2 E4 | D4 F2 | E2 D4- | D4 D2 | D2 D2 E2 | C4 E2 | D2 C4- | C4 C2 |
+w: _ Aa-|lok si-|kha _ | _ jwo-|_-_-|_-_-_-|luk _ | _ gaa-|_-_- |
+C2 C2 G2 | G4 G2 |
+w: _-Ne Ni-|shi-din |
+G2 G4 | G2 G2 ^F2 | G4 ^F2 | G6- | G6 | C2 D2 E2 | E2 E4 |
+w: Aa-lok | si-kha _ | _ jwo-|_-|_-|luk _ gaa-|_-_- |
+E2 E4 | E2 E4 | E2 E4 | E2 D2 F2 | F6- | F6 |]
+w: Ne * | * * | * * | * * * | * | _ |
