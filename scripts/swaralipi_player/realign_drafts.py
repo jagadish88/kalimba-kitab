@@ -55,7 +55,11 @@ def build(s, abc_text, T, hdr, out, tag):
     if res.returncode:
         return None
     b = open(f'{out}/{tag}_b.ktab', encoding='utf-8').read()
-    return F.fix(b, F.poem_lines(s), 6, 10, 3)[0]
+    head, body = b.split('\n\n', 1)                # @title, @subtitle, @retune first
+    order = ['title', 'subtitle', 'retune']
+    head = '\n'.join(sorted(head.split('\n'), key=lambda l: order.index(l[1:].split(':')[0]) if l[1:].split(':')[0] in order else 3))
+    poem = F.poem_lines(s)
+    return F.fix(head + '\n\n' + body, poem, 6, 10, 3, F.poem_phrases(s), F.sections(s, poem))[0]
 
 
 def non_w(text):

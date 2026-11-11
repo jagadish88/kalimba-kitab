@@ -1,7 +1,7 @@
-@margin: 1.2cm
 @title: Ore Bhai Phagun Legechhe
 @subtitle: Kalimba tab -- retune 2 6 2'
-@retune: A4:G#4,D5:C#5,D4:C#4
+@retune: D4:C#4,A4:G#4,D5:C#5
+@margin: 1.2cm
 @beat: 1.8em
 @wordgap: .55em
 @linegap: .6em
@@ -22,7 +22,7 @@
 (Ro: 6/)(nge: 6/) (ro: 6/)(nge: 6/)
 (ro: 7/)(ngi: 7/)(lo: 1'/) (aa: 1'// 2'//)(kash: 7 1'--)
 (gaa: 7/)(ne: 6/) (gaa: 6/)(ne: 6/) (ni: 6/)(khi: 6// 7//)(lo: 7/) (u: 7/)(daas: 7---)
-(Je: 1/)(no: 4/) (cha: 4/)(lo: 4/) (chan: 4)(cha: 4/)(lo: 3/) (na: 4/)(bo: 4// 6//)
+(Je: 1/)(no: 4/) (cha: 4/)(lo: 4/) (chan: 4)(cha: 4/)(lo: 3/) (na: 4/)(bo: 4// 7//)
 (pal: 6)(la: 5/)(bo: 5/)(da: 4/)(lo: 3/) (mar: 4/ 6/)(ma: 6/)(re: 6/)
 (mor: 7) (mo: 1'/)(ne: 1'// 2'//) (mo: 7)(ne: 1'--)
 (phaa: 1'/)(gun: 3') (le: 5'/)(ge: 4'/)(chhe: 3'/)
@@ -47,10 +47,10 @@
 (jaa: 6/)(ne: 7/) (po: 7/)(ri: 7/)(choy: 7) (re: 7--)
 
 (Taai: 1/ 4/) (bu: 4/)(jhi: 4/) (baa: 4/)(re: 4/) (baa: 4/)(re: 4// 3//)
-(kun: 4/ 6// 6//)(je: 6/)(r: 6/) (dwaa: 5/)(re: 5/) (dwaa: 4/)(re: 3/)
+(kun: 4/ 7// 6//)(je: 6/)(r: 6/) (dwaa: 5/)(re: 5/) (dwaa: 4/)(re: 3/)
 (Taai: 1/ 4/) (bu: 4/)(jhi: 4/)
 (baa: 4/)(re: 4/) (baa: 4/)(re: 4// 3//)
-(kun: 4/ 6// 6//)(je: 6/)(r: 6/) (dwaa: 5/)(re: 5/) (dwaa: 4/)(re: 3/)
+(kun: 4/ 7// 6//)(je: 6/)(r: 6/) (dwaa: 5/)(re: 5/) (dwaa: 4/)(re: 3/)
 (Shu: 4/)(dhaa: 6/)(ye: 6/) (phi: 6/)(ri: 7/)(chhe: 7/) (jo: 1'/)(ne: 1'// 2'//) (jo: 7)(ne: 1'--)
 (phaa: 1'/)(gun: 3') (le: 5'/)(ge: 4'/)(chhe: 3'/) (bo: 2'/)(ne: 1'/) (bone: 1'//)
 (O: 2'//)(rebhaaiphaagunlegechhebonebo: 7/)(ne: 1')

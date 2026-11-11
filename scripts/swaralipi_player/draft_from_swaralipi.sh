@@ -9,6 +9,8 @@ python3 scripts/swaralipi_player/swara_abc.py $S --bpm $BPM --out $A/v1.abc 2>/d
 K=$(python3 scripts/piano_lesson_to_ktab/best_key.py $A/v1.abc | tail -1); T=$(echo $K | awk '{print $2}'); R=$(echo $K | awk '{print $3}')
 python3 scripts/piano_lesson_to_ktab/abc_to_ktab.py $A/v1.abc --transpose $T --out $W/$S.ktab > $W/$S.conv.txt
 sed -i -E '0,/\(([^:]*): 0[^ )]* /s//(\1: /' $W/$S.ktab        # no leading rest
+# the retuning the converter actually wrote the notes for (not best_key's suggestion)
+R=$(grep "^retune tine" $W/$S.conv.txt | sed -E "s/retune tine [^ ]+ \(([^)]+)\) to ([^;]+);.*/\1:\2/" | paste -sd,)
 HDR=()
 if [ -n "$R" ]; then
   TINES=$(grep "^retune tine" $W/$S.conv.txt | sed -E "s/retune tine ([^ ]+) .*/\1/" | paste -sd' ')

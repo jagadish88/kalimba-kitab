@@ -18,6 +18,8 @@ python3 scripts/swaralipi_player/check_midi_bars.py $A/v1.abc $W/$S.bars | tail 
 K=$(python3 scripts/piano_lesson_to_ktab/best_key.py $A/v2.abc | tail -1); T=$(echo $K | awk '{print $2}'); R=$(echo $K | awk '{print $3}')
 python3 scripts/piano_lesson_to_ktab/abc_to_ktab.py $A/v2.abc --transpose $T --out $W/$S.ktab > $W/$S.conv.txt
 sed -i -E '0,/\(([^:]*): 0[^ )]* /s//(\1: /' $W/$S.ktab
+# the retuning the converter actually wrote the notes for (not best_key's suggestion)
+R=$(grep "^retune tine" $W/$S.conv.txt | sed -E "s/retune tine [^ ]+ \(([^)]+)\) to ([^;]+);.*/\1:\2/" | paste -sd,)
 HDR=()
 if [ -n "$R" ]; then
   TINES=$(grep "^retune tine" $W/$S.conv.txt | sed -E "s/retune tine ([^ ]+) .*/\1/" | paste -sd' ')

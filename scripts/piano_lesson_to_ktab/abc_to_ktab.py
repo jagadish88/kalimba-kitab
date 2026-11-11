@@ -273,8 +273,8 @@ def plan(pitches_by_stanza, transpose):
             best = None
             for step in (-1, 1, -2, 2):
                 q = m + step
-                if tine(q) not in TINES_17:
-                    continue
+                if tine(q) not in TINES_17 or tine(q) in retune.values():
+                    continue                              # a retuned tine no longer sounds q
                 cost = 0.5 * abs(step)
                 for i in occ:
                     for j in (i - 1, i + 1):
