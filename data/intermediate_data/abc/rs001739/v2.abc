@@ -24,8 +24,10 @@ E2 F2 G2- | G2 C2 C2 | D2 E2 F2- | F2 C2 C2 |
 w: Bhu-ba-ne | _ ta-bo | bha-bo-ne | _ Mo-re |
 B,2 C2 D2 | E2 F2 G2 | A4 G A- | A ^A =A2 ^A2 |
 w: Aa-ro aa-|ro aa-ro | daao sthaan _ | _ _ Mo-re |
-^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 B2 B2 |
-w: _ Aa-ro aa-|ro aa-_-ro | daao _ praan | _ PraanoPraa-no |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- |
+w: _ Aa-ro aa-|ro aa-_-ro | daao _ praanPraano |
+A2 B2 B2 |
+w: _ Praa-no |
 B2 B2 B2- | B2 G2 B2 | c2 B2 d c- | c ^A =A2 ^A2 | ^A d c2 ^A2 | A2 G A F2 | F3 G A2- |
 w: Bho-ri-ye | _ tri-sha | ho-ri-ye _ | _ _ Mo-_-|_-_-_-re | _ _ _ _ | _ _ _ |
 A2 e2 e2 |
@@ -42,8 +44,10 @@ B4 B2- | B2 G2 B2 | c3 B d c- | c2 ^A2 =A2 |
 w: Su-re | _ bnaa-shi | pu-_-_-re | _ Tu-mi |
 G F F2 E2 | F2 G2 A2 | A4 G/ A/ ^A- | ^A2 =A2 ^A2 |
 w: _ Aa-ro aa-|ro aa-ro | daao taan _ _ | _ Mo-re |
-^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 B2 B2 |
-w: Aa-_-ro aa-|ro aa-_-ro | daao _ praa | _ praanPraa-no |
+^A d c2 ^A2 | A2 G A F2 | F3 G A2- |
+w: Aa-_-ro aa-|ro aa-_-ro | daao _ praapraan |
+A2 B2 B2 |
+w: _ Praa-no |
 B2 B2 B2- | B2 G2 B2 | c2 B2 d c- | c ^A =A2 ^A2 | ^A d c2 ^A2 | A2 G A F2 | F3 G A2- |
 w: Bho-ri-ye | _ tri-sha | ho-ri-ye _ | _ _ Mo-_-|_-_-_-re | _ _ _ _ | _ _ _ |
 A2 C2 C2 |
@@ -79,6 +83,6 @@ w: _ Aa-ro aa-|ro aa-ro | ko-ro daan _ _ | _ Mo-re |
 ^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A2 B2 B2 |
 w: Aa-_-ro aa-|ro aa-_-ro | daao _ praan | _ Praa-no |
 B2 B2 B2- | B2 G2 B2 | c2 B2 d c- | c ^A =A2 ^A2 |
-w: Bho-ri-ye | _ tri-sha | ho-ri-yeMoreaa-roaaroaarodaaopraanPraanobhoriyetrishahoriye | _ _ Mo-re |
+w: Bho-ri-ye | _ tri-sha | ho-ri-ye ye | _ _ Mo-re |
 ^A d c2 ^A2 | A2 G A F2 | F3 G A2- | A6 |]
 w: Aa-_-ro aa-|ro aa-_-ro | daao _ praa | _ |

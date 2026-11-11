@@ -156,7 +156,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 98,
+  "syllables": 97,
   "weak": 10
  },
  "rs000039": {
@@ -186,7 +186,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 99,
+  "syllables": 97,
   "weak": 0
  },
  "rs000077": {
@@ -484,7 +484,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 2,
-  "syllables": 99,
+  "syllables": 98,
   "weak": 12
  },
  "rs000292": {
@@ -499,7 +499,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 0,
-  "syllables": 99,
+  "syllables": 98,
   "weak": 0
  },
  "rs000293": {
@@ -1155,7 +1155,7 @@
   "octave": 0,
   "roundtrip": "exact",
   "strong": 55,
-  "syllables": 81,
+  "syllables": 78,
   "weak": 60
  },
  "rs001363": {

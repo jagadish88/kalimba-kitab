@@ -23,8 +23,10 @@ G6 G2 | G4 G4 | ^F4 G4 | G A3 G4 |
 w: Neel aa-|ka-she | ke bhaa-|sa-_-le |
 C4 D4 | E2 G2 G4 | G2 A2 G A B2 | B2 A2 G4 |
 w: Saa-da | me-_-gher | bhe-_-la _ _ | re _ bhaai |
-E6 D2 | E4 F4 | E2 D2 C4- | C4 C4 |
-w: Lu-ko-|chu-ri | khe-_-la | _ Aaj |
+E6 D2 | E4 F4 | E2 D2 C4- |
+w: Lu-ko-|chu-ri | khe-_-laAa- |
+C4 C4 |
+w: _-J |
 A, C3 C4 | C4 C2 D2 | E2 G4 G2 | G4 G2 A2 | G A B2 B4 | A4 G4 | G2 A2 G4 | F4 E2 D2 | C2 E2 E4 | E4 D2 E2 | D4 C4- | C8 |
 w: Dhaa-_-ner | khe-te _ | rou-_-_-|_-dra-_-|_-_-_-_-|_-chhaa-|yay _ * | * * * | * * * | * * * | * * | _ |
 G6 G2 | G4 G4 | ^F4 G4 | G A3 G4 | C4 D4 | E2 G2 G4 | G2 A2 G A B2 | B2 A2 G4 | E6 D2 | E4 F4 | E2 D2 C4- | C4 G4 | G4 A4 | c4 c4 | d4 c4 | B4 A2 B A |
@@ -39,12 +41,16 @@ G6 G2 | G4 G4 | ^F4 G4 | G A3 G4 |
 w: Neel aa-|ka-she | ke bhaa-|sa-_-le |
 C4 D4 | E2 G2 G4 | G2 A2 G A B2 | B2 A2 G4 |
 w: Saa-da | me-_-gher | bhe-_-la _ _ | re _ bhaai |
-E6 D2 | E4 F4 | E2 D2 C4- | C4 C4 |
-w: Lu-ko-|chu-ri | khe-_-la | _ Aaj |
-A, C3 C4 | C4 C2 D2 | E2 G4 G2 | G4 G2 A2 |
-w: Dhaa-_-ner | khe-te _ | rou-_-dra-|chhaa-yay _ |
+E6 D2 | E4 F4 | E2 D2 C4- |
+w: Lu-ko-|chu-ri | khe-_-laAa- |
+C4 C4 |
+w: _-J |
+A, C3 C4 | C4 C2 D2 | E2 G4 G2 |
+w: Dhaa-_-ner | khe-te _ | rou-_-dra- |
+G4 G2 A2 |
+w: chhaa-yay O- |
 G A B2 B4 | A4 G4 | G2 A2 G4 |
-w: O-rejaa-_-bo | na aajgha-|re _ re |
+w: re Jaa-bo na | aaj gha-|re _ re |
 F4 E2 D2 | C2 E2 E4 | E4 D2 E2 | D4 C4- | C8- | C4 C2 C2 |
 w: bhaai Jaa-bo | _ _ _ | na aaj gha-|_-re | _ | _ O-re |
 A,2 C4 C2 | C4 C2 D2 | E2 G2 G2 A2 | G4 F4 |
@@ -59,25 +65,25 @@ E6 D2 | E4 F4 | E2 D2 C4- | C4 G2 G2 |
 w: Jaa-bo | na aaj | gha-_-re | _ Je-no |
 G4 A4 | c4 c4 | d4 c4 | B4 A2 B2 |
 w: Jo-war | ja-le | phe-nar | raa-shi _ |
-G4 A4 | G4 G2 F2 | E2 G4 G2 | A4 c2 B2 | A8- | A4 B2 A2 | G8- |
-w: Baa-ta-|se aaj _ | chhut-_-chhe | haa-si _ | _ | _ _ _ | _ |
-G4 G4 |
-w: _ Jeno |
+G4 A4 | G4 G2 F2 | E2 G4 G2 | A4 c2 B2 | A8- | A4 B2 A2 |
+w: Baa-ta-|se aaj _ | chhut-_-chhe | haa-si _ | _ | _ _ _ |
+G8- | G4 G4 |
+w: Je-|_-no |
 G4 A4 | A c3 B4 |
-w: Jo-war | ja-lephenar raa- |
+w: Jo-war | jalephe-nar raa- |
 A2 B2 G4 | A4 G4 | G6 F2 | E4 D2 E2 | C2 D2 E4- | E8 | G6 G2 | G4 G4 | ^F4 G4 | G A3 G4 | C4 D4 | E2 G2 G4 | G2 A2 G A B2 | B2 A2 G4 | E6 D2 | E4 F4 | E2 D2 C4- | C4 C4 | A, C3 C4 | C4 C2 D2 | E2 G4 G2 |
 w: shi _ Baa-|ta-se | aaj _ | _ _ chhut-|_-_-_-|_-|_-chhe | _ _ | _ _ | _ haa-_-|si * | * * * | * * * * _ | _ _ _ | * * | * * | * * * | _ * | * * * | * * * | * Aaj _ |
-G4 G2 A2 | G A B2 B4 | A4 G4 | G2 A2 G4 |
-w: Bi-_-na | _ kaa-_-je | baa-ji-|ye bnaa-shi |
-F4 E2 D2 | C2 E2 E4 | E4 D2 E2 | D4 C4- | C8 |
-w: Kaatbe sa-kol | _ _ be-|_-_-la | _ _ | _ |
+G4 G2 A2 | G A B2 B4 | A4 G4 | G2 A2 G4 | F4 E2 D2 | C2 E2 E4 | E4 D2 E2 | D4 C4- | C8 |
+w: Bi-_-na | _ kaa-_-je | baa-ji-|ye bnaa-shikaat-|be sa-kol | _ be-_-|_-_-la | _ _ | _ |
 G6 G2 | G4 G4 | ^F4 G4 | G A3 G4 |
 w: Neel aa-|ka-she | ke bhaa-|sa-_-le |
 C4 D4 | E2 G2 G4 | G2 A2 G A B2 | B2 A2 G4 |
 w: Saa-da | me-_-gher | bhe-_-la _ _ | re _ bhaai |
 E6 D2 | E4 F4 | E2 D2 C4- | C4 C4 |
 w: Lu-ko-|chu-ri | khe-_-la | _ Aaj |
-A, C3 C4 | C4 C2 D2 | E2 G4 G2 | G4 G2 A2 | G A B2 B4 | A4 G4 | G2 A2 G4 |
-w: Jaa-_-bo | na aaj _ | gha-_-_-|_-re _ | re bhaaijaabonaaajghareOrejaa-_-bo | na aajgha-|re _ re |
+A, C3 C4 | C4 C2 D2 | E2 G4 G2 | G4 G2 A2 |
+w: Jaa-_-bo | na aaj _ | gha-_-_-|_-re _ |
+G A B2 B4 | A4 G4 | G2 A2 G4 |
+w: re Jaa-bo na | aaj gha-|re _ re |
 F4 E2 D2 | C2 E2 E4 | E4 D2 E2 | D4 C4- | C8- | C8 |]
 w: bhaai Jaa-bo | _ _ _ | na aaj gha-|_-re | _ | _ |

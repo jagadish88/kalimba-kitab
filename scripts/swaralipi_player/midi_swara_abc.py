@@ -182,31 +182,46 @@ def main():
     Ly.last = 0
     idx = [j for j, e in enumerate(sev) if e['syl']]          # the whole song at once (swara_abc.align_song)
     latin = dict(zip(idx, SA.align_song([sev[j]['syl'] for j in idx], Ly)))
-    # syllables onto MIDI notes
+    # syllables onto MIDI notes. A syllable whose swaralipi note is paired with a MIDI note goes there.
+    # The others, between two such anchors, go on the free MIDI notes between them in order. If one
+    # or two are left without a note, they join the syllable before; if three or more are, the MIDI
+    # does not play that passage (a repeat the swaralipi sings and the MIDI does not): they are left
+    # out rather than packed onto one note.
     syl_at = {}                                    # MIDI note index -> (text, end_word, starts a sung row)
-    js = sorted(s2m)
-    import bisect
-    for j, e in enumerate(sev):
-        if not (e['syl'] and j in latin):
+    syl_js = [j for j, e in enumerate(sev) if e['syl'] and j in latin]
+    item = {j: (latin[j][0], latin[j][1], sev[j]['newline']) for j in syl_js}
+    anchors, last_m = [], -1
+    for j in syl_js:                               # paired syllables, in order on both sides
+        if j in s2m and s2m[j] > last_m:
+            anchors.append(j); last_m = s2m[j]
+    anchor_set = set(anchors)
+    for j in anchors:
+        syl_at[s2m[j]] = item[j]
+    bounds = [(-1, -1)] + [(j, s2m[j]) for j in anchors] + [(len(sev), len(mnotes))]
+    for (j0, m0), (j1, m1) in zip(bounds, bounds[1:]):
+        between = [j for j in syl_js if j0 < j < j1 and j not in anchor_set]
+        if not between:
             continue
-        item = (latin[j][0], latin[j][1], e['newline'])
-        if j in s2m and s2m[j] not in syl_at:
-            syl_at[s2m[j]] = item
+        free = [mi for mi in range(m0 + 1, m1) if mi not in syl_at]
+        if len(free) >= len(between):
+            # spread in order: each at about its own distance from the anchor before, never backwards
+            k = 0
+            for j in between:
+                want = m0 + (j - j0)
+                while k < len(free) - (len(between) - between.index(j) - 1) - 1 and free[k] < want:
+                    k += 1
+                syl_at[free[k]] = item[j]; k += 1
             continue
-        # its own note is not matched: the MIDI note at the same distance from the matched note
-        # before it, kept between the matched neighbours and on a note with no syllable yet
-        k = bisect.bisect_left(js, j)
-        j0, m0 = (js[k - 1], s2m[js[k - 1]]) if k > 0 else (-1, -1)
-        m1 = s2m[js[k]] if k < len(js) else len(mnotes)
-        mi = min(max(m0 + (j - j0), m0 + 1), m1)
-        while mi in syl_at and mi < m1:
-            mi += 1
-        if mi in syl_at or mi >= len(mnotes):
-            prev = syl_at.get(mi if mi in syl_at else max(syl_at, default=0))
-            if prev:                                   # no free note: join it to the syllable there
-                syl_at[mi if mi in syl_at else max(syl_at)] = (prev[0] + item[0], item[1], prev[2])
-            continue
-        syl_at[mi] = item
+        missing = len(between) - len(free)
+        for mi, j in zip(free, between):
+            syl_at[mi] = item[j]
+        if missing >= 3:
+            continue                               # a passage the MIDI does not play: left out
+        for j in between[len(free):]:              # one or two short: join the syllable before
+            prev_m = max((mi for mi in syl_at if mi < m1), default=None)
+            if prev_m is not None:
+                p0 = syl_at[prev_m]
+                syl_at[prev_m] = (p0[0] + item[j][0], item[j][1], p0[2])
     sung = set(s2m.values())
     # tokens per MIDI note: syllable, hold, or '*' (in a long stretch the swaralipi doesn't sing)
     toks = []
