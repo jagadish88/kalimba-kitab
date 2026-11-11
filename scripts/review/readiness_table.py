@@ -51,8 +51,8 @@ def key_tonic(abc):
 
 def fmt_flags(f):
     if not f:
-        return '--'
-    return f"{f['strong']}/{f['weak'] + f['octave']}"
+        return '0/0'
+    return f"{f.get('likely error', 0)}/{f.get('check', 0)}"
 
 
 def key(s):
@@ -75,11 +75,16 @@ def main():
     sarows = list(csv.DictReader(open(sa))) if os.path.exists(sa) else []
     sylag = {r['song']: int(r['syllable_agreement_pct']) for r in sarows}
     rhoc = {r['song']: (int(r.get('rhythm_flags') or 0), int(r.get('octave_flags') or 0)) for r in sarows}
-    flags = {}
-    sc = 'data/intermediate_data/comparison/source_check.csv'
-    if os.path.exists(sc):
-        for f in csv.DictReader(open(sc, encoding='utf-8')):
-            flags.setdefault(f['song'], {'strong': 0, 'weak': 0, 'octave': 0})[f['kind']] += 1
+    flags = {}                                     # open review bars per song: likely errors / checks
+    rl = 'data/intermediate_data/comparison/review_list.csv'
+    if os.path.exists(rl):
+        bars = {}
+        for f in csv.DictReader(open(rl, encoding='utf-8')):
+            if f['reviewed'] or f['verdict'] not in ('likely error', 'check'):
+                continue
+            bars.setdefault((f['song'], f['verdict']), set()).add(f['bar'] or f['tab'])
+        for (s_, v), b in bars.items():
+            flags.setdefault(s_, {'likely error': 0, 'check': 0})[v] = len(b)
     out = []
     for s in sorted(set(last) | set(done)):
         r = last.get(s)
@@ -138,7 +143,7 @@ def main():
                 nr = len(info['ret'])
                 rl = info['roll']
                 fl = flags.get(s, {})
-                if bp <= 2 and nr <= 1 and rl is not None and rl >= 94 and not fl.get('strong'):
+                if bp <= 2 and nr <= 1 and rl is not None and rl >= 94 and not fl.get('likely error'):
                     info['tier'] = 'A'
                 elif bp <= 5 and nr <= 2 and (rl is None or rl >= 87):
                     info['tier'] = 'B'
@@ -165,18 +170,18 @@ def main():
 \begin{document}
 \begin{center}{\Large\bfseries Kalimba tab drafts: readiness for the main dataset}\\[3pt]
 {\small %d songs: done %d, A %d, B %d, C %d. Sorted by tier, then by roll match $-$ 3$\times$off-note \%% $-$ 4$\times$retuned tines (+5 for MIDI notes).}\end{center}
-\noindent{\small\textbf{Tier A}: off notes $\le$2\%%, at most 1 retuned tine, roll match $\ge$94\%%, no strong source flag.
+\noindent{\small\textbf{Tier A}: off notes $\le$2\%%, at most 1 retuned tine, roll match $\ge$94\%%, no likely-error bar.
 \textbf{B}: off notes $\le$5\%%, $\le$2 retunes, roll match $\ge$87\%% or no roll. \textbf{C}: the rest. \textbf{done}: in data/dataset/.
 \textbf{Roll}: share of the draft's notes Arup Paul's piano roll plays in order. \textbf{Off notes}: notes with no tine after the retuning, played a semitone off.
 \textbf{Scale}: the note Sa is on (the kalimba is in C). \textbf{Lyrics}: share of the tab's words that are words of the Geetabitan lyrics.
-\textbf{Flags}: places where independent sources disagree with the tab (source\_check.csv): strong (two sources agree on another note) / weak (one source, a run of notes). Tier A needs no strong flag.
+\textbf{Review}: bars to look at (review\_list.csv, after triage and recorded decisions): likely errors / to check. Tier A needs no likely-error bar.
 \textbf{Syl}: share of the tab's syllables on the notes the SNLTR swaralipi puts them on (syllable\_check.py).
 \textbf{R/O}: syllables much longer or shorter than in the swaralipi / notes an octave from it.}
 \vspace{4pt}
 \footnotesize\setlength{\tabcolsep}{4pt}
 \begin{longtable}{r l l c l r l l r r r r r c}
 \toprule
-\# & Song & id & MIDI & Swaralipi & Roll & Scale & Tines retuned & Off notes & Lyrics & Flags & Syl & R/O & Tier\\
+\# & Song & id & MIDI & Swaralipi & Roll & Scale & Tines retuned & Off notes & Lyrics & Review & Syl & R/O & Tier\\
 \midrule\endhead
 """ % (len(out), cnt['done'], cnt['A'], cnt['B'], cnt['C']) + '\n'.join(lines) + '\n\\bottomrule\\end{longtable}\\end{document}\n'
     wd = '/tmp/kk_work/rtable'
