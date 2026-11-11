@@ -143,9 +143,9 @@
   "octave": 1,
   "rhythm": 3,
   "roundtrip": "exact",
-  "strong": 0,
+  "strong": 8,
   "syllables": 95,
-  "weak": 4
+  "weak": 7
  },
  "rs000037": {
   "lint": {
@@ -1533,9 +1533,9 @@
   "octave": 8,
   "rhythm": 12,
   "roundtrip": "exact",
-  "strong": 0,
+  "strong": 3,
   "syllables": 95,
-  "weak": 10
+  "weak": 14
  },
  "rs001674": {
   "lint": {
@@ -1661,9 +1661,9 @@
   "octave": 1,
   "rhythm": 2,
   "roundtrip": "exact",
-  "strong": 0,
+  "strong": 1,
   "syllables": 98,
-  "weak": 0
+  "weak": 11
  },
  "rs001795": {
   "lint": {
@@ -1915,7 +1915,7 @@
   "octave": 0,
   "rhythm": 0,
   "roundtrip": "exact",
-  "strong": 0,
+  "strong": 1,
   "syllables": 100,
   "weak": 0
  },
