@@ -6,6 +6,8 @@
 data/raw_data/midi/*.mid
 data/raw_data/swaralipi/
 data/raw_data/text/lyrics/
+# Local reference PDFs (not tracked, not catalogued)
+data/raw_data/text/pdf/
 
 # Downloaded videos (listed in data/raw_data/video/video_catalog.csv)
 data/raw_data/video/*.mp4
