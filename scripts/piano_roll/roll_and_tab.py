@@ -8,6 +8,9 @@ For every line of the tab, in the order it is played:
      the video, synthesized as in ear_check.py, so the chords don't cover them);
   2. the same line of the kalimba tab video (scripts/ktab_to_video/kalimba_video.py): its sound and
      its page, with the line being played.
+With --groups (e.g. 1-13,14-23), the turns are whole groups of lines instead: the roll over the
+whole group, then the tab over it (a stanza at a time). The tab sounds retuned when it has an
+@retune header (or --retune).
 The tab video is rendered first if --tab-video is not given. A tab line is found in the roll by
 matching its notes (longest common subsequence, as in ear_check.py) within its stanza's best stretch.
 
@@ -17,6 +20,7 @@ import argparse
 import csv
 import glob
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -45,6 +49,21 @@ def write_wav(path, y):
         w.writeframes(np.stack([s16, s16], 1).tobytes())
 
 
+def retune_shifts(spec):
+    """'G4:G#4,F:F#' -> {semitone above C4: shift} for single tines, {pitch class: shift} for all octaves"""
+    letter = dict(C=0, D=2, E=4, F=5, G=7, A=9, B=11)
+    tine, every = {}, {}
+    for part in filter(None, (x.strip() for x in (spec or '').split(','))):
+        (l1, a1, o1), (l2, a2, o2) = (re.fullmatch(r'([A-G])([#b]*)(\d?)', x.strip()).groups() for x in part.split(':'))
+        p1 = letter[l1] + a1.count('#') - a1.count('b')
+        p2 = letter[l2] + a2.count('#') - a2.count('b')
+        if o1 and o2:
+            tine[p1 + 12 * (int(o1) - 4)] = p2 + 12 * int(o2) - p1 - 12 * int(o1)
+        else:
+            every[p1 % 12] = (p2 - p1 + 6) % 12 - 6
+    return tine, every
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('song')
@@ -57,8 +76,13 @@ def main():
                     'its piano-roll line (the tab then follows the pianist\'s tempo line by line)')
     ap.add_argument('--out', help='output file (default: comparison/<song>_roll_and_tab.mp4)')
     ap.add_argument('--lines', help='only these tab lines, e.g. 1-6 (1-based, in playing order)')
+    ap.add_argument('--groups', help='take turns a group of lines at a time, e.g. 1-13,14-23 (1-based, in playing '
+                    'order; replaces --lines)')
+    ap.add_argument('--retune', help='tine retuning for the tab sound, as kalimba_video.py --retune '
+                    '(default: the tab\'s @retune header)')
     a = ap.parse_args()
     song = ktab.parse_file(a.ktab)
+    retune = a.retune or song.headers.get('retune')
 
     def lines_played(bpm):
         """tab lines in playing order: [line index, stanza, start, end in the tab video]"""
@@ -73,9 +97,10 @@ def main():
         return played
 
     played = lines_played(a.bpm or 60)
-    notes_of = {}
+    tine, every = retune_shifts(retune)
+    notes_of = {}                               # tab line -> its notes as they sound (after any retuning)
     for li, line in enumerate(song.lines):
-        notes_of[li] = [ev.semitone for wd in line.words for syl in wd.syllables for ev in syl.events
+        notes_of[li] = [ev.semitone + tine.get(ev.semitone, every.get(ev.semitone % 12, 0)) for wd in line.words for syl in wd.syllables for ev in syl.events
                         if isinstance(ev, ktab.Note) and not ev.is_rest]
 
     roll = a.roll or glob.glob(f'data/intermediate_data/piano_roll/{a.song}/*_notes.csv')[0]
@@ -88,29 +113,46 @@ def main():
     base = max(range(min(midis) - 36, max(midis) + 1), key=lambda b: len(WT.lcs_map(whole, [m - b for m in midis])))
     P = [m - base for m in midis]
 
+    def span_of(text):
+        lo, _, hi = text.partition('-')
+        return list(range(int(lo) - 1, min(int(hi or lo), len(played))))
+
+    if a.groups:
+        units = [span_of(g) for g in a.groups.split(',')]
+    else:
+        units = [[k] for k in (span_of(a.lines) if a.lines else range(len(played)))]
+    sel = [k for u in units for k in u]
+
     # each stanza (in playing order) -> its best stretch of the roll -> each line's matched roll notes
+    # (with --groups: each group in turn, searched from where the previous group ended in the roll)
+    if a.groups:
+        blocks = units
+    else:
+        blocks, k = [], 0
+        while k < len(played):
+            k2 = k
+            while k2 + 1 < len(played) and played[k2 + 1][1] == played[k][1]:
+                k2 += 1
+            blocks.append(list(range(k, k2 + 1)))
+            k = k2 + 1
     match = {}                                  # index in `played` -> roll note indices
-    k = 0
-    while k < len(played):
-        k2 = k
-        while k2 + 1 < len(played) and played[k2 + 1][1] == played[k][1]:
-            k2 += 1
-        group = list(range(k, k2 + 1))
+    after = 0
+    for group in blocks:
         d = [n for g in group for n in notes_of[played[g][0]]]
         span = int(len(d) * 1.5) + 8
-        j = max(range(0, max(1, len(P) - len(d) // 2), 2), key=lambda j: len(WT.lcs_map(d, P[j:j + span])))
+        j = max(range(after, max(after + 1, len(P) - len(d) // 2), 2),
+                key=lambda j: len(WT.lcs_map(d, P[j:j + span])))
         mp = {i: j + q for i, q in lcs_early(d, P[j:j + span]).items()}
         off = 0
         for g in group:
             n = len(notes_of[played[g][0]])
             match[g] = [mp[i] for i in range(off, off + n) if i in mp]
             off += n
-        k = k2 + 1
+        if a.groups and mp:
+            after = max(mp.values()) + 1
+        print(f'lines {group[0] + 1}-{group[-1] + 1}: {len(mp)}/{len(d)} notes found in the roll, '
+              + ' '.join(str(len(match[g])) for g in group))
 
-    sel = range(len(played))
-    if a.lines:
-        lo, hi = (int(x) for x in a.lines.split('-'))
-        sel = range(lo - 1, min(hi, len(played)))
 
     def roll_span(k):
         """(start, end) in the roll video of tab line k, or None if the line was not found in the roll"""
@@ -146,12 +188,21 @@ def main():
             tab_video = os.path.join(tmp, 'tab.mp4')
             subprocess.run([sys.executable, os.path.join(ROOT, 'scripts/ktab_to_video/kalimba_video.py'), a.ktab,
                             os.path.join(ROOT, 'data/raw_data/image/paper_texture_brown.png'), '-o', tab_video,
-                            '--bpm', str(a.bpm)], check=True, capture_output=True)
+                            '--bpm', str(a.bpm)] + (['--retune', retune] if retune else []),
+                           check=True, capture_output=True)
         parts = []
-        for k in sel:
-            li, st, t0, t1 = played[k]
-            text = ' '.join('-'.join(s.text for s in wd.syllables) for wd in song.lines[li].words)
-            span = roll_span(k)
+        for unit in units:
+            k = unit[0]
+            t0, t1 = played[unit[0]][2], played[unit[-1]][3]
+            words = lambda q: ' '.join('-'.join(s.text for s in wd.syllables) for wd in song.lines[played[q][0]].words)
+            if len(unit) == 1:
+                text, tag = words(k), f'{k + 1}'
+            else:
+                text, tag = words(unit[0]) + ' …', f'lines {unit[0] + 1}-{unit[-1] + 1}'
+            spans = [roll_span(q) for q in unit if roll_span(q)]
+            span = (spans[0][0], spans[-1][1]) if spans else None
+            if len(spans) < len(unit):
+                print(f'{tag}: {len(unit) - len(spans)} line(s) not found in the roll')
             if span:
                 r0, r1 = span
                 yr = np.zeros(int((r1 - r0) * SR) + SR)
@@ -162,7 +213,7 @@ def main():
                 yr *= 0.6 / max(1e-9, np.abs(yr).max())
                 wr = os.path.join(tmp, f'r{k}.wav'); write_wav(wr, yr)
                 p1 = os.path.join(tmp, f'p{k}r.mp4')
-                label = f"Piano roll (Arup Paul), melody  ·  {k + 1}: {text}".replace("'", "’").replace(':', '\\:')
+                label = f"Piano roll (Arup Paul), melody  ·  {tag}: {text}".replace("'", "’").replace(':', '\\:')
                 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{r0:.3f}', '-t', f'{r1 - r0:.3f}', '-i', video,
                                 '-i', wr, '-map', '0:v', '-map', '1:a',
                                 '-vf', f"scale=1280:720,drawtext=fontfile={FONT_DIR}/texgyreheros-bold.otf:"
@@ -170,10 +221,11 @@ def main():
                                 '-shortest'] + ENC + [p1], check=True)
                 parts.append(p1)
             else:
-                print(f'line {k + 1} ({text}): not found in the roll, tab only')
+                print(f'{tag} ({text}): not found in the roll, tab only')
             p2 = os.path.join(tmp, f'p{k}t.mp4')
             s0 = max(0.0, t0 - 0.3)
-            f = (t1 - t0) / played_sec(k) if a.stretch and span else 1.0     # >1: tab line played faster
+            f = ((t1 - t0) / sum(played_sec(q) for q in unit if match.get(q))
+                 if a.stretch and span else 1.0)     # >1: tab line played faster
             atempo = ''
             g = f
             while g > 2.0 or g < 0.5:                                      # atempo takes 0.5 - 2.0 per stage
@@ -189,7 +241,7 @@ def main():
         open(lst, 'w').write(''.join(f"file '{p}'\n" for p in parts))
         out = a.out or f'data/intermediate_data/comparison/{a.song}_roll_and_tab.mp4'
         subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', out], check=True)
-    print(f'{len(sel)} lines, roll and tab in turn -> {out}')
+    print(f'{len(sel)} lines in {len(units)} turn(s), roll and tab in turn -> {out}')
 
 
 if __name__ == '__main__':
