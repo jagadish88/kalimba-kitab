@@ -10,7 +10,7 @@ Sequence:
 
 Usage:
     python add_intro.py slide.png paper.png main.mp4
-    python add_intro.py slide.png paper.png main.mp4 -o final.mp4 --hold 4 --fade 2 --gap 0.5
+    python add_intro.py slide.png paper.png main.mp4 -o final.mp4 --hold 3 --fade 1 --gap 0.5
 
 slide.png  the opening slide, including its paper background
 paper.png  the same paper with nothing on it
@@ -52,10 +52,10 @@ def main():
     p.add_argument("paper", help="the plain paper image, with nothing on it")
     p.add_argument("video", help="main video (MP4)")
     p.add_argument("-o", "--output", help="output file (default: <video>_with_intro.mp4)")
-    p.add_argument("--hold", type=float, default=4.0,
-                   help="seconds the slide stays fully visible (default 4)")
-    p.add_argument("--fade", type=float, default=2.0,
-                   help="seconds for the slide contents to fade away (default 2)")
+    p.add_argument("--hold", type=float, default=1.5,
+                   help="seconds the slide stays fully visible (default 1.5)")
+    p.add_argument("--fade", type=float, default=0.5,
+                   help="seconds for the slide contents to fade away (default 0.5)")
     p.add_argument("--gap", type=float, default=0.5,
                    help="seconds of plain paper before the video starts (default 0.5)")
     p.add_argument("--video-fade", type=float, default=0.0,
