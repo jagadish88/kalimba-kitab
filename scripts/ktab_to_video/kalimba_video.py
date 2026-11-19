@@ -49,8 +49,9 @@ ap.add_argument("--bpm", type=float, default=88, help="tempo in beats per minute
 ap.add_argument("--loudness", type=float, default=-14,
                 help="target loudness in LUFS (default -14, the YouTube/Instagram standard)")
 ap.add_argument("--model", default="synth",
-                help="kalimba sound: 'synth' (built-in) or a sampled model such as 'k17cap' "
-                     "(folder kalimbas/<model>/ next to this script)")
+                help="kalimba sound: 'synth' (built-in), a sampled model such as 'k17cap' "
+                     "(folder kalimbas/<model>/ next to this script), or the path of a folder of "
+                     "recordings named by note (C4.wav, C4_sharp.wav, A4_flat.wav ...), e.g. 17_keys")
 ap.add_argument("--reverb", type=float, default=0.25,
                 help="reverb level: 0 = dry, 0.25 = light (default), 1 = heavy")
 ap.add_argument("--retune", action="append", default=[], metavar='"F:F#"',
@@ -145,6 +146,43 @@ def synth_voice(deg, hi):
             + 0.18*np.sin(2*np.pi*5.4*f*tt) * np.exp(-tt*12)
             + 0.06*np.sin(2*np.pi*12.1*f*tt) * np.exp(-tt*40))
 
+NOTE_WAV = re.compile(r"^([A-G])(\d)(_sharp|_flat)?\.wav$", re.I)
+
+def read_wav(path):
+    """mono float samples at SR"""
+    with wave.open(path) as w:
+        ch, sw, fr = w.getnchannels(), w.getsampwidth(), w.getframerate()
+        a = np.frombuffer(w.readframes(w.getnframes()), {2: np.int16, 4: np.int32}[sw]).astype(np.float64)
+    a = a.reshape(-1, ch).mean(1) / (2 ** (8 * sw - 1))
+    if fr != SR:
+        a = np.interp(np.arange(0, len(a), fr / SR), np.arange(len(a)), a)
+    return a
+
+def load_note_model(folder):
+    """A folder of recordings named by note: C4.wav, C4_sharp.wav, A4_flat.wav ... Each note is
+    played from the recording at its exact pitch (so a retuned tine uses its sharp/flat recording);
+    a pitch with no recording is shifted from the nearest one."""
+    by_pitch, rank = {}, {}
+    for fn in sorted(os.listdir(folder)):
+        m = NOTE_WAV.match(fn)
+        if m:
+            acc = (m.group(3) or "").lower()
+            midi = 12 * (int(m.group(2)) + 1) + SEMI["CDEFGAB".index(m.group(1).upper()) + 1] \
+                + {"_sharp": 1, "_flat": -1}.get(acc, 0)
+            r = ["", "_sharp", "_flat"].index(acc)       # same pitch twice (E4_sharp = F4): natural wins
+            if midi not in by_pitch or r < rank[midi]:
+                by_pitch[midi], rank[midi] = os.path.join(folder, fn), r
+    cache = {}
+    def voice(midi):
+        near = min(by_pitch, key=lambda q: (abs(q - midi), q))
+        if near not in cache:
+            cache[near] = read_wav(by_pitch[near])
+        a = cache[near]
+        if near != midi:
+            a = np.interp(np.arange(0, len(a) - 1, 2 ** ((midi - near) / 12)), np.arange(len(a)), a)
+        return a
+    return voice, by_pitch
+
 def load_sample_model(name):
     """A sampled kalimba: kalimbas/<name>/ holds one .wav per tine, lowest first
     (01_C4.wav, 02_D4.wav ...). Tab '1' is the lowest tine; notes beyond the
@@ -175,14 +213,21 @@ def load_sample_model(name):
         return a
     return voice, len(tines)
 
+note_voice = None
 if args.model == "synth":
     base_voice, n_tines = synth_voice, None
+elif os.path.isdir(args.model) and any(NOTE_WAV.match(f) for f in os.listdir(args.model)):
+    note_voice, recorded = load_note_model(args.model)
+    n_tines = 17
+    print(f"kalimba sound: {len(recorded)} recordings in {args.model}")
 else:
     base_voice, n_tines = load_sample_model(args.model)
 
 def voice(deg, hi):
-    a = base_voice(deg, hi)
     shift = RETUNE_TINE.get((deg, hi), RETUNE.get(deg, 0))   # one-tine retune wins over all-octave
+    if note_voice:                                    # recordings by pitch: take the sounding pitch
+        return note_voice(60 + SEMI[deg] + 12 * hi + shift)
+    a = base_voice(deg, hi)
     if shift:                                         # retuned tine: re-pitch its sound
         r = 2 ** (shift / 12)
         a = np.interp(np.arange(0, len(a) - 1, r), np.arange(len(a)), a)
