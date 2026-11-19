@@ -66,8 +66,8 @@ h1 {{ font: italic bold 112px/1.1 Pagella; letter-spacing: -1px; white-space: no
 .legend svg {{ display: block; margin: 0 auto 14px; overflow: visible; }}
 .legend span {{ display: block; font: 29px/1.12 Pagella; }}
 hr {{ border: 0; border-top: 2px solid var(--rule); margin: 34px 0 30px; }}
-.row {{ display: flex; }}
-.row > div {{ flex: 1; }}
+.row {{ display: flex; justify-content: space-between; gap: 40px; }}
+.row > div {{ flex: none; }}
 .lab {{ font: bold 21px Heros; letter-spacing: 4px; color: var(--soft); }}
 .val {{ font: bold 40px Heros; margin-top: 8px; white-space: nowrap; }}
 .sub {{ font: italic 26px Pagella; color: var(--soft); margin-top: 6px; white-space: nowrap; }}
@@ -84,6 +84,9 @@ sub {{ font-size: 62%; vertical-align: 0; position: relative; top: .3em; }}
 .tune {{ font: italic 30px Pagella; margin-top: 26px; color: var(--ink); }}
 .tune b {{ font: bold 28px Heros; color: var(--accent); font-style: normal; }}
 .tune b.k {{ color: var(--ink); }}
+.tune .ti {{ white-space: nowrap; }}
+.tune .sep {{ margin: 0 4px; color: var(--soft); }}
+.tune {{ line-height: 1.5; }}
 </style></head><body>
 <div class="left">
   <h1>{title}</h1>
@@ -97,7 +100,7 @@ sub {{ font-size: 62%; vertical-align: 0; position: relative; top: .3em; }}
   <div class="legend">{legend}</div>
   <hr>
   <div class="row"><div><div class="lab">TEMPO</div><div class="val">{bpm} BPM</div></div>
-    <div><div class="lab">SCALE</div><div class="val">{scale}</div></div>{taal}</div>
+    <div><div class="lab">SCALE</div><div class="val">{scale}</div>{scale_sub}</div>{taal}</div>
   <hr>
   <div class="lab">NOTES</div>
   <div class="notes">{notes}</div>
@@ -233,7 +236,8 @@ def main():
     ap.add_argument('--author', default='Rabindranath Tagore')
     ap.add_argument('--year', default='')
     ap.add_argument('--bpm', required=True)
-    ap.add_argument('--scale', default='C Major')
+    ap.add_argument('--scale', default='C Major',
+                    help='e.g. "G Major"; a | adds a smaller second line: "Kafi | Sa = G#"')
     ap.add_argument('--taal', help='taal of the tabla accompaniment (kalimba_video.py --taal), e.g. dadra')
     ap.add_argument('--paper', default=os.path.join(ROOT, 'data/raw_data/image/paper_texture_brown.png'))
     ap.add_argument('--html', help='also save the page here (for checking the layout)')
@@ -278,9 +282,16 @@ def main():
         # the other tines with the same letter stay as they are (a 17-tine kalimba, C4..E6)
         keep = sorted({f'{old[0]}{o}' for old in retune for o in (4, 5, 6)
                        if f'{old[0]}{o}' not in retune and (o < 6 or old[0] in 'CDE')})
-        if keep:
-            bits.append('keep ' + ', '.join(f'<b class="k">{note_html(k[0], k[1])}</b>' for k in keep))
-        tune = '<div class="tune">' + ' &middot; '.join(bits) + '</div>'
+        if len(retune) == 1:
+            if keep:
+                bits.append('keep ' + ', '.join(f'<b class="k">{note_html(k[0], k[1])}</b>' for k in keep))
+            tune = '<div class="tune">' + ' &middot; '.join(bits) + '</div>'
+        else:
+            # several retunes: a compact list, no item split across lines; the NOTES row shows them in red
+            items = [f'<span class="ti"><b>{note_html(o[:-1], o[-1])}</b> &rarr; <b>{note_html(n[:-1], n[-1])}</b></span>'
+                     for o, n in retune.items()]
+            tune = (f'<div class="tune">Retune {len(retune)} tines: '
+                    + ' <span class="sep">&middot;</span> '.join(items) + '</div>')
 
     taal_html = ''
     if a.taal:
@@ -296,7 +307,9 @@ def main():
     page = PAGE.format(
         fonts=os.path.join(HERE, 'fonts'), paper=os.path.abspath(a.paper), ink=INK, soft=SOFT, accent=ACCENT,
         title=html.escape(a.title), author=html.escape(a.author), year=html.escape(str(a.year)),
-        bpm=html.escape(str(a.bpm)), scale=html.escape(a.scale),
+        bpm=html.escape(str(a.bpm)), scale=html.escape(a.scale.split('|')[0].strip()).replace('#', '<sup>&#9839;</sup>'),
+        scale_sub=(f'<div class="sub">{html.escape(a.scale.split("|", 1)[1].strip()).replace("#", "&#9839;")}</div>'
+                   if '|' in a.scale else ''),
         legend=''.join(f'<div>{svg}<span>{cap}</span></div>' for svg, cap in legend),
         notes=''.join(cells), n_notes=len(tines), note_col=note_col, tune=tune, taal=taal_html,
         card_w=card_w, col_w=col_w, title_max=1920 - 120 - card_w - 136 - 70, rule_w=646)

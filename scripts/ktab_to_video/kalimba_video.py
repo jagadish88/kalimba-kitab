@@ -48,10 +48,13 @@ ap.add_argument("-o", "--out", default="kalimba.mp4", help="output .mp4 (default
 ap.add_argument("--bpm", type=float, default=88, help="tempo in beats per minute (default 88)")
 ap.add_argument("--loudness", type=float, default=-14,
                 help="target loudness in LUFS (default -14, the YouTube/Instagram standard)")
-ap.add_argument("--model", default="synth",
-                help="kalimba sound: 'synth' (built-in), a sampled model such as 'k17cap' "
+ap.add_argument("--model", default="kalimba",
+                help="kalimba sound: 'kalimba' (default: built-in tine model measured from real recordings), 'synth' (the old built-in), 'soft' (built-in, gentler high notes), 'warm' / 'warm-wah' (soft with shimmer, pluck and body; -wah adds tone-hole tremolo), a sampled model such as 'k17cap' "
                      "(folder kalimbas/<model>/ next to this script), or the path of a folder of "
                      "recordings named by note (C4.wav, C4_sharp.wav, A4_flat.wav ...), e.g. 17_keys")
+ap.add_argument("--tame", type=float, default=-4,
+                help="EQ (dB) around 950 Hz, the high fundamentals 5'-7', so the high register is not shrill "
+                     "(default -4; 0 = off)")
 ap.add_argument("--reverb", type=float, default=0.25,
                 help="reverb level: 0 = dry, 0.25 = light (default), 1 = heavy")
 ap.add_argument("--retune", action="append", default=[], metavar='"F:F#"',
@@ -59,7 +62,7 @@ ap.add_argument("--retune", action="append", default=[], metavar='"F:F#"',
                      'combine with commas or repeat the option')
 ap.add_argument("--lines", type=int, default=None, help="only render the first N lines")
 ap.add_argument("--taal", default=None,
-                help="add a tabla theka under the tune: dadra, kaharwa, rupak, jhaptaal or teentaal (see taal.py)")
+                help="add a tabla theka under the tune: dadra, khemta, kaharwa, rupak, jhaptaal or teentaal (see taal.py)")
 ap.add_argument("--sam", type=float, default=0,
                 help="tab beat on which a sam falls, counted from the first note (default 0: the first note; "
                      "1.5 = a pickup of 1.5 beats before sam)")
@@ -155,6 +158,71 @@ def synth_voice(deg, hi):
             + 0.18*np.sin(2*np.pi*5.4*f*tt) * np.exp(-tt*12)
             + 0.06*np.sin(2*np.pi*12.1*f*tt) * np.exp(-tt*40))
 
+def soft_voice(deg, hi):
+    """The synth kalimba made gentler in the high register (--model soft): high notes a little
+    quieter (the ear is most sensitive at 1-4 kHz), overtones above ~1.5 kHz rolled off, a softer
+    4 ms attack, and shorter rings for the short high tines. Below C5 it is the synth almost as is."""
+    L = int(3.0 * SR); tt = np.arange(L) / SR
+    f = 261.63 * 2 ** ((SEMI[deg] + 12 * hi) / 12)
+    lp = lambda fp: 1 / np.sqrt(1 + (fp / 1500) ** 6)          # low-pass on each partial
+    tilt = min(1.0, (523.25 / f) ** 0.8)                        # C5 and below: 0 dB; A5 -3 dB; E6 -6.5 dB
+    dk = max(1.0, (f / 523.25) ** 0.5)                          # high tines ring shorter
+    parts = [(1, 1.00, 1.9), (2, 0.30, 3.5), (3, 0.12, 6), (5.4, 0.18, 12), (12.1, 0.06, 40)]
+    a = sum(g * lp(m * f) * np.sin(2*np.pi*m*f*tt) * np.exp(-tt*d*dk) for m, g, d in parts)
+    return 0.32 * tilt * a * np.minimum(1, tt / 0.004)
+
+def warm_voice(deg, hi, wah=False):
+    """--model warm: the soft voice with more life. The fundamental is two slightly detuned partials
+    (a slow ~1 Hz shimmer, as a real tine), a soft finger-pluck noise and a short low body thump at
+    the attack (the wooden box), and a little longer sustain in the low and middle range.
+    --model warm-wah adds a gentle 5 Hz tremolo that grows in after the attack, like fanning the
+    tone holes on the back of the instrument."""
+    L = int(3.0 * SR); tt = np.arange(L) / SR
+    f = 261.63 * 2 ** ((SEMI[deg] + 12 * hi) / 12)
+    lp = lambda fp: 1 / np.sqrt(1 + (fp / 1500) ** 6)
+    tilt = min(1.0, (523.25 / f) ** 0.8)
+    dk = max(0.85, (f / 523.25) ** 0.5)                         # low notes ring a little longer
+    a = (0.72 * np.sin(2*np.pi*f*tt) + 0.28 * np.sin(2*np.pi*f*1.0015*tt + 0.7)) * lp(f) * np.exp(-tt*1.9*dk)
+    for m, g, d in [(2, 0.30, 3.5), (3, 0.12, 6), (5.4, 0.18, 12), (12.1, 0.06, 40)]:
+        a = a + g * lp(m * f) * np.sin(2*np.pi*m*f*tt) * np.exp(-tt*d*dk)
+    rng = np.random.default_rng(deg + 7 * hi)                   # same pluck for the same tine
+    n = rng.standard_normal(int(0.012 * SR))
+    n = np.convolve(n, np.ones(12) / 12, mode="same")           # soft: low-passed noise
+    a[:len(n)] += 0.05 * n * np.exp(-np.arange(len(n)) / (0.003 * SR))
+    a += 0.10 * np.sin(2*np.pi*170*tt) * np.exp(-tt*28)        # body thump
+    if wah:
+        depth = 0.18 * np.minimum(1, tt / 0.35)                 # grows in after the attack
+        a *= 1 - depth * (0.5 + 0.5 * np.sin(2*np.pi*5.0*tt - np.pi/2))
+    return 0.32 * tilt * a * np.minimum(1, tt / 0.004)
+
+def kalimba_voice(deg, hi):
+    """--model kalimba: a tine model measured from real kalimba recordings (17-key, C4..E6).
+    A clamped metal tine is not a string: besides the fundamental it has one strong inharmonic
+    overtone near 6.2x (6.0x on the low tines) that is about as loud as the fundamental at the
+    pluck in the middle range and dies within ~0.1 s (the metallic "tink"), a weak 2x (-27 dB),
+    and a faint box resonance near 300 Hz. The fundamental rings ~3 s on C4 and ~0.8 s on E6.
+    High notes are quieter and shorter than recorded, so the high register is not shrill."""
+    L = int(3.5 * SR); tt = np.arange(L) / SR
+    f = 261.63 * 2 ** ((SEMI[deg] + 12 * hi) / 12)
+    r = f / 261.63
+    # above C5 the ear is several dB more sensitive and a long pure tone near 1 kHz sounds shrill:
+    # high notes are quieter (6' -5 dB, 7' -7 dB) and ring a little shorter
+    tilt = min(1.0, (523.25 / f) ** 1.3)
+    k1 = 3.3 * r ** 0.48 * max(1.0, (f / 523.25) ** 0.3)       # fundamental decay (1/s)
+    a = (0.85 * np.sin(2*np.pi*f*tt) + 0.15 * np.sin(2*np.pi*f*1.0012*tt + 0.9)) * np.exp(-tt*k1)
+    ratio = 6.0 + 0.23 * min(1.0, np.log2(r) / 1.5)             # 6.0x on C4 .. 6.23x from G#4 up
+    if ratio * f < 16000:
+        # tink strength and decay per tine, calibrated so a 0.1 s analysis of this voice gives the same
+        # level (vs the fundamental) and fade over 0.15 s as the recordings at C4 G4 C5 F5 A5 C6 E6
+        # (G4 and C5 set 4 dB gentler than recorded); interpolated by octave between them
+        oct_ = [0.0, 0.583, 1.0, 1.417, 1.75, 2.0, 2.333]
+        amp = np.interp(np.log2(r), oct_, [0.272, 0.945, 1.094, 0.430, 0.273, 0.203, 0.158])
+        k2 = np.interp(np.log2(r), oct_, [4.6, 16.1, 21.5, 29.9, 29.9, 26.1, 36.1])
+        a += amp * np.sin(2*np.pi*ratio*f*tt + 0.3) * np.exp(-tt*k2)
+    a += 0.045 * np.sin(2*np.pi*2*f*tt) * np.exp(-tt*k1*1.3)   # weak octave
+    a += 0.08 * np.sin(2*np.pi*300*tt) * np.exp(-tt*22)        # box resonance
+    return 0.34 * tilt * a * np.minimum(1, tt / 0.0015)
+
 NOTE_WAV = re.compile(r"^([A-G])(\d)(_sharp|_flat)?\.wav$", re.I)
 
 def read_wav(path):
@@ -225,6 +293,12 @@ def load_sample_model(name):
 note_voice = None
 if args.model == "synth":
     base_voice, n_tines = synth_voice, None
+elif args.model == "soft":
+    base_voice, n_tines = soft_voice, None
+elif args.model == "kalimba":
+    base_voice, n_tines = kalimba_voice, None
+elif args.model in ("warm", "warm-wah"):
+    base_voice, n_tines = (lambda d, h: warm_voice(d, h, wah=args.model == "warm-wah")), None
 elif os.path.isdir(args.model) and any(NOTE_WAV.match(f) for f in os.listdir(args.model)):
     note_voice, recorded = load_note_model(args.model)
     n_tines = 17
@@ -301,8 +375,10 @@ del stereo, spec, chans, audio, fade            # free audio buffers before rend
 
 # gentle compression + two-pass loudness normalisation to the upload standard
 COMP = "acompressor=threshold=-24dB:ratio=3:attack=5:release=250:makeup=2"
+# a gentle dip around the high fundamentals (5'-7', 780-990 Hz), after the compressor so it is not undone
+TAME = f"equalizer=f=950:width_type=o:width=1.2:g={args.tame}" if args.tame else ""
 def loudnorm(extra):
-    return f"{COMP},loudnorm=I={args.loudness}:TP=-1.0:LRA=11{extra}"
+    return f"{COMP},{TAME + ',' if TAME else ''}loudnorm=I={args.loudness}:TP=-1.5:LRA=11{extra}"
 meas = subprocess.run(["ffmpeg", "-hide_banner", "-i", raw_wav, "-af", loudnorm(":print_format=json"),
                        "-f", "null", "-"], capture_output=True, text=True).stderr
 m = json.loads(meas[meas.rindex("{"):meas.rindex("}") + 1])

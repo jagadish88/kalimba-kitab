@@ -44,6 +44,8 @@ TAALS = {
     'teentaal': [['Dha', 'Dhin', 'Dhin', 'Dha'], ['Dha', 'Dhin', 'Dhin', 'Dha'],
                  ['Dha', 'Tin', 'Tin', 'Ta'], ['Ta', 'Dhin', 'Dhin', 'Dha']],
 }
+# Khemta: the light 6-matra (3 + 3) taal of Bengali folk and theatre songs, played with the Dadra theka
+TAALS['khemta'] = TAALS['dadra']
 ACCENT = {'sam': 1.0, 'vibhag': .85, 'other': .72}     # loudness of sam, other vibhag starts, the rest
 
 
