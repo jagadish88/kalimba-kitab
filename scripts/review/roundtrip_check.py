@@ -35,6 +35,7 @@ from ktab.model import Note, Hold  # noqa: E402
 # drafts that differ from their ABC on purpose (checked by hand): reported, not counted as errors
 KNOWN = {
     'rs001381': 'v5+ sings each stanza once, as asked (the ABC repeats them); v6 merges the two sixteenth pairs into eighths',
+    'rs000309': 'v3 drops the closing repeat of the sthayi after the abhog, as asked',
     'rs001619': 'the tab follows an earlier reading of the piano lesson, not abc v1 (to be settled by ear)',
 }
 
