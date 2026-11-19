@@ -58,6 +58,15 @@ ap.add_argument("--retune", action="append", default=[], metavar='"F:F#"',
                 help='retune all tines of one note, e.g. "F:F#" or "B:Bb"; '
                      'combine with commas or repeat the option')
 ap.add_argument("--lines", type=int, default=None, help="only render the first N lines")
+ap.add_argument("--taal", default=None,
+                help="add a tabla theka under the tune: dadra, kaharwa, rupak, jhaptaal or teentaal (see taal.py)")
+ap.add_argument("--sam", type=float, default=0,
+                help="tab beat on which a sam falls, counted from the first note (default 0: the first note; "
+                     "1.5 = a pickup of 1.5 beats before sam)")
+ap.add_argument("--matra", type=float, default=0.5,
+                help="length of one matra in tab beats (default 0.5: a matra is an eighth, half a beat)")
+ap.add_argument("--taal-volume", type=float, default=-16,
+                help="tabla level relative to the kalimba in dB, by RMS (default -16: subtle; the kalimba leads)")
 ap.add_argument("--fonts-dir", default=None,
                 help="folder containing the TeX Gyre .otf files (default: next to this script)")
 args = ap.parse_args()
@@ -251,6 +260,20 @@ for p in tl.plucks:
     seg = audio[i:i + len(tone)]
     seg += tone[:len(seg)]
     ringing[key] = (i, tone)
+if args.taal:                                       # tabla theka, in time with the tab's beats
+    import taal
+    first = tl.plucks[0].time
+    tabla = taal.theka(args.taal.lower(), SR, sam=first + args.sam * BEAT, matra=args.matra * BEAT,
+                       start=first, end=tl.end)
+    def rms(x):
+        x = x[np.abs(x) > 1e-4]
+        return np.sqrt(np.mean(x ** 2)) if len(x) else 1.0
+    tabla *= rms(audio) / rms(tabla) * 10 ** (args.taal_volume / 20)
+    if len(tabla) > len(audio):
+        audio = np.concatenate([audio, np.zeros(len(tabla) - len(audio))])
+    audio[:len(tabla)] += tabla
+    TOTAL = max(TOTAL, len(tabla) / SR)              # the closing Dha rings 1 s, then the 1 s fade
+    print(f"taal: {args.taal}, sam at beat {args.sam:g}, matra = {args.matra:g} beat, {args.taal_volume:+g} dB")
 audio = audio[:int((TOTAL + 1.5) * SR)]
 # light stereo reverb (different tails left/right, dry sound in the centre)
 # --reverb sets the reverb level relative to the dry kalimba: 0.25 = 12 dB quieter, 0 = none
