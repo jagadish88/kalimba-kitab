@@ -1,7 +1,7 @@
 """Paper background (1920x1080) with a faint line-art figure on the right, multiplied into the
 grain, e.g. a dancer for a dance song. The lines are thinned (MaxFilter) and drawn in a warm brown.
 
-    python3 figure_paper.py paper.png figure.png out.png [opacity .16] [thin 3] [height 860]
+    python3 figure_paper.py paper.png figure.png out.png [opacity .16] [thin 3] [height 860] [right margin 40]
 
 then: kalimba_video.py tab.ktab out.png ...  (Mamo Chitte: data/raw_data/image/dancing_girl.png)"""
 import sys, numpy as np
@@ -10,6 +10,7 @@ paper, fig, out = sys.argv[1:4]
 op = float(sys.argv[4]) if len(sys.argv) > 4 else .16
 thin = int(sys.argv[5]) if len(sys.argv) > 5 else 3
 hgt = int(sys.argv[6]) if len(sys.argv) > 6 else 860
+right = int(sys.argv[7]) if len(sys.argv) > 7 else 40         # px from the right edge
 W, H = 1920, 1080
 src = Image.open(paper).convert("RGB")
 sc = max(W / src.width, H / src.height)
@@ -25,7 +26,7 @@ g = g.crop((xs.min()-10, ys.min()-10, xs.max()+10, ys.max()+10))
 w = round(g.width * hgt / g.height)
 g = g.resize((w, hgt), Image.LANCZOS)
 a = (255 - np.asarray(g).astype(np.float32)) / 255 * op   # line darkness -> alpha
-x0, y0 = W - w - 40, H - hgt - 70
+x0, y0 = W - w - right, H - hgt - 70
 col = np.array([92, 58, 36], np.float32)                    # warm brown ink
 reg = pap[y0:y0+hgt, x0:x0+w]
 pap[y0:y0+hgt, x0:x0+w] = reg * (1 - a[..., None]) + (reg * col / 255) * a[..., None]
