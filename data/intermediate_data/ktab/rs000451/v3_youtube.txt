@@ -6,7 +6,7 @@ Learn to play the melody of 'Baro Asha Kore' (Boro asha kore esechhi go) on the 
 
 Written & composed by Rabindranath Tagore (1882)
 
-🎵 Tempo: 100 BPM
+🎵 Tempo: 144 BPM
 🎵 Scale: C Major
 🎵 Tuning (17-key C kalimba): no retuning needed
 
@@ -15,10 +15,10 @@ Notes on this arrangement:
 • Every note is on the 17-key C kalimba as it is, with no notes played a semitone off. The highest note is 2'' (on "janoni bo-le").
 
 0:00 Boro asha kore esechhi go
-0:36 Dinohine keho chaahe na
-0:58 Aar aami je kichhu chahine
-1:36 Tumi na raakhile
-1:58 Oi je heri tamoso ghanoghora
-2:16 Boro asha kore (reprise)
+0:26 Dinohine keho chaahe na
+0:41 Aar aami je kichhu chahine
+1:08 Tumi na raakhile
+1:23 Oi je heri tamoso ghanoghora
+1:35 Boro asha kore (reprise)
 
 #BaroAshaKore #RabindraSangeet #KalimbaTabs #Kalimba
