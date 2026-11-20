@@ -99,6 +99,16 @@
    "retune_header": 0
   }
  },
+ "dataset:rs001381": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
  "dataset:rs001714": {
   "lint": {
    "mid_capitals": 0,
@@ -1252,20 +1262,6 @@
   "strong": 0,
   "syllables": 99,
   "weak": 0
- },
- "rs001381": {
-  "lint": {
-   "mid_capitals": 0,
-   "off_tine": 0,
-   "parse": 0,
-   "placeholder_title": 0,
-   "rests": 0,
-   "retune_header": 0
-  },
-  "octave": 0,
-  "roundtrip": "known",
-  "strong": 0,
-  "weak": 2
  },
  "rs001397": {
   "lint": {
