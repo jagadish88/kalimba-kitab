@@ -1117,11 +1117,11 @@
    "retune_header": 0
   },
   "octave": 7,
-  "rhythm": 8,
-  "roundtrip": "exact",
-  "strong": 0,
-  "syllables": 87,
-  "weak": 7
+  "rhythm": 9,
+  "roundtrip": "error",
+  "strong": 4,
+  "syllables": 83,
+  "weak": 13
  },
  "rs001247": {
   "lint": {
