@@ -216,9 +216,9 @@
   },
   "octave": 0,
   "rhythm": 0,
-  "roundtrip": "exact",
+  "roundtrip": "error",
   "strong": 0,
-  "syllables": 99,
+  "syllables": 97,
   "weak": 0
  },
  "rs000083": {
