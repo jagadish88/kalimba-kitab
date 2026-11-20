@@ -12,8 +12,8 @@ Written & composed by Rabindranath Tagore (1895)
 
 Notes on this arrangement:
 • The rhythm follows the Geetabitan swaralipi; the notes come from the Geetabitan MIDI.
-• The song's few sharp 4s (F♯) are played on 4 (F), a semitone low, so that no tine has to be retuned.
-• Quick sixteenth-note turns are simplified to their main note.
+• The few sharp 4s (F♯, 6 notes) are played on 4 (F), a semitone low, so that no tine has to be retuned.
+• Simplified for the kalimba: each short syllable has one note and each long one at most two (the quick runs and turns are left out).
 
 0:00 Tumi robe nirobe
 0:39 Mamo jibono joubono
