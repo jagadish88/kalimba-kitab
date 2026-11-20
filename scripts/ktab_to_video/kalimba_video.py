@@ -62,7 +62,7 @@ ap.add_argument("--retune", action="append", default=[], metavar='"F:F#"',
                      'combine with commas or repeat the option')
 ap.add_argument("--lines", type=int, default=None, help="only render the first N lines")
 ap.add_argument("--taal", default=None,
-                help="add a tabla theka under the tune: dadra, khemta, kaharwa, rupak, jhaptaal or teentaal (see taal.py)")
+                help="add a tabla theka under the tune: dadra, khemta, kaharwa, rupak, jhaptaal, ektaal or teentaal (see taal.py)")
 ap.add_argument("--sam", type=float, default=0,
                 help="tab beat on which a sam falls, counted from the first note (default 0: the first note; "
                      "1.5 = a pickup of 1.5 beats before sam)")

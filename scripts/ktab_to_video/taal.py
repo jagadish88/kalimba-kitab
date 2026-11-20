@@ -33,6 +33,9 @@ BOLS = {
 }
 BOLS['Dhi'] = BOLS['Dhin']
 BOLS['Ka'] = BOLS['Kat'] = BOLS['Ke']
+BOLS['Ra'] = BOLS['Re'] = [('re', .7, .15)]
+BOLS['Ki'] = [('ke2', .6, .08)]
+BOLS['Tu'] = BOLS['Tun']
 
 # taal -> vibhags (lists of bols, one bol per matra); the first vibhag starts on sam.
 # The khali vibhag is the one whose bols have no bayan (no Dh-/Ge).
@@ -46,6 +49,10 @@ TAALS = {
 }
 # Khemta: the light 6-matra (3 + 3) taal of Bengali folk and theatre songs, played with the Dadra theka
 TAALS['khemta'] = TAALS['dadra']
+# Ektaal (12 matras) as Rabindra Sangeet notation groups it, 3 + 3 + 3 + 3 (sam, 2, khali, 3).
+# A bol written with dots is several strokes shared evenly inside one matra: Dha.Ge, Ti.Ra.Ki.Ta.
+TAALS['ektaal'] = [['Dhin', 'Dhin', 'Dha.Ge'], ['Ti.Ra.Ki.Ta', 'Tu', 'Na'],
+                   ['Kat', 'Ta', 'Dha.Ge'], ['Ti.Ra.Ki.Ta', 'Dhi', 'Na']]
 ACCENT = {'sam': 1.0, 'vibhag': .85, 'other': .72}     # loudness of sam, other vibhag starts, the rest
 
 
@@ -99,7 +106,9 @@ def theka(name, sr, sam, matra, start, end):
     out = np.zeros(int((sam + final * matra + 2.0) * sr))
     events = [(k, bols[k % n], acc[k % n]) for k in range(first, last)] + [(final, 'Dha', ACCENT['sam'])]
     for k, bol, a in events:
-        i = int(round((sam + k * matra) * sr))
-        s = bol_sound(bol, sr) * a
-        out[i:i + len(s)] += s[:len(out) - i]
+        parts = bol.split('.')                                  # strokes shared inside one matra
+        for j, b in enumerate(parts):
+            i = int(round((sam + (k + j / len(parts)) * matra) * sr))
+            s = bol_sound(b, sr) * (a if j == 0 else a * 0.8)
+            out[i:i + len(s)] += s[:len(out) - i]
     return out

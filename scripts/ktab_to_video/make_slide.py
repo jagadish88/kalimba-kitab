@@ -299,7 +299,7 @@ def main():
         v = T.TAALS.get(a.taal.lower())
         if v is None:
             raise SystemExit(f"unknown taal {a.taal!r}; known: {', '.join(sorted(T.TAALS))}")
-        parts = ' + '.join(str(len(x)) for x in v)
+        parts = (' + ' if len(v) <= 2 else '+').join(str(len(x)) for x in v)   # 3 + 3, but 3+3+3+3
         taal_html = (f'<div><div class="lab">TAAL</div><div class="val">{html.escape(a.taal.title())}</div>'
                      f'<div class="sub">{sum(len(x) for x in v)} matras &middot; {parts}</div></div>')
     col_w = 126 if len(legend) >= 6 else 136 if len(legend) == 5 else 150
