@@ -338,7 +338,7 @@ if args.taal:                                       # tabla theka, in time with 
     import taal
     first = tl.plucks[0].time
     tabla = taal.theka(args.taal.lower(), SR, sam=first + args.sam * BEAT, matra=args.matra * BEAT,
-                       start=first, end=tl.end)
+                       start=first, end=tl.plucks[-1].time)   # closes on the sam at/after the last note
     def rms(x):
         x = x[np.abs(x) > 1e-4]
         return np.sqrt(np.mean(x ** 2)) if len(x) else 1.0

@@ -8,8 +8,8 @@ Dhin = Tin + Ghe. The bol sounds and their levels were checked by ear on 2026-11
     theka(name, sr, sam, matra, start, end)  ->  mono float array (len = end + ring-out)
 
 `sam` is the time (s) of a sam, `matra` the length (s) of one matra. The theka plays in time with
-that sam from `start` (a pickup before the first sam starts mid-cycle, on the right bol) up to `end`,
-then lands one Dha on the next sam.
+that sam from `start` (a pickup before the first sam starts mid-cycle, on the right bol) and closes
+with one Dha on the first sam at or after `end`, the start of the song's last note.
 """
 import os
 import subprocess
@@ -97,14 +97,15 @@ def bol_sound(bol, sr):
 
 
 def theka(name, sr, sam, matra, start, end):
-    """the theka from `start` to `end` (seconds), sam at time `sam`, one matra = `matra` seconds"""
+    """the theka from `start` to the first sam at or after `end` (seconds, the last note's start),
+    sam at time `sam`, one matra = `matra` seconds"""
     bols, acc = cycle(name)
     n = len(bols)
     first = int(np.ceil((start - sam) / matra - 1e-6))      # matra index (0 = that sam) of the first stroke
-    last = int(np.ceil((end - sam) / matra - 1e-6))          # first matra at or after the end
-    final = last + (-last) % n                                # the next sam: one Dha to close
+    last = int(np.ceil((end - sam) / matra - 1e-6))          # first matra at or after the last note
+    final = last + (-last) % n                                # the sam there or next: one Dha to close
     out = np.zeros(int((sam + final * matra + 2.0) * sr))
-    events = [(k, bols[k % n], acc[k % n]) for k in range(first, last)] + [(final, 'Dha', ACCENT['sam'])]
+    events = [(k, bols[k % n], acc[k % n]) for k in range(first, final)] + [(final, 'Dha', ACCENT['sam'])]
     for k, bol, a in events:
         parts = bol.split('.')                                  # strokes shared inside one matra
         for j, b in enumerate(parts):
