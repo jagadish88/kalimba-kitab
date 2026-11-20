@@ -134,7 +134,7 @@ rs000206,src000167,,piano_lesson
 rs000206,src000413,,piano_roll
 rs000206,src000432,,piano_staff
 rs000206,src000444,,kalimba
-rs000206,src000445,,kalimba
+rs000206,src000445,data/raw_data/video/rs000206_src000445.mp4,kalimba
 rs000206,src000446,,kalimba
 rs000206,src000447,,kalimba
 rs000206,src001587,,vocal_melody
