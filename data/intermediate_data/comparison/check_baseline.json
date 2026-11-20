@@ -49,6 +49,16 @@
    "retune_header": 0
   }
  },
+ "dataset:rs000451": {
+  "lint": {
+   "mid_capitals": 0,
+   "off_tine": 0,
+   "parse": 0,
+   "placeholder_title": 0,
+   "rests": 0,
+   "retune_header": 0
+  }
+ },
  "dataset:rs000864": {
   "lint": {
    "mid_capitals": 0,
@@ -583,22 +593,6 @@
   "roundtrip": "exact",
   "strong": 0,
   "syllables": 99,
-  "weak": 0
- },
- "rs000451": {
-  "lint": {
-   "mid_capitals": 0,
-   "off_tine": 0,
-   "parse": 0,
-   "placeholder_title": 0,
-   "rests": 0,
-   "retune_header": 0
-  },
-  "octave": 0,
-  "rhythm": 9,
-  "roundtrip": "error",
-  "strong": 0,
-  "syllables": 98,
   "weak": 0
  },
  "rs000464": {
