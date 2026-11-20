@@ -92,7 +92,7 @@ sub {{ font-size: 62%; vertical-align: 0; position: relative; top: .3em; }}
 <div class="left">
   <h1>{title}</h1>
   <div class="rule"></div>
-  <div class="by">Written &amp; composed by</div>
+  <div class="by">{byline}</div>
   <div class="who">{author}</div>
   <div class="year">{year}</div>
 </div>
@@ -236,6 +236,8 @@ def main():
     ap.add_argument('--tab', help='the .ktab file the card is read from')
     ap.add_argument('--author', default='Rabindranath Tagore')
     ap.add_argument('--year', default='')
+    ap.add_argument('--byline', default='Written & composed by',
+                    help='the line above the author, e.g. "Written by" for words set to an existing tune')
     ap.add_argument('--bpm', required=True)
     ap.add_argument('--scale', default='C Major',
                     help='e.g. "G Major"; a | adds a smaller second line: "Kafi | Sa = G#"')
@@ -312,7 +314,7 @@ def main():
     card_w = max(760, 116 + len(tines) * 58, 116 + len(legend) * col_w)
     page = PAGE.format(
         fonts=os.path.join(HERE, 'fonts'), paper=os.path.abspath(a.paper), ink=INK, soft=SOFT, accent=ACCENT,
-        title=html.escape(a.title), author=html.escape(a.author), year=html.escape(str(a.year)),
+        title=html.escape(a.title), author=html.escape(a.author), byline=html.escape(a.byline), year=html.escape(str(a.year)),
         bpm=html.escape(str(a.bpm)), scale=html.escape(a.scale.split('|')[0].strip()).replace('#', '<sup>&#9839;</sup>'),
         scale_sub=(f'<div class="sub">{html.escape(a.scale.split("|", 1)[1].strip()).replace("#", "&#9839;")}</div>'
                    if '|' in a.scale else ''),
