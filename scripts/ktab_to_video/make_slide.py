@@ -239,6 +239,8 @@ def main():
     ap.add_argument('--bpm', required=True)
     ap.add_argument('--scale', default='C Major',
                     help='e.g. "G Major"; a | adds a smaller second line: "Kafi | Sa = G#"')
+    ap.add_argument('--scale-notes', action='store_true',
+                    help='NOTES shows only 1..7 (the scale degrees), not every tine the tab plays')
     ap.add_argument('--taal', help='taal of the tabla accompaniment (kalimba_video.py --taal), e.g. dadra')
     ap.add_argument('--paper', default=os.path.join(ROOT, 'data/raw_data/image/paper_texture_brown.png'))
     ap.add_argument('--html', help='also save the page here (for checking the layout)')
@@ -258,6 +260,9 @@ def main():
     if not a.title:
         raise SystemExit('give a title (or a tab with @title)')
 
+    if a.scale_notes:                                  # just the seven degrees, one octave
+        tines = [(dd, 0) for dd in range(1, 8)]
+        retune = {f'{k[0]}4': v[:-1] + '4' for k, v in retune.items()} if retune else retune
     # NOTES: every tine the tab plays, its digit with octave dots, and the note it sounds
     S = 40
     top = max([1] + [o for _, o in tines])
