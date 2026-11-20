@@ -68,6 +68,7 @@ h1 {{ font: italic bold 112px/1.1 Pagella; letter-spacing: -1px; white-space: no
 hr {{ border: 0; border-top: 2px solid var(--rule); margin: 34px 0 30px; }}
 .row {{ display: flex; justify-content: space-between; gap: 40px; }}
 .row > div {{ flex: none; }}
+.row.two > div {{ flex: 1; }}
 .lab {{ font: bold 21px Heros; letter-spacing: 4px; color: var(--soft); }}
 .val {{ font: bold 40px Heros; margin-top: 8px; white-space: nowrap; }}
 .sub {{ font: italic 26px Pagella; color: var(--soft); margin-top: 6px; white-space: nowrap; }}
@@ -99,7 +100,7 @@ sub {{ font-size: 62%; vertical-align: 0; position: relative; top: .3em; }}
   <div class="cap">KALIMBA TAB NOTATION</div>
   <div class="legend">{legend}</div>
   <hr>
-  <div class="row"><div><div class="lab">TEMPO</div><div class="val">{bpm} BPM</div></div>
+  <div class="row{row_cls}"><div><div class="lab">TEMPO</div><div class="val">{bpm} BPM</div></div>
     <div><div class="lab">SCALE</div><div class="val">{scale}</div>{scale_sub}</div>{taal}</div>
   <hr>
   <div class="lab">NOTES</div>
@@ -311,7 +312,7 @@ def main():
         scale_sub=(f'<div class="sub">{html.escape(a.scale.split("|", 1)[1].strip()).replace("#", "&#9839;")}</div>'
                    if '|' in a.scale else ''),
         legend=''.join(f'<div>{svg}<span>{cap}</span></div>' for svg, cap in legend),
-        notes=''.join(cells), n_notes=len(tines), note_col=note_col, tune=tune, taal=taal_html,
+        notes=''.join(cells), n_notes=len(tines), note_col=note_col, tune=tune, taal=taal_html, row_cls='' if taal_html else ' two',
         card_w=card_w, col_w=col_w, title_max=1920 - 120 - card_w - 136 - 70, rule_w=646)
     if a.html:
         open(a.html, 'w').write(page)
