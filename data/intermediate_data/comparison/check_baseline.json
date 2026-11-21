@@ -1178,12 +1178,7 @@
    "rests": 0,
    "retune_header": 0
   },
-  "octave": 2,
-  "rhythm": 0,
-  "roundtrip": "exact",
-  "strong": 0,
-  "syllables": 100,
-  "weak": 0
+  "roundtrip": "skip"
  },
  "rs001313": {
   "lint": {
