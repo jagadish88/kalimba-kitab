@@ -952,12 +952,7 @@
    "rests": 0,
    "retune_header": 0
   },
-  "octave": 0,
-  "rhythm": 0,
-  "roundtrip": "exact",
-  "strong": 0,
-  "syllables": 98,
-  "weak": 0
+  "roundtrip": "skip"
  },
  "rs000907": {
   "lint": {
