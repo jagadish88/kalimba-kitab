@@ -38,6 +38,7 @@ KNOWN = {
     'rs000309': 'v3 drops the closing repeat of the sthayi after the abhog, as asked',
     'rs001619': 'the tab follows an earlier reading of the piano lesson, not abc v1 (to be settled by ear)',
     'rs001363': 'v2 simplifies v1 (no sixteenths, one note on a short syllable), as for the other songs',
+    'rs000975': 'v2 simplifies v1 (no sixteenths, one note on a short syllable) and joins lone consonants to their syllables',
 }
 
 
