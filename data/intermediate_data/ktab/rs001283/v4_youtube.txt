@@ -7,12 +7,12 @@ Learn to play the melody of 'Klanti Amar Khoma Karo' on the kalimba with number 
 Written & composed by Rabindranath Tagore (1914)
 
 🎵 Tempo: 100 BPM
-🎵 Scale: F Lydian
+🎵 Scale: A Minor
 🎵 Taal: Dadra (6 matras, 3 + 3)
 🎵 Tuning (17-key C kalimba): no retuning needed
 
 Notes on this arrangement:
-• The home note is 4 (F).
+• The home note is 6 (A).
 • A simple version for the kalimba: the main notes of the melody, one or two on each syllable; the quick grace notes are left out.
 • The 3 notes on "ko" of "kobhu" are a B♭, played on 7 (B, a semitone high); every other note is on the kalimba as it is.
 
