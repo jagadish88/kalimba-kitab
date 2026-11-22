@@ -7,12 +7,12 @@ Learn to play the melody of 'Mayabano Biharini Horini' on the kalimba with numbe
 Written & composed by Rabindranath Tagore (1934)
 
 🎵 Tempo: 100 BPM
-🎵 Scale: F Lydian
+🎵 Scale: A Minor
 🎵 Taal: Kaharwa (8 matras, 4 + 4)
 🎵 Tuning (17-key C kalimba): no retuning needed
 
 Notes on this arrangement:
-• The home note is 4 (F).
+• The home note is 6 (A).
 • A simple version for the kalimba: the main notes of the melody, one or two on each syllable; the quick grace notes are left out.
 • The 4 notes on "ri" of "horini" and "biharini" are a B♭, played on 7 (B, a semitone high); every other note is on the kalimba as it is.
 
