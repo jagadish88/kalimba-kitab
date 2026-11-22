@@ -53,6 +53,10 @@ TAALS['khemta'] = TAALS['dadra']
 # A bol written with dots is several strokes shared evenly inside one matra: Dha.Ge, Ti.Ra.Ki.Ta.
 TAALS['ektaal'] = [['Dhin', 'Dhin', 'Dha.Ge'], ['Ti.Ra.Ki.Ta', 'Tu', 'Na'],
                    ['Kat', 'Ta', 'Dha.Ge'], ['Ti.Ra.Ki.Ta', 'Dhi', 'Na']]
+# Choutaal (12 matras, 2 + 2 + 2 + 2 + 2 + 2), the dhrupad taal, with its tabla theka
+# Dha Dha | Din Ta | Kita Dha | Din Ta | Tita Kata | Gadi Gana (Gadi = Ge.Ti, Gana = Ge.Na).
+TAALS['choutaal'] = [['Dha', 'Dha'], ['Dhin', 'Ta'], ['Ki.Ta', 'Dha'], ['Dhin', 'Ta'],
+                     ['Ti.Ta', 'Ka.Ta'], ['Ge.Ti', 'Ge.Na']]
 ACCENT = {'sam': 1.0, 'vibhag': .85, 'other': .72}     # loudness of sam, other vibhag starts, the rest
 
 
