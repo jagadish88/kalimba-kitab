@@ -264,7 +264,9 @@ def main():
 
     if a.scale_notes:                                  # just the seven degrees, one octave
         tines = [(dd, 0) for dd in range(1, 8)]
-        retune = {f'{k[0]}4': v[:-1] + '4' for k, v in retune.items()} if retune else retune
+        shown = {k: v for k, v in retune.items() if k.endswith('4')}   # the row is tines 1..7 (octave 4)
+    else:
+        shown = retune                                 # NOTES row lookups; the tuning line keeps the real tines
     # NOTES: every tine the tab plays, its digit with octave dots, and the note it sounds
     S = 40
     top = max([1] + [o for _, o in tines])
@@ -272,7 +274,7 @@ def main():
     cells, re_used = [], []
     for d, o in tines:
         letter, octv = pitch_name(d, o)
-        new = retune.get(f'{letter}{octv}')
+        new = shown.get(f'{letter}{octv}')
         if new:
             re_used.append((f'{letter}{octv}', new))
             lab = f'<i class="re">{note_html(new[:-1])}</i>'
