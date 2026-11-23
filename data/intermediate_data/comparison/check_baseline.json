@@ -1083,10 +1083,10 @@
    "retune_header": 0
   },
   "octave": 0,
-  "rhythm": 0,
-  "roundtrip": "exact",
-  "strong": 0,
-  "syllables": 99,
+  "rhythm": 2,
+  "roundtrip": "known",
+  "strong": 5,
+  "syllables": 91,
   "weak": 0
  },
  "rs001094": {
