@@ -1573,10 +1573,10 @@
    "retune_header": 0
   },
   "octave": 0,
-  "rhythm": 0,
-  "roundtrip": "exact",
+  "rhythm": 4,
+  "roundtrip": "known",
   "strong": 0,
-  "syllables": 100,
+  "syllables": 89,
   "weak": 0
  },
  "rs001739": {
