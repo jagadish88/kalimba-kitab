@@ -1541,10 +1541,10 @@
    "retune_header": 0
   },
   "octave": 0,
-  "rhythm": 0,
-  "roundtrip": "exact",
+  "rhythm": 5,
+  "roundtrip": "known",
   "strong": 0,
-  "syllables": 94,
+  "syllables": 83,
   "weak": 0
  },
  "rs001730": {
