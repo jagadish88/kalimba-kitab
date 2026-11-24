@@ -319,7 +319,7 @@
    "retune_header": 0
   },
   "octave": 0,
-  "roundtrip": "error",
+  "roundtrip": "known",
   "strong": 0,
   "weak": 0
  },
@@ -541,7 +541,7 @@
    "retune_header": 0
   },
   "octave": 0,
-  "roundtrip": "error",
+  "roundtrip": "known",
   "strong": 0,
   "weak": 0
  },
