@@ -39,6 +39,7 @@ KNOWN = {
     'rs001619': 'the tab follows an earlier reading of the piano lesson, not abc v1 (to be settled by ear)',
     'rs001363': 'v2 simplifies v1 (no sixteenths, one note on a short syllable), as for the other songs',
     'rs000975': 'v2 simplifies v1 (no sixteenths, one note on a short syllable) and joins lone consonants to their syllables',
+    'rs002077': 'v3 rebuilt from the SNLTR swaralipi, simplified; the catalog source column points at the swaralipi text, not an ABC',
     'rs001735': 'v2 simplifies v1 (no sixteenths, one note on a short syllable) and folds the written-out repeats into :||',
     'rs001703': 'v2 simplifies v1 (no sixteenths, one note on a short syllable), folds repeated parts into :|| and sings the refrain at the quoted returns',
     'rs001083': 'v2 simplifies v1 (no sixteenths, one note on a short syllable), joins lone consonants and folds the written-out repeats into :||',

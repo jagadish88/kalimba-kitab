@@ -1782,19 +1782,14 @@
  },
  "rs002077": {
   "lint": {
-   "mid_capitals": 0,
+   "mid_capitals": 1,
    "off_tine": 0,
    "parse": 0,
    "placeholder_title": 0,
    "rests": 0,
    "retune_header": 0
   },
-  "octave": 0,
-  "rhythm": 3,
-  "roundtrip": "exact",
-  "strong": 0,
-  "syllables": 98,
-  "weak": 0
+  "roundtrip": "skip"
  },
  "rs002097": {
   "lint": {
